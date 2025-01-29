@@ -7,3 +7,11 @@
 .env
 
 /node_modules
+
+# Ignore files related to CloudAlly (stswsp)
+*stswsp
+
+# Ignore R history files
+.Rhistory
+
+
