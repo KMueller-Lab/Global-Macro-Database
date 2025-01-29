@@ -9,14 +9,14 @@
 
 
 
-This repository complements our paper, **Müller, Xu, Lehbib, and Chen (2025)**, which introduces a panel dataset of **35 macroeconomic variables across 243 countries** from historical records beginning in the year **1083** until **2024**, including projections through the year **2030**.
+This repository complements our paper, **Müller, Xu, Lehbib, and Chen (2025)**, which introduces a panel dataset of **35 macroeconomic variables across 243 countries** from historical records beginning in the year **1086** until **2024**, including projections through the year **2030**.
 
 
 
 
 ## Features
 
-- **Unparalleled Coverage**: Combines data from **32 contemporary sources** (e.g., IMF, World Bank, OECD) with **70 historical datasets**.
+- **Unparalleled Coverage**: Combines data from **32 contemporary sources** (e.g., IMF, World Bank, OECD) with **78 historical datasets**.
 - **Extensive Variables**: GDP, inflation, government finance, trade, employment, interest rates, and more.
 - **Harmonized Data**: Resolves inconsistencies and splices all available data together.
 - **Scheduled Updates**: Regular releases ensure data reliability.
@@ -29,7 +29,7 @@ This repository complements our paper, **Müller, Xu, Lehbib, and Chen (2025)**,
 
 **Stata package:**
 ```
-net install GMD, from(http://www.globalmacrodata.com/function)
+net install GMD, from(http://www.globalmacrodata.com/package)
 GMD rGDP, country(SGP)
 ```
 
