@@ -25,7 +25,7 @@ This repository complements our paper, **Müller, Xu, Lehbib, and Chen (2025)**,
 
 ## Data access
 
-<a href="https://globalmacrodata.com/data.html" target="_blank" rel="noopener noreferrer">Download via website</a>
+<a href="https://www.globalmacrodata.com/data.html" target="_blank" rel="noopener noreferrer">Download via website</a>
 
 **Stata package:**
 ```
