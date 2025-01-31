@@ -5,7 +5,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-<a href="[https://globalmacrodata.com](https://www.globalmacrodata.com/research-paper.html)" target="_blank" rel="noopener noreferrer">Link to paper 👁️</a>
+[Link to paper 👁️](https://www.globalmacrodata.com/research-paper.html)
 
 
 
