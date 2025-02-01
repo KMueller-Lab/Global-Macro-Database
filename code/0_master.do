@@ -16,7 +16,7 @@
 * National University of Singapore
 *
 * Created: 2024-01-05
-* Last updated: 2024-04-23
+* Last updated: 2024-02-01
 *
 * ==============================================================================
 * Toggle options 
@@ -31,7 +31,7 @@ global clean		0
 global combine		0
 global output_data	0
 global document 	0
-global paper		1
+global paper		0
 global packages 	0
 
 
