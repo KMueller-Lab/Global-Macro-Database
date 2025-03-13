@@ -21,7 +21,7 @@ This repository complements our paper, **Müller, Xu, Lehbib, and Chen (2025)**,
 - **Harmonized Data**: Resolves inconsistencies and splices all available data together.
 - **Scheduled Updates**: Regular releases ensure data reliability.
 - **Full Transparency**: All code is open source and available in this repository.
-- **Accessible Formats**: Provided in `.dta`, `.csv`, and as a **Stata package**.
+- **Accessible Formats**: Provided in `.dta`, `.csv`, `.xlsx`, and as a **Stata package**.
 
 ## Data access
 
