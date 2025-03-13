@@ -29,8 +29,8 @@ This repository complements our paper, **Müller, Xu, Lehbib, and Chen (2025)**,
 
 **Stata package:**
 ```
-net install GMD, from(http://www.globalmacrodata.com/package)
-GMD rGDP, country(SGP)
+net install gmd, from(http://www.globalmacrodata.com/package)
+gmd rGDP, country(FRA)
 ```
 
 ## Release schedule 
