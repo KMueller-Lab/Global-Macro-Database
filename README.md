@@ -16,7 +16,7 @@ This repository complements our paper, **Müller, Xu, Lehbib, and Chen (2025)**,
 
 ## Features
 
-- **Unparalleled Coverage**: Combines data from **32 contemporary sources** (e.g., IMF, World Bank, OECD) with **78 historical datasets**.
+- **Unparalleled Coverage**: Combines data from **32 contemporary sources** (e.g., IMF, World Bank, OECD) with **81 historical datasets**.
 - **Extensive Variables**: GDP, inflation, government finance, trade, employment, interest rates, and more.
 - **Harmonized Data**: Resolves inconsistencies and splices all available data together.
 - **Scheduled Updates**: Regular releases ensure data reliability.
@@ -37,13 +37,43 @@ gmd rGDP, country(FRA)
 
 | Release Date | Details         |
 |--------------|-----------------|
-| 2025-01-30   | Initial release: 2025_01 |
-| 2025-04-01   | 2025_03         |
-| 2025-07-01   | 2025_06         |
-| 2025-10-01   | 2025_09         |
-| 2026-01-01   | 2025_12         |
+| 2025-01-30   | Initial Release: 2025_01 |
+| 2025-04-01   | Current Version: 2025_03         |
+| 2025-07-01   | Version: 2025_06         |
+| 2025-10-01   | Version: 2025_09         |
+| 2026-01-01   | Version: 2025_12         |
 
+---
 
+## Release Note
+📅 Released: March 31, 2025
+
+### Overview
+This release includes updated annual data, expanded historical coverage for key countries, resolved inconsistencies in past series, and introduces new ways to access the database through our Python, R, and Stata packages.
+
+### Data Updates
+All datasets have been updated to include the most recently published annual values as of the release date.
+
+### Expanded Historical Coverage
+New long-run series have been added for Argentina, Ireland, and Taiwan, enriching the database's historical scope.
+
+### IMF WEO Treatment Refined
+We now treat the IMF World Economic Outlook (WEO) as two distinct sources: one for historical values and one for forecasts. This allows for clearer documentation and improved management of discontinuities between past data and forward-looking projections.
+
+### World Bank Data Prioritization
+We have adjusted our source hierarchy to prioritize data from the World Development Indicators (WDI) over both editions of the IMF WEO. This change has resulted in some level adjustments, while maintaining stable trends. Correlation with previous versions remains high across variables—for example, nominal GDP retains a minimum correlation of 0.97 between the old and new series.
+
+### Exchange Rate Coverage
+Monaco has been added to the EUR_fx irrevocable exchange rate list with a fixed rate of 6.55, aligned with the French Franc, which served as the country’s de facto currency prior to euro adoption.
+
+### Bug Fixes
+Corrected inaccuracies in Australia’s long-run historical real GDP in USD figures.
+
+### New Access Tools
+- **Python and R packages**: We are excited to announce that our data can now also be easily accessed using our newly-released Python and R packages. See the Data page for setup instructions.
+- **Official Stata package**: Now available through the SSC Archive. New function updated for downloading underlying raw data via the "raw" option when using a specific variable.
+
+---
 
 ## Citation
 
