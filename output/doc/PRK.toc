@@ -1,0 +1,15 @@
+\contentsline {section}{Data availability heatmap}{3}{section*.3}%
+\contentsline {section}{USD exchange rate}{4}{section*.5}%
+\contentsline {section}{Total consumption}{5}{section*.8}%
+\contentsline {section}{Total consumption to GDP ratio}{6}{section*.11}%
+\contentsline {section}{Exports}{7}{section*.14}%
+\contentsline {section}{Exports to GDP ratio}{8}{section*.17}%
+\contentsline {section}{Government expenditure}{9}{section*.20}%
+\contentsline {section}{Government revenue}{10}{section*.23}%
+\contentsline {section}{Imports}{11}{section*.26}%
+\contentsline {section}{Imports to GDP ratio}{12}{section*.29}%
+\contentsline {section}{Nominal GDP}{13}{section*.32}%
+\contentsline {section}{Population}{14}{section*.35}%
+\contentsline {section}{Real GDP}{15}{section*.38}%
+\contentsline {section}{Real total consumption}{16}{section*.41}%
+\contentsline {section}{References}{17}{section*.44}%

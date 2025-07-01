@@ -61,11 +61,11 @@ destring temp, replace
 * Get country and variable names 
 gen countryname = substr(desc,1,strpos(desc,"-")-1)
 gen varname = substr(desc,strpos(desc,"-")+1,strlen(desc))
-replace varname = "MOXLAD_CPI" if varname == "IPC_IPC"
+replace varname = "MOXLAD_CPI" 		if varname == "IPC_IPC"
 replace varname = "MOXLAD_deflator" if varname == "CCN_DEF_1970"
-replace varname = "MOXLAD_nGDP" if varname == "CCN_PBI_C"
-replace varname = "MOXLAD_pop" if varname == "POB_POB"
-replace varname = "MOXLAD_USDfx" if varname == "CCN_TCN_LCU"
+replace varname = "MOXLAD_nGDP" 	if varname == "CCN_PBI_C"
+replace varname = "MOXLAD_pop" 		if varname == "POB_POB"
+replace varname = "MOXLAD_USDfx" 	if varname == "CCN_TCN_LCU"
 
 * Keep relevant variables only, reshape 
 drop if inlist(varname,"CCN_DEF_1970","CCN_DEF_1970_UML")
@@ -125,14 +125,14 @@ replace MOXLAD_nGDP  =  MOXLAD_nGDP * (10^-3)   if year <= 1984 & ISO3 == "PER"
 
 
 * Bolivia
-replace MOXLAD_USDfx =  MOXLAD_USDfx / 1000000   if year <= 1984 & ISO3 == "BOL"
-replace MOXLAD_USDfx =  MOXLAD_USDfx / 1000   if year <= 1962 & ISO3 == "BOL"
+replace MOXLAD_USDfx =  MOXLAD_USDfx  / 1000000  if year <= 1984 & ISO3 == "BOL"
+replace MOXLAD_USDfx =  MOXLAD_USDfx  / 1000     if year <= 1962 & ISO3 == "BOL"
 replace MOXLAD_nGDP  =  MOXLAD_nGDP   / 1000000  if year <= 1984 & ISO3 == "BOL"
 replace MOXLAD_nGDP  =  MOXLAD_nGDP   / 1000 	 if year <= 1962 & ISO3 == "BOL"
 
 * Venezuela
-replace MOXLAD_USDfx =  MOXLAD_USDfx / 1000      if ISO3 == "VEN"
-replace MOXLAD_nGDP  =  MOXLAD_nGDP   * (10^-14) if ISO3 == "VEN"
+replace MOXLAD_USDfx =  MOXLAD_USDfx / 1000      if ISO3 == "VEN" & year <= 2000
+replace MOXLAD_nGDP  =  MOXLAD_nGDP   * (10^-8)  if ISO3 == "VEN"
 
 * Uruguay
 replace MOXLAD_USDfx =  MOXLAD_USDfx / 1000     if year <= 1993 & ISO3 == "URY"
@@ -157,8 +157,8 @@ replace MOXLAD_USDfx =  MOXLAD_USDfx / 0.0175 if year <= 1919 & ISO3 == "PRY"
 replace MOXLAD_USDfx =  MOXLAD_USDfx / 100 	  if year <= 1942 & ISO3 == "PRY"
 
 * Chile 
-replace MOXLAD_nGDP =  MOXLAD_nGDP / 1000 if year <= 1975 & ISO3 == "CHL"
-replace MOXLAD_nGDP =  MOXLAD_nGDP / 1000 if year <= 1959 & ISO3 == "CHL"
+replace MOXLAD_nGDP =  MOXLAD_nGDP / 1000   if year <= 1975 & ISO3 == "CHL"
+replace MOXLAD_nGDP =  MOXLAD_nGDP / 1000   if year <= 1959 & ISO3 == "CHL"
 replace MOXLAD_USDfx =  MOXLAD_USDfx / 1000 if year <= 1959 & ISO3 == "CHL"
 
 * El Salvador
@@ -184,6 +184,9 @@ replace MOXLAD_CPI = (MOXLAD_CPI * 100) / CPI_2000_all
 
 * Drop
 drop CPI_2000 CPI_2000_all
+
+* Drop constant CPI between 1915-1919
+replace MOXLAD_CPI = . if ISO3 == "MEX" & inrange(year, 1915, 1918)
 
 * Derive inflation rate
 sort ISO3 year

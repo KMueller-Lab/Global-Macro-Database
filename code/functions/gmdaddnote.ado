@@ -46,13 +46,6 @@ syntax anything [if]
 	* Merge based on ISO and year 
 	qui merge 1:1 ISO3 year using "$data_temp/notes" , update
 	
-	* Check that ISO3 year combinations are all in notes file 
-	cap assert _merge!=1
-	if _rc!=0 {
-		di as err "Dataset contains ISO3-year combinations not in notes file."
-		exit 198
-	}
-	
 	* Drop merge variable 
 	qui drop _merge 
 

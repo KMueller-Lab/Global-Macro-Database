@@ -17,7 +17,7 @@
 use "$data_final/clean_data_wide", clear
 
 * Set up the priority list
-splice, priority(IMF_WEO BIS IMF_IFS EUS OECD_EO OECD_KEI WDI WDI_ARC BCEAO  ADB AMECO CS1 CS2 MOXLAD IHD JST CEPAC MW AHSTAT HFS NBS FZ Mitchell) generate(CPI) varname(CPI) base_year(2018) method("chainlink")
+splice, priority(BIS EUS OECD_EO OECD_KEI WDI WDI_ARC BCEAO ADB AMECO WB_CC IMF_IFS IMF_WEO CS1 CS2 CS3 MOXLAD IHD JST CEPAC MW AHSTAT HFS NBS FZ Mitchell IMF_WEO_forecast) generate(CPI) varname(CPI) base_year(2018) method("chainlink")
 
 * Rebasing to 2010
 bysort ISO3: egen CPI_2010 = mean(CPI) if year == 2010
@@ -30,6 +30,10 @@ sort ISO3 year
 replace CPI_rebased = CPI if CPI_rebased == .
 drop CPI
 ren CPI_rebased CPI
+/*
+* Derive inflation rate from this CPI ratio 
+bys ISO3 (year): gen GMD_estimated_infl = (CPI - CPI[_n-1]) / CPI[_n-1] * 100
+*/
 
 * Save
 save "$data_final/chainlinked_CPI", replace 

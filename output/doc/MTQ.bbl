@@ -1,0 +1,31 @@
+\begin{thebibliography}{5}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Federico and Tena-Junguito(2019)}]{Tena}
+Federico, Giovanni and Antonio Tena-Junguito.
+\newblock \enquote{World Trade, 1800-1938: a New Synthesis.}
+\newblock \emph{Revista de Historia Econ{\'o}mica-Journal of Iberian and Latin
+  America Economic History}, 37(2019).
+
+\bibitem[{{International Labour Organization}(2024)}]{ILO}
+{International Labour Organization}.
+\newblock \enquote{Unemployment Rate - {ILO} Modelled Estimates.} (2024).
+\newblock ILOSTAT database, accessed: 2024-01-07.
+
+\bibitem[{{International Monetary Fund}(2024)}]{IMF_IFS}
+{International Monetary Fund}.
+\newblock \enquote{International Financial Statistics.} (2024).
+
+\bibitem[{Mitchell(2013)}]{Mitchell}
+Mitchell, Brian.
+\newblock \emph{International Historical Statistics}.
+\newblock International Historical Statistics. Palgrave Macmillan London, 1
+  edition (2013).
+
+\bibitem[{{World Bank (Archives)}(1999)}]{WDI_ARC}
+{World Bank (Archives)}.
+\newblock \enquote{World Development Indicators.} (1999).
+\newblock Accessed: 2024-07-21.
+
+\end{thebibliography}

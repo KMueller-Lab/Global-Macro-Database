@@ -463,14 +463,20 @@ The ratio splicing process:
 * Output
 use `temp_master', clear
 
+
+* Sort the output
+sort ISO3 year
+
 * Save only when the option save is not specified
 if "`save'" == "" {
 	save "$data_final/chainlinked_`varname'", replace
 }
 
 else {
-	drop chainlinking_ratio source_change source
+	drop chainlinking_ratio source* 
 }
+
+
 
 
 end

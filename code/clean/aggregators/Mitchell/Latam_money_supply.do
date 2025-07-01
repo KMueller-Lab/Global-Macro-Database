@@ -290,8 +290,8 @@ replace M1 = M1 / 1000 if countryname == "Uruguay"
 replace M1 = M1 / 1000 if countryname == "Uruguay" & year <= 1979
 replace M1 = M1 / 1000 if countryname == "Uruguay" & year <= 1964
 
-replace M2 = M2 * (10^-14) if countryname == "Venezuela"
-replace M1 = M1 * (10^-14) if countryname == "Venezuela"
+replace M2 = M2 * (10^-8) if countryname == "Venezuela"
+replace M1 = M1 * (10^-8) if countryname == "Venezuela"
 
 *===============================================================================
 * 			Final set up

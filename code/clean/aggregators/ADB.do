@@ -229,6 +229,24 @@ gen ADB_imports_GDP = (ADB_imports / ADB_nGDP) * 100
 gen ADB_exports_GDP = (ADB_exports / ADB_nGDP) * 100
 gen ADB_inv_GDP     = (ADB_inv / ADB_nGDP) * 100
 
+* Add the deflator
+gen ADB_deflator = (ADB_nGDP / ADB_rGDP) * 100
+
+* Rebase the GDP to 2010
+* Loop over all countries
+qui levelsof ISO3, local(countries) clean
+foreach country of local countries {
+	
+	* Rebase to 2010
+	qui gen  temp = ADB_deflator if year == 2010 & ISO3 == "`country'"
+	qui egen defl_2010 = max(temp) if ISO3 == "`country'"
+	qui replace ADB_rGDP = (ADB_rGDP * defl_2010) / 100 if ISO3 == "`country'"
+	qui drop temp defl_2010	
+}
+
+* Update the deflator
+replace ADB_deflator = (ADB_nGDP / ADB_rGDP) * 100
+
 * ===============================================================================
 * 	Output
 * ===============================================================================

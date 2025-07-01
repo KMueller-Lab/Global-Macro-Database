@@ -1,0 +1,664 @@
+\begin{thebibliography}{100}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abildgren(2017)]{CS1_DNK}
+K.~Abildgren.
+\newblock \emph{A Chart \& Data Book on the Monetary and Financial History of
+  Denmark}.
+\newblock 2017.
+\newblock URL
+  \url{https://sites.google.com/view/kim-abildgren/historical-statistics}.
+\newblock Accessed: 2024-06-24.
+
+\bibitem[{African Economic History Network}(2024)]{CS1_LBR}
+{African Economic History Network}.
+\newblock Aehn data \& research, 2024.
+\newblock URL \url{https://www.aehnetwork.org/data-research/}.
+
+\bibitem[{African Union}(2024)]{AFRISTAT}
+{African Union}.
+\newblock {AFRISTAT: The Economic and Statistical Observatory for Sub-Saharan
+  Africa}, 2024.
+\newblock URL \url{https://www.afristat.org/}.
+\newblock Accessed: 2024-07-20.
+
+\bibitem[Albers et~al.(2023)Albers, Jerven, and Suesse]{JERVEN}
+Thilo~N.H. Albers, Morten Jerven, and Marvin Suesse.
+\newblock The fiscal state in africa: Evidence from a century of growth.
+\newblock \emph{International Organization}, 77\penalty0 (1):\penalty0 65--101,
+  2023.
+\newblock \doi{10.1017/S0020818322000285}.
+
+\bibitem[{Arab Monetary Fund}(2024)]{AMF}
+{Arab Monetary Fund}.
+\newblock {Arab Economic Database}, 2024.
+\newblock URL \url{https://www.amf.org.ae/ar}.
+\newblock Accessed: 2024-07-10.
+
+\bibitem[{Asian Development Bank}(2024)]{ADB}
+{Asian Development Bank}.
+\newblock {Key Indicators Database (KIDB)}, 2024.
+\newblock URL \url{https://kidb.adb.org}.
+
+\bibitem[Baffigi(2013)]{CS1_ITA}
+Alberto Baffigi.
+\newblock National accounts, 1861-2011.
+\newblock In Gianni Toniolo, editor, \emph{The Oxford Handbook of the Italian
+  Economy Since Unification}, chapter~2, pages 157--186. Oxford University
+  Press, Oxford, 2013.
+\newblock \doi{10.1093/oxfordhb/9780199936694.001.0001}.
+\newblock URL
+  \url{https://www.bancaditalia.it/pubblicazioni/quaderni-storia/2011-0018/index.html}.
+\newblock Dataset: La contabilità nazionale dell'Italia, 1861-2011. Accessed:
+  2024-07-04.
+
+\bibitem[{Banca d'Italia}(2024)]{BIT}
+{Banca d'Italia}.
+\newblock Historical exchange rates database, 2024.
+\newblock URL
+  \url{https://tassidicambio.bancaditalia.it/terzevalute-wf-ui-web/converter}.
+\newblock Accessed: 2024-01-16.
+
+\bibitem[{Banco de España}(2021)]{CS2_ESP}
+{Banco de España}.
+\newblock Catálogo de series históricas seleccionadas, 2021.
+\newblock URL \url{https://repositorio.bde.es/handle/123456789/15655}.
+\newblock [dataset].
+
+\bibitem[Bank(2024)]{AFDB}
+African~Development Bank.
+\newblock Afdb socio economic database, 2024.
+\newblock Accessed: 2024-07-20.
+
+\bibitem[{Bank Al-Maghrib}()]{CS1_MAR}
+{Bank Al-Maghrib}.
+\newblock Séries statistiques monétaires.
+\newblock URL
+  \url{https://www.bkam.ma/Statistiques/Statistiques-monetaires/Series-statistiques-monetaires}.
+
+\bibitem[{{Bank for International Settlements}}(2024)]{BIS}
+{{Bank for International Settlements}}, 2024.
+\newblock URL \url{https://data.bis.org/topics/}.
+
+\bibitem[{Bank of Algeria}(2024)]{CS1_DZA}
+{Bank of Algeria}.
+\newblock {Monetary Indicators}, 2024.
+\newblock URL \url{https://www.bank-of-algeria.dz/situation-monetaire}.
+
+\bibitem[{Bank of Canada}(2024)]{CS2_CAN}
+{Bank of Canada}.
+\newblock Staff economic projections, 2024.
+
+\bibitem[{Bank of Japan}(2024)]{CS1_JPN}
+{Bank of Japan}.
+\newblock {Historical Statistics}, 2024.
+\newblock URL \url{https://www.imes.boj.or.jp/en/historical/hstat/hstat.html}.
+
+\bibitem[{Banque centrale des \'{E}tats de l'Afrique de l'Ouest}(2024)]{BCEAO}
+{Banque centrale des \'{E}tats de l'Afrique de l'Ouest}.
+\newblock {Banque centrale des \'{E}tats de l'Afrique de l'Ouest}, 2024.
+\newblock URL \url{https://www.bceao.int/}.
+\newblock Accessed: 2024-07-15.
+
+\bibitem[{Banque de France}(2024{\natexlab{a}})]{CS1_FRA}
+{Banque de France}.
+\newblock Le portail statistique de la banque de france, 2024{\natexlab{a}}.
+\newblock URL \url{https://webstat.banque-france.fr/}.
+\newblock Accessed: 2024-07-23.
+
+\bibitem[{Banque de France}(2024{\natexlab{b}})]{FRANC_ZONE}
+{Banque de France}.
+\newblock Statistics on zone franc member countries, 2024{\natexlab{b}}.
+
+\bibitem[Barro and Redlick(2011)]{BARRO}
+R.~J. Barro and C.~J. Redlick.
+\newblock Macroeconomic effects from government purchases and taxes.
+\newblock \emph{The Quarterly Journal of Economics}, 126\penalty0 (1):\penalty0
+  51--102, 2011.
+\newblock URL \url{https://scholar.harvard.edu/barro/data_sets}.
+\newblock Accessed: 2024-05-04.
+
+\bibitem[Bolt et~al.(2018)Bolt, Inklaar, de~Jong, and van Zanden]{MAD}
+Jutta Bolt, Robert Inklaar, Herman de~Jong, and Jan~Luiten van Zanden.
+\newblock Rebasing 'maddison': New income comparisons and the shape of long-run
+  economic development.
+\newblock Maddison Project Working Paper~10, Maddison Project, 2018.
+\newblock URL
+  \url{https://www.rug.nl/ggdc/historicaldevelopment/maddison/releases/maddison-project-database-2018?lang=en}.
+\newblock Accessed: 2024-04-04.
+
+\bibitem[Bordo et~al.(2001)Bordo, Eichengreen, Klingebiel, and
+  Martinez-Peria]{BORDO}
+M.~Bordo, B.~Eichengreen, D.~Klingebiel, and M.~S. Martinez-Peria.
+\newblock Is the crisis problem growing more severe?
+\newblock \emph{Economic Policy}, 16\penalty0 (32):\penalty0 52--82, 2001.
+\newblock URL \url{https://rucore.libraries.rutgers.edu/rutgers-lib/41466/}.
+
+\bibitem[Broadberry and Gardner(2022)]{BG}
+Stephen Broadberry and Leigh Gardner.
+\newblock Economic growth in sub-saharan africa, 1885-2008: Evidence from eight
+  countries.
+\newblock \emph{Explorations in Economic History}, 83, 2022.
+
+\bibitem[Bértola and Rey(2018)]{MOXLAD}
+Luis Bértola and María Rey.
+\newblock The montevideo-oxford latin american economic history database
+  (moxlad): Origins, contents and sources.
+\newblock \emph{Economic History of Developing Regions}, 33\penalty0
+  (3):\penalty0 209--224, 2018.
+\newblock \doi{10.1080/20780389.2018.1532286}.
+\newblock URL \url{https://doi.org/10.1080/20780389.2018.1532286}.
+
+\bibitem[Carter et~al.(2006)Carter, Gartner, Haines, Olmstead, Sutch, Wright,
+  et~al.]{CS2_USA}
+Susan~B Carter, Scott~Sigmund Gartner, Michael~R Haines, Alan~L Olmstead,
+  Richard Sutch, Gavin Wright, et~al.
+\newblock \emph{Historical Statistics of the United States: Millennial
+  Edition}, volume~3.
+\newblock Cambridge University Press New York, 2006.
+
+\bibitem[Cha et~al.(2022{\natexlab{a}})Cha, Kim, Park, and Park]{CS1_KOR}
+M.~S. Cha, N.~N. Kim, K.~J. Park, and Y.~Park, editors.
+\newblock \emph{Historical Statistics of Korea}.
+\newblock Springer, 2022{\natexlab{a}}.
+\newblock URL
+  \url{https://d-infra.ier.hit-u.ac.jp/English/ltes/a000-asia-long-kr.html}.
+\newblock Accessed: 2024-05-13.
+
+\bibitem[Cha et~al.(2022{\natexlab{b}})Cha, Kim, Park, and Park]{CS2_KOR}
+Myung~Soo Cha, Nak~Nyeon Kim, Ki-Joo Park, and Yitaek Park.
+\newblock \emph{Historical statistics of Korea}.
+\newblock Springer, 2022{\natexlab{b}}.
+
+\bibitem[Commission(2024)]{EUS}
+European Commission.
+\newblock Eurostat data explorer, 2024.
+\newblock URL
+  \url{https://ec.europa.eu/eurostat/databrowser/explore/all/all_themes}.
+\newblock Accessed: 2024-04-23.
+
+\bibitem[Cox and Dincecco(2021)]{MD}
+Gary~W Cox and Mark Dincecco.
+\newblock The budgetary origins of fiscal-military prowess.
+\newblock \emph{The Journal of Politics}, 83\penalty0 (3):\penalty0 851--866,
+  2021.
+\newblock URL
+  \url{https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/EVCSCQ}.
+
+\bibitem[Darvas(2021)]{BRUEGEL}
+Zsolt Darvas.
+\newblock Timely measurement of real effective exchange rates.
+\newblock Working Paper 2021/15, Bruegel, 2021.
+\newblock URL \url{https://www.bruegel.org/}.
+
+\bibitem[de~Pesquisa Econômica~Aplicada(2024)]{CS1_BRA}
+Instituto de~Pesquisa Econômica~Aplicada.
+\newblock Ipea data, 2024.
+\newblock URL \url{http://www.ipeadata.gov.br}.
+\newblock Accessed on: October 8, 2024.
+
+\bibitem[{Economic Commission for Latin America and the
+  Caribbean}(2024)]{CEPAC}
+{Economic Commission for Latin America and the Caribbean}.
+\newblock Economic commission for latin america and the caribbean, 2024.
+\newblock URL \url{https://www.cepal.org/en}.
+\newblock Accessed: 2024-06-18.
+
+\bibitem[Ellison et~al.(2024)Ellison, Lee, and O'Rourke]{IHD}
+Martin Ellison, Sang~Seok Lee, and Kevin~Hjortshøj O'Rourke.
+\newblock {The Ends of 27 Big Depressions}.
+\newblock \emph{American Economic Review}, 114\penalty0 (1):\penalty0 134--168,
+  January 2024.
+\newblock \doi{10.1257/aer.20221479}.
+\newblock URL
+  \url{https://ideas.repec.org/a/aea/aecrev/v114y2024i1p134-68.html}.
+
+\bibitem[{{European Commission}}(2024)]{AMECO}
+{{European Commission}}.
+\newblock {{AMECO Database}}, 2024.
+\newblock URL
+  \url{https://economy-finance.ec.europa.eu/economic-research-and-databases/economic-databases/ameco-database_en}.
+
+\bibitem[{FAO}(2024)]{FAO}
+{FAO}.
+\newblock Faostat: Gdp data.
+\newblock \url{https://www.fao.org/faostat/}, 2024.
+\newblock URL \url{https://www.fao.org/faostat/}.
+\newblock Accessed on 29 December 2024.
+
+\bibitem[{Federal Reserve Bank of St. Louis}(2024)]{CS1_USA}
+{Federal Reserve Bank of St. Louis}.
+\newblock {Federal Reserve Economic Data}, 2024.
+\newblock URL \url{https://fred.stlouisfed.org/}.
+\newblock Accessed: 2024-05-13.
+
+\bibitem[Federico and Tena-Junguito(2019)]{Tena}
+Giovanni Federico and Antonio Tena-Junguito.
+\newblock World trade, 1800-1938: a new synthesis.
+\newblock \emph{Revista de Historia Econ{\'o}mica-Journal of Iberian and Latin
+  America Economic History}, 37\penalty0 (1), 2019.
+\newblock \doi{10.1017/S0212610918000216}.
+
+\bibitem[Feenstra et~al.(2015)Feenstra, Inklaar, and Timmer]{PWT}
+Robert~C. Feenstra, Robert Inklaar, and Marcel~P. Timmer.
+\newblock The next generation of the penn world table.
+\newblock \emph{American Economic Review}, 105\penalty0 (10):\penalty0
+  3150--3182, 2015.
+\newblock URL \url{https://www.rug.nl/ggdc/productivity/pwt/?lang=en}.
+\newblock Accessed: 2024-04-21.
+
+\bibitem[Ferreres et~al.(2005)]{CS3_ARG}
+Orlando~J Ferreres et~al.
+\newblock Dos siglos de econom{\'\i}a argentina.
+\newblock 2005.
+
+\bibitem[Flandreau and Zumer(2009)]{FZ}
+Marc Flandreau and Frédéric Zumer.
+\newblock \emph{The Making of Global Finance 1880-1913}.
+\newblock 2009.
+\newblock \doi{https://doi.org/10.1787/9789264015364-en}.
+\newblock URL
+  \url{https://www.oecd-ilibrary.org/content/publication/9789264015364-en}.
+\newblock Accessed: 2024-06-24.
+
+\bibitem[Gapminder(2024)]{Gapminder}
+Gapminder.
+\newblock Gapminder: Total population, 2024.
+\newblock URL \url{http://gapm.io/dpop}.
+\newblock Accessed: 2024-08-14.
+
+\bibitem[Grimm(2024)]{Grimm}
+Maximilian Grimm.
+\newblock The effect of monetary policy on systemic bank funding stability.
+\newblock 2024.
+\newblock URL \url{https://maximiliangrimm.com/}.
+
+\bibitem[Grytten(2022)]{CS1_NOR}
+O.~H. Grytten.
+\newblock Revising growth history: New estimates of gdp for norway, 1816-2019.
+\newblock \emph{The Economic History Review}, 75\penalty0 (1):\penalty0
+  181--202, 2022.
+\newblock URL \url{https://onlinelibrary.wiley.com/doi/ftr/10.1111/ehr.13085}.
+\newblock Accessed: 2024-04-21.
+
+\bibitem[Ha et~al.(2023)Ha, Kose, and Ohnsorge]{WB_CC}
+Jongrim Ha, M.~Ayhan Kose, and Franziska Ohnsorge.
+\newblock One-stop source: A global database of inflation.
+\newblock \emph{Journal of International Money and Finance}, 137:\penalty0
+  102896, October 2023.
+
+\bibitem[Homer and Sylla(1996)]{Homer_Sylla}
+S.~Homer and R.E. Sylla.
+\newblock \emph{A History of Interest Rates}.
+\newblock Rutgers University Press, 1996.
+\newblock ISBN 9780813522883.
+\newblock URL \url{https://books.google.com.sg/books?id=w3hmC17-em4C}.
+
+\bibitem[HSSO(2012)]{CS2_CHE}
+HSSO.
+\newblock Historical statistics of switzerland, 2012.
+\newblock URL \url{https://hsso.ch}.
+\newblock Accessed on: October 2, 2024.
+
+\bibitem[Hutchinson and Ploeckl(2024)]{CS1_AUS}
+Diane Hutchinson and Florian Ploeckl.
+\newblock What was the australian gdp or cpi then?, 2024.
+\newblock URL \url{https://www.measuringworth.com/datasets/australiadata/}.
+\newblock Accessed: 2024-04-21.
+
+\bibitem[Iceland(1997)]{CS2_ISL}
+Statistics Iceland.
+\newblock \emph{Hagskinna—Icelandic Historical Statistics from the 17th
+  Century to 1990}.
+\newblock Hagstofa Íslands, Reykjavík, 1997.
+\newblock URL \url{https://baekur.is/bok/8f318e69-dc49-4a9f-a8ec-805b2352bad0}.
+\newblock Accessed: 2024-07-08.
+
+\bibitem[{Institute of Economic Research, Hitotsubashi
+  University}(2008)]{AHSTAT}
+{Institute of Economic Research, Hitotsubashi University}.
+\newblock {Asian Historical Statistics: Basic Data for Asian Economic History},
+  2008.
+\newblock URL \url{http://www.ier.hit-u.ac.jp/English/database/db.html}.
+
+\bibitem[{Instituto Nacional de Estatística}(2001)]{CS1_PRT}
+{Instituto Nacional de Estatística}.
+\newblock \emph{Portuguese Historical Statistics}.
+\newblock INE, Lisboa, 2001.
+\newblock ISBN 972-673-477-0 and 972-673-478-9.
+\newblock URL \url{https://www.ine.pt/xurl/pub/138364}.
+
+\bibitem[{International Institute of Social History}(2024)]{CLIO}
+{International Institute of Social History}.
+\newblock Clio infra: Repository of global inequality data, 2024.
+\newblock URL \url{https://clio-infra.eu}.
+\newblock Accessed: 2024-01-16.
+
+\bibitem[{International Labour Organization}(2024)]{ILO}
+{International Labour Organization}.
+\newblock Unemployment rate - {ILO} modelled estimates, 2024.
+\newblock URL \url{https://ilostat.ilo.org/data}.
+\newblock ILOSTAT database, accessed: 2024-01-07.
+
+\bibitem[{International Monetary Fund}(2010)]{IMF_HDD}
+{International Monetary Fund}.
+\newblock {A Historical Public Debt Database}.
+\newblock IMF Working Papers 2010/245, International Monetary Fund, Nov 2010.
+\newblock URL \url{https://ideas.repec.org/p/imf/imfwpa/2010-245.html}.
+
+\bibitem[{International Monetary Fund}(2024{\natexlab{a}})]{IMF_GFS}
+{International Monetary Fund}.
+\newblock Government finance statistics, 2024{\natexlab{a}}.
+\newblock URL
+  \url{https://data.imf.org/?sk=a0867067-d23c-4ebc-ad23-d3b015045405}.
+
+\bibitem[{International Monetary Fund}(2024{\natexlab{b}})]{IMF_IFS}
+{International Monetary Fund}.
+\newblock International financial statistics, 2024{\natexlab{b}}.
+\newblock URL \url{https://data.imf.org/}.
+
+\bibitem[{International Monetary Fund}(2024{\natexlab{c}})]{IMF_MFS}
+{International Monetary Fund}.
+\newblock {Monetary and Financial Statistics}, 2024{\natexlab{c}}.
+
+\bibitem[Jones and Obstfeld(1997)]{JO}
+M.~T. Jones and M.~Obstfeld.
+\newblock Saving, investment, and gold, 1997.
+\newblock URL
+  \url{https://www.nber.org/research/data/jones-obstfeld-saving-investment-and-gold-data-13-countries}.
+\newblock Accessed: 2024-06-07.
+
+\bibitem[Jord{\`a} et~al.(2017)Jord{\`a}, Schularick, and Taylor]{JST}
+{\`O}scar Jord{\`a}, Moritz Schularick, and Alan~M Taylor.
+\newblock Macrofinancial history and the new business cycle facts.
+\newblock \emph{NBER macroeconomics annual}, 31\penalty0 (1):\penalty0
+  213--263, 2017.
+
+\bibitem[Krantz()]{CS1_SWE}
+Olle Krantz.
+\newblock Swedish historical national accounts 1300-2020.
+\newblock URL
+  \url{https://www.lusem.lu.se/economic-history/databases/economic-history-data/swedish-historical-national-accounts}.
+\newblock Accessed: 2024-04-21.
+
+\bibitem[Levy-Garboua and Monnet(2016)]{CS2_FRA}
+Vivien Levy-Garboua and Eric Monnet.
+\newblock Les taux d'intérêts en france: Une perspective historique.
+\newblock \emph{Revue d'économie financière}, 1\penalty0 (121):\penalty0
+  35--58, 2016.
+
+\bibitem[Ljungberg(2019)]{LUND}
+Jonas Ljungberg.
+\newblock Nominal and real effective exchange rates for europe, 1870-2016: Some
+  methodological issues.
+\newblock 2019.
+
+\bibitem[Mack and Martínez-García(2011)]{DALLASFED}
+A.~Mack and E.~Martínez-García.
+\newblock A cross-country quarterly database of real house prices: A
+  methodological note.
+\newblock Globalization and Monetary Policy Institute Working Paper~99, Federal
+  Reserve Bank of Dallas, 2011.
+\newblock URL
+  \url{https://www.dallasfed.org/research/international/houseprice}.
+\newblock Accessed: 2024-04-21.
+
+\bibitem[Mauro et~al.(2015)Mauro, Romeu, Binder, and Zaman]{IMF_FPP}
+Paolo Mauro, Rafael Romeu, Ariel Binder, and Asad Zaman.
+\newblock {A modern history of fiscal prudence and profligacy}.
+\newblock \emph{Journal of Monetary Economics}, 76\penalty0 (C):\penalty0
+  55--70, 2015.
+\newblock \doi{10.1016/j.jmoneco.2015.07}.
+\newblock URL \url{https://ideas.repec.org/a/eee/moneco/v76y2015icp55-70.html}.
+
+\bibitem[Mbaye et~al.(2018)Mbaye, Moreno-Badia, and Chae]{IMF_GDD}
+S.~Mbaye, M.~Moreno-Badia, and K.~Chae.
+\newblock {Global Debt Database: Methodology and Sources}.
+\newblock IMF Working Papers 2018/111, International Monetary Fund, May 2018.
+\newblock URL \url{https://ideas.repec.org/p/imf/imfwpa/2018-111.html}.
+
+\bibitem[{Ministerio de Economía de la República Argentina}(2024)]{CS2_ARG}
+{Ministerio de Economía de la República Argentina}.
+\newblock Información económica al día - apéndice 8, 2024.
+\newblock URL
+  \url{https://www.economia.gob.ar/download/infoeco/apendice8.xlsx}.
+\newblock Accessed: 2024-01-16.
+
+\bibitem[Mitchell(2013)]{Mitchell}
+Brian Mitchell.
+\newblock \emph{International Historical Statistics}.
+\newblock International Historical Statistics. Palgrave Macmillan London, 1
+  edition, 2013.
+\newblock ISBN 978-1-137-30568-8.
+\newblock \doi{10.1057/978-1-137-30568-8}.
+\newblock URL \url{https://doi.org/10.1057/978-1-137-30568-8}.
+
+\bibitem[Müller et~al.(2025)Müller, Xu, Lehbib, and Chen]{GMD_estimated}
+Karsten Müller, Chenzi Xu, Mohamed Lehbib, and Ziliang Chen.
+\newblock {The Global Macro Database: A New International Macroeconomic
+  Dataset}.
+\newblock Working Paper 33714, National Bureau of Economic Research, April
+  2025.
+\newblock URL \url{http://www.nber.org/papers/w33714}.
+
+\bibitem[{National Bank of Serbia}(2024)]{NBS}
+{National Bank of Serbia}.
+\newblock South-eastern european monetary and economic statistics from the 19th
+  century to world war ii, 2024.
+\newblock URL
+  \url{https://www.nbs.rs/en/drugi-nivo-navigacije/publikacije-i-istrazivanja/seemhn/seemhn-dctf/}.
+\newblock Accessed: 2024-06-24.
+
+\bibitem[{National Bureau of Statistics of China}(2024)]{CS1_CHN}
+{National Bureau of Statistics of China}.
+\newblock Statistical data, 2024.
+
+\bibitem[{Norges Bank}()]{CS2_NOR}
+{Norges Bank}.
+\newblock Historical monetary statistics for norway.
+\newblock URL
+  \url{https://www.norges-bank.no/en/topics/Statistics/Historical-monetary-statistics/}.
+\newblock Accessed: 2024-07-08.
+
+\bibitem[{OECD}(2024{\natexlab{a}})]{OECD_KEI}
+{OECD}.
+\newblock Oecd key economic indicators data, 2024{\natexlab{a}}.
+\newblock URL
+  \url{https://www.oecd-ilibrary.org/economics/data/main-economic-indicators/key-short-term-indicators_data-00039-en}.
+\newblock Accessed on 2024-07-10.
+
+\bibitem[{OECD}(2024{\natexlab{b}})]{OECD_MEI}
+{OECD}.
+\newblock Oecd main economic indicators data, 2024{\natexlab{b}}.
+\newblock URL
+  \url{https://web-archive.oecd.org/temp/2023-09-05/76384-oecdmaineconomicindicatorsmei.htm}.
+\newblock Accessed on 2024-07-04.
+
+\bibitem[{OECD}(2024{\natexlab{c}})]{OECD_MEI_ARC}
+{OECD}.
+\newblock Oecd main economic indicators data, 2024{\natexlab{c}}.
+\newblock URL
+  \url{https://web-archive.oecd.org/temp/2023-09-05/76384-oecdmaineconomicindicatorsmei.htm}.
+\newblock Accessed on 2024-07-04.
+
+\bibitem[{OECD}(2024{\natexlab{d}})]{OECD_QNA}
+{OECD}.
+\newblock Oecd quarterly national accounts data, 2024{\natexlab{d}}.
+\newblock URL
+  \url{https://www.oecd-ilibrary.org/economics/data/oecd-national-accounts-statistics/quarterly-national-accounts_data-00017-en}.
+\newblock Accessed on 2024-07-10.
+
+\bibitem[{OECD}(2024{\natexlab{e}})]{OECD_REV}
+{OECD}.
+\newblock Revenue statistics 2024: Health taxes in oecd countries,
+  2024{\natexlab{e}}.
+\newblock URL
+  \url{https://www.oecd.org/en/publications/revenue-statistics-2024_c87a3da5-en.html}.
+\newblock Accessed on 2024-07-10.
+
+\bibitem[{OECD Economic Outlook}(2024)]{OECD_EO}
+{OECD Economic Outlook}.
+\newblock Oecd economic outlook data, 2024.
+\newblock URL
+  \url{https://www.oecd.org/en/topics/sub-issues/economic-outlook.html}.
+\newblock Accessed on 2024-06-05.
+
+\bibitem[Officer and Williamson(2024)]{MW}
+Lawrence~H. Officer and Samuel~H. Williamson.
+\newblock Measures of worth.
+\newblock MeasuringWorth, 2024.
+\newblock URL \url{https://www.measuringworth.com}.
+
+\bibitem[{Organisation for Economic Co-operation and Development}(2024)]{OECD}
+{Organisation for Economic Co-operation and Development}.
+\newblock Oecd house price index, 2024.
+
+\bibitem[Piselli and Vercelli(2023)]{CS2_ITA}
+Paola Piselli and Fabio Vercelli.
+\newblock I titoli pubblici nei bilanci delle banche 1890-2016.
+\newblock Technical report, Banca d’Italia, 2023.
+\newblock Di prossima pubblicazione (forthcoming).
+
+\bibitem[Reinhart and Rogoff(2009)]{RR}
+Carmen~M Reinhart and Kenneth~S Rogoff.
+\newblock The aftermath of financial crises.
+\newblock \emph{American Economic Review}, 99\penalty0 (2):\penalty0 466--472,
+  2009.
+
+\bibitem[Reinhart and Rogoff(2010)]{RR_debt}
+Carmen~M. Reinhart and Kenneth~S. Rogoff.
+\newblock Debt-to-{GDP} ratios dataset, 2010.
+\newblock URL \url{https://carmenreinhart.com/debt-to-gdp-ratios}.
+\newblock Historical debt-to-GDP ratios for 70 countries.
+
+\bibitem[Schmelzing(2019)]{Schmelzing}
+Paul Schmelzing.
+\newblock Eight centuries of global real interest rates, rg, and the
+  ‘suprasecular’decline, 1311--2018.
+\newblock \emph{RG, and the ‘Suprasecular’Decline}, pages 1311--2018, 2019.
+
+\bibitem[Schuler(2015)]{HFS}
+Kurt Schuler.
+\newblock Establishing an international data archive on free banking.
+\newblock Studies in Applied Economics~24, The Johns Hopkins Institute for
+  Applied Economics, Global Health, and the Study of Business Enterprise, 2015.
+\newblock URL \url{https://EconPapers.repec.org/RePEc:ris:jhisae:0024}.
+
+\bibitem[Schulze(2000)]{CS1_AUT}
+Max-Stephan Schulze.
+\newblock Patterns of growth and stagnation in the late nineteenth century
+  habsburg economy.
+\newblock \emph{European Review of Economic History}, 4\penalty0 (3):\penalty0
+  311--340, 2000.
+\newblock URL \url{https://doi.org/10.1017/S1361491600000095}.
+\newblock Accessed: 2024-04-21.
+
+\bibitem[Smits et~al.(2009)Smits, Woltjer, and Ma]{GNA}
+J.P. Smits, P.J. Woltjer, and D.~Ma.
+\newblock A dataset on comparative historical national accounts, ca. 1870-1950:
+  A time-series perspective.
+\newblock Research Memorandum GD-107, Groningen Growth and Development Centre,
+  Groningen: University of Groningen, 2009.
+\newblock URL \url{https://www.rug.nl/ggdc/historicaldevelopment/na/}.
+\newblock Accessed: 2024-06-28.
+
+\bibitem[{South African Reserve Bank}(2024)]{CS1_ZAF}
+{South African Reserve Bank}.
+\newblock Statistics, 2024.
+\newblock URL \url{https://www.resbank.co.za/en/home/what-we-do/statistics}.
+\newblock Accessed: 2024-01-07.
+
+\bibitem[{Statistics Canada}()]{CS1_CAN}
+{Statistics Canada}.
+\newblock Historical statistics of canada: Section f: Gross national product,
+  the capital stock, and productivity.
+\newblock URL
+  \url{https://www150.statcan.gc.ca/n1/pub/11-516-x/sectionf/4057751-eng.htm}.
+\newblock In Historical Statistics of Canada. Accessed October 02, 2024.
+
+\bibitem[{Statistics Iceland}(1997)]{CS1_ISL}
+{Statistics Iceland}.
+\newblock Iceland historical statistics, 1997.
+\newblock URL
+  \url{https://www.statice.is/publications/publication-detail?id=54438}.
+\newblock Statistics of Iceland III, Vol 82, ISSN: 1670-4770.
+
+\bibitem[{Statistics Poland}(2024)]{CS1_POL}
+{Statistics Poland}.
+\newblock Statistical data, 2024.
+
+\bibitem[{Swiss National Bank}(2024)]{CS1_CHE}
+{Swiss National Bank}.
+\newblock Swiss national bank historical time series, 2024.
+\newblock URL
+  \url{https://www.snb.ch/en/the-snb/mandates-goals/statistics/statistics-pub/publication-history/historical-time-series}.
+\newblock Accessed: 2024-06-26.
+
+\bibitem[{Taiwan Statistical Office}(2025)]{CS2_TWN}
+{Taiwan Statistical Office}.
+\newblock {Macroeconomic Data}.
+\newblock \url{https://eng.stat.gov.tw/Default.aspx}, 2025.
+
+\bibitem[Thomas and Dimsdale(2017)]{CS1_GBR}
+R~Thomas and N~Dimsdale.
+\newblock A millennium of uk data, 2017.
+\newblock URL
+  \url{https://www.bankofengland.co.uk/statistics/research-datasets}.
+\newblock Accessed: 2024-06-18.
+
+\bibitem[{United Nations}(2024)]{UN}
+{United Nations}.
+\newblock World population prospects 2024, online edition, 2024.
+\newblock URL \url{https://population.un.org/wpp/}.
+\newblock Accessed: 2024-02-02.
+
+\bibitem[{United Nations Statistics Division}(2025)]{UN_trade}
+{United Nations Statistics Division}.
+\newblock {UN Comtrade: Historical Trade Statistics 1900-1960}.
+\newblock \url{https://unstats.un.org/unsd/trade/data/tables.asp}, 2025.
+
+\bibitem[{University of California – Davis}(2024{\natexlab{a}})]{Davis}
+{University of California – Davis}.
+\newblock Nominal gdp historical series, 2024{\natexlab{a}}.
+\newblock URL \url{https://gpih.ucdavis.edu/GDP.htm}.
+
+\bibitem[{University of California – Davis}(2024{\natexlab{b}})]{FLORA}
+{University of California – Davis}.
+\newblock Government budget historical series, 2024{\natexlab{b}}.
+\newblock URL \url{https://gpih.ucdavis.edu/Government.htm}.
+
+\bibitem[Vamplew(1987)]{CS2_AUS}
+Wray Vamplew.
+\newblock \emph{Australians: Historical Statistics}, volume~10.
+\newblock Fairfax, Syme \& Weldon Associates, Broadway, N.S.W., Australia,
+  1987.
+
+\bibitem[{WEO}(2024{\natexlab{a}})]{IMF_WEO}
+{WEO}.
+\newblock World economic outlook database, 2024{\natexlab{a}}.
+\newblock URL \url{https://www.imf.org/en/Publications/WEO}.
+\newblock Accessed: 2024-08-05.
+
+\bibitem[{WEO}(2024{\natexlab{b}})]{IMF_WEO_forecast}
+{WEO}.
+\newblock World economic outlook database, 2024{\natexlab{b}}.
+\newblock URL \url{https://www.imf.org/en/Publications/WEO}.
+\newblock Accessed: 2024-08-05.
+
+\bibitem[{World Bank}(2024)]{WDI}
+{World Bank}.
+\newblock World development indicators, 2024.
+\newblock URL \url{https://data.worldbank.org/indicator}.
+\newblock Accessed: 2024-04-21.
+
+\bibitem[{World Bank (Archives)}(1999)]{WDI_ARC}
+{World Bank (Archives)}.
+\newblock World development indicators, 1999.
+\newblock URL \url{https://data.worldbank.org/indicator}.
+\newblock Accessed: 2024-07-21.
+
+\end{thebibliography}

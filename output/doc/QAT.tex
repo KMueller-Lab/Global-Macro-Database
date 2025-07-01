@@ -1,0 +1,953 @@
+\documentclass[12pt,a4paper,landscape]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[margin=0.5in, top=0.5in, headsep=0.1in]{geometry}
+\usepackage{caption}
+\usepackage{float}
+\usepackage[authoryear,round]{natbib}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{rotating}
+\usepackage{tabularx}
+\usepackage{pdflscape}
+\usepackage{adjustbox}
+\usepackage{times}
+\usepackage{array}
+\usepackage{fancyhdr}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+% Setup fancy headers
+\fancypagestyle{mainStyle}{%
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0pt}
+    \fancyhead[R]{\footnotesize\hyperref[toc]{Back to Contents}}
+}
+
+\pagestyle{mainStyle}
+
+\newcommand{\countryheader}[2]{\large\bfseries\hyperref[#1]{#2}}
+\captionsetup[table]{labelformat=empty}
+\definecolor{lightgray}{gray}{0.85}
+
+\begin{document}
+\title{\Large Country Data and Graphs for Qatar}
+\date{June 30, 2025}
+\maketitle
+\thispagestyle{empty}
+
+\clearpage
+\setcounter{page}{1}
+\hypersetup{colorlinks=true,linkcolor=blue,linktoc=all}
+\phantomsection
+\label{toc}
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+\phantomsection
+\addcontentsline{toc}{section}{Data availability heatmap}
+\begin{center}
+{\Large\bfseries Data availability heatmap}
+\end{center}
+\vspace{1cm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{graphs/QAT_heatmap.pdf}
+\end{figure}
+\setcounter{page}{3}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Current account balance}
+\begin{center}
+{\Large\bfseries Current account balance}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{IMF_WEO}& 1980 - 2010 &Spliced using overlapping data in 2011. \\
+\rowcolor{lightgray}\cite{WDI}& 2011 - 2012 &Spliced using overlapping data in 2013. \\
+\rowcolor{white}\cite{AMF}& 2013 - 2021 &Baseline source, overlaps with base year 2018. \\
+\rowcolor{lightgray}\cite{WDI}& 2022 - 2023 &Spliced using overlapping data in 2024. \\
+\rowcolor{white}\cite{IMF_WEO_forecast}& 2024 - 2029 &Spliced using overlapping data in 2030. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_CA_GDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Consumer price index}
+\begin{center}
+{\Large\bfseries Consumer price index}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{WB_CC}& 1970 - 1978 &Spliced using overlapping data in 1979: (ratio = 7.4\%). \\
+\rowcolor{lightgray}\cite{WDI}& 1979 - 2024 &Baseline source, overlaps with base year 2018. \\
+\rowcolor{white}\cite{IMF_WEO_forecast}& 2025 - 2029 &Spliced using overlapping data in 2030: (ratio = 116.7\%). \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_CPI.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Money supply (M0)}
+\begin{center}
+{\Large\bfseries Money supply (M0)}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{IMF_MFS}& 1966 - 2008 &Spliced using overlapping data in 2009. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_M0.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Money supply (M1)}
+\begin{center}
+{\Large\bfseries Money supply (M1)}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{IMF_MFS}& 1966 - 2008 &Spliced using overlapping data in 2009. \\
+\rowcolor{lightgray}\cite{Mitchell}& 2009 - 2010 &Spliced using overlapping data in 2011. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_M1.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Money supply (M2)}
+\begin{center}
+{\Large\bfseries Money supply (M2)}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{IMF_MFS}& 1966 - 2008 &Spliced using overlapping data in 2009. \\
+\rowcolor{lightgray}\cite{Mitchell}& 2009 - 2010 &Spliced using overlapping data in 2011. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_M2.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Real effective exchange rate}
+\begin{center}
+{\Large\bfseries Real effective exchange rate}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{BRUEGEL}& 1979 - 2023 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_REER.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{USD exchange rate}
+\begin{center}
+{\Large\bfseries USD exchange rate}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{BIS}& 1966 - 2024 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_USDfx.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Central bank policy rate}
+\begin{center}
+{\Large\bfseries Central bank policy rate}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{Grimm}& 2002 - 2002 &Spliced using overlapping data in 2003. \\
+\rowcolor{lightgray}\cite{IMF_MFS}& 2003 - 2008 &Spliced using overlapping data in 2009. \\
+\rowcolor{white}\cite{Grimm}& 2009 - 2023 &Baseline source, overlaps with base year 2018. \\
+\rowcolor{lightgray}\cite{IMF_IFS}& 2024 - 2024 &Spliced using overlapping data in 2025. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_cbrate.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Total consumption}
+\begin{center}
+{\Large\bfseries Total consumption}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{UN}& 1970 - 1993 &Spliced using overlapping data in 1994. \\
+\rowcolor{lightgray}\cite{WDI}& 1994 - 2022 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_cons.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Total consumption to GDP ratio}
+\begin{center}
+{\Large\bfseries Total consumption to GDP ratio}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{UN}& 1970 - 1991 &Spliced using overlapping data in 1992. \\
+\rowcolor{lightgray}\cite{IMF_IFS}& 1992 - 1993 &Spliced using overlapping data in 1994. \\
+\rowcolor{white}\cite{WDI}& 1994 - 2022 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_cons_GDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Exports}
+\begin{center}
+{\Large\bfseries Exports}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{Mitchell}& 1969 - 1969 &Spliced using overlapping data in 1970: (ratio = 147.1\%). \\
+\rowcolor{lightgray}\cite{UN}& 1970 - 1993 &Spliced using overlapping data in 1994. \\
+\rowcolor{white}\cite{WDI}& 1994 - 2022 &Baseline source, overlaps with base year 2018. \\
+\rowcolor{lightgray}\cite{IMF_WEO_forecast}& 2023 - 2029 &Spliced using overlapping data in 2030: (ratio = .\%). \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_exports.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Exports to GDP ratio}
+\begin{center}
+{\Large\bfseries Exports to GDP ratio}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{UN}& 1970 - 2020 &Baseline source, overlaps with base year 2018. \\
+\rowcolor{lightgray}\cite{WDI}& 2021 - 2022 &Spliced using overlapping data in 2023: (ratio = 98.6\%). \\
+\rowcolor{white}\cite{IMF_WEO_forecast}& 2023 - 2029 &Spliced using overlapping data in 2030: (ratio = .\%). \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_exports_GDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Fixed investment}
+\begin{center}
+{\Large\bfseries Fixed investment}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{UN}& 1970 - 2020 &Baseline source, overlaps with base year 2018. \\
+\rowcolor{lightgray}\cite{FAO}& 2021 - 2023 &Spliced using overlapping data in 2024. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_finv.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Fixed investment to GDP ratio}
+\begin{center}
+{\Large\bfseries Fixed investment to GDP ratio}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{UN}& 1970 - 2020 &Baseline source, overlaps with base year 2018. \\
+\rowcolor{lightgray}\cite{IMF_IFS}& 2021 - 2022 &Spliced using overlapping data in 2023: (ratio = 96.8\%). \\
+\rowcolor{white}\cite{FAO}& 2023 - 2023 &Spliced using overlapping data in 2024: (ratio = 96.8\%). \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_finv_GDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Government debt}
+\begin{center}
+{\Large\bfseries Government debt}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{IMF_GDD}& 1990 - 2018 &Spliced using overlapping data in 2019. Data refers to central government.\\
+\rowcolor{lightgray}\cite{IMF_FPP}& 2019 - 2023 &Spliced using overlapping data in 2024. Data refers to general government.\\
+\rowcolor{white}\cite{IMF_WEO_forecast}& 2024 - 2029 &Spliced using overlapping data in 2030. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_govdebt_GDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Government deficit}
+\begin{center}
+{\Large\bfseries Government deficit}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{IMF_WEO}& 1990 - 2012 &Spliced using overlapping data in 2013. \\
+\rowcolor{lightgray}\cite{AMF}& 2013 - 2020 &Baseline source, overlaps with base year 2018. \\
+\rowcolor{white}\cite{IMF_WEO}& 2021 - 2022 &Spliced using overlapping data in 2023. \\
+\rowcolor{lightgray}\cite{IMF_FPP}& 2023 - 2023 &Spliced using overlapping data in 2024. \\
+\rowcolor{white}\cite{IMF_WEO_forecast}& 2024 - 2029 &Spliced using overlapping data in 2030. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_govdef_GDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Government expenditure}
+\begin{center}
+{\Large\bfseries Government expenditure}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{GMD_estimated}& 1990 - 2029 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_govexp.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Government expenditure to GDP ratio}
+\begin{center}
+{\Large\bfseries Government expenditure to GDP ratio}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{IMF_WEO}& 1990 - 2012 &Spliced using overlapping data in 2013. Data refers to general government.\\
+\rowcolor{lightgray}\cite{AMF}& 2013 - 2020 &Baseline source, overlaps with base year 2018. Data refers to general government.\\
+\rowcolor{white}\cite{IMF_WEO}& 2021 - 2022 &Spliced using overlapping data in 2023. Data refers to general government.\\
+\rowcolor{lightgray}\cite{IMF_FPP}& 2023 - 2023 &Spliced using overlapping data in 2024. Data refers to general government.\\
+\rowcolor{white}\cite{IMF_WEO_forecast}& 2024 - 2029 &Spliced using overlapping data in 2030. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_govexp_GDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Government revenue}
+\begin{center}
+{\Large\bfseries Government revenue}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{GMD_estimated}& 1990 - 2029 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_govrev.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Government revenue to GDP ratio}
+\begin{center}
+{\Large\bfseries Government revenue to GDP ratio}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{IMF_WEO}& 1990 - 2012 &Spliced using overlapping data in 2013. Data refers to general government.\\
+\rowcolor{lightgray}\cite{AMF}& 2013 - 2020 &Baseline source, overlaps with base year 2018. Data refers to general government.\\
+\rowcolor{white}\cite{IMF_WEO}& 2021 - 2022 &Spliced using overlapping data in 2023. Data refers to general government.\\
+\rowcolor{lightgray}\cite{IMF_FPP}& 2023 - 2023 &Spliced using overlapping data in 2024. Data refers to general government.\\
+\rowcolor{white}\cite{IMF_WEO_forecast}& 2024 - 2029 &Spliced using overlapping data in 2030. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_govrev_GDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Government tax revenue}
+\begin{center}
+{\Large\bfseries Government tax revenue}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{AMF}& 2004 - 2012 &Spliced using overlapping data in 2013. \\
+\rowcolor{lightgray}\cite{GMD_estimated}& 2013 - 2020 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_govtax.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Government tax revenue to GDP ratio}
+\begin{center}
+{\Large\bfseries Government tax revenue to GDP ratio}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{AMF}& 2013 - 2020 &Baseline source, overlaps with base year 2018. Data refers to general government.\\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_govtax_GDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Imports}
+\begin{center}
+{\Large\bfseries Imports}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{Mitchell}& 1967 - 1969 &Spliced using overlapping data in 1970: (ratio = 248.2\%). \\
+\rowcolor{lightgray}\cite{UN}& 1970 - 1993 &Spliced using overlapping data in 1994. \\
+\rowcolor{white}\cite{WDI}& 1994 - 2022 &Baseline source, overlaps with base year 2018. \\
+\rowcolor{lightgray}\cite{IMF_WEO_forecast}& 2023 - 2029 &Spliced using overlapping data in 2030: (ratio = .\%). \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_imports.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Imports to GDP ratio}
+\begin{center}
+{\Large\bfseries Imports to GDP ratio}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{UN}& 1970 - 1993 &Spliced using overlapping data in 1994. \\
+\rowcolor{lightgray}\cite{WDI}& 1994 - 2022 &Baseline source, overlaps with base year 2018. \\
+\rowcolor{white}\cite{IMF_WEO_forecast}& 2023 - 2029 &Spliced using overlapping data in 2030: (ratio = .\%). \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_imports_GDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Inflation}
+\begin{center}
+{\Large\bfseries Inflation}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{WB_CC}& 1970 - 2023 &Baseline source, overlaps with base year 2018. \\
+\rowcolor{lightgray}\cite{WDI}& 2024 - 2024 &Spliced using overlapping data in 2025. \\
+\rowcolor{white}\cite{IMF_WEO_forecast}& 2025 - 2029 &Spliced using overlapping data in 2030. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_infl.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Investment}
+\begin{center}
+{\Large\bfseries Investment}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{UN}& 1970 - 1993 &Spliced using overlapping data in 1994. \\
+\rowcolor{lightgray}\cite{WDI}& 1994 - 2022 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_inv.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Investment to GDP ratio}
+\begin{center}
+{\Large\bfseries Investment to GDP ratio}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{UN}& 1970 - 1993 &Spliced using overlapping data in 1994. \\
+\rowcolor{lightgray}\cite{WDI}& 1994 - 2022 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_inv_GDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Nominal GDP}
+\begin{center}
+{\Large\bfseries Nominal GDP}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{IMF_GDD}& 1963 - 1969 &Spliced using overlapping data in 1970: (ratio = 56.5\%). \\
+\rowcolor{lightgray}\cite{WDI}& 1970 - 2023 &Baseline source, overlaps with base year 2018. \\
+\rowcolor{white}\cite{IMF_WEO_forecast}& 2024 - 2029 &Spliced using overlapping data in 2030. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_nGDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Population}
+\begin{center}
+{\Large\bfseries Population}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{Gapminder}& 1800 - 1949 &Spliced using overlapping data in 1950: (ratio = 78.2\%). \\
+\rowcolor{lightgray}\cite{IMF_IFS}& 1950 - 1959 &Spliced using overlapping data in 1960: (ratio = 76\%). \\
+\rowcolor{white}\cite{WDI}& 1960 - 2023 &Baseline source, overlaps with base year 2018. \\
+\rowcolor{lightgray}\cite{Gapminder}& 2024 - 2030 &Spliced using overlapping data in 2031: (ratio = 89.1\%). \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_pop.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Real GDP}
+\begin{center}
+{\Large\bfseries Real GDP}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{MAD}& 1952 - 1969 &Spliced using overlapping data in 1970. \\
+\rowcolor{lightgray}\cite{WDI}& 1970 - 2023 &Baseline source, overlaps with base year 2018. \\
+\rowcolor{white}\cite{IMF_WEO_forecast}& 2024 - 2029 &Spliced using overlapping data in 2030: (ratio = 106.5\%). \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_rGDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Real total consumption}
+\begin{center}
+{\Large\bfseries Real total consumption}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{UN}& 1970 - 2015 &Spliced using overlapping data in 2016. \\
+\rowcolor{lightgray}\cite{WDI}& 2016 - 2020 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_rcons.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Unemployment}
+\begin{center}
+{\Large\bfseries Unemployment}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{ILO}& 2004 - 2022 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/QAT_unemp.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\phantomsection
+\addcontentsline{toc}{section}{References}
+\begin{center}
+{\Large\bfseries References}
+\end{center}
+\small
+\bibliographystyle{qje}
+\bibliography{bib}
+\end{document}

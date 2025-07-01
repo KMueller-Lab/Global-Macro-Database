@@ -58,6 +58,19 @@ gen CA_GDP = (CA / nGDP) * 100
 * Drop redundant variables
 drop CA_USD b_nGDP base_nGDP rGDP_index
 
+* Add the deflator
+gen deflator = (nGDP / rGDP) * 100
+
+* Rebase the GDP to 2010
+qui gen  temp = deflator if year == 2010 
+qui egen defl_2010 = max(temp) 
+qui replace rGDP = (rGDP * defl_2010) / 100 
+qui drop temp defl_2010	
+
+* Update the deflator
+replace deflator = (nGDP / rGDP) * 100
+
+
 * Add ISO3 
 gen ISO3 = "CHN"
 

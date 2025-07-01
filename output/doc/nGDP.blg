@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: nGDP.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: plainnat.bst
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+Database file #1: bib.bib
+Warning--I'm ignoring CS1_ISL's extra "note" field
+--line 1551 of file bib.bib
+Warning--I didn't find a database entry for "CS1_IRL"
+Warning--empty publisher in CS1_DNK
+Warning--empty journal in CS3_ARG
+Warning--empty year in CS1_SWE
+Warning--can't use both author and editor fields in Mitchell
+Warning--empty year in CS1_CAN
+Warning--empty chapter and pages in CS2_AUS
+You've used 42 entries,
+            2773 wiz_defined-function locations,
+            883 strings with 11769 characters,
+and the built_in function-call counts, 14965 in all, are:
+= -- 1354
+> -- 663
+< -- 43
++ -- 242
+- -- 199
+* -- 958
+:= -- 2350
+add.period$ -- 172
+call.type$ -- 42
+change.case$ -- 185
+chr.to.int$ -- 41
+cite$ -- 90
+duplicate$ -- 715
+empty$ -- 1384
+format.name$ -- 252
+if$ -- 3169
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 17
+newline$ -- 262
+num.names$ -- 171
+pop$ -- 478
+preamble$ -- 1
+purify$ -- 148
+quote$ -- 0
+skip$ -- 574
+stack$ -- 0
+substring$ -- 202
+swap$ -- 57
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 432
+warning$ -- 6
+while$ -- 136
+width$ -- 0
+write$ -- 612
+(There were 8 warnings)

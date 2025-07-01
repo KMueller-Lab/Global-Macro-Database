@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: pop.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: plainnat.bst
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+Database file #1: bib.bib
+Warning--I'm ignoring CS1_ISL's extra "note" field
+--line 1551 of file bib.bib
+Warning--I didn't find a database entry for "CS2_PRK"
+Warning--empty publisher in CS1_DNK
+Warning--empty year in CS1_SWE
+Warning--empty year in CS2_NOR
+Warning--empty year in CS1_CAN
+You've used 32 entries,
+            2773 wiz_defined-function locations,
+            808 strings with 10150 characters,
+and the built_in function-call counts, 11249 in all, are:
+= -- 998
+> -- 511
+< -- 33
++ -- 187
+- -- 154
+* -- 699
+:= -- 1763
+add.period$ -- 126
+call.type$ -- 32
+change.case$ -- 141
+chr.to.int$ -- 31
+cite$ -- 68
+duplicate$ -- 541
+empty$ -- 1047
+format.name$ -- 194
+if$ -- 2379
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 12
+newline$ -- 197
+num.names$ -- 131
+pop$ -- 387
+preamble$ -- 1
+purify$ -- 114
+quote$ -- 0
+skip$ -- 442
+stack$ -- 0
+substring$ -- 121
+swap$ -- 45
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 327
+warning$ -- 4
+while$ -- 102
+width$ -- 0
+write$ -- 454
+(There were 6 warnings)

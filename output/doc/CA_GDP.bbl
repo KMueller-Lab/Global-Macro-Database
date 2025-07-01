@@ -1,0 +1,97 @@
+\begin{thebibliography}{14}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Arab Monetary Fund}(2024)]{AMF}
+{Arab Monetary Fund}.
+\newblock {Arab Economic Database}, 2024.
+\newblock URL \url{https://www.amf.org.ae/ar}.
+\newblock Accessed: 2024-07-10.
+
+\bibitem[{Asian Development Bank}(2024)]{ADB}
+{Asian Development Bank}.
+\newblock {Key Indicators Database (KIDB)}, 2024.
+\newblock URL \url{https://kidb.adb.org}.
+
+\bibitem[{Banque centrale des \'{E}tats de l'Afrique de l'Ouest}(2024)]{BCEAO}
+{Banque centrale des \'{E}tats de l'Afrique de l'Ouest}.
+\newblock {Banque centrale des \'{E}tats de l'Afrique de l'Ouest}, 2024.
+\newblock URL \url{https://www.bceao.int/}.
+\newblock Accessed: 2024-07-15.
+
+\bibitem[{International Monetary Fund}(2024)]{IMF_IFS}
+{International Monetary Fund}.
+\newblock International financial statistics, 2024.
+\newblock URL \url{https://data.imf.org/}.
+
+\bibitem[Jones and Obstfeld(1997)]{JO}
+M.~T. Jones and M.~Obstfeld.
+\newblock Saving, investment, and gold, 1997.
+\newblock URL
+  \url{https://www.nber.org/research/data/jones-obstfeld-saving-investment-and-gold-data-13-countries}.
+\newblock Accessed: 2024-06-07.
+
+\bibitem[Jord{\`a} et~al.(2017)Jord{\`a}, Schularick, and Taylor]{JST}
+{\`O}scar Jord{\`a}, Moritz Schularick, and Alan~M Taylor.
+\newblock Macrofinancial history and the new business cycle facts.
+\newblock \emph{NBER macroeconomics annual}, 31\penalty0 (1):\penalty0
+  213--263, 2017.
+
+\bibitem[Mitchell(2013)]{Mitchell}
+Brian Mitchell.
+\newblock \emph{International Historical Statistics}.
+\newblock International Historical Statistics. Palgrave Macmillan London, 1
+  edition, 2013.
+\newblock ISBN 978-1-137-30568-8.
+\newblock \doi{10.1057/978-1-137-30568-8}.
+\newblock URL \url{https://doi.org/10.1057/978-1-137-30568-8}.
+
+\bibitem[{OECD}(2024)]{OECD_KEI}
+{OECD}.
+\newblock Oecd key economic indicators data, 2024.
+\newblock URL
+  \url{https://www.oecd-ilibrary.org/economics/data/main-economic-indicators/key-short-term-indicators_data-00039-en}.
+\newblock Accessed on 2024-07-10.
+
+\bibitem[{OECD Economic Outlook}(2024)]{OECD_EO}
+{OECD Economic Outlook}.
+\newblock Oecd economic outlook data, 2024.
+\newblock URL
+  \url{https://www.oecd.org/en/topics/sub-issues/economic-outlook.html}.
+\newblock Accessed on 2024-06-05.
+
+\bibitem[Thomas and Dimsdale(2017)]{CS1_GBR}
+R~Thomas and N~Dimsdale.
+\newblock A millennium of uk data, 2017.
+\newblock URL
+  \url{https://www.bankofengland.co.uk/statistics/research-datasets}.
+\newblock Accessed: 2024-06-18.
+
+\bibitem[{WEO}(2024{\natexlab{a}})]{IMF_WEO}
+{WEO}.
+\newblock World economic outlook database, 2024{\natexlab{a}}.
+\newblock URL \url{https://www.imf.org/en/Publications/WEO}.
+\newblock Accessed: 2024-08-05.
+
+\bibitem[{WEO}(2024{\natexlab{b}})]{IMF_WEO_forecast}
+{WEO}.
+\newblock World economic outlook database, 2024{\natexlab{b}}.
+\newblock URL \url{https://www.imf.org/en/Publications/WEO}.
+\newblock Accessed: 2024-08-05.
+
+\bibitem[{World Bank}(2024)]{WDI}
+{World Bank}.
+\newblock World development indicators, 2024.
+\newblock URL \url{https://data.worldbank.org/indicator}.
+\newblock Accessed: 2024-04-21.
+
+\bibitem[{World Bank (Archives)}(1999)]{WDI_ARC}
+{World Bank (Archives)}.
+\newblock World development indicators, 1999.
+\newblock URL \url{https://data.worldbank.org/indicator}.
+\newblock Accessed: 2024-07-21.
+
+\end{thebibliography}

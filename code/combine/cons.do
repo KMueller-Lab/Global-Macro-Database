@@ -28,7 +28,7 @@ use "$data_final/clean_data_wide", clear
 * ==============================================================================
 
 * Set up the priority list
-splice, priority(WDI IMF_IFS EUS OECD_EO OECD_QNA WDI_ARC UN AMF BCEAO AMECO CS1 CS2 CS3 CEPAC HFS AHSTAT) generate(cons) varname(cons) method("chainlink") base_year(2018)
+splice, priority(OECD_EO EUS AMECO WDI UN BCEAO AMF WDI_ARC OECD_QNA IMF_IFS CEPAC CS1 CS2 CS3 AHSTAT HFS) generate(cons) varname(cons) method("chainlink") base_year(2018)
 
 
 

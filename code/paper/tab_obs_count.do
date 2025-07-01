@@ -52,8 +52,8 @@ replace IMF_IFS_govdebt_GDP = IMF_FPP_govdebt_GDP if IMF_IFS_govdebt_GDP == .
 replace IMF_IFS_govdebt_GDP = IMF_HDD_govdebt_GDP if IMF_IFS_govdebt_GDP == .
 replace IMF_IFS_govdebt_GDP = IMF_GDD_govdebt_GDP if IMF_IFS_govdebt_GDP == .
 replace IMF_IFS_cbrate = IMF_MFS_cbrate if IMF_IFS_cbrate == .
-gen IMF_IFS_ltrate = IMF_MFS_ltrate
-gen IMF_IFS_strate = IMF_MFS_strate
+replace IMF_IFS_ltrate = IMF_MFS_ltrate if IMF_IFS_ltrate == .
+replace IMF_IFS_strate = IMF_MFS_strate if IMF_IFS_strate == .
 gen IMF_IFS_M0 = IMF_MFS_M0
 gen IMF_IFS_M1 = IMF_MFS_M1
 gen IMF_IFS_M2 = IMF_MFS_M2

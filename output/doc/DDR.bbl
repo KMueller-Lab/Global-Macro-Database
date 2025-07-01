@@ -1,0 +1,22 @@
+\begin{thebibliography}{3}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{{Banca d'Italia}(2024)}]{BIT}
+{Banca d'Italia}.
+\newblock \enquote{Historical Exchange Rates Database.} (2024).
+\newblock Accessed: 2024-01-16.
+
+\bibitem[{Mitchell(2013)}]{Mitchell}
+Mitchell, Brian.
+\newblock \emph{International Historical Statistics}.
+\newblock International Historical Statistics. Palgrave Macmillan London, 1
+  edition (2013).
+
+\bibitem[{Müller et~al.(2025)Müller, Xu, Lehbib, and Chen}]{GMD_estimated}
+Müller, Karsten, Chenzi Xu, Mohamed Lehbib, and Ziliang Chen.
+\newblock \enquote{{The Global Macro Database: A New International
+  Macroeconomic Dataset}.}
+\newblock Working Paper 33714, National Bureau of Economic Research (2025).
+
+\end{thebibliography}

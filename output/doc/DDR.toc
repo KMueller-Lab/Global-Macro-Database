@@ -1,0 +1,15 @@
+\contentsline {section}{Data availability heatmap}{3}{section*.3}%
+\contentsline {section}{Consumer price index}{4}{section*.5}%
+\contentsline {section}{Money supply (M0)}{5}{section*.8}%
+\contentsline {section}{USD exchange rate}{6}{section*.11}%
+\contentsline {section}{Exports}{7}{section*.14}%
+\contentsline {section}{Exports to GDP ratio}{8}{section*.17}%
+\contentsline {section}{Government expenditure}{9}{section*.20}%
+\contentsline {section}{Government expenditure to GDP ratio}{10}{section*.23}%
+\contentsline {section}{Imports}{11}{section*.26}%
+\contentsline {section}{Imports to GDP ratio}{12}{section*.29}%
+\contentsline {section}{Inflation}{13}{section*.32}%
+\contentsline {section}{Investment}{14}{section*.35}%
+\contentsline {section}{Investment to GDP ratio}{15}{section*.38}%
+\contentsline {section}{Nominal GDP}{16}{section*.41}%
+\contentsline {section}{References}{17}{section*.44}%

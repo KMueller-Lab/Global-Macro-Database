@@ -1,0 +1,3460 @@
+This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2024.12.5)  1 JUL 2025 02:16
+ restricted system commands enabled.
+**govrev_GDP.tex
+(./govrev_GDP.tex
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+Lua module: luaotfload 2024-02-14 v3.28 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended 
+collection.
+luaotfload | conf : Root cache directory is "C:/Users/lehbib/AppData/Local/MiKTe
+X/luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
+olved path "C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/luatex/luaotfload/
+fontloader-2023-12-28.lua".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.134
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "C:/Users/lehbib/AppData/Local/MiKTe
+X/luatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'. (C:/Users/lehbib/AppDat
+a/Local/Programs/MiKTeX/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/size12.clo
+File: size12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from C:/Users/lehbib/AppData/Local/
+MiKTeX/luatex-cache/generic/names/luaotfload-names.luc.gz)
+\c@part=\count194
+\c@section=\count195
+\c@subsection=\count196
+\c@subsubsection=\count197
+\c@paragraph=\count198
+\c@subparagraph=\count199
+\c@figure=\count266
+\c@table=\count267
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen140
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
+6.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphicx.s
+ty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphics.st
+y
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/graphics.
+cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 106.
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics-def/luatex.de
+f
+File: luatex.def 2024/04/13 v1.2e Graphics/color driver for luatex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/booktabs/booktabs.st
+y
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen143
+\lightrulewidth=\dimen144
+\cmidrulewidth=\dimen145
+\belowrulesep=\dimen146
+\belowbottomsep=\dimen147
+\aboverulesep=\dimen148
+\abovetopsep=\dimen149
+\cmidrulesep=\dimen150
+\cmidrulekern=\dimen151
+\defaultaddspace=\dimen152
+\@cmidla=\count268
+\@cmidlb=\count269
+\@aboverulesep=\dimen153
+\@belowrulesep=\dimen154
+\@thisruleclass=\count270
+\@lastruleclass=\count271
+\@thisrulewidth=\dimen155
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.st
+y
+Package: geometry 2020/01/02 v5.9 Page Geometry
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count272
+\Gm@cntv=\count273
+\c@Gm@tempcnt=\count274
+\Gm@bindingoffset=\dimen156
+\Gm@wd@mp=\dimen157
+\Gm@odd@mp=\dimen158
+\Gm@even@mp=\dimen159
+\Gm@layoutwidth=\dimen160
+\Gm@layoutheight=\dimen161
+\Gm@layouthoffset=\dimen162
+\Gm@layoutvoffset=\dimen163
+\Gm@dimlist=\toks20
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.cfg))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen164
+\captionmargin=\dimen165
+\caption@leftmargin=\dimen166
+\caption@rightmargin=\dimen167
+\caption@width=\dimen168
+\caption@indent=\dimen169
+\caption@parindent=\dimen170
+\caption@hangindent=\dimen171
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count275
+\c@continuedfloat=\count276
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count277
+\float@exts=\toks21
+\float@box=\box52
+\@float@everytoks=\toks22
+\@floatcapt=\box53
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip51
+\bibsep=\skip52
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count278
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: luatex.def on input line 274.
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/mathcolor.ltx
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/colortbl/colortbl.st
+y
+Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen172
+\ar@mcellbox=\box54
+\extrarowheight=\dimen173
+\NC@list=\toks23
+\extratabsurround=\skip53
+\backup@length=\skip54
+\ar@cellbox=\box55
+)
+\everycr=\toks24
+\minrowclearance=\skip55
+\rownum=\count279
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/rotating.st
+y
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count280
+\rotFPtop=\skip56
+\rotFPbot=\skip57
+\rot@float@box=\box56
+\rot@mess@toks=\toks25
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen174
+\TX@old@table=\dimen175
+\TX@old@col=\dimen176
+\TX@target=\dimen177
+\TX@delta=\dimen178
+\TX@cols=\count281
+\TX@ftn=\toks26
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pdflscape/pdflscape.st
+y
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pdflscape/pdflscape-no
+metadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/adjustbox/adjustbox.st
+y
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/xkeyval/xkeyval.tex
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks27
+\XKV@tempa@toks=\toks28
+)
+\XKV@depth=\count282
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/adjustbox/adjcalc.s
+ty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/collectbox/collectbox.
+sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box57
+)
+\tc@llx=\dimen179
+\tc@lly=\dimen180
+\tc@urx=\dimen181
+\tc@ury=\dimen182
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/adjustbox/tc-pgf.def
+File: tc-pgf.def 2019/01/04 v2.2 trimclip fall-back clipping driver using PGF
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgf.sty
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfrcs.s
+ty
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfuti
+l-common.tex
+\pgfutil@everybye=\toks29
+\pgfutil@tempdima=\dimen183
+\pgfutil@tempdimb=\dimen184
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfuti
+l-latex.def
+\pgfutil@abb=\box58
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfrcs
+.code.tex
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/pgf.revision.tex
+)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgfcore
+.sty
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/systemlayer/pgfsys
+.sty
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+ys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkey
+s.code.tex
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkey
+slibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks32
+))
+\pgf@x=\dimen185
+\pgf@y=\dimen186
+\pgf@xa=\dimen187
+\pgf@ya=\dimen188
+\pgf@xb=\dimen189
+\pgf@yb=\dimen190
+\pgf@xc=\dimen191
+\pgf@yc=\dimen192
+\pgf@xd=\dimen193
+\pgf@yd=\dimen194
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count283
+\c@pgf@countb=\count284
+\c@pgf@countc=\count285
+\c@pgf@countd=\count286
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
+\pgf@sys@id@count=\count287
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgf.
+cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-luatex.def
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+ys-luatex.def
+File: pgfsys-luatex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+ys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+yssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count288
+\pgfsyssoftpath@bigbuffer@items=\count289
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+ysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+re.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmath.cod
+e.tex
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathutil
+.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathpars
+er.code.tex
+\pgfmath@dimen=\dimen195
+\pgfmath@count=\count290
+\pgfmath@box=\box59
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.basic.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.trigonometric.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.random.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.comparison.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.base.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.round.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.misc.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.integerarithmetics.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathcalc
+.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfloa
+t.code.tex
+\c@pgfmathroundto@lastzeros=\count291
+))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfint.code
+.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen196
+\pgf@picmaxx=\dimen197
+\pgf@picminy=\dimen198
+\pgf@picmaxy=\dimen199
+\pgf@pathminx=\dimen256
+\pgf@pathmaxx=\dimen257
+\pgf@pathminy=\dimen258
+\pgf@pathmaxy=\dimen259
+\pgf@xx=\dimen260
+\pgf@xy=\dimen261
+\pgf@yx=\dimen262
+\pgf@yy=\dimen263
+\pgf@zx=\dimen264
+\pgf@zy=\dimen265
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen266
+\pgf@path@lasty=\dimen267
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen268
+\pgf@shorten@start@additional=\dimen269
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+rescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box60
+\pgf@hbox=\box61
+\pgf@layerbox@main=\box62
+\pgf@picture@serial@count=\count292
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+regraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen270
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+retransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen271
+\pgf@pt@y=\dimen272
+\pgf@pt@temp=\dimen273
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+requick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+reobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+rearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen274
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+reshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen275
+\pgf@sys@shading@range@num=\count293
+\pgf@shadingcount=\count294
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+reimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+reexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box63
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+relayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+retransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+rerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodul
+eshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box64
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodul
+eplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfc
+omp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen276
+\pgf@nodesepend=\dimen277
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfc
+omp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)))
+Package trimclip Info: No clipping driver 'tc-luatex.def' available.
+(trimclip)             Using fall-back PGF driver.
+)
+\adjbox@Width=\dimen278
+\adjbox@Height=\dimen279
+\adjbox@Depth=\dimen280
+\adjbox@Totalheight=\dimen281
+\adjbox@pwidth=\dimen282
+\adjbox@pheight=\dimen283
+\adjbox@pdepth=\dimen284
+\adjbox@ptotalheight=\dimen285
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/ifoddpage/ifoddpage.st
+y
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count295
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.st
+y
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box65
+\sift@deathcycles=\count296
+\@vwid@loff=\dimen286
+\@vwid@roff=\dimen287
+)) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/times.sty
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/fancyhdr/fancyhdr.st
+y
+Package: fancyhdr 2024/11/20 v4.4 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip58
+\f@nch@O@elh=\skip59
+\f@nch@O@erh=\skip60
+\f@nch@O@olh=\skip61
+\f@nch@O@orh=\skip62
+\f@nch@O@elf=\skip63
+\f@nch@O@erf=\skip64
+\f@nch@O@olf=\skip65
+\f@nch@O@orf=\skip66
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hyperref.st
+y
+Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/kvsetkeys/kvsetkeys.st
+y
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/kvdefinekeys/kvdefin
+ekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pdfescape/pdfescape.
+sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pdftexcmds/pdftexcmd
+s.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/infwarerr/infwarerr.
+sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks39
+)) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/gettitlestring/getti
+tlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/kvoptions/kvoptions.st
+y
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count297
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/etoolbox/etoolbox.st
+y
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count298
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/stringenc/stringenc.
+sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen288
+\Hy@linkcounter=\count299
+\Hy@pagecounter=\count300
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/intcalc/intcalc.st
+y
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count301
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4040.
+Package hyperref Info: Hyper figures OFF on input line 4157.
+Package hyperref Info: Link nesting OFF on input line 4162.
+Package hyperref Info: Hyper index ON on input line 4165.
+Package hyperref Info: Plain pages OFF on input line 4172.
+Package hyperref Info: Backreferencing OFF on input line 4177.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4424.
+\c@Hy@tempcnt=\count302
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen289
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/bigintcalc/bigintcal
+c.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count303
+\Field@Width=\dimen290
+\Fld@charsize=\dimen291
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring ON on input line 6060.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count304
+\c@Item=\count305
+\c@Hfootnote=\count306
+)
+Package hyperref Info: Driver (autodetected): hluatex.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hluatex.def
+File: hluatex.def 2024-11-05 v7.01l Hyperref driver for luaTeX
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count307
+\c@bookmark@seq@number=\count308
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfi
+lecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/uniquecounter/unique
+counter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip67
+)
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 34
+.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-lu
+atex.def
+File: l3backend-luatex.def 2024-05-08 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count309
+Inserting `l3color' in `luaotfload.parse_color'.
+\l__pdf_internal_box=\box66
+) (./govrev_GDP.aux)
+\openout1 = govrev_GDP.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.m
+kii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count310
+\scratchdimen=\dimen292
+\scratchbox=\box67
+\nofMPsegments=\count311
+\nofMParguments=\count312
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count313
+\MPscratchDim=\dimen293
+\MPnumerator=\count314
+\makeMPintoPDFobject=\count315
+\everyMPtoPDFconversion=\toks41
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-
+base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/00miktex/epstopdf-sys.
+cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: landscape 
+* h-part:(L,W,R)=(36.135pt, 1084.05pt, 36.135pt)
+* v-part:(T,H,B)=(36.135pt, 722.7pt, 36.135pt)
+* \paperwidth=1156.31999pt
+* \paperheight=794.96999pt
+* \textwidth=1084.05pt
+* \textheight=722.7pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-55.36243pt
+* \headheight=12.0pt
+* \headsep=7.22743pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=144.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: rotating package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring ON on input line 34.
+(./govrev_GDP.out) (./govrev_GDP.out)
+\@outlinefile=\write4
+
+\openout4 = govrev_GDP.out
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 38.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 38.
+
+LaTeX Warning: No \author given.
+
+
+
+[1
+
+{C:/Users/lehbib/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+
+Package hyperref Warning: Option `colorlinks' has already been used,
+(hyperref)                setting the option has no effect on input line 42.
+
+(./govrev_GDP.toc
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
+[1
+
+]
+
+[2]
+
+[3]
+
+[4]
+
+[5]
+
+[6]
+
+[7])
+\tf@toc=\write5
+
+\openout5 = govrev_GDP.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 60.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 60.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 60.
+
+warning  (file graphs/AFG_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/AFG_govrev_GDP.pdf, id=1260, 542.025pt x 325.215pt>
+File: graphs/AFG_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/AFG_govrev_GDP.pdf>
+Package luatex.def Info: graphs/AFG_govrev_GDP.pdf  used on input line 74.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ALB_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/ALB_govrev_GDP.pdf, id=1273, 542.025pt x 325.215pt>
+File: graphs/ALB_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/ALB_govrev_GDP.pdf>
+Package luatex.def Info: graphs/ALB_govrev_GDP.pdf  used on input line 105.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DZA_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/DZA_govrev_GDP.pdf, id=1286, 542.025pt x 325.215pt>
+File: graphs/DZA_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/DZA_govrev_GDP.pdf>
+Package luatex.def Info: graphs/DZA_govrev_GDP.pdf  used on input line 136.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AGO_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/AGO_govrev_GDP.pdf, id=1297, 542.025pt x 325.215pt>
+File: graphs/AGO_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/AGO_govrev_GDP.pdf>
+Package luatex.def Info: graphs/AGO_govrev_GDP.pdf  used on input line 166.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ARG_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/ARG_govrev_GDP.pdf, id=1306, 542.025pt x 325.215pt>
+File: graphs/ARG_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/ARG_govrev_GDP.pdf>
+Package luatex.def Info: graphs/ARG_govrev_GDP.pdf  used on input line 195.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ARM_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/ARM_govrev_GDP.pdf, id=1315, 542.025pt x 325.215pt>
+File: graphs/ARM_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/ARM_govrev_GDP.pdf>
+Package luatex.def Info: graphs/ARM_govrev_GDP.pdf  used on input line 224.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AUS_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/AUS_govrev_GDP.pdf, id=1330, 542.025pt x 325.215pt>
+File: graphs/AUS_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/AUS_govrev_GDP.pdf>
+Package luatex.def Info: graphs/AUS_govrev_GDP.pdf  used on input line 256.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AUT_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/AUT_govrev_GDP.pdf, id=1345, 542.025pt x 325.215pt>
+File: graphs/AUT_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/AUT_govrev_GDP.pdf>
+Package luatex.def Info: graphs/AUT_govrev_GDP.pdf  used on input line 288.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AZE_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/AZE_govrev_GDP.pdf, id=1356, 542.025pt x 325.215pt>
+File: graphs/AZE_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/AZE_govrev_GDP.pdf>
+Package luatex.def Info: graphs/AZE_govrev_GDP.pdf  used on input line 318.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BHS_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/BHS_govrev_GDP.pdf, id=1361, 542.025pt x 325.215pt>
+File: graphs/BHS_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/BHS_govrev_GDP.pdf>
+Package luatex.def Info: graphs/BHS_govrev_GDP.pdf  used on input line 345.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BHR_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/BHR_govrev_GDP.pdf, id=1372, 542.025pt x 325.215pt>
+File: graphs/BHR_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/BHR_govrev_GDP.pdf>
+Package luatex.def Info: graphs/BHR_govrev_GDP.pdf  used on input line 375.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BGD_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/BGD_govrev_GDP.pdf, id=1387, 542.025pt x 325.215pt>
+File: graphs/BGD_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/BGD_govrev_GDP.pdf>
+Package luatex.def Info: graphs/BGD_govrev_GDP.pdf  used on input line 407.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BRB_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/BRB_govrev_GDP.pdf, id=1396, 542.025pt x 325.215pt>
+File: graphs/BRB_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/BRB_govrev_GDP.pdf>
+Package luatex.def Info: graphs/BRB_govrev_GDP.pdf  used on input line 436.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BLR_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/BLR_govrev_GDP.pdf, id=1401, 542.025pt x 325.215pt>
+File: graphs/BLR_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/BLR_govrev_GDP.pdf>
+Package luatex.def Info: graphs/BLR_govrev_GDP.pdf  used on input line 463.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BEL_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/BEL_govrev_GDP.pdf, id=1418, 542.025pt x 325.215pt>
+File: graphs/BEL_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/BEL_govrev_GDP.pdf>
+Package luatex.def Info: graphs/BEL_govrev_GDP.pdf  used on input line 496.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BLZ_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/BLZ_govrev_GDP.pdf, id=1427, 542.025pt x 325.215pt>
+File: graphs/BLZ_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/BLZ_govrev_GDP.pdf>
+Package luatex.def Info: graphs/BLZ_govrev_GDP.pdf  used on input line 525.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BEN_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/BEN_govrev_GDP.pdf, id=1432, 542.025pt x 325.215pt>
+File: graphs/BEN_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/BEN_govrev_GDP.pdf>
+Package luatex.def Info: graphs/BEN_govrev_GDP.pdf  used on input line 552.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BTN_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/BTN_govrev_GDP.pdf, id=1449, 542.025pt x 325.215pt>
+File: graphs/BTN_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/BTN_govrev_GDP.pdf>
+Package luatex.def Info: graphs/BTN_govrev_GDP.pdf  used on input line 585.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BOL_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/BOL_govrev_GDP.pdf, id=1464, 542.025pt x 325.215pt>
+File: graphs/BOL_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/BOL_govrev_GDP.pdf>
+Package luatex.def Info: graphs/BOL_govrev_GDP.pdf  used on input line 617.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BIH_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/BIH_govrev_GDP.pdf, id=1471, 542.025pt x 325.215pt>
+File: graphs/BIH_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/BIH_govrev_GDP.pdf>
+Package luatex.def Info: graphs/BIH_govrev_GDP.pdf  used on input line 645.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BWA_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/BWA_govrev_GDP.pdf, id=1482, 542.025pt x 325.215pt>
+File: graphs/BWA_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/BWA_govrev_GDP.pdf>
+Package luatex.def Info: graphs/BWA_govrev_GDP.pdf  used on input line 675.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BRA_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/BRA_govrev_GDP.pdf, id=1499, 542.025pt x 325.215pt>
+File: graphs/BRA_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/BRA_govrev_GDP.pdf>
+Package luatex.def Info: graphs/BRA_govrev_GDP.pdf  used on input line 708.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BRN_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/BRN_govrev_GDP.pdf, id=1506, 542.025pt x 325.215pt>
+File: graphs/BRN_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/BRN_govrev_GDP.pdf>
+Package luatex.def Info: graphs/BRN_govrev_GDP.pdf  used on input line 736.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BGR_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/BGR_govrev_GDP.pdf, id=1515, 542.025pt x 325.215pt>
+File: graphs/BGR_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/BGR_govrev_GDP.pdf>
+Package luatex.def Info: graphs/BGR_govrev_GDP.pdf  used on input line 765.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BFA_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/BFA_govrev_GDP.pdf, id=1522, 542.025pt x 325.215pt>
+File: graphs/BFA_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/BFA_govrev_GDP.pdf>
+Package luatex.def Info: graphs/BFA_govrev_GDP.pdf  used on input line 793.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BDI_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/BDI_govrev_GDP.pdf, id=1533, 542.025pt x 325.215pt>
+File: graphs/BDI_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/BDI_govrev_GDP.pdf>
+Package luatex.def Info: graphs/BDI_govrev_GDP.pdf  used on input line 823.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KHM_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/KHM_govrev_GDP.pdf, id=1542, 542.025pt x 325.215pt>
+File: graphs/KHM_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/KHM_govrev_GDP.pdf>
+Package luatex.def Info: graphs/KHM_govrev_GDP.pdf  used on input line 852.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CMR_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/CMR_govrev_GDP.pdf, id=1559, 542.025pt x 325.215pt>
+File: graphs/CMR_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/CMR_govrev_GDP.pdf>
+Package luatex.def Info: graphs/CMR_govrev_GDP.pdf  used on input line 885.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CAN_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/CAN_govrev_GDP.pdf, id=1573, 542.025pt x 325.215pt>
+File: graphs/CAN_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/CAN_govrev_GDP.pdf>
+Package luatex.def Info: graphs/CAN_govrev_GDP.pdf  used on input line 917.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CPV_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/CPV_govrev_GDP.pdf, id=1580, 542.025pt x 325.215pt>
+File: graphs/CPV_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/CPV_govrev_GDP.pdf>
+Package luatex.def Info: graphs/CPV_govrev_GDP.pdf  used on input line 945.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CAF_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/CAF_govrev_GDP.pdf, id=1595, 542.025pt x 325.215pt>
+File: graphs/CAF_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/CAF_govrev_GDP.pdf>
+Package luatex.def Info: graphs/CAF_govrev_GDP.pdf  used on input line 977.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TCD_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/TCD_govrev_GDP.pdf, id=1610, 542.025pt x 325.215pt>
+File: graphs/TCD_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/TCD_govrev_GDP.pdf>
+Package luatex.def Info: graphs/TCD_govrev_GDP.pdf  used on input line 1009.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CHL_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/CHL_govrev_GDP.pdf, id=1621, 542.025pt x 325.215pt>
+File: graphs/CHL_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/CHL_govrev_GDP.pdf>
+Package luatex.def Info: graphs/CHL_govrev_GDP.pdf  used on input line 1039.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CHN_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/CHN_govrev_GDP.pdf, id=1630, 542.025pt x 325.215pt>
+File: graphs/CHN_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/CHN_govrev_GDP.pdf>
+Package luatex.def Info: graphs/CHN_govrev_GDP.pdf  used on input line 1068.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/COL_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/COL_govrev_GDP.pdf, id=1649, 542.025pt x 325.215pt>
+File: graphs/COL_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/COL_govrev_GDP.pdf>
+Package luatex.def Info: graphs/COL_govrev_GDP.pdf  used on input line 1102.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CRI_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/CRI_govrev_GDP.pdf, id=1662, 542.025pt x 325.215pt>
+File: graphs/CRI_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/CRI_govrev_GDP.pdf>
+Package luatex.def Info: graphs/CRI_govrev_GDP.pdf  used on input line 1133.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/HRV_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/HRV_govrev_GDP.pdf, id=1669, 542.025pt x 325.215pt>
+File: graphs/HRV_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/HRV_govrev_GDP.pdf>
+Package luatex.def Info: graphs/HRV_govrev_GDP.pdf  used on input line 1161.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CUB_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/CUB_govrev_GDP.pdf, id=1672, 542.025pt x 325.215pt>
+File: graphs/CUB_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/CUB_govrev_GDP.pdf>
+Package luatex.def Info: graphs/CUB_govrev_GDP.pdf  used on input line 1187.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CYP_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/CYP_govrev_GDP.pdf, id=1681, 542.025pt x 325.215pt>
+File: graphs/CYP_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/CYP_govrev_GDP.pdf>
+Package luatex.def Info: graphs/CYP_govrev_GDP.pdf  used on input line 1216.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CZE_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/CZE_govrev_GDP.pdf, id=1690, 542.025pt x 325.215pt>
+File: graphs/CZE_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/CZE_govrev_GDP.pdf>
+Package luatex.def Info: graphs/CZE_govrev_GDP.pdf  used on input line 1245.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/COD_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/COD_govrev_GDP.pdf, id=1701, 542.025pt x 325.215pt>
+File: graphs/COD_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/COD_govrev_GDP.pdf>
+Package luatex.def Info: graphs/COD_govrev_GDP.pdf  used on input line 1275.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DNK_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/DNK_govrev_GDP.pdf, id=1718, 542.025pt x 325.215pt>
+File: graphs/DNK_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/DNK_govrev_GDP.pdf>
+Package luatex.def Info: graphs/DNK_govrev_GDP.pdf  used on input line 1308.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DJI_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/DJI_govrev_GDP.pdf, id=1731, 542.025pt x 325.215pt>
+File: graphs/DJI_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/DJI_govrev_GDP.pdf>
+Package luatex.def Info: graphs/DJI_govrev_GDP.pdf  used on input line 1339.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DMA_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/DMA_govrev_GDP.pdf, id=1738, 542.025pt x 325.215pt>
+File: graphs/DMA_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/DMA_govrev_GDP.pdf>
+Package luatex.def Info: graphs/DMA_govrev_GDP.pdf  used on input line 1367.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DOM_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/DOM_govrev_GDP.pdf, id=1747, 542.025pt x 325.215pt>
+File: graphs/DOM_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/DOM_govrev_GDP.pdf>
+Package luatex.def Info: graphs/DOM_govrev_GDP.pdf  used on input line 1396.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ECU_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/ECU_govrev_GDP.pdf, id=1758, 542.025pt x 325.215pt>
+File: graphs/ECU_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/ECU_govrev_GDP.pdf>
+Package luatex.def Info: graphs/ECU_govrev_GDP.pdf  used on input line 1426.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/EGY_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/EGY_govrev_GDP.pdf, id=1777, 542.025pt x 325.215pt>
+File: graphs/EGY_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/EGY_govrev_GDP.pdf>
+Package luatex.def Info: graphs/EGY_govrev_GDP.pdf  used on input line 1460.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SLV_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/SLV_govrev_GDP.pdf, id=1786, 542.025pt x 325.215pt>
+File: graphs/SLV_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/SLV_govrev_GDP.pdf>
+Package luatex.def Info: graphs/SLV_govrev_GDP.pdf  used on input line 1489.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GNQ_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/GNQ_govrev_GDP.pdf, id=1799, 542.025pt x 325.215pt>
+File: graphs/GNQ_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/GNQ_govrev_GDP.pdf>
+Package luatex.def Info: graphs/GNQ_govrev_GDP.pdf  used on input line 1520.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ERI_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/ERI_govrev_GDP.pdf, id=1810, 542.025pt x 325.215pt>
+File: graphs/ERI_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/ERI_govrev_GDP.pdf>
+Package luatex.def Info: graphs/ERI_govrev_GDP.pdf  used on input line 1550.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/EST_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/EST_govrev_GDP.pdf, id=1819, 542.025pt x 325.215pt>
+File: graphs/EST_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/EST_govrev_GDP.pdf>
+Package luatex.def Info: graphs/EST_govrev_GDP.pdf  used on input line 1579.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SWZ_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/SWZ_govrev_GDP.pdf, id=1834, 542.025pt x 325.215pt>
+File: graphs/SWZ_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/SWZ_govrev_GDP.pdf>
+Package luatex.def Info: graphs/SWZ_govrev_GDP.pdf  used on input line 1611.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ETH_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/ETH_govrev_GDP.pdf, id=1847, 542.025pt x 325.215pt>
+File: graphs/ETH_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/ETH_govrev_GDP.pdf>
+Package luatex.def Info: graphs/ETH_govrev_GDP.pdf  used on input line 1642.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/FJI_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/FJI_govrev_GDP.pdf, id=1860, 542.025pt x 325.215pt>
+File: graphs/FJI_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/FJI_govrev_GDP.pdf>
+Package luatex.def Info: graphs/FJI_govrev_GDP.pdf  used on input line 1673.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/FIN_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/FIN_govrev_GDP.pdf, id=1871, 542.025pt x 325.215pt>
+File: graphs/FIN_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/FIN_govrev_GDP.pdf>
+Package luatex.def Info: graphs/FIN_govrev_GDP.pdf  used on input line 1703.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/FRA_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/FRA_govrev_GDP.pdf, id=1886, 542.025pt x 325.215pt>
+File: graphs/FRA_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/FRA_govrev_GDP.pdf>
+Package luatex.def Info: graphs/FRA_govrev_GDP.pdf  used on input line 1735.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GAB_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/GAB_govrev_GDP.pdf, id=1903, 542.025pt x 325.215pt>
+File: graphs/GAB_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/GAB_govrev_GDP.pdf>
+Package luatex.def Info: graphs/GAB_govrev_GDP.pdf  used on input line 1768.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GMB_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/GMB_govrev_GDP.pdf, id=1914, 542.025pt x 325.215pt>
+File: graphs/GMB_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/GMB_govrev_GDP.pdf>
+Package luatex.def Info: graphs/GMB_govrev_GDP.pdf  used on input line 1798.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GEO_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/GEO_govrev_GDP.pdf, id=1921, 542.025pt x 325.215pt>
+File: graphs/GEO_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/GEO_govrev_GDP.pdf>
+Package luatex.def Info: graphs/GEO_govrev_GDP.pdf  used on input line 1826.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DEU_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/DEU_govrev_GDP.pdf, id=1934, 542.025pt x 325.215pt>
+File: graphs/DEU_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/DEU_govrev_GDP.pdf>
+Package luatex.def Info: graphs/DEU_govrev_GDP.pdf  used on input line 1857.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GHA_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/GHA_govrev_GDP.pdf, id=1951, 542.025pt x 325.215pt>
+File: graphs/GHA_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/GHA_govrev_GDP.pdf>
+Package luatex.def Info: graphs/GHA_govrev_GDP.pdf  used on input line 1890.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GRC_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/GRC_govrev_GDP.pdf, id=1970, 542.025pt x 325.215pt>
+File: graphs/GRC_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/GRC_govrev_GDP.pdf>
+Package luatex.def Info: graphs/GRC_govrev_GDP.pdf  used on input line 1924.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GRD_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/GRD_govrev_GDP.pdf, id=1977, 542.025pt x 325.215pt>
+File: graphs/GRD_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/GRD_govrev_GDP.pdf>
+Package luatex.def Info: graphs/GRD_govrev_GDP.pdf  used on input line 1952.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GTM_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/GTM_govrev_GDP.pdf, id=1984, 542.025pt x 325.215pt>
+File: graphs/GTM_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/GTM_govrev_GDP.pdf>
+Package luatex.def Info: graphs/GTM_govrev_GDP.pdf  used on input line 1980.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GIN_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/GIN_govrev_GDP.pdf, id=1997, 542.025pt x 325.215pt>
+File: graphs/GIN_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/GIN_govrev_GDP.pdf>
+Package luatex.def Info: graphs/GIN_govrev_GDP.pdf  used on input line 2011.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GNB_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/GNB_govrev_GDP.pdf, id=2004, 542.025pt x 325.215pt>
+File: graphs/GNB_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/GNB_govrev_GDP.pdf>
+Package luatex.def Info: graphs/GNB_govrev_GDP.pdf  used on input line 2039.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GUY_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/GUY_govrev_GDP.pdf, id=2013, 542.025pt x 325.215pt>
+File: graphs/GUY_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/GUY_govrev_GDP.pdf>
+Package luatex.def Info: graphs/GUY_govrev_GDP.pdf  used on input line 2068.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/HTI_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/HTI_govrev_GDP.pdf, id=2026, 542.025pt x 325.215pt>
+File: graphs/HTI_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/HTI_govrev_GDP.pdf>
+Package luatex.def Info: graphs/HTI_govrev_GDP.pdf  used on input line 2099.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/HND_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/HND_govrev_GDP.pdf, id=2049, 542.025pt x 325.215pt>
+File: graphs/HND_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/HND_govrev_GDP.pdf>
+Package luatex.def Info: graphs/HND_govrev_GDP.pdf  used on input line 2135.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/HKG_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/HKG_govrev_GDP.pdf, id=2060, 542.025pt x 325.215pt>
+File: graphs/HKG_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/HKG_govrev_GDP.pdf>
+Package luatex.def Info: graphs/HKG_govrev_GDP.pdf  used on input line 2165.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/HUN_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/HUN_govrev_GDP.pdf, id=2073, 542.025pt x 325.215pt>
+File: graphs/HUN_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/HUN_govrev_GDP.pdf>
+Package luatex.def Info: graphs/HUN_govrev_GDP.pdf  used on input line 2196.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ISL_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/ISL_govrev_GDP.pdf, id=2084, 542.025pt x 325.215pt>
+File: graphs/ISL_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/ISL_govrev_GDP.pdf>
+Package luatex.def Info: graphs/ISL_govrev_GDP.pdf  used on input line 2226.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IND_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/IND_govrev_GDP.pdf, id=2097, 542.025pt x 325.215pt>
+File: graphs/IND_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/IND_govrev_GDP.pdf>
+Package luatex.def Info: graphs/IND_govrev_GDP.pdf  used on input line 2257.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IDN_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/IDN_govrev_GDP.pdf, id=2118, 542.025pt x 325.215pt>
+File: graphs/IDN_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/IDN_govrev_GDP.pdf>
+Package luatex.def Info: graphs/IDN_govrev_GDP.pdf  used on input line 2292.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IRN_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/IRN_govrev_GDP.pdf, id=2133, 542.025pt x 325.215pt>
+File: graphs/IRN_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/IRN_govrev_GDP.pdf>
+Package luatex.def Info: graphs/IRN_govrev_GDP.pdf  used on input line 2324.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IRQ_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/IRQ_govrev_GDP.pdf, id=2144, 542.025pt x 325.215pt>
+File: graphs/IRQ_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/IRQ_govrev_GDP.pdf>
+Package luatex.def Info: graphs/IRQ_govrev_GDP.pdf  used on input line 2354.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IRL_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/IRL_govrev_GDP.pdf, id=2161, 542.025pt x 325.215pt>
+File: graphs/IRL_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/IRL_govrev_GDP.pdf>
+Package luatex.def Info: graphs/IRL_govrev_GDP.pdf  used on input line 2387.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ISR_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/ISR_govrev_GDP.pdf, id=2174, 542.025pt x 325.215pt>
+File: graphs/ISR_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/ISR_govrev_GDP.pdf>
+Package luatex.def Info: graphs/ISR_govrev_GDP.pdf  used on input line 2418.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ITA_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/ITA_govrev_GDP.pdf, id=2189, 542.025pt x 325.215pt>
+File: graphs/ITA_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/ITA_govrev_GDP.pdf>
+Package luatex.def Info: graphs/ITA_govrev_GDP.pdf  used on input line 2450.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CIV_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/CIV_govrev_GDP.pdf, id=2194, 542.025pt x 325.215pt>
+File: graphs/CIV_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/CIV_govrev_GDP.pdf>
+Package luatex.def Info: graphs/CIV_govrev_GDP.pdf  used on input line 2477.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/JAM_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/JAM_govrev_GDP.pdf, id=2203, 542.025pt x 325.215pt>
+File: graphs/JAM_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/JAM_govrev_GDP.pdf>
+Package luatex.def Info: graphs/JAM_govrev_GDP.pdf  used on input line 2506.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/JPN_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/JPN_govrev_GDP.pdf, id=2220, 542.025pt x 325.215pt>
+File: graphs/JPN_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/JPN_govrev_GDP.pdf>
+Package luatex.def Info: graphs/JPN_govrev_GDP.pdf  used on input line 2539.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/JOR_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/JOR_govrev_GDP.pdf, id=2235, 542.025pt x 325.215pt>
+File: graphs/JOR_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/JOR_govrev_GDP.pdf>
+Package luatex.def Info: graphs/JOR_govrev_GDP.pdf  used on input line 2571.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KAZ_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/KAZ_govrev_GDP.pdf, id=2246, 542.025pt x 325.215pt>
+File: graphs/KAZ_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/KAZ_govrev_GDP.pdf>
+Package luatex.def Info: graphs/KAZ_govrev_GDP.pdf  used on input line 2601.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KEN_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/KEN_govrev_GDP.pdf, id=2255, 542.025pt x 325.215pt>
+File: graphs/KEN_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/KEN_govrev_GDP.pdf>
+Package luatex.def Info: graphs/KEN_govrev_GDP.pdf  used on input line 2630.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KWT_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/KWT_govrev_GDP.pdf, id=2278, 542.025pt x 325.215pt>
+File: graphs/KWT_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/KWT_govrev_GDP.pdf>
+Package luatex.def Info: graphs/KWT_govrev_GDP.pdf  used on input line 2666.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KGZ_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/KGZ_govrev_GDP.pdf, id=2287, 542.025pt x 325.215pt>
+File: graphs/KGZ_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/KGZ_govrev_GDP.pdf>
+Package luatex.def Info: graphs/KGZ_govrev_GDP.pdf  used on input line 2695.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LAO_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/LAO_govrev_GDP.pdf, id=2294, 542.025pt x 325.215pt>
+File: graphs/LAO_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/LAO_govrev_GDP.pdf>
+Package luatex.def Info: graphs/LAO_govrev_GDP.pdf  used on input line 2723.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LVA_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/LVA_govrev_GDP.pdf, id=2303, 542.025pt x 325.215pt>
+File: graphs/LVA_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/LVA_govrev_GDP.pdf>
+Package luatex.def Info: graphs/LVA_govrev_GDP.pdf  used on input line 2752.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LBN_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/LBN_govrev_GDP.pdf, id=2312, 542.025pt x 325.215pt>
+File: graphs/LBN_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/LBN_govrev_GDP.pdf>
+Package luatex.def Info: graphs/LBN_govrev_GDP.pdf  used on input line 2781.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LSO_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/LSO_govrev_GDP.pdf, id=2329, 542.025pt x 325.215pt>
+File: graphs/LSO_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/LSO_govrev_GDP.pdf>
+Package luatex.def Info: graphs/LSO_govrev_GDP.pdf  used on input line 2814.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LBR_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/LBR_govrev_GDP.pdf, id=2342, 542.025pt x 325.215pt>
+File: graphs/LBR_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/LBR_govrev_GDP.pdf>
+Package luatex.def Info: graphs/LBR_govrev_GDP.pdf  used on input line 2845.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LBY_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/LBY_govrev_GDP.pdf, id=2353, 542.025pt x 325.215pt>
+File: graphs/LBY_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/LBY_govrev_GDP.pdf>
+Package luatex.def Info: graphs/LBY_govrev_GDP.pdf  used on input line 2875.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LTU_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/LTU_govrev_GDP.pdf, id=2362, 542.025pt x 325.215pt>
+File: graphs/LTU_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/LTU_govrev_GDP.pdf>
+Package luatex.def Info: graphs/LTU_govrev_GDP.pdf  used on input line 2904.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LUX_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/LUX_govrev_GDP.pdf, id=2371, 542.025pt x 325.215pt>
+File: graphs/LUX_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/LUX_govrev_GDP.pdf>
+Package luatex.def Info: graphs/LUX_govrev_GDP.pdf  used on input line 2933.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MKD_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/MKD_govrev_GDP.pdf, id=2382, 542.025pt x 325.215pt>
+File: graphs/MKD_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/MKD_govrev_GDP.pdf>
+Package luatex.def Info: graphs/MKD_govrev_GDP.pdf  used on input line 2963.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MDG_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/MDG_govrev_GDP.pdf, id=2395, 542.025pt x 325.215pt>
+File: graphs/MDG_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/MDG_govrev_GDP.pdf>
+Package luatex.def Info: graphs/MDG_govrev_GDP.pdf  used on input line 2994.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MWI_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/MWI_govrev_GDP.pdf, id=2404, 542.025pt x 325.215pt>
+File: graphs/MWI_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/MWI_govrev_GDP.pdf>
+Package luatex.def Info: graphs/MWI_govrev_GDP.pdf  used on input line 3023.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MYS_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/MYS_govrev_GDP.pdf, id=2413, 542.025pt x 325.215pt>
+File: graphs/MYS_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/MYS_govrev_GDP.pdf>
+Package luatex.def Info: graphs/MYS_govrev_GDP.pdf  used on input line 3052.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MDV_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/MDV_govrev_GDP.pdf, id=2424, 542.025pt x 325.215pt>
+File: graphs/MDV_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/MDV_govrev_GDP.pdf>
+Package luatex.def Info: graphs/MDV_govrev_GDP.pdf  used on input line 3082.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MLI_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/MLI_govrev_GDP.pdf, id=2429, 542.025pt x 325.215pt>
+File: graphs/MLI_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/MLI_govrev_GDP.pdf>
+Package luatex.def Info: graphs/MLI_govrev_GDP.pdf  used on input line 3109.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MLT_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/MLT_govrev_GDP.pdf, id=2436, 542.025pt x 325.215pt>
+File: graphs/MLT_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/MLT_govrev_GDP.pdf>
+Package luatex.def Info: graphs/MLT_govrev_GDP.pdf  used on input line 3137.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MRT_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/MRT_govrev_GDP.pdf, id=2451, 542.025pt x 325.215pt>
+File: graphs/MRT_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/MRT_govrev_GDP.pdf>
+Package luatex.def Info: graphs/MRT_govrev_GDP.pdf  used on input line 3169.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MUS_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/MUS_govrev_GDP.pdf, id=2458, 542.025pt x 325.215pt>
+File: graphs/MUS_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/MUS_govrev_GDP.pdf>
+Package luatex.def Info: graphs/MUS_govrev_GDP.pdf  used on input line 3197.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MEX_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/MEX_govrev_GDP.pdf, id=2471, 542.025pt x 325.215pt>
+File: graphs/MEX_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/MEX_govrev_GDP.pdf>
+Package luatex.def Info: graphs/MEX_govrev_GDP.pdf  used on input line 3228.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MDA_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/MDA_govrev_GDP.pdf, id=2476, 542.025pt x 325.215pt>
+File: graphs/MDA_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/MDA_govrev_GDP.pdf>
+Package luatex.def Info: graphs/MDA_govrev_GDP.pdf  used on input line 3255.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MNG_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/MNG_govrev_GDP.pdf, id=2489, 542.025pt x 325.215pt>
+File: graphs/MNG_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/MNG_govrev_GDP.pdf>
+Package luatex.def Info: graphs/MNG_govrev_GDP.pdf  used on input line 3286.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MNE_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/MNE_govrev_GDP.pdf, id=2494, 542.025pt x 325.215pt>
+File: graphs/MNE_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/MNE_govrev_GDP.pdf>
+Package luatex.def Info: graphs/MNE_govrev_GDP.pdf  used on input line 3313.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MAR_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/MAR_govrev_GDP.pdf, id=2515, 542.025pt x 325.215pt>
+File: graphs/MAR_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/MAR_govrev_GDP.pdf>
+Package luatex.def Info: graphs/MAR_govrev_GDP.pdf  used on input line 3348.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MOZ_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/MOZ_govrev_GDP.pdf, id=2524, 542.025pt x 325.215pt>
+File: graphs/MOZ_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/MOZ_govrev_GDP.pdf>
+Package luatex.def Info: graphs/MOZ_govrev_GDP.pdf  used on input line 3377.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MMR_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/MMR_govrev_GDP.pdf, id=2537, 542.025pt x 325.215pt>
+File: graphs/MMR_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/MMR_govrev_GDP.pdf>
+Package luatex.def Info: graphs/MMR_govrev_GDP.pdf  used on input line 3408.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NAM_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/NAM_govrev_GDP.pdf, id=2544, 542.025pt x 325.215pt>
+File: graphs/NAM_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/NAM_govrev_GDP.pdf>
+Package luatex.def Info: graphs/NAM_govrev_GDP.pdf  used on input line 3436.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NPL_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/NPL_govrev_GDP.pdf, id=2551, 542.025pt x 325.215pt>
+File: graphs/NPL_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/NPL_govrev_GDP.pdf>
+Package luatex.def Info: graphs/NPL_govrev_GDP.pdf  used on input line 3464.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NLD_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/NLD_govrev_GDP.pdf, id=2572, 542.025pt x 325.215pt>
+File: graphs/NLD_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/NLD_govrev_GDP.pdf>
+Package luatex.def Info: graphs/NLD_govrev_GDP.pdf  used on input line 3499.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NZL_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/NZL_govrev_GDP.pdf, id=2583, 542.025pt x 325.215pt>
+File: graphs/NZL_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/NZL_govrev_GDP.pdf>
+Package luatex.def Info: graphs/NZL_govrev_GDP.pdf  used on input line 3529.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NIC_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/NIC_govrev_GDP.pdf, id=2590, 542.025pt x 325.215pt>
+File: graphs/NIC_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/NIC_govrev_GDP.pdf>
+Package luatex.def Info: graphs/NIC_govrev_GDP.pdf  used on input line 3557.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NER_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/NER_govrev_GDP.pdf, id=2595, 542.025pt x 325.215pt>
+File: graphs/NER_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/NER_govrev_GDP.pdf>
+Package luatex.def Info: graphs/NER_govrev_GDP.pdf  used on input line 3584.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NGA_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/NGA_govrev_GDP.pdf, id=2606, 542.025pt x 325.215pt>
+File: graphs/NGA_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/NGA_govrev_GDP.pdf>
+Package luatex.def Info: graphs/NGA_govrev_GDP.pdf  used on input line 3614.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NOR_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/NOR_govrev_GDP.pdf, id=2623, 542.025pt x 325.215pt>
+File: graphs/NOR_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/NOR_govrev_GDP.pdf>
+Package luatex.def Info: graphs/NOR_govrev_GDP.pdf  used on input line 3647.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/OMN_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/OMN_govrev_GDP.pdf, id=2634, 542.025pt x 325.215pt>
+File: graphs/OMN_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/OMN_govrev_GDP.pdf>
+Package luatex.def Info: graphs/OMN_govrev_GDP.pdf  used on input line 3677.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PAK_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/PAK_govrev_GDP.pdf, id=2651, 542.025pt x 325.215pt>
+File: graphs/PAK_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/PAK_govrev_GDP.pdf>
+Package luatex.def Info: graphs/PAK_govrev_GDP.pdf  used on input line 3710.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PSE_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/PSE_govrev_GDP.pdf, id=2660, 542.025pt x 325.215pt>
+File: graphs/PSE_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/PSE_govrev_GDP.pdf>
+Package luatex.def Info: graphs/PSE_govrev_GDP.pdf  used on input line 3739.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PAN_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/PAN_govrev_GDP.pdf, id=2673, 542.025pt x 325.215pt>
+File: graphs/PAN_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/PAN_govrev_GDP.pdf>
+Package luatex.def Info: graphs/PAN_govrev_GDP.pdf  used on input line 3770.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PNG_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/PNG_govrev_GDP.pdf, id=2684, 542.025pt x 325.215pt>
+File: graphs/PNG_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/PNG_govrev_GDP.pdf>
+Package luatex.def Info: graphs/PNG_govrev_GDP.pdf  used on input line 3800.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PRY_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/PRY_govrev_GDP.pdf, id=2695, 542.025pt x 325.215pt>
+File: graphs/PRY_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/PRY_govrev_GDP.pdf>
+Package luatex.def Info: graphs/PRY_govrev_GDP.pdf  used on input line 3830.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PER_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/PER_govrev_GDP.pdf, id=2706, 542.025pt x 325.215pt>
+File: graphs/PER_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/PER_govrev_GDP.pdf>
+Package luatex.def Info: graphs/PER_govrev_GDP.pdf  used on input line 3860.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PHL_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/PHL_govrev_GDP.pdf, id=2715, 542.025pt x 325.215pt>
+File: graphs/PHL_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/PHL_govrev_GDP.pdf>
+Package luatex.def Info: graphs/PHL_govrev_GDP.pdf  used on input line 3889.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/POL_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/POL_govrev_GDP.pdf, id=2724, 542.025pt x 325.215pt>
+File: graphs/POL_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/POL_govrev_GDP.pdf>
+Package luatex.def Info: graphs/POL_govrev_GDP.pdf  used on input line 3918.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PRT_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/PRT_govrev_GDP.pdf, id=2739, 542.025pt x 325.215pt>
+File: graphs/PRT_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/PRT_govrev_GDP.pdf>
+Package luatex.def Info: graphs/PRT_govrev_GDP.pdf  used on input line 3950.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PRI_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/PRI_govrev_GDP.pdf, id=2746, 542.025pt x 325.215pt>
+File: graphs/PRI_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/PRI_govrev_GDP.pdf>
+Package luatex.def Info: graphs/PRI_govrev_GDP.pdf  used on input line 3978.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/QAT_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/QAT_govrev_GDP.pdf, id=2757, 542.025pt x 325.215pt>
+File: graphs/QAT_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/QAT_govrev_GDP.pdf>
+Package luatex.def Info: graphs/QAT_govrev_GDP.pdf  used on input line 4008.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/COG_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/COG_govrev_GDP.pdf, id=2772, 542.025pt x 325.215pt>
+File: graphs/COG_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/COG_govrev_GDP.pdf>
+Package luatex.def Info: graphs/COG_govrev_GDP.pdf  used on input line 4040.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ROU_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/ROU_govrev_GDP.pdf, id=2781, 542.025pt x 325.215pt>
+File: graphs/ROU_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/ROU_govrev_GDP.pdf>
+Package luatex.def Info: graphs/ROU_govrev_GDP.pdf  used on input line 4069.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/RUS_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/RUS_govrev_GDP.pdf, id=2794, 542.025pt x 325.215pt>
+File: graphs/RUS_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/RUS_govrev_GDP.pdf>
+Package luatex.def Info: graphs/RUS_govrev_GDP.pdf  used on input line 4100.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/RWA_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/RWA_govrev_GDP.pdf, id=2807, 542.025pt x 325.215pt>
+File: graphs/RWA_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/RWA_govrev_GDP.pdf>
+Package luatex.def Info: graphs/RWA_govrev_GDP.pdf  used on input line 4131.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/STP_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/STP_govrev_GDP.pdf, id=2816, 542.025pt x 325.215pt>
+File: graphs/STP_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/STP_govrev_GDP.pdf>
+Package luatex.def Info: graphs/STP_govrev_GDP.pdf  used on input line 4160.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SAU_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/SAU_govrev_GDP.pdf, id=2827, 542.025pt x 325.215pt>
+File: graphs/SAU_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/SAU_govrev_GDP.pdf>
+Package luatex.def Info: graphs/SAU_govrev_GDP.pdf  used on input line 4190.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SEN_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/SEN_govrev_GDP.pdf, id=2834, 542.025pt x 325.215pt>
+File: graphs/SEN_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/SEN_govrev_GDP.pdf>
+Package luatex.def Info: graphs/SEN_govrev_GDP.pdf  used on input line 4218.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SRB_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/SRB_govrev_GDP.pdf, id=2841, 542.025pt x 325.215pt>
+File: graphs/SRB_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/SRB_govrev_GDP.pdf>
+Package luatex.def Info: graphs/SRB_govrev_GDP.pdf  used on input line 4246.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SYC_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/SYC_govrev_GDP.pdf, id=2860, 542.025pt x 325.215pt>
+File: graphs/SYC_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/SYC_govrev_GDP.pdf>
+Package luatex.def Info: graphs/SYC_govrev_GDP.pdf  used on input line 4280.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SLE_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/SLE_govrev_GDP.pdf, id=2869, 542.025pt x 325.215pt>
+File: graphs/SLE_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/SLE_govrev_GDP.pdf>
+Package luatex.def Info: graphs/SLE_govrev_GDP.pdf  used on input line 4309.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SGP_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/SGP_govrev_GDP.pdf, id=2876, 542.025pt x 325.215pt>
+File: graphs/SGP_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/SGP_govrev_GDP.pdf>
+Package luatex.def Info: graphs/SGP_govrev_GDP.pdf  used on input line 4337.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SVK_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/SVK_govrev_GDP.pdf, id=2883, 542.025pt x 325.215pt>
+File: graphs/SVK_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/SVK_govrev_GDP.pdf>
+Package luatex.def Info: graphs/SVK_govrev_GDP.pdf  used on input line 4365.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SVN_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/SVN_govrev_GDP.pdf, id=2892, 542.025pt x 325.215pt>
+File: graphs/SVN_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/SVN_govrev_GDP.pdf>
+Package luatex.def Info: graphs/SVN_govrev_GDP.pdf  used on input line 4394.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SOM_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/SOM_govrev_GDP.pdf, id=2903, 542.025pt x 325.215pt>
+File: graphs/SOM_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/SOM_govrev_GDP.pdf>
+Package luatex.def Info: graphs/SOM_govrev_GDP.pdf  used on input line 4424.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ZAF_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/ZAF_govrev_GDP.pdf, id=2914, 542.025pt x 325.215pt>
+File: graphs/ZAF_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/ZAF_govrev_GDP.pdf>
+Package luatex.def Info: graphs/ZAF_govrev_GDP.pdf  used on input line 4454.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KOR_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/KOR_govrev_GDP.pdf, id=2923, 542.025pt x 325.215pt>
+File: graphs/KOR_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/KOR_govrev_GDP.pdf>
+Package luatex.def Info: graphs/KOR_govrev_GDP.pdf  used on input line 4483.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SSD_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/SSD_govrev_GDP.pdf, id=2928, 542.025pt x 325.215pt>
+File: graphs/SSD_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/SSD_govrev_GDP.pdf>
+Package luatex.def Info: graphs/SSD_govrev_GDP.pdf  used on input line 4510.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ESP_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/ESP_govrev_GDP.pdf, id=2943, 542.025pt x 325.215pt>
+File: graphs/ESP_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/ESP_govrev_GDP.pdf>
+Package luatex.def Info: graphs/ESP_govrev_GDP.pdf  used on input line 4542.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LKA_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/LKA_govrev_GDP.pdf, id=2948, 542.025pt x 325.215pt>
+File: graphs/LKA_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/LKA_govrev_GDP.pdf>
+Package luatex.def Info: graphs/LKA_govrev_GDP.pdf  used on input line 4569.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SDN_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/SDN_govrev_GDP.pdf, id=2967, 542.025pt x 325.215pt>
+File: graphs/SDN_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/SDN_govrev_GDP.pdf>
+Package luatex.def Info: graphs/SDN_govrev_GDP.pdf  used on input line 4603.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SUR_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/SUR_govrev_GDP.pdf, id=2974, 542.025pt x 325.215pt>
+File: graphs/SUR_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/SUR_govrev_GDP.pdf>
+Package luatex.def Info: graphs/SUR_govrev_GDP.pdf  used on input line 4631.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SWE_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/SWE_govrev_GDP.pdf, id=2984, 542.025pt x 325.215pt>
+File: graphs/SWE_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/SWE_govrev_GDP.pdf>
+Package luatex.def Info: graphs/SWE_govrev_GDP.pdf  used on input line 4661.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CHE_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/CHE_govrev_GDP.pdf, id=2999, 542.025pt x 325.215pt>
+File: graphs/CHE_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/CHE_govrev_GDP.pdf>
+Package luatex.def Info: graphs/CHE_govrev_GDP.pdf  used on input line 4693.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SYR_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/SYR_govrev_GDP.pdf, id=3008, 542.025pt x 325.215pt>
+File: graphs/SYR_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/SYR_govrev_GDP.pdf>
+Package luatex.def Info: graphs/SYR_govrev_GDP.pdf  used on input line 4722.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TWN_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/TWN_govrev_GDP.pdf, id=3017, 542.025pt x 325.215pt>
+File: graphs/TWN_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/TWN_govrev_GDP.pdf>
+Package luatex.def Info: graphs/TWN_govrev_GDP.pdf  used on input line 4751.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TJK_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/TJK_govrev_GDP.pdf, id=3030, 542.025pt x 325.215pt>
+File: graphs/TJK_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/TJK_govrev_GDP.pdf>
+Package luatex.def Info: graphs/TJK_govrev_GDP.pdf  used on input line 4782.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TZA_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/TZA_govrev_GDP.pdf, id=3039, 542.025pt x 325.215pt>
+File: graphs/TZA_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/TZA_govrev_GDP.pdf>
+Package luatex.def Info: graphs/TZA_govrev_GDP.pdf  used on input line 4811.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/THA_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/THA_govrev_GDP.pdf, id=3048, 542.025pt x 325.215pt>
+File: graphs/THA_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/THA_govrev_GDP.pdf>
+Package luatex.def Info: graphs/THA_govrev_GDP.pdf  used on input line 4840.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TLS_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/TLS_govrev_GDP.pdf, id=3055, 542.025pt x 325.215pt>
+File: graphs/TLS_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/TLS_govrev_GDP.pdf>
+Package luatex.def Info: graphs/TLS_govrev_GDP.pdf  used on input line 4868.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TGO_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/TGO_govrev_GDP.pdf, id=3062, 542.025pt x 325.215pt>
+File: graphs/TGO_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/TGO_govrev_GDP.pdf>
+Package luatex.def Info: graphs/TGO_govrev_GDP.pdf  used on input line 4896.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TTO_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/TTO_govrev_GDP.pdf, id=3075, 542.025pt x 325.215pt>
+File: graphs/TTO_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/TTO_govrev_GDP.pdf>
+Package luatex.def Info: graphs/TTO_govrev_GDP.pdf  used on input line 4927.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TUN_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/TUN_govrev_GDP.pdf, id=3088, 542.025pt x 325.215pt>
+File: graphs/TUN_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/TUN_govrev_GDP.pdf>
+Package luatex.def Info: graphs/TUN_govrev_GDP.pdf  used on input line 4958.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TUR_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/TUR_govrev_GDP.pdf, id=3109, 542.025pt x 325.215pt>
+File: graphs/TUR_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/TUR_govrev_GDP.pdf>
+Package luatex.def Info: graphs/TUR_govrev_GDP.pdf  used on input line 4993.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TKM_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/TKM_govrev_GDP.pdf, id=3118, 542.025pt x 325.215pt>
+File: graphs/TKM_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/TKM_govrev_GDP.pdf>
+Package luatex.def Info: graphs/TKM_govrev_GDP.pdf  used on input line 5022.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/UGA_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/UGA_govrev_GDP.pdf, id=3127, 542.025pt x 325.215pt>
+File: graphs/UGA_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/UGA_govrev_GDP.pdf>
+Package luatex.def Info: graphs/UGA_govrev_GDP.pdf  used on input line 5051.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/UKR_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/UKR_govrev_GDP.pdf, id=3134, 542.025pt x 325.215pt>
+File: graphs/UKR_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/UKR_govrev_GDP.pdf>
+Package luatex.def Info: graphs/UKR_govrev_GDP.pdf  used on input line 5079.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ARE_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/ARE_govrev_GDP.pdf, id=3153, 542.025pt x 325.215pt>
+File: graphs/ARE_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/ARE_govrev_GDP.pdf>
+Package luatex.def Info: graphs/ARE_govrev_GDP.pdf  used on input line 5113.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GBR_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/GBR_govrev_GDP.pdf, id=3162, 542.025pt x 325.215pt>
+File: graphs/GBR_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/GBR_govrev_GDP.pdf>
+Package luatex.def Info: graphs/GBR_govrev_GDP.pdf  used on input line 5142.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/USA_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/USA_govrev_GDP.pdf, id=3193, 542.025pt x 325.215pt>
+File: graphs/USA_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/USA_govrev_GDP.pdf>
+Package luatex.def Info: graphs/USA_govrev_GDP.pdf  used on input line 5182.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/URY_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/URY_govrev_GDP.pdf, id=3200, 542.025pt x 325.215pt>
+File: graphs/URY_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/URY_govrev_GDP.pdf>
+Package luatex.def Info: graphs/URY_govrev_GDP.pdf  used on input line 5210.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/UZB_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/UZB_govrev_GDP.pdf, id=3207, 542.025pt x 325.215pt>
+File: graphs/UZB_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/UZB_govrev_GDP.pdf>
+Package luatex.def Info: graphs/UZB_govrev_GDP.pdf  used on input line 5238.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/VEN_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/VEN_govrev_GDP.pdf, id=3214, 542.025pt x 325.215pt>
+File: graphs/VEN_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/VEN_govrev_GDP.pdf>
+Package luatex.def Info: graphs/VEN_govrev_GDP.pdf  used on input line 5266.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/VNM_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/VNM_govrev_GDP.pdf, id=3225, 542.025pt x 325.215pt>
+File: graphs/VNM_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/VNM_govrev_GDP.pdf>
+Package luatex.def Info: graphs/VNM_govrev_GDP.pdf  used on input line 5296.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/YEM_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/YEM_govrev_GDP.pdf, id=3234, 542.025pt x 325.215pt>
+File: graphs/YEM_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/YEM_govrev_GDP.pdf>
+Package luatex.def Info: graphs/YEM_govrev_GDP.pdf  used on input line 5325.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ZMB_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/ZMB_govrev_GDP.pdf, id=3245, 542.025pt x 325.215pt>
+File: graphs/ZMB_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/ZMB_govrev_GDP.pdf>
+Package luatex.def Info: graphs/ZMB_govrev_GDP.pdf  used on input line 5355.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ZWE_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/ZWE_govrev_GDP.pdf, id=3262, 542.025pt x 325.215pt>
+File: graphs/ZWE_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/ZWE_govrev_GDP.pdf>
+Package luatex.def Info: graphs/ZWE_govrev_GDP.pdf  used on input line 5388.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AND_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/AND_govrev_GDP.pdf, id=3267, 542.025pt x 325.215pt>
+File: graphs/AND_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/AND_govrev_GDP.pdf>
+Package luatex.def Info: graphs/AND_govrev_GDP.pdf  used on input line 5415.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ATG_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/ATG_govrev_GDP.pdf, id=3274, 542.025pt x 325.215pt>
+File: graphs/ATG_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/ATG_govrev_GDP.pdf>
+Package luatex.def Info: graphs/ATG_govrev_GDP.pdf  used on input line 5443.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ABW_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/ABW_govrev_GDP.pdf, id=3281, 542.025pt x 325.215pt>
+File: graphs/ABW_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/ABW_govrev_GDP.pdf>
+Package luatex.def Info: graphs/ABW_govrev_GDP.pdf  used on input line 5471.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/COM_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/COM_govrev_GDP.pdf, id=3302, 542.025pt x 325.215pt>
+File: graphs/COM_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/COM_govrev_GDP.pdf>
+Package luatex.def Info: graphs/COM_govrev_GDP.pdf  used on input line 5506.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/COK_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/COK_govrev_GDP.pdf, id=3305, 542.025pt x 325.215pt>
+File: graphs/COK_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/COK_govrev_GDP.pdf>
+Package luatex.def Info: graphs/COK_govrev_GDP.pdf  used on input line 5532.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KIR_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/KIR_govrev_GDP.pdf, id=3312, 542.025pt x 325.215pt>
+File: graphs/KIR_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/KIR_govrev_GDP.pdf>
+Package luatex.def Info: graphs/KIR_govrev_GDP.pdf  used on input line 5560.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/XKX_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/XKX_govrev_GDP.pdf, id=3317, 542.025pt x 325.215pt>
+File: graphs/XKX_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/XKX_govrev_GDP.pdf>
+Package luatex.def Info: graphs/XKX_govrev_GDP.pdf  used on input line 5587.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MAC_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/MAC_govrev_GDP.pdf, id=3322, 542.025pt x 325.215pt>
+File: graphs/MAC_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/MAC_govrev_GDP.pdf>
+Package luatex.def Info: graphs/MAC_govrev_GDP.pdf  used on input line 5614.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MHL_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/MHL_govrev_GDP.pdf, id=3333, 542.025pt x 325.215pt>
+File: graphs/MHL_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/MHL_govrev_GDP.pdf>
+Package luatex.def Info: graphs/MHL_govrev_GDP.pdf  used on input line 5644.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/FSM_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/FSM_govrev_GDP.pdf, id=3346, 542.025pt x 325.215pt>
+File: graphs/FSM_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/FSM_govrev_GDP.pdf>
+Package luatex.def Info: graphs/FSM_govrev_GDP.pdf  used on input line 5675.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NRU_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/NRU_govrev_GDP.pdf, id=3359, 542.025pt x 325.215pt>
+File: graphs/NRU_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/NRU_govrev_GDP.pdf>
+Package luatex.def Info: graphs/NRU_govrev_GDP.pdf  used on input line 5706.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PLW_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/PLW_govrev_GDP.pdf, id=3368, 542.025pt x 325.215pt>
+File: graphs/PLW_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/PLW_govrev_GDP.pdf>
+Package luatex.def Info: graphs/PLW_govrev_GDP.pdf  used on input line 5735.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KNA_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/KNA_govrev_GDP.pdf, id=3387, 542.025pt x 325.215pt>
+File: graphs/KNA_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/KNA_govrev_GDP.pdf>
+Package luatex.def Info: graphs/KNA_govrev_GDP.pdf  used on input line 5769.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LCA_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/LCA_govrev_GDP.pdf, id=3398, 542.025pt x 325.215pt>
+File: graphs/LCA_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/LCA_govrev_GDP.pdf>
+Package luatex.def Info: graphs/LCA_govrev_GDP.pdf  used on input line 5799.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/VCT_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/VCT_govrev_GDP.pdf, id=3409, 542.025pt x 325.215pt>
+File: graphs/VCT_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/VCT_govrev_GDP.pdf>
+Package luatex.def Info: graphs/VCT_govrev_GDP.pdf  used on input line 5829.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/WSM_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/WSM_govrev_GDP.pdf, id=3418, 542.025pt x 325.215pt>
+File: graphs/WSM_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/WSM_govrev_GDP.pdf>
+Package luatex.def Info: graphs/WSM_govrev_GDP.pdf  used on input line 5858.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SMR_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/SMR_govrev_GDP.pdf, id=3423, 542.025pt x 325.215pt>
+File: graphs/SMR_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/SMR_govrev_GDP.pdf>
+Package luatex.def Info: graphs/SMR_govrev_GDP.pdf  used on input line 5885.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SLB_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/SLB_govrev_GDP.pdf, id=3434, 542.025pt x 325.215pt>
+File: graphs/SLB_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/SLB_govrev_GDP.pdf>
+Package luatex.def Info: graphs/SLB_govrev_GDP.pdf  used on input line 5915.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TON_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/TON_govrev_GDP.pdf, id=3441, 542.025pt x 325.215pt>
+File: graphs/TON_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/TON_govrev_GDP.pdf>
+Package luatex.def Info: graphs/TON_govrev_GDP.pdf  used on input line 5943.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TUV_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/TUV_govrev_GDP.pdf, id=3450, 542.025pt x 325.215pt>
+File: graphs/TUV_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/TUV_govrev_GDP.pdf>
+Package luatex.def Info: graphs/TUV_govrev_GDP.pdf  used on input line 5972.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/VUT_govrev_GDP.pdf) (pdf inclusion): PDF inclusion: found 
+PDF version '1.6', but at most version '1.5' allowed
+<graphs/VUT_govrev_GDP.pdf, id=3463, 542.025pt x 325.215pt>
+File: graphs/VUT_govrev_GDP.pdf Graphic file (type pdf)
+<use graphs/VUT_govrev_GDP.pdf>
+Package luatex.def Info: graphs/VUT_govrev_GDP.pdf  used on input line 6003.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.3'
+[3]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.4'
+[4<./graphs/AFG_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.5'
+[5<./graphs/ALB_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.6'
+[6<./graphs/DZA_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.7'
+[7<./graphs/AGO_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[8<./graphs/ARG_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[9<./graphs/ARM_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[10<./graphs/AUS_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[11<./graphs/AUT_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[12<./graphs/AZE_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[13<./graphs/BHS_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[14<./graphs/BHR_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[15<./graphs/BGD_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[16<./graphs/BRB_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[17<./graphs/BLR_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[18<./graphs/BEL_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[19<./graphs/BLZ_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[20<./graphs/BEN_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[21<./graphs/BTN_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[22<./graphs/BOL_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[23<./graphs/BIH_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[24<./graphs/BWA_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[25<./graphs/BRA_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[26<./graphs/BRN_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[27<./graphs/BGR_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[28<./graphs/BFA_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[29<./graphs/BDI_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[30<./graphs/KHM_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[31<./graphs/CMR_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[32<./graphs/CAN_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[33<./graphs/CPV_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[34<./graphs/CAF_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[35<./graphs/TCD_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[36<./graphs/CHL_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[37<./graphs/CHN_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[38<./graphs/COL_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[39<./graphs/CRI_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[40<./graphs/HRV_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[41<./graphs/CUB_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[42<./graphs/CYP_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[43<./graphs/CZE_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[44<./graphs/COD_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[45<./graphs/DNK_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[46<./graphs/DJI_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[47<./graphs/DMA_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[48<./graphs/DOM_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[49<./graphs/ECU_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[50<./graphs/EGY_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[51<./graphs/SLV_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[52<./graphs/GNQ_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[53<./graphs/ERI_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[54<./graphs/EST_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[55<./graphs/SWZ_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[56<./graphs/ETH_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[57<./graphs/FJI_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[58<./graphs/FIN_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[59<./graphs/FRA_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[60<./graphs/GAB_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[61<./graphs/GMB_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[62<./graphs/GEO_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[63<./graphs/DEU_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[64<./graphs/GHA_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[65<./graphs/GRC_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[66<./graphs/GRD_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[67<./graphs/GTM_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[68<./graphs/GIN_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[69<./graphs/GNB_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[70<./graphs/GUY_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[71<./graphs/HTI_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[72<./graphs/HND_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[73<./graphs/HKG_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[74<./graphs/HUN_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[75<./graphs/ISL_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[76<./graphs/IND_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[77<./graphs/IDN_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[78<./graphs/IRN_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[79<./graphs/IRQ_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[80<./graphs/IRL_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[81<./graphs/ISR_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[82<./graphs/ITA_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[83<./graphs/CIV_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[84<./graphs/JAM_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[85<./graphs/JPN_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[86<./graphs/JOR_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[87<./graphs/KAZ_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[88<./graphs/KEN_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[89<./graphs/KWT_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[90<./graphs/KGZ_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[91<./graphs/LAO_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[92<./graphs/LVA_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[93<./graphs/LBN_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[94<./graphs/LSO_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[95<./graphs/LBR_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[96<./graphs/LBY_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[97<./graphs/LTU_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[98<./graphs/LUX_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[99<./graphs/MKD_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[100<./graphs/MDG_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[101<./graphs/MWI_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[102<./graphs/MYS_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[103<./graphs/MDV_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[104<./graphs/MLI_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[105<./graphs/MLT_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[106<./graphs/MRT_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[107<./graphs/MUS_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[108<./graphs/MEX_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[109<./graphs/MDA_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[110<./graphs/MNG_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[111<./graphs/MNE_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[112<./graphs/MAR_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[113<./graphs/MOZ_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[114<./graphs/MMR_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[115<./graphs/NAM_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[116<./graphs/NPL_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[117<./graphs/NLD_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[118<./graphs/NZL_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[119<./graphs/NIC_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[120<./graphs/NER_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[121<./graphs/NGA_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[122<./graphs/NOR_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[123<./graphs/OMN_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[124<./graphs/PAK_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[125<./graphs/PSE_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[126<./graphs/PAN_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[127<./graphs/PNG_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[128<./graphs/PRY_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[129<./graphs/PER_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[130<./graphs/PHL_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[131<./graphs/POL_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[132<./graphs/PRT_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[133<./graphs/PRI_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[134<./graphs/QAT_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[135<./graphs/COG_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[136<./graphs/ROU_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[137<./graphs/RUS_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[138<./graphs/RWA_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[139<./graphs/STP_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[140<./graphs/SAU_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[141<./graphs/SEN_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[142<./graphs/SRB_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[143<./graphs/SYC_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[144<./graphs/SLE_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[145<./graphs/SGP_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[146<./graphs/SVK_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[147<./graphs/SVN_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[148<./graphs/SOM_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[149<./graphs/ZAF_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[150<./graphs/KOR_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[151<./graphs/SSD_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[152<./graphs/ESP_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[153<./graphs/LKA_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[154<./graphs/SDN_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[155<./graphs/SUR_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[156<./graphs/SWE_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[157<./graphs/CHE_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[158<./graphs/SYR_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[159<./graphs/TWN_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[160<./graphs/TJK_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[161<./graphs/TZA_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[162<./graphs/THA_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[163<./graphs/TLS_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[164<./graphs/TGO_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[165<./graphs/TTO_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[166<./graphs/TUN_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[167<./graphs/TUR_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[168<./graphs/TKM_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[169<./graphs/UGA_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[170<./graphs/UKR_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[171<./graphs/ARE_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[172<./graphs/GBR_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[173<./graphs/USA_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[174<./graphs/URY_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[175<./graphs/UZB_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[176<./graphs/VEN_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[177<./graphs/VNM_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[178<./graphs/YEM_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[179<./graphs/ZMB_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[180<./graphs/ZWE_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[181<./graphs/AND_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[182<./graphs/ATG_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[183<./graphs/ABW_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[184<./graphs/COM_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[185<./graphs/COK_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[186<./graphs/KIR_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[187<./graphs/XKX_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[188<./graphs/MAC_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[189<./graphs/MHL_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[190<./graphs/FSM_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[191<./graphs/NRU_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[192<./graphs/PLW_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[193<./graphs/KNA_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[194<./graphs/LCA_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[195<./graphs/VCT_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[196<./graphs/WSM_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[197<./graphs/SMR_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[198<./graphs/SLB_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[199<./graphs/TON_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[200<./graphs/TUV_govrev_GDP.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[201<./graphs/VUT_govrev_GDP.pdf>] (./govrev_GDP.bbl
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 12
+.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+))
+
+[202
+Missing character: There is no — (U+2014) in font ptmri8t!
+] (./govrev_GDP.aux)
+ ***********
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+ ***********
+Package rerunfilecheck Info: File `govrev_GDP.out' has not changed.
+(rerunfilecheck)             Checksum: F69B6362EA0C3197E1884E35ED88948B;18220.
+)
+
+Here is how much of LuaTeX's memory you used:
+ 24144 strings out of 475664
+ 1455567,1144653 words of node,token memory allocated
+ 503 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 9 attribute, 58 glue_spec,
+ 9 attribute_list, 2 write, 4 pdf_action nodes
+   avail lists: 1:3,2:65997,3:5859,4:12646,5:10834,6:2651,7:110769,8:109,9:27086
+,10:5,11:3378
+ 45007 multiletter control sequences out of 65536+600000
+ 57 fonts using 3757735 bytes
+ 105i,12n,100p,470b,576s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{C:/Users/lehbib/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/U
+sers/lehbib/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:
+/Users/lehbib/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:
+/Users/lehbib/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:
+/Users/lehbib/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on govrev_GDP.pdf (208 pages, 22530271 bytes).
+
+PDF statistics: 46813 PDF objects out of 55141 (max. 8388607)
+ 824 named destinations out of 1000 (max. 131072)
+ 1608 words of extra memory for PDF output out of 10000 (max. 100000000)
+

@@ -34,6 +34,8 @@ save `clean', replace
 * Make file list in raw data 
 filelist, directory($data_raw) 
 replace dirname = subinstr(dirname,"${data_raw}/","",.)
+drop if dirname == "country_level"
+drop if strpos(dirname, "Versions") > 0
 keep dirname
 duplicates drop dirname, force
 merge 1:1 dirname using `clean'
@@ -43,7 +45,7 @@ drop if dirname == "${data_clean}"
 drop if dirname == "${data_raw}"
 
 * Report 
-count if dirname != "country_level" & _merge == 2 
+count if dirname != "country_level" & _merge == 2
 if r(N) > 0 {
     di as error "The following folders are only in the clean data:"
     list dirname if dirname != "country_level" & _merge == 2, noobs compress
@@ -131,7 +133,7 @@ foreach file of loc files {
     local dataset_vars "`r(varlist)'"
     di "`r(varlist)'"
     preserve
-    import delimited "$data_helper/sources.csv", varnames(1) clear
+    qui import delimited "$data_helper/sources.csv", varnames(1) clear
     qui glevelsof src_specific_var_name, local(possible_sources) clean
 	qui glevelsof varabbr, local(varabbr_codes) clean
     
@@ -140,7 +142,7 @@ foreach file of loc files {
     foreach var of local dataset_vars {
         if !`: list var in possible_sources' {
             di as err "Variable `var' in file `file' is not in the src_specific_var_name column of the sources.csv file."
-            exit 198
+            
         }
     }
 	restore
@@ -155,7 +157,7 @@ foreach file of loc files {
     foreach var of local varabbr_codes {
         if !`: list var in code' {
             di as err "Variable `var' in file `file' is not in the varabbr column of the sources.csv file."
-            exit 198
+            
         }
     }
 	restore

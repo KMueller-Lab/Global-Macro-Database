@@ -1,0 +1,4 @@
+\contentsline {section}{Data availability heatmap}{3}{section*.3}%
+\contentsline {section}{USD exchange rate}{4}{section*.5}%
+\contentsline {section}{Population}{5}{section*.8}%
+\contentsline {section}{References}{6}{section*.11}%

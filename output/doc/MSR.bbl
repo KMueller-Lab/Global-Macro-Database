@@ -1,0 +1,47 @@
+\begin{thebibliography}{9}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{{{Bank for International Settlements}}(2024)}]{BIS}
+{{Bank for International Settlements}} (2024).
+
+\bibitem[{{FAO}(2024)}]{FAO}
+{FAO}.
+\newblock \enquote{FAOSTAT: GDP data.}
+\newblock \url{https://www.fao.org/faostat/} (2024).
+\newblock Accessed on 29 December 2024.
+
+\bibitem[{Grimm(2024)}]{Grimm}
+Grimm, Maximilian.
+\newblock \enquote{The Effect of Monetary Policy on Systemic Bank Funding
+  Stability.}
+\newblock (2024).
+
+\bibitem[{Ha et~al.(2023)Ha, Kose, and Ohnsorge}]{WB_CC}
+Ha, Jongrim, M.~Ayhan Kose, and Franziska Ohnsorge.
+\newblock \enquote{One-Stop Source: A Global Database of Inflation.}
+\newblock \emph{Journal of International Money and Finance}, 137(2023), 102896.
+
+\bibitem[{{International Labour Organization}(2024)}]{ILO}
+{International Labour Organization}.
+\newblock \enquote{Unemployment Rate - {ILO} Modelled Estimates.} (2024).
+\newblock ILOSTAT database, accessed: 2024-01-07.
+
+\bibitem[{{International Monetary Fund}(2024{\natexlab{a}})}]{IMF_GFS}
+{International Monetary Fund}.
+\newblock \enquote{Government Finance Statistics.} (2024{\natexlab{a}}).
+
+\bibitem[{{International Monetary Fund}(2024{\natexlab{b}})}]{IMF_IFS}
+---{}---{}---.
+\newblock \enquote{International Financial Statistics.} (2024{\natexlab{b}}).
+
+\bibitem[{{International Monetary Fund}(2024{\natexlab{c}})}]{IMF_MFS}
+---{}---{}---.
+\newblock \enquote{{Monetary and Financial Statistics}.} (2024{\natexlab{c}}).
+
+\bibitem[{{United Nations}(2024)}]{UN}
+{United Nations}.
+\newblock \enquote{World Population Prospects 2024, Online Edition.} (2024).
+\newblock Accessed: 2024-02-02.
+
+\end{thebibliography}

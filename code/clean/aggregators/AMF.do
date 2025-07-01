@@ -261,9 +261,9 @@ gmdfixunits AMF_exports if ISO3 == "MRT" & year <= 2012, divide(10)
 gmdfixunits AMF_govexp if ISO3 == "MRT" & year <= 2012, divide(10)
 gmdfixunits AMF_govrev if ISO3 == "MRT" & year <= 2012, divide(10)
 gmdfixunits AMF_govdef if ISO3 == "MRT" & year <= 2012, divide(10)
+gmdfixunits AMF_nGDP   if ISO3 == "MRT" & year <= 2012, divide(10)
 gmdfixunits AMF_govtax if ISO3 == "MRT" & year <= 2012, divide(10)
-gmdfixunits AMF_cons if ISO3 == "MRT" & year <= 2012, divide(10)
-
+gmdfixunits AMF_cons   if ISO3 == "MRT" & year <= 2012, divide(10)
 
 * Mauritania's data is multiplied by 10 before 2009 for exchange rate
 gmdfixunits AMF_USDfx if ISO3 == "MRT" & year <= 2009, divide(10)
@@ -272,6 +272,9 @@ gmdfixunits AMF_USDfx if ISO3 == "MRT" & year <= 2009, divide(10)
 gmdfixunits AMF_imports if ISO3 == "SDN" & year <= 1996, divide(100)
 gmdfixunits AMF_exports if ISO3 == "SDN" & year <= 1996, divide(100)
 gmdfixunits AMF_inv if ISO3 == "SDN" & year <= 1996, divide(100)
+
+* There is an error in Tunisian data in 2018
+gmdfixunits AMF_govexp if ISO3 == "TUN" & year == 2018, divide(100)
 
 * Derive values in GDP
 gen AMF_govexp_GDP = (AMF_govexp / AMF_nGDP) * 100

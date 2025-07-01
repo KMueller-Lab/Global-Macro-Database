@@ -1,0 +1,1050 @@
+\documentclass[12pt,a4paper,landscape]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[margin=0.5in, top=0.5in, headsep=0.1in]{geometry}
+\usepackage{caption}
+\usepackage{float}
+\usepackage[authoryear,round]{natbib}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{rotating}
+\usepackage{tabularx}
+\usepackage{pdflscape}
+\usepackage{adjustbox}
+\usepackage{times}
+\usepackage{array}
+\usepackage{fancyhdr}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+% Setup fancy headers
+\fancypagestyle{mainStyle}{%
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0pt}
+    \fancyhead[R]{\footnotesize\hyperref[toc]{Back to Contents}}
+}
+
+\pagestyle{mainStyle}
+
+\newcommand{\countryheader}[2]{\large\bfseries\hyperref[#1]{#2}}
+\captionsetup[table]{labelformat=empty}
+\definecolor{lightgray}{gray}{0.85}
+
+\begin{document}
+\title{\Large Country Data and Graphs for Venezuela}
+\date{June 30, 2025}
+\maketitle
+\thispagestyle{empty}
+
+\clearpage
+\setcounter{page}{1}
+\hypersetup{colorlinks=true,linkcolor=blue,linktoc=all}
+\phantomsection
+\label{toc}
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+\phantomsection
+\addcontentsline{toc}{section}{Data availability heatmap}
+\begin{center}
+{\Large\bfseries Data availability heatmap}
+\end{center}
+\vspace{1cm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{graphs/VEN_heatmap.pdf}
+\end{figure}
+\setcounter{page}{3}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Current account balance}
+\begin{center}
+{\Large\bfseries Current account balance}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{WDI}& 1970 - 2014 &Spliced using overlapping data in 2015. \\
+\rowcolor{lightgray}\cite{IMF_WEO}& 2015 - 2017 &Spliced using overlapping data in 2018. \\
+\rowcolor{white}\cite{IMF_WEO_forecast}& 2018 - 2025 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_CA_GDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Consumer price index}
+\begin{center}
+{\Large\bfseries Consumer price index}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{MOXLAD}& 1900 - 1969 &Spliced using overlapping data in 1970: (ratio = 65876.3\%). \\
+\rowcolor{lightgray}\cite{WDI_ARC}& 1970 - 1997 &Spliced using overlapping data in 1998: (ratio = 11282\%). \\
+\rowcolor{white}\cite{WB_CC}& 1998 - 2007 &Spliced using overlapping data in 2008: (ratio = 99.6\%). \\
+\rowcolor{lightgray}\cite{WDI}& 2008 - 2016 &Spliced using overlapping data in 2017: (ratio = 481912.1\%). \\
+\rowcolor{white}\cite{WB_CC}& 2017 - 2023 &Baseline source, overlaps with base year 2018. \\
+\rowcolor{lightgray}\cite{IMF_WEO_forecast}& 2024 - 2025 &Spliced using overlapping data in 2026: (ratio = 2.78e+07\%). \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_CPI.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Money supply (M0)}
+\begin{center}
+{\Large\bfseries Money supply (M0)}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{Mitchell}& 1908 - 1949 &Spliced using overlapping data in 1950: (ratio = 0\%). \\
+\rowcolor{lightgray}\cite{IMF_MFS}& 1950 - 2013 &Spliced using overlapping data in 2014. \\
+\rowcolor{white}\cite{CEPAC}& 2014 - 2022 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_M0.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Money supply (M1)}
+\begin{center}
+{\Large\bfseries Money supply (M1)}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{Mitchell}& 1948 - 1949 &Spliced using overlapping data in 1950: (ratio = 0\%). \\
+\rowcolor{lightgray}\cite{IMF_MFS}& 1950 - 2013 &Spliced using overlapping data in 2014. \\
+\rowcolor{white}\cite{CEPAC}& 2014 - 2022 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_M1.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Money supply (M2)}
+\begin{center}
+{\Large\bfseries Money supply (M2)}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{Mitchell}& 1948 - 1949 &Spliced using overlapping data in 1950: (ratio = 0\%). \\
+\rowcolor{lightgray}\cite{IMF_MFS}& 1950 - 2013 &Spliced using overlapping data in 2014. \\
+\rowcolor{white}\cite{CEPAC}& 2014 - 2022 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_M2.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Real effective exchange rate}
+\begin{center}
+{\Large\bfseries Real effective exchange rate}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{BRUEGEL}& 1960 - 1979 &Spliced using overlapping data in 1980: (ratio = 118.1\%). \\
+\rowcolor{lightgray}\cite{WDI}& 1980 - 2016 &Spliced using overlapping data in 2017. \\
+\rowcolor{white}\cite{BRUEGEL}& 2017 - 2023 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_REER.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{USD exchange rate}
+\begin{center}
+{\Large\bfseries USD exchange rate}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{Tena}& 1800 - 1938 &Spliced using overlapping data in 1939. \\
+\rowcolor{lightgray}\cite{MOXLAD}& 1939 - 1949 &Spliced using overlapping data in 1950. \\
+\rowcolor{white}\cite{IMF_IFS}& 1950 - 1964 &Spliced using overlapping data in 1965. \\
+\rowcolor{lightgray}\cite{BIS}& 1965 - 2017 &Spliced using overlapping data in 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_USDfx.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Central bank policy rate}
+\begin{center}
+{\Large\bfseries Central bank policy rate}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{Grimm}& 1945 - 2017 &Spliced using overlapping data in 2018. \\
+\rowcolor{lightgray}\cite{CEPAC}& 2018 - 2019 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_cbrate.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Total consumption}
+\begin{center}
+{\Large\bfseries Total consumption}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{WDI}& 1960 - 2014 &Spliced using overlapping data in 2015. \\
+\rowcolor{lightgray}\cite{UN}& 2015 - 2020 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_cons.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Total consumption to GDP ratio}
+\begin{center}
+{\Large\bfseries Total consumption to GDP ratio}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{WDI}& 1960 - 2014 &Spliced using overlapping data in 2015. \\
+\rowcolor{lightgray}\cite{UN}& 2015 - 2020 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_cons_GDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Exports}
+\begin{center}
+{\Large\bfseries Exports}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{Tena}& 1820 - 1938 &Spliced using overlapping data in 1939: (ratio = 0\%). \\
+\rowcolor{lightgray}\cite{Mitchell}& 1939 - 1959 &Spliced using overlapping data in 1960: (ratio = 95.9\%). \\
+\rowcolor{white}\cite{WDI}& 1960 - 2014 &Spliced using overlapping data in 2015. \\
+\rowcolor{lightgray}\cite{UN}& 2015 - 2020 &Baseline source, overlaps with base year 2018. \\
+\rowcolor{white}\cite{IMF_WEO_forecast}& 2021 - 2025 &Spliced using overlapping data in 2026: (ratio = 2.67e+11\%). \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_exports.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Exports to GDP ratio}
+\begin{center}
+{\Large\bfseries Exports to GDP ratio}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{Mitchell}& 1950 - 1959 &Spliced using overlapping data in 1960: (ratio = 91.9\%). \\
+\rowcolor{lightgray}\cite{WDI}& 1960 - 1969 &Spliced using overlapping data in 1970: (ratio = 94.6\%). \\
+\rowcolor{white}\cite{UN}& 1970 - 2020 &Baseline source, overlaps with base year 2018. \\
+\rowcolor{lightgray}\cite{IMF_WEO_forecast}& 2021 - 2025 &Spliced using overlapping data in 2026: (ratio = 531568.7\%). \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_exports_GDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Fixed investment}
+\begin{center}
+{\Large\bfseries Fixed investment}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{Mitchell}& 1950 - 1959 &Spliced using overlapping data in 1960: (ratio = 128.3\%). \\
+\rowcolor{lightgray}\cite{WDI}& 1960 - 2014 &Spliced using overlapping data in 2015. \\
+\rowcolor{white}\cite{UN}& 2015 - 2020 &Baseline source, overlaps with base year 2018. \\
+\rowcolor{lightgray}\cite{FAO}& 2021 - 2023 &Spliced using overlapping data in 2024: (ratio = 96.6\%). \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_finv.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Fixed investment to GDP ratio}
+\begin{center}
+{\Large\bfseries Fixed investment to GDP ratio}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{Mitchell}& 1950 - 1959 &Spliced using overlapping data in 1960: (ratio = 129.9\%). \\
+\rowcolor{lightgray}\cite{WDI}& 1960 - 2014 &Spliced using overlapping data in 2015. \\
+\rowcolor{white}\cite{UN}& 2015 - 2020 &Baseline source, overlaps with base year 2018. \\
+\rowcolor{lightgray}\cite{FAO}& 2021 - 2023 &Spliced using overlapping data in 2024: (ratio = 80.1\%). \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_finv_GDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Government debt}
+\begin{center}
+{\Large\bfseries Government debt}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{RR_debt}& 1914 - 1919 &Spliced using overlapping data in 1920. \\
+\rowcolor{lightgray}\cite{IMF_FPP}& 1920 - 1949 &Spliced using overlapping data in 1950. Data refers to general government.\\
+\rowcolor{white}\cite{IMF_GDD}& 1950 - 2015 &Spliced using overlapping data in 2016. Data refers to central government.\\
+\rowcolor{lightgray}\cite{IMF_FPP}& 2016 - 2023 &Baseline source, overlaps with base year 2018. Data refers to general government.\\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_govdebt_GDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Government deficit}
+\begin{center}
+{\Large\bfseries Government deficit}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{IMF_FPP}& 1921 - 1979 &Spliced using overlapping data in 1980. \\
+\rowcolor{lightgray}\cite{Mitchell}& 1980 - 1987 &Spliced using overlapping data in 1988. \\
+\rowcolor{white}\cite{IMF_WEO}& 1988 - 2016 &Spliced using overlapping data in 2017. \\
+\rowcolor{lightgray}\cite{IMF_FPP}& 2017 - 2023 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_govdef_GDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Government expenditure}
+\begin{center}
+{\Large\bfseries Government expenditure}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{Mitchell}& 1865 - 1919 &Spliced using overlapping data in 1920. \\
+\rowcolor{lightgray}\cite{GMD_estimated}& 1920 - 2023 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_govexp.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Government expenditure to GDP ratio}
+\begin{center}
+{\Large\bfseries Government expenditure to GDP ratio}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{IMF_FPP}& 1920 - 1987 &Spliced using overlapping data in 1988. Data refers to general government.\\
+\rowcolor{lightgray}\cite{IMF_WEO}& 1988 - 2016 &Spliced using overlapping data in 2017. Data refers to general government.\\
+\rowcolor{white}\cite{IMF_FPP}& 2017 - 2023 &Baseline source, overlaps with base year 2018. Data refers to general government.\\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_govexp_GDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Government revenue}
+\begin{center}
+{\Large\bfseries Government revenue}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{Mitchell}& 1865 - 1919 &Spliced using overlapping data in 1920. \\
+\rowcolor{lightgray}\cite{GMD_estimated}& 1920 - 2023 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_govrev.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Government revenue to GDP ratio}
+\begin{center}
+{\Large\bfseries Government revenue to GDP ratio}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{IMF_FPP}& 1920 - 1987 &Spliced using overlapping data in 1988. Data refers to general government.\\
+\rowcolor{lightgray}\cite{IMF_WEO}& 1988 - 2016 &Spliced using overlapping data in 2017. Data refers to general government.\\
+\rowcolor{white}\cite{IMF_FPP}& 2017 - 2023 &Baseline source, overlaps with base year 2018. Data refers to general government.\\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_govrev_GDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Government tax revenue}
+\begin{center}
+{\Large\bfseries Government tax revenue}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{Mitchell}& 1895 - 1949 &Spliced using overlapping data in 1950. \\
+\rowcolor{lightgray}\cite{GMD_estimated}& 1950 - 1997 &Spliced using overlapping data in 1998. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_govtax.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Government tax revenue to GDP ratio}
+\begin{center}
+{\Large\bfseries Government tax revenue to GDP ratio}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{Mitchell}& 1950 - 1969 &Spliced using overlapping data in 1970. Data refers to central government.\\
+\rowcolor{lightgray}\cite{WDI_ARC}& 1970 - 1997 &Spliced using overlapping data in 1998. Data refers to central government.\\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_govtax_GDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Imports}
+\begin{center}
+{\Large\bfseries Imports}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{Tena}& 1830 - 1938 &Spliced using overlapping data in 1939: (ratio = 0\%). \\
+\rowcolor{lightgray}\cite{Mitchell}& 1939 - 1959 &Spliced using overlapping data in 1960: (ratio = 131.1\%). \\
+\rowcolor{white}\cite{WDI}& 1960 - 2014 &Spliced using overlapping data in 2015. \\
+\rowcolor{lightgray}\cite{UN}& 2015 - 2020 &Baseline source, overlaps with base year 2018. \\
+\rowcolor{white}\cite{IMF_WEO_forecast}& 2021 - 2025 &Spliced using overlapping data in 2026: (ratio = 2.05e+11\%). \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_imports.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Imports to GDP ratio}
+\begin{center}
+{\Large\bfseries Imports to GDP ratio}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{Mitchell}& 1950 - 1959 &Spliced using overlapping data in 1960: (ratio = 132.8\%). \\
+\rowcolor{lightgray}\cite{WDI}& 1960 - 2014 &Spliced using overlapping data in 2015. \\
+\rowcolor{white}\cite{UN}& 2015 - 2020 &Baseline source, overlaps with base year 2018. \\
+\rowcolor{lightgray}\cite{IMF_WEO_forecast}& 2021 - 2025 &Spliced using overlapping data in 2026: (ratio = 408756.8\%). \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_imports_GDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Inflation}
+\begin{center}
+{\Large\bfseries Inflation}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{RR}& 1831 - 1831 &Spliced using overlapping data in 1832. \\
+\rowcolor{lightgray}\cite{CLIO}& 1832 - 1853 &Spliced using overlapping data in 1854. \\
+\rowcolor{white}\cite{RR}& 1854 - 1854 &Spliced using overlapping data in 1855. \\
+\rowcolor{lightgray}\cite{CLIO}& 1855 - 1867 &Spliced using overlapping data in 1868. \\
+\rowcolor{white}\cite{RR}& 1868 - 1868 &Spliced using overlapping data in 1869. \\
+\rowcolor{lightgray}\cite{CLIO}& 1869 - 1887 &Spliced using overlapping data in 1888. \\
+\rowcolor{white}\cite{RR}& 1888 - 1888 &Spliced using overlapping data in 1889. \\
+\rowcolor{lightgray}\cite{CLIO}& 1889 - 1900 &Spliced using overlapping data in 1901. \\
+\rowcolor{white}\cite{MOXLAD}& 1901 - 1969 &Spliced using overlapping data in 1970. \\
+\rowcolor{lightgray}\cite{WB_CC}& 1970 - 2023 &Baseline source, overlaps with base year 2018. \\
+\rowcolor{white}\cite{IMF_WEO_forecast}& 2024 - 2025 &Spliced using overlapping data in 2026. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_infl.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Investment}
+\begin{center}
+{\Large\bfseries Investment}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{Mitchell}& 1950 - 1959 &Spliced using overlapping data in 1960: (ratio = 140.2\%). \\
+\rowcolor{lightgray}\cite{WDI}& 1960 - 2014 &Spliced using overlapping data in 2015. \\
+\rowcolor{white}\cite{UN}& 2015 - 2020 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_inv.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Investment to GDP ratio}
+\begin{center}
+{\Large\bfseries Investment to GDP ratio}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{Mitchell}& 1950 - 1959 &Spliced using overlapping data in 1960: (ratio = 170.2\%). \\
+\rowcolor{lightgray}\cite{WDI}& 1960 - 2014 &Spliced using overlapping data in 2015: (ratio = 119.9\%). \\
+\rowcolor{white}\cite{IMF_WEO}& 2015 - 2017 &Spliced using overlapping data in 2018: (ratio = 150.7\%). \\
+\rowcolor{lightgray}\cite{UN}& 2018 - 2020 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_inv_GDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Long term interest rate}
+\begin{center}
+{\Large\bfseries Long term interest rate}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{IMF_MFS}& 1999 - 2013 &Spliced using overlapping data in 2014. \\
+\rowcolor{lightgray}\cite{IMF_IFS}& 2014 - 2017 &Spliced using overlapping data in 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_ltrate.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Nominal GDP}
+\begin{center}
+{\Large\bfseries Nominal GDP}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{MOXLAD}& 1920 - 1949 &Spliced using overlapping data in 1950: (ratio = 106.2\%). \\
+\rowcolor{lightgray}\cite{IMF_GDD}& 1950 - 1959 &Spliced using overlapping data in 1960: (ratio = 63.9\%). \\
+\rowcolor{white}\cite{WDI}& 1960 - 2014 &Spliced using overlapping data in 2015. \\
+\rowcolor{lightgray}\cite{UN}& 2015 - 2020 &Baseline source, overlaps with base year 2018. \\
+\rowcolor{white}\cite{FAO}& 2021 - 2023 &Spliced using overlapping data in 2024: (ratio = 120.7\%). \\
+\rowcolor{lightgray}\cite{IMF_WEO_forecast}& 2024 - 2025 &Spliced using overlapping data in 2026: (ratio = 5.77e+07\%). \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_nGDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Population}
+\begin{center}
+{\Large\bfseries Population}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{Gapminder}& 1800 - 1949 &Spliced using overlapping data in 1950: (ratio = 100.1\%). \\
+\rowcolor{lightgray}\cite{IMF_IFS}& 1950 - 1959 &Spliced using overlapping data in 1960: (ratio = 100.2\%). \\
+\rowcolor{white}\cite{WDI}& 1960 - 2023 &Baseline source, overlaps with base year 2018. \\
+\rowcolor{lightgray}\cite{Gapminder}& 2024 - 2030 &Spliced using overlapping data in 2031. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_pop.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Real GDP}
+\begin{center}
+{\Large\bfseries Real GDP}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{MAD}& 1832 - 1922 &Spliced using overlapping data in 1923: (ratio = 97.8\%). \\
+\rowcolor{lightgray}\cite{BARRO}& 1923 - 1935 &Spliced using overlapping data in 1936: (ratio = .4\%). \\
+\rowcolor{white}\cite{GNA}& 1936 - 1949 &Spliced using overlapping data in 1950: (ratio = 0\%). \\
+\rowcolor{lightgray}\cite{BARRO}& 1950 - 1952 &Spliced using overlapping data in 1953: (ratio = .3\%). \\
+\rowcolor{white}\cite{Mitchell}& 1953 - 1959 &Spliced using overlapping data in 1960: (ratio = 0\%). \\
+\rowcolor{lightgray}\cite{WDI}& 1960 - 2014 &Spliced using overlapping data in 2015. \\
+\rowcolor{white}\cite{UN}& 2015 - 2020 &Baseline source, overlaps with base year 2018. \\
+\rowcolor{lightgray}\cite{FAO}& 2021 - 2023 &Spliced using overlapping data in 2024: (ratio = 101.1\%). \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_rGDP.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Real total consumption}
+\begin{center}
+{\Large\bfseries Real total consumption}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{BARRO}& 1923 - 1960 &Spliced using overlapping data in 1961: (ratio = 14934\%). \\
+\rowcolor{lightgray}\cite{WDI}& 1961 - 2014 &Spliced using overlapping data in 2015: (ratio = 14934\%). \\
+\rowcolor{white}\cite{UN}& 2015 - 2020 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_rcons.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Short term interest rate}
+\begin{center}
+{\Large\bfseries Short term interest rate}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{BORDO}& 1984 - 1989 &Spliced using overlapping data in 1990. \\
+\rowcolor{lightgray}\cite{CEPAC}& 1990 - 2022 &Baseline source, overlaps with base year 2018. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_strate.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\begin{adjustbox}{max totalsize={\paperwidth}{\paperheight},center}
+\begin{minipage}[t][\textheight][t]{\textwidth}
+\vspace*{0.5cm}
+\phantomsection
+\addcontentsline{toc}{section}{Unemployment}
+\begin{center}
+{\Large\bfseries Unemployment}
+\end{center}
+\vspace{0.5cm}
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Source} & \textbf{Time span} & \textbf{Notes} \\
+\hline
+\rowcolor{white}\cite{IMF_IFS}& 1975 - 1998 &Spliced using overlapping data in 1999. \\
+\rowcolor{lightgray}\cite{IMF_WEO}& 1999 - 2000 &Spliced using overlapping data in 2001. \\
+\rowcolor{white}\cite{ILO}& 2001 - 2003 &Spliced using overlapping data in 2004. \\
+\rowcolor{lightgray}\cite{IMF_WEO}& 2004 - 2004 &Spliced using overlapping data in 2005. \\
+\rowcolor{white}\cite{ILO}& 2005 - 2012 &Spliced using overlapping data in 2013. \\
+\rowcolor{lightgray}\cite{IMF_IFS}& 2013 - 2013 &Spliced using overlapping data in 2014. \\
+\rowcolor{white}\cite{IMF_WEO_forecast}& 2014 - 2015 &Spliced using overlapping data in 2016. \\
+\rowcolor{lightgray}\cite{ILO}& 2016 - 2017 &Spliced using overlapping data in 2018. \\
+\rowcolor{white}\cite{IMF_WEO_forecast}& 2018 - 2018 &Spliced using overlapping data in 2019. \\
+\rowcolor{lightgray}\cite{IMF_IFS}& 2019 - 2019 &Spliced using overlapping data in 2020. \\
+\rowcolor{white}\cite{ILO}& 2020 - 2020 &Spliced using overlapping data in 2021. \\
+\hline
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.6\textheight,keepaspectratio]{graphs/VEN_unemp.pdf}
+\end{figure}
+\end{minipage}
+\end{adjustbox}
+\phantomsection
+\addcontentsline{toc}{section}{References}
+\begin{center}
+{\Large\bfseries References}
+\end{center}
+\small
+\bibliographystyle{qje}
+\bibliography{bib}
+\end{document}

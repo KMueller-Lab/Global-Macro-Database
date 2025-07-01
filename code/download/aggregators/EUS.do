@@ -6,231 +6,177 @@
 * Mohamed Lehbib
 * National University of Singapore
 *
-* Created: 2024-05-21
-*
-* Description: 
-* This Stata script downloads data from Eurostat.
-*
-* Data source: 
-* Eurostat
+* https://ec.europa.eu/eurostat/web/query-builder/tool
 * 
 * ==============================================================================
 
 * Define output file name 
 clear
-global output "${data_raw}\aggregators\EUS\EUS"
-
-
-* Create master tempfile to store all the datasets
-tempfile temp_master
-save `temp_master', replace emptyok
+global output "${data_raw}\aggregators\EUS"
 
 * ==============================================================================
-* Harmonized consumer price index, 2015=100
-* ==============================================================================
+*   HICP
+* ============================================================================== 
 
-dbnomics import, pr(Eurostat) dataset(ei_cphi_m) unit(HICP2015) indic(CP-HI00) clear
-tostring period, replace
-destring value, replace 
-keep period value geo dataset_name series_code series_name
-append using `temp_master'
-save `temp_master', replace
+local url "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/prc_hicp_aind/..CP00.?format=SDMX-CSV"
 
-* ==============================================================================
-* Harmonized consumer price Growth rate (t/t-12)
-* ==============================================================================
-* Download
-dbnomics import, pr(Eurostat) dataset(ei_cphi_m) unit(RT12) indic(CP-HI00) clear
-tostring period, replace
-destring value, replace 
-keep period value geo dataset_name series_code series_name
-append using `temp_master'
-save `temp_master', replace
+* Download the data using Stata's 'copy' command
+cap copy "`url'" "eus_data.csv", replace
+
+* Import the downloaded CSV file
+import delimited "eus_data.csv", clear 
+
+* Save 
+save "$output/CPI.dta", replace
+rm "eus_data.csv"
 
 * ==============================================================================
-* House price index (2015 = 100) - quarterly data
-* ==============================================================================
-* Download
-dbnomics import, pr(Eurostat) dataset(ei_hppi_q) unit(I15_NSA) clear
-tostring period, replace
-destring value, replace 
-keep period value geo dataset_name series_code series_name
-append using `temp_master'
-save `temp_master', replace
+*   House price index (2015 = 100) - annual data (prc_hpi_a)	
+* ============================================================================== 
 
-* ==============================================================================
-* Gross domestic product at market prices
-* ==============================================================================
-* Download
-dbnomics import, pr(Eurostat) dataset(nama_10_gdp) na_item(B1GQ) unit(CP_MNAC) clear
-tostring period, replace
-destring value, replace 
-keep period value geo dataset_name series_code series_name
-append using `temp_master'
-save `temp_master', replace
+local url "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/prc_hpi_a/A.TOTAL.I15_A_AVG.?format=SDMX-CSV"
 
-* ==============================================================================
-* Gross domestic product at Chain linked volumes (2010)
-* ==============================================================================
-* Download
-dbnomics import, pr(Eurostat) dataset(nama_10_gdp) na_item(B1GQ) unit(CLV10_MNAC) clear
-tostring period, replace
-destring value, replace 
-keep period value geo dataset_name series_code series_name
-append using `temp_master'
-save `temp_master', replace
+* Download the data using Stata's 'copy' command
+cap copy "`url'" "eus_data.csv", replace
 
-* ==============================================================================
-* Final consumption expenditure
-* ==============================================================================
-* Download
-dbnomics import, pr(Eurostat) dataset(nama_10_gdp) na_item(P3) unit(CP_MNAC) clear
-tostring period, replace
-destring value, replace 
-keep period value geo dataset_name series_code series_name
-append using `temp_master'
-save `temp_master', replace
+* Import the downloaded CSV file
+import delimited "eus_data.csv", clear 
 
-* ==============================================================================
-* Gross capital formation
-* ==============================================================================
-* Download
-dbnomics import, pr(Eurostat) dataset(nama_10_gdp) na_item(P5G) unit(CP_MNAC) clear
-tostring period, replace
-destring value, replace 
-keep period value geo dataset_name series_code series_name
-append using `temp_master'
-save `temp_master', replace
-
-* ==============================================================================
-* Gross fixed capital formation
-* ==============================================================================
-* Download
-dbnomics import, pr(Eurostat) dataset(nama_10_gdp) na_item(P51G) unit(CP_MNAC) clear
-tostring period, replace
-destring value, replace 
-keep period value geo dataset_name series_code series_name
-append using `temp_master'
-save `temp_master', replace
-
-* ==============================================================================
-* Imports of goods and services
-* ==============================================================================
-* Download
-dbnomics import, pr(Eurostat) dataset(nama_10_gdp) na_item(P7) unit(CP_MNAC) clear
-tostring period, replace
-destring value, replace 
-keep period value geo dataset_name series_code series_name
-append using `temp_master'
-save `temp_master', replace
-
-* ==============================================================================
-* Exports of goods and services
-* ==============================================================================
-* Download
-dbnomics import, pr(Eurostat) dataset(nama_10_gdp) na_item(P6) unit(CP_MNAC) clear
-tostring period, replace
-destring value, replace 
-keep period value geo dataset_name series_code series_name
-append using `temp_master'
-save `temp_master', replace
-
-* ==============================================================================
-* Total general government revenue
-* ==============================================================================
-* Download
-dbnomics import, pr(Eurostat) dataset(gov_10a_main) na_item(TR) unit(MIO_NAC) sector(S1311) clear
-tostring period, replace
-destring value, replace 
-keep period value geo dataset_name series_code series_name
-append using `temp_master'
-save `temp_master', replace
-
-* ==============================================================================
-* Total general government expenditure
-* ==============================================================================
-* Download
-dbnomics import, pr(Eurostat) dataset(gov_10a_main) na_item(TE) unit(MIO_NAC) sector(S1311) clear
-tostring period, replace
-destring value, replace 
-keep period value geo dataset_name series_code series_name
-append using `temp_master'
-save `temp_master', replace
+* Save 
+save "$output/HPI_A.dta", replace
+rm "eus_data.csv"
 
 
 * ==============================================================================
-* Total tax receipts
-* ==============================================================================
-* Download
-dbnomics import, pr(Eurostat) dataset(gov_10a_taxag) na_item(D2_D5_D91_D61_M_D995) unit(MIO_NAC) sector(S1311) clear
-tostring period, replace
-destring value, replace 
-keep period value geo dataset_name series_code series_name
-append using `temp_master'
-save `temp_master', replace
+*   Unemployment
+* ============================================================================== 
+
+local url "https://ec.europa.eu/eurostat/api/dissemination/sdmx/3.0/data/dataflow/ESTAT/tipsun20/1.0/....?format=csvdata"
+
+* Download the data using Stata's 'copy' command
+cap copy "`url'" "eus_data.csv", replace
+
+* Import the downloaded CSV file
+import delimited "eus_data.csv", clear 
+
+* Save 
+save "$output/unemp.dta", replace
+rm "eus_data.csv"
+
 
 * ==============================================================================
-* Net lending (+) /net borrowing (-) (% of GDP)
-* ==============================================================================
-* Download
-dbnomics import, pr(Eurostat) dataset(gov_10a_main) na_item(B9) unit(PC_GDP) sector(S1311) clear
-tostring period, replace
-destring value, replace 
-keep period value geo dataset_name series_code series_name
-append using `temp_master'
-save `temp_master', replace
+*   Government bond yields, 10 years' maturity
+* ============================================================================== 
+
+local url "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/irt_lt_gby10_a$defaultview/?format=SDMX-CSV"
+
+* Download the data using Stata's 'copy' command
+cap copy "`url'" "eus_data.csv", replace
+
+* Import the downloaded CSV file
+import delimited "eus_data.csv", clear 
+
+* Save 
+save "$output/ltrate_1.dta", replace
+rm "eus_data.csv"
+
 
 * ==============================================================================
-* Population
-* ==============================================================================
-* Download
-dbnomics import, pr(Eurostat) dataset(demo_gind) indic_de(JAN) clear
-tostring period, replace
-destring value, replace 
-keep period value geo dataset_name series_code series_name
-append using `temp_master'
-save `temp_master', replace
+*   Central government bond yields (Historical)
+* ============================================================================== 
+
+local url "https://ec.europa.eu/eurostat/api/dissemination/sdmx/3.0/data/dataflow/ESTAT/irt_h_cgby_a/1.0?format=csvdata"
+
+* Download the data using Stata's 'copy' command
+cap copy "`url'" "eus_data.csv", replace
+
+* Import the downloaded CSV file
+import delimited "eus_data.csv", clear 
+
+* Save 
+save "$output/ltrate_2.dta", replace
+rm "eus_data.csv"
 
 * ==============================================================================
-* Interest rates - monthly data
-* ==============================================================================
-* Download
-dbnomics import, pr(Eurostat) dataset(ei_mfir_m) indic(MF-3MI-RT) clear
-tostring period, replace
-replace value = "" if value == "NA"
-destring value, replace 
-keep period value geo dataset_name series_code series_name
-append using `temp_master'
-save `temp_master', replace
+*   Central government bond yields (Modern)
+* ============================================================================== 
+
+local url "https://ec.europa.eu/eurostat/api/dissemination/sdmx/3.0/data/dataflow/ESTAT/irt_lt_mcby_a$defaultview/1.0?format=csvdata"
+
+* Download the data using Stata's 'copy' command
+cap copy "`url'" "eus_data.csv", replace
+
+* Import the downloaded CSV file
+import delimited "eus_data.csv", clear 
+
+* Save 
+save "$output/ltrate_3.dta", replace
+rm "eus_data.csv"
+
 
 * ==============================================================================
-* Unemployment rate - annual data
-* ==============================================================================
-* Download
-dbnomics import, pr(Eurostat) dataset(tipsun20) age(Y15-74) clear
-tostring period, replace
-destring value, replace 
-keep period value geo dataset_name series_code series_name
-append using `temp_master'
-save `temp_master', replace
+*   Real Effective exchange rates indices 
+* ============================================================================== 
+local url "https://ec.europa.eu/eurostat/api/dissemination/sdmx/3.0/data/dataflow/ESTAT/tipser13/1.0/?format=csvdata"
+
+* Download the data using Stata's 'copy' command
+cap copy "`url'" "eus_data.csv", replace
+
+* Import the downloaded CSV file
+import delimited "eus_data.csv", clear 
+
+* Save 
+save "$output/EER.dta", replace
+rm "eus_data.csv"
 
 * ==============================================================================
-* Real effective exchange rate – index, 42 trading partners
-* ==============================================================================
-* Download
-dbnomics import, pr(Eurostat) dataset(tipser13) clear
-drop obs_flag
-tostring period, replace
-destring value, replace 
-keep period value geo dataset_name series_code series_name
-append using `temp_master'
-save `temp_master', replace
+*   Gross domestic product (GDP) and main components (output, expenditure and income) (nama_10_gdp) 
+* ============================================================================== 
+
+local url "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/nama_10_gdp/A.CP_MNAC+CLV15_MNAC.B1GQ+P3+P5G+P51G+P6+P7.?format=SDMX-CSV"
+
+* Download the data using Stata's 'copy' command
+cap copy "`url'" "eus_data.csv", replace
+
+* Import the downloaded CSV file
+import delimited "eus_data.csv", clear 
+
+* Save 
+save "$output/NA_A.dta", replace
+rm "eus_data.csv"
 
 * ==============================================================================
-* Save
+*   Government revenue, expenditure and main aggregates (gov_10a_main) 
+* ============================================================================== 
+
+local url "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10a_main/A.PC_GDP.S13+S1311.TE+B9+TR.?format=SDMX-CSV"
+
+* Download the data using Stata's 'copy' command
+cap copy "`url'" "eus_data.csv", replace
+
+* Import the downloaded CSV file
+import delimited "eus_data.csv", clear 
+
+* Save 
+save "$output/GFS_A.dta", replace
+rm "eus_data.csv"
+
 * ==============================================================================
+*  Main national accounts tax aggregates (gov_10a_taxag)	
+* ============================================================================== 
+
+local url "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10a_taxag/A.PC_GDP.S13+S1311.D2_D5_D91_D61_M_D995.?format=SDMX-CSV"
+
+* Download the data using Stata's 'copy' command
+cap copy "`url'" "eus_data.csv", replace
+
+* Import the downloaded CSV file
+import delimited "eus_data.csv", clear 
+
+* Save 
+save "$output/govtax.dta", replace
+rm "eus_data.csv"
+
 * Save download date 
 gmdsavedate, source(EUS)
 
-* Save 
-savedelta ${output}, id(period geo series_code)

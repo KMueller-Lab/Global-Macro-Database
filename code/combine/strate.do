@@ -22,4 +22,4 @@ use "$data_final/clean_data_wide", clear
 * ==============================================================================
 
 * Set up the priority list
-splice, priority(IMF_MFS OECD_KEI OECD_MEI_ARC OECD_EO EUS ADB CEPAC AMECO CS1 CS2 JST BORDO NBS Homer_Sylla MW IHD HFS) generate(strate) varname(strate) base_year(2017) method("none")
+splice, priority(IMF_MFS OECD_KEI OECD_MEI_ARC OECD_EO IMF_IFS ADB CEPAC AMECO CS1 CS2 JST BORDO NBS Homer_Sylla MW IHD HFS) generate(strate) varname(strate) base_year(2017) method("none")

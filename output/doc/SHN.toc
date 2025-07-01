@@ -1,0 +1,6 @@
+\contentsline {section}{Data availability heatmap}{3}{section*.3}%
+\contentsline {section}{Consumer price index}{4}{section*.5}%
+\contentsline {section}{USD exchange rate}{5}{section*.8}%
+\contentsline {section}{Inflation}{6}{section*.11}%
+\contentsline {section}{Population}{7}{section*.14}%
+\contentsline {section}{References}{8}{section*.17}%

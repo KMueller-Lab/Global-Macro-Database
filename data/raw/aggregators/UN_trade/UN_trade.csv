@@ -1,0 +1,1970 @@
+country,year,variable,value
+Argentina,1900,exports,148.0
+Argentina,1901,exports,161.0
+Argentina,1902,exports,171.0
+Argentina,1903,exports,211.0
+Argentina,1904,exports,253.0
+Argentina,1905,exports,309.0
+Argentina,1906,exports,279.0
+Argentina,1907,exports,288.0
+Argentina,1908,exports,353.0
+Argentina,1909,exports,383.0
+Argentina,1910,exports,359.0
+Argentina,1911,exports,313.0
+Argentina,1912,exports,462.0
+Argentina,1913,exports,465.0
+Argentina,1921,exports,489.0
+Argentina,1922,exports,549.0
+Argentina,1923,exports,600.0
+Argentina,1924,exports,785.0
+Argentina,1925,exports,788.0
+Argentina,1926,exports,726.0
+Argentina,1927,exports,969.0
+Argentina,1928,exports,1016.0
+Argentina,1929,exports,906.0
+Argentina,1930,exports,517.0
+Argentina,1931,exports,427.0
+Argentina,1932,exports,331.0
+Argentina,1933,exports,356.0
+Argentina,1934,exports,470.0
+Argentina,1935,exports,501.0
+Argentina,1936,exports,537.0
+Argentina,1937,exports,757.0
+Argentina,1938,exports,437.0
+Argentina,1948,exports,1627.0
+Argentina,1950,exports,1167.0
+Argentina,1951,exports,1169.0
+Argentina,1952,exports,678.0
+Argentina,1953,exports,1099.0
+Argentina,1954,exports,1027.0
+Argentina,1955,exports,929.0
+Argentina,1956,exports,944.0
+Argentina,1957,exports,975.0
+Argentina,1958,exports,994.0
+Argentina,1959,exports,1009.0
+Argentina,1960,exports,1079.0
+Argentina,1900,imports,109.0
+Argentina,1901,imports,110.0
+Argentina,1902,imports,99.0
+Argentina,1903,imports,126.0
+Argentina,1904,imports,181.0
+Argentina,1905,imports,198.0
+Argentina,1906,imports,260.0
+Argentina,1907,imports,276.0
+Argentina,1908,imports,263.0
+Argentina,1909,imports,292.0
+Argentina,1910,imports,366.0
+Argentina,1911,imports,391.0
+Argentina,1912,imports,431.0
+Argentina,1913,imports,479.0
+Argentina,1921,imports,551.0
+Argentina,1922,imports,564.0
+Argentina,1923,imports,682.0
+Argentina,1924,imports,647.0
+Argentina,1925,imports,801.0
+Argentina,1926,imports,758.0
+Argentina,1927,imports,825.0
+Argentina,1928,imports,807.0
+Argentina,1929,imports,820.0
+Argentina,1930,imports,619.0
+Argentina,1931,imports,349.0
+Argentina,1932,imports,215.0
+Argentina,1933,imports,286.0
+Argentina,1934,imports,325.0
+Argentina,1935,imports,340.0
+Argentina,1936,imports,348.0
+Argentina,1937,imports,482.0
+Argentina,1938,imports,443.0
+Argentina,1948,imports,1590.0
+Argentina,1950,imports,1043.0
+Argentina,1951,imports,1477.0
+Argentina,1952,imports,1181.0
+Argentina,1953,imports,795.0
+Argentina,1954,imports,979.0
+Argentina,1955,imports,1173.0
+Argentina,1956,imports,1128.0
+Argentina,1957,imports,1310.0
+Argentina,1958,imports,1233.0
+Argentina,1959,imports,993.0
+Argentina,1960,imports,1249.0
+Australia,1900,exports,157.0
+Australia,1901,exports,172.0
+Australia,1902,exports,144.0
+Australia,1903,exports,145.0
+Australia,1904,exports,197.0
+Australia,1905,exports,223.0
+Australia,1906,exports,257.0
+Australia,1907,exports,301.0
+Australia,1908,exports,243.0
+Australia,1909,exports,274.0
+Australia,1910,exports,339.0
+Australia,1911,exports,328.0
+Australia,1912,exports,325.0
+Australia,1913,exports,364.0
+Australia,1921,exports,481.0
+Australia,1922,exports,513.0
+Australia,1923,exports,532.0
+Australia,1924,exports,516.0
+Australia,1925,exports,721.0
+Australia,1926,exports,701.0
+Australia,1927,exports,648.0
+Australia,1928,exports,680.0
+Australia,1929,exports,683.0
+Australia,1930,exports,464.0
+Australia,1931,exports,371.0
+Australia,1932,exports,287.0
+Australia,1933,exports,341.0
+Australia,1934,exports,478.0
+Australia,1935,exports,404.0
+Australia,1936,exports,489.0
+Australia,1937,exports,579.0
+Australia,1938,exports,562.0
+Australia,1948,exports,1314.0
+Australia,1950,exports,1482.0
+Australia,1951,exports,2199.0
+Australia,1952,exports,1680.0
+Australia,1953,exports,1979.0
+Australia,1955,exports,1728.0
+Australia,1956,exports,1867.0
+Australia,1957,exports,2187.0
+Australia,1958,exports,1626.0
+Australia,1959,exports,1968.0
+Australia,1960,exports,1941.0
+Australia,1900,imports,178.0
+Australia,1901,imports,184.0
+Australia,1902,imports,176.0
+Australia,1903,imports,162.0
+Australia,1904,imports,159.0
+Australia,1905,imports,163.0
+Australia,1906,imports,188.0
+Australia,1907,imports,221.0
+Australia,1908,imports,215.0
+Australia,1909,imports,222.0
+Australia,1910,imports,260.0
+Australia,1911,imports,288.0
+Australia,1912,imports,338.0
+Australia,1913,imports,346.0
+Australia,1921,imports,565.0
+Australia,1922,imports,386.0
+Australia,1923,imports,551.0
+Australia,1924,imports,565.0
+Australia,1925,imports,597.0
+Australia,1926,imports,668.0
+Australia,1927,imports,724.0
+Australia,1928,imports,647.0
+Australia,1929,imports,627.0
+Australia,1930,imports,562.0
+Australia,1931,imports,268.0
+Australia,1932,imports,156.0
+Australia,1933,imports,226.0
+Australia,1934,imports,284.0
+Australia,1935,imports,324.0
+Australia,1936,imports,378.0
+Australia,1937,imports,407.0
+Australia,1938,imports,506.0
+Australia,1948,imports,1082.0
+Australia,1950,imports,1354.0
+Australia,1951,imports,1661.0
+Australia,1952,imports,1690.0
+Australia,1953,imports,1272.0
+Australia,1954,imports,1648.0
+Australia,1955,imports,1873.0
+Australia,1956,imports,1666.0
+Australia,1957,imports,1643.0
+Australia,1958,imports,1747.0
+Australia,1959,imports,1803.0
+Australia,1960,imports,2300.0
+Austria,1900,exports,420.0
+Austria,1901,exports,403.0
+Austria,1902,exports,406.0
+Austria,1903,exports,454.0
+Austria,1904,exports,443.0
+Austria,1905,exports,486.0
+Austria,1906,exports,474.0
+Austria,1907,exports,499.0
+Austria,1908,exports,458.0
+Austria,1909,exports,471.0
+Austria,1910,exports,491.0
+Austria,1911,exports,488.0
+Austria,1912,exports,556.0
+Austria,1913,exports,563.0
+Austria,1921,exports,183.0
+Austria,1922,exports,212.0
+Austria,1923,exports,227.0
+Austria,1924,exports,277.0
+Austria,1925,exports,270.0
+Austria,1926,exports,240.0
+Austria,1927,exports,287.0
+Austria,1928,exports,311.0
+Austria,1929,exports,308.0
+Austria,1930,exports,260.0
+Austria,1931,exports,181.0
+Austria,1932,exports,98.0
+Austria,1933,exports,112.0
+Austria,1934,exports,159.0
+Austria,1935,exports,170.0
+Austria,1936,exports,180.0
+Austria,1937,exports,229.0
+Austria,1938,exports,146.0
+Austria,1948,exports,198.0
+Austria,1950,exports,326.0
+Austria,1951,exports,451.0
+Austria,1952,exports,506.0
+Austria,1953,exports,538.0
+Austria,1954,exports,610.0
+Austria,1955,exports,699.0
+Austria,1956,exports,849.0
+Austria,1957,exports,980.0
+Austria,1958,exports,919.0
+Austria,1959,exports,969.0
+Austria,1960,exports,1121.0
+Austria,1900,imports,354.0
+Austria,1901,imports,345.0
+Austria,1902,imports,368.0
+Austria,1903,imports,396.0
+Austria,1904,imports,429.0
+Austria,1905,imports,450.0
+Austria,1906,imports,469.0
+Austria,1907,imports,510.0
+Austria,1908,imports,488.0
+Austria,1909,imports,560.0
+Austria,1910,imports,581.0
+Austria,1911,imports,651.0
+Austria,1912,imports,723.0
+Austria,1913,imports,694.0
+Austria,1921,imports,344.0
+Austria,1922,imports,322.0
+Austria,1923,imports,389.0
+Austria,1924,imports,488.0
+Austria,1925,imports,407.0
+Austria,1926,imports,392.0
+Austria,1927,imports,438.0
+Austria,1928,imports,472.0
+Austria,1929,imports,460.0
+Austria,1930,imports,380.0
+Austria,1931,imports,304.0
+Austria,1932,imports,179.0
+Austria,1933,imports,164.0
+Austria,1934,imports,213.0
+Austria,1935,imports,228.0
+Austria,1936,imports,236.0
+Austria,1937,imports,273.0
+Austria,1938,imports,243.0
+Austria,1948,imports,291.0
+Austria,1950,imports,477.0
+Austria,1951,imports,657.0
+Austria,1952,imports,654.0
+Austria,1953,imports,546.0
+Austria,1954,imports,653.0
+Austria,1955,imports,887.0
+Austria,1956,imports,975.0
+Austria,1957,imports,1130.0
+Austria,1958,imports,1075.0
+Austria,1959,imports,1146.0
+Austria,1960,imports,1417.0
+Belgium-Luxembourg,1900,exports,372.0
+Belgium-Luxembourg,1901,exports,354.0
+Belgium-Luxembourg,1902,exports,372.0
+Belgium-Luxembourg,1903,exports,408.0
+Belgium-Luxembourg,1904,exports,422.0
+Belgium-Luxembourg,1905,exports,448.0
+Belgium-Luxembourg,1906,exports,519.0
+Belgium-Luxembourg,1907,exports,546.0
+Belgium-Luxembourg,1908,exports,480.0
+Belgium-Luxembourg,1909,exports,532.0
+Belgium-Luxembourg,1910,exports,643.0
+Belgium-Luxembourg,1911,exports,683.0
+Belgium-Luxembourg,1912,exports,754.0
+Belgium-Luxembourg,1913,exports,702.0
+Belgium-Luxembourg,1921,exports,542.0
+Belgium-Luxembourg,1922,exports,482.0
+Belgium-Luxembourg,1923,exports,506.0
+Belgium-Luxembourg,1924,exports,643.0
+Belgium-Luxembourg,1925,exports,705.0
+Belgium-Luxembourg,1926,exports,654.0
+Belgium-Luxembourg,1927,exports,742.0
+Belgium-Luxembourg,1928,exports,860.0
+Belgium-Luxembourg,1929,exports,886.0
+Belgium-Luxembourg,1930,exports,727.0
+Belgium-Luxembourg,1931,exports,643.0
+Belgium-Luxembourg,1932,exports,413.0
+Belgium-Luxembourg,1933,exports,503.0
+Belgium-Luxembourg,1934,exports,629.0
+Belgium-Luxembourg,1935,exports,587.0
+Belgium-Luxembourg,1936,exports,669.0
+Belgium-Luxembourg,1937,exports,860.0
+Belgium-Luxembourg,1938,exports,731.0
+Belgium-Luxembourg,1948,exports,1688.0
+Belgium-Luxembourg,1950,exports,1648.0
+Belgium-Luxembourg,1951,exports,2649.0
+Belgium-Luxembourg,1952,exports,2445.0
+Belgium-Luxembourg,1953,exports,2251.0
+Belgium-Luxembourg,1954,exports,2300.0
+Belgium-Luxembourg,1955,exports,2776.0
+Belgium-Luxembourg,1956,exports,3163.0
+Belgium-Luxembourg,1957,exports,3186.0
+Belgium-Luxembourg,1958,exports,3046.0
+Belgium-Luxembourg,1959,exports,3295.0
+Belgium-Luxembourg,1960,exports,3775.0
+Belgium-Luxembourg,1900,imports,430.0
+Belgium-Luxembourg,1901,imports,429.0
+Belgium-Luxembourg,1902,imports,460.0
+Belgium-Luxembourg,1903,imports,513.0
+Belgium-Luxembourg,1904,imports,537.0
+Belgium-Luxembourg,1905,imports,586.0
+Belgium-Luxembourg,1906,imports,645.0
+Belgium-Luxembourg,1907,imports,708.0
+Belgium-Luxembourg,1908,imports,626.0
+Belgium-Luxembourg,1909,imports,696.0
+Belgium-Luxembourg,1910,imports,785.0
+Belgium-Luxembourg,1911,imports,846.0
+Belgium-Luxembourg,1912,imports,900.0
+Belgium-Luxembourg,1913,imports,895.0
+Belgium-Luxembourg,1921,imports,760.0
+Belgium-Luxembourg,1922,imports,719.0
+Belgium-Luxembourg,1923,imports,688.0
+Belgium-Luxembourg,1924,imports,821.0
+Belgium-Luxembourg,1925,imports,850.0
+Belgium-Luxembourg,1926,imports,754.0
+Belgium-Luxembourg,1927,imports,808.0
+Belgium-Luxembourg,1928,imports,889.0
+Belgium-Luxembourg,1929,imports,988.0
+Belgium-Luxembourg,1930,imports,861.0
+Belgium-Luxembourg,1931,imports,660.0
+Belgium-Luxembourg,1932,imports,449.0
+Belgium-Luxembourg,1933,imports,534.0
+Belgium-Luxembourg,1934,imports,638.0
+Belgium-Luxembourg,1935,imports,618.0
+Belgium-Luxembourg,1936,imports,716.0
+Belgium-Luxembourg,1937,imports,932.0
+Belgium-Luxembourg,1938,imports,767.0
+Belgium-Luxembourg,1948,imports,1984.0
+Belgium-Luxembourg,1950,imports,1936.0
+Belgium-Luxembourg,1951,imports,2528.0
+Belgium-Luxembourg,1952,imports,2444.0
+Belgium-Luxembourg,1953,imports,2405.0
+Belgium-Luxembourg,1954,imports,2535.0
+Belgium-Luxembourg,1955,imports,2830.0
+Belgium-Luxembourg,1956,imports,3273.0
+Belgium-Luxembourg,1957,imports,3432.0
+Belgium-Luxembourg,1958,imports,3129.0
+Belgium-Luxembourg,1959,imports,3442.0
+Belgium-Luxembourg,1960,imports,3957.0
+Brazil,1900,exports,182.0
+Brazil,1901,exports,195.0
+Brazil,1902,exports,175.0
+Brazil,1903,exports,177.0
+Brazil,1904,exports,189.0
+Brazil,1905,exports,215.0
+Brazil,1906,exports,261.0
+Brazil,1907,exports,261.0
+Brazil,1908,exports,212.0
+Brazil,1909,exports,307.0
+Brazil,1910,exports,305.0
+Brazil,1911,exports,322.0
+Brazil,1912,exports,360.0
+Brazil,1913,exports,312.0
+Brazil,1921,exports,222.0
+Brazil,1922,exports,303.0
+Brazil,1923,exports,330.0
+Brazil,1924,exports,425.0
+Brazil,1925,exports,483.0
+Brazil,1926,exports,447.0
+Brazil,1927,exports,437.0
+Brazil,1928,exports,476.0
+Brazil,1929,exports,463.0
+Brazil,1930,exports,315.0
+Brazil,1931,exports,238.0
+Brazil,1932,exports,176.0
+Brazil,1933,exports,220.0
+Brazil,1934,exports,288.0
+Brazil,1935,exports,272.0
+Brazil,1936,exports,322.0
+Brazil,1937,exports,350.0
+Brazil,1938,exports,296.0
+Brazil,1948,exports,1181.0
+Brazil,1950,exports,1355.0
+Brazil,1951,exports,1769.0
+Brazil,1952,exports,1418.0
+Brazil,1953,exports,1539.0
+Brazil,1954,exports,1562.0
+Brazil,1955,exports,1423.0
+Brazil,1956,exports,1482.0
+Brazil,1957,exports,1392.0
+Brazil,1958,exports,1243.0
+Brazil,1959,exports,1282.0
+Brazil,1960,exports,1269.0
+Brazil,1900,imports,84.0
+Brazil,1901,imports,96.0
+Brazil,1902,imports,113.0
+Brazil,1903,imports,116.0
+Brazil,1904,imports,126.0
+Brazil,1905,imports,145.0
+Brazil,1906,imports,161.0
+Brazil,1907,imports,197.0
+Brazil,1908,imports,172.0
+Brazil,1909,imports,180.0
+Brazil,1910,imports,233.0
+Brazil,1911,imports,257.0
+Brazil,1912,imports,308.0
+Brazil,1913,imports,322.0
+Brazil,1921,imports,220.0
+Brazil,1922,imports,215.0
+Brazil,1923,imports,227.0
+Brazil,1924,imports,307.0
+Brazil,1925,imports,405.0
+Brazil,1926,imports,379.0
+Brazil,1927,imports,393.0
+Brazil,1928,imports,443.0
+Brazil,1929,imports,423.0
+Brazil,1930,imports,259.0
+Brazil,1931,imports,140.0
+Brazil,1932,imports,108.0
+Brazil,1933,imports,176.0
+Brazil,1934,imports,208.0
+Brazil,1935,imports,226.0
+Brazil,1936,imports,248.0
+Brazil,1937,imports,335.0
+Brazil,1938,imports,295.0
+Brazil,1948,imports,1121.0
+Brazil,1950,imports,1085.0
+Brazil,1951,imports,1987.0
+Brazil,1952,imports,1986.0
+Brazil,1953,imports,1319.0
+Brazil,1954,imports,1634.0
+Brazil,1955,imports,1306.0
+Brazil,1956,imports,1240.0
+Brazil,1957,imports,1488.0
+Brazil,1958,imports,1353.0
+Brazil,1959,imports,1375.0
+Brazil,1960,imports,1462.0
+Canada,1900,exports,169.0
+Canada,1901,exports,170.0
+Canada,1902,exports,190.0
+Canada,1903,exports,209.0
+Canada,1904,exports,192.0
+Canada,1905,exports,186.0
+Canada,1906,exports,234.0
+Canada,1907,exports,246.0
+Canada,1908,exports,254.0
+Canada,1909,exports,253.0
+Canada,1910,exports,293.0
+Canada,1911,exports,285.0
+Canada,1912,exports,301.0
+Canada,1913,exports,366.0
+Canada,1921,exports,688.0
+Canada,1922,exports,932.0
+Canada,1923,exports,1017.0
+Canada,1924,exports,1047.0
+Canada,1925,exports,1296.0
+Canada,1926,exports,1246.0
+Canada,1927,exports,1231.0
+Canada,1928,exports,1362.0
+Canada,1929,exports,1178.0
+Canada,1930,exports,883.0
+Canada,1931,exports,576.0
+Canada,1932,exports,439.0
+Canada,1933,exports,488.0
+Canada,1934,exports,663.0
+Canada,1935,exports,737.0
+Canada,1936,exports,952.0
+Canada,1937,exports,1012.0
+Canada,1938,exports,844.0
+Canada,1948,exports,3109.0
+Canada,1950,exports,2910.0
+Canada,1951,exports,3767.0
+Canada,1952,exports,4452.0
+Canada,1953,exports,4241.0
+Canada,1954,exports,4055.0
+Canada,1955,exports,4410.0
+Canada,1956,exports,4946.0
+Canada,1957,exports,5148.0
+Canada,1958,exports,5080.0
+Canada,1959,exports,5405.0
+Canada,1960,exports,5563.0
+Canada,1900,imports,181.0
+Canada,1901,imports,187.0
+Canada,1902,imports,206.0
+Canada,1903,imports,232.0
+Canada,1904,imports,251.0
+Canada,1905,imports,257.0
+Canada,1906,imports,287.0
+Canada,1907,imports,364.0
+Canada,1908,imports,300.0
+Canada,1909,imports,386.0
+Canada,1910,imports,462.0
+Canada,1911,imports,533.0
+Canada,1912,imports,687.0
+Canada,1913,imports,641.0
+Canada,1921,imports,685.0
+Canada,1922,imports,796.0
+Canada,1923,imports,872.0
+Canada,1924,imports,792.0
+Canada,1925,imports,922.0
+Canada,1926,imports,1031.0
+Canada,1927,imports,1087.0
+Canada,1928,imports,1220.0
+Canada,1929,imports,1299.0
+Canada,1930,imports,1008.0
+Canada,1931,imports,605.0
+Canada,1932,imports,399.0
+Canada,1933,imports,370.0
+Canada,1934,imports,521.0
+Canada,1935,imports,552.0
+Canada,1936,imports,683.0
+Canada,1937,imports,811.0
+Canada,1938,imports,675.0
+Canada,1948,imports,2640.0
+Canada,1950,imports,2926.0
+Canada,1951,imports,3877.0
+Canada,1952,imports,4118.0
+Canada,1953,imports,4454.0
+Canada,1954,imports,4204.0
+Canada,1955,imports,4774.0
+Canada,1956,imports,5804.0
+Canada,1957,imports,5867.0
+Canada,1958,imports,5351.0
+Canada,1959,imports,5897.0
+Canada,1960,imports,5663.0
+Chile,1900,exports,60.0
+Chile,1901,exports,62.0
+Chile,1902,exports,61.0
+Chile,1903,exports,71.0
+Chile,1904,exports,79.0
+Chile,1905,exports,88.0
+Chile,1906,exports,99.0
+Chile,1907,exports,100.0
+Chile,1908,exports,115.0
+Chile,1909,exports,109.0
+Chile,1910,exports,112.0
+Chile,1911,exports,124.0
+Chile,1912,exports,140.0
+Chile,1913,exports,145.0
+Chile,1921,exports,128.0
+Chile,1922,exports,112.0
+Chile,1923,exports,186.0
+Chile,1924,exports,201.0
+Chile,1925,exports,227.0
+Chile,1926,exports,178.0
+Chile,1927,exports,200.0
+Chile,1928,exports,236.0
+Chile,1929,exports,279.0
+Chile,1930,exports,162.0
+Chile,1931,exports,101.0
+Chile,1932,exports,34.0
+Chile,1933,exports,51.0
+Chile,1934,exports,92.0
+Chile,1935,exports,93.0
+Chile,1936,exports,111.0
+Chile,1937,exports,191.0
+Chile,1938,exports,138.0
+Chile,1948,exports,330.0
+Chile,1950,exports,284.0
+Chile,1951,exports,372.0
+Chile,1952,exports,456.0
+Chile,1953,exports,411.0
+Chile,1954,exports,404.0
+Chile,1955,exports,476.0
+Chile,1956,exports,546.0
+Chile,1957,exports,459.0
+Chile,1958,exports,389.0
+Chile,1959,exports,498.0
+Chile,1960,exports,491.0
+Chile,1900,imports,47.0
+Chile,1901,imports,51.0
+Chile,1902,imports,48.0
+Chile,1903,imports,52.0
+Chile,1904,imports,57.0
+Chile,1905,imports,69.0
+Chile,1906,imports,82.0
+Chile,1907,imports,85.0
+Chile,1908,imports,97.0
+Chile,1909,imports,96.0
+Chile,1910,imports,112.0
+Chile,1911,imports,127.0
+Chile,1912,imports,122.0
+Chile,1913,imports,120.0
+Chile,1921,imports,106.0
+Chile,1922,imports,79.0
+Chile,1923,imports,113.0
+Chile,1924,imports,120.0
+Chile,1925,imports,146.0
+Chile,1926,imports,157.0
+Chile,1927,imports,130.0
+Chile,1928,imports,146.0
+Chile,1929,imports,197.0
+Chile,1930,imports,171.0
+Chile,1931,imports,86.0
+Chile,1932,imports,26.0
+Chile,1933,imports,28.0
+Chile,1934,imports,44.0
+Chile,1935,imports,61.0
+Chile,1936,imports,72.0
+Chile,1937,imports,89.0
+Chile,1938,imports,103.0
+Chile,1948,imports,270.0
+Chile,1950,imports,248.0
+Chile,1951,imports,329.0
+Chile,1952,imports,371.0
+Chile,1953,imports,336.0
+Chile,1954,imports,344.0
+Chile,1955,imports,377.0
+Chile,1956,imports,355.0
+Chile,1957,imports,443.0
+Chile,1958,imports,416.0
+Chile,1959,imports,414.0
+Chile,1960,imports,501.0
+Denmark,1900,exports,75.0
+Denmark,1901,exports,78.0
+Denmark,1902,exports,86.0
+Denmark,1903,exports,95.0
+Denmark,1904,exports,96.0
+Denmark,1905,exports,105.0
+Denmark,1906,exports,105.0
+Denmark,1907,exports,112.0
+Denmark,1908,exports,118.0
+Denmark,1909,exports,119.0
+Denmark,1910,exports,131.0
+Denmark,1911,exports,143.0
+Denmark,1912,exports,159.0
+Denmark,1913,exports,171.0
+Denmark,1921,exports,251.0
+Denmark,1922,exports,246.0
+Denmark,1923,exports,282.0
+Denmark,1924,exports,330.0
+Denmark,1925,exports,378.0
+Denmark,1926,exports,369.0
+Denmark,1927,exports,387.0
+Denmark,1928,exports,413.0
+Denmark,1929,exports,433.0
+Denmark,1930,exports,408.0
+Denmark,1931,exports,316.0
+Denmark,1932,exports,204.0
+Denmark,1933,exports,222.0
+Denmark,1934,exports,264.0
+Denmark,1935,exports,267.0
+Denmark,1936,exports,295.0
+Denmark,1937,exports,340.0
+Denmark,1938,exports,335.0
+Denmark,1948,exports,569.0
+Denmark,1950,exports,665.0
+Denmark,1951,exports,839.0
+Denmark,1952,exports,850.0
+Denmark,1953,exports,895.0
+Denmark,1954,exports,948.0
+Denmark,1955,exports,1042.0
+Denmark,1956,exports,1095.0
+Denmark,1957,exports,1155.0
+Denmark,1958,exports,1245.0
+Denmark,1959,exports,1375.0
+Denmark,1960,exports,1463.0
+Denmark,1900,imports,111.0
+Denmark,1901,imports,107.0
+Denmark,1902,imports,117.0
+Denmark,1903,imports,119.0
+Denmark,1904,imports,125.0
+Denmark,1905,imports,129.0
+Denmark,1906,imports,150.0
+Denmark,1907,imports,161.0
+Denmark,1908,imports,149.0
+Denmark,1909,imports,152.0
+Denmark,1910,imports,155.0
+Denmark,1911,imports,167.0
+Denmark,1912,imports,197.0
+Denmark,1913,imports,209.0
+Denmark,1921,imports,275.0
+Denmark,1922,imports,305.0
+Denmark,1923,imports,350.0
+Denmark,1924,imports,371.0
+Denmark,1925,imports,409.0
+Denmark,1926,imports,401.0
+Denmark,1927,imports,422.0
+Denmark,1928,imports,440.0
+Denmark,1929,imports,460.0
+Denmark,1930,imports,444.0
+Denmark,1931,imports,352.0
+Denmark,1932,imports,207.0
+Denmark,1933,imports,234.0
+Denmark,1934,imports,293.0
+Denmark,1935,imports,283.0
+Denmark,1936,imports,321.0
+Denmark,1937,imports,363.0
+Denmark,1938,imports,355.0
+Denmark,1948,imports,713.0
+Denmark,1950,imports,853.0
+Denmark,1951,imports,1012.0
+Denmark,1952,imports,962.0
+Denmark,1953,imports,1000.0
+Denmark,1954,imports,1163.0
+Denmark,1955,imports,1172.0
+Denmark,1956,imports,1305.0
+Denmark,1957,imports,1353.0
+Denmark,1958,imports,1339.0
+Denmark,1959,imports,1594.0
+Denmark,1960,imports,1795.0
+Finland,1900,exports,38.0
+Finland,1901,exports,36.0
+Finland,1902,exports,39.0
+Finland,1903,exports,41.0
+Finland,1904,exports,41.0
+Finland,1905,exports,47.0
+Finland,1906,exports,54.0
+Finland,1907,exports,51.0
+Finland,1908,exports,47.0
+Finland,1909,exports,49.0
+Finland,1910,exports,55.0
+Finland,1911,exports,61.0
+Finland,1912,exports,65.0
+Finland,1913,exports,77.0
+Finland,1921,exports,72.0
+Finland,1922,exports,97.0
+Finland,1923,exports,117.0
+Finland,1924,exports,123.0
+Finland,1925,exports,141.0
+Finland,1926,exports,142.0
+Finland,1927,exports,158.0
+Finland,1928,exports,156.0
+Finland,1929,exports,161.0
+Finland,1930,exports,135.0
+Finland,1931,exports,103.0
+Finland,1932,exports,71.0
+Finland,1933,exports,98.0
+Finland,1934,exports,137.0
+Finland,1935,exports,135.0
+Finland,1936,exports,157.0
+Finland,1937,exports,203.0
+Finland,1938,exports,179.0
+Finland,1948,exports,415.0
+Finland,1950,exports,354.0
+Finland,1951,exports,812.0
+Finland,1952,exports,682.0
+Finland,1953,exports,572.0
+Finland,1954,exports,681.0
+Finland,1955,exports,788.0
+Finland,1956,exports,774.0
+Finland,1957,exports,826.0
+Finland,1958,exports,775.0
+Finland,1959,exports,835.0
+Finland,1960,exports,989.0
+Finland,1900,imports,52.0
+Finland,1901,imports,41.0
+Finland,1902,imports,45.0
+Finland,1903,imports,51.0
+Finland,1904,imports,51.0
+Finland,1905,imports,51.0
+Finland,1906,imports,60.0
+Finland,1907,imports,72.0
+Finland,1908,imports,70.0
+Finland,1909,imports,70.0
+Finland,1910,imports,73.0
+Finland,1911,imports,83.0
+Finland,1912,imports,88.0
+Finland,1913,imports,95.0
+Finland,1921,imports,78.0
+Finland,1922,imports,87.0
+Finland,1923,imports,124.0
+Finland,1924,imports,117.0
+Finland,1925,imports,140.0
+Finland,1926,imports,143.0
+Finland,1927,imports,161.0
+Finland,1928,imports,202.0
+Finland,1929,imports,176.0
+Finland,1930,imports,132.0
+Finland,1931,imports,81.0
+Finland,1932,imports,54.0
+Finland,1933,imports,73.0
+Finland,1934,imports,106.0
+Finland,1935,imports,116.0
+Finland,1936,imports,136.0
+Finland,1937,imports,201.0
+Finland,1938,imports,183.0
+Finland,1948,imports,488.0
+Finland,1950,imports,388.0
+Finland,1951,imports,676.0
+Finland,1952,imports,792.0
+Finland,1953,imports,530.0
+Finland,1954,imports,656.0
+Finland,1955,imports,769.0
+Finland,1956,imports,885.0
+Finland,1957,imports,891.0
+Finland,1958,imports,729.0
+Finland,1959,imports,835.0
+Finland,1960,imports,1060.0
+France,1900,exports,794.0
+France,1901,exports,776.0
+France,1902,exports,822.0
+France,1903,exports,823.0
+France,1904,exports,861.0
+France,1905,exports,942.0
+France,1906,exports,1019.0
+France,1907,exports,1082.0
+France,1908,exports,978.0
+France,1909,exports,1108.0
+France,1910,exports,1206.0
+France,1911,exports,1174.0
+France,1912,exports,1298.0
+France,1913,exports,1330.0
+France,1921,exports,1480.0
+France,1922,exports,1669.0
+France,1923,exports,1873.0
+France,1924,exports,2216.0
+France,1925,exports,2223.0
+France,1926,exports,1925.0
+France,1927,exports,2167.0
+France,1928,exports,2048.0
+France,1929,exports,1968.0
+France,1930,exports,1686.0
+France,1931,exports,1193.0
+France,1932,exports,773.0
+France,1933,exports,928.0
+France,1934,exports,1172.0
+France,1935,exports,1033.0
+France,1936,exports,933.0
+France,1937,exports,957.0
+France,1938,exports,879.0
+France,1948,exports,2011.0
+France,1950,exports,3037.0
+France,1951,exports,4069.0
+France,1952,exports,3827.0
+France,1953,exports,3782.0
+France,1954,exports,4181.0
+France,1955,exports,4912.0
+France,1956,exports,4544.0
+France,1957,exports,5069.0
+France,1958,exports,5121.0
+France,1959,exports,5615.0
+France,1960,exports,6864.0
+France,1900,imports,916.0
+France,1901,imports,850.0
+France,1902,imports,854.0
+France,1903,imports,937.0
+France,1904,imports,877.0
+France,1905,imports,931.0
+France,1906,imports,1098.0
+France,1907,imports,1216.0
+France,1908,imports,1103.0
+France,1909,imports,1217.0
+France,1910,imports,1392.0
+France,1911,imports,1567.0
+France,1912,imports,1599.0
+France,1913,imports,1636.0
+France,1921,imports,1694.0
+France,1922,imports,1972.0
+France,1923,imports,1965.0
+France,1924,imports,2061.0
+France,1925,imports,2128.0
+France,1926,imports,1940.0
+France,1927,imports,2079.0
+France,1928,imports,2103.0
+France,1929,imports,2282.0
+France,1930,imports,2060.0
+France,1931,imports,1655.0
+France,1932,imports,1170.0
+France,1933,imports,1430.0
+France,1934,imports,1518.0
+France,1935,imports,1394.0
+France,1936,imports,1530.0
+France,1937,imports,1703.0
+France,1938,imports,1330.0
+France,1948,imports,3442.0
+France,1950,imports,3031.0
+France,1951,imports,4435.0
+France,1952,imports,4328.0
+France,1953,imports,3942.0
+France,1954,imports,4221.0
+France,1955,imports,4739.0
+France,1956,imports,5559.0
+France,1957,imports,6114.0
+France,1958,imports,5609.0
+France,1959,imports,5088.0
+France,1960,imports,6281.0
+Germany,1900,exports,1102.0
+Germany,1901,exports,1061.0
+Germany,1902,exports,1119.0
+Germany,1903,exports,1198.0
+Germany,1904,exports,1248.0
+Germany,1905,exports,1372.0
+Germany,1906,exports,1507.0
+Germany,1907,exports,1636.0
+Germany,1908,exports,1529.0
+Germany,1909,exports,1576.0
+Germany,1910,exports,1784.0
+Germany,1911,exports,1937.0
+Germany,1912,exports,2139.0
+Germany,1913,exports,2411.0
+Germany,1921,exports,745.0
+Germany,1922,exports,947.0
+Germany,1923,exports,1274.0
+Germany,1924,exports,1225.0
+Germany,1925,exports,2220.0
+Germany,1926,exports,2487.0
+Germany,1927,exports,2576.0
+Germany,1928,exports,2929.0
+Germany,1929,exports,3217.0
+Germany,1930,exports,2871.0
+Germany,1931,exports,2290.0
+Germany,1932,exports,1371.0
+Germany,1933,exports,1504.0
+Germany,1934,exports,1647.0
+Germany,1935,exports,1733.0
+Germany,1936,exports,1927.0
+Germany,1937,exports,2377.0
+Germany,1938,exports,2111.0
+Germany,1950,exports,1976.0
+Germany,1951,exports,3464.0
+Germany,1952,exports,4002.0
+Germany,1953,exports,4389.0
+Germany,1954,exports,5248.0
+Germany,1955,exports,6135.0
+Germany,1956,exports,7358.0
+Germany,1957,exports,8575.0
+Germany,1958,exports,8807.0
+Germany,1959,exports,9804.0
+Germany,1960,exports,11415.0
+Germany,1900,imports,1377.0
+Germany,1901,imports,1295.0
+Germany,1902,imports,1347.0
+Germany,1903,imports,1436.0
+Germany,1904,imports,1523.0
+Germany,1905,imports,1708.0
+Germany,1906,imports,1850.0
+Germany,1907,imports,2091.0
+Germany,1908,imports,1833.0
+Germany,1909,imports,2044.0
+Germany,1910,imports,2140.0
+Germany,1911,imports,2334.0
+Germany,1912,imports,2556.0
+Germany,1913,imports,2577.0
+Germany,1921,imports,1243.0
+Germany,1922,imports,1478.0
+Germany,1923,imports,1146.0
+Germany,1924,imports,1632.0
+Germany,1925,imports,2960.0
+Germany,1926,imports,2393.0
+Germany,1927,imports,3398.0
+Germany,1928,imports,3342.0
+Germany,1929,imports,3211.0
+Germany,1930,imports,2480.0
+Germany,1931,imports,1613.0
+Germany,1932,imports,1121.0
+Germany,1933,imports,1295.0
+Germany,1934,imports,1763.0
+Germany,1935,imports,1685.0
+Germany,1936,imports,1706.0
+Germany,1937,imports,2198.0
+Germany,1938,imports,2188.0
+Germany,1950,imports,2701.0
+Germany,1951,imports,3491.0
+Germany,1952,imports,3814.0
+Germany,1953,imports,3771.0
+Germany,1954,imports,4571.0
+Germany,1955,imports,5793.0
+Germany,1956,imports,6617.0
+Germany,1957,imports,7499.0
+Germany,1958,imports,7361.0
+Germany,1959,imports,8477.0
+Germany,1960,imports,10103.0
+India,1900,exports,340.0
+India,1901,exports,395.0
+India,1902,exports,411.0
+India,1903,exports,490.0
+India,1904,exports,502.0
+India,1905,exports,515.0
+India,1906,exports,563.0
+India,1907,exports,564.0
+India,1908,exports,487.0
+India,1909,exports,599.0
+India,1910,exports,667.0
+India,1911,exports,720.0
+India,1912,exports,783.0
+India,1913,exports,793.0
+India,1921,exports,617.0
+India,1922,exports,868.0
+India,1923,exports,1094.0
+India,1924,exports,1237.0
+India,1925,exports,1375.0
+India,1926,exports,1102.0
+India,1927,exports,1168.0
+India,1928,exports,1229.0
+India,1929,exports,1150.0
+India,1930,exports,818.0
+India,1931,exports,501.0
+India,1932,exports,355.0
+India,1933,exports,481.0
+India,1934,exports,593.0
+India,1935,exports,625.0
+India,1936,exports,735.0
+India,1937,exports,682.0
+India,1938,exports,588.0
+India,1948,exports,1273.0
+India,1950,exports,1215.0
+India,1951,exports,1474.0
+India,1952,exports,1162.0
+India,1953,exports,1089.0
+India,1954,exports,1224.0
+India,1955,exports,1228.0
+India,1956,exports,1247.0
+India,1957,exports,1339.0
+India,1958,exports,1198.0
+India,1959,exports,1293.0
+India,1960,exports,1329.0
+India,1900,imports,301.0
+India,1901,imports,325.0
+India,1902,imports,316.0
+India,1903,imports,347.0
+India,1904,imports,385.0
+India,1905,imports,404.0
+India,1906,imports,445.0
+India,1907,imports,500.0
+India,1908,imports,462.0
+India,1909,imports,436.0
+India,1910,imports,471.0
+India,1911,imports,505.0
+India,1912,imports,600.0
+India,1913,imports,667.0
+India,1921,imports,771.0
+India,1922,imports,759.0
+India,1923,imports,801.0
+India,1924,imports,855.0
+India,1925,imports,925.0
+India,1926,imports,947.0
+India,1927,imports,1005.0
+India,1928,imports,1017.0
+India,1929,imports,957.0
+India,1930,imports,676.0
+India,1931,imports,423.0
+India,1932,imports,356.0
+India,1933,imports,369.0
+India,1934,imports,512.0
+India,1935,imports,526.0
+India,1936,imports,530.0
+India,1937,imports,676.0
+India,1938,imports,565.0
+India,1948,imports,1692.0
+India,1950,imports,1277.0
+India,1951,imports,1870.0
+India,1952,imports,1354.0
+India,1953,imports,1153.0
+India,1954,imports,1329.0
+India,1955,imports,1364.0
+India,1956,imports,1750.0
+India,1957,imports,2154.0
+India,1958,imports,1815.0
+India,1959,imports,1864.0
+India,1960,imports,2247.0
+Italy,1900,exports,258.0
+Italy,1901,exports,265.0
+Italy,1902,exports,284.0
+Italy,1903,exports,293.0
+Italy,1904,exports,308.0
+Italy,1905,exports,334.0
+Italy,1906,exports,372.0
+Italy,1907,exports,376.0
+Italy,1908,exports,334.0
+Italy,1909,exports,360.0
+Italy,1910,exports,401.0
+Italy,1911,exports,425.0
+Italy,1912,exports,463.0
+Italy,1913,exports,485.0
+Italy,1921,exports,356.0
+Italy,1922,exports,442.0
+Italy,1923,exports,510.0
+Italy,1924,exports,627.0
+Italy,1925,exports,727.0
+Italy,1926,exports,726.0
+Italy,1927,exports,807.0
+Italy,1928,exports,766.0
+Italy,1929,exports,783.0
+Italy,1930,exports,637.0
+Italy,1931,exports,531.0
+Italy,1932,exports,349.0
+Italy,1933,exports,400.0
+Italy,1934,exports,447.0
+Italy,1935,exports,434.0
+Italy,1936,exports,384.0
+Italy,1937,exports,549.0
+Italy,1938,exports,553.0
+Italy,1948,exports,1077.0
+Italy,1950,exports,1209.0
+Italy,1951,exports,1647.0
+Italy,1952,exports,1383.0
+Italy,1953,exports,1488.0
+Italy,1954,exports,1636.0
+Italy,1955,exports,1857.0
+Italy,1956,exports,2157.0
+Italy,1957,exports,2540.0
+Italy,1958,exports,2536.0
+Italy,1959,exports,2895.0
+Italy,1960,exports,3649.0
+Italy,1900,imports,328.0
+Italy,1901,imports,331.0
+Italy,1902,imports,342.0
+Italy,1903,imports,359.0
+Italy,1904,imports,369.0
+Italy,1905,imports,398.0
+Italy,1906,imports,495.0
+Italy,1907,imports,555.0
+Italy,1908,imports,562.0
+Italy,1909,imports,600.0
+Italy,1910,imports,626.0
+Italy,1911,imports,653.0
+Italy,1912,imports,714.0
+Italy,1913,imports,703.0
+Italy,1921,imports,743.0
+Italy,1922,imports,749.0
+Italy,1923,imports,791.0
+Italy,1924,imports,845.0
+Italy,1925,imports,1043.0
+Italy,1926,imports,1007.0
+Italy,1927,imports,1051.0
+Italy,1928,imports,1153.0
+Italy,1929,imports,1120.0
+Italy,1930,imports,912.0
+Italy,1931,imports,607.0
+Italy,1932,imports,424.0
+Italy,1933,imports,495.0
+Italy,1934,imports,657.0
+Italy,1935,imports,645.0
+Italy,1936,imports,432.0
+Italy,1937,imports,734.0
+Italy,1938,imports,593.0
+Italy,1948,imports,1539.0
+Italy,1950,imports,1489.0
+Italy,1951,imports,2167.0
+Italy,1952,imports,2313.0
+Italy,1953,imports,2395.0
+Italy,1954,imports,2400.0
+Italy,1955,imports,2705.0
+Italy,1956,imports,3168.0
+Italy,1957,imports,3625.0
+Italy,1958,imports,3154.0
+Italy,1959,imports,3325.0
+Italy,1960,imports,4715.0
+Japan,1900,exports,102.0
+Japan,1901,exports,125.0
+Japan,1902,exports,128.0
+Japan,1903,exports,143.0
+Japan,1904,exports,158.0
+Japan,1905,exports,159.0
+Japan,1906,exports,210.0
+Japan,1907,exports,213.0
+Japan,1908,exports,187.0
+Japan,1909,exports,204.0
+Japan,1910,exports,228.0
+Japan,1911,exports,222.0
+Japan,1912,exports,265.0
+Japan,1913,exports,315.0
+Japan,1921,exports,603.0
+Japan,1922,exports,771.0
+Japan,1923,exports,689.0
+Japan,1924,exports,727.0
+Japan,1925,exports,912.0
+Japan,1926,exports,933.0
+Japan,1927,exports,914.0
+Japan,1928,exports,889.0
+Japan,1929,exports,970.0
+Japan,1930,exports,710.0
+Japan,1931,exports,550.0
+Japan,1932,exports,368.0
+Japan,1933,exports,473.0
+Japan,1934,exports,638.0
+Japan,1935,exports,775.0
+Japan,1936,exports,778.0
+Japan,1937,exports,902.0
+Japan,1938,exports,760.0
+Japan,1948,exports,258.0
+Japan,1950,exports,815.0
+Japan,1951,exports,1352.0
+Japan,1952,exports,1252.0
+Japan,1953,exports,1264.0
+Japan,1954,exports,1626.0
+Japan,1955,exports,2004.0
+Japan,1956,exports,2493.0
+Japan,1957,exports,2849.0
+Japan,1958,exports,2866.0
+Japan,1959,exports,3446.0
+Japan,1960,exports,4040.0
+Japan,1900,imports,144.0
+Japan,1901,imports,127.0
+Japan,1902,imports,136.0
+Japan,1903,imports,159.0
+Japan,1904,imports,192.0
+Japan,1905,imports,248.0
+Japan,1906,imports,213.0
+Japan,1907,imports,246.0
+Japan,1908,imports,217.0
+Japan,1909,imports,196.0
+Japan,1910,imports,231.0
+Japan,1911,imports,256.0
+Japan,1912,imports,308.0
+Japan,1913,imports,361.0
+Japan,1921,imports,781.0
+Japan,1922,imports,905.0
+Japan,1923,imports,960.0
+Japan,1924,imports,1009.0
+Japan,1925,imports,1054.0
+Japan,1926,imports,1118.0
+Japan,1927,imports,1031.0
+Japan,1928,imports,1018.0
+Japan,1929,imports,1018.0
+Japan,1930,imports,761.0
+Japan,1931,imports,601.0
+Japan,1932,imports,407.0
+Japan,1933,imports,494.0
+Japan,1934,imports,675.0
+Japan,1935,imports,710.0
+Japan,1936,imports,800.0
+Japan,1937,imports,1086.0
+Japan,1938,imports,755.0
+Japan,1948,imports,684.0
+Japan,1950,imports,970.0
+Japan,1951,imports,2047.0
+Japan,1952,imports,2028.0
+Japan,1953,imports,2408.0
+Japan,1954,imports,2397.0
+Japan,1955,imports,2470.0
+Japan,1956,imports,3228.0
+Japan,1957,imports,4280.0
+Japan,1958,imports,3030.0
+Japan,1959,imports,3595.0
+Japan,1960,imports,4485.0
+Netherlands,1900,exports,681.0
+Netherlands,1901,exports,697.0
+Netherlands,1902,exports,733.0
+Netherlands,1903,exports,782.0
+Netherlands,1904,exports,798.0
+Netherlands,1905,exports,801.0
+Netherlands,1906,exports,837.0
+Netherlands,1907,exports,889.0
+Netherlands,1908,exports,877.0
+Netherlands,1909,exports,987.0
+Netherlands,1910,exports,1057.0
+Netherlands,1911,exports,1094.0
+Netherlands,1912,exports,1248.0
+Netherlands,1913,exports,1239.0
+Netherlands,1921,exports,463.0
+Netherlands,1922,exports,471.0
+Netherlands,1923,exports,512.0
+Netherlands,1924,exports,644.0
+Netherlands,1925,exports,726.0
+Netherlands,1926,exports,702.0
+Netherlands,1927,exports,762.0
+Netherlands,1928,exports,800.0
+Netherlands,1929,exports,806.0
+Netherlands,1930,exports,695.0
+Netherlands,1931,exports,529.0
+Netherlands,1932,exports,342.0
+Netherlands,1933,exports,389.0
+Netherlands,1934,exports,496.0
+Netherlands,1935,exports,483.0
+Netherlands,1936,exports,507.0
+Netherlands,1937,exports,663.0
+Netherlands,1938,exports,593.0
+Netherlands,1948,exports,1024.0
+Netherlands,1950,exports,1413.0
+Netherlands,1951,exports,1950.0
+Netherlands,1952,exports,2109.0
+Netherlands,1953,exports,2153.0
+Netherlands,1954,exports,2414.0
+Netherlands,1955,exports,2687.0
+Netherlands,1956,exports,2862.0
+Netherlands,1957,exports,3098.0
+Netherlands,1958,exports,3218.0
+Netherlands,1959,exports,3607.0
+Netherlands,1960,exports,4028.0
+Netherlands,1900,imports,784.0
+Netherlands,1901,imports,816.0
+Netherlands,1902,imports,867.0
+Netherlands,1903,imports,913.0
+Netherlands,1904,imports,966.0
+Netherlands,1905,imports,1031.0
+Netherlands,1906,imports,1013.0
+Netherlands,1907,imports,1069.0
+Netherlands,1908,imports,1129.0
+Netherlands,1909,imports,1250.0
+Netherlands,1910,imports,1300.0
+Netherlands,1911,imports,1333.0
+Netherlands,1912,imports,1436.0
+Netherlands,1913,imports,1571.0
+Netherlands,1921,imports,763.0
+Netherlands,1922,imports,782.0
+Netherlands,1923,imports,789.0
+Netherlands,1924,imports,904.0
+Netherlands,1925,imports,986.0
+Netherlands,1926,imports,980.0
+Netherlands,1927,imports,1023.0
+Netherlands,1928,imports,1081.0
+Netherlands,1929,imports,1112.0
+Netherlands,1930,imports,976.0
+Netherlands,1931,imports,762.0
+Netherlands,1932,imports,525.0
+Netherlands,1933,imports,647.0
+Netherlands,1934,imports,727.0
+Netherlands,1935,imports,666.0
+Netherlands,1936,imports,688.0
+Netherlands,1937,imports,884.0
+Netherlands,1938,imports,803.0
+Netherlands,1948,imports,1871.0
+Netherlands,1950,imports,2056.0
+Netherlands,1951,imports,2553.0
+Netherlands,1952,imports,2223.0
+Netherlands,1953,imports,2375.0
+Netherlands,1954,imports,2858.0
+Netherlands,1955,imports,3208.0
+Netherlands,1956,imports,3712.0
+Netherlands,1957,imports,4105.0
+Netherlands,1958,imports,3625.0
+Netherlands,1959,imports,3939.0
+Netherlands,1960,imports,4531.0
+New Zealand,1900,exports,9.0
+New Zealand,1901,exports,8.0
+New Zealand,1902,exports,9.0
+New Zealand,1903,exports,10.0
+New Zealand,1904,exports,9.0
+New Zealand,1905,exports,10.0
+New Zealand,1906,exports,12.0
+New Zealand,1907,exports,13.0
+New Zealand,1908,exports,10.0
+New Zealand,1909,exports,13.0
+New Zealand,1910,exports,15.0
+New Zealand,1911,exports,13.0
+New Zealand,1912,exports,15.0
+New Zealand,1913,exports,16.0
+New Zealand,1921,exports,26.0
+New Zealand,1922,exports,28.0
+New Zealand,1923,exports,31.0
+New Zealand,1924,exports,35.0
+New Zealand,1925,exports,40.0
+New Zealand,1926,exports,33.0
+New Zealand,1927,exports,35.0
+New Zealand,1928,exports,41.0
+New Zealand,1929,exports,40.0
+New Zealand,1930,exports,32.0
+New Zealand,1931,exports,22.0
+New Zealand,1932,exports,17.0
+New Zealand,1933,exports,21.0
+New Zealand,1934,exports,28.0
+New Zealand,1935,exports,27.0
+New Zealand,1936,exports,34.0
+New Zealand,1937,exports,39.0
+New Zealand,1938,exports,34.0
+New Zealand,1948,exports,75.0
+New Zealand,1950,exports,78.0
+New Zealand,1951,exports,105.0
+New Zealand,1952,exports,102.0
+New Zealand,1953,exports,100.0
+New Zealand,1954,exports,104.0
+New Zealand,1955,exports,109.0
+New Zealand,1956,exports,116.0
+New Zealand,1957,exports,116.0
+New Zealand,1958,exports,105.0
+New Zealand,1959,exports,123.0
+New Zealand,1960,exports,127.0
+New Zealand,1900,imports,50.0
+New Zealand,1901,imports,55.0
+New Zealand,1902,imports,53.0
+New Zealand,1903,imports,59.0
+New Zealand,1904,imports,63.0
+New Zealand,1905,imports,61.0
+New Zealand,1906,imports,70.0
+New Zealand,1907,imports,81.0
+New Zealand,1908,imports,84.0
+New Zealand,1909,imports,72.0
+New Zealand,1910,imports,82.0
+New Zealand,1911,imports,91.0
+New Zealand,1912,imports,100.0
+New Zealand,1913,imports,105.0
+New Zealand,1921,imports,162.0
+New Zealand,1922,imports,153.0
+New Zealand,1923,imports,198.0
+New Zealand,1924,imports,214.0
+New Zealand,1925,imports,254.0
+New Zealand,1926,imports,242.0
+New Zealand,1927,imports,217.0
+New Zealand,1928,imports,217.0
+New Zealand,1929,imports,236.0
+New Zealand,1930,imports,208.0
+New Zealand,1931,imports,111.0
+New Zealand,1932,imports,79.0
+New Zealand,1933,imports,87.0
+New Zealand,1934,imports,126.0
+New Zealand,1935,imports,143.0
+New Zealand,1936,imports,177.0
+New Zealand,1937,imports,223.0
+New Zealand,1938,imports,217.0
+New Zealand,1948,imports,434.0
+New Zealand,1950,imports,442.0
+New Zealand,1951,imports,578.0
+New Zealand,1952,imports,707.0
+New Zealand,1953,imports,504.0
+New Zealand,1954,imports,658.0
+New Zealand,1955,imports,774.0
+New Zealand,1956,imports,725.0
+New Zealand,1957,imports,809.0
+New Zealand,1958,imports,778.0
+New Zealand,1959,imports,632.0
+New Zealand,1960,imports,775.0
+Norway,1900,exports,46.0
+Norway,1901,exports,44.0
+Norway,1902,exports,49.0
+Norway,1903,exports,52.0
+Norway,1904,exports,52.0
+Norway,1905,exports,59.0
+Norway,1906,exports,66.0
+Norway,1907,exports,61.0
+Norway,1908,exports,59.0
+Norway,1909,exports,65.0
+Norway,1910,exports,76.0
+Norway,1911,exports,80.0
+Norway,1912,exports,90.0
+Norway,1913,exports,105.0
+Norway,1921,exports,96.0
+Norway,1922,exports,138.0
+Norway,1923,exports,139.0
+Norway,1924,exports,149.0
+Norway,1925,exports,188.0
+Norway,1926,exports,181.0
+Norway,1927,exports,178.0
+Norway,1928,exports,182.0
+Norway,1929,exports,202.0
+Norway,1930,exports,183.0
+Norway,1931,exports,112.0
+Norway,1932,exports,102.0
+Norway,1933,exports,120.0
+Norway,1934,exports,146.0
+Norway,1935,exports,150.0
+Norway,1936,exports,171.0
+Norway,1937,exports,205.0
+Norway,1938,exports,193.0
+Norway,1948,exports,415.0
+Norway,1950,exports,390.0
+Norway,1951,exports,619.0
+Norway,1952,exports,565.0
+Norway,1953,exports,509.0
+Norway,1954,exports,583.0
+Norway,1955,exports,633.0
+Norway,1956,exports,772.0
+Norway,1957,exports,821.0
+Norway,1958,exports,744.0
+Norway,1959,exports,810.0
+Norway,1960,exports,879.0
+Norway,1900,imports,83.0
+Norway,1901,imports,77.0
+Norway,1902,imports,78.0
+Norway,1903,imports,79.0
+Norway,1904,imports,78.0
+Norway,1905,imports,84.0
+Norway,1906,imports,92.0
+Norway,1907,imports,97.0
+Norway,1908,imports,95.0
+Norway,1909,imports,98.0
+Norway,1910,imports,108.0
+Norway,1911,imports,126.0
+Norway,1912,imports,141.0
+Norway,1913,imports,148.0
+Norway,1921,imports,219.0
+Norway,1922,imports,230.0
+Norway,1923,imports,224.0
+Norway,1924,imports,214.0
+Norway,1925,imports,247.0
+Norway,1926,imports,244.0
+Norway,1927,imports,254.0
+Norway,1928,imports,273.0
+Norway,1929,imports,287.0
+Norway,1930,imports,285.0
+Norway,1931,imports,214.0
+Norway,1932,imports,124.0
+Norway,1933,imports,143.0
+Norway,1934,imports,187.0
+Norway,1935,imports,204.0
+Norway,1936,imports,232.0
+Norway,1937,imports,321.0
+Norway,1938,imports,293.0
+Norway,1948,imports,750.0
+Norway,1950,imports,679.0
+Norway,1951,imports,876.0
+Norway,1952,imports,873.0
+Norway,1953,imports,912.0
+Norway,1954,imports,1019.0
+Norway,1955,imports,1090.0
+Norway,1956,imports,1212.0
+Norway,1957,imports,1275.0
+Norway,1958,imports,1309.0
+Norway,1959,imports,1316.0
+Norway,1960,imports,1461.0
+South Africa,1908,exports,61.0
+South Africa,1909,exports,81.0
+South Africa,1910,exports,95.0
+South Africa,1911,exports,94.0
+South Africa,1912,exports,108.0
+South Africa,1913,exports,129.0
+South Africa,1921,exports,90.0
+South Africa,1922,exports,124.0
+South Africa,1923,exports,159.0
+South Africa,1924,exports,161.0
+South Africa,1925,exports,209.0
+South Africa,1926,exports,181.0
+South Africa,1927,exports,221.0
+South Africa,1928,exports,228.0
+South Africa,1929,exports,219.0
+South Africa,1930,exports,150.0
+South Africa,1931,exports,104.0
+South Africa,1932,exports,87.0
+South Africa,1933,exports,97.0
+South Africa,1934,exports,115.0
+South Africa,1935,exports,135.0
+South Africa,1936,exports,136.0
+South Africa,1937,exports,188.0
+South Africa,1938,exports,136.0
+South Africa,1948,exports,487.0
+South Africa,1950,exports,640.0
+South Africa,1951,exports,877.0
+South Africa,1952,exports,811.0
+South Africa,1953,exports,838.0
+South Africa,1954,exports,823.0
+South Africa,1955,exports,928.0
+South Africa,1956,exports,1036.0
+South Africa,1957,exports,1125.0
+South Africa,1958,exports,1001.0
+South Africa,1959,exports,1090.0
+South Africa,1960,exports,1120.0
+South Africa,1900,imports,0.0
+South Africa,1901,imports,0.0
+South Africa,1902,imports,0.0
+South Africa,1903,imports,0.0
+South Africa,1904,imports,0.0
+South Africa,1905,imports,0.0
+South Africa,1906,imports,0.0
+South Africa,1907,imports,0.0
+South Africa,1908,imports,486.65
+South Africa,1909,imports,486.65
+South Africa,1910,imports,486.65
+South Africa,1911,imports,486.65
+South Africa,1912,imports,486.65
+South Africa,1913,imports,486.65
+South Africa,1921,imports,382.26
+South Africa,1922,imports,448.22
+South Africa,1923,imports,465.31
+South Africa,1924,imports,452.83
+South Africa,1925,imports,484.3
+South Africa,1926,imports,483.56
+South Africa,1927,imports,483.87
+South Africa,1928,imports,486.66
+South Africa,1929,imports,486.66
+South Africa,1930,imports,486.65
+South Africa,1931,imports,486.65
+South Africa,1932,imports,476.19
+South Africa,1933,imports,419.53
+South Africa,1934,imports,497.38
+South Africa,1935,imports,487.85
+South Africa,1936,imports,492.45
+South Africa,1937,imports,489.81
+South Africa,1938,imports,484.18
+South Africa,1948,imports,403.0
+South Africa,1950,imports,280.0
+South Africa,1951,imports,280.0
+South Africa,1952,imports,280.0
+South Africa,1953,imports,280.0
+South Africa,1954,imports,280.0
+South Africa,1955,imports,280.0
+South Africa,1956,imports,280.0
+South Africa,1957,imports,280.0
+South Africa,1958,imports,280.0
+South Africa,1959,imports,280.0
+South Africa,1960,imports,140.0
+Sweden,1900,exports,105.0
+Sweden,1901,exports,95.0
+Sweden,1902,exports,105.0
+Sweden,1903,exports,118.0
+Sweden,1904,exports,111.0
+Sweden,1905,exports,121.0
+Sweden,1906,exports,135.0
+Sweden,1907,exports,141.0
+Sweden,1908,exports,129.0
+Sweden,1909,exports,127.0
+Sweden,1910,exports,159.0
+Sweden,1911,exports,178.0
+Sweden,1912,exports,204.0
+Sweden,1913,exports,219.0
+Sweden,1921,exports,248.0
+Sweden,1922,exports,302.0
+Sweden,1923,exports,303.0
+Sweden,1924,exports,335.0
+Sweden,1925,exports,365.0
+Sweden,1926,exports,380.0
+Sweden,1927,exports,433.0
+Sweden,1928,exports,422.0
+Sweden,1929,exports,486.0
+Sweden,1930,exports,416.0
+Sweden,1931,exports,280.0
+Sweden,1932,exports,174.0
+Sweden,1933,exports,237.0
+Sweden,1934,exports,338.0
+Sweden,1935,exports,330.0
+Sweden,1936,exports,389.0
+Sweden,1937,exports,511.0
+Sweden,1938,exports,464.0
+Sweden,1948,exports,1107.0
+Sweden,1950,exports,1103.0
+Sweden,1951,exports,1782.0
+Sweden,1952,exports,1571.0
+Sweden,1953,exports,1480.0
+Sweden,1954,exports,1583.0
+Sweden,1955,exports,1726.0
+Sweden,1956,exports,1945.0
+Sweden,1957,exports,2137.0
+Sweden,1958,exports,2088.0
+Sweden,1959,exports,2206.0
+Sweden,1960,exports,2566.0
+Sweden,1900,imports,141.0
+Sweden,1901,imports,123.0
+Sweden,1902,imports,135.0
+Sweden,1903,imports,142.0
+Sweden,1904,imports,154.0
+Sweden,1905,imports,154.0
+Sweden,1906,imports,171.0
+Sweden,1907,imports,181.0
+Sweden,1908,imports,160.0
+Sweden,1909,imports,165.0
+Sweden,1910,imports,180.0
+Sweden,1911,imports,185.0
+Sweden,1912,imports,210.0
+Sweden,1913,imports,227.0
+Sweden,1921,imports,284.0
+Sweden,1922,imports,292.0
+Sweden,1923,imports,344.0
+Sweden,1924,imports,378.0
+Sweden,1925,imports,388.0
+Sweden,1926,imports,399.0
+Sweden,1927,imports,425.0
+Sweden,1928,imports,458.0
+Sweden,1929,imports,478.0
+Sweden,1930,imports,446.0
+Sweden,1931,imports,359.0
+Sweden,1932,imports,213.0
+Sweden,1933,imports,242.0
+Sweden,1934,imports,339.0
+Sweden,1935,imports,376.0
+Sweden,1936,imports,420.0
+Sweden,1937,imports,542.0
+Sweden,1938,imports,524.0
+Sweden,1948,imports,1377.0
+Sweden,1950,imports,1182.0
+Sweden,1951,imports,1776.0
+Sweden,1952,imports,1730.0
+Sweden,1953,imports,1579.0
+Sweden,1954,imports,1776.0
+Sweden,1955,imports,1997.0
+Sweden,1956,imports,2209.0
+Sweden,1957,imports,2428.0
+Sweden,1958,imports,2366.0
+Sweden,1959,imports,2405.0
+Sweden,1960,imports,2885.0
+Switzerland,1900,exports,161.0
+Switzerland,1901,exports,160.0
+Switzerland,1902,exports,168.0
+Switzerland,1903,exports,171.0
+Switzerland,1904,exports,171.0
+Switzerland,1905,exports,186.0
+Switzerland,1906,exports,205.0
+Switzerland,1907,exports,221.0
+Switzerland,1908,exports,199.0
+Switzerland,1909,exports,211.0
+Switzerland,1910,exports,230.0
+Switzerland,1911,exports,242.0
+Switzerland,1912,exports,261.0
+Switzerland,1913,exports,265.0
+Switzerland,1921,exports,306.0
+Switzerland,1922,exports,322.0
+Switzerland,1923,exports,310.0
+Switzerland,1924,exports,366.0
+Switzerland,1925,exports,392.0
+Switzerland,1926,exports,353.0
+Switzerland,1927,exports,387.0
+Switzerland,1928,exports,408.0
+Switzerland,1929,exports,401.0
+Switzerland,1930,exports,337.0
+Switzerland,1931,exports,258.0
+Switzerland,1932,exports,148.0
+Switzerland,1933,exports,203.0
+Switzerland,1934,exports,267.0
+Switzerland,1935,exports,262.0
+Switzerland,1936,exports,262.0
+Switzerland,1937,exports,295.0
+Switzerland,1938,exports,301.0
+Switzerland,1948,exports,798.0
+Switzerland,1950,exports,900.0
+Switzerland,1951,exports,1088.0
+Switzerland,1952,exports,1108.0
+Switzerland,1953,exports,1205.0
+Switzerland,1954,exports,1230.0
+Switzerland,1955,exports,1312.0
+Switzerland,1956,exports,1448.0
+Switzerland,1957,exports,1566.0
+Switzerland,1958,exports,1551.0
+Switzerland,1959,exports,1683.0
+Switzerland,1960,exports,1879.0
+Switzerland,1900,imports,208.0
+Switzerland,1901,imports,196.0
+Switzerland,1902,imports,211.0
+Switzerland,1903,imports,225.0
+Switzerland,1904,imports,238.0
+Switzerland,1905,imports,260.0
+Switzerland,1906,imports,277.0
+Switzerland,1907,imports,316.0
+Switzerland,1908,imports,277.0
+Switzerland,1909,imports,303.0
+Switzerland,1910,imports,325.0
+Switzerland,1911,imports,338.0
+Switzerland,1912,imports,369.0
+Switzerland,1913,imports,360.0
+Switzerland,1921,imports,391.0
+Switzerland,1922,imports,360.0
+Switzerland,1923,imports,403.0
+Switzerland,1924,imports,454.0
+Switzerland,1925,imports,482.0
+Switzerland,1926,imports,456.0
+Switzerland,1927,imports,483.0
+Switzerland,1928,imports,513.0
+Switzerland,1929,imports,517.0
+Switzerland,1930,imports,488.0
+Switzerland,1931,imports,428.0
+Switzerland,1932,imports,331.0
+Switzerland,1933,imports,385.0
+Switzerland,1934,imports,458.0
+Switzerland,1935,imports,411.0
+Switzerland,1936,imports,371.0
+Switzerland,1937,imports,414.0
+Switzerland,1938,imports,365.0
+Switzerland,1948,imports,1163.0
+Switzerland,1950,imports,1021.0
+Switzerland,1951,imports,1373.0
+Switzerland,1952,imports,1215.0
+Switzerland,1953,imports,1183.0
+Switzerland,1954,imports,1304.0
+Switzerland,1955,imports,1494.0
+Switzerland,1956,imports,1773.0
+Switzerland,1957,imports,1971.0
+Switzerland,1958,imports,1711.0
+Switzerland,1959,imports,1913.0
+Switzerland,1960,imports,2241.0
+United Kingdom,1900,exports,1477.0
+United Kingdom,1900,exports,307.0
+United Kingdom,1901,exports,1418.0
+United Kingdom,1901,exports,330.0
+United Kingdom,1902,exports,1428.0
+United Kingdom,1902,exports,320.0
+United Kingdom,1903,exports,1469.0
+United Kingdom,1903,exports,339.0
+United Kingdom,1904,exports,1526.0
+United Kingdom,1904,exports,342.0
+United Kingdom,1905,exports,1674.0
+United Kingdom,1905,exports,379.0
+United Kingdom,1906,exports,1914.0
+United Kingdom,1906,exports,414.0
+United Kingdom,1907,exports,2149.0
+United Kingdom,1907,exports,447.0
+United Kingdom,1908,exports,1898.0
+United Kingdom,1908,exports,388.0
+United Kingdom,1909,exports,1901.0
+United Kingdom,1909,exports,445.0
+United Kingdom,1910,exports,2153.0
+United Kingdom,1910,exports,505.0
+United Kingdom,1911,exports,2284.0
+United Kingdom,1911,exports,500.0
+United Kingdom,1912,exports,2457.0
+United Kingdom,1912,exports,544.0
+United Kingdom,1913,exports,2631.0
+United Kingdom,1913,exports,533.0
+United Kingdom,1921,exports,2752.0
+United Kingdom,1921,exports,412.0
+United Kingdom,1922,exports,3243.0
+United Kingdom,1922,exports,459.0
+United Kingdom,1923,exports,3563.0
+United Kingdom,1923,exports,542.0
+United Kingdom,1924,exports,3593.0
+United Kingdom,1924,exports,618.0
+United Kingdom,1925,exports,3793.0
+United Kingdom,1925,exports,744.0
+United Kingdom,1926,exports,3226.0
+United Kingdom,1926,exports,610.0
+United Kingdom,1927,exports,3481.0
+United Kingdom,1927,exports,598.0
+United Kingdom,1928,exports,3566.0
+United Kingdom,1928,exports,585.0
+United Kingdom,1929,exports,3593.0
+United Kingdom,1929,exports,534.0
+United Kingdom,1930,exports,2818.0
+United Kingdom,1930,exports,423.0
+United Kingdom,1931,exports,1803.0
+United Kingdom,1931,exports,290.0
+United Kingdom,1932,exports,1300.0
+United Kingdom,1932,exports,179.0
+United Kingdom,1933,exports,1584.0
+United Kingdom,1933,exports,208.0
+United Kingdom,1934,exports,2057.0
+United Kingdom,1934,exports,258.0
+United Kingdom,1935,exports,2368.0
+United Kingdom,1935,exports,273.0
+United Kingdom,1936,exports,2283.0
+United Kingdom,1936,exports,302.0
+United Kingdom,1937,exports,2627.0
+United Kingdom,1937,exports,372.0
+United Kingdom,1938,exports,2443.0
+United Kingdom,1938,exports,301.0
+United Kingdom,1948,exports,6362.0
+United Kingdom,1948,exports,244.0
+United Kingdom,1950,exports,6088.0
+United Kingdom,1950,exports,237.0
+United Kingdom,1951,exports,7229.0
+United Kingdom,1951,exports,356.0
+United Kingdom,1952,exports,7237.0
+United Kingdom,1952,exports,403.0
+United Kingdom,1953,exports,7230.0
+United Kingdom,1953,exports,295.0
+United Kingdom,1954,exports,7488.0
+United Kingdom,1954,exports,282.0
+United Kingdom,1955,exports,8135.0
+United Kingdom,1955,exports,333.0
+United Kingdom,1956,exports,8880.0
+United Kingdom,1956,exports,410.0
+United Kingdom,1957,exports,9308.0
+United Kingdom,1957,exports,374.0
+United Kingdom,1958,exports,8983.0
+United Kingdom,1958,exports,413.0
+United Kingdom,1959,exports,9312.0
+United Kingdom,1959,exports,365.0
+United Kingdom,1960,exports,9902.0
+United Kingdom,1960,exports,396.0
+United Kingdom,1900,imports,2302.0
+United Kingdom,1901,imports,2265.0
+United Kingdom,1902,imports,2298.0
+United Kingdom,1903,imports,2351.0
+United Kingdom,1904,imports,2395.0
+United Kingdom,1905,imports,2433.0
+United Kingdom,1906,imports,2627.0
+United Kingdom,1907,imports,2772.0
+United Kingdom,1908,imports,2547.0
+United Kingdom,1909,imports,2652.0
+United Kingdom,1910,imports,2863.0
+United Kingdom,1911,imports,2878.0
+United Kingdom,1912,imports,3160.0
+United Kingdom,1913,imports,3276.0
+United Kingdom,1921,imports,3801.0
+United Kingdom,1922,imports,4019.0
+United Kingdom,1923,imports,4513.0
+United Kingdom,1924,imports,5086.0
+United Kingdom,1925,imports,5683.0
+United Kingdom,1926,imports,5474.0
+United Kingdom,1927,imports,5358.0
+United Kingdom,1928,imports,5282.0
+United Kingdom,1929,imports,5445.0
+United Kingdom,1930,imports,4697.0
+United Kingdom,1931,imports,3618.0
+United Kingdom,1932,imports,2301.0
+United Kingdom,1933,imports,2697.0
+United Kingdom,1934,imports,3534.0
+United Kingdom,1935,imports,3649.0
+United Kingdom,1936,imports,3996.0
+United Kingdom,1937,imports,4812.0
+United Kingdom,1938,imports,4283.0
+United Kingdom,1948,imports,8125.0
+United Kingdom,1950,imports,7069.0
+United Kingdom,1951,imports,10577.0
+United Kingdom,1952,imports,9335.0
+United Kingdom,1953,imports,9066.0
+United Kingdom,1954,imports,9165.0
+United Kingdom,1955,imports,10534.0
+United Kingdom,1956,imports,10471.0
+United Kingdom,1957,imports,11025.0
+United Kingdom,1958,imports,10156.0
+United Kingdom,1959,imports,10807.0
+United Kingdom,1960,imports,12362.0
+United States,1900,exports,1428.0
+United States,1901,exports,1525.0
+United States,1902,exports,1405.0
+United States,1903,exports,1437.0
+United States,1904,exports,1485.0
+United States,1905,exports,1528.0
+United States,1906,exports,1775.0
+United States,1907,exports,1898.0
+United States,1908,exports,1887.0
+United States,1909,exports,1693.0
+United States,1910,exports,1763.0
+United States,1911,exports,2073.0
+United States,1912,exports,2229.0
+United States,1913,exports,2495.0
+United States,1921,exports,4403.0
+United States,1922,exports,3791.0
+United States,1923,exports,4131.0
+United States,1924,exports,4589.0
+United States,1925,exports,4901.0
+United States,1926,exports,4786.0
+United States,1927,exports,4819.0
+United States,1928,exports,5094.0
+United States,1929,exports,5220.0
+United States,1930,exports,3825.0
+United States,1931,exports,2400.0
+United States,1932,exports,1586.0
+United States,1933,exports,1666.0
+United States,1934,exports,2117.0
+United States,1935,exports,2262.0
+United States,1936,exports,2431.0
+United States,1937,exports,3311.0
+United States,1938,exports,3064.0
+United States,1948,exports,12506.0
+United States,1950,exports,10149.0
+United States,1951,exports,14876.0
+United States,1952,exports,15031.0
+United States,1953,exports,15635.0
+United States,1954,exports,14953.0
+United States,1955,exports,15398.0
+United States,1956,exports,18845.0
+United States,1957,exports,20642.0
+United States,1958,exports,17698.0
+United States,1959,exports,17393.0
+United States,1960,exports,20326.0
+United States,1900,imports,885.0
+United States,1901,imports,860.0
+United States,1902,imports,932.0
+United States,1903,imports,1050.0
+United States,1904,imports,1019.0
+United States,1905,imports,1142.0
+United States,1906,imports,1258.0
+United States,1907,imports,1471.0
+United States,1908,imports,1236.0
+United States,1909,imports,1353.0
+United States,1910,imports,1599.0
+United States,1911,imports,1570.0
+United States,1912,imports,1697.0
+United States,1913,imports,1851.0
+United States,1921,imports,2572.0
+United States,1922,imports,3184.0
+United States,1923,imports,3867.0
+United States,1924,imports,3684.0
+United States,1925,imports,4291.0
+United States,1926,imports,4501.0
+United States,1927,imports,4240.0
+United States,1928,imports,4160.0
+United States,1929,imports,4463.0
+United States,1930,imports,3104.0
+United States,1931,imports,2119.0
+United States,1932,imports,1342.0
+United States,1933,imports,1510.0
+United States,1934,imports,1739.0
+United States,1935,imports,2393.0
+United States,1936,imports,2607.0
+United States,1937,imports,3102.0
+United States,1938,imports,2180.0
+United States,1948,imports,7109.0
+United States,1950,imports,8845.0
+United States,1951,imports,10917.0
+United States,1952,imports,10812.0
+United States,1953,imports,10873.0
+United States,1954,imports,10312.0
+United States,1955,imports,11407.0
+United States,1956,imports,12619.0
+United States,1957,imports,13079.0
+United States,1958,imports,12867.0
+United States,1959,imports,15050.0
+United States,1960,imports,14709.0

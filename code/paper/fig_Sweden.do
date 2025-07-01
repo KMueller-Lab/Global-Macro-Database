@@ -3,7 +3,7 @@
 * by Karsten Müller, Chenzi Xu, Mohamed Lehbib, Ziliang Chen
 * ==============================================================================
 *
-* MAKE HEATMAP FOR SWEDEN
+/* MAKE HEATMAP FOR SWEDEN
 *
 * Author:
 * Mohamed Lehbib
@@ -29,6 +29,14 @@ keep ISO3 year *nGDP *rGDP  *cons *inv *finv *pop *exports *imports *CA_GDP *REE
 
 reshape long BIS_ BORDO_ CEPAC_ BRUEGEL_ Davis_ Grimm_ Gapminder_ HFS_ Homer_Sylla_ IDCM_ IHD_ IMF_FPP_ IMF_GDD_ IMF_HDD_ IMF_IFS_ IMF_GFS_ IMF_WEO_ MAD_ MD_ MOXLAD_ MW_ Mitchell_ OECD_EO_ OECD_HPI_ OECD_KEI_ OECD_MEI_ OECD_QNA_ OECD_REV_ OECD_MEI_ARC_ FLORA_ PWT_ RR_debt_ TH_ID_ Tena_ UN_ WB_CC_ WDI_ WDIARC_ IMF_MFS_ GNA_ CS1_ JO_ JST_ FZ_ EUS_ BARRO_ FAO_ AMECO_ ILO_ LUND_ CLIO_, i(ISO3 year) j(variable) string
 
+* Add IMF WEO forecast value to the IMF_WEO and then drop it 
+qui ds IMF_WEO_forecast* 
+foreach var in `r(varlist)'{
+	local short_name = substr("`var'", 18, .)
+	replace IMF_WEO_`short_name' = `var' if IMF_WEO_`short_name' == .
+}
+
+drop IMF_WEO_forecast*
 
 * Reshape into long
 qui ds ISO3 year variable, not

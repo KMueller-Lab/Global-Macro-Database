@@ -1,0 +1,3460 @@
+This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2024.12.5)  1 JUL 2025 02:16
+ restricted system commands enabled.
+**govtax.tex
+(./govtax.tex
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+Lua module: luaotfload 2024-02-14 v3.28 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended 
+collection.
+luaotfload | conf : Root cache directory is "C:/Users/lehbib/AppData/Local/MiKTe
+X/luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
+olved path "C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/luatex/luaotfload/
+fontloader-2023-12-28.lua".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.134
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "C:/Users/lehbib/AppData/Local/MiKTe
+X/luatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'. (C:/Users/lehbib/AppDat
+a/Local/Programs/MiKTeX/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/size12.clo
+File: size12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from C:/Users/lehbib/AppData/Local/
+MiKTeX/luatex-cache/generic/names/luaotfload-names.luc.gz)
+\c@part=\count194
+\c@section=\count195
+\c@subsection=\count196
+\c@subsubsection=\count197
+\c@paragraph=\count198
+\c@subparagraph=\count199
+\c@figure=\count266
+\c@table=\count267
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen140
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
+6.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphicx.s
+ty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphics.st
+y
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/graphics.
+cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 106.
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics-def/luatex.de
+f
+File: luatex.def 2024/04/13 v1.2e Graphics/color driver for luatex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/booktabs/booktabs.st
+y
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen143
+\lightrulewidth=\dimen144
+\cmidrulewidth=\dimen145
+\belowrulesep=\dimen146
+\belowbottomsep=\dimen147
+\aboverulesep=\dimen148
+\abovetopsep=\dimen149
+\cmidrulesep=\dimen150
+\cmidrulekern=\dimen151
+\defaultaddspace=\dimen152
+\@cmidla=\count268
+\@cmidlb=\count269
+\@aboverulesep=\dimen153
+\@belowrulesep=\dimen154
+\@thisruleclass=\count270
+\@lastruleclass=\count271
+\@thisrulewidth=\dimen155
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.st
+y
+Package: geometry 2020/01/02 v5.9 Page Geometry
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count272
+\Gm@cntv=\count273
+\c@Gm@tempcnt=\count274
+\Gm@bindingoffset=\dimen156
+\Gm@wd@mp=\dimen157
+\Gm@odd@mp=\dimen158
+\Gm@even@mp=\dimen159
+\Gm@layoutwidth=\dimen160
+\Gm@layoutheight=\dimen161
+\Gm@layouthoffset=\dimen162
+\Gm@layoutvoffset=\dimen163
+\Gm@dimlist=\toks20
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.cfg))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen164
+\captionmargin=\dimen165
+\caption@leftmargin=\dimen166
+\caption@rightmargin=\dimen167
+\caption@width=\dimen168
+\caption@indent=\dimen169
+\caption@parindent=\dimen170
+\caption@hangindent=\dimen171
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count275
+\c@continuedfloat=\count276
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count277
+\float@exts=\toks21
+\float@box=\box52
+\@float@everytoks=\toks22
+\@floatcapt=\box53
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip51
+\bibsep=\skip52
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count278
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: luatex.def on input line 274.
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/mathcolor.ltx
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/colortbl/colortbl.st
+y
+Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen172
+\ar@mcellbox=\box54
+\extrarowheight=\dimen173
+\NC@list=\toks23
+\extratabsurround=\skip53
+\backup@length=\skip54
+\ar@cellbox=\box55
+)
+\everycr=\toks24
+\minrowclearance=\skip55
+\rownum=\count279
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/rotating.st
+y
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count280
+\rotFPtop=\skip56
+\rotFPbot=\skip57
+\rot@float@box=\box56
+\rot@mess@toks=\toks25
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen174
+\TX@old@table=\dimen175
+\TX@old@col=\dimen176
+\TX@target=\dimen177
+\TX@delta=\dimen178
+\TX@cols=\count281
+\TX@ftn=\toks26
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pdflscape/pdflscape.st
+y
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pdflscape/pdflscape-no
+metadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/adjustbox/adjustbox.st
+y
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/xkeyval/xkeyval.tex
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks27
+\XKV@tempa@toks=\toks28
+)
+\XKV@depth=\count282
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/adjustbox/adjcalc.s
+ty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/collectbox/collectbox.
+sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box57
+)
+\tc@llx=\dimen179
+\tc@lly=\dimen180
+\tc@urx=\dimen181
+\tc@ury=\dimen182
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/adjustbox/tc-pgf.def
+File: tc-pgf.def 2019/01/04 v2.2 trimclip fall-back clipping driver using PGF
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgf.sty
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfrcs.s
+ty
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfuti
+l-common.tex
+\pgfutil@everybye=\toks29
+\pgfutil@tempdima=\dimen183
+\pgfutil@tempdimb=\dimen184
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfuti
+l-latex.def
+\pgfutil@abb=\box58
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfrcs
+.code.tex
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/pgf.revision.tex
+)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgfcore
+.sty
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/systemlayer/pgfsys
+.sty
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+ys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkey
+s.code.tex
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkey
+slibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks32
+))
+\pgf@x=\dimen185
+\pgf@y=\dimen186
+\pgf@xa=\dimen187
+\pgf@ya=\dimen188
+\pgf@xb=\dimen189
+\pgf@yb=\dimen190
+\pgf@xc=\dimen191
+\pgf@yc=\dimen192
+\pgf@xd=\dimen193
+\pgf@yd=\dimen194
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count283
+\c@pgf@countb=\count284
+\c@pgf@countc=\count285
+\c@pgf@countd=\count286
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
+\pgf@sys@id@count=\count287
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgf.
+cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-luatex.def
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+ys-luatex.def
+File: pgfsys-luatex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+ys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+yssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count288
+\pgfsyssoftpath@bigbuffer@items=\count289
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+ysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+re.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmath.cod
+e.tex
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathutil
+.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathpars
+er.code.tex
+\pgfmath@dimen=\dimen195
+\pgfmath@count=\count290
+\pgfmath@box=\box59
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.basic.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.trigonometric.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.random.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.comparison.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.base.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.round.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.misc.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.integerarithmetics.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathcalc
+.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfloa
+t.code.tex
+\c@pgfmathroundto@lastzeros=\count291
+))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfint.code
+.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen196
+\pgf@picmaxx=\dimen197
+\pgf@picminy=\dimen198
+\pgf@picmaxy=\dimen199
+\pgf@pathminx=\dimen256
+\pgf@pathmaxx=\dimen257
+\pgf@pathminy=\dimen258
+\pgf@pathmaxy=\dimen259
+\pgf@xx=\dimen260
+\pgf@xy=\dimen261
+\pgf@yx=\dimen262
+\pgf@yy=\dimen263
+\pgf@zx=\dimen264
+\pgf@zy=\dimen265
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen266
+\pgf@path@lasty=\dimen267
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen268
+\pgf@shorten@start@additional=\dimen269
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+rescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box60
+\pgf@hbox=\box61
+\pgf@layerbox@main=\box62
+\pgf@picture@serial@count=\count292
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+regraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen270
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+retransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen271
+\pgf@pt@y=\dimen272
+\pgf@pt@temp=\dimen273
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+requick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+reobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+rearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen274
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+reshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen275
+\pgf@sys@shading@range@num=\count293
+\pgf@shadingcount=\count294
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+reimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+reexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box63
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+relayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+retransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+rerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodul
+eshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box64
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodul
+eplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfc
+omp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen276
+\pgf@nodesepend=\dimen277
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfc
+omp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)))
+Package trimclip Info: No clipping driver 'tc-luatex.def' available.
+(trimclip)             Using fall-back PGF driver.
+)
+\adjbox@Width=\dimen278
+\adjbox@Height=\dimen279
+\adjbox@Depth=\dimen280
+\adjbox@Totalheight=\dimen281
+\adjbox@pwidth=\dimen282
+\adjbox@pheight=\dimen283
+\adjbox@pdepth=\dimen284
+\adjbox@ptotalheight=\dimen285
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/ifoddpage/ifoddpage.st
+y
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count295
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.st
+y
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box65
+\sift@deathcycles=\count296
+\@vwid@loff=\dimen286
+\@vwid@roff=\dimen287
+)) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/times.sty
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/fancyhdr/fancyhdr.st
+y
+Package: fancyhdr 2024/11/20 v4.4 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip58
+\f@nch@O@elh=\skip59
+\f@nch@O@erh=\skip60
+\f@nch@O@olh=\skip61
+\f@nch@O@orh=\skip62
+\f@nch@O@elf=\skip63
+\f@nch@O@erf=\skip64
+\f@nch@O@olf=\skip65
+\f@nch@O@orf=\skip66
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hyperref.st
+y
+Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/kvsetkeys/kvsetkeys.st
+y
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/kvdefinekeys/kvdefin
+ekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pdfescape/pdfescape.
+sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pdftexcmds/pdftexcmd
+s.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/infwarerr/infwarerr.
+sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks39
+)) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/gettitlestring/getti
+tlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/kvoptions/kvoptions.st
+y
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count297
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/etoolbox/etoolbox.st
+y
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count298
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/stringenc/stringenc.
+sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen288
+\Hy@linkcounter=\count299
+\Hy@pagecounter=\count300
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/intcalc/intcalc.st
+y
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count301
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4040.
+Package hyperref Info: Hyper figures OFF on input line 4157.
+Package hyperref Info: Link nesting OFF on input line 4162.
+Package hyperref Info: Hyper index ON on input line 4165.
+Package hyperref Info: Plain pages OFF on input line 4172.
+Package hyperref Info: Backreferencing OFF on input line 4177.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4424.
+\c@Hy@tempcnt=\count302
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen289
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/bigintcalc/bigintcal
+c.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count303
+\Field@Width=\dimen290
+\Fld@charsize=\dimen291
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring ON on input line 6060.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count304
+\c@Item=\count305
+\c@Hfootnote=\count306
+)
+Package hyperref Info: Driver (autodetected): hluatex.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hluatex.def
+File: hluatex.def 2024-11-05 v7.01l Hyperref driver for luaTeX
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count307
+\c@bookmark@seq@number=\count308
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfi
+lecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/uniquecounter/unique
+counter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip67
+)
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 34
+.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-lu
+atex.def
+File: l3backend-luatex.def 2024-05-08 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count309
+Inserting `l3color' in `luaotfload.parse_color'.
+\l__pdf_internal_box=\box66
+) (./govtax.aux)
+\openout1 = govtax.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.m
+kii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count310
+\scratchdimen=\dimen292
+\scratchbox=\box67
+\nofMPsegments=\count311
+\nofMParguments=\count312
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count313
+\MPscratchDim=\dimen293
+\MPnumerator=\count314
+\makeMPintoPDFobject=\count315
+\everyMPtoPDFconversion=\toks41
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-
+base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/00miktex/epstopdf-sys.
+cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: landscape 
+* h-part:(L,W,R)=(36.135pt, 1084.05pt, 36.135pt)
+* v-part:(T,H,B)=(36.135pt, 722.7pt, 36.135pt)
+* \paperwidth=1156.31999pt
+* \paperheight=794.96999pt
+* \textwidth=1084.05pt
+* \textheight=722.7pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-55.36243pt
+* \headheight=12.0pt
+* \headsep=7.22743pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=144.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: rotating package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring ON on input line 34.
+(./govtax.out) (./govtax.out)
+\@outlinefile=\write4
+
+\openout4 = govtax.out
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 38.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 38.
+
+LaTeX Warning: No \author given.
+
+
+
+[1
+
+{C:/Users/lehbib/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+
+Package hyperref Warning: Option `colorlinks' has already been used,
+(hyperref)                setting the option has no effect on input line 42.
+
+(./govtax.toc
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
+[1
+
+]
+
+[2]
+
+[3]
+
+[4]
+
+[5]
+
+[6]
+
+[7])
+\tf@toc=\write5
+
+\openout5 = govtax.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 60.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 60.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 60.
+
+warning  (file graphs/AFG_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/AFG_govtax.pdf, id=1254, 542.025pt x 325.215pt>
+File: graphs/AFG_govtax.pdf Graphic file (type pdf)
+<use graphs/AFG_govtax.pdf>
+Package luatex.def Info: graphs/AFG_govtax.pdf  used on input line 71.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ALB_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/ALB_govtax.pdf, id=1259, 542.025pt x 325.215pt>
+File: graphs/ALB_govtax.pdf Graphic file (type pdf)
+<use graphs/ALB_govtax.pdf>
+Package luatex.def Info: graphs/ALB_govtax.pdf  used on input line 98.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DZA_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/DZA_govtax.pdf, id=1270, 542.025pt x 325.215pt>
+File: graphs/DZA_govtax.pdf Graphic file (type pdf)
+<use graphs/DZA_govtax.pdf>
+Package luatex.def Info: graphs/DZA_govtax.pdf  used on input line 128.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AGO_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/AGO_govtax.pdf, id=1275, 542.025pt x 325.215pt>
+File: graphs/AGO_govtax.pdf Graphic file (type pdf)
+<use graphs/AGO_govtax.pdf>
+Package luatex.def Info: graphs/AGO_govtax.pdf  used on input line 155.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ARG_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/ARG_govtax.pdf, id=1280, 542.025pt x 325.215pt>
+File: graphs/ARG_govtax.pdf Graphic file (type pdf)
+<use graphs/ARG_govtax.pdf>
+Package luatex.def Info: graphs/ARG_govtax.pdf  used on input line 182.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ARM_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/ARM_govtax.pdf, id=1283, 542.025pt x 325.215pt>
+File: graphs/ARM_govtax.pdf Graphic file (type pdf)
+<use graphs/ARM_govtax.pdf>
+Package luatex.def Info: graphs/ARM_govtax.pdf  used on input line 208.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AUS_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/AUS_govtax.pdf, id=1290, 542.025pt x 325.215pt>
+File: graphs/AUS_govtax.pdf Graphic file (type pdf)
+<use graphs/AUS_govtax.pdf>
+Package luatex.def Info: graphs/AUS_govtax.pdf  used on input line 236.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AUT_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/AUT_govtax.pdf, id=1303, 542.025pt x 325.215pt>
+File: graphs/AUT_govtax.pdf Graphic file (type pdf)
+<use graphs/AUT_govtax.pdf>
+Package luatex.def Info: graphs/AUT_govtax.pdf  used on input line 267.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AZE_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/AZE_govtax.pdf, id=1306, 542.025pt x 325.215pt>
+File: graphs/AZE_govtax.pdf Graphic file (type pdf)
+<use graphs/AZE_govtax.pdf>
+Package luatex.def Info: graphs/AZE_govtax.pdf  used on input line 293.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BHS_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/BHS_govtax.pdf, id=1309, 542.025pt x 325.215pt>
+File: graphs/BHS_govtax.pdf Graphic file (type pdf)
+<use graphs/BHS_govtax.pdf>
+Package luatex.def Info: graphs/BHS_govtax.pdf  used on input line 319.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BHR_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/BHR_govtax.pdf, id=1314, 542.025pt x 325.215pt>
+File: graphs/BHR_govtax.pdf Graphic file (type pdf)
+<use graphs/BHR_govtax.pdf>
+Package luatex.def Info: graphs/BHR_govtax.pdf  used on input line 346.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BGD_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/BGD_govtax.pdf, id=1317, 542.025pt x 325.215pt>
+File: graphs/BGD_govtax.pdf Graphic file (type pdf)
+<use graphs/BGD_govtax.pdf>
+Package luatex.def Info: graphs/BGD_govtax.pdf  used on input line 372.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BRB_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/BRB_govtax.pdf, id=1320, 542.025pt x 325.215pt>
+File: graphs/BRB_govtax.pdf Graphic file (type pdf)
+<use graphs/BRB_govtax.pdf>
+Package luatex.def Info: graphs/BRB_govtax.pdf  used on input line 398.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BLR_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/BLR_govtax.pdf, id=1323, 542.025pt x 325.215pt>
+File: graphs/BLR_govtax.pdf Graphic file (type pdf)
+<use graphs/BLR_govtax.pdf>
+Package luatex.def Info: graphs/BLR_govtax.pdf  used on input line 424.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BEL_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/BEL_govtax.pdf, id=1340, 542.025pt x 325.215pt>
+File: graphs/BEL_govtax.pdf Graphic file (type pdf)
+<use graphs/BEL_govtax.pdf>
+Package luatex.def Info: graphs/BEL_govtax.pdf  used on input line 457.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BLZ_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/BLZ_govtax.pdf, id=1343, 542.025pt x 325.215pt>
+File: graphs/BLZ_govtax.pdf Graphic file (type pdf)
+<use graphs/BLZ_govtax.pdf>
+Package luatex.def Info: graphs/BLZ_govtax.pdf  used on input line 483.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BEN_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/BEN_govtax.pdf, id=1350, 542.025pt x 325.215pt>
+File: graphs/BEN_govtax.pdf Graphic file (type pdf)
+<use graphs/BEN_govtax.pdf>
+Package luatex.def Info: graphs/BEN_govtax.pdf  used on input line 511.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BTN_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/BTN_govtax.pdf, id=1353, 542.025pt x 325.215pt>
+File: graphs/BTN_govtax.pdf Graphic file (type pdf)
+<use graphs/BTN_govtax.pdf>
+Package luatex.def Info: graphs/BTN_govtax.pdf  used on input line 537.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BOL_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/BOL_govtax.pdf, id=1356, 542.025pt x 325.215pt>
+File: graphs/BOL_govtax.pdf Graphic file (type pdf)
+<use graphs/BOL_govtax.pdf>
+Package luatex.def Info: graphs/BOL_govtax.pdf  used on input line 563.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BIH_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/BIH_govtax.pdf, id=1361, 542.025pt x 325.215pt>
+File: graphs/BIH_govtax.pdf Graphic file (type pdf)
+<use graphs/BIH_govtax.pdf>
+Package luatex.def Info: graphs/BIH_govtax.pdf  used on input line 590.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BWA_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/BWA_govtax.pdf, id=1372, 542.025pt x 325.215pt>
+File: graphs/BWA_govtax.pdf Graphic file (type pdf)
+<use graphs/BWA_govtax.pdf>
+Package luatex.def Info: graphs/BWA_govtax.pdf  used on input line 620.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BRA_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/BRA_govtax.pdf, id=1375, 542.025pt x 325.215pt>
+File: graphs/BRA_govtax.pdf Graphic file (type pdf)
+<use graphs/BRA_govtax.pdf>
+Package luatex.def Info: graphs/BRA_govtax.pdf  used on input line 646.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BRN_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/BRN_govtax.pdf, id=1378, 542.025pt x 325.215pt>
+File: graphs/BRN_govtax.pdf Graphic file (type pdf)
+<use graphs/BRN_govtax.pdf>
+Package luatex.def Info: graphs/BRN_govtax.pdf  used on input line 672.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BGR_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/BGR_govtax.pdf, id=1383, 542.025pt x 325.215pt>
+File: graphs/BGR_govtax.pdf Graphic file (type pdf)
+<use graphs/BGR_govtax.pdf>
+Package luatex.def Info: graphs/BGR_govtax.pdf  used on input line 699.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BFA_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/BFA_govtax.pdf, id=1388, 542.025pt x 325.215pt>
+File: graphs/BFA_govtax.pdf Graphic file (type pdf)
+<use graphs/BFA_govtax.pdf>
+Package luatex.def Info: graphs/BFA_govtax.pdf  used on input line 726.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BDI_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/BDI_govtax.pdf, id=1401, 542.025pt x 325.215pt>
+File: graphs/BDI_govtax.pdf Graphic file (type pdf)
+<use graphs/BDI_govtax.pdf>
+Package luatex.def Info: graphs/BDI_govtax.pdf  used on input line 757.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KHM_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/KHM_govtax.pdf, id=1404, 542.025pt x 325.215pt>
+File: graphs/KHM_govtax.pdf Graphic file (type pdf)
+<use graphs/KHM_govtax.pdf>
+Package luatex.def Info: graphs/KHM_govtax.pdf  used on input line 783.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CMR_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/CMR_govtax.pdf, id=1417, 542.025pt x 325.215pt>
+File: graphs/CMR_govtax.pdf Graphic file (type pdf)
+<use graphs/CMR_govtax.pdf>
+Package luatex.def Info: graphs/CMR_govtax.pdf  used on input line 814.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CAN_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/CAN_govtax.pdf, id=1423, 542.025pt x 325.215pt>
+File: graphs/CAN_govtax.pdf Graphic file (type pdf)
+<use graphs/CAN_govtax.pdf>
+Package luatex.def Info: graphs/CAN_govtax.pdf  used on input line 842.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CPV_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/CPV_govtax.pdf, id=1426, 542.025pt x 325.215pt>
+File: graphs/CPV_govtax.pdf Graphic file (type pdf)
+<use graphs/CPV_govtax.pdf>
+Package luatex.def Info: graphs/CPV_govtax.pdf  used on input line 868.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CAF_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/CAF_govtax.pdf, id=1439, 542.025pt x 325.215pt>
+File: graphs/CAF_govtax.pdf Graphic file (type pdf)
+<use graphs/CAF_govtax.pdf>
+Package luatex.def Info: graphs/CAF_govtax.pdf  used on input line 899.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TCD_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/TCD_govtax.pdf, id=1452, 542.025pt x 325.215pt>
+File: graphs/TCD_govtax.pdf Graphic file (type pdf)
+<use graphs/TCD_govtax.pdf>
+Package luatex.def Info: graphs/TCD_govtax.pdf  used on input line 930.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CHL_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/CHL_govtax.pdf, id=1459, 542.025pt x 325.215pt>
+File: graphs/CHL_govtax.pdf Graphic file (type pdf)
+<use graphs/CHL_govtax.pdf>
+Package luatex.def Info: graphs/CHL_govtax.pdf  used on input line 958.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CHN_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/CHN_govtax.pdf, id=1468, 542.025pt x 325.215pt>
+File: graphs/CHN_govtax.pdf Graphic file (type pdf)
+<use graphs/CHN_govtax.pdf>
+Package luatex.def Info: graphs/CHN_govtax.pdf  used on input line 987.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/COL_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/COL_govtax.pdf, id=1485, 542.025pt x 325.215pt>
+File: graphs/COL_govtax.pdf Graphic file (type pdf)
+<use graphs/COL_govtax.pdf>
+Package luatex.def Info: graphs/COL_govtax.pdf  used on input line 1020.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CRI_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/CRI_govtax.pdf, id=1488, 542.025pt x 325.215pt>
+File: graphs/CRI_govtax.pdf Graphic file (type pdf)
+<use graphs/CRI_govtax.pdf>
+Package luatex.def Info: graphs/CRI_govtax.pdf  used on input line 1046.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/HRV_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/HRV_govtax.pdf, id=1491, 542.025pt x 325.215pt>
+File: graphs/HRV_govtax.pdf Graphic file (type pdf)
+<use graphs/HRV_govtax.pdf>
+Package luatex.def Info: graphs/HRV_govtax.pdf  used on input line 1072.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CYP_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/CYP_govtax.pdf, id=1498, 542.025pt x 325.215pt>
+File: graphs/CYP_govtax.pdf Graphic file (type pdf)
+<use graphs/CYP_govtax.pdf>
+Package luatex.def Info: graphs/CYP_govtax.pdf  used on input line 1100.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CZE_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/CZE_govtax.pdf, id=1501, 542.025pt x 325.215pt>
+File: graphs/CZE_govtax.pdf Graphic file (type pdf)
+<use graphs/CZE_govtax.pdf>
+Package luatex.def Info: graphs/CZE_govtax.pdf  used on input line 1126.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CSK_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/CSK_govtax.pdf, id=1504, 542.025pt x 325.215pt>
+File: graphs/CSK_govtax.pdf Graphic file (type pdf)
+<use graphs/CSK_govtax.pdf>
+Package luatex.def Info: graphs/CSK_govtax.pdf  used on input line 1152.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/COD_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/COD_govtax.pdf, id=1513, 542.025pt x 325.215pt>
+File: graphs/COD_govtax.pdf Graphic file (type pdf)
+<use graphs/COD_govtax.pdf>
+Package luatex.def Info: graphs/COD_govtax.pdf  used on input line 1181.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DNK_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/DNK_govtax.pdf, id=1516, 542.025pt x 325.215pt>
+File: graphs/DNK_govtax.pdf Graphic file (type pdf)
+<use graphs/DNK_govtax.pdf>
+Package luatex.def Info: graphs/DNK_govtax.pdf  used on input line 1207.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DJI_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/DJI_govtax.pdf, id=1533, 542.025pt x 325.215pt>
+File: graphs/DJI_govtax.pdf Graphic file (type pdf)
+<use graphs/DJI_govtax.pdf>
+Package luatex.def Info: graphs/DJI_govtax.pdf  used on input line 1240.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DMA_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/DMA_govtax.pdf, id=1538, 542.025pt x 325.215pt>
+File: graphs/DMA_govtax.pdf Graphic file (type pdf)
+<use graphs/DMA_govtax.pdf>
+Package luatex.def Info: graphs/DMA_govtax.pdf  used on input line 1267.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DOM_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/DOM_govtax.pdf, id=1543, 542.025pt x 325.215pt>
+File: graphs/DOM_govtax.pdf Graphic file (type pdf)
+<use graphs/DOM_govtax.pdf>
+Package luatex.def Info: graphs/DOM_govtax.pdf  used on input line 1294.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ECU_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/ECU_govtax.pdf, id=1546, 542.025pt x 325.215pt>
+File: graphs/ECU_govtax.pdf Graphic file (type pdf)
+<use graphs/ECU_govtax.pdf>
+Package luatex.def Info: graphs/ECU_govtax.pdf  used on input line 1320.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/EGY_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/EGY_govtax.pdf, id=1561, 542.025pt x 325.215pt>
+File: graphs/EGY_govtax.pdf Graphic file (type pdf)
+<use graphs/EGY_govtax.pdf>
+Package luatex.def Info: graphs/EGY_govtax.pdf  used on input line 1352.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SLV_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/SLV_govtax.pdf, id=1568, 542.025pt x 325.215pt>
+File: graphs/SLV_govtax.pdf Graphic file (type pdf)
+<use graphs/SLV_govtax.pdf>
+Package luatex.def Info: graphs/SLV_govtax.pdf  used on input line 1380.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GNQ_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/GNQ_govtax.pdf, id=1571, 542.025pt x 325.215pt>
+File: graphs/GNQ_govtax.pdf Graphic file (type pdf)
+<use graphs/GNQ_govtax.pdf>
+Package luatex.def Info: graphs/GNQ_govtax.pdf  used on input line 1406.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/EST_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/EST_govtax.pdf, id=1574, 542.025pt x 325.215pt>
+File: graphs/EST_govtax.pdf Graphic file (type pdf)
+<use graphs/EST_govtax.pdf>
+Package luatex.def Info: graphs/EST_govtax.pdf  used on input line 1432.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SWZ_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/SWZ_govtax.pdf, id=1587, 542.025pt x 325.215pt>
+File: graphs/SWZ_govtax.pdf Graphic file (type pdf)
+<use graphs/SWZ_govtax.pdf>
+Package luatex.def Info: graphs/SWZ_govtax.pdf  used on input line 1463.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ETH_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/ETH_govtax.pdf, id=1598, 542.025pt x 325.215pt>
+File: graphs/ETH_govtax.pdf Graphic file (type pdf)
+<use graphs/ETH_govtax.pdf>
+Package luatex.def Info: graphs/ETH_govtax.pdf  used on input line 1493.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/FJI_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/FJI_govtax.pdf, id=1601, 542.025pt x 325.215pt>
+File: graphs/FJI_govtax.pdf Graphic file (type pdf)
+<use graphs/FJI_govtax.pdf>
+Package luatex.def Info: graphs/FJI_govtax.pdf  used on input line 1519.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/FIN_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/FIN_govtax.pdf, id=1604, 542.025pt x 325.215pt>
+File: graphs/FIN_govtax.pdf Graphic file (type pdf)
+<use graphs/FIN_govtax.pdf>
+Package luatex.def Info: graphs/FIN_govtax.pdf  used on input line 1545.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/FRA_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/FRA_govtax.pdf, id=1615, 542.025pt x 325.215pt>
+File: graphs/FRA_govtax.pdf Graphic file (type pdf)
+<use graphs/FRA_govtax.pdf>
+Package luatex.def Info: graphs/FRA_govtax.pdf  used on input line 1575.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GAB_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/GAB_govtax.pdf, id=1636, 542.025pt x 325.215pt>
+File: graphs/GAB_govtax.pdf Graphic file (type pdf)
+<use graphs/GAB_govtax.pdf>
+Package luatex.def Info: graphs/GAB_govtax.pdf  used on input line 1610.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GMB_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/GMB_govtax.pdf, id=1651, 542.025pt x 325.215pt>
+File: graphs/GMB_govtax.pdf Graphic file (type pdf)
+<use graphs/GMB_govtax.pdf>
+Package luatex.def Info: graphs/GMB_govtax.pdf  used on input line 1642.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GEO_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/GEO_govtax.pdf, id=1654, 542.025pt x 325.215pt>
+File: graphs/GEO_govtax.pdf Graphic file (type pdf)
+<use graphs/GEO_govtax.pdf>
+Package luatex.def Info: graphs/GEO_govtax.pdf  used on input line 1668.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DEU_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/DEU_govtax.pdf, id=1665, 542.025pt x 325.215pt>
+File: graphs/DEU_govtax.pdf Graphic file (type pdf)
+<use graphs/DEU_govtax.pdf>
+Package luatex.def Info: graphs/DEU_govtax.pdf  used on input line 1698.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GHA_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/GHA_govtax.pdf, id=1674, 542.025pt x 325.215pt>
+File: graphs/GHA_govtax.pdf Graphic file (type pdf)
+<use graphs/GHA_govtax.pdf>
+Package luatex.def Info: graphs/GHA_govtax.pdf  used on input line 1727.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GRC_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/GRC_govtax.pdf, id=1677, 542.025pt x 325.215pt>
+File: graphs/GRC_govtax.pdf Graphic file (type pdf)
+<use graphs/GRC_govtax.pdf>
+Package luatex.def Info: graphs/GRC_govtax.pdf  used on input line 1753.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GRD_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/GRD_govtax.pdf, id=1684, 542.025pt x 325.215pt>
+File: graphs/GRD_govtax.pdf Graphic file (type pdf)
+<use graphs/GRD_govtax.pdf>
+Package luatex.def Info: graphs/GRD_govtax.pdf  used on input line 1781.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GTM_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/GTM_govtax.pdf, id=1687, 542.025pt x 325.215pt>
+File: graphs/GTM_govtax.pdf Graphic file (type pdf)
+<use graphs/GTM_govtax.pdf>
+Package luatex.def Info: graphs/GTM_govtax.pdf  used on input line 1807.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GIN_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/GIN_govtax.pdf, id=1700, 542.025pt x 325.215pt>
+File: graphs/GIN_govtax.pdf Graphic file (type pdf)
+<use graphs/GIN_govtax.pdf>
+Package luatex.def Info: graphs/GIN_govtax.pdf  used on input line 1838.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GNB_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/GNB_govtax.pdf, id=1705, 542.025pt x 325.215pt>
+File: graphs/GNB_govtax.pdf Graphic file (type pdf)
+<use graphs/GNB_govtax.pdf>
+Package luatex.def Info: graphs/GNB_govtax.pdf  used on input line 1865.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GUY_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/GUY_govtax.pdf, id=1708, 542.025pt x 325.215pt>
+File: graphs/GUY_govtax.pdf Graphic file (type pdf)
+<use graphs/GUY_govtax.pdf>
+Package luatex.def Info: graphs/GUY_govtax.pdf  used on input line 1891.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/HTI_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/HTI_govtax.pdf, id=1711, 542.025pt x 325.215pt>
+File: graphs/HTI_govtax.pdf Graphic file (type pdf)
+<use graphs/HTI_govtax.pdf>
+Package luatex.def Info: graphs/HTI_govtax.pdf  used on input line 1917.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/HND_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/HND_govtax.pdf, id=1718, 542.025pt x 325.215pt>
+File: graphs/HND_govtax.pdf Graphic file (type pdf)
+<use graphs/HND_govtax.pdf>
+Package luatex.def Info: graphs/HND_govtax.pdf  used on input line 1945.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/HKG_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/HKG_govtax.pdf, id=1721, 542.025pt x 325.215pt>
+File: graphs/HKG_govtax.pdf Graphic file (type pdf)
+<use graphs/HKG_govtax.pdf>
+Package luatex.def Info: graphs/HKG_govtax.pdf  used on input line 1971.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/HUN_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/HUN_govtax.pdf, id=1738, 542.025pt x 325.215pt>
+File: graphs/HUN_govtax.pdf Graphic file (type pdf)
+<use graphs/HUN_govtax.pdf>
+Package luatex.def Info: graphs/HUN_govtax.pdf  used on input line 2004.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ISL_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/ISL_govtax.pdf, id=1743, 542.025pt x 325.215pt>
+File: graphs/ISL_govtax.pdf Graphic file (type pdf)
+<use graphs/ISL_govtax.pdf>
+Package luatex.def Info: graphs/ISL_govtax.pdf  used on input line 2031.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IND_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/IND_govtax.pdf, id=1748, 542.025pt x 325.215pt>
+File: graphs/IND_govtax.pdf Graphic file (type pdf)
+<use graphs/IND_govtax.pdf>
+Package luatex.def Info: graphs/IND_govtax.pdf  used on input line 2058.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IDN_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/IDN_govtax.pdf, id=1755, 542.025pt x 325.215pt>
+File: graphs/IDN_govtax.pdf Graphic file (type pdf)
+<use graphs/IDN_govtax.pdf>
+Package luatex.def Info: graphs/IDN_govtax.pdf  used on input line 2086.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IRN_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/IRN_govtax.pdf, id=1760, 542.025pt x 325.215pt>
+File: graphs/IRN_govtax.pdf Graphic file (type pdf)
+<use graphs/IRN_govtax.pdf>
+Package luatex.def Info: graphs/IRN_govtax.pdf  used on input line 2113.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IRQ_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/IRQ_govtax.pdf, id=1765, 542.025pt x 325.215pt>
+File: graphs/IRQ_govtax.pdf Graphic file (type pdf)
+<use graphs/IRQ_govtax.pdf>
+Package luatex.def Info: graphs/IRQ_govtax.pdf  used on input line 2140.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IRL_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/IRL_govtax.pdf, id=1770, 542.025pt x 325.215pt>
+File: graphs/IRL_govtax.pdf Graphic file (type pdf)
+<use graphs/IRL_govtax.pdf>
+Package luatex.def Info: graphs/IRL_govtax.pdf  used on input line 2167.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ISR_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/ISR_govtax.pdf, id=1773, 542.025pt x 325.215pt>
+File: graphs/ISR_govtax.pdf Graphic file (type pdf)
+<use graphs/ISR_govtax.pdf>
+Package luatex.def Info: graphs/ISR_govtax.pdf  used on input line 2193.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ITA_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/ITA_govtax.pdf, id=1776, 542.025pt x 325.215pt>
+File: graphs/ITA_govtax.pdf Graphic file (type pdf)
+<use graphs/ITA_govtax.pdf>
+Package luatex.def Info: graphs/ITA_govtax.pdf  used on input line 2219.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CIV_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/CIV_govtax.pdf, id=1781, 542.025pt x 325.215pt>
+File: graphs/CIV_govtax.pdf Graphic file (type pdf)
+<use graphs/CIV_govtax.pdf>
+Package luatex.def Info: graphs/CIV_govtax.pdf  used on input line 2246.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/JAM_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/JAM_govtax.pdf, id=1784, 542.025pt x 325.215pt>
+File: graphs/JAM_govtax.pdf Graphic file (type pdf)
+<use graphs/JAM_govtax.pdf>
+Package luatex.def Info: graphs/JAM_govtax.pdf  used on input line 2272.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/JPN_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/JPN_govtax.pdf, id=1795, 542.025pt x 325.215pt>
+File: graphs/JPN_govtax.pdf Graphic file (type pdf)
+<use graphs/JPN_govtax.pdf>
+Package luatex.def Info: graphs/JPN_govtax.pdf  used on input line 2302.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/JOR_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/JOR_govtax.pdf, id=1798, 542.025pt x 325.215pt>
+File: graphs/JOR_govtax.pdf Graphic file (type pdf)
+<use graphs/JOR_govtax.pdf>
+Package luatex.def Info: graphs/JOR_govtax.pdf  used on input line 2328.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KAZ_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/KAZ_govtax.pdf, id=1801, 542.025pt x 325.215pt>
+File: graphs/KAZ_govtax.pdf Graphic file (type pdf)
+<use graphs/KAZ_govtax.pdf>
+Package luatex.def Info: graphs/KAZ_govtax.pdf  used on input line 2354.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KEN_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/KEN_govtax.pdf, id=1810, 542.025pt x 325.215pt>
+File: graphs/KEN_govtax.pdf Graphic file (type pdf)
+<use graphs/KEN_govtax.pdf>
+Package luatex.def Info: graphs/KEN_govtax.pdf  used on input line 2383.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KWT_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/KWT_govtax.pdf, id=1817, 542.025pt x 325.215pt>
+File: graphs/KWT_govtax.pdf Graphic file (type pdf)
+<use graphs/KWT_govtax.pdf>
+Package luatex.def Info: graphs/KWT_govtax.pdf  used on input line 2411.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KGZ_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/KGZ_govtax.pdf, id=1822, 542.025pt x 325.215pt>
+File: graphs/KGZ_govtax.pdf Graphic file (type pdf)
+<use graphs/KGZ_govtax.pdf>
+Package luatex.def Info: graphs/KGZ_govtax.pdf  used on input line 2438.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LAO_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/LAO_govtax.pdf, id=1825, 542.025pt x 325.215pt>
+File: graphs/LAO_govtax.pdf Graphic file (type pdf)
+<use graphs/LAO_govtax.pdf>
+Package luatex.def Info: graphs/LAO_govtax.pdf  used on input line 2464.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LVA_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/LVA_govtax.pdf, id=1828, 542.025pt x 325.215pt>
+File: graphs/LVA_govtax.pdf Graphic file (type pdf)
+<use graphs/LVA_govtax.pdf>
+Package luatex.def Info: graphs/LVA_govtax.pdf  used on input line 2490.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LBN_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/LBN_govtax.pdf, id=1831, 542.025pt x 325.215pt>
+File: graphs/LBN_govtax.pdf Graphic file (type pdf)
+<use graphs/LBN_govtax.pdf>
+Package luatex.def Info: graphs/LBN_govtax.pdf  used on input line 2516.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LSO_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/LSO_govtax.pdf, id=1840, 542.025pt x 325.215pt>
+File: graphs/LSO_govtax.pdf Graphic file (type pdf)
+<use graphs/LSO_govtax.pdf>
+Package luatex.def Info: graphs/LSO_govtax.pdf  used on input line 2545.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LBR_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/LBR_govtax.pdf, id=1855, 542.025pt x 325.215pt>
+File: graphs/LBR_govtax.pdf Graphic file (type pdf)
+<use graphs/LBR_govtax.pdf>
+Package luatex.def Info: graphs/LBR_govtax.pdf  used on input line 2577.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LBY_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/LBY_govtax.pdf, id=1862, 542.025pt x 325.215pt>
+File: graphs/LBY_govtax.pdf Graphic file (type pdf)
+<use graphs/LBY_govtax.pdf>
+Package luatex.def Info: graphs/LBY_govtax.pdf  used on input line 2605.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LTU_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/LTU_govtax.pdf, id=1865, 542.025pt x 325.215pt>
+File: graphs/LTU_govtax.pdf Graphic file (type pdf)
+<use graphs/LTU_govtax.pdf>
+Package luatex.def Info: graphs/LTU_govtax.pdf  used on input line 2631.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LUX_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/LUX_govtax.pdf, id=1868, 542.025pt x 325.215pt>
+File: graphs/LUX_govtax.pdf Graphic file (type pdf)
+<use graphs/LUX_govtax.pdf>
+Package luatex.def Info: graphs/LUX_govtax.pdf  used on input line 2657.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MKD_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/MKD_govtax.pdf, id=1873, 542.025pt x 325.215pt>
+File: graphs/MKD_govtax.pdf Graphic file (type pdf)
+<use graphs/MKD_govtax.pdf>
+Package luatex.def Info: graphs/MKD_govtax.pdf  used on input line 2684.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MDG_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/MDG_govtax.pdf, id=1888, 542.025pt x 325.215pt>
+File: graphs/MDG_govtax.pdf Graphic file (type pdf)
+<use graphs/MDG_govtax.pdf>
+Package luatex.def Info: graphs/MDG_govtax.pdf  used on input line 2716.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MWI_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/MWI_govtax.pdf, id=1897, 542.025pt x 325.215pt>
+File: graphs/MWI_govtax.pdf Graphic file (type pdf)
+<use graphs/MWI_govtax.pdf>
+Package luatex.def Info: graphs/MWI_govtax.pdf  used on input line 2745.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MYS_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/MYS_govtax.pdf, id=1900, 542.025pt x 325.215pt>
+File: graphs/MYS_govtax.pdf Graphic file (type pdf)
+<use graphs/MYS_govtax.pdf>
+Package luatex.def Info: graphs/MYS_govtax.pdf  used on input line 2771.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MDV_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/MDV_govtax.pdf, id=1903, 542.025pt x 325.215pt>
+File: graphs/MDV_govtax.pdf Graphic file (type pdf)
+<use graphs/MDV_govtax.pdf>
+Package luatex.def Info: graphs/MDV_govtax.pdf  used on input line 2797.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MLI_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/MLI_govtax.pdf, id=1908, 542.025pt x 325.215pt>
+File: graphs/MLI_govtax.pdf Graphic file (type pdf)
+<use graphs/MLI_govtax.pdf>
+Package luatex.def Info: graphs/MLI_govtax.pdf  used on input line 2824.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MLT_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/MLT_govtax.pdf, id=1911, 542.025pt x 325.215pt>
+File: graphs/MLT_govtax.pdf Graphic file (type pdf)
+<use graphs/MLT_govtax.pdf>
+Package luatex.def Info: graphs/MLT_govtax.pdf  used on input line 2850.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MRT_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/MRT_govtax.pdf, id=1926, 542.025pt x 325.215pt>
+File: graphs/MRT_govtax.pdf Graphic file (type pdf)
+<use graphs/MRT_govtax.pdf>
+Package luatex.def Info: graphs/MRT_govtax.pdf  used on input line 2882.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MUS_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/MUS_govtax.pdf, id=1929, 542.025pt x 325.215pt>
+File: graphs/MUS_govtax.pdf Graphic file (type pdf)
+<use graphs/MUS_govtax.pdf>
+Package luatex.def Info: graphs/MUS_govtax.pdf  used on input line 2908.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MEX_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/MEX_govtax.pdf, id=1932, 542.025pt x 325.215pt>
+File: graphs/MEX_govtax.pdf Graphic file (type pdf)
+<use graphs/MEX_govtax.pdf>
+Package luatex.def Info: graphs/MEX_govtax.pdf  used on input line 2934.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MDA_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/MDA_govtax.pdf, id=1935, 542.025pt x 325.215pt>
+File: graphs/MDA_govtax.pdf Graphic file (type pdf)
+<use graphs/MDA_govtax.pdf>
+Package luatex.def Info: graphs/MDA_govtax.pdf  used on input line 2960.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MNG_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/MNG_govtax.pdf, id=1938, 542.025pt x 325.215pt>
+File: graphs/MNG_govtax.pdf Graphic file (type pdf)
+<use graphs/MNG_govtax.pdf>
+Package luatex.def Info: graphs/MNG_govtax.pdf  used on input line 2986.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MNE_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/MNE_govtax.pdf, id=1941, 542.025pt x 325.215pt>
+File: graphs/MNE_govtax.pdf Graphic file (type pdf)
+<use graphs/MNE_govtax.pdf>
+Package luatex.def Info: graphs/MNE_govtax.pdf  used on input line 3012.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MAR_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/MAR_govtax.pdf, id=1954, 542.025pt x 325.215pt>
+File: graphs/MAR_govtax.pdf Graphic file (type pdf)
+<use graphs/MAR_govtax.pdf>
+Package luatex.def Info: graphs/MAR_govtax.pdf  used on input line 3043.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MOZ_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/MOZ_govtax.pdf, id=1959, 542.025pt x 325.215pt>
+File: graphs/MOZ_govtax.pdf Graphic file (type pdf)
+<use graphs/MOZ_govtax.pdf>
+Package luatex.def Info: graphs/MOZ_govtax.pdf  used on input line 3070.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MMR_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/MMR_govtax.pdf, id=1962, 542.025pt x 325.215pt>
+File: graphs/MMR_govtax.pdf Graphic file (type pdf)
+<use graphs/MMR_govtax.pdf>
+Package luatex.def Info: graphs/MMR_govtax.pdf  used on input line 3096.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NAM_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/NAM_govtax.pdf, id=1969, 542.025pt x 325.215pt>
+File: graphs/NAM_govtax.pdf Graphic file (type pdf)
+<use graphs/NAM_govtax.pdf>
+Package luatex.def Info: graphs/NAM_govtax.pdf  used on input line 3124.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NPL_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/NPL_govtax.pdf, id=1972, 542.025pt x 325.215pt>
+File: graphs/NPL_govtax.pdf Graphic file (type pdf)
+<use graphs/NPL_govtax.pdf>
+Package luatex.def Info: graphs/NPL_govtax.pdf  used on input line 3150.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NLD_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/NLD_govtax.pdf, id=1977, 542.025pt x 325.215pt>
+File: graphs/NLD_govtax.pdf Graphic file (type pdf)
+<use graphs/NLD_govtax.pdf>
+Package luatex.def Info: graphs/NLD_govtax.pdf  used on input line 3177.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ANT_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/ANT_govtax.pdf, id=1984, 542.025pt x 325.215pt>
+File: graphs/ANT_govtax.pdf Graphic file (type pdf)
+<use graphs/ANT_govtax.pdf>
+Package luatex.def Info: graphs/ANT_govtax.pdf  used on input line 3205.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NZL_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/NZL_govtax.pdf, id=1989, 542.025pt x 325.215pt>
+File: graphs/NZL_govtax.pdf Graphic file (type pdf)
+<use graphs/NZL_govtax.pdf>
+Package luatex.def Info: graphs/NZL_govtax.pdf  used on input line 3232.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NIC_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/NIC_govtax.pdf, id=1992, 542.025pt x 325.215pt>
+File: graphs/NIC_govtax.pdf Graphic file (type pdf)
+<use graphs/NIC_govtax.pdf>
+Package luatex.def Info: graphs/NIC_govtax.pdf  used on input line 3258.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NER_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/NER_govtax.pdf, id=1997, 542.025pt x 325.215pt>
+File: graphs/NER_govtax.pdf Graphic file (type pdf)
+<use graphs/NER_govtax.pdf>
+Package luatex.def Info: graphs/NER_govtax.pdf  used on input line 3285.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NGA_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/NGA_govtax.pdf, id=2012, 542.025pt x 325.215pt>
+File: graphs/NGA_govtax.pdf Graphic file (type pdf)
+<use graphs/NGA_govtax.pdf>
+Package luatex.def Info: graphs/NGA_govtax.pdf  used on input line 3317.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NOR_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/NOR_govtax.pdf, id=2021, 542.025pt x 325.215pt>
+File: graphs/NOR_govtax.pdf Graphic file (type pdf)
+<use graphs/NOR_govtax.pdf>
+Package luatex.def Info: graphs/NOR_govtax.pdf  used on input line 3346.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/OMN_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/OMN_govtax.pdf, id=2032, 542.025pt x 325.215pt>
+File: graphs/OMN_govtax.pdf Graphic file (type pdf)
+<use graphs/OMN_govtax.pdf>
+Package luatex.def Info: graphs/OMN_govtax.pdf  used on input line 3376.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PAK_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/PAK_govtax.pdf, id=2037, 542.025pt x 325.215pt>
+File: graphs/PAK_govtax.pdf Graphic file (type pdf)
+<use graphs/PAK_govtax.pdf>
+Package luatex.def Info: graphs/PAK_govtax.pdf  used on input line 3403.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PSE_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/PSE_govtax.pdf, id=2040, 542.025pt x 325.215pt>
+File: graphs/PSE_govtax.pdf Graphic file (type pdf)
+<use graphs/PSE_govtax.pdf>
+Package luatex.def Info: graphs/PSE_govtax.pdf  used on input line 3429.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PAN_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/PAN_govtax.pdf, id=2043, 542.025pt x 325.215pt>
+File: graphs/PAN_govtax.pdf Graphic file (type pdf)
+<use graphs/PAN_govtax.pdf>
+Package luatex.def Info: graphs/PAN_govtax.pdf  used on input line 3455.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PNG_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/PNG_govtax.pdf, id=2046, 542.025pt x 325.215pt>
+File: graphs/PNG_govtax.pdf Graphic file (type pdf)
+<use graphs/PNG_govtax.pdf>
+Package luatex.def Info: graphs/PNG_govtax.pdf  used on input line 3481.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PRY_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/PRY_govtax.pdf, id=2053, 542.025pt x 325.215pt>
+File: graphs/PRY_govtax.pdf Graphic file (type pdf)
+<use graphs/PRY_govtax.pdf>
+Package luatex.def Info: graphs/PRY_govtax.pdf  used on input line 3509.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PER_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/PER_govtax.pdf, id=2058, 542.025pt x 325.215pt>
+File: graphs/PER_govtax.pdf Graphic file (type pdf)
+<use graphs/PER_govtax.pdf>
+Package luatex.def Info: graphs/PER_govtax.pdf  used on input line 3536.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PHL_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/PHL_govtax.pdf, id=2061, 542.025pt x 325.215pt>
+File: graphs/PHL_govtax.pdf Graphic file (type pdf)
+<use graphs/PHL_govtax.pdf>
+Package luatex.def Info: graphs/PHL_govtax.pdf  used on input line 3562.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/POL_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/POL_govtax.pdf, id=2070, 542.025pt x 325.215pt>
+File: graphs/POL_govtax.pdf Graphic file (type pdf)
+<use graphs/POL_govtax.pdf>
+Package luatex.def Info: graphs/POL_govtax.pdf  used on input line 3591.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PRT_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/PRT_govtax.pdf, id=2079, 542.025pt x 325.215pt>
+File: graphs/PRT_govtax.pdf Graphic file (type pdf)
+<use graphs/PRT_govtax.pdf>
+Package luatex.def Info: graphs/PRT_govtax.pdf  used on input line 3620.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/QAT_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/QAT_govtax.pdf, id=2084, 542.025pt x 325.215pt>
+File: graphs/QAT_govtax.pdf Graphic file (type pdf)
+<use graphs/QAT_govtax.pdf>
+Package luatex.def Info: graphs/QAT_govtax.pdf  used on input line 3647.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/COG_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/COG_govtax.pdf, id=2097, 542.025pt x 325.215pt>
+File: graphs/COG_govtax.pdf Graphic file (type pdf)
+<use graphs/COG_govtax.pdf>
+Package luatex.def Info: graphs/COG_govtax.pdf  used on input line 3678.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ROU_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/ROU_govtax.pdf, id=2102, 542.025pt x 325.215pt>
+File: graphs/ROU_govtax.pdf Graphic file (type pdf)
+<use graphs/ROU_govtax.pdf>
+Package luatex.def Info: graphs/ROU_govtax.pdf  used on input line 3705.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/RUS_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/RUS_govtax.pdf, id=2111, 542.025pt x 325.215pt>
+File: graphs/RUS_govtax.pdf Graphic file (type pdf)
+<use graphs/RUS_govtax.pdf>
+Package luatex.def Info: graphs/RUS_govtax.pdf  used on input line 3734.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/RWA_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/RWA_govtax.pdf, id=2128, 542.025pt x 325.215pt>
+File: graphs/RWA_govtax.pdf Graphic file (type pdf)
+<use graphs/RWA_govtax.pdf>
+Package luatex.def Info: graphs/RWA_govtax.pdf  used on input line 3767.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/STP_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/STP_govtax.pdf, id=2135, 542.025pt x 325.215pt>
+File: graphs/STP_govtax.pdf Graphic file (type pdf)
+<use graphs/STP_govtax.pdf>
+Package luatex.def Info: graphs/STP_govtax.pdf  used on input line 3795.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SAU_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/SAU_govtax.pdf, id=2140, 542.025pt x 325.215pt>
+File: graphs/SAU_govtax.pdf Graphic file (type pdf)
+<use graphs/SAU_govtax.pdf>
+Package luatex.def Info: graphs/SAU_govtax.pdf  used on input line 3822.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SEN_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/SEN_govtax.pdf, id=2145, 542.025pt x 325.215pt>
+File: graphs/SEN_govtax.pdf Graphic file (type pdf)
+<use graphs/SEN_govtax.pdf>
+Package luatex.def Info: graphs/SEN_govtax.pdf  used on input line 3849.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SRB_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/SRB_govtax.pdf, id=2148, 542.025pt x 325.215pt>
+File: graphs/SRB_govtax.pdf Graphic file (type pdf)
+<use graphs/SRB_govtax.pdf>
+Package luatex.def Info: graphs/SRB_govtax.pdf  used on input line 3875.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SYC_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/SYC_govtax.pdf, id=2153, 542.025pt x 325.215pt>
+File: graphs/SYC_govtax.pdf Graphic file (type pdf)
+<use graphs/SYC_govtax.pdf>
+Package luatex.def Info: graphs/SYC_govtax.pdf  used on input line 3902.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SLE_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/SLE_govtax.pdf, id=2160, 542.025pt x 325.215pt>
+File: graphs/SLE_govtax.pdf Graphic file (type pdf)
+<use graphs/SLE_govtax.pdf>
+Package luatex.def Info: graphs/SLE_govtax.pdf  used on input line 3930.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SGP_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/SGP_govtax.pdf, id=2163, 542.025pt x 325.215pt>
+File: graphs/SGP_govtax.pdf Graphic file (type pdf)
+<use graphs/SGP_govtax.pdf>
+Package luatex.def Info: graphs/SGP_govtax.pdf  used on input line 3956.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SVK_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/SVK_govtax.pdf, id=2166, 542.025pt x 325.215pt>
+File: graphs/SVK_govtax.pdf Graphic file (type pdf)
+<use graphs/SVK_govtax.pdf>
+Package luatex.def Info: graphs/SVK_govtax.pdf  used on input line 3982.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SVN_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/SVN_govtax.pdf, id=2169, 542.025pt x 325.215pt>
+File: graphs/SVN_govtax.pdf Graphic file (type pdf)
+<use graphs/SVN_govtax.pdf>
+Package luatex.def Info: graphs/SVN_govtax.pdf  used on input line 4008.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SOM_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/SOM_govtax.pdf, id=2178, 542.025pt x 325.215pt>
+File: graphs/SOM_govtax.pdf Graphic file (type pdf)
+<use graphs/SOM_govtax.pdf>
+Package luatex.def Info: graphs/SOM_govtax.pdf  used on input line 4037.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ZAF_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/ZAF_govtax.pdf, id=2183, 542.025pt x 325.215pt>
+File: graphs/ZAF_govtax.pdf Graphic file (type pdf)
+<use graphs/ZAF_govtax.pdf>
+Package luatex.def Info: graphs/ZAF_govtax.pdf  used on input line 4064.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KOR_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/KOR_govtax.pdf, id=2196, 542.025pt x 325.215pt>
+File: graphs/KOR_govtax.pdf Graphic file (type pdf)
+<use graphs/KOR_govtax.pdf>
+Package luatex.def Info: graphs/KOR_govtax.pdf  used on input line 4095.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SSD_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/SSD_govtax.pdf, id=2199, 542.025pt x 325.215pt>
+File: graphs/SSD_govtax.pdf Graphic file (type pdf)
+<use graphs/SSD_govtax.pdf>
+Package luatex.def Info: graphs/SSD_govtax.pdf  used on input line 4121.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ESP_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/ESP_govtax.pdf, id=2212, 542.025pt x 325.215pt>
+File: graphs/ESP_govtax.pdf Graphic file (type pdf)
+<use graphs/ESP_govtax.pdf>
+Package luatex.def Info: graphs/ESP_govtax.pdf  used on input line 4152.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LKA_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/LKA_govtax.pdf, id=2215, 542.025pt x 325.215pt>
+File: graphs/LKA_govtax.pdf Graphic file (type pdf)
+<use graphs/LKA_govtax.pdf>
+Package luatex.def Info: graphs/LKA_govtax.pdf  used on input line 4178.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SDN_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/SDN_govtax.pdf, id=2234, 542.025pt x 325.215pt>
+File: graphs/SDN_govtax.pdf Graphic file (type pdf)
+<use graphs/SDN_govtax.pdf>
+Package luatex.def Info: graphs/SDN_govtax.pdf  used on input line 4212.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SUR_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/SUR_govtax.pdf, id=2239, 542.025pt x 325.215pt>
+File: graphs/SUR_govtax.pdf Graphic file (type pdf)
+<use graphs/SUR_govtax.pdf>
+Package luatex.def Info: graphs/SUR_govtax.pdf  used on input line 4239.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SWE_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/SWE_govtax.pdf, id=2242, 542.025pt x 325.215pt>
+File: graphs/SWE_govtax.pdf Graphic file (type pdf)
+<use graphs/SWE_govtax.pdf>
+Package luatex.def Info: graphs/SWE_govtax.pdf  used on input line 4265.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CHE_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/CHE_govtax.pdf, id=2255, 542.025pt x 325.215pt>
+File: graphs/CHE_govtax.pdf Graphic file (type pdf)
+<use graphs/CHE_govtax.pdf>
+Package luatex.def Info: graphs/CHE_govtax.pdf  used on input line 4296.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SYR_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/SYR_govtax.pdf, id=2262, 542.025pt x 325.215pt>
+File: graphs/SYR_govtax.pdf Graphic file (type pdf)
+<use graphs/SYR_govtax.pdf>
+Package luatex.def Info: graphs/SYR_govtax.pdf  used on input line 4324.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TWN_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/TWN_govtax.pdf, id=2265, 542.025pt x 325.215pt>
+File: graphs/TWN_govtax.pdf Graphic file (type pdf)
+<use graphs/TWN_govtax.pdf>
+Package luatex.def Info: graphs/TWN_govtax.pdf  used on input line 4350.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TJK_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/TJK_govtax.pdf, id=2268, 542.025pt x 325.215pt>
+File: graphs/TJK_govtax.pdf Graphic file (type pdf)
+<use graphs/TJK_govtax.pdf>
+Package luatex.def Info: graphs/TJK_govtax.pdf  used on input line 4376.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TZA_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/TZA_govtax.pdf, id=2277, 542.025pt x 325.215pt>
+File: graphs/TZA_govtax.pdf Graphic file (type pdf)
+<use graphs/TZA_govtax.pdf>
+Package luatex.def Info: graphs/TZA_govtax.pdf  used on input line 4405.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/THA_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/THA_govtax.pdf, id=2282, 542.025pt x 325.215pt>
+File: graphs/THA_govtax.pdf Graphic file (type pdf)
+<use graphs/THA_govtax.pdf>
+Package luatex.def Info: graphs/THA_govtax.pdf  used on input line 4432.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TLS_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/TLS_govtax.pdf, id=2285, 542.025pt x 325.215pt>
+File: graphs/TLS_govtax.pdf Graphic file (type pdf)
+<use graphs/TLS_govtax.pdf>
+Package luatex.def Info: graphs/TLS_govtax.pdf  used on input line 4458.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TGO_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/TGO_govtax.pdf, id=2292, 542.025pt x 325.215pt>
+File: graphs/TGO_govtax.pdf Graphic file (type pdf)
+<use graphs/TGO_govtax.pdf>
+Package luatex.def Info: graphs/TGO_govtax.pdf  used on input line 4486.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TTO_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/TTO_govtax.pdf, id=2295, 542.025pt x 325.215pt>
+File: graphs/TTO_govtax.pdf Graphic file (type pdf)
+<use graphs/TTO_govtax.pdf>
+Package luatex.def Info: graphs/TTO_govtax.pdf  used on input line 4512.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TUN_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/TUN_govtax.pdf, id=2300, 542.025pt x 325.215pt>
+File: graphs/TUN_govtax.pdf Graphic file (type pdf)
+<use graphs/TUN_govtax.pdf>
+Package luatex.def Info: graphs/TUN_govtax.pdf  used on input line 4539.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TUR_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/TUR_govtax.pdf, id=2303, 542.025pt x 325.215pt>
+File: graphs/TUR_govtax.pdf Graphic file (type pdf)
+<use graphs/TUR_govtax.pdf>
+Package luatex.def Info: graphs/TUR_govtax.pdf  used on input line 4565.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TKM_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/TKM_govtax.pdf, id=2306, 542.025pt x 325.215pt>
+File: graphs/TKM_govtax.pdf Graphic file (type pdf)
+<use graphs/TKM_govtax.pdf>
+Package luatex.def Info: graphs/TKM_govtax.pdf  used on input line 4591.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/UGA_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/UGA_govtax.pdf, id=2315, 542.025pt x 325.215pt>
+File: graphs/UGA_govtax.pdf Graphic file (type pdf)
+<use graphs/UGA_govtax.pdf>
+Package luatex.def Info: graphs/UGA_govtax.pdf  used on input line 4620.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/UKR_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/UKR_govtax.pdf, id=2318, 542.025pt x 325.215pt>
+File: graphs/UKR_govtax.pdf Graphic file (type pdf)
+<use graphs/UKR_govtax.pdf>
+Package luatex.def Info: graphs/UKR_govtax.pdf  used on input line 4646.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ARE_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/ARE_govtax.pdf, id=2329, 542.025pt x 325.215pt>
+File: graphs/ARE_govtax.pdf Graphic file (type pdf)
+<use graphs/ARE_govtax.pdf>
+Package luatex.def Info: graphs/ARE_govtax.pdf  used on input line 4676.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GBR_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/GBR_govtax.pdf, id=2334, 542.025pt x 325.215pt>
+File: graphs/GBR_govtax.pdf Graphic file (type pdf)
+<use graphs/GBR_govtax.pdf>
+Package luatex.def Info: graphs/GBR_govtax.pdf  used on input line 4703.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/USA_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/USA_govtax.pdf, id=2339, 542.025pt x 325.215pt>
+File: graphs/USA_govtax.pdf Graphic file (type pdf)
+<use graphs/USA_govtax.pdf>
+Package luatex.def Info: graphs/USA_govtax.pdf  used on input line 4730.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/URY_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/URY_govtax.pdf, id=2342, 542.025pt x 325.215pt>
+File: graphs/URY_govtax.pdf Graphic file (type pdf)
+<use graphs/URY_govtax.pdf>
+Package luatex.def Info: graphs/URY_govtax.pdf  used on input line 4756.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/UZB_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/UZB_govtax.pdf, id=2345, 542.025pt x 325.215pt>
+File: graphs/UZB_govtax.pdf Graphic file (type pdf)
+<use graphs/UZB_govtax.pdf>
+Package luatex.def Info: graphs/UZB_govtax.pdf  used on input line 4782.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/VEN_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/VEN_govtax.pdf, id=2350, 542.025pt x 325.215pt>
+File: graphs/VEN_govtax.pdf Graphic file (type pdf)
+<use graphs/VEN_govtax.pdf>
+Package luatex.def Info: graphs/VEN_govtax.pdf  used on input line 4809.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/VNM_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/VNM_govtax.pdf, id=2353, 542.025pt x 325.215pt>
+File: graphs/VNM_govtax.pdf Graphic file (type pdf)
+<use graphs/VNM_govtax.pdf>
+Package luatex.def Info: graphs/VNM_govtax.pdf  used on input line 4835.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/YEM_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/YEM_govtax.pdf, id=2360, 542.025pt x 325.215pt>
+File: graphs/YEM_govtax.pdf Graphic file (type pdf)
+<use graphs/YEM_govtax.pdf>
+Package luatex.def Info: graphs/YEM_govtax.pdf  used on input line 4863.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ZMB_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/ZMB_govtax.pdf, id=2369, 542.025pt x 325.215pt>
+File: graphs/ZMB_govtax.pdf Graphic file (type pdf)
+<use graphs/ZMB_govtax.pdf>
+Package luatex.def Info: graphs/ZMB_govtax.pdf  used on input line 4892.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ZWE_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/ZWE_govtax.pdf, id=2382, 542.025pt x 325.215pt>
+File: graphs/ZWE_govtax.pdf Graphic file (type pdf)
+<use graphs/ZWE_govtax.pdf>
+Package luatex.def Info: graphs/ZWE_govtax.pdf  used on input line 4923.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AND_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/AND_govtax.pdf, id=2385, 542.025pt x 325.215pt>
+File: graphs/AND_govtax.pdf Graphic file (type pdf)
+<use graphs/AND_govtax.pdf>
+Package luatex.def Info: graphs/AND_govtax.pdf  used on input line 4949.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AIA_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/AIA_govtax.pdf, id=2388, 542.025pt x 325.215pt>
+File: graphs/AIA_govtax.pdf Graphic file (type pdf)
+<use graphs/AIA_govtax.pdf>
+Package luatex.def Info: graphs/AIA_govtax.pdf  used on input line 4975.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ATG_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/ATG_govtax.pdf, id=2391, 542.025pt x 325.215pt>
+File: graphs/ATG_govtax.pdf Graphic file (type pdf)
+<use graphs/ATG_govtax.pdf>
+Package luatex.def Info: graphs/ATG_govtax.pdf  used on input line 5001.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CYM_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/CYM_govtax.pdf, id=2394, 542.025pt x 325.215pt>
+File: graphs/CYM_govtax.pdf Graphic file (type pdf)
+<use graphs/CYM_govtax.pdf>
+Package luatex.def Info: graphs/CYM_govtax.pdf  used on input line 5027.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/COM_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/COM_govtax.pdf, id=2399, 542.025pt x 325.215pt>
+File: graphs/COM_govtax.pdf Graphic file (type pdf)
+<use graphs/COM_govtax.pdf>
+Package luatex.def Info: graphs/COM_govtax.pdf  used on input line 5054.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/COK_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/COK_govtax.pdf, id=2402, 542.025pt x 325.215pt>
+File: graphs/COK_govtax.pdf Graphic file (type pdf)
+<use graphs/COK_govtax.pdf>
+Package luatex.def Info: graphs/COK_govtax.pdf  used on input line 5080.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KIR_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/KIR_govtax.pdf, id=2407, 542.025pt x 325.215pt>
+File: graphs/KIR_govtax.pdf Graphic file (type pdf)
+<use graphs/KIR_govtax.pdf>
+Package luatex.def Info: graphs/KIR_govtax.pdf  used on input line 5107.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MAC_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/MAC_govtax.pdf, id=2410, 542.025pt x 325.215pt>
+File: graphs/MAC_govtax.pdf Graphic file (type pdf)
+<use graphs/MAC_govtax.pdf>
+Package luatex.def Info: graphs/MAC_govtax.pdf  used on input line 5133.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MHL_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/MHL_govtax.pdf, id=2413, 542.025pt x 325.215pt>
+File: graphs/MHL_govtax.pdf Graphic file (type pdf)
+<use graphs/MHL_govtax.pdf>
+Package luatex.def Info: graphs/MHL_govtax.pdf  used on input line 5159.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/FSM_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/FSM_govtax.pdf, id=2416, 542.025pt x 325.215pt>
+File: graphs/FSM_govtax.pdf Graphic file (type pdf)
+<use graphs/FSM_govtax.pdf>
+Package luatex.def Info: graphs/FSM_govtax.pdf  used on input line 5185.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MSR_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/MSR_govtax.pdf, id=2419, 542.025pt x 325.215pt>
+File: graphs/MSR_govtax.pdf Graphic file (type pdf)
+<use graphs/MSR_govtax.pdf>
+Package luatex.def Info: graphs/MSR_govtax.pdf  used on input line 5211.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NRU_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/NRU_govtax.pdf, id=2422, 542.025pt x 325.215pt>
+File: graphs/NRU_govtax.pdf Graphic file (type pdf)
+<use graphs/NRU_govtax.pdf>
+Package luatex.def Info: graphs/NRU_govtax.pdf  used on input line 5237.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PLW_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/PLW_govtax.pdf, id=2425, 542.025pt x 325.215pt>
+File: graphs/PLW_govtax.pdf Graphic file (type pdf)
+<use graphs/PLW_govtax.pdf>
+Package luatex.def Info: graphs/PLW_govtax.pdf  used on input line 5263.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KNA_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/KNA_govtax.pdf, id=2428, 542.025pt x 325.215pt>
+File: graphs/KNA_govtax.pdf Graphic file (type pdf)
+<use graphs/KNA_govtax.pdf>
+Package luatex.def Info: graphs/KNA_govtax.pdf  used on input line 5289.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LCA_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/LCA_govtax.pdf, id=2433, 542.025pt x 325.215pt>
+File: graphs/LCA_govtax.pdf Graphic file (type pdf)
+<use graphs/LCA_govtax.pdf>
+Package luatex.def Info: graphs/LCA_govtax.pdf  used on input line 5316.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/VCT_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/VCT_govtax.pdf, id=2436, 542.025pt x 325.215pt>
+File: graphs/VCT_govtax.pdf Graphic file (type pdf)
+<use graphs/VCT_govtax.pdf>
+Package luatex.def Info: graphs/VCT_govtax.pdf  used on input line 5342.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/WSM_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/WSM_govtax.pdf, id=2439, 542.025pt x 325.215pt>
+File: graphs/WSM_govtax.pdf Graphic file (type pdf)
+<use graphs/WSM_govtax.pdf>
+Package luatex.def Info: graphs/WSM_govtax.pdf  used on input line 5368.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SMR_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/SMR_govtax.pdf, id=2446, 542.025pt x 325.215pt>
+File: graphs/SMR_govtax.pdf Graphic file (type pdf)
+<use graphs/SMR_govtax.pdf>
+Package luatex.def Info: graphs/SMR_govtax.pdf  used on input line 5396.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SLB_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/SLB_govtax.pdf, id=2449, 542.025pt x 325.215pt>
+File: graphs/SLB_govtax.pdf Graphic file (type pdf)
+<use graphs/SLB_govtax.pdf>
+Package luatex.def Info: graphs/SLB_govtax.pdf  used on input line 5422.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TON_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/TON_govtax.pdf, id=2452, 542.025pt x 325.215pt>
+File: graphs/TON_govtax.pdf Graphic file (type pdf)
+<use graphs/TON_govtax.pdf>
+Package luatex.def Info: graphs/TON_govtax.pdf  used on input line 5448.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TUV_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/TUV_govtax.pdf, id=2455, 542.025pt x 325.215pt>
+File: graphs/TUV_govtax.pdf Graphic file (type pdf)
+<use graphs/TUV_govtax.pdf>
+Package luatex.def Info: graphs/TUV_govtax.pdf  used on input line 5474.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/VUT_govtax.pdf) (pdf inclusion): PDF inclusion: found PDF 
+version '1.6', but at most version '1.5' allowed
+<graphs/VUT_govtax.pdf, id=2458, 542.025pt x 325.215pt>
+File: graphs/VUT_govtax.pdf Graphic file (type pdf)
+<use graphs/VUT_govtax.pdf>
+Package luatex.def Info: graphs/VUT_govtax.pdf  used on input line 5500.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.3'
+[3]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.4'
+[4<./graphs/AFG_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.5'
+[5<./graphs/ALB_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.6'
+[6<./graphs/DZA_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.7'
+[7<./graphs/AGO_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[8<./graphs/ARG_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[9<./graphs/ARM_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[10<./graphs/AUS_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[11<./graphs/AUT_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[12<./graphs/AZE_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[13<./graphs/BHS_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[14<./graphs/BHR_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[15<./graphs/BGD_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[16<./graphs/BRB_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[17<./graphs/BLR_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[18<./graphs/BEL_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[19<./graphs/BLZ_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[20<./graphs/BEN_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[21<./graphs/BTN_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[22<./graphs/BOL_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[23<./graphs/BIH_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[24<./graphs/BWA_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[25<./graphs/BRA_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[26<./graphs/BRN_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[27<./graphs/BGR_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[28<./graphs/BFA_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[29<./graphs/BDI_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[30<./graphs/KHM_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[31<./graphs/CMR_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[32<./graphs/CAN_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[33<./graphs/CPV_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[34<./graphs/CAF_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[35<./graphs/TCD_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[36<./graphs/CHL_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[37<./graphs/CHN_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[38<./graphs/COL_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[39<./graphs/CRI_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[40<./graphs/HRV_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[41<./graphs/CYP_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[42<./graphs/CZE_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[43<./graphs/CSK_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[44<./graphs/COD_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[45<./graphs/DNK_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[46<./graphs/DJI_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[47<./graphs/DMA_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[48<./graphs/DOM_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[49<./graphs/ECU_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[50<./graphs/EGY_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[51<./graphs/SLV_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[52<./graphs/GNQ_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[53<./graphs/EST_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[54<./graphs/SWZ_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[55<./graphs/ETH_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[56<./graphs/FJI_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[57<./graphs/FIN_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[58<./graphs/FRA_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[59<./graphs/GAB_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[60<./graphs/GMB_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[61<./graphs/GEO_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[62<./graphs/DEU_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[63<./graphs/GHA_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[64<./graphs/GRC_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[65<./graphs/GRD_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[66<./graphs/GTM_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[67<./graphs/GIN_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[68<./graphs/GNB_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[69<./graphs/GUY_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[70<./graphs/HTI_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[71<./graphs/HND_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[72<./graphs/HKG_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[73<./graphs/HUN_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[74<./graphs/ISL_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[75<./graphs/IND_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[76<./graphs/IDN_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[77<./graphs/IRN_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[78<./graphs/IRQ_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[79<./graphs/IRL_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[80<./graphs/ISR_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[81<./graphs/ITA_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[82<./graphs/CIV_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[83<./graphs/JAM_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[84<./graphs/JPN_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[85<./graphs/JOR_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[86<./graphs/KAZ_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[87<./graphs/KEN_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[88<./graphs/KWT_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[89<./graphs/KGZ_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[90<./graphs/LAO_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[91<./graphs/LVA_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[92<./graphs/LBN_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[93<./graphs/LSO_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[94<./graphs/LBR_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[95<./graphs/LBY_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[96<./graphs/LTU_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[97<./graphs/LUX_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[98<./graphs/MKD_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[99<./graphs/MDG_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[100<./graphs/MWI_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[101<./graphs/MYS_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[102<./graphs/MDV_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[103<./graphs/MLI_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[104<./graphs/MLT_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[105<./graphs/MRT_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[106<./graphs/MUS_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[107<./graphs/MEX_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[108<./graphs/MDA_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[109<./graphs/MNG_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[110<./graphs/MNE_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[111<./graphs/MAR_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[112<./graphs/MOZ_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[113<./graphs/MMR_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[114<./graphs/NAM_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[115<./graphs/NPL_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[116<./graphs/NLD_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[117<./graphs/ANT_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[118<./graphs/NZL_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[119<./graphs/NIC_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[120<./graphs/NER_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[121<./graphs/NGA_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[122<./graphs/NOR_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[123<./graphs/OMN_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[124<./graphs/PAK_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[125<./graphs/PSE_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[126<./graphs/PAN_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[127<./graphs/PNG_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[128<./graphs/PRY_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[129<./graphs/PER_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[130<./graphs/PHL_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[131<./graphs/POL_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[132<./graphs/PRT_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[133<./graphs/QAT_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[134<./graphs/COG_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[135<./graphs/ROU_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[136<./graphs/RUS_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[137<./graphs/RWA_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[138<./graphs/STP_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[139<./graphs/SAU_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[140<./graphs/SEN_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[141<./graphs/SRB_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[142<./graphs/SYC_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[143<./graphs/SLE_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[144<./graphs/SGP_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[145<./graphs/SVK_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[146<./graphs/SVN_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[147<./graphs/SOM_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[148<./graphs/ZAF_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[149<./graphs/KOR_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[150<./graphs/SSD_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[151<./graphs/ESP_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[152<./graphs/LKA_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[153<./graphs/SDN_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[154<./graphs/SUR_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[155<./graphs/SWE_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[156<./graphs/CHE_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[157<./graphs/SYR_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[158<./graphs/TWN_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[159<./graphs/TJK_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[160<./graphs/TZA_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[161<./graphs/THA_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[162<./graphs/TLS_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[163<./graphs/TGO_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[164<./graphs/TTO_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[165<./graphs/TUN_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[166<./graphs/TUR_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[167<./graphs/TKM_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[168<./graphs/UGA_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[169<./graphs/UKR_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[170<./graphs/ARE_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[171<./graphs/GBR_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[172<./graphs/USA_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[173<./graphs/URY_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[174<./graphs/UZB_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[175<./graphs/VEN_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[176<./graphs/VNM_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[177<./graphs/YEM_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[178<./graphs/ZMB_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[179<./graphs/ZWE_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[180<./graphs/AND_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[181<./graphs/AIA_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[182<./graphs/ATG_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[183<./graphs/CYM_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[184<./graphs/COM_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[185<./graphs/COK_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[186<./graphs/KIR_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[187<./graphs/MAC_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[188<./graphs/MHL_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[189<./graphs/FSM_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[190<./graphs/MSR_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[191<./graphs/NRU_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[192<./graphs/PLW_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[193<./graphs/KNA_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[194<./graphs/LCA_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[195<./graphs/VCT_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[196<./graphs/WSM_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[197<./graphs/SMR_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[198<./graphs/SLB_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[199<./graphs/TON_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[200<./graphs/TUV_govtax.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[201<./graphs/VUT_govtax.pdf>] (./govtax.bbl
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 18
+.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+))
+
+[202
+Missing character: There is no — (U+2014) in font ptmri8t!
+] (./govtax.aux)
+ ***********
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+ ***********
+Package rerunfilecheck Info: File `govtax.out' has not changed.
+(rerunfilecheck)             Checksum: D05FDE19581030DF92EC67ABF20B3BBB;18388.
+)
+
+Here is how much of LuaTeX's memory you used:
+ 24124 strings out of 475664
+ 931592,1144653 words of node,token memory allocated
+ 493 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 8 attribute, 58 glue_spec,
+ 8 attribute_list, 2 write, 3 pdf_action nodes
+   avail lists: 1:2,2:45841,3:5096,4:7534,5:6020,6:1647,7:72644,8:90,9:18485,10:
+5,11:2201
+ 44992 multiletter control sequences out of 65536+600000
+ 57 fonts using 3757735 bytes
+ 105i,12n,100p,466b,576s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{C:/Users/lehbib/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/U
+sers/lehbib/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:
+/Users/lehbib/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:
+/Users/lehbib/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:
+/Users/lehbib/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on govtax.pdf (208 pages, 22594649 bytes).
+
+PDF statistics: 43946 PDF objects out of 45951 (max. 8388607)
+ 819 named destinations out of 1000 (max. 131072)
+ 1608 words of extra memory for PDF output out of 10000 (max. 100000000)
+

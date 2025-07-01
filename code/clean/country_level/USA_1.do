@@ -67,6 +67,21 @@ gen govexp_GDP = (govexp / nGDP) * 100
 gen govtax_GDP = (govtax / nGDP) * 100
 
 
+* Add the deflator
+gen deflator = (nGDP / rGDP) * 100
+
+* Rebase the GDP to 2010
+qui gen  temp = deflator if year == 2010 
+qui egen defl_2010 = max(temp) 
+qui replace rGDP = (rGDP * defl_2010) / 100 
+qui drop temp defl_2010	
+
+* Update the deflator
+replace deflator = (nGDP / rGDP) * 100
+
+
+
+
 * Add source identifier
 qui ds year ISO3, not
 foreach var in `r(varlist)'{

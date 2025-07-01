@@ -1,0 +1,161 @@
+\begin{thebibliography}{23}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abildgren(2017)]{CS1_DNK}
+K.~Abildgren.
+\newblock \emph{A Chart \& Data Book on the Monetary and Financial History of
+  Denmark}.
+\newblock 2017.
+\newblock URL
+  \url{https://sites.google.com/view/kim-abildgren/historical-statistics}.
+\newblock Accessed: 2024-06-24.
+
+\bibitem[{Banco de España}(2021)]{CS2_ESP}
+{Banco de España}.
+\newblock Catálogo de series históricas seleccionadas, 2021.
+\newblock URL \url{https://repositorio.bde.es/handle/123456789/15655}.
+\newblock [dataset].
+
+\bibitem[{{Bank for International Settlements}}(2024)]{BIS}
+{{Bank for International Settlements}}, 2024.
+\newblock URL \url{https://data.bis.org/topics/}.
+
+\bibitem[{Bank of Japan}(2024)]{CS1_JPN}
+{Bank of Japan}.
+\newblock {Historical Statistics}, 2024.
+\newblock URL \url{https://www.imes.boj.or.jp/en/historical/hstat/hstat.html}.
+
+\bibitem[{Banque centrale des \'{E}tats de l'Afrique de l'Ouest}(2024)]{BCEAO}
+{Banque centrale des \'{E}tats de l'Afrique de l'Ouest}.
+\newblock {Banque centrale des \'{E}tats de l'Afrique de l'Ouest}, 2024.
+\newblock URL \url{https://www.bceao.int/}.
+\newblock Accessed: 2024-07-15.
+
+\bibitem[{Economic Commission for Latin America and the
+  Caribbean}(2024)]{CEPAC}
+{Economic Commission for Latin America and the Caribbean}.
+\newblock Economic commission for latin america and the caribbean, 2024.
+\newblock URL \url{https://www.cepal.org/en}.
+\newblock Accessed: 2024-06-18.
+
+\bibitem[Ellison et~al.(2024)Ellison, Lee, and O'Rourke]{IHD}
+Martin Ellison, Sang~Seok Lee, and Kevin~Hjortshøj O'Rourke.
+\newblock {The Ends of 27 Big Depressions}.
+\newblock \emph{American Economic Review}, 114\penalty0 (1):\penalty0 134--168,
+  January 2024.
+\newblock \doi{10.1257/aer.20221479}.
+\newblock URL
+  \url{https://ideas.repec.org/a/aea/aecrev/v114y2024i1p134-68.html}.
+
+\bibitem[Flandreau and Zumer(2009)]{FZ}
+Marc Flandreau and Frédéric Zumer.
+\newblock \emph{The Making of Global Finance 1880-1913}.
+\newblock 2009.
+\newblock \doi{https://doi.org/10.1787/9789264015364-en}.
+\newblock URL
+  \url{https://www.oecd-ilibrary.org/content/publication/9789264015364-en}.
+\newblock Accessed: 2024-06-24.
+
+\bibitem[Grimm(2024)]{Grimm}
+Maximilian Grimm.
+\newblock The effect of monetary policy on systemic bank funding stability.
+\newblock 2024.
+\newblock URL \url{https://maximiliangrimm.com/}.
+
+\bibitem[Homer and Sylla(1996)]{Homer_Sylla}
+S.~Homer and R.E. Sylla.
+\newblock \emph{A History of Interest Rates}.
+\newblock Rutgers University Press, 1996.
+\newblock ISBN 9780813522883.
+\newblock URL \url{https://books.google.com.sg/books?id=w3hmC17-em4C}.
+
+\bibitem[HSSO(2012)]{CS2_CHE}
+HSSO.
+\newblock Historical statistics of switzerland, 2012.
+\newblock URL \url{https://hsso.ch}.
+\newblock Accessed on: October 2, 2024.
+
+\bibitem[Iceland(1997)]{CS2_ISL}
+Statistics Iceland.
+\newblock \emph{Hagskinna—Icelandic Historical Statistics from the 17th
+  Century to 1990}.
+\newblock Hagstofa Íslands, Reykjavík, 1997.
+\newblock URL \url{https://baekur.is/bok/8f318e69-dc49-4a9f-a8ec-805b2352bad0}.
+\newblock Accessed: 2024-07-08.
+
+\bibitem[{International Monetary Fund}(2024{\natexlab{a}})]{IMF_IFS}
+{International Monetary Fund}.
+\newblock International financial statistics, 2024{\natexlab{a}}.
+\newblock URL \url{https://data.imf.org/}.
+
+\bibitem[{International Monetary Fund}(2024{\natexlab{b}})]{IMF_MFS}
+{International Monetary Fund}.
+\newblock {Monetary and Financial Statistics}, 2024{\natexlab{b}}.
+
+\bibitem[Levy-Garboua and Monnet(2016)]{CS2_FRA}
+Vivien Levy-Garboua and Eric Monnet.
+\newblock Les taux d'intérêts en france: Une perspective historique.
+\newblock \emph{Revue d'économie financière}, 1\penalty0 (121):\penalty0
+  35--58, 2016.
+
+\bibitem[{National Bank of Serbia}(2024)]{NBS}
+{National Bank of Serbia}.
+\newblock South-eastern european monetary and economic statistics from the 19th
+  century to world war ii, 2024.
+\newblock URL
+  \url{https://www.nbs.rs/en/drugi-nivo-navigacije/publikacije-i-istrazivanja/seemhn/seemhn-dctf/}.
+\newblock Accessed: 2024-06-24.
+
+\bibitem[{Norges Bank}()]{CS2_NOR}
+{Norges Bank}.
+\newblock Historical monetary statistics for norway.
+\newblock URL
+  \url{https://www.norges-bank.no/en/topics/Statistics/Historical-monetary-statistics/}.
+\newblock Accessed: 2024-07-08.
+
+\bibitem[{OECD}(2024{\natexlab{a}})]{OECD_MEI}
+{OECD}.
+\newblock Oecd main economic indicators data, 2024{\natexlab{a}}.
+\newblock URL
+  \url{https://web-archive.oecd.org/temp/2023-09-05/76384-oecdmaineconomicindicatorsmei.htm}.
+\newblock Accessed on 2024-07-04.
+
+\bibitem[{OECD}(2024{\natexlab{b}})]{OECD_MEI_ARC}
+{OECD}.
+\newblock Oecd main economic indicators data, 2024{\natexlab{b}}.
+\newblock URL
+  \url{https://web-archive.oecd.org/temp/2023-09-05/76384-oecdmaineconomicindicatorsmei.htm}.
+\newblock Accessed on 2024-07-04.
+
+\bibitem[{OECD Economic Outlook}(2024)]{OECD_EO}
+{OECD Economic Outlook}.
+\newblock Oecd economic outlook data, 2024.
+\newblock URL
+  \url{https://www.oecd.org/en/topics/sub-issues/economic-outlook.html}.
+\newblock Accessed on 2024-06-05.
+
+\bibitem[Piselli and Vercelli(2023)]{CS2_ITA}
+Paola Piselli and Fabio Vercelli.
+\newblock I titoli pubblici nei bilanci delle banche 1890-2016.
+\newblock Technical report, Banca d’Italia, 2023.
+\newblock Di prossima pubblicazione (forthcoming).
+
+\bibitem[{Swiss National Bank}(2024)]{CS1_CHE}
+{Swiss National Bank}.
+\newblock Swiss national bank historical time series, 2024.
+\newblock URL
+  \url{https://www.snb.ch/en/the-snb/mandates-goals/statistics/statistics-pub/publication-history/historical-time-series}.
+\newblock Accessed: 2024-06-26.
+
+\bibitem[Thomas and Dimsdale(2017)]{CS1_GBR}
+R~Thomas and N~Dimsdale.
+\newblock A millennium of uk data, 2017.
+\newblock URL
+  \url{https://www.bankofengland.co.uk/statistics/research-datasets}.
+\newblock Accessed: 2024-06-18.
+
+\end{thebibliography}

@@ -1,0 +1,161 @@
+\begin{thebibliography}{23}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abildgren(2017)]{CS1_DNK}
+K.~Abildgren.
+\newblock \emph{A Chart \& Data Book on the Monetary and Financial History of
+  Denmark}.
+\newblock 2017.
+\newblock URL
+  \url{https://sites.google.com/view/kim-abildgren/historical-statistics}.
+\newblock Accessed: 2024-06-24.
+
+\bibitem[{Bank of Canada}(2024)]{CS2_CAN}
+{Bank of Canada}.
+\newblock Staff economic projections, 2024.
+
+\bibitem[Bordo et~al.(2001)Bordo, Eichengreen, Klingebiel, and
+  Martinez-Peria]{BORDO}
+M.~Bordo, B.~Eichengreen, D.~Klingebiel, and M.~S. Martinez-Peria.
+\newblock Is the crisis problem growing more severe?
+\newblock \emph{Economic Policy}, 16\penalty0 (32):\penalty0 52--82, 2001.
+\newblock URL \url{https://rucore.libraries.rutgers.edu/rutgers-lib/41466/}.
+
+\bibitem[Carter et~al.(2006)Carter, Gartner, Haines, Olmstead, Sutch, Wright,
+  et~al.]{CS2_USA}
+Susan~B Carter, Scott~Sigmund Gartner, Michael~R Haines, Alan~L Olmstead,
+  Richard Sutch, Gavin Wright, et~al.
+\newblock \emph{Historical Statistics of the United States: Millennial
+  Edition}, volume~3.
+\newblock Cambridge University Press New York, 2006.
+
+\bibitem[Commission(2024)]{EUS}
+European Commission.
+\newblock Eurostat data explorer, 2024.
+\newblock URL
+  \url{https://ec.europa.eu/eurostat/databrowser/explore/all/all_themes}.
+\newblock Accessed: 2024-04-23.
+
+\bibitem[Cox and Dincecco(2021)]{MD}
+Gary~W Cox and Mark Dincecco.
+\newblock The budgetary origins of fiscal-military prowess.
+\newblock \emph{The Journal of Politics}, 83\penalty0 (3):\penalty0 851--866,
+  2021.
+\newblock URL
+  \url{https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/EVCSCQ}.
+
+\bibitem[{{European Commission}}(2024)]{AMECO}
+{{European Commission}}.
+\newblock {{AMECO Database}}, 2024.
+\newblock URL
+  \url{https://economy-finance.ec.europa.eu/economic-research-and-databases/economic-databases/ameco-database_en}.
+
+\bibitem[{Federal Reserve Bank of St. Louis}(2024)]{CS1_USA}
+{Federal Reserve Bank of St. Louis}.
+\newblock {Federal Reserve Economic Data}, 2024.
+\newblock URL \url{https://fred.stlouisfed.org/}.
+\newblock Accessed: 2024-05-13.
+
+\bibitem[Flandreau and Zumer(2009)]{FZ}
+Marc Flandreau and Frédéric Zumer.
+\newblock \emph{The Making of Global Finance 1880-1913}.
+\newblock 2009.
+\newblock \doi{https://doi.org/10.1787/9789264015364-en}.
+\newblock URL
+  \url{https://www.oecd-ilibrary.org/content/publication/9789264015364-en}.
+\newblock Accessed: 2024-06-24.
+
+\bibitem[Homer and Sylla(1996)]{Homer_Sylla}
+S.~Homer and R.E. Sylla.
+\newblock \emph{A History of Interest Rates}.
+\newblock Rutgers University Press, 1996.
+\newblock ISBN 9780813522883.
+\newblock URL \url{https://books.google.com.sg/books?id=w3hmC17-em4C}.
+
+\bibitem[Iceland(1997)]{CS2_ISL}
+Statistics Iceland.
+\newblock \emph{Hagskinna—Icelandic Historical Statistics from the 17th
+  Century to 1990}.
+\newblock Hagstofa Íslands, Reykjavík, 1997.
+\newblock URL \url{https://baekur.is/bok/8f318e69-dc49-4a9f-a8ec-805b2352bad0}.
+\newblock Accessed: 2024-07-08.
+
+\bibitem[{International Institute of Social History}(2024)]{CLIO}
+{International Institute of Social History}.
+\newblock Clio infra: Repository of global inequality data, 2024.
+\newblock URL \url{https://clio-infra.eu}.
+\newblock Accessed: 2024-01-16.
+
+\bibitem[{International Monetary Fund}(2024{\natexlab{a}})]{IMF_IFS}
+{International Monetary Fund}.
+\newblock International financial statistics, 2024{\natexlab{a}}.
+\newblock URL \url{https://data.imf.org/}.
+
+\bibitem[{International Monetary Fund}(2024{\natexlab{b}})]{IMF_MFS}
+{International Monetary Fund}.
+\newblock {Monetary and Financial Statistics}, 2024{\natexlab{b}}.
+
+\bibitem[Jord{\`a} et~al.(2017)Jord{\`a}, Schularick, and Taylor]{JST}
+{\`O}scar Jord{\`a}, Moritz Schularick, and Alan~M Taylor.
+\newblock Macrofinancial history and the new business cycle facts.
+\newblock \emph{NBER macroeconomics annual}, 31\penalty0 (1):\penalty0
+  213--263, 2017.
+
+\bibitem[Levy-Garboua and Monnet(2016)]{CS2_FRA}
+Vivien Levy-Garboua and Eric Monnet.
+\newblock Les taux d'intérêts en france: Une perspective historique.
+\newblock \emph{Revue d'économie financière}, 1\penalty0 (121):\penalty0
+  35--58, 2016.
+
+\bibitem[{National Bank of Serbia}(2024)]{NBS}
+{National Bank of Serbia}.
+\newblock South-eastern european monetary and economic statistics from the 19th
+  century to world war ii, 2024.
+\newblock URL
+  \url{https://www.nbs.rs/en/drugi-nivo-navigacije/publikacije-i-istrazivanja/seemhn/seemhn-dctf/}.
+\newblock Accessed: 2024-06-24.
+
+\bibitem[{Norges Bank}()]{CS2_NOR}
+{Norges Bank}.
+\newblock Historical monetary statistics for norway.
+\newblock URL
+  \url{https://www.norges-bank.no/en/topics/Statistics/Historical-monetary-statistics/}.
+\newblock Accessed: 2024-07-08.
+
+\bibitem[{OECD}(2024{\natexlab{a}})]{OECD_MEI}
+{OECD}.
+\newblock Oecd main economic indicators data, 2024{\natexlab{a}}.
+\newblock URL
+  \url{https://web-archive.oecd.org/temp/2023-09-05/76384-oecdmaineconomicindicatorsmei.htm}.
+\newblock Accessed on 2024-07-04.
+
+\bibitem[{OECD}(2024{\natexlab{b}})]{OECD_MEI_ARC}
+{OECD}.
+\newblock Oecd main economic indicators data, 2024{\natexlab{b}}.
+\newblock URL
+  \url{https://web-archive.oecd.org/temp/2023-09-05/76384-oecdmaineconomicindicatorsmei.htm}.
+\newblock Accessed on 2024-07-04.
+
+\bibitem[Officer and Williamson(2024)]{MW}
+Lawrence~H. Officer and Samuel~H. Williamson.
+\newblock Measures of worth.
+\newblock MeasuringWorth, 2024.
+\newblock URL \url{https://www.measuringworth.com}.
+
+\bibitem[Piselli and Vercelli(2023)]{CS2_ITA}
+Paola Piselli and Fabio Vercelli.
+\newblock I titoli pubblici nei bilanci delle banche 1890-2016.
+\newblock Technical report, Banca d’Italia, 2023.
+\newblock Di prossima pubblicazione (forthcoming).
+
+\bibitem[Schmelzing(2019)]{Schmelzing}
+Paul Schmelzing.
+\newblock Eight centuries of global real interest rates, rg, and the
+  ‘suprasecular’decline, 1311--2018.
+\newblock \emph{RG, and the ‘Suprasecular’Decline}, pages 1311--2018, 2019.
+
+\end{thebibliography}

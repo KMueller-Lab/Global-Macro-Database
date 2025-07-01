@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: AIA.aux
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+The style file: qje.bst
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+Database file #1: bib.bib
+Warning--empty journal in Grimm
+You've used 9 entries,
+            2958 wiz_defined-function locations,
+            643 strings with 5367 characters,
+and the built_in function-call counts, 3309 in all, are:
+= -- 292
+> -- 103
+< -- 10
++ -- 40
+- -- 28
+* -- 178
+:= -- 612
+add.period$ -- 31
+call.type$ -- 9
+change.case$ -- 48
+chr.to.int$ -- 10
+cite$ -- 10
+duplicate$ -- 248
+empty$ -- 231
+format.name$ -- 36
+if$ -- 625
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 43
+newline$ -- 46
+num.names$ -- 36
+pop$ -- 98
+preamble$ -- 1
+purify$ -- 45
+quote$ -- 0
+skip$ -- 107
+stack$ -- 0
+substring$ -- 107
+swap$ -- 97
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 81
+warning$ -- 1
+while$ -- 27
+width$ -- 0
+write$ -- 104
+(There was 1 warning)

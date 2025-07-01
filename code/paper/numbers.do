@@ -24,7 +24,7 @@
 use "${data_final}/data_final.dta", clear
 
 * Number of variables
-ds ISO3 year countryname, not
+ds ISO3 year countryname id, not
 loc varlist `r(varlist)'
 local num_vars_GMD: word count `r(varlist)'
 data_export `num_vars_GMD', name(number_variables_final) whole
@@ -32,7 +32,7 @@ data_export `num_vars_GMD', name(number_variables_final) whole
 
 * Number of variables excluding ratios
 drop *_GDP
-ds ISO3 year countryname, not
+ds ISO3 year countryname id, not
 loc varlist `r(varlist)'
 local num_vars_GMD: word count `r(varlist)'
 data_export `num_vars_GMD', name(number_variables) whole
@@ -92,7 +92,7 @@ data_export `number_historical', name(number_historical) whole
 
 * Open cleaned file
 use "$data_final/data_final", clear
-qui ds ISO3 year countryname, not
+qui ds ISO3 year countryname id, not
 qui missings dropobs `r(varlist)', force
 
 * First year in data 

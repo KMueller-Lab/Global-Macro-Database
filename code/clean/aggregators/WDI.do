@@ -72,7 +72,7 @@ replace cons = . if cons == 0
 
 * Fix Venezuela units 
 foreach var of varlist  nGDP rGDP rGDP_USD nGDP_USD inv finv sav cons rcons imports imports_USD exports exports_USD govexp govtax {
-	replace `var'= `var' / (10^11) if ISO3 == "VEN"
+	replace `var'= `var' / (10^5) if ISO3 == "VEN"
 }
 
 * Fix Sierra Leone units 
@@ -85,6 +85,10 @@ foreach var of varlist  nGDP rGDP rGDP_USD nGDP_USD inv finv sav cons rcons impo
 	replace `var'= `var' / 1000 if ISO3 == "AFG" & year <= 1978
 }
 
+* Fix Indonesia units 
+foreach var of varlist  nGDP imports inv finv exports cons {
+	replace `var'= `var' / 1000 if ISO3 == "IDN" & year <= 1965
+}
 
 * Sao-Tome & principe exchange rate issues
 replace USDfx = USDfx * 1000 if ISO3 == "STP"
@@ -119,6 +123,25 @@ gen inv_GDP     = (inv / nGDP) * 100
 * Investment to GDP ratio for the US is likely wrong
 replace finv_GDP = . if year <= 1971 & ISO3 == "USA"
 
+* Add the deflator
+gen deflator = (nGDP / rGDP) * 100
+
+* Rebase the GDP to 2010
+* Loop over all countries
+qui levelsof ISO3, local(countries) clean
+foreach country of local countries {
+	
+	* Rebase to 2010
+	qui gen  temp = deflator if year == 2010 & ISO3 == "`country'"
+	qui egen defl_2010 = max(temp) if ISO3 == "`country'"
+	qui replace rGDP = (rGDP * defl_2010) / 100 if ISO3 == "`country'"
+	qui drop temp defl_2010	
+}
+
+* Update the deflator
+replace deflator = (nGDP / rGDP) * 100
+
+
 * Add source identifier
 qui ds year ISO3, not
 foreach var in `r(varlist)' {
@@ -128,6 +151,8 @@ foreach var in `r(varlist)' {
 * Drop 
 drop WDI_FM_LBL_BMNY_CN  
 
+* Add government debt levels 
+gen WDI_govdebt = (WDI_govdebt_GDP * WDI_nGDP) / 100
 
 * ==============================================================================
 * 	OUTPUT

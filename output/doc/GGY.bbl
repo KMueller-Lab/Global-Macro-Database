@@ -1,0 +1,9 @@
+\begin{thebibliography}{1}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{{International Monetary Fund}(2024)}]{IMF_IFS}
+{International Monetary Fund}.
+\newblock \enquote{International Financial Statistics.} (2024).
+
+\end{thebibliography}

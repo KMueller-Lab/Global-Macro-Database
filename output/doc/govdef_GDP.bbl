@@ -1,0 +1,125 @@
+\begin{thebibliography}{18}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Arab Monetary Fund}(2024)]{AMF}
+{Arab Monetary Fund}.
+\newblock {Arab Economic Database}, 2024.
+\newblock URL \url{https://www.amf.org.ae/ar}.
+\newblock Accessed: 2024-07-10.
+
+\bibitem[{Asian Development Bank}(2024)]{ADB}
+{Asian Development Bank}.
+\newblock {Key Indicators Database (KIDB)}, 2024.
+\newblock URL \url{https://kidb.adb.org}.
+
+\bibitem[Bank(2024)]{AFDB}
+African~Development Bank.
+\newblock Afdb socio economic database, 2024.
+\newblock Accessed: 2024-07-20.
+
+\bibitem[{Banque centrale des \'{E}tats de l'Afrique de l'Ouest}(2024)]{BCEAO}
+{Banque centrale des \'{E}tats de l'Afrique de l'Ouest}.
+\newblock {Banque centrale des \'{E}tats de l'Afrique de l'Ouest}, 2024.
+\newblock URL \url{https://www.bceao.int/}.
+\newblock Accessed: 2024-07-15.
+
+\bibitem[{Banque de France}(2024)]{FRANC_ZONE}
+{Banque de France}.
+\newblock Statistics on zone franc member countries, 2024.
+
+\bibitem[Commission(2024)]{EUS}
+European Commission.
+\newblock Eurostat data explorer, 2024.
+\newblock URL
+  \url{https://ec.europa.eu/eurostat/databrowser/explore/all/all_themes}.
+\newblock Accessed: 2024-04-23.
+
+\bibitem[{Federal Reserve Bank of St. Louis}(2024)]{CS1_USA}
+{Federal Reserve Bank of St. Louis}.
+\newblock {Federal Reserve Economic Data}, 2024.
+\newblock URL \url{https://fred.stlouisfed.org/}.
+\newblock Accessed: 2024-05-13.
+
+\bibitem[Flandreau and Zumer(2009)]{FZ}
+Marc Flandreau and Frédéric Zumer.
+\newblock \emph{The Making of Global Finance 1880-1913}.
+\newblock 2009.
+\newblock \doi{https://doi.org/10.1787/9789264015364-en}.
+\newblock URL
+  \url{https://www.oecd-ilibrary.org/content/publication/9789264015364-en}.
+\newblock Accessed: 2024-06-24.
+
+\bibitem[Iceland(1997)]{CS2_ISL}
+Statistics Iceland.
+\newblock \emph{Hagskinna—Icelandic Historical Statistics from the 17th
+  Century to 1990}.
+\newblock Hagstofa Íslands, Reykjavík, 1997.
+\newblock URL \url{https://baekur.is/bok/8f318e69-dc49-4a9f-a8ec-805b2352bad0}.
+\newblock Accessed: 2024-07-08.
+
+\bibitem[{International Monetary Fund}(2024)]{IMF_GFS}
+{International Monetary Fund}.
+\newblock Government finance statistics, 2024.
+\newblock URL
+  \url{https://data.imf.org/?sk=a0867067-d23c-4ebc-ad23-d3b015045405}.
+
+\bibitem[Mauro et~al.(2015)Mauro, Romeu, Binder, and Zaman]{IMF_FPP}
+Paolo Mauro, Rafael Romeu, Ariel Binder, and Asad Zaman.
+\newblock {A modern history of fiscal prudence and profligacy}.
+\newblock \emph{Journal of Monetary Economics}, 76\penalty0 (C):\penalty0
+  55--70, 2015.
+\newblock \doi{10.1016/j.jmoneco.2015.07}.
+\newblock URL \url{https://ideas.repec.org/a/eee/moneco/v76y2015icp55-70.html}.
+
+\bibitem[Mitchell(2013)]{Mitchell}
+Brian Mitchell.
+\newblock \emph{International Historical Statistics}.
+\newblock International Historical Statistics. Palgrave Macmillan London, 1
+  edition, 2013.
+\newblock ISBN 978-1-137-30568-8.
+\newblock \doi{10.1057/978-1-137-30568-8}.
+\newblock URL \url{https://doi.org/10.1057/978-1-137-30568-8}.
+
+\bibitem[{OECD Economic Outlook}(2024)]{OECD_EO}
+{OECD Economic Outlook}.
+\newblock Oecd economic outlook data, 2024.
+\newblock URL
+  \url{https://www.oecd.org/en/topics/sub-issues/economic-outlook.html}.
+\newblock Accessed on 2024-06-05.
+
+\bibitem[{South African Reserve Bank}(2024)]{CS1_ZAF}
+{South African Reserve Bank}.
+\newblock Statistics, 2024.
+\newblock URL \url{https://www.resbank.co.za/en/home/what-we-do/statistics}.
+\newblock Accessed: 2024-01-07.
+
+\bibitem[Thomas and Dimsdale(2017)]{CS1_GBR}
+R~Thomas and N~Dimsdale.
+\newblock A millennium of uk data, 2017.
+\newblock URL
+  \url{https://www.bankofengland.co.uk/statistics/research-datasets}.
+\newblock Accessed: 2024-06-18.
+
+\bibitem[Vamplew(1987)]{CS2_AUS}
+Wray Vamplew.
+\newblock \emph{Australians: Historical Statistics}, volume~10.
+\newblock Fairfax, Syme \& Weldon Associates, Broadway, N.S.W., Australia,
+  1987.
+
+\bibitem[{WEO}(2024{\natexlab{a}})]{IMF_WEO}
+{WEO}.
+\newblock World economic outlook database, 2024{\natexlab{a}}.
+\newblock URL \url{https://www.imf.org/en/Publications/WEO}.
+\newblock Accessed: 2024-08-05.
+
+\bibitem[{WEO}(2024{\natexlab{b}})]{IMF_WEO_forecast}
+{WEO}.
+\newblock World economic outlook database, 2024{\natexlab{b}}.
+\newblock URL \url{https://www.imf.org/en/Publications/WEO}.
+\newblock Accessed: 2024-08-05.
+
+\end{thebibliography}

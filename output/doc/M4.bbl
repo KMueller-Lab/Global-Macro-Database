@@ -1,0 +1,26 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Asian Development Bank}(2024)]{ADB}
+{Asian Development Bank}.
+\newblock {Key Indicators Database (KIDB)}, 2024.
+\newblock URL \url{https://kidb.adb.org}.
+
+\bibitem[Jord{\`a} et~al.(2017)Jord{\`a}, Schularick, and Taylor]{JST}
+{\`O}scar Jord{\`a}, Moritz Schularick, and Alan~M Taylor.
+\newblock Macrofinancial history and the new business cycle facts.
+\newblock \emph{NBER macroeconomics annual}, 31\penalty0 (1):\penalty0
+  213--263, 2017.
+
+\bibitem[Schuler(2015)]{HFS}
+Kurt Schuler.
+\newblock Establishing an international data archive on free banking.
+\newblock Studies in Applied Economics~24, The Johns Hopkins Institute for
+  Applied Economics, Global Health, and the Study of Business Enterprise, 2015.
+\newblock URL \url{https://EconPapers.repec.org/RePEc:ris:jhisae:0024}.
+
+\end{thebibliography}

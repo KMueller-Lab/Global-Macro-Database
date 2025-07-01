@@ -151,35 +151,50 @@ replace finv = . if year >= 1994
 save_merge `temp_c'
 
 * Convert units
-replace finv = finv / 2750 if countryname == "Brazil"
-replace finv = finv / 1000 if countryname == "Brazil"
+* Brazil 
+replace finv = finv / 2750000 if countryname == "Brazil"
 replace finv = finv / 1000 if year <= 1989 & countryname == "Brazil"
 replace finv = finv / 1000 if year <= 1979 & countryname == "Brazil"
 replace finv = finv * 1000 if inrange(year, 1960, 1969) & countryname == "Brazil"
-replace finv = . if year >= 1986 & countryname == "Argentina"
-replace finv = finv * (10^-14) if countryname == "Venezuela"
-replace finv = finv * (10^-6) if countryname == "Mexico" & year <= 1984
-replace finv = finv * (10^3) if  countryname == "Ecuador"
-replace finv = finv / 25000 if  countryname == "Ecuador"
-replace finv = finv * (10^3) if  countryname == "Colombia" & year <= 1969
+
+* Argentina 
+replace finv = . 			if year >= 1986 & countryname == "Argentina"
+replace finv = finv / 10000 if countryname == "Argentina" & year <= 1985
+replace finv = finv / 1000  if countryname == "Argentina" & year <= 1984
+replace finv = finv / 10000 if countryname == "Argentina" & year <= 1974
+replace finv = finv / 100   if countryname == "Argentina" & year <= 1964
+
+* Venezuela
+replace finv = finv * (10^-8) if countryname == "Venezuela"
+
+* Ecuador 
+replace finv = finv * (10^3) / 25000 if  countryname == "Ecuador"
+
+* Colombia 
+replace finv = finv * (10^3)  if countryname == "Colombia" & year <= 1969
+
+* Uruguay
 replace finv = finv * (10^-3) if countryname == "Uruguay" 
-replace finv = finv / 1000 if year <= 1979 & countryname == "Uruguay" 
-replace finv = finv * 1000 if year <= 1969 & countryname == "Uruguay" 
-replace finv = finv / 1000 if year <= 1959 & countryname == "Uruguay" 
+replace finv = finv / 1000 	  if year <= 1979 & countryname == "Uruguay" 
+replace finv = finv * 1000    if year <= 1969 & countryname == "Uruguay" 
+replace finv = finv / 1000    if year <= 1959 & countryname == "Uruguay" 
+
+* Peru
 replace finv = finv * (10^-3) if year <= 1988 & countryname == "Peru" 
 replace finv = finv * (10^-3) if year <= 1979 & countryname == "Peru" 
 replace finv = finv * (10^-3) if year <= 1949 & countryname == "Peru" 
+
+* Bolivia
 replace finv = finv / 1000 if countryname == "Bolivia" & year <= 1993
 replace finv = finv / 1000 if countryname == "Bolivia" & year == 1984
-replace finv = finv / 100 if countryname == "Bolivia" & year <= 1983
-replace finv = finv / 10 if countryname == "Bolivia" & year <= 1979
+replace finv = finv / 100  if countryname == "Bolivia" & year <= 1983
+replace finv = finv / 10   if countryname == "Bolivia" & year <= 1979
+
+* Chile
 replace finv = finv / 1000 if countryname == "Chile" & year <= 1969
 replace finv = finv / 1000 if countryname == "Chile" & year <= 1964
 replace finv = finv * 1000 if countryname == "Chile" & year >= 1975
-replace finv = finv / 10000 if countryname == "Argentina" & year <= 1985
-replace finv = finv / 1000 if countryname == "Argentina" & year <= 1984
-replace finv = finv / 10000 if countryname == "Argentina" & year <= 1974
-replace finv = finv / 100 if countryname == "Argentina" & year <= 1964
+
 
 
 *===============================================================================

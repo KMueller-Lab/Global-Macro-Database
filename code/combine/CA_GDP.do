@@ -17,18 +17,6 @@
 * Clear the panel
 clear
 
-* Create temporary file to store the data
-tempfile temp_master
-save `temp_master', replace emptyok
-
-* First run our chainlinked nominal GDP because we will use later 
-do "$code_combine/nGDP.do"
-clear
-
-* Second run USDfx because we will use later 
-do "$code_combine/USDfx.do"
-clear
-
 use "$data_final/clean_data_wide", clear
 
 * Calculate current account balance in GDP after deriving the current account balance values in local currency using our own constructed exchange rate
@@ -54,5 +42,5 @@ replace Mitchell_CA_GDP = . if inrange(year, 1955, 1956) & ISO3 == "GHA"
 * Specify country specific priority ordering.
 * ==============================================================================
 * Set up the priority list
-splice, priority(IMF_WEO AMF BCEAO OECD_EO WDI WDI_ARC OECD_KEI IMF_IFS ADB CS1 JST JO Mitchell) generate(CA_GDP) varname(CA_GDP) base_year(2018) method("none")
+splice, priority(AMF BCEAO OECD_EO WDI WDI_ARC OECD_KEI IMF_IFS ADB IMF_WEO CS1 JST JO Mitchell IMF_WEO_forecast) generate(CA_GDP) varname(CA_GDP) base_year(2018) method("none")
 

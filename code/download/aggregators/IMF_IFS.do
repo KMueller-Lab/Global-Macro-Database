@@ -49,112 +49,82 @@ clear
 tempfile temp_master
 save `temp_master', replace emptyok
 
-* Extracting the country's names for the loop
-dbnomics data, pr(IMF) d(IFS) clear
 
-* Drop regional aggregates from the countries list
-drop if regexm(value, "[0-9]") & dimensions == "REF_AREA"
-drop if seriescount == . & dimensions == "REF_AREA"
 
-* Download data for each country and append only for Real GDP 
-glevelsof values if dimensions == "REF_AREA", local(countries) clean
-foreach country in `countries' {
+* Get the codes 
+local codes NGDP_XDC ENDA_XDC_USD_RATE EREER_IX FPOLM_PA BCAXF_BP6_USD LP_PE_NUM LUR_PT BGS_BP6_USD NFI_XDC NI_XDC NM_XDC NX_XDC NC_XDC  PCPI_IX PCPI_PC_CP_A_PT EDNE_USD_XDC_RATE NGDP_R_XDC NC_R_XDC FITB_PA FIGB_PA
+
+* Loop over all the codes
+foreach code of local codes {
+	di "Downloading `code'"
+	local url "http://dataservices.imf.org/REST/SDMX_XML.svc/CompactData/IFS/A..`code'."
+	cap copy "`url'" "imf_cp.csv", replace
+	cap import delimited "imf_cp.csv", clear
 	
-	di "Downloading data for `country'"
+	if _rc == 0 {
+		qui keep v1
+		* First, let's clean up the data
+		qui replace v1 = strtrim(v1)
 
-	* Define variables to be downloaded
-	local variables NGDP_R_XDC NC_R_XDC
+		* Create variables to store the extracted data
+		qui gen date = ""
+		qui gen value = ""
+		qui gen ISO2 = ""
+		qui gen indicator = ""
+		qui gen unit_mult = ""
 
-	* Loop over all variables starting with the second, download data, and append to master file
-	foreach var of local variables {
-		
-		di "Downloading data for `var'"
-		
-		* Get data from dbnomics 
-		cap dbnomics import, provider(IMF) dataset(IFS) FREQ(A) INDICATOR(`var') REF_AREA(`country') clear
-		
-		* Display an error-value when the country has no data
-		if _rc == 0 {
-			di as error "Country `country' has no data for the variable `var'"
-		}
-		
-		* Change every column size to the length of the largest row
-		qui ds, has(type string)
-		foreach var in `r(varlist)' {
-			qui replace `var' = strtrim(`var')
-			qui gen length = strlen(`var')
-			qui su length
-			qui recast str`r(max)' `var', force
-			qui drop length
-		}
+		* Extract country (REF_AREA) 
+		qui replace ISO2 = regexs(1) if regexm(v1, `"REF_AREA="([A-Z0-9_]+)""')
 
-		* If variable is a string, replace "NA" and destring 
-		cap ds value, has(type numeric)
-		if _rc != 111 {
-			if "`r(varlist)'" != "value" {
-			replace value = "" if value == "NA"
-			destring value period, replace
-			}
+		* Extract indicator 
+		qui replace indicator = regexs(1) if regexm(v1, `"INDICATOR="([A-Z0-9_]+)""')
+
+		* Extract date 
+		qui replace date = regexs(1) if regexm(v1, `"TIME_PERIOD="([0-9]{4}-[0-9]{2}|[0-9]{4}-Q[1-4]|[0-9]{4})""')
+
+		* Extract value 
+		qui replace value = regexs(1) if regexm(v1, `"OBS_VALUE="([-0-9\.]+)""')
+		
+		* Extract unit multiplier 
+		qui replace unit_mult = regexs(1) if regexm(v1, `"UNIT_MULT="([-0-9\.]+)""')
+
+		* Fill down metadata
+		foreach var of varlist unit_mult ISO2 indicator {
+			qui replace `var' = `var'[_n-1] if `var' == ""
 		}
+		qui keep date value indicator ISO2 unit_mult
+		sort ISO2 indicator date 
 		
-		
-		
-		* Append and save 
+		* Extract country name
+		qui merge m:1 ISO2 using $isomapping, keepus(ISO3) nogen
+
+		* Append
 		qui append using `temp_master'
-		qui save `temp_master', replace
+		qui save `temp_master', replace 
 	}
+	
+	else {
+		di "`code' of doesn't have data"
+	}
+
 }
 
+* Drop regional aggregates 
+drop if regexm(ISO2, "([-0-9\.]+)")
 
+* Fix ISO3 codes 
+replace ISO3 = "SUN" if ISO2 == "SUH"
+replace ISO3 = "YUG" if ISO2 == "YUC"
+replace ISO3 = "CSK" if ISO2 == "CSH"
+ 
 
-* Download other variables
-local variables NGDP_XDC  ENDA_XDC_USD_RATE EREER_IX FPOLM_PA BCAXF_BP6_USD LP_PE_NUM LUR_PT BGS_BP6_USD NFI_XDC NI_XDC NM_XDC NX_XDC NC_XDC  PCPI_IX PCPI_PC_CP_A_PT EDNE_USD_XDC_RATE
-foreach var of local variables {
-		
-		di "Downloading data for `var'"
-		
-		* Get data from dbnomics 
-		dbnomics import, provider(IMF) dataset(IFS) FREQ(A) INDICATOR(`var') clear
-		
-		* Change every column size to the length of the largest row
-		qui ds, has(type string)
-		foreach var in `r(varlist)' {
-			qui replace `var' = strtrim(`var')
-			qui gen length = strlen(`var')
-			qui su length
-			qui recast str`r(max)' `var', force
-			qui drop length
-		}
-
-		* If variable is a string, replace "NA" and destring 
-		cap ds value, has(type numeric)
-		if _rc != 111 {
-			if "`r(varlist)'" != "value" {
-			replace value = "" if value == "NA"
-			destring value period, replace
-			}
-		}
-		
-		* Append and save 
-		qui append using `temp_master'
-		qui save `temp_master', replace
-}
-
-
-
-* Only keep relevant information
-replace indicator = "NGDP_R_XDC" if strpos(series_name, "Gross Domestic Product, Real")
-replace indicator = "NC_R_XDC" if strpos(series_name, "Final Consumption Expenditure, Real")
-replace ref_area = REF_AREA if ref_area == ""
-keep period value indicator ref_area series_name
-
-* Assert that country and year uniquely identify observations
-isid ref_area period indicator
-
+* Drop empty rows 
+drop if date == ""
+drop ISO2
 
 * Save download date 
 gmdsavedate, source(IMF_IFS)
 
 * Save
-savedelta ${output}, id(period ref_area indicator)
+savedelta ${output}, id(date ISO3 indicator)
 

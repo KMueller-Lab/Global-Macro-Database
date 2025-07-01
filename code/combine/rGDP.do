@@ -11,32 +11,20 @@
 * Author:
 * Mohamed Lehbib
 * National University of Singapore
-* 	
 * ==============================================================================
 
-
-clear
-
-* First run our chainlinked population because we will use later 
-do "$code_combine/pop.do"
-clear
-
-* Second run WDI because we will use later 
-do "$code_clean/aggregators/WDI.do"
-clear
-
-
-
 * ==============================================================================
-* 	Derive Real GDP from Madisson using our own population data
+* 	Derive Real GDP from Maddison using our own population data
 * ==============================================================================
 * Open 
-use "${data_clean}/aggregators/MAD/Madisson.dta", clear
+use "${data_clean}/aggregators/MAD/Maddison.dta", clear
+
 * Merge in the dataset
 merge 1:1 ISO3 year using "$data_final/chainlinked_pop", nogen keep(1 3) keepus(pop source)
-drop if source == "MAD"
+*drop if source == "MAD" // Madisson data has a lot of gaps in population, it is reported on a decade basis, thus 
 drop source
 merge 1:1 ISO3 year using "${data_clean}/aggregators/WB/WDI", nogen keep(1 3) keepus(WDI_rGDP)
+
 * Derive real GDP 
 gen MAD_rGDP = MAD_rGDP_pc_USD * pop
 
@@ -58,56 +46,39 @@ merge 1:1 ISO3 year using "$data_final/clean_data_wide", nogen
 * ==============================================================================
 * 	SPLICE BARRO TOTAL GDP
 * ==============================================================================
-* Merge in the dataset
+
+* Calculate real GDP in Barro based on our population data
 gen BARRO_rGDP = BARRO_rGDP_pc * pop 
 drop pop 
-
-
-* Rabase all series to the IMF World Economic Outlook
-keep ISO3 year *rGDP
-recast str3 ISO3, force
-qui levelsof ISO3, local(countries)
-foreach country of local countries {
-	qui ds IMF_WEO_rGDP ISO3 year, not
-	foreach var in `r(varlist)'{
-		qui su year if `var' != . & ISO3 == "`country'"
-		if r(N) > 0 {
-			qui su year if IMF_WEO_rGDP != . & `var' != .  & ISO3 == "`country'"
-			if r(N) > 0 {
-				local min_year = r(min)
-				local max_year = r(max)
-				qui su IMF_WEO_rGDP if inrange(year, `min_year', `max_year') & ISO3 == "`country'"
-				local first_mean  = r(mean)
-				qui su `var' if inrange(year, `min_year', `max_year') & ISO3 == "`country'"
-				local base_mean = r(mean)
-				local ratio = `first_mean' / `base_mean'
-				qui replace `var' = `var' * `ratio' if ISO3 == "`country'"
-			}
-			else {
-				di "No overlapping between `var' and WEO"
-				* Try with BORDO
-				qui su year if BORDO_rGDP != . & `var' != .  & ISO3 == "`country'"
-				local min_year = r(min)
-				local max_year = r(max)
-				su BORDO_rGDP if inrange(year, `min_year', `max_year') & ISO3 == "`country'", meanonly
-				local first_mean  = r(mean)
-				qui su `var' if inrange(year, `min_year', `max_year') & ISO3 == "`country'", meanonly
-				local base_mean = r(mean)
-				local ratio = `first_mean' / `base_mean'
-				qui replace `var' = `var' * `ratio' if ISO3 == "`country'"
-			}
-		}
-		else {
-				di ""
-		}
-		
-	}
-}
 
 * ==============================================================================
 * Specify country specific priority ordering.
 * ==============================================================================
 
 * Set up the priority list
-splice, priority(IMF_WEO BCEAO AMF EUS OECD_EO WDI IMF_IFS WDI_ARC ADB MW UN  FAO AMECO CS1 CS2 CS3 JST BORDO MD NBS GNA AHSTAT BARRO BG MAD Mitchell HFS) generate(rGDP) varname(rGDP) base_year(2018) method("chainlink")
+splice, priority(OECD_EO EUS AMECO WDI UN BCEAO AMF ADB FAO WDI_ARC IMF_WEO IMF_IFS MW CS1 CS2 CS3 JST AHSTAT Mitchell BORDO NBS GNA HFS BG MD BARRO MAD IMF_WEO_forecast) generate(rGDP) varname(rGDP) base_year(2015) method("chainlink")
+
+* Rebase GDP to 2015
+merge 1:1 ISO3 year using "$data_final/chainlinked_nGDP", nogen keep(1 3) keepus(nGDP) 
+
+* Add the deflator
+gen deflator = (nGDP / rGDP) * 100
+
+* Loop over all countries
+qui levelsof ISO3, local(countries) clean
+foreach country of local countries {
+	
+	* Rebase to 2015
+	qui gen  temp = deflator if year == 2015 & ISO3 == "`country'"
+	qui egen defl_2015 = max(temp) if ISO3 == "`country'"
+	qui replace rGDP = (rGDP * defl_2015) / 100 if ISO3 == "`country'"
+	qui drop temp defl_2015	
+	
+}
+
+* Save 
+drop deflator nGDP 
+save "$data_final/chainlinked_rGDP", replace
+
+
 

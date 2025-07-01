@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: CA_GDP.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: plainnat.bst
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+Database file #1: bib.bib
+Warning--can't use both author and editor fields in Mitchell
+You've used 14 entries,
+            2773 wiz_defined-function locations,
+            681 strings with 6635 characters,
+and the built_in function-call counts, 4685 in all, are:
+= -- 427
+> -- 182
+< -- 13
++ -- 69
+- -- 54
+* -- 276
+:= -- 726
+add.period$ -- 56
+call.type$ -- 14
+change.case$ -- 60
+chr.to.int$ -- 13
+cite$ -- 29
+duplicate$ -- 221
+empty$ -- 458
+format.name$ -- 72
+if$ -- 997
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 3
+newline$ -- 91
+num.names$ -- 56
+pop$ -- 161
+preamble$ -- 1
+purify$ -- 46
+quote$ -- 0
+skip$ -- 189
+stack$ -- 0
+substring$ -- 53
+swap$ -- 17
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 149
+warning$ -- 1
+while$ -- 44
+width$ -- 0
+write$ -- 204
+(There was 1 warning)

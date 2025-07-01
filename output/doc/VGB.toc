@@ -1,0 +1,19 @@
+\contentsline {section}{Data availability heatmap}{3}{section*.3}%
+\contentsline {section}{Consumer price index}{4}{section*.5}%
+\contentsline {section}{USD exchange rate}{5}{section*.8}%
+\contentsline {section}{Total consumption}{6}{section*.11}%
+\contentsline {section}{Total consumption to GDP ratio}{7}{section*.14}%
+\contentsline {section}{Exports}{8}{section*.17}%
+\contentsline {section}{Exports to GDP ratio}{9}{section*.20}%
+\contentsline {section}{Fixed investment}{10}{section*.23}%
+\contentsline {section}{Fixed investment to GDP ratio}{11}{section*.26}%
+\contentsline {section}{Imports}{12}{section*.29}%
+\contentsline {section}{Imports to GDP ratio}{13}{section*.32}%
+\contentsline {section}{Inflation}{14}{section*.35}%
+\contentsline {section}{Investment}{15}{section*.38}%
+\contentsline {section}{Investment to GDP ratio}{16}{section*.41}%
+\contentsline {section}{Nominal GDP}{17}{section*.44}%
+\contentsline {section}{Population}{18}{section*.47}%
+\contentsline {section}{Real GDP}{19}{section*.50}%
+\contentsline {section}{Real total consumption}{20}{section*.53}%
+\contentsline {section}{References}{21}{section*.56}%

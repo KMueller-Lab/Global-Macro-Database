@@ -1,0 +1,14 @@
+\begin{thebibliography}{2}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{{Asian Development Bank}(2024)}]{ADB}
+{Asian Development Bank}.
+\newblock \enquote{{Key Indicators Database (KIDB)}.} (2024).
+
+\bibitem[{{United Nations}(2024)}]{UN}
+{United Nations}.
+\newblock \enquote{World Population Prospects 2024, Online Edition.} (2024).
+\newblock Accessed: 2024-02-02.
+
+\end{thebibliography}

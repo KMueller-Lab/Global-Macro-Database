@@ -1,0 +1,3219 @@
+This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2024.12.5)  1 JUL 2025 02:32
+ restricted system commands enabled.
+**REER.tex
+(./REER.tex
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+Lua module: luaotfload 2024-02-14 v3.28 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended 
+collection.
+luaotfload | conf : Root cache directory is "C:/Users/lehbib/AppData/Local/MiKTe
+X/luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
+olved path "C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/luatex/luaotfload/
+fontloader-2023-12-28.lua".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.134
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "C:/Users/lehbib/AppData/Local/MiKTe
+X/luatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'. (C:/Users/lehbib/AppDat
+a/Local/Programs/MiKTeX/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/size12.clo
+File: size12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from C:/Users/lehbib/AppData/Local/
+MiKTeX/luatex-cache/generic/names/luaotfload-names.luc.gz)
+\c@part=\count194
+\c@section=\count195
+\c@subsection=\count196
+\c@subsubsection=\count197
+\c@paragraph=\count198
+\c@subparagraph=\count199
+\c@figure=\count266
+\c@table=\count267
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen140
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
+6.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphicx.s
+ty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphics.st
+y
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/graphics.
+cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 106.
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics-def/luatex.de
+f
+File: luatex.def 2024/04/13 v1.2e Graphics/color driver for luatex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/booktabs/booktabs.st
+y
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen143
+\lightrulewidth=\dimen144
+\cmidrulewidth=\dimen145
+\belowrulesep=\dimen146
+\belowbottomsep=\dimen147
+\aboverulesep=\dimen148
+\abovetopsep=\dimen149
+\cmidrulesep=\dimen150
+\cmidrulekern=\dimen151
+\defaultaddspace=\dimen152
+\@cmidla=\count268
+\@cmidlb=\count269
+\@aboverulesep=\dimen153
+\@belowrulesep=\dimen154
+\@thisruleclass=\count270
+\@lastruleclass=\count271
+\@thisrulewidth=\dimen155
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.st
+y
+Package: geometry 2020/01/02 v5.9 Page Geometry
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count272
+\Gm@cntv=\count273
+\c@Gm@tempcnt=\count274
+\Gm@bindingoffset=\dimen156
+\Gm@wd@mp=\dimen157
+\Gm@odd@mp=\dimen158
+\Gm@even@mp=\dimen159
+\Gm@layoutwidth=\dimen160
+\Gm@layoutheight=\dimen161
+\Gm@layouthoffset=\dimen162
+\Gm@layoutvoffset=\dimen163
+\Gm@dimlist=\toks20
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.cfg))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen164
+\captionmargin=\dimen165
+\caption@leftmargin=\dimen166
+\caption@rightmargin=\dimen167
+\caption@width=\dimen168
+\caption@indent=\dimen169
+\caption@parindent=\dimen170
+\caption@hangindent=\dimen171
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count275
+\c@continuedfloat=\count276
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count277
+\float@exts=\toks21
+\float@box=\box52
+\@float@everytoks=\toks22
+\@floatcapt=\box53
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip51
+\bibsep=\skip52
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count278
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: luatex.def on input line 274.
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/mathcolor.ltx
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/colortbl/colortbl.st
+y
+Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen172
+\ar@mcellbox=\box54
+\extrarowheight=\dimen173
+\NC@list=\toks23
+\extratabsurround=\skip53
+\backup@length=\skip54
+\ar@cellbox=\box55
+)
+\everycr=\toks24
+\minrowclearance=\skip55
+\rownum=\count279
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/rotating.st
+y
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count280
+\rotFPtop=\skip56
+\rotFPbot=\skip57
+\rot@float@box=\box56
+\rot@mess@toks=\toks25
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen174
+\TX@old@table=\dimen175
+\TX@old@col=\dimen176
+\TX@target=\dimen177
+\TX@delta=\dimen178
+\TX@cols=\count281
+\TX@ftn=\toks26
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pdflscape/pdflscape.st
+y
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pdflscape/pdflscape-no
+metadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/adjustbox/adjustbox.st
+y
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/xkeyval/xkeyval.tex
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks27
+\XKV@tempa@toks=\toks28
+)
+\XKV@depth=\count282
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/adjustbox/adjcalc.s
+ty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/collectbox/collectbox.
+sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box57
+)
+\tc@llx=\dimen179
+\tc@lly=\dimen180
+\tc@urx=\dimen181
+\tc@ury=\dimen182
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/adjustbox/tc-pgf.def
+File: tc-pgf.def 2019/01/04 v2.2 trimclip fall-back clipping driver using PGF
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgf.sty
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfrcs.s
+ty
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfuti
+l-common.tex
+\pgfutil@everybye=\toks29
+\pgfutil@tempdima=\dimen183
+\pgfutil@tempdimb=\dimen184
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfuti
+l-latex.def
+\pgfutil@abb=\box58
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfrcs
+.code.tex
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/pgf.revision.tex
+)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgfcore
+.sty
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/systemlayer/pgfsys
+.sty
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+ys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkey
+s.code.tex
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkey
+slibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks32
+))
+\pgf@x=\dimen185
+\pgf@y=\dimen186
+\pgf@xa=\dimen187
+\pgf@ya=\dimen188
+\pgf@xb=\dimen189
+\pgf@yb=\dimen190
+\pgf@xc=\dimen191
+\pgf@yc=\dimen192
+\pgf@xd=\dimen193
+\pgf@yd=\dimen194
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count283
+\c@pgf@countb=\count284
+\c@pgf@countc=\count285
+\c@pgf@countd=\count286
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
+\pgf@sys@id@count=\count287
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgf.
+cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-luatex.def
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+ys-luatex.def
+File: pgfsys-luatex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+ys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+yssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count288
+\pgfsyssoftpath@bigbuffer@items=\count289
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+ysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+re.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmath.cod
+e.tex
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathutil
+.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathpars
+er.code.tex
+\pgfmath@dimen=\dimen195
+\pgfmath@count=\count290
+\pgfmath@box=\box59
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.basic.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.trigonometric.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.random.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.comparison.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.base.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.round.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.misc.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.integerarithmetics.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathcalc
+.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfloa
+t.code.tex
+\c@pgfmathroundto@lastzeros=\count291
+))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfint.code
+.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen196
+\pgf@picmaxx=\dimen197
+\pgf@picminy=\dimen198
+\pgf@picmaxy=\dimen199
+\pgf@pathminx=\dimen256
+\pgf@pathmaxx=\dimen257
+\pgf@pathminy=\dimen258
+\pgf@pathmaxy=\dimen259
+\pgf@xx=\dimen260
+\pgf@xy=\dimen261
+\pgf@yx=\dimen262
+\pgf@yy=\dimen263
+\pgf@zx=\dimen264
+\pgf@zy=\dimen265
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen266
+\pgf@path@lasty=\dimen267
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen268
+\pgf@shorten@start@additional=\dimen269
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+rescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box60
+\pgf@hbox=\box61
+\pgf@layerbox@main=\box62
+\pgf@picture@serial@count=\count292
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+regraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen270
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+retransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen271
+\pgf@pt@y=\dimen272
+\pgf@pt@temp=\dimen273
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+requick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+reobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+rearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen274
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+reshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen275
+\pgf@sys@shading@range@num=\count293
+\pgf@shadingcount=\count294
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+reimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+reexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box63
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+relayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+retransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+rerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodul
+eshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box64
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodul
+eplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfc
+omp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen276
+\pgf@nodesepend=\dimen277
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfc
+omp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)))
+Package trimclip Info: No clipping driver 'tc-luatex.def' available.
+(trimclip)             Using fall-back PGF driver.
+)
+\adjbox@Width=\dimen278
+\adjbox@Height=\dimen279
+\adjbox@Depth=\dimen280
+\adjbox@Totalheight=\dimen281
+\adjbox@pwidth=\dimen282
+\adjbox@pheight=\dimen283
+\adjbox@pdepth=\dimen284
+\adjbox@ptotalheight=\dimen285
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/ifoddpage/ifoddpage.st
+y
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count295
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.st
+y
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box65
+\sift@deathcycles=\count296
+\@vwid@loff=\dimen286
+\@vwid@roff=\dimen287
+)) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/times.sty
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/fancyhdr/fancyhdr.st
+y
+Package: fancyhdr 2024/11/20 v4.4 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip58
+\f@nch@O@elh=\skip59
+\f@nch@O@erh=\skip60
+\f@nch@O@olh=\skip61
+\f@nch@O@orh=\skip62
+\f@nch@O@elf=\skip63
+\f@nch@O@erf=\skip64
+\f@nch@O@olf=\skip65
+\f@nch@O@orf=\skip66
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hyperref.st
+y
+Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/kvsetkeys/kvsetkeys.st
+y
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/kvdefinekeys/kvdefin
+ekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pdfescape/pdfescape.
+sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pdftexcmds/pdftexcmd
+s.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/infwarerr/infwarerr.
+sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks39
+)) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/gettitlestring/getti
+tlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/kvoptions/kvoptions.st
+y
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count297
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/etoolbox/etoolbox.st
+y
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count298
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/stringenc/stringenc.
+sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen288
+\Hy@linkcounter=\count299
+\Hy@pagecounter=\count300
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/intcalc/intcalc.st
+y
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count301
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4040.
+Package hyperref Info: Hyper figures OFF on input line 4157.
+Package hyperref Info: Link nesting OFF on input line 4162.
+Package hyperref Info: Hyper index ON on input line 4165.
+Package hyperref Info: Plain pages OFF on input line 4172.
+Package hyperref Info: Backreferencing OFF on input line 4177.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4424.
+\c@Hy@tempcnt=\count302
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen289
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/bigintcalc/bigintcal
+c.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count303
+\Field@Width=\dimen290
+\Fld@charsize=\dimen291
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring ON on input line 6060.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count304
+\c@Item=\count305
+\c@Hfootnote=\count306
+)
+Package hyperref Info: Driver (autodetected): hluatex.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hluatex.def
+File: hluatex.def 2024-11-05 v7.01l Hyperref driver for luaTeX
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count307
+\c@bookmark@seq@number=\count308
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfi
+lecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/uniquecounter/unique
+counter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip67
+)
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 34
+.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-lu
+atex.def
+File: l3backend-luatex.def 2024-05-08 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count309
+Inserting `l3color' in `luaotfload.parse_color'.
+\l__pdf_internal_box=\box66
+) (./REER.aux)
+\openout1 = REER.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.m
+kii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count310
+\scratchdimen=\dimen292
+\scratchbox=\box67
+\nofMPsegments=\count311
+\nofMParguments=\count312
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count313
+\MPscratchDim=\dimen293
+\MPnumerator=\count314
+\makeMPintoPDFobject=\count315
+\everyMPtoPDFconversion=\toks41
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-
+base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/00miktex/epstopdf-sys.
+cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: landscape 
+* h-part:(L,W,R)=(36.135pt, 1084.05pt, 36.135pt)
+* v-part:(T,H,B)=(36.135pt, 722.7pt, 36.135pt)
+* \paperwidth=1156.31999pt
+* \paperheight=794.96999pt
+* \textwidth=1084.05pt
+* \textheight=722.7pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-55.36243pt
+* \headheight=12.0pt
+* \headsep=7.22743pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=144.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: rotating package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring ON on input line 34.
+(./REER.out) (./REER.out)
+\@outlinefile=\write4
+
+\openout4 = REER.out
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 38.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 38.
+
+LaTeX Warning: No \author given.
+
+
+
+[1
+
+{C:/Users/lehbib/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+
+Package hyperref Warning: Option `colorlinks' has already been used,
+(hyperref)                setting the option has no effect on input line 42.
+
+(./REER.toc
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
+[1
+
+]
+
+[2]
+
+[3]
+
+[4]
+
+[5]
+
+[6])
+\tf@toc=\write5
+
+\openout5 = REER.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 60.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 60.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 60.
+
+warning  (file graphs/AFG_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/AFG_REER.pdf, id=1138, 542.025pt x 325.215pt>
+File: graphs/AFG_REER.pdf Graphic file (type pdf)
+<use graphs/AFG_REER.pdf>
+Package luatex.def Info: graphs/AFG_REER.pdf  used on input line 70.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ALB_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ALB_REER.pdf, id=1141, 542.025pt x 325.215pt>
+File: graphs/ALB_REER.pdf Graphic file (type pdf)
+<use graphs/ALB_REER.pdf>
+Package luatex.def Info: graphs/ALB_REER.pdf  used on input line 96.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DZA_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/DZA_REER.pdf, id=1148, 542.025pt x 325.215pt>
+File: graphs/DZA_REER.pdf Graphic file (type pdf)
+<use graphs/DZA_REER.pdf>
+Package luatex.def Info: graphs/DZA_REER.pdf  used on input line 124.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AGO_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/AGO_REER.pdf, id=1151, 542.025pt x 325.215pt>
+File: graphs/AGO_REER.pdf Graphic file (type pdf)
+<use graphs/AGO_REER.pdf>
+Package luatex.def Info: graphs/AGO_REER.pdf  used on input line 150.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ARG_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ARG_REER.pdf, id=1156, 542.025pt x 325.215pt>
+File: graphs/ARG_REER.pdf Graphic file (type pdf)
+<use graphs/ARG_REER.pdf>
+Package luatex.def Info: graphs/ARG_REER.pdf  used on input line 177.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ARM_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ARM_REER.pdf, id=1163, 542.025pt x 325.215pt>
+File: graphs/ARM_REER.pdf Graphic file (type pdf)
+<use graphs/ARM_REER.pdf>
+Package luatex.def Info: graphs/ARM_REER.pdf  used on input line 205.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AUS_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/AUS_REER.pdf, id=1170, 542.025pt x 325.215pt>
+File: graphs/AUS_REER.pdf Graphic file (type pdf)
+<use graphs/AUS_REER.pdf>
+Package luatex.def Info: graphs/AUS_REER.pdf  used on input line 233.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AUT_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/AUT_REER.pdf, id=1181, 542.025pt x 325.215pt>
+File: graphs/AUT_REER.pdf Graphic file (type pdf)
+<use graphs/AUT_REER.pdf>
+Package luatex.def Info: graphs/AUT_REER.pdf  used on input line 263.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AZE_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/AZE_REER.pdf, id=1184, 542.025pt x 325.215pt>
+File: graphs/AZE_REER.pdf Graphic file (type pdf)
+<use graphs/AZE_REER.pdf>
+Package luatex.def Info: graphs/AZE_REER.pdf  used on input line 289.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BHS_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BHS_REER.pdf, id=1191, 542.025pt x 325.215pt>
+File: graphs/BHS_REER.pdf Graphic file (type pdf)
+<use graphs/BHS_REER.pdf>
+Package luatex.def Info: graphs/BHS_REER.pdf  used on input line 317.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BHR_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BHR_REER.pdf, id=1198, 542.025pt x 325.215pt>
+File: graphs/BHR_REER.pdf Graphic file (type pdf)
+<use graphs/BHR_REER.pdf>
+Package luatex.def Info: graphs/BHR_REER.pdf  used on input line 345.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BGD_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BGD_REER.pdf, id=1201, 542.025pt x 325.215pt>
+File: graphs/BGD_REER.pdf Graphic file (type pdf)
+<use graphs/BGD_REER.pdf>
+Package luatex.def Info: graphs/BGD_REER.pdf  used on input line 371.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BRB_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BRB_REER.pdf, id=1204, 542.025pt x 325.215pt>
+File: graphs/BRB_REER.pdf Graphic file (type pdf)
+<use graphs/BRB_REER.pdf>
+Package luatex.def Info: graphs/BRB_REER.pdf  used on input line 397.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BLR_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BLR_REER.pdf, id=1207, 542.025pt x 325.215pt>
+File: graphs/BLR_REER.pdf Graphic file (type pdf)
+<use graphs/BLR_REER.pdf>
+Package luatex.def Info: graphs/BLR_REER.pdf  used on input line 423.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BEL_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BEL_REER.pdf, id=1218, 542.025pt x 325.215pt>
+File: graphs/BEL_REER.pdf Graphic file (type pdf)
+<use graphs/BEL_REER.pdf>
+Package luatex.def Info: graphs/BEL_REER.pdf  used on input line 453.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BLZ_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BLZ_REER.pdf, id=1225, 542.025pt x 325.215pt>
+File: graphs/BLZ_REER.pdf Graphic file (type pdf)
+<use graphs/BLZ_REER.pdf>
+Package luatex.def Info: graphs/BLZ_REER.pdf  used on input line 481.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BEN_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BEN_REER.pdf, id=1228, 542.025pt x 325.215pt>
+File: graphs/BEN_REER.pdf Graphic file (type pdf)
+<use graphs/BEN_REER.pdf>
+Package luatex.def Info: graphs/BEN_REER.pdf  used on input line 507.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BTN_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BTN_REER.pdf, id=1231, 542.025pt x 325.215pt>
+File: graphs/BTN_REER.pdf Graphic file (type pdf)
+<use graphs/BTN_REER.pdf>
+Package luatex.def Info: graphs/BTN_REER.pdf  used on input line 533.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BOL_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BOL_REER.pdf, id=1238, 542.025pt x 325.215pt>
+File: graphs/BOL_REER.pdf Graphic file (type pdf)
+<use graphs/BOL_REER.pdf>
+Package luatex.def Info: graphs/BOL_REER.pdf  used on input line 561.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BIH_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BIH_REER.pdf, id=1245, 542.025pt x 325.215pt>
+File: graphs/BIH_REER.pdf Graphic file (type pdf)
+<use graphs/BIH_REER.pdf>
+Package luatex.def Info: graphs/BIH_REER.pdf  used on input line 589.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BWA_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BWA_REER.pdf, id=1248, 542.025pt x 325.215pt>
+File: graphs/BWA_REER.pdf Graphic file (type pdf)
+<use graphs/BWA_REER.pdf>
+Package luatex.def Info: graphs/BWA_REER.pdf  used on input line 615.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BRA_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BRA_REER.pdf, id=1255, 542.025pt x 325.215pt>
+File: graphs/BRA_REER.pdf Graphic file (type pdf)
+<use graphs/BRA_REER.pdf>
+Package luatex.def Info: graphs/BRA_REER.pdf  used on input line 643.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BRN_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BRN_REER.pdf, id=1258, 542.025pt x 325.215pt>
+File: graphs/BRN_REER.pdf Graphic file (type pdf)
+<use graphs/BRN_REER.pdf>
+Package luatex.def Info: graphs/BRN_REER.pdf  used on input line 669.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BGR_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BGR_REER.pdf, id=1267, 542.025pt x 325.215pt>
+File: graphs/BGR_REER.pdf Graphic file (type pdf)
+<use graphs/BGR_REER.pdf>
+Package luatex.def Info: graphs/BGR_REER.pdf  used on input line 698.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BFA_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BFA_REER.pdf, id=1270, 542.025pt x 325.215pt>
+File: graphs/BFA_REER.pdf Graphic file (type pdf)
+<use graphs/BFA_REER.pdf>
+Package luatex.def Info: graphs/BFA_REER.pdf  used on input line 724.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BDI_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BDI_REER.pdf, id=1277, 542.025pt x 325.215pt>
+File: graphs/BDI_REER.pdf Graphic file (type pdf)
+<use graphs/BDI_REER.pdf>
+Package luatex.def Info: graphs/BDI_REER.pdf  used on input line 752.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KHM_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/KHM_REER.pdf, id=1280, 542.025pt x 325.215pt>
+File: graphs/KHM_REER.pdf Graphic file (type pdf)
+<use graphs/KHM_REER.pdf>
+Package luatex.def Info: graphs/KHM_REER.pdf  used on input line 778.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CMR_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CMR_REER.pdf, id=1287, 542.025pt x 325.215pt>
+File: graphs/CMR_REER.pdf Graphic file (type pdf)
+<use graphs/CMR_REER.pdf>
+Package luatex.def Info: graphs/CMR_REER.pdf  used on input line 806.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CAN_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CAN_REER.pdf, id=1296, 542.025pt x 325.215pt>
+File: graphs/CAN_REER.pdf Graphic file (type pdf)
+<use graphs/CAN_REER.pdf>
+Package luatex.def Info: graphs/CAN_REER.pdf  used on input line 835.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CPV_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CPV_REER.pdf, id=1299, 542.025pt x 325.215pt>
+File: graphs/CPV_REER.pdf Graphic file (type pdf)
+<use graphs/CPV_REER.pdf>
+Package luatex.def Info: graphs/CPV_REER.pdf  used on input line 861.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CAF_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CAF_REER.pdf, id=1304, 542.025pt x 325.215pt>
+File: graphs/CAF_REER.pdf Graphic file (type pdf)
+<use graphs/CAF_REER.pdf>
+Package luatex.def Info: graphs/CAF_REER.pdf  used on input line 888.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TCD_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/TCD_REER.pdf, id=1307, 542.025pt x 325.215pt>
+File: graphs/TCD_REER.pdf Graphic file (type pdf)
+<use graphs/TCD_REER.pdf>
+Package luatex.def Info: graphs/TCD_REER.pdf  used on input line 914.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CHL_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CHL_REER.pdf, id=1314, 542.025pt x 325.215pt>
+File: graphs/CHL_REER.pdf Graphic file (type pdf)
+<use graphs/CHL_REER.pdf>
+Package luatex.def Info: graphs/CHL_REER.pdf  used on input line 942.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CHN_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CHN_REER.pdf, id=1321, 542.025pt x 325.215pt>
+File: graphs/CHN_REER.pdf Graphic file (type pdf)
+<use graphs/CHN_REER.pdf>
+Package luatex.def Info: graphs/CHN_REER.pdf  used on input line 970.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/COL_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/COL_REER.pdf, id=1328, 542.025pt x 325.215pt>
+File: graphs/COL_REER.pdf Graphic file (type pdf)
+<use graphs/COL_REER.pdf>
+Package luatex.def Info: graphs/COL_REER.pdf  used on input line 998.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CRI_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CRI_REER.pdf, id=1337, 542.025pt x 325.215pt>
+File: graphs/CRI_REER.pdf Graphic file (type pdf)
+<use graphs/CRI_REER.pdf>
+Package luatex.def Info: graphs/CRI_REER.pdf  used on input line 1027.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/HRV_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/HRV_REER.pdf, id=1344, 542.025pt x 325.215pt>
+File: graphs/HRV_REER.pdf Graphic file (type pdf)
+<use graphs/HRV_REER.pdf>
+Package luatex.def Info: graphs/HRV_REER.pdf  used on input line 1055.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CYP_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CYP_REER.pdf, id=1351, 542.025pt x 325.215pt>
+File: graphs/CYP_REER.pdf Graphic file (type pdf)
+<use graphs/CYP_REER.pdf>
+Package luatex.def Info: graphs/CYP_REER.pdf  used on input line 1083.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CZE_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CZE_REER.pdf, id=1358, 542.025pt x 325.215pt>
+File: graphs/CZE_REER.pdf Graphic file (type pdf)
+<use graphs/CZE_REER.pdf>
+Package luatex.def Info: graphs/CZE_REER.pdf  used on input line 1111.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CSK_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CSK_REER.pdf, id=1361, 542.025pt x 325.215pt>
+File: graphs/CSK_REER.pdf Graphic file (type pdf)
+<use graphs/CSK_REER.pdf>
+Package luatex.def Info: graphs/CSK_REER.pdf  used on input line 1137.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/COD_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/COD_REER.pdf, id=1370, 542.025pt x 325.215pt>
+File: graphs/COD_REER.pdf Graphic file (type pdf)
+<use graphs/COD_REER.pdf>
+Package luatex.def Info: graphs/COD_REER.pdf  used on input line 1166.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DNK_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/DNK_REER.pdf, id=1381, 542.025pt x 325.215pt>
+File: graphs/DNK_REER.pdf Graphic file (type pdf)
+<use graphs/DNK_REER.pdf>
+Package luatex.def Info: graphs/DNK_REER.pdf  used on input line 1196.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DJI_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/DJI_REER.pdf, id=1384, 542.025pt x 325.215pt>
+File: graphs/DJI_REER.pdf Graphic file (type pdf)
+<use graphs/DJI_REER.pdf>
+Package luatex.def Info: graphs/DJI_REER.pdf  used on input line 1222.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DMA_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/DMA_REER.pdf, id=1391, 542.025pt x 325.215pt>
+File: graphs/DMA_REER.pdf Graphic file (type pdf)
+<use graphs/DMA_REER.pdf>
+Package luatex.def Info: graphs/DMA_REER.pdf  used on input line 1250.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DOM_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/DOM_REER.pdf, id=1398, 542.025pt x 325.215pt>
+File: graphs/DOM_REER.pdf Graphic file (type pdf)
+<use graphs/DOM_REER.pdf>
+Package luatex.def Info: graphs/DOM_REER.pdf  used on input line 1278.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ECU_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ECU_REER.pdf, id=1405, 542.025pt x 325.215pt>
+File: graphs/ECU_REER.pdf Graphic file (type pdf)
+<use graphs/ECU_REER.pdf>
+Package luatex.def Info: graphs/ECU_REER.pdf  used on input line 1306.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/EGY_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/EGY_REER.pdf, id=1408, 542.025pt x 325.215pt>
+File: graphs/EGY_REER.pdf Graphic file (type pdf)
+<use graphs/EGY_REER.pdf>
+Package luatex.def Info: graphs/EGY_REER.pdf  used on input line 1332.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SLV_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SLV_REER.pdf, id=1411, 542.025pt x 325.215pt>
+File: graphs/SLV_REER.pdf Graphic file (type pdf)
+<use graphs/SLV_REER.pdf>
+Package luatex.def Info: graphs/SLV_REER.pdf  used on input line 1358.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GNQ_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GNQ_REER.pdf, id=1418, 542.025pt x 325.215pt>
+File: graphs/GNQ_REER.pdf Graphic file (type pdf)
+<use graphs/GNQ_REER.pdf>
+Package luatex.def Info: graphs/GNQ_REER.pdf  used on input line 1386.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ERI_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ERI_REER.pdf, id=1421, 542.025pt x 325.215pt>
+File: graphs/ERI_REER.pdf Graphic file (type pdf)
+<use graphs/ERI_REER.pdf>
+Package luatex.def Info: graphs/ERI_REER.pdf  used on input line 1412.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/EST_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/EST_REER.pdf, id=1426, 542.025pt x 325.215pt>
+File: graphs/EST_REER.pdf Graphic file (type pdf)
+<use graphs/EST_REER.pdf>
+Package luatex.def Info: graphs/EST_REER.pdf  used on input line 1439.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SWZ_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SWZ_REER.pdf, id=1429, 542.025pt x 325.215pt>
+File: graphs/SWZ_REER.pdf Graphic file (type pdf)
+<use graphs/SWZ_REER.pdf>
+Package luatex.def Info: graphs/SWZ_REER.pdf  used on input line 1465.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ETH_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ETH_REER.pdf, id=1432, 542.025pt x 325.215pt>
+File: graphs/ETH_REER.pdf Graphic file (type pdf)
+<use graphs/ETH_REER.pdf>
+Package luatex.def Info: graphs/ETH_REER.pdf  used on input line 1491.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/FJI_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/FJI_REER.pdf, id=1439, 542.025pt x 325.215pt>
+File: graphs/FJI_REER.pdf Graphic file (type pdf)
+<use graphs/FJI_REER.pdf>
+Package luatex.def Info: graphs/FJI_REER.pdf  used on input line 1519.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/FIN_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/FIN_REER.pdf, id=1450, 542.025pt x 325.215pt>
+File: graphs/FIN_REER.pdf Graphic file (type pdf)
+<use graphs/FIN_REER.pdf>
+Package luatex.def Info: graphs/FIN_REER.pdf  used on input line 1549.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/FRA_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/FRA_REER.pdf, id=1461, 542.025pt x 325.215pt>
+File: graphs/FRA_REER.pdf Graphic file (type pdf)
+<use graphs/FRA_REER.pdf>
+Package luatex.def Info: graphs/FRA_REER.pdf  used on input line 1579.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GAB_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GAB_REER.pdf, id=1468, 542.025pt x 325.215pt>
+File: graphs/GAB_REER.pdf Graphic file (type pdf)
+<use graphs/GAB_REER.pdf>
+Package luatex.def Info: graphs/GAB_REER.pdf  used on input line 1607.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GMB_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GMB_REER.pdf, id=1475, 542.025pt x 325.215pt>
+File: graphs/GMB_REER.pdf Graphic file (type pdf)
+<use graphs/GMB_REER.pdf>
+Package luatex.def Info: graphs/GMB_REER.pdf  used on input line 1635.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GEO_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GEO_REER.pdf, id=1484, 542.025pt x 325.215pt>
+File: graphs/GEO_REER.pdf Graphic file (type pdf)
+<use graphs/GEO_REER.pdf>
+Package luatex.def Info: graphs/GEO_REER.pdf  used on input line 1664.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DEU_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/DEU_REER.pdf, id=1495, 542.025pt x 325.215pt>
+File: graphs/DEU_REER.pdf Graphic file (type pdf)
+<use graphs/DEU_REER.pdf>
+Package luatex.def Info: graphs/DEU_REER.pdf  used on input line 1694.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GHA_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GHA_REER.pdf, id=1502, 542.025pt x 325.215pt>
+File: graphs/GHA_REER.pdf Graphic file (type pdf)
+<use graphs/GHA_REER.pdf>
+Package luatex.def Info: graphs/GHA_REER.pdf  used on input line 1722.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GRC_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GRC_REER.pdf, id=1511, 542.025pt x 325.215pt>
+File: graphs/GRC_REER.pdf Graphic file (type pdf)
+<use graphs/GRC_REER.pdf>
+Package luatex.def Info: graphs/GRC_REER.pdf  used on input line 1751.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GRD_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GRD_REER.pdf, id=1518, 542.025pt x 325.215pt>
+File: graphs/GRD_REER.pdf Graphic file (type pdf)
+<use graphs/GRD_REER.pdf>
+Package luatex.def Info: graphs/GRD_REER.pdf  used on input line 1779.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GTM_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GTM_REER.pdf, id=1521, 542.025pt x 325.215pt>
+File: graphs/GTM_REER.pdf Graphic file (type pdf)
+<use graphs/GTM_REER.pdf>
+Package luatex.def Info: graphs/GTM_REER.pdf  used on input line 1805.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GIN_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GIN_REER.pdf, id=1524, 542.025pt x 325.215pt>
+File: graphs/GIN_REER.pdf Graphic file (type pdf)
+<use graphs/GIN_REER.pdf>
+Package luatex.def Info: graphs/GIN_REER.pdf  used on input line 1831.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GNB_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GNB_REER.pdf, id=1527, 542.025pt x 325.215pt>
+File: graphs/GNB_REER.pdf Graphic file (type pdf)
+<use graphs/GNB_REER.pdf>
+Package luatex.def Info: graphs/GNB_REER.pdf  used on input line 1857.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GUY_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GUY_REER.pdf, id=1534, 542.025pt x 325.215pt>
+File: graphs/GUY_REER.pdf Graphic file (type pdf)
+<use graphs/GUY_REER.pdf>
+Package luatex.def Info: graphs/GUY_REER.pdf  used on input line 1885.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/HTI_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/HTI_REER.pdf, id=1537, 542.025pt x 325.215pt>
+File: graphs/HTI_REER.pdf Graphic file (type pdf)
+<use graphs/HTI_REER.pdf>
+Package luatex.def Info: graphs/HTI_REER.pdf  used on input line 1911.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/HND_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/HND_REER.pdf, id=1540, 542.025pt x 325.215pt>
+File: graphs/HND_REER.pdf Graphic file (type pdf)
+<use graphs/HND_REER.pdf>
+Package luatex.def Info: graphs/HND_REER.pdf  used on input line 1937.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/HKG_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/HKG_REER.pdf, id=1549, 542.025pt x 325.215pt>
+File: graphs/HKG_REER.pdf Graphic file (type pdf)
+<use graphs/HKG_REER.pdf>
+Package luatex.def Info: graphs/HKG_REER.pdf  used on input line 1966.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/HUN_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/HUN_REER.pdf, id=1560, 542.025pt x 325.215pt>
+File: graphs/HUN_REER.pdf Graphic file (type pdf)
+<use graphs/HUN_REER.pdf>
+Package luatex.def Info: graphs/HUN_REER.pdf  used on input line 1996.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ISL_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ISL_REER.pdf, id=1567, 542.025pt x 325.215pt>
+File: graphs/ISL_REER.pdf Graphic file (type pdf)
+<use graphs/ISL_REER.pdf>
+Package luatex.def Info: graphs/ISL_REER.pdf  used on input line 2024.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IND_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/IND_REER.pdf, id=1572, 542.025pt x 325.215pt>
+File: graphs/IND_REER.pdf Graphic file (type pdf)
+<use graphs/IND_REER.pdf>
+Package luatex.def Info: graphs/IND_REER.pdf  used on input line 2051.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IDN_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/IDN_REER.pdf, id=1577, 542.025pt x 325.215pt>
+File: graphs/IDN_REER.pdf Graphic file (type pdf)
+<use graphs/IDN_REER.pdf>
+Package luatex.def Info: graphs/IDN_REER.pdf  used on input line 2078.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IRN_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/IRN_REER.pdf, id=1584, 542.025pt x 325.215pt>
+File: graphs/IRN_REER.pdf Graphic file (type pdf)
+<use graphs/IRN_REER.pdf>
+Package luatex.def Info: graphs/IRN_REER.pdf  used on input line 2106.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IRQ_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/IRQ_REER.pdf, id=1587, 542.025pt x 325.215pt>
+File: graphs/IRQ_REER.pdf Graphic file (type pdf)
+<use graphs/IRQ_REER.pdf>
+Package luatex.def Info: graphs/IRQ_REER.pdf  used on input line 2132.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IRL_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/IRL_REER.pdf, id=1598, 542.025pt x 325.215pt>
+File: graphs/IRL_REER.pdf Graphic file (type pdf)
+<use graphs/IRL_REER.pdf>
+Package luatex.def Info: graphs/IRL_REER.pdf  used on input line 2162.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ISR_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ISR_REER.pdf, id=1605, 542.025pt x 325.215pt>
+File: graphs/ISR_REER.pdf Graphic file (type pdf)
+<use graphs/ISR_REER.pdf>
+Package luatex.def Info: graphs/ISR_REER.pdf  used on input line 2190.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ITA_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ITA_REER.pdf, id=1616, 542.025pt x 325.215pt>
+File: graphs/ITA_REER.pdf Graphic file (type pdf)
+<use graphs/ITA_REER.pdf>
+Package luatex.def Info: graphs/ITA_REER.pdf  used on input line 2220.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CIV_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CIV_REER.pdf, id=1623, 542.025pt x 325.215pt>
+File: graphs/CIV_REER.pdf Graphic file (type pdf)
+<use graphs/CIV_REER.pdf>
+Package luatex.def Info: graphs/CIV_REER.pdf  used on input line 2248.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/JAM_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/JAM_REER.pdf, id=1626, 542.025pt x 325.215pt>
+File: graphs/JAM_REER.pdf Graphic file (type pdf)
+<use graphs/JAM_REER.pdf>
+Package luatex.def Info: graphs/JAM_REER.pdf  used on input line 2274.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/JPN_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/JPN_REER.pdf, id=1635, 542.025pt x 325.215pt>
+File: graphs/JPN_REER.pdf Graphic file (type pdf)
+<use graphs/JPN_REER.pdf>
+Package luatex.def Info: graphs/JPN_REER.pdf  used on input line 2303.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/JOR_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/JOR_REER.pdf, id=1638, 542.025pt x 325.215pt>
+File: graphs/JOR_REER.pdf Graphic file (type pdf)
+<use graphs/JOR_REER.pdf>
+Package luatex.def Info: graphs/JOR_REER.pdf  used on input line 2329.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KAZ_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/KAZ_REER.pdf, id=1641, 542.025pt x 325.215pt>
+File: graphs/KAZ_REER.pdf Graphic file (type pdf)
+<use graphs/KAZ_REER.pdf>
+Package luatex.def Info: graphs/KAZ_REER.pdf  used on input line 2355.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KEN_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/KEN_REER.pdf, id=1644, 542.025pt x 325.215pt>
+File: graphs/KEN_REER.pdf Graphic file (type pdf)
+<use graphs/KEN_REER.pdf>
+Package luatex.def Info: graphs/KEN_REER.pdf  used on input line 2381.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KWT_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/KWT_REER.pdf, id=1647, 542.025pt x 325.215pt>
+File: graphs/KWT_REER.pdf Graphic file (type pdf)
+<use graphs/KWT_REER.pdf>
+Package luatex.def Info: graphs/KWT_REER.pdf  used on input line 2407.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KGZ_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/KGZ_REER.pdf, id=1650, 542.025pt x 325.215pt>
+File: graphs/KGZ_REER.pdf Graphic file (type pdf)
+<use graphs/KGZ_REER.pdf>
+Package luatex.def Info: graphs/KGZ_REER.pdf  used on input line 2433.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LAO_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/LAO_REER.pdf, id=1653, 542.025pt x 325.215pt>
+File: graphs/LAO_REER.pdf Graphic file (type pdf)
+<use graphs/LAO_REER.pdf>
+Package luatex.def Info: graphs/LAO_REER.pdf  used on input line 2459.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LVA_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/LVA_REER.pdf, id=1660, 542.025pt x 325.215pt>
+File: graphs/LVA_REER.pdf Graphic file (type pdf)
+<use graphs/LVA_REER.pdf>
+Package luatex.def Info: graphs/LVA_REER.pdf  used on input line 2487.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LBN_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/LBN_REER.pdf, id=1663, 542.025pt x 325.215pt>
+File: graphs/LBN_REER.pdf Graphic file (type pdf)
+<use graphs/LBN_REER.pdf>
+Package luatex.def Info: graphs/LBN_REER.pdf  used on input line 2513.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LSO_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/LSO_REER.pdf, id=1672, 542.025pt x 325.215pt>
+File: graphs/LSO_REER.pdf Graphic file (type pdf)
+<use graphs/LSO_REER.pdf>
+Package luatex.def Info: graphs/LSO_REER.pdf  used on input line 2542.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LBR_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/LBR_REER.pdf, id=1675, 542.025pt x 325.215pt>
+File: graphs/LBR_REER.pdf Graphic file (type pdf)
+<use graphs/LBR_REER.pdf>
+Package luatex.def Info: graphs/LBR_REER.pdf  used on input line 2568.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LBY_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/LBY_REER.pdf, id=1678, 542.025pt x 325.215pt>
+File: graphs/LBY_REER.pdf Graphic file (type pdf)
+<use graphs/LBY_REER.pdf>
+Package luatex.def Info: graphs/LBY_REER.pdf  used on input line 2594.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LTU_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/LTU_REER.pdf, id=1683, 542.025pt x 325.215pt>
+File: graphs/LTU_REER.pdf Graphic file (type pdf)
+<use graphs/LTU_REER.pdf>
+Package luatex.def Info: graphs/LTU_REER.pdf  used on input line 2621.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LUX_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/LUX_REER.pdf, id=1690, 542.025pt x 325.215pt>
+File: graphs/LUX_REER.pdf Graphic file (type pdf)
+<use graphs/LUX_REER.pdf>
+Package luatex.def Info: graphs/LUX_REER.pdf  used on input line 2649.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MKD_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MKD_REER.pdf, id=1697, 542.025pt x 325.215pt>
+File: graphs/MKD_REER.pdf Graphic file (type pdf)
+<use graphs/MKD_REER.pdf>
+Package luatex.def Info: graphs/MKD_REER.pdf  used on input line 2677.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MDG_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MDG_REER.pdf, id=1700, 542.025pt x 325.215pt>
+File: graphs/MDG_REER.pdf Graphic file (type pdf)
+<use graphs/MDG_REER.pdf>
+Package luatex.def Info: graphs/MDG_REER.pdf  used on input line 2703.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MWI_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MWI_REER.pdf, id=1707, 542.025pt x 325.215pt>
+File: graphs/MWI_REER.pdf Graphic file (type pdf)
+<use graphs/MWI_REER.pdf>
+Package luatex.def Info: graphs/MWI_REER.pdf  used on input line 2731.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MYS_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MYS_REER.pdf, id=1714, 542.025pt x 325.215pt>
+File: graphs/MYS_REER.pdf Graphic file (type pdf)
+<use graphs/MYS_REER.pdf>
+Package luatex.def Info: graphs/MYS_REER.pdf  used on input line 2759.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MDV_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MDV_REER.pdf, id=1717, 542.025pt x 325.215pt>
+File: graphs/MDV_REER.pdf Graphic file (type pdf)
+<use graphs/MDV_REER.pdf>
+Package luatex.def Info: graphs/MDV_REER.pdf  used on input line 2785.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MLI_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MLI_REER.pdf, id=1720, 542.025pt x 325.215pt>
+File: graphs/MLI_REER.pdf Graphic file (type pdf)
+<use graphs/MLI_REER.pdf>
+Package luatex.def Info: graphs/MLI_REER.pdf  used on input line 2811.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MLT_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MLT_REER.pdf, id=1727, 542.025pt x 325.215pt>
+File: graphs/MLT_REER.pdf Graphic file (type pdf)
+<use graphs/MLT_REER.pdf>
+Package luatex.def Info: graphs/MLT_REER.pdf  used on input line 2839.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MRT_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MRT_REER.pdf, id=1730, 542.025pt x 325.215pt>
+File: graphs/MRT_REER.pdf Graphic file (type pdf)
+<use graphs/MRT_REER.pdf>
+Package luatex.def Info: graphs/MRT_REER.pdf  used on input line 2865.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MUS_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MUS_REER.pdf, id=1733, 542.025pt x 325.215pt>
+File: graphs/MUS_REER.pdf Graphic file (type pdf)
+<use graphs/MUS_REER.pdf>
+Package luatex.def Info: graphs/MUS_REER.pdf  used on input line 2891.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MEX_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MEX_REER.pdf, id=1740, 542.025pt x 325.215pt>
+File: graphs/MEX_REER.pdf Graphic file (type pdf)
+<use graphs/MEX_REER.pdf>
+Package luatex.def Info: graphs/MEX_REER.pdf  used on input line 2919.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MDA_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MDA_REER.pdf, id=1747, 542.025pt x 325.215pt>
+File: graphs/MDA_REER.pdf Graphic file (type pdf)
+<use graphs/MDA_REER.pdf>
+Package luatex.def Info: graphs/MDA_REER.pdf  used on input line 2947.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MNG_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MNG_REER.pdf, id=1750, 542.025pt x 325.215pt>
+File: graphs/MNG_REER.pdf Graphic file (type pdf)
+<use graphs/MNG_REER.pdf>
+Package luatex.def Info: graphs/MNG_REER.pdf  used on input line 2973.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MAR_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MAR_REER.pdf, id=1759, 542.025pt x 325.215pt>
+File: graphs/MAR_REER.pdf Graphic file (type pdf)
+<use graphs/MAR_REER.pdf>
+Package luatex.def Info: graphs/MAR_REER.pdf  used on input line 3002.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MOZ_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MOZ_REER.pdf, id=1762, 542.025pt x 325.215pt>
+File: graphs/MOZ_REER.pdf Graphic file (type pdf)
+<use graphs/MOZ_REER.pdf>
+Package luatex.def Info: graphs/MOZ_REER.pdf  used on input line 3028.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NAM_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/NAM_REER.pdf, id=1765, 542.025pt x 325.215pt>
+File: graphs/NAM_REER.pdf Graphic file (type pdf)
+<use graphs/NAM_REER.pdf>
+Package luatex.def Info: graphs/NAM_REER.pdf  used on input line 3054.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NPL_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/NPL_REER.pdf, id=1768, 542.025pt x 325.215pt>
+File: graphs/NPL_REER.pdf Graphic file (type pdf)
+<use graphs/NPL_REER.pdf>
+Package luatex.def Info: graphs/NPL_REER.pdf  used on input line 3080.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NLD_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/NLD_REER.pdf, id=1779, 542.025pt x 325.215pt>
+File: graphs/NLD_REER.pdf Graphic file (type pdf)
+<use graphs/NLD_REER.pdf>
+Package luatex.def Info: graphs/NLD_REER.pdf  used on input line 3110.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ANT_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ANT_REER.pdf, id=1786, 542.025pt x 325.215pt>
+File: graphs/ANT_REER.pdf Graphic file (type pdf)
+<use graphs/ANT_REER.pdf>
+Package luatex.def Info: graphs/ANT_REER.pdf  used on input line 3138.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NZL_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/NZL_REER.pdf, id=1793, 542.025pt x 325.215pt>
+File: graphs/NZL_REER.pdf Graphic file (type pdf)
+<use graphs/NZL_REER.pdf>
+Package luatex.def Info: graphs/NZL_REER.pdf  used on input line 3166.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NIC_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/NIC_REER.pdf, id=1802, 542.025pt x 325.215pt>
+File: graphs/NIC_REER.pdf Graphic file (type pdf)
+<use graphs/NIC_REER.pdf>
+Package luatex.def Info: graphs/NIC_REER.pdf  used on input line 3195.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NER_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/NER_REER.pdf, id=1805, 542.025pt x 325.215pt>
+File: graphs/NER_REER.pdf Graphic file (type pdf)
+<use graphs/NER_REER.pdf>
+Package luatex.def Info: graphs/NER_REER.pdf  used on input line 3221.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NGA_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/NGA_REER.pdf, id=1812, 542.025pt x 325.215pt>
+File: graphs/NGA_REER.pdf Graphic file (type pdf)
+<use graphs/NGA_REER.pdf>
+Package luatex.def Info: graphs/NGA_REER.pdf  used on input line 3249.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NOR_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/NOR_REER.pdf, id=1823, 542.025pt x 325.215pt>
+File: graphs/NOR_REER.pdf Graphic file (type pdf)
+<use graphs/NOR_REER.pdf>
+Package luatex.def Info: graphs/NOR_REER.pdf  used on input line 3279.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/OMN_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/OMN_REER.pdf, id=1826, 542.025pt x 325.215pt>
+File: graphs/OMN_REER.pdf Graphic file (type pdf)
+<use graphs/OMN_REER.pdf>
+Package luatex.def Info: graphs/OMN_REER.pdf  used on input line 3305.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PAK_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/PAK_REER.pdf, id=1833, 542.025pt x 325.215pt>
+File: graphs/PAK_REER.pdf Graphic file (type pdf)
+<use graphs/PAK_REER.pdf>
+Package luatex.def Info: graphs/PAK_REER.pdf  used on input line 3333.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PAN_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/PAN_REER.pdf, id=1836, 542.025pt x 325.215pt>
+File: graphs/PAN_REER.pdf Graphic file (type pdf)
+<use graphs/PAN_REER.pdf>
+Package luatex.def Info: graphs/PAN_REER.pdf  used on input line 3359.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PNG_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/PNG_REER.pdf, id=1843, 542.025pt x 325.215pt>
+File: graphs/PNG_REER.pdf Graphic file (type pdf)
+<use graphs/PNG_REER.pdf>
+Package luatex.def Info: graphs/PNG_REER.pdf  used on input line 3387.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PRY_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/PRY_REER.pdf, id=1850, 542.025pt x 325.215pt>
+File: graphs/PRY_REER.pdf Graphic file (type pdf)
+<use graphs/PRY_REER.pdf>
+Package luatex.def Info: graphs/PRY_REER.pdf  used on input line 3415.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PER_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/PER_REER.pdf, id=1855, 542.025pt x 325.215pt>
+File: graphs/PER_REER.pdf Graphic file (type pdf)
+<use graphs/PER_REER.pdf>
+Package luatex.def Info: graphs/PER_REER.pdf  used on input line 3442.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PHL_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/PHL_REER.pdf, id=1862, 542.025pt x 325.215pt>
+File: graphs/PHL_REER.pdf Graphic file (type pdf)
+<use graphs/PHL_REER.pdf>
+Package luatex.def Info: graphs/PHL_REER.pdf  used on input line 3470.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/POL_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/POL_REER.pdf, id=1873, 542.025pt x 325.215pt>
+File: graphs/POL_REER.pdf Graphic file (type pdf)
+<use graphs/POL_REER.pdf>
+Package luatex.def Info: graphs/POL_REER.pdf  used on input line 3500.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PRT_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/PRT_REER.pdf, id=1882, 542.025pt x 325.215pt>
+File: graphs/PRT_REER.pdf Graphic file (type pdf)
+<use graphs/PRT_REER.pdf>
+Package luatex.def Info: graphs/PRT_REER.pdf  used on input line 3529.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/QAT_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/QAT_REER.pdf, id=1885, 542.025pt x 325.215pt>
+File: graphs/QAT_REER.pdf Graphic file (type pdf)
+<use graphs/QAT_REER.pdf>
+Package luatex.def Info: graphs/QAT_REER.pdf  used on input line 3555.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/COG_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/COG_REER.pdf, id=1888, 542.025pt x 325.215pt>
+File: graphs/COG_REER.pdf Graphic file (type pdf)
+<use graphs/COG_REER.pdf>
+Package luatex.def Info: graphs/COG_REER.pdf  used on input line 3581.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ROU_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ROU_REER.pdf, id=1897, 542.025pt x 325.215pt>
+File: graphs/ROU_REER.pdf Graphic file (type pdf)
+<use graphs/ROU_REER.pdf>
+Package luatex.def Info: graphs/ROU_REER.pdf  used on input line 3610.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/RUS_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/RUS_REER.pdf, id=1906, 542.025pt x 325.215pt>
+File: graphs/RUS_REER.pdf Graphic file (type pdf)
+<use graphs/RUS_REER.pdf>
+Package luatex.def Info: graphs/RUS_REER.pdf  used on input line 3639.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/RWA_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/RWA_REER.pdf, id=1909, 542.025pt x 325.215pt>
+File: graphs/RWA_REER.pdf Graphic file (type pdf)
+<use graphs/RWA_REER.pdf>
+Package luatex.def Info: graphs/RWA_REER.pdf  used on input line 3665.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/STP_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/STP_REER.pdf, id=1912, 542.025pt x 325.215pt>
+File: graphs/STP_REER.pdf Graphic file (type pdf)
+<use graphs/STP_REER.pdf>
+Package luatex.def Info: graphs/STP_REER.pdf  used on input line 3691.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SAU_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SAU_REER.pdf, id=1919, 542.025pt x 325.215pt>
+File: graphs/SAU_REER.pdf Graphic file (type pdf)
+<use graphs/SAU_REER.pdf>
+Package luatex.def Info: graphs/SAU_REER.pdf  used on input line 3719.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SEN_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SEN_REER.pdf, id=1922, 542.025pt x 325.215pt>
+File: graphs/SEN_REER.pdf Graphic file (type pdf)
+<use graphs/SEN_REER.pdf>
+Package luatex.def Info: graphs/SEN_REER.pdf  used on input line 3745.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SRB_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SRB_REER.pdf, id=1927, 542.025pt x 325.215pt>
+File: graphs/SRB_REER.pdf Graphic file (type pdf)
+<use graphs/SRB_REER.pdf>
+Package luatex.def Info: graphs/SRB_REER.pdf  used on input line 3772.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SYC_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SYC_REER.pdf, id=1930, 542.025pt x 325.215pt>
+File: graphs/SYC_REER.pdf Graphic file (type pdf)
+<use graphs/SYC_REER.pdf>
+Package luatex.def Info: graphs/SYC_REER.pdf  used on input line 3798.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SLE_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SLE_REER.pdf, id=1937, 542.025pt x 325.215pt>
+File: graphs/SLE_REER.pdf Graphic file (type pdf)
+<use graphs/SLE_REER.pdf>
+Package luatex.def Info: graphs/SLE_REER.pdf  used on input line 3826.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SGP_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SGP_REER.pdf, id=1944, 542.025pt x 325.215pt>
+File: graphs/SGP_REER.pdf Graphic file (type pdf)
+<use graphs/SGP_REER.pdf>
+Package luatex.def Info: graphs/SGP_REER.pdf  used on input line 3854.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SVK_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SVK_REER.pdf, id=1951, 542.025pt x 325.215pt>
+File: graphs/SVK_REER.pdf Graphic file (type pdf)
+<use graphs/SVK_REER.pdf>
+Package luatex.def Info: graphs/SVK_REER.pdf  used on input line 3882.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SVN_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SVN_REER.pdf, id=1956, 542.025pt x 325.215pt>
+File: graphs/SVN_REER.pdf Graphic file (type pdf)
+<use graphs/SVN_REER.pdf>
+Package luatex.def Info: graphs/SVN_REER.pdf  used on input line 3909.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ZAF_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ZAF_REER.pdf, id=1963, 542.025pt x 325.215pt>
+File: graphs/ZAF_REER.pdf Graphic file (type pdf)
+<use graphs/ZAF_REER.pdf>
+Package luatex.def Info: graphs/ZAF_REER.pdf  used on input line 3937.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KOR_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/KOR_REER.pdf, id=1972, 542.025pt x 325.215pt>
+File: graphs/KOR_REER.pdf Graphic file (type pdf)
+<use graphs/KOR_REER.pdf>
+Package luatex.def Info: graphs/KOR_REER.pdf  used on input line 3966.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ESP_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ESP_REER.pdf, id=1983, 542.025pt x 325.215pt>
+File: graphs/ESP_REER.pdf Graphic file (type pdf)
+<use graphs/ESP_REER.pdf>
+Package luatex.def Info: graphs/ESP_REER.pdf  used on input line 3996.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LKA_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/LKA_REER.pdf, id=1986, 542.025pt x 325.215pt>
+File: graphs/LKA_REER.pdf Graphic file (type pdf)
+<use graphs/LKA_REER.pdf>
+Package luatex.def Info: graphs/LKA_REER.pdf  used on input line 4022.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SDN_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SDN_REER.pdf, id=1989, 542.025pt x 325.215pt>
+File: graphs/SDN_REER.pdf Graphic file (type pdf)
+<use graphs/SDN_REER.pdf>
+Package luatex.def Info: graphs/SDN_REER.pdf  used on input line 4048.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SUR_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SUR_REER.pdf, id=1992, 542.025pt x 325.215pt>
+File: graphs/SUR_REER.pdf Graphic file (type pdf)
+<use graphs/SUR_REER.pdf>
+Package luatex.def Info: graphs/SUR_REER.pdf  used on input line 4074.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SWE_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SWE_REER.pdf, id=2003, 542.025pt x 325.215pt>
+File: graphs/SWE_REER.pdf Graphic file (type pdf)
+<use graphs/SWE_REER.pdf>
+Package luatex.def Info: graphs/SWE_REER.pdf  used on input line 4104.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CHE_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CHE_REER.pdf, id=2014, 542.025pt x 325.215pt>
+File: graphs/CHE_REER.pdf Graphic file (type pdf)
+<use graphs/CHE_REER.pdf>
+Package luatex.def Info: graphs/CHE_REER.pdf  used on input line 4134.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SYR_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SYR_REER.pdf, id=2017, 542.025pt x 325.215pt>
+File: graphs/SYR_REER.pdf Graphic file (type pdf)
+<use graphs/SYR_REER.pdf>
+Package luatex.def Info: graphs/SYR_REER.pdf  used on input line 4160.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TWN_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/TWN_REER.pdf, id=2022, 542.025pt x 325.215pt>
+File: graphs/TWN_REER.pdf Graphic file (type pdf)
+<use graphs/TWN_REER.pdf>
+Package luatex.def Info: graphs/TWN_REER.pdf  used on input line 4187.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TJK_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/TJK_REER.pdf, id=2025, 542.025pt x 325.215pt>
+File: graphs/TJK_REER.pdf Graphic file (type pdf)
+<use graphs/TJK_REER.pdf>
+Package luatex.def Info: graphs/TJK_REER.pdf  used on input line 4213.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TZA_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/TZA_REER.pdf, id=2028, 542.025pt x 325.215pt>
+File: graphs/TZA_REER.pdf Graphic file (type pdf)
+<use graphs/TZA_REER.pdf>
+Package luatex.def Info: graphs/TZA_REER.pdf  used on input line 4239.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/THA_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/THA_REER.pdf, id=2033, 542.025pt x 325.215pt>
+File: graphs/THA_REER.pdf Graphic file (type pdf)
+<use graphs/THA_REER.pdf>
+Package luatex.def Info: graphs/THA_REER.pdf  used on input line 4266.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TGO_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/TGO_REER.pdf, id=2040, 542.025pt x 325.215pt>
+File: graphs/TGO_REER.pdf Graphic file (type pdf)
+<use graphs/TGO_REER.pdf>
+Package luatex.def Info: graphs/TGO_REER.pdf  used on input line 4294.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TTO_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/TTO_REER.pdf, id=2047, 542.025pt x 325.215pt>
+File: graphs/TTO_REER.pdf Graphic file (type pdf)
+<use graphs/TTO_REER.pdf>
+Package luatex.def Info: graphs/TTO_REER.pdf  used on input line 4322.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TUN_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/TUN_REER.pdf, id=2054, 542.025pt x 325.215pt>
+File: graphs/TUN_REER.pdf Graphic file (type pdf)
+<use graphs/TUN_REER.pdf>
+Package luatex.def Info: graphs/TUN_REER.pdf  used on input line 4350.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TUR_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/TUR_REER.pdf, id=2059, 542.025pt x 325.215pt>
+File: graphs/TUR_REER.pdf Graphic file (type pdf)
+<use graphs/TUR_REER.pdf>
+Package luatex.def Info: graphs/TUR_REER.pdf  used on input line 4377.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TKM_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/TKM_REER.pdf, id=2062, 542.025pt x 325.215pt>
+File: graphs/TKM_REER.pdf Graphic file (type pdf)
+<use graphs/TKM_REER.pdf>
+Package luatex.def Info: graphs/TKM_REER.pdf  used on input line 4403.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/UGA_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/UGA_REER.pdf, id=2069, 542.025pt x 325.215pt>
+File: graphs/UGA_REER.pdf Graphic file (type pdf)
+<use graphs/UGA_REER.pdf>
+Package luatex.def Info: graphs/UGA_REER.pdf  used on input line 4431.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/UKR_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/UKR_REER.pdf, id=2076, 542.025pt x 325.215pt>
+File: graphs/UKR_REER.pdf Graphic file (type pdf)
+<use graphs/UKR_REER.pdf>
+Package luatex.def Info: graphs/UKR_REER.pdf  used on input line 4459.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ARE_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ARE_REER.pdf, id=2081, 542.025pt x 325.215pt>
+File: graphs/ARE_REER.pdf Graphic file (type pdf)
+<use graphs/ARE_REER.pdf>
+Package luatex.def Info: graphs/ARE_REER.pdf  used on input line 4486.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GBR_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GBR_REER.pdf, id=2092, 542.025pt x 325.215pt>
+File: graphs/GBR_REER.pdf Graphic file (type pdf)
+<use graphs/GBR_REER.pdf>
+Package luatex.def Info: graphs/GBR_REER.pdf  used on input line 4516.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/USA_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/USA_REER.pdf, id=2101, 542.025pt x 325.215pt>
+File: graphs/USA_REER.pdf Graphic file (type pdf)
+<use graphs/USA_REER.pdf>
+Package luatex.def Info: graphs/USA_REER.pdf  used on input line 4545.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/URY_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/URY_REER.pdf, id=2108, 542.025pt x 325.215pt>
+File: graphs/URY_REER.pdf Graphic file (type pdf)
+<use graphs/URY_REER.pdf>
+Package luatex.def Info: graphs/URY_REER.pdf  used on input line 4573.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/UZB_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/UZB_REER.pdf, id=2111, 542.025pt x 325.215pt>
+File: graphs/UZB_REER.pdf Graphic file (type pdf)
+<use graphs/UZB_REER.pdf>
+Package luatex.def Info: graphs/UZB_REER.pdf  used on input line 4599.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/VEN_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/VEN_REER.pdf, id=2118, 542.025pt x 325.215pt>
+File: graphs/VEN_REER.pdf Graphic file (type pdf)
+<use graphs/VEN_REER.pdf>
+Package luatex.def Info: graphs/VEN_REER.pdf  used on input line 4627.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/VNM_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/VNM_REER.pdf, id=2121, 542.025pt x 325.215pt>
+File: graphs/VNM_REER.pdf Graphic file (type pdf)
+<use graphs/VNM_REER.pdf>
+Package luatex.def Info: graphs/VNM_REER.pdf  used on input line 4653.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/YEM_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/YEM_REER.pdf, id=2124, 542.025pt x 325.215pt>
+File: graphs/YEM_REER.pdf Graphic file (type pdf)
+<use graphs/YEM_REER.pdf>
+Package luatex.def Info: graphs/YEM_REER.pdf  used on input line 4679.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ZMB_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ZMB_REER.pdf, id=2133, 542.025pt x 325.215pt>
+File: graphs/ZMB_REER.pdf Graphic file (type pdf)
+<use graphs/ZMB_REER.pdf>
+Package luatex.def Info: graphs/ZMB_REER.pdf  used on input line 4708.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ATG_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ATG_REER.pdf, id=2140, 542.025pt x 325.215pt>
+File: graphs/ATG_REER.pdf Graphic file (type pdf)
+<use graphs/ATG_REER.pdf>
+Package luatex.def Info: graphs/ATG_REER.pdf  used on input line 4736.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/COM_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/COM_REER.pdf, id=2143, 542.025pt x 325.215pt>
+File: graphs/COM_REER.pdf Graphic file (type pdf)
+<use graphs/COM_REER.pdf>
+Package luatex.def Info: graphs/COM_REER.pdf  used on input line 4762.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KIR_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/KIR_REER.pdf, id=2146, 542.025pt x 325.215pt>
+File: graphs/KIR_REER.pdf Graphic file (type pdf)
+<use graphs/KIR_REER.pdf>
+Package luatex.def Info: graphs/KIR_REER.pdf  used on input line 4788.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KNA_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/KNA_REER.pdf, id=2151, 542.025pt x 325.215pt>
+File: graphs/KNA_REER.pdf Graphic file (type pdf)
+<use graphs/KNA_REER.pdf>
+Package luatex.def Info: graphs/KNA_REER.pdf  used on input line 4815.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LCA_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/LCA_REER.pdf, id=2158, 542.025pt x 325.215pt>
+File: graphs/LCA_REER.pdf Graphic file (type pdf)
+<use graphs/LCA_REER.pdf>
+Package luatex.def Info: graphs/LCA_REER.pdf  used on input line 4843.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/VCT_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/VCT_REER.pdf, id=2165, 542.025pt x 325.215pt>
+File: graphs/VCT_REER.pdf Graphic file (type pdf)
+<use graphs/VCT_REER.pdf>
+Package luatex.def Info: graphs/VCT_REER.pdf  used on input line 4871.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/WSM_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/WSM_REER.pdf, id=2172, 542.025pt x 325.215pt>
+File: graphs/WSM_REER.pdf Graphic file (type pdf)
+<use graphs/WSM_REER.pdf>
+Package luatex.def Info: graphs/WSM_REER.pdf  used on input line 4899.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SLB_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SLB_REER.pdf, id=2179, 542.025pt x 325.215pt>
+File: graphs/SLB_REER.pdf Graphic file (type pdf)
+<use graphs/SLB_REER.pdf>
+Package luatex.def Info: graphs/SLB_REER.pdf  used on input line 4927.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TON_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/TON_REER.pdf, id=2186, 542.025pt x 325.215pt>
+File: graphs/TON_REER.pdf Graphic file (type pdf)
+<use graphs/TON_REER.pdf>
+Package luatex.def Info: graphs/TON_REER.pdf  used on input line 4955.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/VUT_REER.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/VUT_REER.pdf, id=2189, 542.025pt x 325.215pt>
+File: graphs/VUT_REER.pdf Graphic file (type pdf)
+<use graphs/VUT_REER.pdf>
+Package luatex.def Info: graphs/VUT_REER.pdf  used on input line 4981.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.3'
+[3]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.4'
+[4<./graphs/AFG_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.5'
+[5<./graphs/ALB_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.6'
+[6<./graphs/DZA_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[7<./graphs/AGO_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[8<./graphs/ARG_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[9<./graphs/ARM_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[10<./graphs/AUS_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[11<./graphs/AUT_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[12<./graphs/AZE_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[13<./graphs/BHS_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[14<./graphs/BHR_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[15<./graphs/BGD_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[16<./graphs/BRB_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[17<./graphs/BLR_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[18<./graphs/BEL_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[19<./graphs/BLZ_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[20<./graphs/BEN_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[21<./graphs/BTN_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[22<./graphs/BOL_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[23<./graphs/BIH_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[24<./graphs/BWA_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[25<./graphs/BRA_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[26<./graphs/BRN_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[27<./graphs/BGR_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[28<./graphs/BFA_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[29<./graphs/BDI_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[30<./graphs/KHM_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[31<./graphs/CMR_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[32<./graphs/CAN_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[33<./graphs/CPV_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[34<./graphs/CAF_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[35<./graphs/TCD_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[36<./graphs/CHL_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[37<./graphs/CHN_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[38<./graphs/COL_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[39<./graphs/CRI_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[40<./graphs/HRV_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[41<./graphs/CYP_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[42<./graphs/CZE_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[43<./graphs/CSK_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[44<./graphs/COD_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[45<./graphs/DNK_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[46<./graphs/DJI_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[47<./graphs/DMA_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[48<./graphs/DOM_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[49<./graphs/ECU_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[50<./graphs/EGY_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[51<./graphs/SLV_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[52<./graphs/GNQ_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[53<./graphs/ERI_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[54<./graphs/EST_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[55<./graphs/SWZ_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[56<./graphs/ETH_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[57<./graphs/FJI_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[58<./graphs/FIN_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[59<./graphs/FRA_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[60<./graphs/GAB_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[61<./graphs/GMB_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[62<./graphs/GEO_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[63<./graphs/DEU_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[64<./graphs/GHA_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[65<./graphs/GRC_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[66<./graphs/GRD_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[67<./graphs/GTM_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[68<./graphs/GIN_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[69<./graphs/GNB_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[70<./graphs/GUY_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[71<./graphs/HTI_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[72<./graphs/HND_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[73<./graphs/HKG_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[74<./graphs/HUN_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[75<./graphs/ISL_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[76<./graphs/IND_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[77<./graphs/IDN_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[78<./graphs/IRN_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[79<./graphs/IRQ_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[80<./graphs/IRL_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[81<./graphs/ISR_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[82<./graphs/ITA_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[83<./graphs/CIV_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[84<./graphs/JAM_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[85<./graphs/JPN_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[86<./graphs/JOR_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[87<./graphs/KAZ_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[88<./graphs/KEN_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[89<./graphs/KWT_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[90<./graphs/KGZ_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[91<./graphs/LAO_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[92<./graphs/LVA_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[93<./graphs/LBN_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[94<./graphs/LSO_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[95<./graphs/LBR_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[96<./graphs/LBY_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[97<./graphs/LTU_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[98<./graphs/LUX_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[99<./graphs/MKD_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[100<./graphs/MDG_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[101<./graphs/MWI_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[102<./graphs/MYS_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[103<./graphs/MDV_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[104<./graphs/MLI_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[105<./graphs/MLT_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[106<./graphs/MRT_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[107<./graphs/MUS_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[108<./graphs/MEX_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[109<./graphs/MDA_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[110<./graphs/MNG_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[111<./graphs/MAR_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[112<./graphs/MOZ_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[113<./graphs/NAM_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[114<./graphs/NPL_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[115<./graphs/NLD_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[116<./graphs/ANT_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[117<./graphs/NZL_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[118<./graphs/NIC_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[119<./graphs/NER_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[120<./graphs/NGA_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[121<./graphs/NOR_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[122<./graphs/OMN_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[123<./graphs/PAK_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[124<./graphs/PAN_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[125<./graphs/PNG_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[126<./graphs/PRY_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[127<./graphs/PER_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[128<./graphs/PHL_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[129<./graphs/POL_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[130<./graphs/PRT_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[131<./graphs/QAT_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[132<./graphs/COG_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[133<./graphs/ROU_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[134<./graphs/RUS_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[135<./graphs/RWA_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[136<./graphs/STP_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[137<./graphs/SAU_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[138<./graphs/SEN_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[139<./graphs/SRB_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[140<./graphs/SYC_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[141<./graphs/SLE_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[142<./graphs/SGP_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[143<./graphs/SVK_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[144<./graphs/SVN_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[145<./graphs/ZAF_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[146<./graphs/KOR_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[147<./graphs/ESP_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[148<./graphs/LKA_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[149<./graphs/SDN_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[150<./graphs/SUR_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[151<./graphs/SWE_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[152<./graphs/CHE_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[153<./graphs/SYR_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[154<./graphs/TWN_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[155<./graphs/TJK_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[156<./graphs/TZA_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[157<./graphs/THA_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[158<./graphs/TGO_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[159<./graphs/TTO_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[160<./graphs/TUN_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[161<./graphs/TUR_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[162<./graphs/TKM_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[163<./graphs/UGA_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[164<./graphs/UKR_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[165<./graphs/ARE_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[166<./graphs/GBR_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[167<./graphs/USA_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[168<./graphs/URY_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[169<./graphs/UZB_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[170<./graphs/VEN_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[171<./graphs/VNM_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[172<./graphs/YEM_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[173<./graphs/ZMB_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[174<./graphs/ATG_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[175<./graphs/COM_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[176<./graphs/KIR_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[177<./graphs/KNA_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[178<./graphs/LCA_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[179<./graphs/VCT_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[180<./graphs/WSM_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[181<./graphs/SLB_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[182<./graphs/TON_REER.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[183<./graphs/VUT_REER.pdf>] (./REER.bbl
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 10
+.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+))
+
+[184] (./REER.aux)
+ ***********
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+ ***********
+Package rerunfilecheck Info: File `REER.out' has not changed.
+(rerunfilecheck)             Checksum: 8A4793555C7F64B26B1B604A43CFB0EC;16564.
+)
+
+Here is how much of LuaTeX's memory you used:
+ 23805 strings out of 475664
+ 931564,1144653 words of node,token memory allocated
+ 463 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 5 attribute, 58 glue_spec,
+ 5 attribute_list, 2 write nodes
+   avail lists: 1:1,2:40969,3:4363,4:6702,5:5913,6:1495,7:64106,8:63,9:16484,10:
+5,11:2266
+ 44812 multiletter control sequences out of 65536+600000
+ 55 fonts using 3596855 bytes
+ 105i,12n,100p,464b,576s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{C:/Users/lehbib/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/U
+sers/lehbib/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:
+/Users/lehbib/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:
+/Users/lehbib/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
+Output written on REER.pdf (189 pages, 19069164 bytes).
+
+PDF statistics: 34651 PDF objects out of 38293 (max. 8388607)
+ 736 named destinations out of 1000 (max. 131072)
+ 1464 words of extra memory for PDF output out of 10000 (max. 100000000)
+

@@ -17,10 +17,6 @@
 * Clear the panel
 clear
 
-* Create temporary file to store the data
-tempfile temp_master
-save `temp_master', replace emptyok
-
 * Open the data
 use "$data_final/clean_data_wide", clear
 

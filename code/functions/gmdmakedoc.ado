@@ -252,10 +252,20 @@ foreach iso of loc countries {
 		qui local scatter_plot `scatter_plot' (scatter `var' year if inrange(year,`ymin',`ymax'), msymbol(circle) msize(small) mcolor(`c_color') jitter(1) mlwidth(vvthin))
 		local counter = `counter' + 1
 	}
+	
+	* Extract the forecast year
+	qui su year if strpos(source, "forecast")
+	if r(N) > 0 {
+		local forecast_year = r(min)
+	}
+	else {
+		local current_year = year(date(c(current_date), "DMY"))
+		local forecast_year = `current_year' + 1
+	}
 
 	* Create temporary variable for area_max
 	tempvar area_max
-	qui gen `area_max' = `exp_max' if year >= 2024
+	qui gen `area_max' = `exp_max' if year >= `forecast_year'
 	qui sum `area_max' 
 	local has_data = r(N)
 	
@@ -273,7 +283,7 @@ foreach iso of loc countries {
 		qui levelsof year if source_change == 1, local(xlevels)
 		* Plot the graphs together
 		qui twoway ///
-		(area `area_max' year if year >= 2024 & `has_data' > 0, color(gs14) base(`area_min')) /// Shaded area for provisional data
+		(area `area_max' year if year >= `forecast_year' & `has_data' > 0, color(gs14) base(`area_min')) /// Shaded area for provisional data
 		(line `varlist' year, lwidth(medium) lcolor(black)) `scatter_plot' /// 
 		   if inrange(year,`ymin',`ymax'), ///
 		   graphregion(color(white)) plotregion(color(white) margin(zero)) ///
@@ -366,8 +376,8 @@ qui destring *_year, replace
 qui gen notes = ""
 quietly {
     gen base_overlap = (start_year <= 2018 & end_year > 2018)
-    replace notes = "Baseline source, overlaps with base year 2018" if base_overlap == 1
-    replace notes = "Spliced using overlapping data in " + string(end_year + 1) if base_overlap == 0 & x1 == 100
+    replace notes = "Baseline source, overlaps with base year 2018." if base_overlap == 1
+    replace notes = "Spliced using overlapping data in " + string(end_year + 1) + "." if base_overlap == 0 & x1 == 100
     replace notes = "Spliced using overlapping data in " + string(end_year + 1) + ": (ratio = " + string(x1) + "\%)." if base_overlap == 0 & x1 != 100   
     drop base_overlap
 }
@@ -436,7 +446,7 @@ file write mytex "\usepackage[utf8]{inputenc}" _n
 file write mytex "\usepackage[T1]{fontenc}" _n
 file write mytex "\usepackage{graphicx}" _n
 file write mytex "\usepackage{booktabs}" _n
-file write mytex "\usepackage[margin=0.5in, top=0.5in, headsep=0.1in]{geometry}" _n
+file write mytex "\usepackage[margin=0.5in, top=0.5in, headsep=0.1in, paperheight=16in, paperwidth=11in]{geometry}" _n
 file write mytex "\usepackage{caption}" _n
 file write mytex "\usepackage{float}" _n
 file write mytex "\usepackage[authoryear,round]{natbib}" _n

@@ -1,0 +1,169 @@
+\begin{thebibliography}{24}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Asian Development Bank}(2024)]{ADB}
+{Asian Development Bank}.
+\newblock {Key Indicators Database (KIDB)}, 2024.
+\newblock URL \url{https://kidb.adb.org}.
+
+\bibitem[{Bank of Japan}(2024)]{CS1_JPN}
+{Bank of Japan}.
+\newblock {Historical Statistics}, 2024.
+\newblock URL \url{https://www.imes.boj.or.jp/en/historical/hstat/hstat.html}.
+
+\bibitem[Bordo et~al.(2001)Bordo, Eichengreen, Klingebiel, and
+  Martinez-Peria]{BORDO}
+M.~Bordo, B.~Eichengreen, D.~Klingebiel, and M.~S. Martinez-Peria.
+\newblock Is the crisis problem growing more severe?
+\newblock \emph{Economic Policy}, 16\penalty0 (32):\penalty0 52--82, 2001.
+\newblock URL \url{https://rucore.libraries.rutgers.edu/rutgers-lib/41466/}.
+
+\bibitem[Carter et~al.(2006)Carter, Gartner, Haines, Olmstead, Sutch, Wright,
+  et~al.]{CS2_USA}
+Susan~B Carter, Scott~Sigmund Gartner, Michael~R Haines, Alan~L Olmstead,
+  Richard Sutch, Gavin Wright, et~al.
+\newblock \emph{Historical Statistics of the United States: Millennial
+  Edition}, volume~3.
+\newblock Cambridge University Press New York, 2006.
+
+\bibitem[{Economic Commission for Latin America and the
+  Caribbean}(2024)]{CEPAC}
+{Economic Commission for Latin America and the Caribbean}.
+\newblock Economic commission for latin america and the caribbean, 2024.
+\newblock URL \url{https://www.cepal.org/en}.
+\newblock Accessed: 2024-06-18.
+
+\bibitem[Ellison et~al.(2024)Ellison, Lee, and O'Rourke]{IHD}
+Martin Ellison, Sang~Seok Lee, and Kevin~Hjortshøj O'Rourke.
+\newblock {The Ends of 27 Big Depressions}.
+\newblock \emph{American Economic Review}, 114\penalty0 (1):\penalty0 134--168,
+  January 2024.
+\newblock \doi{10.1257/aer.20221479}.
+\newblock URL
+  \url{https://ideas.repec.org/a/aea/aecrev/v114y2024i1p134-68.html}.
+
+\bibitem[{{European Commission}}(2024)]{AMECO}
+{{European Commission}}.
+\newblock {{AMECO Database}}, 2024.
+\newblock URL
+  \url{https://economy-finance.ec.europa.eu/economic-research-and-databases/economic-databases/ameco-database_en}.
+
+\bibitem[Homer and Sylla(1996)]{Homer_Sylla}
+S.~Homer and R.E. Sylla.
+\newblock \emph{A History of Interest Rates}.
+\newblock Rutgers University Press, 1996.
+\newblock ISBN 9780813522883.
+\newblock URL \url{https://books.google.com.sg/books?id=w3hmC17-em4C}.
+
+\bibitem[Iceland(1997)]{CS2_ISL}
+Statistics Iceland.
+\newblock \emph{Hagskinna—Icelandic Historical Statistics from the 17th
+  Century to 1990}.
+\newblock Hagstofa Íslands, Reykjavík, 1997.
+\newblock URL \url{https://baekur.is/bok/8f318e69-dc49-4a9f-a8ec-805b2352bad0}.
+\newblock Accessed: 2024-07-08.
+
+\bibitem[{International Monetary Fund}(2024{\natexlab{a}})]{IMF_IFS}
+{International Monetary Fund}.
+\newblock International financial statistics, 2024{\natexlab{a}}.
+\newblock URL \url{https://data.imf.org/}.
+
+\bibitem[{International Monetary Fund}(2024{\natexlab{b}})]{IMF_MFS}
+{International Monetary Fund}.
+\newblock {Monetary and Financial Statistics}, 2024{\natexlab{b}}.
+
+\bibitem[Jord{\`a} et~al.(2017)Jord{\`a}, Schularick, and Taylor]{JST}
+{\`O}scar Jord{\`a}, Moritz Schularick, and Alan~M Taylor.
+\newblock Macrofinancial history and the new business cycle facts.
+\newblock \emph{NBER macroeconomics annual}, 31\penalty0 (1):\penalty0
+  213--263, 2017.
+
+\bibitem[Levy-Garboua and Monnet(2016)]{CS2_FRA}
+Vivien Levy-Garboua and Eric Monnet.
+\newblock Les taux d'intérêts en france: Une perspective historique.
+\newblock \emph{Revue d'économie financière}, 1\penalty0 (121):\penalty0
+  35--58, 2016.
+
+\bibitem[{Ministerio de Economía de la República Argentina}(2024)]{CS2_ARG}
+{Ministerio de Economía de la República Argentina}.
+\newblock Información económica al día - apéndice 8, 2024.
+\newblock URL
+  \url{https://www.economia.gob.ar/download/infoeco/apendice8.xlsx}.
+\newblock Accessed: 2024-01-16.
+
+\bibitem[{National Bank of Serbia}(2024)]{NBS}
+{National Bank of Serbia}.
+\newblock South-eastern european monetary and economic statistics from the 19th
+  century to world war ii, 2024.
+\newblock URL
+  \url{https://www.nbs.rs/en/drugi-nivo-navigacije/publikacije-i-istrazivanja/seemhn/seemhn-dctf/}.
+\newblock Accessed: 2024-06-24.
+
+\bibitem[{Norges Bank}()]{CS2_NOR}
+{Norges Bank}.
+\newblock Historical monetary statistics for norway.
+\newblock URL
+  \url{https://www.norges-bank.no/en/topics/Statistics/Historical-monetary-statistics/}.
+\newblock Accessed: 2024-07-08.
+
+\bibitem[{OECD}(2024{\natexlab{a}})]{OECD_KEI}
+{OECD}.
+\newblock Oecd key economic indicators data, 2024{\natexlab{a}}.
+\newblock URL
+  \url{https://www.oecd-ilibrary.org/economics/data/main-economic-indicators/key-short-term-indicators_data-00039-en}.
+\newblock Accessed on 2024-07-10.
+
+\bibitem[{OECD}(2024{\natexlab{b}})]{OECD_MEI_ARC}
+{OECD}.
+\newblock Oecd main economic indicators data, 2024{\natexlab{b}}.
+\newblock URL
+  \url{https://web-archive.oecd.org/temp/2023-09-05/76384-oecdmaineconomicindicatorsmei.htm}.
+\newblock Accessed on 2024-07-04.
+
+\bibitem[{OECD Economic Outlook}(2024)]{OECD_EO}
+{OECD Economic Outlook}.
+\newblock Oecd economic outlook data, 2024.
+\newblock URL
+  \url{https://www.oecd.org/en/topics/sub-issues/economic-outlook.html}.
+\newblock Accessed on 2024-06-05.
+
+\bibitem[Piselli and Vercelli(2023)]{CS2_ITA}
+Paola Piselli and Fabio Vercelli.
+\newblock I titoli pubblici nei bilanci delle banche 1890-2016.
+\newblock Technical report, Banca d’Italia, 2023.
+\newblock Di prossima pubblicazione (forthcoming).
+
+\bibitem[Schuler(2015)]{HFS}
+Kurt Schuler.
+\newblock Establishing an international data archive on free banking.
+\newblock Studies in Applied Economics~24, The Johns Hopkins Institute for
+  Applied Economics, Global Health, and the Study of Business Enterprise, 2015.
+\newblock URL \url{https://EconPapers.repec.org/RePEc:ris:jhisae:0024}.
+
+\bibitem[{Statistics Canada}()]{CS1_CAN}
+{Statistics Canada}.
+\newblock Historical statistics of canada: Section f: Gross national product,
+  the capital stock, and productivity.
+\newblock URL
+  \url{https://www150.statcan.gc.ca/n1/pub/11-516-x/sectionf/4057751-eng.htm}.
+\newblock In Historical Statistics of Canada. Accessed October 02, 2024.
+
+\bibitem[{Swiss National Bank}(2024)]{CS1_CHE}
+{Swiss National Bank}.
+\newblock Swiss national bank historical time series, 2024.
+\newblock URL
+  \url{https://www.snb.ch/en/the-snb/mandates-goals/statistics/statistics-pub/publication-history/historical-time-series}.
+\newblock Accessed: 2024-06-26.
+
+\bibitem[Thomas and Dimsdale(2017)]{CS1_GBR}
+R~Thomas and N~Dimsdale.
+\newblock A millennium of uk data, 2017.
+\newblock URL
+  \url{https://www.bankofengland.co.uk/statistics/research-datasets}.
+\newblock Accessed: 2024-06-18.
+
+\end{thebibliography}

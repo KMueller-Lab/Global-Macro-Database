@@ -1,0 +1,3958 @@
+This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2024.12.5)  1 JUL 2025 02:20
+ restricted system commands enabled.
+**USDfx.tex
+(./USDfx.tex
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+Lua module: luaotfload 2024-02-14 v3.28 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended 
+collection.
+luaotfload | conf : Root cache directory is "C:/Users/lehbib/AppData/Local/MiKTe
+X/luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
+olved path "C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/luatex/luaotfload/
+fontloader-2023-12-28.lua".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.134
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "C:/Users/lehbib/AppData/Local/MiKTe
+X/luatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'. (C:/Users/lehbib/AppDat
+a/Local/Programs/MiKTeX/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/size12.clo
+File: size12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from C:/Users/lehbib/AppData/Local/
+MiKTeX/luatex-cache/generic/names/luaotfload-names.luc.gz)
+\c@part=\count194
+\c@section=\count195
+\c@subsection=\count196
+\c@subsubsection=\count197
+\c@paragraph=\count198
+\c@subparagraph=\count199
+\c@figure=\count266
+\c@table=\count267
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen140
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
+6.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphicx.s
+ty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphics.st
+y
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/graphics.
+cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 106.
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics-def/luatex.de
+f
+File: luatex.def 2024/04/13 v1.2e Graphics/color driver for luatex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/booktabs/booktabs.st
+y
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen143
+\lightrulewidth=\dimen144
+\cmidrulewidth=\dimen145
+\belowrulesep=\dimen146
+\belowbottomsep=\dimen147
+\aboverulesep=\dimen148
+\abovetopsep=\dimen149
+\cmidrulesep=\dimen150
+\cmidrulekern=\dimen151
+\defaultaddspace=\dimen152
+\@cmidla=\count268
+\@cmidlb=\count269
+\@aboverulesep=\dimen153
+\@belowrulesep=\dimen154
+\@thisruleclass=\count270
+\@lastruleclass=\count271
+\@thisrulewidth=\dimen155
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.st
+y
+Package: geometry 2020/01/02 v5.9 Page Geometry
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count272
+\Gm@cntv=\count273
+\c@Gm@tempcnt=\count274
+\Gm@bindingoffset=\dimen156
+\Gm@wd@mp=\dimen157
+\Gm@odd@mp=\dimen158
+\Gm@even@mp=\dimen159
+\Gm@layoutwidth=\dimen160
+\Gm@layoutheight=\dimen161
+\Gm@layouthoffset=\dimen162
+\Gm@layoutvoffset=\dimen163
+\Gm@dimlist=\toks20
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.cfg))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen164
+\captionmargin=\dimen165
+\caption@leftmargin=\dimen166
+\caption@rightmargin=\dimen167
+\caption@width=\dimen168
+\caption@indent=\dimen169
+\caption@parindent=\dimen170
+\caption@hangindent=\dimen171
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count275
+\c@continuedfloat=\count276
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count277
+\float@exts=\toks21
+\float@box=\box52
+\@float@everytoks=\toks22
+\@floatcapt=\box53
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip51
+\bibsep=\skip52
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count278
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: luatex.def on input line 274.
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/mathcolor.ltx
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/colortbl/colortbl.st
+y
+Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen172
+\ar@mcellbox=\box54
+\extrarowheight=\dimen173
+\NC@list=\toks23
+\extratabsurround=\skip53
+\backup@length=\skip54
+\ar@cellbox=\box55
+)
+\everycr=\toks24
+\minrowclearance=\skip55
+\rownum=\count279
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/rotating.st
+y
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count280
+\rotFPtop=\skip56
+\rotFPbot=\skip57
+\rot@float@box=\box56
+\rot@mess@toks=\toks25
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen174
+\TX@old@table=\dimen175
+\TX@old@col=\dimen176
+\TX@target=\dimen177
+\TX@delta=\dimen178
+\TX@cols=\count281
+\TX@ftn=\toks26
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pdflscape/pdflscape.st
+y
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pdflscape/pdflscape-no
+metadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/adjustbox/adjustbox.st
+y
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/xkeyval/xkeyval.tex
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks27
+\XKV@tempa@toks=\toks28
+)
+\XKV@depth=\count282
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/adjustbox/adjcalc.s
+ty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/collectbox/collectbox.
+sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box57
+)
+\tc@llx=\dimen179
+\tc@lly=\dimen180
+\tc@urx=\dimen181
+\tc@ury=\dimen182
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/adjustbox/tc-pgf.def
+File: tc-pgf.def 2019/01/04 v2.2 trimclip fall-back clipping driver using PGF
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgf.sty
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfrcs.s
+ty
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfuti
+l-common.tex
+\pgfutil@everybye=\toks29
+\pgfutil@tempdima=\dimen183
+\pgfutil@tempdimb=\dimen184
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfuti
+l-latex.def
+\pgfutil@abb=\box58
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfrcs
+.code.tex
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/pgf.revision.tex
+)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgfcore
+.sty
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/systemlayer/pgfsys
+.sty
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+ys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkey
+s.code.tex
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkey
+slibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks32
+))
+\pgf@x=\dimen185
+\pgf@y=\dimen186
+\pgf@xa=\dimen187
+\pgf@ya=\dimen188
+\pgf@xb=\dimen189
+\pgf@yb=\dimen190
+\pgf@xc=\dimen191
+\pgf@yc=\dimen192
+\pgf@xd=\dimen193
+\pgf@yd=\dimen194
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count283
+\c@pgf@countb=\count284
+\c@pgf@countc=\count285
+\c@pgf@countd=\count286
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
+\pgf@sys@id@count=\count287
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgf.
+cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-luatex.def
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+ys-luatex.def
+File: pgfsys-luatex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+ys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+yssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count288
+\pgfsyssoftpath@bigbuffer@items=\count289
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+ysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+re.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmath.cod
+e.tex
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathutil
+.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathpars
+er.code.tex
+\pgfmath@dimen=\dimen195
+\pgfmath@count=\count290
+\pgfmath@box=\box59
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.basic.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.trigonometric.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.random.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.comparison.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.base.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.round.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.misc.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.integerarithmetics.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathcalc
+.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfloa
+t.code.tex
+\c@pgfmathroundto@lastzeros=\count291
+))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfint.code
+.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen196
+\pgf@picmaxx=\dimen197
+\pgf@picminy=\dimen198
+\pgf@picmaxy=\dimen199
+\pgf@pathminx=\dimen256
+\pgf@pathmaxx=\dimen257
+\pgf@pathminy=\dimen258
+\pgf@pathmaxy=\dimen259
+\pgf@xx=\dimen260
+\pgf@xy=\dimen261
+\pgf@yx=\dimen262
+\pgf@yy=\dimen263
+\pgf@zx=\dimen264
+\pgf@zy=\dimen265
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen266
+\pgf@path@lasty=\dimen267
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen268
+\pgf@shorten@start@additional=\dimen269
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+rescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box60
+\pgf@hbox=\box61
+\pgf@layerbox@main=\box62
+\pgf@picture@serial@count=\count292
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+regraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen270
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+retransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen271
+\pgf@pt@y=\dimen272
+\pgf@pt@temp=\dimen273
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+requick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+reobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+rearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen274
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+reshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen275
+\pgf@sys@shading@range@num=\count293
+\pgf@shadingcount=\count294
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+reimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+reexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box63
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+relayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+retransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+rerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodul
+eshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box64
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodul
+eplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfc
+omp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen276
+\pgf@nodesepend=\dimen277
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfc
+omp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)))
+Package trimclip Info: No clipping driver 'tc-luatex.def' available.
+(trimclip)             Using fall-back PGF driver.
+)
+\adjbox@Width=\dimen278
+\adjbox@Height=\dimen279
+\adjbox@Depth=\dimen280
+\adjbox@Totalheight=\dimen281
+\adjbox@pwidth=\dimen282
+\adjbox@pheight=\dimen283
+\adjbox@pdepth=\dimen284
+\adjbox@ptotalheight=\dimen285
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/ifoddpage/ifoddpage.st
+y
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count295
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.st
+y
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box65
+\sift@deathcycles=\count296
+\@vwid@loff=\dimen286
+\@vwid@roff=\dimen287
+)) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/times.sty
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/fancyhdr/fancyhdr.st
+y
+Package: fancyhdr 2024/11/20 v4.4 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip58
+\f@nch@O@elh=\skip59
+\f@nch@O@erh=\skip60
+\f@nch@O@olh=\skip61
+\f@nch@O@orh=\skip62
+\f@nch@O@elf=\skip63
+\f@nch@O@erf=\skip64
+\f@nch@O@olf=\skip65
+\f@nch@O@orf=\skip66
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hyperref.st
+y
+Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/kvsetkeys/kvsetkeys.st
+y
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/kvdefinekeys/kvdefin
+ekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pdfescape/pdfescape.
+sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pdftexcmds/pdftexcmd
+s.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/infwarerr/infwarerr.
+sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks39
+)) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/gettitlestring/getti
+tlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/kvoptions/kvoptions.st
+y
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count297
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/etoolbox/etoolbox.st
+y
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count298
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/stringenc/stringenc.
+sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen288
+\Hy@linkcounter=\count299
+\Hy@pagecounter=\count300
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/intcalc/intcalc.st
+y
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count301
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4040.
+Package hyperref Info: Hyper figures OFF on input line 4157.
+Package hyperref Info: Link nesting OFF on input line 4162.
+Package hyperref Info: Hyper index ON on input line 4165.
+Package hyperref Info: Plain pages OFF on input line 4172.
+Package hyperref Info: Backreferencing OFF on input line 4177.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4424.
+\c@Hy@tempcnt=\count302
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen289
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/bigintcalc/bigintcal
+c.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count303
+\Field@Width=\dimen290
+\Fld@charsize=\dimen291
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring ON on input line 6060.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count304
+\c@Item=\count305
+\c@Hfootnote=\count306
+)
+Package hyperref Info: Driver (autodetected): hluatex.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hluatex.def
+File: hluatex.def 2024-11-05 v7.01l Hyperref driver for luaTeX
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count307
+\c@bookmark@seq@number=\count308
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfi
+lecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/uniquecounter/unique
+counter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip67
+)
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 34
+.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-lu
+atex.def
+File: l3backend-luatex.def 2024-05-08 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count309
+Inserting `l3color' in `luaotfload.parse_color'.
+\l__pdf_internal_box=\box66
+) (./USDfx.aux)
+\openout1 = USDfx.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.m
+kii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count310
+\scratchdimen=\dimen292
+\scratchbox=\box67
+\nofMPsegments=\count311
+\nofMParguments=\count312
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count313
+\MPscratchDim=\dimen293
+\MPnumerator=\count314
+\makeMPintoPDFobject=\count315
+\everyMPtoPDFconversion=\toks41
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-
+base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/00miktex/epstopdf-sys.
+cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: landscape 
+* h-part:(L,W,R)=(36.135pt, 1084.05pt, 36.135pt)
+* v-part:(T,H,B)=(36.135pt, 722.7pt, 36.135pt)
+* \paperwidth=1156.31999pt
+* \paperheight=794.96999pt
+* \textwidth=1084.05pt
+* \textheight=722.7pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-55.36243pt
+* \headheight=12.0pt
+* \headsep=7.22743pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=144.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: rotating package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring ON on input line 34.
+(./USDfx.out) (./USDfx.out)
+\@outlinefile=\write4
+
+\openout4 = USDfx.out
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 38.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 38.
+
+LaTeX Warning: No \author given.
+
+
+
+[1
+
+{C:/Users/lehbib/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+
+Package hyperref Warning: Option `colorlinks' has already been used,
+(hyperref)                setting the option has no effect on input line 42.
+
+(./USDfx.toc
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
+[1
+
+]
+
+[2]
+
+[3]
+
+[4]
+
+[5]
+
+[6]
+
+[7]
+
+[8])
+\tf@toc=\write5
+
+\openout5 = USDfx.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 60.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 60.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 60.
+
+warning  (file graphs/AFG_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/AFG_USDfx.pdf, id=1488, 542.025pt x 325.215pt>
+File: graphs/AFG_USDfx.pdf Graphic file (type pdf)
+<use graphs/AFG_USDfx.pdf>
+Package luatex.def Info: graphs/AFG_USDfx.pdf  used on input line 71.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ALB_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/ALB_USDfx.pdf, id=1497, 542.025pt x 325.215pt>
+File: graphs/ALB_USDfx.pdf Graphic file (type pdf)
+<use graphs/ALB_USDfx.pdf>
+Package luatex.def Info: graphs/ALB_USDfx.pdf  used on input line 100.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DZA_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/DZA_USDfx.pdf, id=1502, 542.025pt x 325.215pt>
+File: graphs/DZA_USDfx.pdf Graphic file (type pdf)
+<use graphs/DZA_USDfx.pdf>
+Package luatex.def Info: graphs/DZA_USDfx.pdf  used on input line 127.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AGO_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/AGO_USDfx.pdf, id=1505, 542.025pt x 325.215pt>
+File: graphs/AGO_USDfx.pdf Graphic file (type pdf)
+<use graphs/AGO_USDfx.pdf>
+Package luatex.def Info: graphs/AGO_USDfx.pdf  used on input line 153.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ARG_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/ARG_USDfx.pdf, id=1514, 542.025pt x 325.215pt>
+File: graphs/ARG_USDfx.pdf Graphic file (type pdf)
+<use graphs/ARG_USDfx.pdf>
+Package luatex.def Info: graphs/ARG_USDfx.pdf  used on input line 182.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ARM_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/ARM_USDfx.pdf, id=1519, 542.025pt x 325.215pt>
+File: graphs/ARM_USDfx.pdf Graphic file (type pdf)
+<use graphs/ARM_USDfx.pdf>
+Package luatex.def Info: graphs/ARM_USDfx.pdf  used on input line 209.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AUS_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/AUS_USDfx.pdf, id=1536, 542.025pt x 325.215pt>
+File: graphs/AUS_USDfx.pdf Graphic file (type pdf)
+<use graphs/AUS_USDfx.pdf>
+Package luatex.def Info: graphs/AUS_USDfx.pdf  used on input line 242.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AUT_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/AUT_USDfx.pdf, id=1549, 542.025pt x 325.215pt>
+File: graphs/AUT_USDfx.pdf Graphic file (type pdf)
+<use graphs/AUT_USDfx.pdf>
+Package luatex.def Info: graphs/AUT_USDfx.pdf  used on input line 273.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AZE_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/AZE_USDfx.pdf, id=1554, 542.025pt x 325.215pt>
+File: graphs/AZE_USDfx.pdf Graphic file (type pdf)
+<use graphs/AZE_USDfx.pdf>
+Package luatex.def Info: graphs/AZE_USDfx.pdf  used on input line 300.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BHS_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/BHS_USDfx.pdf, id=1557, 542.025pt x 325.215pt>
+File: graphs/BHS_USDfx.pdf Graphic file (type pdf)
+<use graphs/BHS_USDfx.pdf>
+Package luatex.def Info: graphs/BHS_USDfx.pdf  used on input line 326.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BHR_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/BHR_USDfx.pdf, id=1560, 542.025pt x 325.215pt>
+File: graphs/BHR_USDfx.pdf Graphic file (type pdf)
+<use graphs/BHR_USDfx.pdf>
+Package luatex.def Info: graphs/BHR_USDfx.pdf  used on input line 352.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BGD_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/BGD_USDfx.pdf, id=1565, 542.025pt x 325.215pt>
+File: graphs/BGD_USDfx.pdf Graphic file (type pdf)
+<use graphs/BGD_USDfx.pdf>
+Package luatex.def Info: graphs/BGD_USDfx.pdf  used on input line 379.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BRB_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/BRB_USDfx.pdf, id=1570, 542.025pt x 325.215pt>
+File: graphs/BRB_USDfx.pdf Graphic file (type pdf)
+<use graphs/BRB_USDfx.pdf>
+Package luatex.def Info: graphs/BRB_USDfx.pdf  used on input line 406.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BLR_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/BLR_USDfx.pdf, id=1575, 542.025pt x 325.215pt>
+File: graphs/BLR_USDfx.pdf Graphic file (type pdf)
+<use graphs/BLR_USDfx.pdf>
+Package luatex.def Info: graphs/BLR_USDfx.pdf  used on input line 433.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BEL_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/BEL_USDfx.pdf, id=1592, 542.025pt x 325.215pt>
+File: graphs/BEL_USDfx.pdf Graphic file (type pdf)
+<use graphs/BEL_USDfx.pdf>
+Package luatex.def Info: graphs/BEL_USDfx.pdf  used on input line 466.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BLZ_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/BLZ_USDfx.pdf, id=1597, 542.025pt x 325.215pt>
+File: graphs/BLZ_USDfx.pdf Graphic file (type pdf)
+<use graphs/BLZ_USDfx.pdf>
+Package luatex.def Info: graphs/BLZ_USDfx.pdf  used on input line 493.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BEN_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/BEN_USDfx.pdf, id=1604, 542.025pt x 325.215pt>
+File: graphs/BEN_USDfx.pdf Graphic file (type pdf)
+<use graphs/BEN_USDfx.pdf>
+Package luatex.def Info: graphs/BEN_USDfx.pdf  used on input line 521.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BMU_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/BMU_USDfx.pdf, id=1607, 542.025pt x 325.215pt>
+File: graphs/BMU_USDfx.pdf Graphic file (type pdf)
+<use graphs/BMU_USDfx.pdf>
+Package luatex.def Info: graphs/BMU_USDfx.pdf  used on input line 547.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BTN_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/BTN_USDfx.pdf, id=1612, 542.025pt x 325.215pt>
+File: graphs/BTN_USDfx.pdf Graphic file (type pdf)
+<use graphs/BTN_USDfx.pdf>
+Package luatex.def Info: graphs/BTN_USDfx.pdf  used on input line 574.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BOL_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/BOL_USDfx.pdf, id=1619, 542.025pt x 325.215pt>
+File: graphs/BOL_USDfx.pdf Graphic file (type pdf)
+<use graphs/BOL_USDfx.pdf>
+Package luatex.def Info: graphs/BOL_USDfx.pdf  used on input line 602.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BIH_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/BIH_USDfx.pdf, id=1624, 542.025pt x 325.215pt>
+File: graphs/BIH_USDfx.pdf Graphic file (type pdf)
+<use graphs/BIH_USDfx.pdf>
+Package luatex.def Info: graphs/BIH_USDfx.pdf  used on input line 629.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BWA_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/BWA_USDfx.pdf, id=1629, 542.025pt x 325.215pt>
+File: graphs/BWA_USDfx.pdf Graphic file (type pdf)
+<use graphs/BWA_USDfx.pdf>
+Package luatex.def Info: graphs/BWA_USDfx.pdf  used on input line 656.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BRA_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/BRA_USDfx.pdf, id=1642, 542.025pt x 325.215pt>
+File: graphs/BRA_USDfx.pdf Graphic file (type pdf)
+<use graphs/BRA_USDfx.pdf>
+Package luatex.def Info: graphs/BRA_USDfx.pdf  used on input line 687.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BRN_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/BRN_USDfx.pdf, id=1647, 542.025pt x 325.215pt>
+File: graphs/BRN_USDfx.pdf Graphic file (type pdf)
+<use graphs/BRN_USDfx.pdf>
+Package luatex.def Info: graphs/BRN_USDfx.pdf  used on input line 714.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BGR_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/BGR_USDfx.pdf, id=1662, 542.025pt x 325.215pt>
+File: graphs/BGR_USDfx.pdf Graphic file (type pdf)
+<use graphs/BGR_USDfx.pdf>
+Package luatex.def Info: graphs/BGR_USDfx.pdf  used on input line 746.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BFA_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/BFA_USDfx.pdf, id=1669, 542.025pt x 325.215pt>
+File: graphs/BFA_USDfx.pdf Graphic file (type pdf)
+<use graphs/BFA_USDfx.pdf>
+Package luatex.def Info: graphs/BFA_USDfx.pdf  used on input line 774.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BDI_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/BDI_USDfx.pdf, id=1674, 542.025pt x 325.215pt>
+File: graphs/BDI_USDfx.pdf Graphic file (type pdf)
+<use graphs/BDI_USDfx.pdf>
+Package luatex.def Info: graphs/BDI_USDfx.pdf  used on input line 801.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KHM_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/KHM_USDfx.pdf, id=1683, 542.025pt x 325.215pt>
+File: graphs/KHM_USDfx.pdf Graphic file (type pdf)
+<use graphs/KHM_USDfx.pdf>
+Package luatex.def Info: graphs/KHM_USDfx.pdf  used on input line 830.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CMR_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/CMR_USDfx.pdf, id=1690, 542.025pt x 325.215pt>
+File: graphs/CMR_USDfx.pdf Graphic file (type pdf)
+<use graphs/CMR_USDfx.pdf>
+Package luatex.def Info: graphs/CMR_USDfx.pdf  used on input line 858.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CAN_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/CAN_USDfx.pdf, id=1702, 542.025pt x 325.215pt>
+File: graphs/CAN_USDfx.pdf Graphic file (type pdf)
+<use graphs/CAN_USDfx.pdf>
+Package luatex.def Info: graphs/CAN_USDfx.pdf  used on input line 889.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CPV_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/CPV_USDfx.pdf, id=1707, 542.025pt x 325.215pt>
+File: graphs/CPV_USDfx.pdf Graphic file (type pdf)
+<use graphs/CPV_USDfx.pdf>
+Package luatex.def Info: graphs/CPV_USDfx.pdf  used on input line 916.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CAF_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/CAF_USDfx.pdf, id=1714, 542.025pt x 325.215pt>
+File: graphs/CAF_USDfx.pdf Graphic file (type pdf)
+<use graphs/CAF_USDfx.pdf>
+Package luatex.def Info: graphs/CAF_USDfx.pdf  used on input line 944.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TCD_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/TCD_USDfx.pdf, id=1721, 542.025pt x 325.215pt>
+File: graphs/TCD_USDfx.pdf Graphic file (type pdf)
+<use graphs/TCD_USDfx.pdf>
+Package luatex.def Info: graphs/TCD_USDfx.pdf  used on input line 972.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CHL_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/CHL_USDfx.pdf, id=1734, 542.025pt x 325.215pt>
+File: graphs/CHL_USDfx.pdf Graphic file (type pdf)
+<use graphs/CHL_USDfx.pdf>
+Package luatex.def Info: graphs/CHL_USDfx.pdf  used on input line 1003.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CHN_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/CHN_USDfx.pdf, id=1745, 542.025pt x 325.215pt>
+File: graphs/CHN_USDfx.pdf Graphic file (type pdf)
+<use graphs/CHN_USDfx.pdf>
+Package luatex.def Info: graphs/CHN_USDfx.pdf  used on input line 1033.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/COL_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/COL_USDfx.pdf, id=1756, 542.025pt x 325.215pt>
+File: graphs/COL_USDfx.pdf Graphic file (type pdf)
+<use graphs/COL_USDfx.pdf>
+Package luatex.def Info: graphs/COL_USDfx.pdf  used on input line 1063.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CRI_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/CRI_USDfx.pdf, id=1765, 542.025pt x 325.215pt>
+File: graphs/CRI_USDfx.pdf Graphic file (type pdf)
+<use graphs/CRI_USDfx.pdf>
+Package luatex.def Info: graphs/CRI_USDfx.pdf  used on input line 1092.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/HRV_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/HRV_USDfx.pdf, id=1772, 542.025pt x 325.215pt>
+File: graphs/HRV_USDfx.pdf Graphic file (type pdf)
+<use graphs/HRV_USDfx.pdf>
+Package luatex.def Info: graphs/HRV_USDfx.pdf  used on input line 1120.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CUB_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/CUB_USDfx.pdf, id=1781, 542.025pt x 325.215pt>
+File: graphs/CUB_USDfx.pdf Graphic file (type pdf)
+<use graphs/CUB_USDfx.pdf>
+Package luatex.def Info: graphs/CUB_USDfx.pdf  used on input line 1149.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CYP_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/CYP_USDfx.pdf, id=1786, 542.025pt x 325.215pt>
+File: graphs/CYP_USDfx.pdf Graphic file (type pdf)
+<use graphs/CYP_USDfx.pdf>
+Package luatex.def Info: graphs/CYP_USDfx.pdf  used on input line 1176.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CZE_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/CZE_USDfx.pdf, id=1793, 542.025pt x 325.215pt>
+File: graphs/CZE_USDfx.pdf Graphic file (type pdf)
+<use graphs/CZE_USDfx.pdf>
+Package luatex.def Info: graphs/CZE_USDfx.pdf  used on input line 1204.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CSK_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/CSK_USDfx.pdf, id=1798, 542.025pt x 325.215pt>
+File: graphs/CSK_USDfx.pdf Graphic file (type pdf)
+<use graphs/CSK_USDfx.pdf>
+Package luatex.def Info: graphs/CSK_USDfx.pdf  used on input line 1231.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/COD_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/COD_USDfx.pdf, id=1805, 542.025pt x 325.215pt>
+File: graphs/COD_USDfx.pdf Graphic file (type pdf)
+<use graphs/COD_USDfx.pdf>
+Package luatex.def Info: graphs/COD_USDfx.pdf  used on input line 1259.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DNK_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/DNK_USDfx.pdf, id=1814, 542.025pt x 325.215pt>
+File: graphs/DNK_USDfx.pdf Graphic file (type pdf)
+<use graphs/DNK_USDfx.pdf>
+Package luatex.def Info: graphs/DNK_USDfx.pdf  used on input line 1288.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DJI_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/DJI_USDfx.pdf, id=1819, 542.025pt x 325.215pt>
+File: graphs/DJI_USDfx.pdf Graphic file (type pdf)
+<use graphs/DJI_USDfx.pdf>
+Package luatex.def Info: graphs/DJI_USDfx.pdf  used on input line 1315.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DMA_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/DMA_USDfx.pdf, id=1824, 542.025pt x 325.215pt>
+File: graphs/DMA_USDfx.pdf Graphic file (type pdf)
+<use graphs/DMA_USDfx.pdf>
+Package luatex.def Info: graphs/DMA_USDfx.pdf  used on input line 1342.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DOM_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/DOM_USDfx.pdf, id=1833, 542.025pt x 325.215pt>
+File: graphs/DOM_USDfx.pdf Graphic file (type pdf)
+<use graphs/DOM_USDfx.pdf>
+Package luatex.def Info: graphs/DOM_USDfx.pdf  used on input line 1371.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ECU_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/ECU_USDfx.pdf, id=1840, 542.025pt x 325.215pt>
+File: graphs/ECU_USDfx.pdf Graphic file (type pdf)
+<use graphs/ECU_USDfx.pdf>
+Package luatex.def Info: graphs/ECU_USDfx.pdf  used on input line 1399.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/EGY_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/EGY_USDfx.pdf, id=1845, 542.025pt x 325.215pt>
+File: graphs/EGY_USDfx.pdf Graphic file (type pdf)
+<use graphs/EGY_USDfx.pdf>
+Package luatex.def Info: graphs/EGY_USDfx.pdf  used on input line 1426.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SLV_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/SLV_USDfx.pdf, id=1856, 542.025pt x 325.215pt>
+File: graphs/SLV_USDfx.pdf Graphic file (type pdf)
+<use graphs/SLV_USDfx.pdf>
+Package luatex.def Info: graphs/SLV_USDfx.pdf  used on input line 1456.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GNQ_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/GNQ_USDfx.pdf, id=1859, 542.025pt x 325.215pt>
+File: graphs/GNQ_USDfx.pdf Graphic file (type pdf)
+<use graphs/GNQ_USDfx.pdf>
+Package luatex.def Info: graphs/GNQ_USDfx.pdf  used on input line 1482.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ERI_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/ERI_USDfx.pdf, id=1862, 542.025pt x 325.215pt>
+File: graphs/ERI_USDfx.pdf Graphic file (type pdf)
+<use graphs/ERI_USDfx.pdf>
+Package luatex.def Info: graphs/ERI_USDfx.pdf  used on input line 1508.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/EST_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/EST_USDfx.pdf, id=1871, 542.025pt x 325.215pt>
+File: graphs/EST_USDfx.pdf Graphic file (type pdf)
+<use graphs/EST_USDfx.pdf>
+Package luatex.def Info: graphs/EST_USDfx.pdf  used on input line 1537.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SWZ_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/SWZ_USDfx.pdf, id=1876, 542.025pt x 325.215pt>
+File: graphs/SWZ_USDfx.pdf Graphic file (type pdf)
+<use graphs/SWZ_USDfx.pdf>
+Package luatex.def Info: graphs/SWZ_USDfx.pdf  used on input line 1564.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ETH_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/ETH_USDfx.pdf, id=1881, 542.025pt x 325.215pt>
+File: graphs/ETH_USDfx.pdf Graphic file (type pdf)
+<use graphs/ETH_USDfx.pdf>
+Package luatex.def Info: graphs/ETH_USDfx.pdf  used on input line 1591.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/FJI_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/FJI_USDfx.pdf, id=1886, 542.025pt x 325.215pt>
+File: graphs/FJI_USDfx.pdf Graphic file (type pdf)
+<use graphs/FJI_USDfx.pdf>
+Package luatex.def Info: graphs/FJI_USDfx.pdf  used on input line 1618.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/FIN_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/FIN_USDfx.pdf, id=1899, 542.025pt x 325.215pt>
+File: graphs/FIN_USDfx.pdf Graphic file (type pdf)
+<use graphs/FIN_USDfx.pdf>
+Package luatex.def Info: graphs/FIN_USDfx.pdf  used on input line 1649.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/FRA_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/FRA_USDfx.pdf, id=1916, 542.025pt x 325.215pt>
+File: graphs/FRA_USDfx.pdf Graphic file (type pdf)
+<use graphs/FRA_USDfx.pdf>
+Package luatex.def Info: graphs/FRA_USDfx.pdf  used on input line 1682.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GUF_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/GUF_USDfx.pdf, id=1919, 542.025pt x 325.215pt>
+File: graphs/GUF_USDfx.pdf Graphic file (type pdf)
+<use graphs/GUF_USDfx.pdf>
+Package luatex.def Info: graphs/GUF_USDfx.pdf  used on input line 1708.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GAB_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/GAB_USDfx.pdf, id=1926, 542.025pt x 325.215pt>
+File: graphs/GAB_USDfx.pdf Graphic file (type pdf)
+<use graphs/GAB_USDfx.pdf>
+Package luatex.def Info: graphs/GAB_USDfx.pdf  used on input line 1736.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GMB_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/GMB_USDfx.pdf, id=1931, 542.025pt x 325.215pt>
+File: graphs/GMB_USDfx.pdf Graphic file (type pdf)
+<use graphs/GMB_USDfx.pdf>
+Package luatex.def Info: graphs/GMB_USDfx.pdf  used on input line 1763.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GEO_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/GEO_USDfx.pdf, id=1936, 542.025pt x 325.215pt>
+File: graphs/GEO_USDfx.pdf Graphic file (type pdf)
+<use graphs/GEO_USDfx.pdf>
+Package luatex.def Info: graphs/GEO_USDfx.pdf  used on input line 1790.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DDR_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/DDR_USDfx.pdf, id=1939, 542.025pt x 325.215pt>
+File: graphs/DDR_USDfx.pdf Graphic file (type pdf)
+<use graphs/DDR_USDfx.pdf>
+Package luatex.def Info: graphs/DDR_USDfx.pdf  used on input line 1816.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DEU_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/DEU_USDfx.pdf, id=1962, 542.025pt x 325.215pt>
+File: graphs/DEU_USDfx.pdf Graphic file (type pdf)
+<use graphs/DEU_USDfx.pdf>
+Package luatex.def Info: graphs/DEU_USDfx.pdf  used on input line 1852.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GHA_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/GHA_USDfx.pdf, id=1967, 542.025pt x 325.215pt>
+File: graphs/GHA_USDfx.pdf Graphic file (type pdf)
+<use graphs/GHA_USDfx.pdf>
+Package luatex.def Info: graphs/GHA_USDfx.pdf  used on input line 1879.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GRC_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/GRC_USDfx.pdf, id=1986, 542.025pt x 325.215pt>
+File: graphs/GRC_USDfx.pdf Graphic file (type pdf)
+<use graphs/GRC_USDfx.pdf>
+Package luatex.def Info: graphs/GRC_USDfx.pdf  used on input line 1913.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GRD_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/GRD_USDfx.pdf, id=1991, 542.025pt x 325.215pt>
+File: graphs/GRD_USDfx.pdf Graphic file (type pdf)
+<use graphs/GRD_USDfx.pdf>
+Package luatex.def Info: graphs/GRD_USDfx.pdf  used on input line 1940.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GTM_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/GTM_USDfx.pdf, id=2000, 542.025pt x 325.215pt>
+File: graphs/GTM_USDfx.pdf Graphic file (type pdf)
+<use graphs/GTM_USDfx.pdf>
+Package luatex.def Info: graphs/GTM_USDfx.pdf  used on input line 1969.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GIN_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/GIN_USDfx.pdf, id=2007, 542.025pt x 325.215pt>
+File: graphs/GIN_USDfx.pdf Graphic file (type pdf)
+<use graphs/GIN_USDfx.pdf>
+Package luatex.def Info: graphs/GIN_USDfx.pdf  used on input line 1997.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GNB_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/GNB_USDfx.pdf, id=2014, 542.025pt x 325.215pt>
+File: graphs/GNB_USDfx.pdf Graphic file (type pdf)
+<use graphs/GNB_USDfx.pdf>
+Package luatex.def Info: graphs/GNB_USDfx.pdf  used on input line 2025.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GUY_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/GUY_USDfx.pdf, id=2019, 542.025pt x 325.215pt>
+File: graphs/GUY_USDfx.pdf Graphic file (type pdf)
+<use graphs/GUY_USDfx.pdf>
+Package luatex.def Info: graphs/GUY_USDfx.pdf  used on input line 2052.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/HTI_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/HTI_USDfx.pdf, id=2028, 542.025pt x 325.215pt>
+File: graphs/HTI_USDfx.pdf Graphic file (type pdf)
+<use graphs/HTI_USDfx.pdf>
+Package luatex.def Info: graphs/HTI_USDfx.pdf  used on input line 2081.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/HND_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/HND_USDfx.pdf, id=2037, 542.025pt x 325.215pt>
+File: graphs/HND_USDfx.pdf Graphic file (type pdf)
+<use graphs/HND_USDfx.pdf>
+Package luatex.def Info: graphs/HND_USDfx.pdf  used on input line 2110.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/HKG_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/HKG_USDfx.pdf, id=2044, 542.025pt x 325.215pt>
+File: graphs/HKG_USDfx.pdf Graphic file (type pdf)
+<use graphs/HKG_USDfx.pdf>
+Package luatex.def Info: graphs/HKG_USDfx.pdf  used on input line 2138.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/HUN_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/HUN_USDfx.pdf, id=2051, 542.025pt x 325.215pt>
+File: graphs/HUN_USDfx.pdf Graphic file (type pdf)
+<use graphs/HUN_USDfx.pdf>
+Package luatex.def Info: graphs/HUN_USDfx.pdf  used on input line 2166.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ISL_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/ISL_USDfx.pdf, id=2062, 542.025pt x 325.215pt>
+File: graphs/ISL_USDfx.pdf Graphic file (type pdf)
+<use graphs/ISL_USDfx.pdf>
+Package luatex.def Info: graphs/ISL_USDfx.pdf  used on input line 2196.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IND_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/IND_USDfx.pdf, id=2073, 542.025pt x 325.215pt>
+File: graphs/IND_USDfx.pdf Graphic file (type pdf)
+<use graphs/IND_USDfx.pdf>
+Package luatex.def Info: graphs/IND_USDfx.pdf  used on input line 2226.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IDN_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/IDN_USDfx.pdf, id=2080, 542.025pt x 325.215pt>
+File: graphs/IDN_USDfx.pdf Graphic file (type pdf)
+<use graphs/IDN_USDfx.pdf>
+Package luatex.def Info: graphs/IDN_USDfx.pdf  used on input line 2254.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IRN_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/IRN_USDfx.pdf, id=2087, 542.025pt x 325.215pt>
+File: graphs/IRN_USDfx.pdf Graphic file (type pdf)
+<use graphs/IRN_USDfx.pdf>
+Package luatex.def Info: graphs/IRN_USDfx.pdf  used on input line 2282.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IRQ_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/IRQ_USDfx.pdf, id=2094, 542.025pt x 325.215pt>
+File: graphs/IRQ_USDfx.pdf Graphic file (type pdf)
+<use graphs/IRQ_USDfx.pdf>
+Package luatex.def Info: graphs/IRQ_USDfx.pdf  used on input line 2310.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IRL_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/IRL_USDfx.pdf, id=2105, 542.025pt x 325.215pt>
+File: graphs/IRL_USDfx.pdf Graphic file (type pdf)
+<use graphs/IRL_USDfx.pdf>
+Package luatex.def Info: graphs/IRL_USDfx.pdf  used on input line 2340.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ISR_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/ISR_USDfx.pdf, id=2114, 542.025pt x 325.215pt>
+File: graphs/ISR_USDfx.pdf Graphic file (type pdf)
+<use graphs/ISR_USDfx.pdf>
+Package luatex.def Info: graphs/ISR_USDfx.pdf  used on input line 2369.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ITA_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/ITA_USDfx.pdf, id=2127, 542.025pt x 325.215pt>
+File: graphs/ITA_USDfx.pdf Graphic file (type pdf)
+<use graphs/ITA_USDfx.pdf>
+Package luatex.def Info: graphs/ITA_USDfx.pdf  used on input line 2400.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CIV_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/CIV_USDfx.pdf, id=2134, 542.025pt x 325.215pt>
+File: graphs/CIV_USDfx.pdf Graphic file (type pdf)
+<use graphs/CIV_USDfx.pdf>
+Package luatex.def Info: graphs/CIV_USDfx.pdf  used on input line 2428.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/JAM_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/JAM_USDfx.pdf, id=2141, 542.025pt x 325.215pt>
+File: graphs/JAM_USDfx.pdf Graphic file (type pdf)
+<use graphs/JAM_USDfx.pdf>
+Package luatex.def Info: graphs/JAM_USDfx.pdf  used on input line 2456.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/JPN_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/JPN_USDfx.pdf, id=2158, 542.025pt x 325.215pt>
+File: graphs/JPN_USDfx.pdf Graphic file (type pdf)
+<use graphs/JPN_USDfx.pdf>
+Package luatex.def Info: graphs/JPN_USDfx.pdf  used on input line 2489.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/JOR_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/JOR_USDfx.pdf, id=2163, 542.025pt x 325.215pt>
+File: graphs/JOR_USDfx.pdf Graphic file (type pdf)
+<use graphs/JOR_USDfx.pdf>
+Package luatex.def Info: graphs/JOR_USDfx.pdf  used on input line 2516.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KAZ_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/KAZ_USDfx.pdf, id=2168, 542.025pt x 325.215pt>
+File: graphs/KAZ_USDfx.pdf Graphic file (type pdf)
+<use graphs/KAZ_USDfx.pdf>
+Package luatex.def Info: graphs/KAZ_USDfx.pdf  used on input line 2543.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KEN_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/KEN_USDfx.pdf, id=2173, 542.025pt x 325.215pt>
+File: graphs/KEN_USDfx.pdf Graphic file (type pdf)
+<use graphs/KEN_USDfx.pdf>
+Package luatex.def Info: graphs/KEN_USDfx.pdf  used on input line 2570.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KWT_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/KWT_USDfx.pdf, id=2178, 542.025pt x 325.215pt>
+File: graphs/KWT_USDfx.pdf Graphic file (type pdf)
+<use graphs/KWT_USDfx.pdf>
+Package luatex.def Info: graphs/KWT_USDfx.pdf  used on input line 2597.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KGZ_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/KGZ_USDfx.pdf, id=2183, 542.025pt x 325.215pt>
+File: graphs/KGZ_USDfx.pdf Graphic file (type pdf)
+<use graphs/KGZ_USDfx.pdf>
+Package luatex.def Info: graphs/KGZ_USDfx.pdf  used on input line 2624.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LAO_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/LAO_USDfx.pdf, id=2186, 542.025pt x 325.215pt>
+File: graphs/LAO_USDfx.pdf Graphic file (type pdf)
+<use graphs/LAO_USDfx.pdf>
+Package luatex.def Info: graphs/LAO_USDfx.pdf  used on input line 2650.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LVA_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/LVA_USDfx.pdf, id=2195, 542.025pt x 325.215pt>
+File: graphs/LVA_USDfx.pdf Graphic file (type pdf)
+<use graphs/LVA_USDfx.pdf>
+Package luatex.def Info: graphs/LVA_USDfx.pdf  used on input line 2679.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LBN_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/LBN_USDfx.pdf, id=2200, 542.025pt x 325.215pt>
+File: graphs/LBN_USDfx.pdf Graphic file (type pdf)
+<use graphs/LBN_USDfx.pdf>
+Package luatex.def Info: graphs/LBN_USDfx.pdf  used on input line 2706.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LSO_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/LSO_USDfx.pdf, id=2205, 542.025pt x 325.215pt>
+File: graphs/LSO_USDfx.pdf Graphic file (type pdf)
+<use graphs/LSO_USDfx.pdf>
+Package luatex.def Info: graphs/LSO_USDfx.pdf  used on input line 2733.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LBR_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/LBR_USDfx.pdf, id=2210, 542.025pt x 325.215pt>
+File: graphs/LBR_USDfx.pdf Graphic file (type pdf)
+<use graphs/LBR_USDfx.pdf>
+Package luatex.def Info: graphs/LBR_USDfx.pdf  used on input line 2760.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LBY_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/LBY_USDfx.pdf, id=2215, 542.025pt x 325.215pt>
+File: graphs/LBY_USDfx.pdf Graphic file (type pdf)
+<use graphs/LBY_USDfx.pdf>
+Package luatex.def Info: graphs/LBY_USDfx.pdf  used on input line 2787.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LTU_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/LTU_USDfx.pdf, id=2224, 542.025pt x 325.215pt>
+File: graphs/LTU_USDfx.pdf Graphic file (type pdf)
+<use graphs/LTU_USDfx.pdf>
+Package luatex.def Info: graphs/LTU_USDfx.pdf  used on input line 2816.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LUX_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/LUX_USDfx.pdf, id=2231, 542.025pt x 325.215pt>
+File: graphs/LUX_USDfx.pdf Graphic file (type pdf)
+<use graphs/LUX_USDfx.pdf>
+Package luatex.def Info: graphs/LUX_USDfx.pdf  used on input line 2844.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MKD_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/MKD_USDfx.pdf, id=2236, 542.025pt x 325.215pt>
+File: graphs/MKD_USDfx.pdf Graphic file (type pdf)
+<use graphs/MKD_USDfx.pdf>
+Package luatex.def Info: graphs/MKD_USDfx.pdf  used on input line 2871.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MDG_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/MDG_USDfx.pdf, id=2241, 542.025pt x 325.215pt>
+File: graphs/MDG_USDfx.pdf Graphic file (type pdf)
+<use graphs/MDG_USDfx.pdf>
+Package luatex.def Info: graphs/MDG_USDfx.pdf  used on input line 2898.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MWI_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/MWI_USDfx.pdf, id=2246, 542.025pt x 325.215pt>
+File: graphs/MWI_USDfx.pdf Graphic file (type pdf)
+<use graphs/MWI_USDfx.pdf>
+Package luatex.def Info: graphs/MWI_USDfx.pdf  used on input line 2925.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MYS_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/MYS_USDfx.pdf, id=2253, 542.025pt x 325.215pt>
+File: graphs/MYS_USDfx.pdf Graphic file (type pdf)
+<use graphs/MYS_USDfx.pdf>
+Package luatex.def Info: graphs/MYS_USDfx.pdf  used on input line 2953.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MDV_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/MDV_USDfx.pdf, id=2258, 542.025pt x 325.215pt>
+File: graphs/MDV_USDfx.pdf Graphic file (type pdf)
+<use graphs/MDV_USDfx.pdf>
+Package luatex.def Info: graphs/MDV_USDfx.pdf  used on input line 2980.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MLI_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/MLI_USDfx.pdf, id=2265, 542.025pt x 325.215pt>
+File: graphs/MLI_USDfx.pdf Graphic file (type pdf)
+<use graphs/MLI_USDfx.pdf>
+Package luatex.def Info: graphs/MLI_USDfx.pdf  used on input line 3008.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MLT_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/MLT_USDfx.pdf, id=2272, 542.025pt x 325.215pt>
+File: graphs/MLT_USDfx.pdf Graphic file (type pdf)
+<use graphs/MLT_USDfx.pdf>
+Package luatex.def Info: graphs/MLT_USDfx.pdf  used on input line 3036.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MRT_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/MRT_USDfx.pdf, id=2277, 542.025pt x 325.215pt>
+File: graphs/MRT_USDfx.pdf Graphic file (type pdf)
+<use graphs/MRT_USDfx.pdf>
+Package luatex.def Info: graphs/MRT_USDfx.pdf  used on input line 3063.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MUS_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/MUS_USDfx.pdf, id=2282, 542.025pt x 325.215pt>
+File: graphs/MUS_USDfx.pdf Graphic file (type pdf)
+<use graphs/MUS_USDfx.pdf>
+Package luatex.def Info: graphs/MUS_USDfx.pdf  used on input line 3090.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MEX_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/MEX_USDfx.pdf, id=2293, 542.025pt x 325.215pt>
+File: graphs/MEX_USDfx.pdf Graphic file (type pdf)
+<use graphs/MEX_USDfx.pdf>
+Package luatex.def Info: graphs/MEX_USDfx.pdf  used on input line 3120.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MDA_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/MDA_USDfx.pdf, id=2298, 542.025pt x 325.215pt>
+File: graphs/MDA_USDfx.pdf Graphic file (type pdf)
+<use graphs/MDA_USDfx.pdf>
+Package luatex.def Info: graphs/MDA_USDfx.pdf  used on input line 3147.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MCO_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/MCO_USDfx.pdf, id=2303, 542.025pt x 325.215pt>
+File: graphs/MCO_USDfx.pdf Graphic file (type pdf)
+<use graphs/MCO_USDfx.pdf>
+Package luatex.def Info: graphs/MCO_USDfx.pdf  used on input line 3174.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MNG_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/MNG_USDfx.pdf, id=2308, 542.025pt x 325.215pt>
+File: graphs/MNG_USDfx.pdf Graphic file (type pdf)
+<use graphs/MNG_USDfx.pdf>
+Package luatex.def Info: graphs/MNG_USDfx.pdf  used on input line 3201.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MNE_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/MNE_USDfx.pdf, id=2313, 542.025pt x 325.215pt>
+File: graphs/MNE_USDfx.pdf Graphic file (type pdf)
+<use graphs/MNE_USDfx.pdf>
+Package luatex.def Info: graphs/MNE_USDfx.pdf  used on input line 3228.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MAR_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/MAR_USDfx.pdf, id=2318, 542.025pt x 325.215pt>
+File: graphs/MAR_USDfx.pdf Graphic file (type pdf)
+<use graphs/MAR_USDfx.pdf>
+Package luatex.def Info: graphs/MAR_USDfx.pdf  used on input line 3255.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MOZ_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/MOZ_USDfx.pdf, id=2323, 542.025pt x 325.215pt>
+File: graphs/MOZ_USDfx.pdf Graphic file (type pdf)
+<use graphs/MOZ_USDfx.pdf>
+Package luatex.def Info: graphs/MOZ_USDfx.pdf  used on input line 3282.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MMR_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/MMR_USDfx.pdf, id=2328, 542.025pt x 325.215pt>
+File: graphs/MMR_USDfx.pdf Graphic file (type pdf)
+<use graphs/MMR_USDfx.pdf>
+Package luatex.def Info: graphs/MMR_USDfx.pdf  used on input line 3309.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NAM_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/NAM_USDfx.pdf, id=2333, 542.025pt x 325.215pt>
+File: graphs/NAM_USDfx.pdf Graphic file (type pdf)
+<use graphs/NAM_USDfx.pdf>
+Package luatex.def Info: graphs/NAM_USDfx.pdf  used on input line 3336.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NPL_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/NPL_USDfx.pdf, id=2338, 542.025pt x 325.215pt>
+File: graphs/NPL_USDfx.pdf Graphic file (type pdf)
+<use graphs/NPL_USDfx.pdf>
+Package luatex.def Info: graphs/NPL_USDfx.pdf  used on input line 3363.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NLD_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/NLD_USDfx.pdf, id=2355, 542.025pt x 325.215pt>
+File: graphs/NLD_USDfx.pdf Graphic file (type pdf)
+<use graphs/NLD_USDfx.pdf>
+Package luatex.def Info: graphs/NLD_USDfx.pdf  used on input line 3396.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ANT_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/ANT_USDfx.pdf, id=2360, 542.025pt x 325.215pt>
+File: graphs/ANT_USDfx.pdf Graphic file (type pdf)
+<use graphs/ANT_USDfx.pdf>
+Package luatex.def Info: graphs/ANT_USDfx.pdf  used on input line 3423.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NZL_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/NZL_USDfx.pdf, id=2371, 542.025pt x 325.215pt>
+File: graphs/NZL_USDfx.pdf Graphic file (type pdf)
+<use graphs/NZL_USDfx.pdf>
+Package luatex.def Info: graphs/NZL_USDfx.pdf  used on input line 3453.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NIC_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/NIC_USDfx.pdf, id=2378, 542.025pt x 325.215pt>
+File: graphs/NIC_USDfx.pdf Graphic file (type pdf)
+<use graphs/NIC_USDfx.pdf>
+Package luatex.def Info: graphs/NIC_USDfx.pdf  used on input line 3481.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NER_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/NER_USDfx.pdf, id=2385, 542.025pt x 325.215pt>
+File: graphs/NER_USDfx.pdf Graphic file (type pdf)
+<use graphs/NER_USDfx.pdf>
+Package luatex.def Info: graphs/NER_USDfx.pdf  used on input line 3509.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NGA_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/NGA_USDfx.pdf, id=2390, 542.025pt x 325.215pt>
+File: graphs/NGA_USDfx.pdf Graphic file (type pdf)
+<use graphs/NGA_USDfx.pdf>
+Package luatex.def Info: graphs/NGA_USDfx.pdf  used on input line 3536.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PRK_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/PRK_USDfx.pdf, id=2393, 542.025pt x 325.215pt>
+File: graphs/PRK_USDfx.pdf Graphic file (type pdf)
+<use graphs/PRK_USDfx.pdf>
+Package luatex.def Info: graphs/PRK_USDfx.pdf  used on input line 3562.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NOR_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/NOR_USDfx.pdf, id=2403, 542.025pt x 325.215pt>
+File: graphs/NOR_USDfx.pdf Graphic file (type pdf)
+<use graphs/NOR_USDfx.pdf>
+Package luatex.def Info: graphs/NOR_USDfx.pdf  used on input line 3592.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/OMN_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/OMN_USDfx.pdf, id=2408, 542.025pt x 325.215pt>
+File: graphs/OMN_USDfx.pdf Graphic file (type pdf)
+<use graphs/OMN_USDfx.pdf>
+Package luatex.def Info: graphs/OMN_USDfx.pdf  used on input line 3619.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PAK_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/PAK_USDfx.pdf, id=2413, 542.025pt x 325.215pt>
+File: graphs/PAK_USDfx.pdf Graphic file (type pdf)
+<use graphs/PAK_USDfx.pdf>
+Package luatex.def Info: graphs/PAK_USDfx.pdf  used on input line 3646.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PSE_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/PSE_USDfx.pdf, id=2416, 542.025pt x 325.215pt>
+File: graphs/PSE_USDfx.pdf Graphic file (type pdf)
+<use graphs/PSE_USDfx.pdf>
+Package luatex.def Info: graphs/PSE_USDfx.pdf  used on input line 3672.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PAN_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/PAN_USDfx.pdf, id=2423, 542.025pt x 325.215pt>
+File: graphs/PAN_USDfx.pdf Graphic file (type pdf)
+<use graphs/PAN_USDfx.pdf>
+Package luatex.def Info: graphs/PAN_USDfx.pdf  used on input line 3700.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PNG_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/PNG_USDfx.pdf, id=2428, 542.025pt x 325.215pt>
+File: graphs/PNG_USDfx.pdf Graphic file (type pdf)
+<use graphs/PNG_USDfx.pdf>
+Package luatex.def Info: graphs/PNG_USDfx.pdf  used on input line 3727.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PRY_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/PRY_USDfx.pdf, id=2437, 542.025pt x 325.215pt>
+File: graphs/PRY_USDfx.pdf Graphic file (type pdf)
+<use graphs/PRY_USDfx.pdf>
+Package luatex.def Info: graphs/PRY_USDfx.pdf  used on input line 3756.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PER_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/PER_USDfx.pdf, id=2446, 542.025pt x 325.215pt>
+File: graphs/PER_USDfx.pdf Graphic file (type pdf)
+<use graphs/PER_USDfx.pdf>
+Package luatex.def Info: graphs/PER_USDfx.pdf  used on input line 3785.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PHL_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/PHL_USDfx.pdf, id=2449, 542.025pt x 325.215pt>
+File: graphs/PHL_USDfx.pdf Graphic file (type pdf)
+<use graphs/PHL_USDfx.pdf>
+Package luatex.def Info: graphs/PHL_USDfx.pdf  used on input line 3811.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/POL_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/POL_USDfx.pdf, id=2456, 542.025pt x 325.215pt>
+File: graphs/POL_USDfx.pdf Graphic file (type pdf)
+<use graphs/POL_USDfx.pdf>
+Package luatex.def Info: graphs/POL_USDfx.pdf  used on input line 3839.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PRT_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/PRT_USDfx.pdf, id=2467, 542.025pt x 325.215pt>
+File: graphs/PRT_USDfx.pdf Graphic file (type pdf)
+<use graphs/PRT_USDfx.pdf>
+Package luatex.def Info: graphs/PRT_USDfx.pdf  used on input line 3869.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PRI_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/PRI_USDfx.pdf, id=2470, 542.025pt x 325.215pt>
+File: graphs/PRI_USDfx.pdf Graphic file (type pdf)
+<use graphs/PRI_USDfx.pdf>
+Package luatex.def Info: graphs/PRI_USDfx.pdf  used on input line 3895.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/QAT_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/QAT_USDfx.pdf, id=2473, 542.025pt x 325.215pt>
+File: graphs/QAT_USDfx.pdf Graphic file (type pdf)
+<use graphs/QAT_USDfx.pdf>
+Package luatex.def Info: graphs/QAT_USDfx.pdf  used on input line 3921.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/COG_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/COG_USDfx.pdf, id=2480, 542.025pt x 325.215pt>
+File: graphs/COG_USDfx.pdf Graphic file (type pdf)
+<use graphs/COG_USDfx.pdf>
+Package luatex.def Info: graphs/COG_USDfx.pdf  used on input line 3949.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ROU_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/ROU_USDfx.pdf, id=2489, 542.025pt x 325.215pt>
+File: graphs/ROU_USDfx.pdf Graphic file (type pdf)
+<use graphs/ROU_USDfx.pdf>
+Package luatex.def Info: graphs/ROU_USDfx.pdf  used on input line 3978.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/RUS_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/RUS_USDfx.pdf, id=2498, 542.025pt x 325.215pt>
+File: graphs/RUS_USDfx.pdf Graphic file (type pdf)
+<use graphs/RUS_USDfx.pdf>
+Package luatex.def Info: graphs/RUS_USDfx.pdf  used on input line 4007.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/RWA_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/RWA_USDfx.pdf, id=2503, 542.025pt x 325.215pt>
+File: graphs/RWA_USDfx.pdf Graphic file (type pdf)
+<use graphs/RWA_USDfx.pdf>
+Package luatex.def Info: graphs/RWA_USDfx.pdf  used on input line 4034.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/STP_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/STP_USDfx.pdf, id=2508, 542.025pt x 325.215pt>
+File: graphs/STP_USDfx.pdf Graphic file (type pdf)
+<use graphs/STP_USDfx.pdf>
+Package luatex.def Info: graphs/STP_USDfx.pdf  used on input line 4061.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SAU_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/SAU_USDfx.pdf, id=2513, 542.025pt x 325.215pt>
+File: graphs/SAU_USDfx.pdf Graphic file (type pdf)
+<use graphs/SAU_USDfx.pdf>
+Package luatex.def Info: graphs/SAU_USDfx.pdf  used on input line 4088.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SEN_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/SEN_USDfx.pdf, id=2520, 542.025pt x 325.215pt>
+File: graphs/SEN_USDfx.pdf Graphic file (type pdf)
+<use graphs/SEN_USDfx.pdf>
+Package luatex.def Info: graphs/SEN_USDfx.pdf  used on input line 4116.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SRB_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/SRB_USDfx.pdf, id=2525, 542.025pt x 325.215pt>
+File: graphs/SRB_USDfx.pdf Graphic file (type pdf)
+<use graphs/SRB_USDfx.pdf>
+Package luatex.def Info: graphs/SRB_USDfx.pdf  used on input line 4143.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SYC_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/SYC_USDfx.pdf, id=2530, 542.025pt x 325.215pt>
+File: graphs/SYC_USDfx.pdf Graphic file (type pdf)
+<use graphs/SYC_USDfx.pdf>
+Package luatex.def Info: graphs/SYC_USDfx.pdf  used on input line 4170.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SLE_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/SLE_USDfx.pdf, id=2535, 542.025pt x 325.215pt>
+File: graphs/SLE_USDfx.pdf Graphic file (type pdf)
+<use graphs/SLE_USDfx.pdf>
+Package luatex.def Info: graphs/SLE_USDfx.pdf  used on input line 4197.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SGP_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/SGP_USDfx.pdf, id=2540, 542.025pt x 325.215pt>
+File: graphs/SGP_USDfx.pdf Graphic file (type pdf)
+<use graphs/SGP_USDfx.pdf>
+Package luatex.def Info: graphs/SGP_USDfx.pdf  used on input line 4224.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SVK_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/SVK_USDfx.pdf, id=2547, 542.025pt x 325.215pt>
+File: graphs/SVK_USDfx.pdf Graphic file (type pdf)
+<use graphs/SVK_USDfx.pdf>
+Package luatex.def Info: graphs/SVK_USDfx.pdf  used on input line 4252.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SVN_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/SVN_USDfx.pdf, id=2554, 542.025pt x 325.215pt>
+File: graphs/SVN_USDfx.pdf Graphic file (type pdf)
+<use graphs/SVN_USDfx.pdf>
+Package luatex.def Info: graphs/SVN_USDfx.pdf  used on input line 4280.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SOM_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/SOM_USDfx.pdf, id=2561, 542.025pt x 325.215pt>
+File: graphs/SOM_USDfx.pdf Graphic file (type pdf)
+<use graphs/SOM_USDfx.pdf>
+Package luatex.def Info: graphs/SOM_USDfx.pdf  used on input line 4308.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ZAF_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/ZAF_USDfx.pdf, id=2566, 542.025pt x 325.215pt>
+File: graphs/ZAF_USDfx.pdf Graphic file (type pdf)
+<use graphs/ZAF_USDfx.pdf>
+Package luatex.def Info: graphs/ZAF_USDfx.pdf  used on input line 4335.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KOR_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/KOR_USDfx.pdf, id=2575, 542.025pt x 325.215pt>
+File: graphs/KOR_USDfx.pdf Graphic file (type pdf)
+<use graphs/KOR_USDfx.pdf>
+Package luatex.def Info: graphs/KOR_USDfx.pdf  used on input line 4364.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SSD_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/SSD_USDfx.pdf, id=2580, 542.025pt x 325.215pt>
+File: graphs/SSD_USDfx.pdf Graphic file (type pdf)
+<use graphs/SSD_USDfx.pdf>
+Package luatex.def Info: graphs/SSD_USDfx.pdf  used on input line 4391.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SUN_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/SUN_USDfx.pdf, id=2585, 542.025pt x 325.215pt>
+File: graphs/SUN_USDfx.pdf Graphic file (type pdf)
+<use graphs/SUN_USDfx.pdf>
+Package luatex.def Info: graphs/SUN_USDfx.pdf  used on input line 4418.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ESP_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/ESP_USDfx.pdf, id=2602, 542.025pt x 325.215pt>
+File: graphs/ESP_USDfx.pdf Graphic file (type pdf)
+<use graphs/ESP_USDfx.pdf>
+Package luatex.def Info: graphs/ESP_USDfx.pdf  used on input line 4451.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LKA_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/LKA_USDfx.pdf, id=2607, 542.025pt x 325.215pt>
+File: graphs/LKA_USDfx.pdf Graphic file (type pdf)
+<use graphs/LKA_USDfx.pdf>
+Package luatex.def Info: graphs/LKA_USDfx.pdf  used on input line 4478.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SDN_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/SDN_USDfx.pdf, id=2612, 542.025pt x 325.215pt>
+File: graphs/SDN_USDfx.pdf Graphic file (type pdf)
+<use graphs/SDN_USDfx.pdf>
+Package luatex.def Info: graphs/SDN_USDfx.pdf  used on input line 4505.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SUR_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/SUR_USDfx.pdf, id=2617, 542.025pt x 325.215pt>
+File: graphs/SUR_USDfx.pdf Graphic file (type pdf)
+<use graphs/SUR_USDfx.pdf>
+Package luatex.def Info: graphs/SUR_USDfx.pdf  used on input line 4532.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SWE_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/SWE_USDfx.pdf, id=2630, 542.025pt x 325.215pt>
+File: graphs/SWE_USDfx.pdf Graphic file (type pdf)
+<use graphs/SWE_USDfx.pdf>
+Package luatex.def Info: graphs/SWE_USDfx.pdf  used on input line 4563.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CHE_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/CHE_USDfx.pdf, id=2643, 542.025pt x 325.215pt>
+File: graphs/CHE_USDfx.pdf Graphic file (type pdf)
+<use graphs/CHE_USDfx.pdf>
+Package luatex.def Info: graphs/CHE_USDfx.pdf  used on input line 4594.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SYR_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/SYR_USDfx.pdf, id=2650, 542.025pt x 325.215pt>
+File: graphs/SYR_USDfx.pdf Graphic file (type pdf)
+<use graphs/SYR_USDfx.pdf>
+Package luatex.def Info: graphs/SYR_USDfx.pdf  used on input line 4622.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TWN_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/TWN_USDfx.pdf, id=2657, 542.025pt x 325.215pt>
+File: graphs/TWN_USDfx.pdf Graphic file (type pdf)
+<use graphs/TWN_USDfx.pdf>
+Package luatex.def Info: graphs/TWN_USDfx.pdf  used on input line 4650.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TJK_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/TJK_USDfx.pdf, id=2662, 542.025pt x 325.215pt>
+File: graphs/TJK_USDfx.pdf Graphic file (type pdf)
+<use graphs/TJK_USDfx.pdf>
+Package luatex.def Info: graphs/TJK_USDfx.pdf  used on input line 4677.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TZA_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/TZA_USDfx.pdf, id=2667, 542.025pt x 325.215pt>
+File: graphs/TZA_USDfx.pdf Graphic file (type pdf)
+<use graphs/TZA_USDfx.pdf>
+Package luatex.def Info: graphs/TZA_USDfx.pdf  used on input line 4704.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/THA_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/THA_USDfx.pdf, id=2674, 542.025pt x 325.215pt>
+File: graphs/THA_USDfx.pdf Graphic file (type pdf)
+<use graphs/THA_USDfx.pdf>
+Package luatex.def Info: graphs/THA_USDfx.pdf  used on input line 4732.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TLS_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/TLS_USDfx.pdf, id=2677, 542.025pt x 325.215pt>
+File: graphs/TLS_USDfx.pdf Graphic file (type pdf)
+<use graphs/TLS_USDfx.pdf>
+Package luatex.def Info: graphs/TLS_USDfx.pdf  used on input line 4758.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TGO_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/TGO_USDfx.pdf, id=2684, 542.025pt x 325.215pt>
+File: graphs/TGO_USDfx.pdf Graphic file (type pdf)
+<use graphs/TGO_USDfx.pdf>
+Package luatex.def Info: graphs/TGO_USDfx.pdf  used on input line 4786.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TTO_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/TTO_USDfx.pdf, id=2689, 542.025pt x 325.215pt>
+File: graphs/TTO_USDfx.pdf Graphic file (type pdf)
+<use graphs/TTO_USDfx.pdf>
+Package luatex.def Info: graphs/TTO_USDfx.pdf  used on input line 4813.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TUN_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/TUN_USDfx.pdf, id=2694, 542.025pt x 325.215pt>
+File: graphs/TUN_USDfx.pdf Graphic file (type pdf)
+<use graphs/TUN_USDfx.pdf>
+Package luatex.def Info: graphs/TUN_USDfx.pdf  used on input line 4840.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TUR_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/TUR_USDfx.pdf, id=2703, 542.025pt x 325.215pt>
+File: graphs/TUR_USDfx.pdf Graphic file (type pdf)
+<use graphs/TUR_USDfx.pdf>
+Package luatex.def Info: graphs/TUR_USDfx.pdf  used on input line 4869.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TKM_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/TKM_USDfx.pdf, id=2710, 542.025pt x 325.215pt>
+File: graphs/TKM_USDfx.pdf Graphic file (type pdf)
+<use graphs/TKM_USDfx.pdf>
+Package luatex.def Info: graphs/TKM_USDfx.pdf  used on input line 4897.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/UGA_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/UGA_USDfx.pdf, id=2715, 542.025pt x 325.215pt>
+File: graphs/UGA_USDfx.pdf Graphic file (type pdf)
+<use graphs/UGA_USDfx.pdf>
+Package luatex.def Info: graphs/UGA_USDfx.pdf  used on input line 4924.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/UKR_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/UKR_USDfx.pdf, id=2720, 542.025pt x 325.215pt>
+File: graphs/UKR_USDfx.pdf Graphic file (type pdf)
+<use graphs/UKR_USDfx.pdf>
+Package luatex.def Info: graphs/UKR_USDfx.pdf  used on input line 4951.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ARE_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/ARE_USDfx.pdf, id=2723, 542.025pt x 325.215pt>
+File: graphs/ARE_USDfx.pdf Graphic file (type pdf)
+<use graphs/ARE_USDfx.pdf>
+Package luatex.def Info: graphs/ARE_USDfx.pdf  used on input line 4977.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GBR_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/GBR_USDfx.pdf, id=2728, 542.025pt x 325.215pt>
+File: graphs/GBR_USDfx.pdf Graphic file (type pdf)
+<use graphs/GBR_USDfx.pdf>
+Package luatex.def Info: graphs/GBR_USDfx.pdf  used on input line 5004.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/USA_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/USA_USDfx.pdf, id=2741, 542.025pt x 325.215pt>
+File: graphs/USA_USDfx.pdf Graphic file (type pdf)
+<use graphs/USA_USDfx.pdf>
+Package luatex.def Info: graphs/USA_USDfx.pdf  used on input line 5035.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/URY_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/URY_USDfx.pdf, id=2748, 542.025pt x 325.215pt>
+File: graphs/URY_USDfx.pdf Graphic file (type pdf)
+<use graphs/URY_USDfx.pdf>
+Package luatex.def Info: graphs/URY_USDfx.pdf  used on input line 5063.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/UZB_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/UZB_USDfx.pdf, id=2753, 542.025pt x 325.215pt>
+File: graphs/UZB_USDfx.pdf Graphic file (type pdf)
+<use graphs/UZB_USDfx.pdf>
+Package luatex.def Info: graphs/UZB_USDfx.pdf  used on input line 5090.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/VEN_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/VEN_USDfx.pdf, id=2762, 542.025pt x 325.215pt>
+File: graphs/VEN_USDfx.pdf Graphic file (type pdf)
+<use graphs/VEN_USDfx.pdf>
+Package luatex.def Info: graphs/VEN_USDfx.pdf  used on input line 5119.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/VNM_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/VNM_USDfx.pdf, id=2767, 542.025pt x 325.215pt>
+File: graphs/VNM_USDfx.pdf Graphic file (type pdf)
+<use graphs/VNM_USDfx.pdf>
+Package luatex.def Info: graphs/VNM_USDfx.pdf  used on input line 5146.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/YEM_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/YEM_USDfx.pdf, id=2772, 542.025pt x 325.215pt>
+File: graphs/YEM_USDfx.pdf Graphic file (type pdf)
+<use graphs/YEM_USDfx.pdf>
+Package luatex.def Info: graphs/YEM_USDfx.pdf  used on input line 5173.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/YUG_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/YUG_USDfx.pdf, id=2775, 542.025pt x 325.215pt>
+File: graphs/YUG_USDfx.pdf Graphic file (type pdf)
+<use graphs/YUG_USDfx.pdf>
+Package luatex.def Info: graphs/YUG_USDfx.pdf  used on input line 5199.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ZMB_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/ZMB_USDfx.pdf, id=2780, 542.025pt x 325.215pt>
+File: graphs/ZMB_USDfx.pdf Graphic file (type pdf)
+<use graphs/ZMB_USDfx.pdf>
+Package luatex.def Info: graphs/ZMB_USDfx.pdf  used on input line 5226.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ZWE_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/ZWE_USDfx.pdf, id=2785, 542.025pt x 325.215pt>
+File: graphs/ZWE_USDfx.pdf Graphic file (type pdf)
+<use graphs/ZWE_USDfx.pdf>
+Package luatex.def Info: graphs/ZWE_USDfx.pdf  used on input line 5253.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ASM_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/ASM_USDfx.pdf, id=2788, 542.025pt x 325.215pt>
+File: graphs/ASM_USDfx.pdf Graphic file (type pdf)
+<use graphs/ASM_USDfx.pdf>
+Package luatex.def Info: graphs/ASM_USDfx.pdf  used on input line 5279.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AND_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/AND_USDfx.pdf, id=2791, 542.025pt x 325.215pt>
+File: graphs/AND_USDfx.pdf Graphic file (type pdf)
+<use graphs/AND_USDfx.pdf>
+Package luatex.def Info: graphs/AND_USDfx.pdf  used on input line 5305.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AIA_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/AIA_USDfx.pdf, id=2794, 542.025pt x 325.215pt>
+File: graphs/AIA_USDfx.pdf Graphic file (type pdf)
+<use graphs/AIA_USDfx.pdf>
+Package luatex.def Info: graphs/AIA_USDfx.pdf  used on input line 5331.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ATG_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/ATG_USDfx.pdf, id=2799, 542.025pt x 325.215pt>
+File: graphs/ATG_USDfx.pdf Graphic file (type pdf)
+<use graphs/ATG_USDfx.pdf>
+Package luatex.def Info: graphs/ATG_USDfx.pdf  used on input line 5358.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ABW_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/ABW_USDfx.pdf, id=2804, 542.025pt x 325.215pt>
+File: graphs/ABW_USDfx.pdf Graphic file (type pdf)
+<use graphs/ABW_USDfx.pdf>
+Package luatex.def Info: graphs/ABW_USDfx.pdf  used on input line 5385.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/VGB_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/VGB_USDfx.pdf, id=2807, 542.025pt x 325.215pt>
+File: graphs/VGB_USDfx.pdf Graphic file (type pdf)
+<use graphs/VGB_USDfx.pdf>
+Package luatex.def Info: graphs/VGB_USDfx.pdf  used on input line 5411.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CYM_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/CYM_USDfx.pdf, id=2812, 542.025pt x 325.215pt>
+File: graphs/CYM_USDfx.pdf Graphic file (type pdf)
+<use graphs/CYM_USDfx.pdf>
+Package luatex.def Info: graphs/CYM_USDfx.pdf  used on input line 5438.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/COM_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/COM_USDfx.pdf, id=2817, 542.025pt x 325.215pt>
+File: graphs/COM_USDfx.pdf Graphic file (type pdf)
+<use graphs/COM_USDfx.pdf>
+Package luatex.def Info: graphs/COM_USDfx.pdf  used on input line 5465.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/COK_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/COK_USDfx.pdf, id=2820, 542.025pt x 325.215pt>
+File: graphs/COK_USDfx.pdf Graphic file (type pdf)
+<use graphs/COK_USDfx.pdf>
+Package luatex.def Info: graphs/COK_USDfx.pdf  used on input line 5491.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CUW_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/CUW_USDfx.pdf, id=2825, 542.025pt x 325.215pt>
+File: graphs/CUW_USDfx.pdf Graphic file (type pdf)
+<use graphs/CUW_USDfx.pdf>
+Package luatex.def Info: graphs/CUW_USDfx.pdf  used on input line 5518.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/FLK_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/FLK_USDfx.pdf, id=2828, 542.025pt x 325.215pt>
+File: graphs/FLK_USDfx.pdf Graphic file (type pdf)
+<use graphs/FLK_USDfx.pdf>
+Package luatex.def Info: graphs/FLK_USDfx.pdf  used on input line 5544.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/FRO_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/FRO_USDfx.pdf, id=2833, 542.025pt x 325.215pt>
+File: graphs/FRO_USDfx.pdf Graphic file (type pdf)
+<use graphs/FRO_USDfx.pdf>
+Package luatex.def Info: graphs/FRO_USDfx.pdf  used on input line 5571.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PYF_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/PYF_USDfx.pdf, id=2836, 542.025pt x 325.215pt>
+File: graphs/PYF_USDfx.pdf Graphic file (type pdf)
+<use graphs/PYF_USDfx.pdf>
+Package luatex.def Info: graphs/PYF_USDfx.pdf  used on input line 5597.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GIB_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/GIB_USDfx.pdf, id=2839, 542.025pt x 325.215pt>
+File: graphs/GIB_USDfx.pdf Graphic file (type pdf)
+<use graphs/GIB_USDfx.pdf>
+Package luatex.def Info: graphs/GIB_USDfx.pdf  used on input line 5623.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GRL_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/GRL_USDfx.pdf, id=2844, 542.025pt x 325.215pt>
+File: graphs/GRL_USDfx.pdf Graphic file (type pdf)
+<use graphs/GRL_USDfx.pdf>
+Package luatex.def Info: graphs/GRL_USDfx.pdf  used on input line 5650.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GLP_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/GLP_USDfx.pdf, id=2847, 542.025pt x 325.215pt>
+File: graphs/GLP_USDfx.pdf Graphic file (type pdf)
+<use graphs/GLP_USDfx.pdf>
+Package luatex.def Info: graphs/GLP_USDfx.pdf  used on input line 5676.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GUM_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/GUM_USDfx.pdf, id=2850, 542.025pt x 325.215pt>
+File: graphs/GUM_USDfx.pdf Graphic file (type pdf)
+<use graphs/GUM_USDfx.pdf>
+Package luatex.def Info: graphs/GUM_USDfx.pdf  used on input line 5702.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GGY_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/GGY_USDfx.pdf, id=2853, 542.025pt x 325.215pt>
+File: graphs/GGY_USDfx.pdf Graphic file (type pdf)
+<use graphs/GGY_USDfx.pdf>
+Package luatex.def Info: graphs/GGY_USDfx.pdf  used on input line 5728.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IMN_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/IMN_USDfx.pdf, id=2856, 542.025pt x 325.215pt>
+File: graphs/IMN_USDfx.pdf Graphic file (type pdf)
+<use graphs/IMN_USDfx.pdf>
+Package luatex.def Info: graphs/IMN_USDfx.pdf  used on input line 5754.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/JEY_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/JEY_USDfx.pdf, id=2859, 542.025pt x 325.215pt>
+File: graphs/JEY_USDfx.pdf Graphic file (type pdf)
+<use graphs/JEY_USDfx.pdf>
+Package luatex.def Info: graphs/JEY_USDfx.pdf  used on input line 5780.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KIR_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/KIR_USDfx.pdf, id=2864, 542.025pt x 325.215pt>
+File: graphs/KIR_USDfx.pdf Graphic file (type pdf)
+<use graphs/KIR_USDfx.pdf>
+Package luatex.def Info: graphs/KIR_USDfx.pdf  used on input line 5807.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/XKX_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/XKX_USDfx.pdf, id=2867, 542.025pt x 325.215pt>
+File: graphs/XKX_USDfx.pdf Graphic file (type pdf)
+<use graphs/XKX_USDfx.pdf>
+Package luatex.def Info: graphs/XKX_USDfx.pdf  used on input line 5833.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LIE_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/LIE_USDfx.pdf, id=2870, 542.025pt x 325.215pt>
+File: graphs/LIE_USDfx.pdf Graphic file (type pdf)
+<use graphs/LIE_USDfx.pdf>
+Package luatex.def Info: graphs/LIE_USDfx.pdf  used on input line 5859.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MAC_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/MAC_USDfx.pdf, id=2873, 542.025pt x 325.215pt>
+File: graphs/MAC_USDfx.pdf Graphic file (type pdf)
+<use graphs/MAC_USDfx.pdf>
+Package luatex.def Info: graphs/MAC_USDfx.pdf  used on input line 5885.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MHL_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/MHL_USDfx.pdf, id=2876, 542.025pt x 325.215pt>
+File: graphs/MHL_USDfx.pdf Graphic file (type pdf)
+<use graphs/MHL_USDfx.pdf>
+Package luatex.def Info: graphs/MHL_USDfx.pdf  used on input line 5911.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MTQ_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/MTQ_USDfx.pdf, id=2879, 542.025pt x 325.215pt>
+File: graphs/MTQ_USDfx.pdf Graphic file (type pdf)
+<use graphs/MTQ_USDfx.pdf>
+Package luatex.def Info: graphs/MTQ_USDfx.pdf  used on input line 5937.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/FSM_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/FSM_USDfx.pdf, id=2882, 542.025pt x 325.215pt>
+File: graphs/FSM_USDfx.pdf Graphic file (type pdf)
+<use graphs/FSM_USDfx.pdf>
+Package luatex.def Info: graphs/FSM_USDfx.pdf  used on input line 5963.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MSR_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/MSR_USDfx.pdf, id=2885, 542.025pt x 325.215pt>
+File: graphs/MSR_USDfx.pdf Graphic file (type pdf)
+<use graphs/MSR_USDfx.pdf>
+Package luatex.def Info: graphs/MSR_USDfx.pdf  used on input line 5989.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NRU_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/NRU_USDfx.pdf, id=2888, 542.025pt x 325.215pt>
+File: graphs/NRU_USDfx.pdf Graphic file (type pdf)
+<use graphs/NRU_USDfx.pdf>
+Package luatex.def Info: graphs/NRU_USDfx.pdf  used on input line 6015.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NCL_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/NCL_USDfx.pdf, id=2891, 542.025pt x 325.215pt>
+File: graphs/NCL_USDfx.pdf Graphic file (type pdf)
+<use graphs/NCL_USDfx.pdf>
+Package luatex.def Info: graphs/NCL_USDfx.pdf  used on input line 6041.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NIU_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/NIU_USDfx.pdf, id=2894, 542.025pt x 325.215pt>
+File: graphs/NIU_USDfx.pdf Graphic file (type pdf)
+<use graphs/NIU_USDfx.pdf>
+Package luatex.def Info: graphs/NIU_USDfx.pdf  used on input line 6067.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MNP_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/MNP_USDfx.pdf, id=2897, 542.025pt x 325.215pt>
+File: graphs/MNP_USDfx.pdf Graphic file (type pdf)
+<use graphs/MNP_USDfx.pdf>
+Package luatex.def Info: graphs/MNP_USDfx.pdf  used on input line 6093.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PLW_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/PLW_USDfx.pdf, id=2900, 542.025pt x 325.215pt>
+File: graphs/PLW_USDfx.pdf Graphic file (type pdf)
+<use graphs/PLW_USDfx.pdf>
+Package luatex.def Info: graphs/PLW_USDfx.pdf  used on input line 6119.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/REU_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/REU_USDfx.pdf, id=2903, 542.025pt x 325.215pt>
+File: graphs/REU_USDfx.pdf Graphic file (type pdf)
+<use graphs/REU_USDfx.pdf>
+Package luatex.def Info: graphs/REU_USDfx.pdf  used on input line 6145.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SHN_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/SHN_USDfx.pdf, id=2906, 542.025pt x 325.215pt>
+File: graphs/SHN_USDfx.pdf Graphic file (type pdf)
+<use graphs/SHN_USDfx.pdf>
+Package luatex.def Info: graphs/SHN_USDfx.pdf  used on input line 6171.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KNA_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/KNA_USDfx.pdf, id=2911, 542.025pt x 325.215pt>
+File: graphs/KNA_USDfx.pdf Graphic file (type pdf)
+<use graphs/KNA_USDfx.pdf>
+Package luatex.def Info: graphs/KNA_USDfx.pdf  used on input line 6198.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LCA_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/LCA_USDfx.pdf, id=2916, 542.025pt x 325.215pt>
+File: graphs/LCA_USDfx.pdf Graphic file (type pdf)
+<use graphs/LCA_USDfx.pdf>
+Package luatex.def Info: graphs/LCA_USDfx.pdf  used on input line 6225.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MAF_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/MAF_USDfx.pdf, id=2919, 542.025pt x 325.215pt>
+File: graphs/MAF_USDfx.pdf Graphic file (type pdf)
+<use graphs/MAF_USDfx.pdf>
+Package luatex.def Info: graphs/MAF_USDfx.pdf  used on input line 6251.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SPM_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/SPM_USDfx.pdf, id=2922, 542.025pt x 325.215pt>
+File: graphs/SPM_USDfx.pdf Graphic file (type pdf)
+<use graphs/SPM_USDfx.pdf>
+Package luatex.def Info: graphs/SPM_USDfx.pdf  used on input line 6277.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/VCT_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/VCT_USDfx.pdf, id=2927, 542.025pt x 325.215pt>
+File: graphs/VCT_USDfx.pdf Graphic file (type pdf)
+<use graphs/VCT_USDfx.pdf>
+Package luatex.def Info: graphs/VCT_USDfx.pdf  used on input line 6304.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/WSM_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/WSM_USDfx.pdf, id=2932, 542.025pt x 325.215pt>
+File: graphs/WSM_USDfx.pdf Graphic file (type pdf)
+<use graphs/WSM_USDfx.pdf>
+Package luatex.def Info: graphs/WSM_USDfx.pdf  used on input line 6331.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SMR_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/SMR_USDfx.pdf, id=2935, 542.025pt x 325.215pt>
+File: graphs/SMR_USDfx.pdf Graphic file (type pdf)
+<use graphs/SMR_USDfx.pdf>
+Package luatex.def Info: graphs/SMR_USDfx.pdf  used on input line 6357.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SXM_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/SXM_USDfx.pdf, id=2940, 542.025pt x 325.215pt>
+File: graphs/SXM_USDfx.pdf Graphic file (type pdf)
+<use graphs/SXM_USDfx.pdf>
+Package luatex.def Info: graphs/SXM_USDfx.pdf  used on input line 6384.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SLB_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/SLB_USDfx.pdf, id=2945, 542.025pt x 325.215pt>
+File: graphs/SLB_USDfx.pdf Graphic file (type pdf)
+<use graphs/SLB_USDfx.pdf>
+Package luatex.def Info: graphs/SLB_USDfx.pdf  used on input line 6411.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TON_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/TON_USDfx.pdf, id=2950, 542.025pt x 325.215pt>
+File: graphs/TON_USDfx.pdf Graphic file (type pdf)
+<use graphs/TON_USDfx.pdf>
+Package luatex.def Info: graphs/TON_USDfx.pdf  used on input line 6438.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TCA_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/TCA_USDfx.pdf, id=2953, 542.025pt x 325.215pt>
+File: graphs/TCA_USDfx.pdf Graphic file (type pdf)
+<use graphs/TCA_USDfx.pdf>
+Package luatex.def Info: graphs/TCA_USDfx.pdf  used on input line 6464.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TUV_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/TUV_USDfx.pdf, id=2956, 542.025pt x 325.215pt>
+File: graphs/TUV_USDfx.pdf Graphic file (type pdf)
+<use graphs/TUV_USDfx.pdf>
+Package luatex.def Info: graphs/TUV_USDfx.pdf  used on input line 6490.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/VIR_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/VIR_USDfx.pdf, id=2959, 542.025pt x 325.215pt>
+File: graphs/VIR_USDfx.pdf Graphic file (type pdf)
+<use graphs/VIR_USDfx.pdf>
+Package luatex.def Info: graphs/VIR_USDfx.pdf  used on input line 6516.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/UMI_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/UMI_USDfx.pdf, id=2962, 542.025pt x 325.215pt>
+File: graphs/UMI_USDfx.pdf Graphic file (type pdf)
+<use graphs/UMI_USDfx.pdf>
+Package luatex.def Info: graphs/UMI_USDfx.pdf  used on input line 6542.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/VUT_USDfx.pdf) (pdf inclusion): PDF inclusion: found PDF v
+ersion '1.6', but at most version '1.5' allowed
+<graphs/VUT_USDfx.pdf, id=2967, 542.025pt x 325.215pt>
+File: graphs/VUT_USDfx.pdf Graphic file (type pdf)
+<use graphs/VUT_USDfx.pdf>
+Package luatex.def Info: graphs/VUT_USDfx.pdf  used on input line 6569.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.3'
+[3]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.4'
+[4<./graphs/AFG_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.5'
+[5<./graphs/ALB_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.6'
+[6<./graphs/DZA_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.7'
+[7<./graphs/AGO_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.8'
+[8<./graphs/ARG_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[9<./graphs/ARM_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[10<./graphs/AUS_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[11<./graphs/AUT_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[12<./graphs/AZE_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[13<./graphs/BHS_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[14<./graphs/BHR_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[15<./graphs/BGD_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[16<./graphs/BRB_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[17<./graphs/BLR_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[18<./graphs/BEL_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[19<./graphs/BLZ_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[20<./graphs/BEN_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[21<./graphs/BMU_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[22<./graphs/BTN_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[23<./graphs/BOL_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[24<./graphs/BIH_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[25<./graphs/BWA_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[26<./graphs/BRA_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[27<./graphs/BRN_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[28<./graphs/BGR_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[29<./graphs/BFA_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[30<./graphs/BDI_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[31<./graphs/KHM_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[32<./graphs/CMR_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[33<./graphs/CAN_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[34<./graphs/CPV_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[35<./graphs/CAF_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[36<./graphs/TCD_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[37<./graphs/CHL_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[38<./graphs/CHN_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[39<./graphs/COL_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[40<./graphs/CRI_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[41<./graphs/HRV_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[42<./graphs/CUB_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[43<./graphs/CYP_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[44<./graphs/CZE_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[45<./graphs/CSK_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[46<./graphs/COD_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[47<./graphs/DNK_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[48<./graphs/DJI_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[49<./graphs/DMA_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[50<./graphs/DOM_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[51<./graphs/ECU_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[52<./graphs/EGY_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[53<./graphs/SLV_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[54<./graphs/GNQ_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[55<./graphs/ERI_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[56<./graphs/EST_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[57<./graphs/SWZ_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[58<./graphs/ETH_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[59<./graphs/FJI_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[60<./graphs/FIN_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[61<./graphs/FRA_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[62<./graphs/GUF_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[63<./graphs/GAB_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[64<./graphs/GMB_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[65<./graphs/GEO_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[66<./graphs/DDR_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[67<./graphs/DEU_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[68<./graphs/GHA_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[69<./graphs/GRC_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[70<./graphs/GRD_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[71<./graphs/GTM_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[72<./graphs/GIN_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[73<./graphs/GNB_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[74<./graphs/GUY_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[75<./graphs/HTI_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[76<./graphs/HND_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[77<./graphs/HKG_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[78<./graphs/HUN_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[79<./graphs/ISL_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[80<./graphs/IND_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[81<./graphs/IDN_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[82<./graphs/IRN_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[83<./graphs/IRQ_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[84<./graphs/IRL_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[85<./graphs/ISR_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[86<./graphs/ITA_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[87<./graphs/CIV_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[88<./graphs/JAM_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[89<./graphs/JPN_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[90<./graphs/JOR_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[91<./graphs/KAZ_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[92<./graphs/KEN_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[93<./graphs/KWT_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[94<./graphs/KGZ_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[95<./graphs/LAO_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[96<./graphs/LVA_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[97<./graphs/LBN_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[98<./graphs/LSO_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[99<./graphs/LBR_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[100<./graphs/LBY_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[101<./graphs/LTU_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[102<./graphs/LUX_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[103<./graphs/MKD_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[104<./graphs/MDG_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[105<./graphs/MWI_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[106<./graphs/MYS_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[107<./graphs/MDV_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[108<./graphs/MLI_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[109<./graphs/MLT_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[110<./graphs/MRT_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[111<./graphs/MUS_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[112<./graphs/MEX_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[113<./graphs/MDA_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[114<./graphs/MCO_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[115<./graphs/MNG_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[116<./graphs/MNE_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[117<./graphs/MAR_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[118<./graphs/MOZ_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[119<./graphs/MMR_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[120<./graphs/NAM_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[121<./graphs/NPL_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[122<./graphs/NLD_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[123<./graphs/ANT_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[124<./graphs/NZL_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[125<./graphs/NIC_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[126<./graphs/NER_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[127<./graphs/NGA_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[128<./graphs/PRK_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[129<./graphs/NOR_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[130<./graphs/OMN_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[131<./graphs/PAK_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[132<./graphs/PSE_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[133<./graphs/PAN_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[134<./graphs/PNG_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[135<./graphs/PRY_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[136<./graphs/PER_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[137<./graphs/PHL_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[138<./graphs/POL_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[139<./graphs/PRT_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[140<./graphs/PRI_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[141<./graphs/QAT_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[142<./graphs/COG_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[143<./graphs/ROU_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[144<./graphs/RUS_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[145<./graphs/RWA_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[146<./graphs/STP_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[147<./graphs/SAU_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[148<./graphs/SEN_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[149<./graphs/SRB_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[150<./graphs/SYC_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[151<./graphs/SLE_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[152<./graphs/SGP_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[153<./graphs/SVK_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[154<./graphs/SVN_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[155<./graphs/SOM_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[156<./graphs/ZAF_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[157<./graphs/KOR_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[158<./graphs/SSD_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[159<./graphs/SUN_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[160<./graphs/ESP_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[161<./graphs/LKA_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[162<./graphs/SDN_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[163<./graphs/SUR_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[164<./graphs/SWE_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[165<./graphs/CHE_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[166<./graphs/SYR_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[167<./graphs/TWN_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[168<./graphs/TJK_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[169<./graphs/TZA_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[170<./graphs/THA_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[171<./graphs/TLS_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[172<./graphs/TGO_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[173<./graphs/TTO_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[174<./graphs/TUN_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[175<./graphs/TUR_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[176<./graphs/TKM_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[177<./graphs/UGA_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[178<./graphs/UKR_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[179<./graphs/ARE_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[180<./graphs/GBR_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[181<./graphs/USA_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[182<./graphs/URY_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[183<./graphs/UZB_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[184<./graphs/VEN_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[185<./graphs/VNM_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[186<./graphs/YEM_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[187<./graphs/YUG_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[188<./graphs/ZMB_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[189<./graphs/ZWE_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[190<./graphs/ASM_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[191<./graphs/AND_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[192<./graphs/AIA_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[193<./graphs/ATG_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[194<./graphs/ABW_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[195<./graphs/VGB_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[196<./graphs/CYM_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[197<./graphs/COM_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[198<./graphs/COK_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[199<./graphs/CUW_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[200<./graphs/FLK_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[201<./graphs/FRO_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[202<./graphs/PYF_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[203<./graphs/GIB_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[204<./graphs/GRL_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[205<./graphs/GLP_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[206<./graphs/GUM_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[207<./graphs/GGY_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[208<./graphs/IMN_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[209<./graphs/JEY_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[210<./graphs/KIR_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[211<./graphs/XKX_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[212<./graphs/LIE_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[213<./graphs/MAC_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[214<./graphs/MHL_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[215<./graphs/MTQ_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[216<./graphs/FSM_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[217<./graphs/MSR_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[218<./graphs/NRU_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[219<./graphs/NCL_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[220<./graphs/NIU_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[221<./graphs/MNP_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[222<./graphs/PLW_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[223<./graphs/REU_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[224<./graphs/SHN_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[225<./graphs/KNA_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[226<./graphs/LCA_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[227<./graphs/MAF_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[228<./graphs/SPM_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[229<./graphs/VCT_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[230<./graphs/WSM_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[231<./graphs/SMR_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[232<./graphs/SXM_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[233<./graphs/SLB_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[234<./graphs/TON_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[235<./graphs/TCA_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[236<./graphs/TUV_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[237<./graphs/VIR_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[238<./graphs/UMI_USDfx.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[239<./graphs/VUT_USDfx.pdf>] (./USDfx.bbl
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 14
+.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+))
+
+[240
+Missing character: There is no — (U+2014) in font ptmri8t!
+] (./USDfx.aux)
+ ***********
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+ ***********
+Package rerunfilecheck Info: File `USDfx.out' has not changed.
+(rerunfilecheck)             Checksum: 923F301012A727F171A3F2F27721FC87;22849.
+)
+
+Here is how much of LuaTeX's memory you used:
+ 24710 strings out of 475664
+ 1164455,1144653 words of node,token memory allocated
+ 483 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 7 attribute, 58 glue_spec,
+ 7 attribute_list, 2 write, 2 pdf_action nodes
+   avail lists: 1:1,2:55757,3:5873,4:9266,5:7820,6:2043,7:92040,8:90,9:22442,10:
+7,11:4010
+ 45308 multiletter control sequences out of 65536+600000
+ 57 fonts using 3757735 bytes
+ 105i,12n,100p,465b,576s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{C:/Users/lehbib/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/U
+sers/lehbib/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:
+/Users/lehbib/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:
+/Users/lehbib/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:
+/Users/lehbib/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on USDfx.pdf (247 pages, 34947933 bytes).
+
+PDF statistics: 89090 PDF objects out of 95282 (max. 8388607)
+ 975 named destinations out of 1000 (max. 131072)
+ 1912 words of extra memory for PDF output out of 10000 (max. 100000000)
+

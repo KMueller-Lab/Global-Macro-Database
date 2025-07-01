@@ -1,0 +1,28 @@
+\contentsline {section}{Data availability heatmap}{3}{section*.3}%
+\contentsline {section}{Current account balance}{4}{section*.5}%
+\contentsline {section}{Consumer price index}{5}{section*.8}%
+\contentsline {section}{USD exchange rate}{6}{section*.11}%
+\contentsline {section}{Total consumption}{7}{section*.14}%
+\contentsline {section}{Total consumption to GDP ratio}{8}{section*.17}%
+\contentsline {section}{Exports}{9}{section*.20}%
+\contentsline {section}{Exports to GDP ratio}{10}{section*.23}%
+\contentsline {section}{Fixed investment}{11}{section*.26}%
+\contentsline {section}{Fixed investment to GDP ratio}{12}{section*.29}%
+\contentsline {section}{Government debt}{13}{section*.32}%
+\contentsline {section}{Government deficit}{14}{section*.35}%
+\contentsline {section}{Government expenditure}{15}{section*.38}%
+\contentsline {section}{Government expenditure to GDP ratio}{16}{section*.41}%
+\contentsline {section}{Government revenue}{17}{section*.44}%
+\contentsline {section}{Government revenue to GDP ratio}{18}{section*.47}%
+\contentsline {section}{Government tax revenue}{19}{section*.50}%
+\contentsline {section}{Imports}{20}{section*.53}%
+\contentsline {section}{Imports to GDP ratio}{21}{section*.56}%
+\contentsline {section}{Inflation}{22}{section*.59}%
+\contentsline {section}{Investment}{23}{section*.62}%
+\contentsline {section}{Investment to GDP ratio}{24}{section*.65}%
+\contentsline {section}{Nominal GDP}{25}{section*.68}%
+\contentsline {section}{Population}{26}{section*.71}%
+\contentsline {section}{Real GDP}{27}{section*.74}%
+\contentsline {section}{Real total consumption}{28}{section*.77}%
+\contentsline {section}{Unemployment}{29}{section*.80}%
+\contentsline {section}{References}{30}{section*.83}%

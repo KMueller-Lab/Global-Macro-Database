@@ -1,0 +1,55 @@
+\begin{thebibliography}{7}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abildgren(2017)]{CS1_DNK}
+K.~Abildgren.
+\newblock \emph{A Chart \& Data Book on the Monetary and Financial History of
+  Denmark}.
+\newblock 2017.
+\newblock URL
+  \url{https://sites.google.com/view/kim-abildgren/historical-statistics}.
+\newblock Accessed: 2024-06-24.
+
+\bibitem[{{Bank for International Settlements}}(2024)]{BIS}
+{{Bank for International Settlements}}, 2024.
+\newblock URL \url{https://data.bis.org/topics/}.
+
+\bibitem[Jord{\`a} et~al.(2017)Jord{\`a}, Schularick, and Taylor]{JST}
+{\`O}scar Jord{\`a}, Moritz Schularick, and Alan~M Taylor.
+\newblock Macrofinancial history and the new business cycle facts.
+\newblock \emph{NBER macroeconomics annual}, 31\penalty0 (1):\penalty0
+  213--263, 2017.
+
+\bibitem[Mack and Martínez-García(2011)]{DALLASFED}
+A.~Mack and E.~Martínez-García.
+\newblock A cross-country quarterly database of real house prices: A
+  methodological note.
+\newblock Globalization and Monetary Policy Institute Working Paper~99, Federal
+  Reserve Bank of Dallas, 2011.
+\newblock URL
+  \url{https://www.dallasfed.org/research/international/houseprice}.
+\newblock Accessed: 2024-04-21.
+
+\bibitem[{Norges Bank}()]{CS2_NOR}
+{Norges Bank}.
+\newblock Historical monetary statistics for norway.
+\newblock URL
+  \url{https://www.norges-bank.no/en/topics/Statistics/Historical-monetary-statistics/}.
+\newblock Accessed: 2024-07-08.
+
+\bibitem[{Organisation for Economic Co-operation and Development}(2024)]{OECD}
+{Organisation for Economic Co-operation and Development}.
+\newblock Oecd house price index, 2024.
+
+\bibitem[Thomas and Dimsdale(2017)]{CS1_GBR}
+R~Thomas and N~Dimsdale.
+\newblock A millennium of uk data, 2017.
+\newblock URL
+  \url{https://www.bankofengland.co.uk/statistics/research-datasets}.
+\newblock Accessed: 2024-06-18.
+
+\end{thebibliography}

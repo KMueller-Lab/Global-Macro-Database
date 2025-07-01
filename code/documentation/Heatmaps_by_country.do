@@ -24,9 +24,21 @@ drop *rcons
 drop *rHPI BVX* LV* RR_crisis* 
 keep ISO3 year *nGDP *rGDP  *cons *inv *finv *pop *exports *imports *CA_GDP *REER *USDfx *govrev *govexp *govtax *govdef_GDP *govdebt_GDP *M0 *M1 *M2 *M3 *cbrate *ltrate *strate *CPI *HPI *infl *unemp
 
+* Add IMF WEO forecast value to the IMF_WEO and then drop it 
+qui ds IMF_WEO_forecast* 
+foreach var in `r(varlist)'{
+	local short_name = substr("`var'", 18, .)
+	replace IMF_WEO_`short_name' = `var' if IMF_WEO_`short_name' == .
+}
+
+drop IMF_WEO_forecast*
+
+* Reshape
+reshape long BIS_ BORDO_ CEPAC_ BRUEGEL_ Davis_ Grimm_ Gapminder_ HFS_ Homer_Sylla_  IHD_ IMF_FPP_ IMF_GDD_ IMF_HDD_ IMF_IFS_ IMF_GFS_ IMF_WEO_ IMF_WEO_forecast MAD_ MD_ MOXLAD_ MW_ Mitchell_ OECD_EO_ OECD_HPI_ OECD_KEI_ OECD_MEI_ OECD_QNA_ OECD_REV_ OECD_MEI_ARC_ FLORA_ PWT_ RR_debt_ TH_ID_ Tena_ UN_ WB_CC_ WDI_ WDIARC_ IMF_MFS_ GNA_ CS1_ CS2_ CS3_ JO_ JST_ FZ_ EUS_ BARRO_ FAO_ AMECO_ ILO_ LUND_ CLIO_ ADB_ AFDB_ AFRISTAT_ AHSTAT_ AMF_ BCEAO_ BG_ BIT_ DallasFED_ FRANC_ZONE_ JERVEN_ NBS_ Schmelzing_ UN_trade_, i(ISO3 year) j(variable) string
 
 
-reshape long BIS_ BORDO_ CEPAC_ BRUEGEL_ Davis_ Grimm_ Gapminder_ HFS_ Homer_Sylla_  IHD_ IMF_FPP_ IMF_GDD_ IMF_HDD_ IMF_IFS_ IMF_GFS_ IMF_WEO_ MAD_ MD_ MOXLAD_ MW_ Mitchell_ OECD_EO_ OECD_HPI_ OECD_KEI_ OECD_MEI_ OECD_QNA_ OECD_REV_ OECD_MEI_ARC_ FLORA_ PWT_ RR_debt_ TH_ID_ Tena_ UN_ WB_CC_ WDI_ WDIARC_ IMF_MFS_ GNA_ CS1_ CS2_ CS3_ JO_ JST_ FZ_ EUS_ BARRO_ FAO_ AMECO_ ILO_ LUND_ CLIO_ ADB_ AFDB_ AFRISTAT_ AHSTAT_ AMF_ BCEAO_ BG_ BIT_ DallasFED_ FRANC_ZONE_ JERVEN_ NBS_ Schmelzing_, i(ISO3 year) j(variable) string
+* Set graphs off
+set graphics off
 
 qui levelsof ISO3, local(countries)
 foreach country of local countries{
@@ -162,3 +174,6 @@ foreach country of local countries{
 	
 	restore
 }
+
+* Set graphs on
+set graphics on

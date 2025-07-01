@@ -57,7 +57,32 @@ gmdaddnote_source CS2_AUS  "Data refers to general government." govrev_GDP
 * Specify country specific priority ordering.
 * ==============================================================================
 * Set up the priority list
-splice, priority(IMF_WEO  AMF BCEAO AFRISTAT EUS OECD_EO WDI AFDB ADB CS1 CS2 JST CEPAC AHSTAT IMF_FPP Mitchell MD NBS FZ) generate(govrev_GDP) varname(govrev_GDP) base_year(2018) method("none")
+splice, priority(OECD_EO AMF BCEAO AFRISTAT EUS WDI AFDB ADB IMF_WEO CS1 CS2 JST CEPAC AHSTAT IMF_FPP Mitchell MD NBS FZ IMF_WEO_forecast) generate(govrev_GDP) varname(govrev_GDP) base_year(2018) method("none")
+
+* ==============================================================================
+* Derive government revenue levels using our spliced ratio series and GDP
+* ==============================================================================
+* Merge GDP series 
+merge 1:1 ISO3 year using "$data_final/chainlinked_nGDP", nogen keepus(nGDP) 
+
+* Compute the level series 
+gen GMD_estimated_govrev = (govrev_GDP * nGDP) / 100
+keep ISO3 year GMD_estimated_govrev
+
+* Add raw data of government revenue
+merge 1:1 ISO3 year using "$data_final/clean_data_wide", nogen
+
+* Splice government revenue series and use our GMD_estimated as the first priority
+* IMF_FPP doesn't have level series and the GDP wasn't provided by the IMF
+splice, priority(GMD_estimated OECD_EO AMF BCEAO AFRISTAT IMF_GFS EUS WDI AFDB ADB IMF_WEO CS1 CS2 JST CEPAC AHSTAT JERVEN Mitchell HFS NBS FZ IMF_WEO_forecast) generate(govrev) varname(govrev) base_year(2018) method("chainlink")
+
+
+
+
+
+
+
+
 
 
 

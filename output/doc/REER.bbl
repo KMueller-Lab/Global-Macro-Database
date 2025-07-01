@@ -1,0 +1,48 @@
+\begin{thebibliography}{7}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{{Bank for International Settlements}}(2024)]{BIS}
+{{Bank for International Settlements}}, 2024.
+\newblock URL \url{https://data.bis.org/topics/}.
+
+\bibitem[Darvas(2021)]{BRUEGEL}
+Zsolt Darvas.
+\newblock Timely measurement of real effective exchange rates.
+\newblock Working Paper 2021/15, Bruegel, 2021.
+\newblock URL \url{https://www.bruegel.org/}.
+
+\bibitem[{International Monetary Fund}(2024)]{IMF_IFS}
+{International Monetary Fund}.
+\newblock International financial statistics, 2024.
+\newblock URL \url{https://data.imf.org/}.
+
+\bibitem[Ljungberg(2019)]{LUND}
+Jonas Ljungberg.
+\newblock Nominal and real effective exchange rates for europe, 1870-2016: Some
+  methodological issues.
+\newblock 2019.
+
+\bibitem[{OECD Economic Outlook}(2024)]{OECD_EO}
+{OECD Economic Outlook}.
+\newblock Oecd economic outlook data, 2024.
+\newblock URL
+  \url{https://www.oecd.org/en/topics/sub-issues/economic-outlook.html}.
+\newblock Accessed on 2024-06-05.
+
+\bibitem[{World Bank}(2024)]{WDI}
+{World Bank}.
+\newblock World development indicators, 2024.
+\newblock URL \url{https://data.worldbank.org/indicator}.
+\newblock Accessed: 2024-04-21.
+
+\bibitem[{World Bank (Archives)}(1999)]{WDI_ARC}
+{World Bank (Archives)}.
+\newblock World development indicators, 1999.
+\newblock URL \url{https://data.worldbank.org/indicator}.
+\newblock Accessed: 2024-07-21.
+
+\end{thebibliography}

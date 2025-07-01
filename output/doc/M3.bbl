@@ -1,0 +1,109 @@
+\begin{thebibliography}{16}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Asian Development Bank}(2024)]{ADB}
+{Asian Development Bank}.
+\newblock {Key Indicators Database (KIDB)}, 2024.
+\newblock URL \url{https://kidb.adb.org}.
+
+\bibitem[{Bank Al-Maghrib}()]{CS1_MAR}
+{Bank Al-Maghrib}.
+\newblock Séries statistiques monétaires.
+\newblock URL
+  \url{https://www.bkam.ma/Statistiques/Statistiques-monetaires/Series-statistiques-monetaires}.
+
+\bibitem[{Bank of Canada}(2024)]{CS2_CAN}
+{Bank of Canada}.
+\newblock Staff economic projections, 2024.
+
+\bibitem[{Banque de France}(2024)]{CS1_FRA}
+{Banque de France}.
+\newblock Le portail statistique de la banque de france, 2024.
+\newblock URL \url{https://webstat.banque-france.fr/}.
+\newblock Accessed: 2024-07-23.
+
+\bibitem[{Economic Commission for Latin America and the
+  Caribbean}(2024)]{CEPAC}
+{Economic Commission for Latin America and the Caribbean}.
+\newblock Economic commission for latin america and the caribbean, 2024.
+\newblock URL \url{https://www.cepal.org/en}.
+\newblock Accessed: 2024-06-18.
+
+\bibitem[Ferreres et~al.(2005)]{CS3_ARG}
+Orlando~J Ferreres et~al.
+\newblock Dos siglos de econom{\'\i}a argentina.
+\newblock 2005.
+
+\bibitem[Iceland(1997)]{CS2_ISL}
+Statistics Iceland.
+\newblock \emph{Hagskinna—Icelandic Historical Statistics from the 17th
+  Century to 1990}.
+\newblock Hagstofa Íslands, Reykjavík, 1997.
+\newblock URL \url{https://baekur.is/bok/8f318e69-dc49-4a9f-a8ec-805b2352bad0}.
+\newblock Accessed: 2024-07-08.
+
+\bibitem[Jord{\`a} et~al.(2017)Jord{\`a}, Schularick, and Taylor]{JST}
+{\`O}scar Jord{\`a}, Moritz Schularick, and Alan~M Taylor.
+\newblock Macrofinancial history and the new business cycle facts.
+\newblock \emph{NBER macroeconomics annual}, 31\penalty0 (1):\penalty0
+  213--263, 2017.
+
+\bibitem[Krantz()]{CS1_SWE}
+Olle Krantz.
+\newblock Swedish historical national accounts 1300-2020.
+\newblock URL
+  \url{https://www.lusem.lu.se/economic-history/databases/economic-history-data/swedish-historical-national-accounts}.
+\newblock Accessed: 2024-04-21.
+
+\bibitem[{Ministerio de Economía de la República Argentina}(2024)]{CS2_ARG}
+{Ministerio de Economía de la República Argentina}.
+\newblock Información económica al día - apéndice 8, 2024.
+\newblock URL
+  \url{https://www.economia.gob.ar/download/infoeco/apendice8.xlsx}.
+\newblock Accessed: 2024-01-16.
+
+\bibitem[{National Bank of Serbia}(2024)]{NBS}
+{National Bank of Serbia}.
+\newblock South-eastern european monetary and economic statistics from the 19th
+  century to world war ii, 2024.
+\newblock URL
+  \url{https://www.nbs.rs/en/drugi-nivo-navigacije/publikacije-i-istrazivanja/seemhn/seemhn-dctf/}.
+\newblock Accessed: 2024-06-24.
+
+\bibitem[{OECD}(2024)]{OECD_MEI}
+{OECD}.
+\newblock Oecd main economic indicators data, 2024.
+\newblock URL
+  \url{https://web-archive.oecd.org/temp/2023-09-05/76384-oecdmaineconomicindicatorsmei.htm}.
+\newblock Accessed on 2024-07-04.
+
+\bibitem[Piselli and Vercelli(2023)]{CS2_ITA}
+Paola Piselli and Fabio Vercelli.
+\newblock I titoli pubblici nei bilanci delle banche 1890-2016.
+\newblock Technical report, Banca d’Italia, 2023.
+\newblock Di prossima pubblicazione (forthcoming).
+
+\bibitem[Schuler(2015)]{HFS}
+Kurt Schuler.
+\newblock Establishing an international data archive on free banking.
+\newblock Studies in Applied Economics~24, The Johns Hopkins Institute for
+  Applied Economics, Global Health, and the Study of Business Enterprise, 2015.
+\newblock URL \url{https://EconPapers.repec.org/RePEc:ris:jhisae:0024}.
+
+\bibitem[{South African Reserve Bank}(2024)]{CS1_ZAF}
+{South African Reserve Bank}.
+\newblock Statistics, 2024.
+\newblock URL \url{https://www.resbank.co.za/en/home/what-we-do/statistics}.
+\newblock Accessed: 2024-01-07.
+
+\bibitem[Vamplew(1987)]{CS2_AUS}
+Wray Vamplew.
+\newblock \emph{Australians: Historical Statistics}, volume~10.
+\newblock Fairfax, Syme \& Weldon Associates, Broadway, N.S.W., Australia,
+  1987.
+
+\end{thebibliography}

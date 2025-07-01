@@ -29,7 +29,7 @@ use "$data_final/clean_data_wide", clear
 * ==============================================================================
 
 * Set up the priority list
-splice, priority(WB_CC ADB AMF BIS BCEAO IMF_WEO IMF_IFS EUS OECD_EO FRANC_ZONE OECD_KEI WDI CS1 CS2 AHSTAT JST MOXLAD JERVEN CEPAC BORDO MW Mitchell HFS NBS FZ IHD) generate(infl) varname(infl) base_year(2018) method("none")
+splice, priority(CS3 OECD_EO WB_CC ADB AMF BIS BCEAO EUS FRANC_ZONE OECD_KEI WDI WDI_ARC IMF_WEO IMF_IFS CS1 CS2 AHSTAT JST MOXLAD JERVEN CEPAC CLIO RR BORDO MW Mitchell HFS NBS FZ IHD IMF_WEO_forecast) generate(infl) varname(infl) base_year(2018) method("none")
 
 
 

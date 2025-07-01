@@ -153,30 +153,44 @@ replace stocks = stocks / 1000 if countryname == "Brazil"
 replace stocks = stocks / 1000 if year <= 1989 & countryname == "Brazil"
 replace stocks = stocks / 1000 if year <= 1979 & countryname == "Brazil"
 replace stocks = stocks * 1000 if inrange(year, 1960, 1969) & countryname == "Brazil"
+
+* Argentina
 replace stocks = . if year >= 1986 & countryname == "Argentina"
-replace stocks = stocks * (10^-14) if countryname == "Venezuela"
-replace stocks = stocks * (10^-6) if countryname == "Mexico" & year <= 1984
-replace stocks = stocks * (10^3) if  countryname == "Ecuador"
-replace stocks = stocks / 25000 if  countryname == "Ecuador"
-replace stocks = stocks * (10^3) if  countryname == "Colombia" & year <= 1969
-replace stocks = stocks * (10^-3) if countryname == "Uruguay" 
-replace stocks = stocks / 1000 if year <= 1979 & countryname == "Uruguay" 
-replace stocks = stocks * 1000 if year <= 1969 & countryname == "Uruguay" 
-replace stocks = stocks / 1000 if year <= 1959 & countryname == "Uruguay" 
-replace stocks = stocks * (10^-3) if year <= 1988 & countryname == "Peru" 
-replace stocks = stocks * (10^-3) if year <= 1979 & countryname == "Peru" 
-replace stocks = stocks * (10^-3) if year <= 1949 & countryname == "Peru" 
-replace stocks = stocks / 1000 if countryname == "Bolivia" & year <= 1992
-replace stocks = stocks / 1000 if countryname == "Bolivia" & year == 1984
-replace stocks = stocks / 100 if countryname == "Bolivia" & year <= 1983
-replace stocks = stocks / 10 if countryname == "Bolivia" & year <= 1979
-replace stocks = stocks / 1000 if countryname == "Chile" & year <= 1969
-replace stocks = stocks / 1000 if countryname == "Chile" & year <= 1964
-replace stocks = stocks * 1000 if countryname == "Chile" & year >= 1975
 replace stocks = stocks / 10000 if countryname == "Argentina" & year <= 1985
 replace stocks = stocks / 1000 if countryname == "Argentina" & year <= 1984
 replace stocks = stocks / 10000 if countryname == "Argentina" & year <= 1974
 replace stocks = stocks / 100 if countryname == "Argentina" & year <= 1964
+
+* Venezuela
+replace stocks = stocks * (10^-8) if countryname == "Venezuela"
+
+* Ecuador
+replace stocks = stocks * (10^3) / 25000 if  countryname == "Ecuador"
+
+* Colombia
+replace stocks = stocks * (10^3) if  countryname == "Colombia" & year <= 1969
+
+* Uruguay
+replace stocks = stocks * (10^-3) if countryname == "Uruguay" 
+replace stocks = stocks / 1000 if year <= 1979 & countryname == "Uruguay" 
+replace stocks = stocks * 1000 if year <= 1969 & countryname == "Uruguay" 
+replace stocks = stocks / 1000 if year <= 1959 & countryname == "Uruguay" 
+
+* Peru
+replace stocks = stocks * (10^-3) if year <= 1988 & countryname == "Peru" 
+replace stocks = stocks * (10^-3) if year <= 1979 & countryname == "Peru" 
+replace stocks = stocks * (10^-3) if year <= 1949 & countryname == "Peru" 
+
+* Bolivia
+replace stocks = stocks / 1000 if countryname == "Bolivia" & year <= 1992
+replace stocks = stocks / 1000 if countryname == "Bolivia" & year == 1984
+replace stocks = stocks / 100 if countryname == "Bolivia" & year <= 1983
+replace stocks = stocks / 10 if countryname == "Bolivia" & year <= 1979
+
+* Chile
+replace stocks = stocks / 1000 if countryname == "Chile" & year <= 1969
+replace stocks = stocks / 1000 if countryname == "Chile" & year <= 1964
+replace stocks = stocks * 1000 if countryname == "Chile" & year >= 1975
 
 
 *===============================================================================

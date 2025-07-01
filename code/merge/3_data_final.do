@@ -27,6 +27,7 @@ drop if strpos(filename,"clean_data_wide.dta")
 drop if strpos(filename,"data_final.dta")
 drop if strpos(filename,"documentation.dta")
 drop if strpos(filename,"documentation")
+drop if strpos(filename,"GMD.xlsx")
 
 * Make list of actual files 
 replace filename = dirname+"/"+filename
@@ -76,12 +77,10 @@ keep ISO3 year `varnames' SovDebtCrisis CurrencyCrisis BankingCrisis
 * Calculate the real GDP per capita
 gen rGDP_pc = (rGDP/pop)
 
-* Calculate the deflator
+* Calculate the deflators
 gen deflator = (nGDP / rGDP) * 100
 
 * Calculate variables in nominal terms
-gen govdebt = (govdebt_GDP * nGDP) / 100
-gen govdef = (govdef_GDP * nGDP) / 100
 gen CA = (CA_GDP * nGDP) / 100
 
 * Label the variables 
@@ -91,10 +90,10 @@ label variable SovDebtCrisis "Sovereign Debt Crisis"
 label variable CurrencyCrisis "Currency Crisis"
 label variable BankingCrisis "Banking Crisis"
 label variable nGDP "Nominal Gross Domestic Product"
-label variable rGDP "Real Gross Domestic Product"
+label variable rGDP "Real Gross Domestic Product, in 2015 prices"
 label variable deflator "GDP deflator"
 label variable rGDP_pc "Real Gross Domestic Product per Capita"
-label variable rGDP_USD "Real Gross DOmestic Product in USD"
+label variable rGDP_USD "Real Gross Domestic Product in USD"
 label variable inv "Total Investment"
 label variable inv_GDP "Total Investment as % of GDP"
 label variable finv "Fixed Investment"
@@ -118,13 +117,13 @@ label variable govdef "Government Deficit"
 label variable govdef_GDP "Government Deficit as % of GDP"
 label variable govdebt "Government Debt"
 label variable govdebt_GDP "Government Debt as % of GDP"
-label variable CPI "Consumer Price Index"
+label variable CPI "Consumer Price Index, 2010 = 100"
 label variable HPI "House Price Index"
 label variable infl "Inflation Rate"
 label variable pop "Population"
 label variable unemp "Unemployment Rate"
 label variable USDfx "Exchange Rate against USD"
-label variable REER "Real Effective Exchange Rate"
+label variable REER "Real Effective Exchange Rate, 2010 = 100"
 label variable strate "Short-term Interest Rate"
 label variable ltrate "Long-term Interest Rate"
 label variable cbrate "Central Bank Policy Rate"
@@ -149,8 +148,7 @@ qui keep if year >= first_year_final
 * Drop 
 drop all_missing first_year first_year_final
 
-
-* Drop the years with data for every country 
+* Drop the years with no data for every country 
 qui ds ISO3 year, not
 local vars `r(varlist)'
 qui egen all_missing = rowmiss(`vars')
@@ -185,10 +183,13 @@ replace countryname = "East Germany" if countryname == "German Democratic Republ
 replace countryname = "St-Pierre" if countryname == "Saint Pierre and Miquelon"
 replace countryname = "Turks and Caicos" if countryname == "Turks and Caicos Islands"
 
-
 * Recast
 recast str3 ISO3
 recast str26 countryname
+
+* Set the panel
+encode ISO3, gen(id)
+xtset id year
 
 * Label countryname
 label variable countryname "Country name"
@@ -196,7 +197,12 @@ label variable countryname "Country name"
 * Sort
 sort ISO3 year
 
+* Order 
+order countryname ISO3 id year
+
 * Save 
 save "$data_final/data_final", replace 
 
-
+* Output
+local version = "$current_version"
+save "$data_distr/GMD_`version'", replace

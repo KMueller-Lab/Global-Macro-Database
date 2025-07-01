@@ -192,6 +192,9 @@ gen JST_rGDP = JST_rGDP_pc * JST_pop
 * Keep relevant variables 
 keep ISO3 year  JST*
 
+* Add government debt levels 
+gen JST_govdebt = (JST_govdebt_GDP * JST_nGDP) / 100
+
 * ==============================================================================
 * 	OUTPUT
 * ==============================================================================

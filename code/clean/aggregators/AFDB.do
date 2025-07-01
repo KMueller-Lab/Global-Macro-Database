@@ -85,7 +85,7 @@ replace nGDP = nGDP * 10 if year <= 2005 & year >= 2000 & ISO3 == "TGO"
 replace nGDP = nGDP / 1000 if year <= 2005 & year >= 2000 & ISO3 == "SWZ"
 
 * Fix units for Mozambique
-replace nGDP = nGDP / 1000 if year >= 2006 & ISO3 == "MOZ"
+replace nGDP = nGDP / 1000 if year >= 2004 & ISO3 == "MOZ"
 
 * AFDB data on Congo and Liberia is likely mistaken. Deviates widely from all other sources
 replace M1 = . if year < 1995 & ISO3 == "COG"

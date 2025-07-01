@@ -36,7 +36,7 @@ import excel using "${input}", clear sheet("A1. Headline series") cellrange(A8:C
 keep A B H V W Y AB AO AP AS AT AU BA BE BL BM BN BX CB CC T U
 
 * Rename
-ren (A B H V W Y AB AO AP AS AT AU BA BE BL BM BN BX CB CC T U) (year rGDP rGDP_ENG nGDP_ENG nGDP pop unemp CPI infl cbrate strate ltrate USDfx HPI M0 M1 M2 govexp CA CA_GDP exports imports)
+ren (A B H V W Y AB AO AP AS AT AU BA BE BL BM BN BX CB CC T U) (year rGDP rGDP_ENG nGDP_ENG nGDP pop unemp CPI infl cbrate strate ltrate USDfx HPI M0 M1 M2 govdebt CA CA_GDP exports imports)
 
 * Add ISO3 code
 gen ISO3 = "GBR"
@@ -65,6 +65,15 @@ drop rGDP_ENG
 
 * Calculate the deflator
 gen deflator = nGDP / rGDP
+
+* Rebase the GDP to 2010
+qui gen  temp = deflator if year == 2010 
+qui egen defl_2010 = max(temp) 
+qui replace rGDP = (rGDP * defl_2010) / 100 
+qui drop temp defl_2010	
+
+* Update the deflator
+replace deflator = (nGDP / rGDP) * 100
 
 * Save temporarily
 tempfile temp_c
@@ -110,16 +119,12 @@ merge 1:1 year using `temp_c', nogen
 save `temp_c', replace
 
 * Add Government debt data
-import excel using "${input}", clear sheet("A29. The National Debt")
+import excel using "${input}", clear sheet("A27. Central govt borrowing ")
 
 * keep relevant columns
-keep A AR
-drop in 1/17
-drop in 318/l
-ren (A AR) (year govdebt_GDP)
-
-* Extract the year
-replace year = substr(year, 1, 4)
+keep AR AT AU AW AX AY
+keep in 12/340
+ren (AR AT AU AW AX AY) (year govexp govexp_GDP govrev govrev_GDP govdef)
 
 * Destring
 destring *, replace
@@ -131,7 +136,7 @@ save `temp_c', replace
 * Add ratios to gdp variables
 gen imports_GDP = (imports / nGDP) * 100
 gen exports_GDP = (exports / nGDP) * 100
-gen govexp_GDP = (govexp/nGDP) * 100
+gen govdef_GDP  = (govdef  / nGDP) * 100
 
 * Add source identifier
 qui ds ISO3 year, not

@@ -16,6 +16,7 @@
 * Created: 2024-04-21 
 * Last updated: 2024-09-25
 *
+* URL: https://www.imf.org/external/datamapper/datasets/FPP
 * ==============================================================================
 
 * ==============================================================================
@@ -26,7 +27,7 @@
 clear
 
 * Define input and output files
-global input "${data_raw}/aggregators/IMF/IMF_FPP.dta"
+global input "${data_raw}/aggregators/IMF/IMF_FPP_2025.dta"
 global output "${data_clean}/aggregators/IMF/IMF_FPP.dta"
 
 * ==============================================================================
@@ -36,21 +37,20 @@ global output "${data_clean}/aggregators/IMF/IMF_FPP.dta"
 * Open 
 use "${input}", clear
 
-br
-
 * Extract ISO3 code
-kountry ifscode , from(imfn) to(iso3c)
-ren _ISO3C_ ISO3
-drop if ISO3==""
+ren ifscode IFS 
+merge m:1 IFS using $isomapping, keepus(ISO3) keep(3) assert(2 3) nogen
 
 * Keep relevant variables
-keep ISO3 year revenue expenditure debt
+keep ISO3 year rev exp pb debt rgc ie 
+
+* Create government deficit as the sum of primary balance and interest expenses
+* This is due to the fact that primary balance data is the difference between a government's revenues and its non-interest expenditures. Whereas the net lending / net borrowing is the difference between government revenue and expenditure
+gen govdef_GDP = pb - ie
+drop pb ie 
 
 * Rename variables 
-ren (revenue expenditure debt) (govrev_GDP govexp_GDP govdebt_GDP)
-
-* Derive government deficit
-gen govdef_GDP = govrev_GDP - govexp_GDP
+ren (rev exp debt rgc) (govrev_GDP govexp_GDP govdebt_GDP rGDP_growth)
 
 * Add source identifier
 qui ds ISO3 year, not

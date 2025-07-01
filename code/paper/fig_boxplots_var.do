@@ -26,9 +26,11 @@ ren WB_CC_infl WBCC_infl
 drop *rHPI
 keep if inlist(year, 1900, 1950, 1980, 2008)
 
+* Make WEO name shorter 
+ren IMF_WEO_forecast_* WEO_fcst_*
 
 * Reshape into a long dataset
-reshape long ADB_ AFDB_ AFRISTAT_ AHSTAT_ AMF_ BARRO_ BCEAO_ BG_ BIS_ BORDO_ BRUEGEL_ CEPAC_ DALLASFED_ Davis_ EUS_ FLORA_ FRANC_ZONE_ FZ_ GNA_ Gapminder_ Grimm_ HFS_ Homer_Sylla_ IDCM_ IHD_ IMF_FPP_ IMF_GDD_ IMF_GFS_ IMF_HDD_ IMF_IFS_ IMF_MFS_ IMF_WEO_ JO_ JORVEN_ JST_ MAD_ MD_ Mitchell_ MOXLAD_ MW_ NBS_ OECD_EO_  OECD_KEI_ OECD_MEI_ OECD_QNA_ OECD_REV_ PWT_ OECD_MEI_ARC_  RR_debt_ FAO_ TH_ID_ Tena_ UN_ WDI_ WDI_ARC_ CS1_ CS2_ CS3_ AMECO_ LUND_ Schmelzing_ CLIO_ BIT_ ILO_ WBCC_, i(ISO3 year) j(variable) string
+reshape long ADB_ AFDB_ AFRISTAT_ AHSTAT_ AMF_ BARRO_ BCEAO_ BG_ BIS_ BORDO_ BRUEGEL_ CEPAC_ DALLASFED_ Davis_ EUS_ FLORA_ FRANC_ZONE_ FZ_ GNA_ Gapminder_ Grimm_ HFS_ Homer_Sylla_ IDCM_ IHD_ IMF_FPP_ IMF_GDD_ IMF_GFS_ IMF_HDD_ IMF_IFS_ IMF_MFS_ IMF_WEO_ WEO_fcst_ JO_ JORVEN_ JST_ MAD_ MD_ Mitchell_ MOXLAD_ MW_ NBS_ OECD_EO_  OECD_KEI_ OECD_MEI_ OECD_QNA_ OECD_REV_ PWT_ OECD_MEI_ARC_  RR_ RR_debt_ FAO_ TH_ID_ Tena_ UN_ WDI_ WDI_ARC_ CS1_ CS2_ CS3_ AMECO_ LUND_ Schmelzing_ CLIO_ BIT_ ILO_ WBCC_ UN_trade_, i(ISO3 year) j(variable) string
 
 * Rename the variables
 qui ds ISO3 year variable, not

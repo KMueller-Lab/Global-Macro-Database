@@ -44,9 +44,11 @@ ren (cg ngdp) (govdebt_GDP nGDP)
 keep ISO3 year govdebt_GDP nGDP
 
 * Convert units
-replace nGDP = nGDP * 1000 if !inlist(ISO3, "VEN")
-replace nGDP = nGDP / 1000 if ISO3 == "VEN"
+replace nGDP = nGDP * 1000
 replace nGDP = nGDP / 1000 if ISO3 == "AFG" & year <= 1993
+
+* Derive government levels 
+gen govdebt = (govdebt_GDP * nGDP) / 100
 
 * Convert currency for Croatia	
 replace nGDP = nGDP / 7.5345 if ISO3 == "HRV"

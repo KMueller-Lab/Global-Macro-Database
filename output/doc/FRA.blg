@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: FRA.aux
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+The style file: qje.bst
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+Database file #1: bib.bib
+Warning--empty journal in Grimm
+Warning--empty journal in LUND
+Warning--can't use both author and editor fields in Mitchell
+You've used 35 entries,
+            2958 wiz_defined-function locations,
+            816 strings with 8770 characters,
+and the built_in function-call counts, 16177 in all, are:
+= -- 1367
+> -- 664
+< -- 31
++ -- 232
+- -- 187
+* -- 1107
+:= -- 2722
+add.period$ -- 136
+call.type$ -- 35
+change.case$ -- 218
+chr.to.int$ -- 36
+cite$ -- 38
+duplicate$ -- 1195
+empty$ -- 1113
+format.name$ -- 265
+if$ -- 3110
+int.to.chr$ -- 4
+int.to.str$ -- 1
+missing$ -- 232
+newline$ -- 178
+num.names$ -- 140
+pop$ -- 459
+preamble$ -- 1
+purify$ -- 202
+quote$ -- 0
+skip$ -- 451
+stack$ -- 0
+substring$ -- 635
+swap$ -- 558
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 309
+warning$ -- 3
+while$ -- 120
+width$ -- 0
+write$ -- 424
+(There were 3 warnings)

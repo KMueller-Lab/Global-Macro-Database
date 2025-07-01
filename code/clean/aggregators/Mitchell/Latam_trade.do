@@ -557,8 +557,8 @@ replace imports = imports * 4.5 if year <= 1945 & countryname == "Guyana"
 replace exports = exports * 4.5 if year <= 1945 & countryname == "Guyana"
 
 * Fix units
-replace imports = imports / (10^11) if countryname == "Venezuela"
-replace exports = exports / (10^11) if countryname == "Venezuela"
+replace imports = imports / (10^5) if countryname == "Venezuela"
+replace exports = exports / (10^5) if countryname == "Venezuela"
 
 replace imports = imports / (10^3) if countryname == "Venezuela" & year <= 1974
 replace exports = exports / (10^3) if countryname == "Venezuela" & year <= 1974

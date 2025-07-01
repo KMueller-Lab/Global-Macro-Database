@@ -3,7 +3,7 @@
 * by Karsten Müller, Chenzi Xu, Mohamed Lehbib, Ziliang Chen
 * ==============================================================================
 *
-* MAKE HEATMAP FOR CHILE
+/* MAKE HEATMAP FOR CHILE
 *
 * Author:
 * Mohamed Lehbib

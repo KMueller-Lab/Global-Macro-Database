@@ -1,0 +1,39 @@
+\contentsline {section}{Data availability heatmap}{3}{section*.3}%
+\contentsline {section}{Current account balance}{4}{section*.5}%
+\contentsline {section}{Consumer price index}{5}{section*.8}%
+\contentsline {section}{House price index}{6}{section*.11}%
+\contentsline {section}{Money supply (M0)}{7}{section*.14}%
+\contentsline {section}{Money supply (M1)}{8}{section*.17}%
+\contentsline {section}{Money supply (M2)}{9}{section*.20}%
+\contentsline {section}{Money supply (M3)}{10}{section*.23}%
+\contentsline {section}{Money supply (M4)}{11}{section*.26}%
+\contentsline {section}{Real effective exchange rate}{12}{section*.29}%
+\contentsline {section}{USD exchange rate}{13}{section*.32}%
+\contentsline {section}{Central bank policy rate}{14}{section*.35}%
+\contentsline {section}{Total consumption}{15}{section*.38}%
+\contentsline {section}{Total consumption to GDP ratio}{16}{section*.41}%
+\contentsline {section}{Exports}{17}{section*.44}%
+\contentsline {section}{Exports to GDP ratio}{18}{section*.47}%
+\contentsline {section}{Fixed investment}{19}{section*.50}%
+\contentsline {section}{Fixed investment to GDP ratio}{20}{section*.53}%
+\contentsline {section}{Government debt}{21}{section*.56}%
+\contentsline {section}{Government deficit}{22}{section*.59}%
+\contentsline {section}{Government expenditure}{23}{section*.62}%
+\contentsline {section}{Government expenditure to GDP ratio}{24}{section*.65}%
+\contentsline {section}{Government revenue}{25}{section*.68}%
+\contentsline {section}{Government revenue to GDP ratio}{26}{section*.71}%
+\contentsline {section}{Government tax revenue}{27}{section*.74}%
+\contentsline {section}{Government tax revenue to GDP ratio}{28}{section*.77}%
+\contentsline {section}{Imports}{29}{section*.80}%
+\contentsline {section}{Imports to GDP ratio}{30}{section*.83}%
+\contentsline {section}{Inflation}{31}{section*.86}%
+\contentsline {section}{Investment}{32}{section*.89}%
+\contentsline {section}{Investment to GDP ratio}{33}{section*.92}%
+\contentsline {section}{Long term interest rate}{34}{section*.95}%
+\contentsline {section}{Nominal GDP}{35}{section*.98}%
+\contentsline {section}{Population}{36}{section*.101}%
+\contentsline {section}{Real GDP}{37}{section*.104}%
+\contentsline {section}{Real total consumption}{38}{section*.107}%
+\contentsline {section}{Short term interest rate}{39}{section*.110}%
+\contentsline {section}{Unemployment}{40}{section*.113}%
+\contentsline {section}{References}{41}{section*.116}%

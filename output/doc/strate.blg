@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: strate.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: plainnat.bst
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+Database file #1: bib.bib
+Warning--I didn't find a database entry for "CS1_IRL"
+Warning--empty year in CS2_NOR
+Warning--empty year in CS1_CAN
+You've used 24 entries,
+            2773 wiz_defined-function locations,
+            756 strings with 9148 characters,
+and the built_in function-call counts, 8604 in all, are:
+= -- 764
+> -- 408
+< -- 22
++ -- 149
+- -- 123
+* -- 573
+:= -- 1354
+add.period$ -- 90
+call.type$ -- 24
+change.case$ -- 110
+chr.to.int$ -- 22
+cite$ -- 50
+duplicate$ -- 400
+empty$ -- 783
+format.name$ -- 155
+if$ -- 1805
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 10
+newline$ -- 146
+num.names$ -- 96
+pop$ -- 278
+preamble$ -- 1
+purify$ -- 88
+quote$ -- 0
+skip$ -- 324
+stack$ -- 0
+substring$ -- 128
+swap$ -- 29
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 249
+warning$ -- 2
+while$ -- 78
+width$ -- 0
+write$ -- 337
+(There were 3 warnings)

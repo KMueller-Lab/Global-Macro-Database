@@ -28,7 +28,7 @@ use "$data_final/clean_data_wide", clear
 * ==============================================================================
 
 * Set up the priority list
-splice, priority(IMF_IFS WDI UN BARRO) generate(rcons) varname(rcons) method("chainlink") base_year(2019)
+splice, priority(IMF_IFS WDI UN CS3 BARRO) generate(rcons) varname(rcons) method("chainlink") base_year(2019)
 
 
 

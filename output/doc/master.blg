@@ -1,0 +1,68 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: master.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: plainnat.bst
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+Database file #1: bib.bib
+Warning--I'm ignoring CS1_ISL's extra "note" field
+--line 1551 of file bib.bib
+Repeated entry---line 2359 of file bib.bib
+ : @article{CS2_CAN
+ :                 ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "CS1_IRL"
+Warning--I didn't find a database entry for "CS2_PRK"
+Warning--empty publisher in CS1_DNK
+Warning--empty year in CS1_MAR
+Warning--empty journal in CS3_ARG
+Warning--empty publisher in FZ
+Warning--empty journal in Grimm
+Warning--empty year in CS1_SWE
+Warning--empty journal in LUND
+Warning--can't use both author and editor fields in Mitchell
+Warning--empty year in CS2_NOR
+Warning--empty year in CS1_CAN
+Warning--empty chapter and pages in CS2_AUS
+You've used 100 entries,
+            2773 wiz_defined-function locations,
+            1237 strings with 20536 characters,
+and the built_in function-call counts, 35425 in all, are:
+= -- 3208
+> -- 1560
+< -- 99
++ -- 576
+- -- 466
+* -- 2302
+:= -- 5534
+add.period$ -- 385
+call.type$ -- 100
+change.case$ -- 444
+chr.to.int$ -- 90
+cite$ -- 211
+duplicate$ -- 1700
+empty$ -- 3277
+format.name$ -- 599
+if$ -- 7492
+int.to.chr$ -- 11
+int.to.str$ -- 1
+missing$ -- 40
+newline$ -- 591
+num.names$ -- 403
+pop$ -- 1099
+preamble$ -- 1
+purify$ -- 353
+quote$ -- 0
+skip$ -- 1371
+stack$ -- 0
+substring$ -- 569
+swap$ -- 141
+text.length$ -- 13
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1050
+warning$ -- 11
+while$ -- 327
+width$ -- 0
+write$ -- 1401
+(There was 1 error message)

@@ -1,0 +1,115 @@
+\begin{thebibliography}{17}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abildgren(2017)]{CS1_DNK}
+K.~Abildgren.
+\newblock \emph{A Chart \& Data Book on the Monetary and Financial History of
+  Denmark}.
+\newblock 2017.
+\newblock URL
+  \url{https://sites.google.com/view/kim-abildgren/historical-statistics}.
+\newblock Accessed: 2024-06-24.
+
+\bibitem[{Asian Development Bank}(2024)]{ADB}
+{Asian Development Bank}.
+\newblock {Key Indicators Database (KIDB)}, 2024.
+\newblock URL \url{https://kidb.adb.org}.
+
+\bibitem[Bank(2024)]{AFDB}
+African~Development Bank.
+\newblock Afdb socio economic database, 2024.
+\newblock Accessed: 2024-07-20.
+
+\bibitem[Commission(2024)]{EUS}
+European Commission.
+\newblock Eurostat data explorer, 2024.
+\newblock URL
+  \url{https://ec.europa.eu/eurostat/databrowser/explore/all/all_themes}.
+\newblock Accessed: 2024-04-23.
+
+\bibitem[{{European Commission}}(2024)]{AMECO}
+{{European Commission}}.
+\newblock {{AMECO Database}}, 2024.
+\newblock URL
+  \url{https://economy-finance.ec.europa.eu/economic-research-and-databases/economic-databases/ameco-database_en}.
+
+\bibitem[{Federal Reserve Bank of St. Louis}(2024)]{CS1_USA}
+{Federal Reserve Bank of St. Louis}.
+\newblock {Federal Reserve Economic Data}, 2024.
+\newblock URL \url{https://fred.stlouisfed.org/}.
+\newblock Accessed: 2024-05-13.
+
+\bibitem[{Institute of Economic Research, Hitotsubashi
+  University}(2008)]{AHSTAT}
+{Institute of Economic Research, Hitotsubashi University}.
+\newblock {Asian Historical Statistics: Basic Data for Asian Economic History},
+  2008.
+\newblock URL \url{http://www.ier.hit-u.ac.jp/English/database/db.html}.
+
+\bibitem[{International Labour Organization}(2024)]{ILO}
+{International Labour Organization}.
+\newblock Unemployment rate - {ILO} modelled estimates, 2024.
+\newblock URL \url{https://ilostat.ilo.org/data}.
+\newblock ILOSTAT database, accessed: 2024-01-07.
+
+\bibitem[{International Monetary Fund}(2024)]{IMF_IFS}
+{International Monetary Fund}.
+\newblock International financial statistics, 2024.
+\newblock URL \url{https://data.imf.org/}.
+
+\bibitem[Jord{\`a} et~al.(2017)Jord{\`a}, Schularick, and Taylor]{JST}
+{\`O}scar Jord{\`a}, Moritz Schularick, and Alan~M Taylor.
+\newblock Macrofinancial history and the new business cycle facts.
+\newblock \emph{NBER macroeconomics annual}, 31\penalty0 (1):\penalty0
+  213--263, 2017.
+
+\bibitem[{OECD}(2024)]{OECD_KEI}
+{OECD}.
+\newblock Oecd key economic indicators data, 2024.
+\newblock URL
+  \url{https://www.oecd-ilibrary.org/economics/data/main-economic-indicators/key-short-term-indicators_data-00039-en}.
+\newblock Accessed on 2024-07-10.
+
+\bibitem[{OECD Economic Outlook}(2024)]{OECD_EO}
+{OECD Economic Outlook}.
+\newblock Oecd economic outlook data, 2024.
+\newblock URL
+  \url{https://www.oecd.org/en/topics/sub-issues/economic-outlook.html}.
+\newblock Accessed on 2024-06-05.
+
+\bibitem[Schuler(2015)]{HFS}
+Kurt Schuler.
+\newblock Establishing an international data archive on free banking.
+\newblock Studies in Applied Economics~24, The Johns Hopkins Institute for
+  Applied Economics, Global Health, and the Study of Business Enterprise, 2015.
+\newblock URL \url{https://EconPapers.repec.org/RePEc:ris:jhisae:0024}.
+
+\bibitem[{Taiwan Statistical Office}(2025)]{CS2_TWN}
+{Taiwan Statistical Office}.
+\newblock {Macroeconomic Data}.
+\newblock \url{https://eng.stat.gov.tw/Default.aspx}, 2025.
+
+\bibitem[Thomas and Dimsdale(2017)]{CS1_GBR}
+R~Thomas and N~Dimsdale.
+\newblock A millennium of uk data, 2017.
+\newblock URL
+  \url{https://www.bankofengland.co.uk/statistics/research-datasets}.
+\newblock Accessed: 2024-06-18.
+
+\bibitem[{WEO}(2024{\natexlab{a}})]{IMF_WEO}
+{WEO}.
+\newblock World economic outlook database, 2024{\natexlab{a}}.
+\newblock URL \url{https://www.imf.org/en/Publications/WEO}.
+\newblock Accessed: 2024-08-05.
+
+\bibitem[{WEO}(2024{\natexlab{b}})]{IMF_WEO_forecast}
+{WEO}.
+\newblock World economic outlook database, 2024{\natexlab{b}}.
+\newblock URL \url{https://www.imf.org/en/Publications/WEO}.
+\newblock Accessed: 2024-08-05.
+
+\end{thebibliography}

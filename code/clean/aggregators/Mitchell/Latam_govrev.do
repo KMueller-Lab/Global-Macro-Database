@@ -242,9 +242,6 @@ convert_units Chile  1970 2010 "B"
 convert_units Colombia 1975 2010 "B"
 convert_units Paraguay 1975 2010 "B"
 convert_units Ecuador 1975 1993 "B"
-convert_units Peru 1965 1984 "B"
-convert_units Peru 1985 1987 "B"
-convert_units Peru 1988 2010 "Th"
 convert_units Uruguay 1965 1974 "B"
 convert_units Uruguay 1980 2010 "B"
 convert_units Venezuela 1975 2010 "B"
@@ -277,26 +274,35 @@ convert_currency Brazil    1989 1/1000000
 reshape_data govrev
 
 * Convert units
+* Chile
 replace govrev = govrev / 1000 if year <= 1974 & countryname == "Chile"
 replace govrev = govrev / 1000 if year <= 1954 & countryname == "Chile"
 
+* Ecuador
 replace govrev = govrev / 2500 if year <= 1993 & countryname == "Ecuador"
-replace govrev = govrev * (10^-14) if countryname == "Venezuela"
 
+* Venezuela
+replace govrev = govrev * (10^-8) if countryname == "Venezuela"
+
+* Uruguay
 replace govrev = govrev / 1000 if countryname == "Uruguay"
 replace govrev = govrev / 1000 if year <= 1974 & countryname == "Uruguay"
 
-replace govrev = govrev * 1000 if year >= 1990 & countryname == "Peru"
-replace govrev = govrev * 1 if year == 1989 & countryname == "Peru"
-replace govrev = govrev / 1000 if year <= 1988 & countryname == "Peru"
-replace govrev = govrev / 1000 if year <= 1987 & countryname == "Peru"
-replace govrev = govrev / 1000 if year <= 1984 & countryname == "Peru"
+* Peru
+replace govrev = govrev * 1000 if year >= 1965 & year <= 1984 & countryname == "Peru" // Convert to millions of old soles
+replace govrev = govrev / 1000 if year <= 1984 & countryname == "Peru" 				  // Convert to intis 
+replace govrev = govrev * 1000 if year <= 1987 & year >= 1985 & countryname == "Peru" // Convert milion of intis
+replace govrev = govrev / 1000 if year >= 1988 & countryname == "Peru" 				  // Convert to million of new soles
+replace govrev = govrev / 10^6 if year <= 1987 & countryname == "Peru" 				  // Convert all data to new soles
 
+* Suriname
 replace govrev = govrev / 1000 if countryname == "Suriname"
 
+* Bolivia
 replace govrev = govrev / 1000 if countryname == "Bolivia"
 replace govrev = govrev / 100 if countryname == "Bolivia" & year <= 1984
 
+* Argentina
 replace govrev = govrev / 10000 if countryname == "Argentina" & year <= 1984
 
 

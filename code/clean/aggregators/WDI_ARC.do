@@ -93,7 +93,7 @@ merge m:1 ISO3 using $isomapping, keep(3) keepusing(ISO3) nogen
 
 * Convert Venezuela values into current currency
 foreach var of varlist  nGDP rGDP inv finv cons imports exports  govtax {
-	replace `var'= `var' * (10^-14) if ISO3 == "VEN"
+	replace `var'= `var' * (10^-8) if ISO3 == "VEN"
 }
 
 * Convert Romania values into current currency
@@ -180,7 +180,7 @@ foreach var of varlist  nGDP rGDP inv finv cons imports exports govtax {
 
 * Convert Belarus values into current currency
 foreach var of varlist  nGDP rGDP inv finv cons imports exports  govtax {
-	replace `var'= `var'/1000000 if ISO3 == "BLR"
+	replace `var'= `var'/10000000 if ISO3 == "BLR"
 }
 
 * Convert Congo RDC values into current currency
@@ -196,6 +196,9 @@ foreach var of varlist  nGDP rGDP inv finv cons imports exports  govtax {
 * Drop real GDP for Zimbabwe, an index
 replace rGDP = . if ISO3 == "ZWE"
 
+* Convert Venezuela real GDP into millions
+replace rGDP = rGDP * 1000 if ISO3 == "VEN"
+
 * Convert currency for european countries
 merge m:1 ISO3 using $eur_fx, keep(1 3)
 foreach var of varlist  nGDP rGDP inv finv cons imports exports govtax {
@@ -204,12 +207,12 @@ foreach var of varlist  nGDP rGDP inv finv cons imports exports govtax {
 drop EUR_irrevocable_FX _merge
 
 * Add ratios to gdp variables
-gen cons_GDP = (cons / nGDP) * 100
-gen imports_GDP = (imports / nGDP) * 100
-gen exports_GDP = (exports / nGDP) * 100
-gen govtax_GDP  = (govtax / nGDP) * 100
-gen finv_GDP    = (finv / nGDP) * 100
-gen inv_GDP     = (inv / nGDP) * 100
+gen	cons_GDP 	= (cons 	/ 	nGDP) 	* 100
+gen imports_GDP = (imports  / 	nGDP) 	* 100
+gen exports_GDP = (exports  / 	nGDP) 	* 100
+gen govtax_GDP  = (govtax   / 	nGDP) 	* 100
+gen finv_GDP    = (finv     / 	nGDP) 	* 100
+gen inv_GDP     = (inv 		/ 	nGDP) 	* 100
 
 
 * Rename
@@ -218,6 +221,9 @@ foreach var in `r(varlist)'{
 	replace `var' = . if `var' == 0
 	ren `var' WDI_ARC_`var'
 }
+
+* Add government debt levels 
+gen WDI_ARC_govdebt = (WDI_ARC_govdebt_GDP * WDI_ARC_nGDP) / 100
 
 * ==============================================================================
 * 	OUTPUT

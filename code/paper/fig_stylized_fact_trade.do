@@ -24,6 +24,9 @@ gen exports_USD = exports / USDfx
 * Drop countries with questionable data 
 drop if inlist(ISO3, "MMR", "SLE", "ROU", "ZWE", "POL", "YUG")
 
+* Austrian data in 1913 has an error
+drop if ISO3 == "AUT" & year == 1913
+
 * Keep relevant variables
 keep ISO3 year exports_USD
 drop if missing(exports_USD)

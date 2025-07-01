@@ -221,7 +221,7 @@ save `tab_comparison', replace
 
 * Identify data availability of each source
 qui use "$data_final/data_final", clear
-drop countryname
+drop countryname id
 ds ISO3 year, not
 loc varlist `r(varlist)'
 local num_vars_GMD: word count `r(varlist)'

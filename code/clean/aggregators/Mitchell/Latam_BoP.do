@@ -136,7 +136,7 @@ merge 1:1 countryname year using `temp_c', nogen
 save `temp_c', replace
 
 * Convert units
-replace CA = CA / (10^11) if countryname == "Venezuela"
+replace CA = CA / (10^5) if countryname == "Venezuela"
 
 *===============================================================================
 * 			Final set up

@@ -16,7 +16,7 @@
 
 cap program drop gmdfixunits
 program define gmdfixunits
-syntax varlist (max=1) [if] [, divide(string) multiply(string) absolute missing replace(string)]
+syntax varlist (max=1) [if] [, divide(string) multiply(string) absolute missing replace(string) text(string)]
 
 	* Check if any option is specified 
 	if "`divide'" == "" & "`multiply'" == "" & "`absolute'" == "" & "`missing'" == "" & "`replace'" == ""{
@@ -55,10 +55,16 @@ syntax varlist (max=1) [if] [, divide(string) multiply(string) absolute missing 
 		gmdaddnote `varlist' "Doubtful units in raw data fixed by multiplying with `multiply'." `if'
 	}
 
-	* Replace with missing, record it in the documentation
+	* Replace with missing, check if a note is provided: record it in the documentation.
 	if "`missing'" != "" {
-		replace `varlist' = . `if'
-		gmdaddnote `varlist' "Doubtful value in raw data dropped." `if'
+		if "`text'" == "" {
+			replace `varlist' = . `if'
+			gmdaddnote `varlist' "Doubtful value in raw data dropped." `if'
+		}
+		else {
+			replace `varlist' = . `if'
+			gmdaddnote `varlist' "`text'" `if'
+		}		
 	}
 	
 	* Replace with value, record it in the documentation

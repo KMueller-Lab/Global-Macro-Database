@@ -2,7 +2,7 @@
 * GLOBAL MACRO DATABASE
 * by Karsten Müller, Chenzi Xu, Mohamed Lehbib, Ziliang Chen
 * ==============================================================================
-* DOWNLOAD Statistics Sweden Data
+* DOWNLOAD Statistics For South Africa
 * 
 * Author:
 * Mohamed Lehbib

@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: imports_GDP.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: plainnat.bst
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+Database file #1: bib.bib
+Warning--empty publisher in CS1_DNK
+Warning--empty year in CS1_SWE
+Warning--can't use both author and editor fields in Mitchell
+Warning--empty year in CS2_NOR
+Warning--empty year in CS1_CAN
+You've used 24 entries,
+            2773 wiz_defined-function locations,
+            746 strings with 8360 characters,
+and the built_in function-call counts, 7708 in all, are:
+= -- 695
+> -- 271
+< -- 23
++ -- 106
+- -- 81
+* -- 429
+:= -- 1202
+add.period$ -- 98
+call.type$ -- 24
+change.case$ -- 96
+chr.to.int$ -- 23
+cite$ -- 53
+duplicate$ -- 386
+empty$ -- 778
+format.name$ -- 107
+if$ -- 1640
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 9
+newline$ -- 153
+num.names$ -- 96
+pop$ -- 285
+preamble$ -- 1
+purify$ -- 75
+quote$ -- 0
+skip$ -- 305
+stack$ -- 0
+substring$ -- 73
+swap$ -- 27
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 244
+warning$ -- 5
+while$ -- 74
+width$ -- 0
+write$ -- 346
+(There were 5 warnings)

@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: M3.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: plainnat.bst
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+Database file #1: bib.bib
+Repeated entry---line 2359 of file bib.bib
+ : @article{CS2_CAN
+ :                 ,
+I'm skipping whatever remains of this entry
+Warning--empty year in CS1_MAR
+Warning--empty journal in CS3_ARG
+Warning--empty year in CS1_SWE
+Warning--empty chapter and pages in CS2_AUS
+You've used 16 entries,
+            2773 wiz_defined-function locations,
+            702 strings with 7521 characters,
+and the built_in function-call counts, 5192 in all, are:
+= -- 462
+> -- 201
+< -- 17
++ -- 76
+- -- 60
+* -- 298
+:= -- 822
+add.period$ -- 58
+call.type$ -- 16
+change.case$ -- 66
+chr.to.int$ -- 16
+cite$ -- 36
+duplicate$ -- 262
+empty$ -- 505
+format.name$ -- 79
+if$ -- 1091
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 6
+newline$ -- 98
+num.names$ -- 64
+pop$ -- 181
+preamble$ -- 1
+purify$ -- 51
+quote$ -- 0
+skip$ -- 208
+stack$ -- 0
+substring$ -- 57
+swap$ -- 15
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 166
+warning$ -- 4
+while$ -- 50
+width$ -- 0
+write$ -- 222
+(There was 1 error message)

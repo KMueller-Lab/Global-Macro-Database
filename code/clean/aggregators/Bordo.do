@@ -97,7 +97,7 @@ replace BORDO_nGDP = BORDO_nGDP   /  2750	 if ISO3 == "BRA"
 
 * Venezuela
 replace BORDO_USDfx = BORDO_USDfx / 1000      if ISO3 == "VEN"
-replace BORDO_nGDP  = BORDO_nGDP  * (10^-14)  if ISO3 == "VEN"
+replace BORDO_nGDP  = BORDO_nGDP  * (10^-8)  if ISO3 == "VEN"
 
 * Drop Argentina because the data differed significantly from data from other sources and convert the units
 replace BORDO_USDfx = . if ISO3 == "ARG"
@@ -110,6 +110,9 @@ replace BORDO_nGDP = . if year == 1923 & ISO3 == "DEU"
 
 * Drop real GDP for Zimbabwe, one value in 1978
 replace BORDO_rGDP = . if ISO3 == "ZWE"
+
+* Add government debt levels 
+gen BORDO_govdebt = (BORDO_govdebt_GDP * BORDO_nGDP) / 100
 
 * ==============================================================================
 * 	OUTPUT

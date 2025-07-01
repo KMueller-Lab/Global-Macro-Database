@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: cbrate.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: plainnat.bst
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+Database file #1: bib.bib
+Warning--empty publisher in CS1_DNK
+Warning--empty publisher in FZ
+Warning--empty journal in Grimm
+Warning--empty year in CS2_NOR
+You've used 23 entries,
+            2773 wiz_defined-function locations,
+            737 strings with 8238 characters,
+and the built_in function-call counts, 7672 in all, are:
+= -- 688
+> -- 305
+< -- 22
++ -- 115
+- -- 90
+* -- 460
+:= -- 1202
+add.period$ -- 91
+call.type$ -- 23
+change.case$ -- 95
+chr.to.int$ -- 21
+cite$ -- 50
+duplicate$ -- 380
+empty$ -- 741
+format.name$ -- 123
+if$ -- 1622
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 11
+newline$ -- 145
+num.names$ -- 92
+pop$ -- 260
+preamble$ -- 1
+purify$ -- 76
+quote$ -- 0
+skip$ -- 307
+stack$ -- 0
+substring$ -- 86
+swap$ -- 26
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 233
+warning$ -- 4
+while$ -- 72
+width$ -- 0
+write$ -- 327
+(There were 4 warnings)

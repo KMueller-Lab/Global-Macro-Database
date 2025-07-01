@@ -14,9 +14,9 @@
 * Last Editor:
 * Karsten Müller
 * National University of Singapore
-*
+* 
 * Created: 2024-01-05
-* Last updated: 2024-02-01
+* Last updated: 2024-04-23
 *
 * ==============================================================================
 * Toggle options 
@@ -24,6 +24,7 @@
 * Turn these options on with a "1" or off with a "0", depending on what you 
 * actually want to run.
 * ==============================================================================
+
 macro drop _all
 global erase		0	// Careful!
 global download 	0
@@ -33,7 +34,6 @@ global output_data	0
 global document 	0
 global paper		0
 global packages 	0
-
 
 * ==============================================================================
 * Prepare folder paths and define programs 
@@ -48,10 +48,9 @@ if "`c(username)'"=="kmueller"{
 	global path "C:/Users/kmueller/Desktop/GitHub/Global-Macro-Project"
 }
 
-*if "`c(username)'"=="kmueller"{
-*	global path "C:/Users/kmueller/Desktop/GitHub/Global-Macro-Project"
-*	global dropbox "C:/Users/kmueller/Müller Lab Dropbox/Karsten Müller/Global-Macro-Project"
-*}
+if "`c(username)'"=="kmueller"{
+	global path "C:\Users\kmueller\Documents\GitHub\Global-Macro-Project" // Home laptop
+}
 
 if "`c(username)'"=="simonchen"{
 	global path "/Users/simonchen/Documents/GitHub/Global-Macro-Project"
@@ -106,28 +105,28 @@ glo mindate = 0
 * Make version 
 glo yearmonth = string(yofd(date(c(current_date),"DMY")))+"_"+string(month(date(c(current_date),"DMY")))
 
-* Unique identifiers in final dataset 
-glo ident "ISO3 year"
-
-* List of variables needed for documentation
-glo docvars "SOURCE SOURCE_ABBR URL DOWNLOAD_DATE INPUT"
-
 * List of countries
 glo isomapping "$data_helper/countrylist"
-
-* List of variables 
-glo varlist "nGDP_LCU pop CPI rCONS_LCU"
 
 * Euro irrevocable exhange rate
 glo eur_fx "$data_helper/EUR_irrevocable_FX"
 
-* List of sources
+* Determine current version
+local current_date = date(c(current_date), "DMY")
+local current_year = year(date(c(current_date), "DMY"))
+local current_month = month(date(c(current_date), "DMY"))
 
-* Define maximum deviation of ratio variables; if the difference in overlapping 
-* data is larger than this, we apply a ratio-splicing adjustment. This is 
-* currently not used but might be in future iterations.
-*glo rate_ratio "0.20" // 20% deviation allowed
+* Create current version as the year_month
+local month = `current_month'- 1
 
+if strlen("`month'") == 1 {
+	global current_version "`current_year'_0`month'"
+}
+else {
+	global current_version "`current_year'_`month'"
+}
+di "$current_version"
+global current_year `current_year'
 
 * ==============================================================================
 * Load all programs required for running the database 
@@ -136,30 +135,21 @@ glo eur_fx "$data_helper/EUR_irrevocable_FX"
 
 * Define and download programs 
 if $packages == 1 {
-foreach pack in gtools egenmore dbnomics moss libjson spmap reghdfe geo2xy heatplot mplotoffset sparkline splitvallabels wbopendata nicelabels{
+foreach pack in gtools egenmore dbnomics moss libjson spmap reghdfe geo2xy heatplot mplotoffset sparkline splitvallabels wbopendata nicelabels filelist missings kountry unique mylabels distinct {
 	cap ssc install `pack' 
 }
 
-cap net install grc1leg,from(http://www.stata.com/users/vwiggins/)
-cap net install filelist.pkg
-cap net install missings.pkg
-cap net install kountry.pkg
-cap net install unique.pkg
-cap net install mylabels.pkg
+	cap net install grc1leg,from(http://www.stata.com/users/vwiggins/)
 }
-
 
 
 * Define and load custom scripts 
 filelist, directory($code_functions)
 drop if regexm(dirname,"Archive")
-drop if regexm(filename,".DS_Store")
 gen combined = dirname + "/" + filename
-levelsof combined if substr(filename, -3, 3) == ".do", loc(functions) 
-di `functions'
-
+levelsof combined if substr(filename, -3, 3) == "ado", loc(functions) 
 foreach f of loc functions {
-	do `f'
+	qui do `f'
 }
 
 * ==============================================================================
@@ -170,9 +160,9 @@ foreach f of loc functions {
   if $erase == 1 {
     if "`c(os)'" == "Windows" {
         foreach dir in "$data_clean" "$data_final" "$data_distr" "$data_temp" {
-            !del /s /q "`dir'\*.dta"
+            !del /s /q "`dir'\*.dta" 
         }
-    }
+    }  
     else {
         foreach dir in "$data_clean" "$data_final" "$data_distr" "$data_temp" {
             !rm -rf "`dir'"/"*.dta"
@@ -182,6 +172,7 @@ foreach f of loc functions {
 	
 	* Make blank panel that will be filled in for final dataset 
 	do "$code/initialize/2_make_blank_panel.do" 
+	qui keep if year == 1
 
 	* Make the notes file
 	save "$data_temp/notes", replace
@@ -191,8 +182,10 @@ foreach f of loc functions {
 * Make blank panel that will be filled in for final dataset 
 do "$code/initialize/2_make_blank_panel.do" 
 
+
+
 * Validate inputs
-do "$code/initialize/3_validate_inputs.do"
+*do "$code/initialize/3_validate_inputs.do"
 
 
 * Delete all stswp files
@@ -201,6 +194,7 @@ if "`c(os)'" == "Windows" {
     }
 else {
 	shell find . -name "*.stswp" -type f -delete
+	shell find . -name "*.DS_Store" -type f -delete
 	
 }
 
@@ -213,49 +207,69 @@ if $download == 1 {
 
 	* Get a list of all code files for downloading
 	filelist, directory($code_download)
-	drop if regexm(filename,".DS_Store")
 	gen combined = dirname + "/" + filename
 	levelsof combined, loc(download_files)
 
 	* Run files 
 	foreach f of loc download_files {
-		qui do `f'
-		di as txt "File `f' ran with success"
+		cap do `f'
+		if _rc == 0 {
+			di as txt "File `f' ran with success"
+		}
+		else {
+			di as txt "File `f' has an error"
+		}
 	}
 }
 
 * ==============================================================================
 * Cleaning the raw data
 * ==============================================================================
+* Define and load custom scripts 
+filelist, directory($code_functions)
+drop if regexm(dirname,"Archive")
+gen combined = dirname + "/" + filename
+levelsof combined if substr(filename, -3, 3) == "ado", loc(functions) 
+
+foreach f of loc functions {
+	do "`f'"
+}
 
 if $clean == 1 {
+	
+	* Make blank panel that will be filled in for final dataset 
+	do "$code/initialize/2_make_blank_panel.do" 
+	qui keep if year == 1
 
-	* Get a list of all code files for cleaning the data 
+	* Make the notes file
+	save "$data_temp/notes", replace
+	
+	* Get a list of all Mitchell files for cleaning the data 
 	filelist, directory($code_clean) 
-	drop if regexm(filename,".DS_Store")
 	gen order = cond(regexm(dirname,"aggregators/Mitchell"),1,2)
 	sort order // Sort helper files for processing Mitchell/IHS data first
 	gen combined = dirname + "/" + filename
 	sort filename
-	keep if order == 1
-	levelsof combined if order == 1, clean loc(mitchell_files)
+	levelsof combined if order == 1, clean loc(rest_files)
 	
 	* Run files 
-	foreach f of loc mitchell_files {
+	foreach f of loc rest_files {
+		di "Running `f'"
 		qui do `f'
-		di as txt "File `f' ran with success"
 	}
 	
+	* Get a list of the rest of the files
 	filelist, directory($code_clean) 
-	drop if regexm(filename,".DS_Store")
 	gen order = cond(regexm(dirname,"aggregators/Mitchell"),1,2)
 	sort order // Sort helper files for processing Mitchell/IHS data first
 	gen combined = dirname + "/" + filename
+	sort dirname filename
 	levelsof combined if order == 2, clean loc(rest_files)
 	
 	* Run files 
 	foreach f of loc rest_files {
-		do `f'
+		di "Running `f'"
+		qui do `f'
 	}
 }
 
@@ -276,13 +290,32 @@ if $combine == 1 {
 
 	* Get a list of all code files for combining the data
 	filelist, directory($code_combine) 
-	drop if regexm(filename,".DS_Store")
+	
+	* Drop files in the archive file
+	drop if strpos(dirname, "Archive") | filename == "run_input_variables.do"
+	
+	* Run the intermediate input variables first 
+	preserve 
+	di "Running intermediate files"
+	cap do "$code_combine/run_input_variables.do"
+	if _rc == 0 {
+		di "Intermediate files run with success"
+	}
+	else {
+		di as err "Error in running intermediate files"
+		exit 198
+	}
+	restore 
+	
+	* Run the rest of the combine files
 	gen combined = dirname + "/" + filename
 	levelsof combined, loc(combine_files)
 
 	* Run files 
 	foreach f of loc combine_files {
-		do `f'
+		di "Running `f'"
+		qui do `f' 
+		
 	}
 }
 
@@ -294,7 +327,7 @@ if $combine == 1 {
 if $document == 1 {
 
 	filelist, directory($code_doc)
-	drop if regexm(filename,".DS_Store")
+	drop if regexm(filename,)
 	gen combined = dirname + "/" + filename
 	levelsof combined, loc(doc_files)
 
@@ -313,7 +346,8 @@ if $document == 1 {
 if $output_data == 1 {
 	
 	do "$code_merge/3_data_final" 
-
+	do "$code_merge/5_create_csv.do" 
+	do "$code_merge/4_create_excel.do" 
 }
 
 * ==============================================================================
@@ -324,12 +358,12 @@ if $paper == 1 {
 
 	* Get a list of all code files used for producing exhibits in the paper 
 	filelist, directory($code_paper) 
-	drop if regexm(filename,".DS_Store")
 	gen combined = dirname + "/" + filename
 	levelsof combined, loc(paper_files)
 
 	* Run files 
 	foreach f of loc paper_files {
+		di "Running `f'"
 		qui do `f'
 	}
 

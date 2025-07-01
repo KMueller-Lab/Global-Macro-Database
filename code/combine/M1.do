@@ -29,4 +29,4 @@ use "$data_final/clean_data_wide", clear
 * ==============================================================================
 
 * Set up the priority list
-splice, priority(AFRISTAT BCEAO AFDB OECD_MEI IMF_MFS ADB CS1 CS2 AHSTAT JST NBS Mitchell CEPAC HFS) generate(M1) varname(M1) base_year(2018) method("chainlink")
+splice, priority(AFRISTAT BCEAO AFDB OECD_MEI IMF_MFS ADB CS1 CS2 CS3 AHSTAT JST NBS Mitchell CEPAC HFS) generate(M1) varname(M1) base_year(2018) method("chainlink")

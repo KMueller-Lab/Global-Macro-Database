@@ -1,0 +1,14 @@
+\contentsline {section}{Data availability heatmap}{3}{section*.3}%
+\contentsline {section}{Current account balance}{4}{section*.5}%
+\contentsline {section}{Consumer price index}{5}{section*.8}%
+\contentsline {section}{USD exchange rate}{6}{section*.11}%
+\contentsline {section}{Exports}{7}{section*.14}%
+\contentsline {section}{Exports to GDP ratio}{8}{section*.17}%
+\contentsline {section}{Imports}{9}{section*.20}%
+\contentsline {section}{Imports to GDP ratio}{10}{section*.23}%
+\contentsline {section}{Inflation}{11}{section*.26}%
+\contentsline {section}{Nominal GDP}{12}{section*.29}%
+\contentsline {section}{Population}{13}{section*.32}%
+\contentsline {section}{Real GDP}{14}{section*.35}%
+\contentsline {section}{Unemployment}{15}{section*.38}%
+\contentsline {section}{References}{16}{section*.41}%

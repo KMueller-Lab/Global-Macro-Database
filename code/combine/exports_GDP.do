@@ -28,6 +28,6 @@ use "$data_final/clean_data_wide", clear
 * ==============================================================================
 
 * Set up the priority list
-splice, priority(IMF_WEO OECD_EO IMF_IFS EUS UN WDI ADB AMF BCEAO JST WDI_ARC AMECO CS1 CS2 CS3 AHSTAT Mitchell NBS) generate(exports_GDP) varname(exports_GDP) base_year(2019) method("chainlink")
+splice, priority(OECD_EO EUS UN WDI ADB AMF BCEAO JST WDI_ARC AMECO IMF_IFS IMF_WEO CS1 CS2 CS3 AHSTAT Mitchell NBS IMF_WEO_forecast) generate(exports_GDP) varname(exports_GDP) base_year(2019) method("chainlink")
 
 

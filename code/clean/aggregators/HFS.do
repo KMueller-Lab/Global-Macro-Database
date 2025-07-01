@@ -25,7 +25,7 @@ clear
 
 * Define globals 
 global input "${data_raw}/aggregators/HFS/General_tables.xlsx"
-global input1 "input_temp"
+global input1 "${data_raw}/aggregators/HFS/input1.dta"
 global output "${data_clean}/aggregators/HFS/HFS.dta"
 
 * ==============================================================================
@@ -58,7 +58,7 @@ foreach var in `r(varlist)' {
 drop in 1
 
 * Save the input
-save "input_temp", replace
+save "$input1", replace
 
 
 
@@ -357,6 +357,7 @@ replace series = "c_govrev" if series == "Federal revenue" & scale == "Millions"
 replace series = "c_govexp" if series == "Federal spending" & scale == "Millions"
 replace series = "c_rGDP_LCU" if series == "Gross domestic product" & unit == "Constant 1970 Mexican pesos"
 replace series = "c_M0" if series == "Monetary base (M0)"
+replace series = "c_CPI" if series == "Wholesale prices, Mexico City" & source == "INEGI (1999: Cuadro 19.6)"
 
 * Keep only relevant rows
 keep if strpos(series, "c_")
@@ -1267,4 +1268,4 @@ order ISO3 year
 save "${output}", replace
 
 * Remove input1 file
-rm "$input1.dta"
+rm "$input1"

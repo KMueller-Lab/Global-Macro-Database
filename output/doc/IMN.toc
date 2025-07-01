@@ -1,0 +1,7 @@
+\contentsline {section}{Data availability heatmap}{3}{section*.3}%
+\contentsline {section}{USD exchange rate}{4}{section*.5}%
+\contentsline {section}{Nominal GDP}{5}{section*.8}%
+\contentsline {section}{Population}{6}{section*.11}%
+\contentsline {section}{Real GDP}{7}{section*.14}%
+\contentsline {section}{Unemployment}{8}{section*.17}%
+\contentsline {section}{References}{9}{section*.20}%

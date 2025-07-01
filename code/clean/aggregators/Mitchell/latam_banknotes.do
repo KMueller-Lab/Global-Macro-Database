@@ -87,14 +87,17 @@ save_merge `temp_c'
 qui greshape wide M0, i(year) j(countryname)
 ren M0* *
 
+* Argentina
 replace Argentina = Argentina / 100 if year <= 1969
 replace Argentina = Argentina / 1000 if year <= 1982
 replace Argentina = Argentina / 10000 if year <= 1988
 convert_units Argentina 1955 1982 "B"
 
+* Bolivia
 convert_units Bolivia 1955 1982 "B"
 convert_units Bolivia 1983 2010 "Tri"
 
+* Brazil
 replace Brazil = Brazil * 1000 if year >= 1940
 replace Brazil = Brazil * 1000 if year >= 1975
 replace Brazil = Brazil * 1000000 if year >= 1985
@@ -102,27 +105,33 @@ replace Brazil = Brazil / 1000 if year >= 1985
 replace Brazil = Brazil / 1000 if year >= 1990
 replace Brazil = Brazil / 2750 if year <= 1993
 
-
+* Chile
 replace Chile = Chile / 1000 if year <= 1954
 convert_units Chile 1970 1975 "B"
 replace Chile = Chile / 1000 if year <= 1975
 convert_units Chile 1983 2010 "B"
 
+* Colombia
 convert_units Colombia 1975 2010 "B"
-convert_units Ecuador 1983 2000 "B"
+
+* Ecuador
+convert_units Ecuador  1983 2000 "B"
 replace Ecuador = Ecuador / 25000 if year <= 2000
 
+* Paraguay
 replace Paraguay = Paraguay / 100 if year <= 1942
 convert_units Paraguay 1975 2010 "B" 
 
+* Peru
 replace Peru = Peru / 1000 if year <= 1929
 replace Peru = Peru / (10^6) if year <= 1989
 replace Peru = Peru / (1000) if year <= 1954
 
+* Uruguay
 replace Uruguay = Uruguay / 1000 if year <= 1982
 replace Uruguay = Uruguay / 1000 if year <= 1969
 
-replace Venezuela = Venezuela / (10^8)
+replace Venezuela = Venezuela / (10^2)
 replace Venezuela = Venezuela / (10^3) if year <= 2000
 
 * Reshape

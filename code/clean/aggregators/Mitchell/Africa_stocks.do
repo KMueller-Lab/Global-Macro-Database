@@ -119,7 +119,7 @@ qui ds year, not
 local vars_to_keep 
 foreach var in `r(varlist)' {
 	qui replace `var' = subinstr(`var', " ", "", .) in 1
-    if `var'[3] == "Current Prices" & `var'[4] == "GFCF" {
+    if `var'[3] == "Current Prices" & `var'[4] == "Stocks" {
             local vars_to_keep `vars_to_keep' `var'
         }
 }
@@ -134,6 +134,7 @@ foreach var in `r(varlist)' {
 
 * Destring
 qui drop if year == ""
+qui replace Zaire = "" if Zaire == "— "
 destring_check
 
 * Reshape
@@ -195,7 +196,6 @@ qui ren stocks* *
 convert_units SouthAfrica 1911 1979 "Th"
 convert_units Ghana 1950 1979 "Th"
 convert_units SierraLeone 1950 1998 "Th"
-convert_units Uganda 1950 1988 "Th"
 convert_units Zambia  1950 1992 "Th"
 local countries Egypt Lesotho Liberia Libya Malawi Mauritius
 foreach country of local countries {

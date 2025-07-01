@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: SWE.aux
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+The style file: qje.bst
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+Database file #1: bib.bib
+Warning--missing publisher in FZ
+Warning--empty year in CS1_SWE; set to ????
+Warning--empty journal in LUND
+Warning--can't use both author and editor fields in Mitchell
+You've used 30 entries,
+            2958 wiz_defined-function locations,
+            777 strings with 7798 characters,
+and the built_in function-call counts, 13437 in all, are:
+= -- 1138
+> -- 551
+< -- 27
++ -- 193
+- -- 154
+* -- 901
+:= -- 2288
+add.period$ -- 113
+call.type$ -- 30
+change.case$ -- 186
+chr.to.int$ -- 31
+cite$ -- 34
+duplicate$ -- 994
+empty$ -- 917
+format.name$ -- 219
+if$ -- 2581
+int.to.chr$ -- 5
+int.to.str$ -- 1
+missing$ -- 192
+newline$ -- 151
+num.names$ -- 120
+pop$ -- 392
+preamble$ -- 1
+purify$ -- 171
+quote$ -- 0
+skip$ -- 384
+stack$ -- 0
+substring$ -- 480
+swap$ -- 457
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 261
+warning$ -- 4
+while$ -- 98
+width$ -- 0
+write$ -- 360
+(There were 4 warnings)

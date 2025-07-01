@@ -1,0 +1,118 @@
+\begin{thebibliography}{17}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{African Union}(2024)]{AFRISTAT}
+{African Union}.
+\newblock {AFRISTAT: The Economic and Statistical Observatory for Sub-Saharan
+  Africa}, 2024.
+\newblock URL \url{https://www.afristat.org/}.
+\newblock Accessed: 2024-07-20.
+
+\bibitem[Bordo et~al.(2001)Bordo, Eichengreen, Klingebiel, and
+  Martinez-Peria]{BORDO}
+M.~Bordo, B.~Eichengreen, D.~Klingebiel, and M.~S. Martinez-Peria.
+\newblock Is the crisis problem growing more severe?
+\newblock \emph{Economic Policy}, 16\penalty0 (32):\penalty0 52--82, 2001.
+\newblock URL \url{https://rucore.libraries.rutgers.edu/rutgers-lib/41466/}.
+
+\bibitem[Cha et~al.(2022)Cha, Kim, Park, and Park]{CS2_KOR}
+Myung~Soo Cha, Nak~Nyeon Kim, Ki-Joo Park, and Yitaek Park.
+\newblock \emph{Historical statistics of Korea}.
+\newblock Springer, 2022.
+
+\bibitem[{Economic Commission for Latin America and the
+  Caribbean}(2024)]{CEPAC}
+{Economic Commission for Latin America and the Caribbean}.
+\newblock Economic commission for latin america and the caribbean, 2024.
+\newblock URL \url{https://www.cepal.org/en}.
+\newblock Accessed: 2024-06-18.
+
+\bibitem[{International Monetary Fund}(2010)]{IMF_HDD}
+{International Monetary Fund}.
+\newblock {A Historical Public Debt Database}.
+\newblock IMF Working Papers 2010/245, International Monetary Fund, Nov 2010.
+\newblock URL \url{https://ideas.repec.org/p/imf/imfwpa/2010-245.html}.
+
+\bibitem[Jord{\`a} et~al.(2017)Jord{\`a}, Schularick, and Taylor]{JST}
+{\`O}scar Jord{\`a}, Moritz Schularick, and Alan~M Taylor.
+\newblock Macrofinancial history and the new business cycle facts.
+\newblock \emph{NBER macroeconomics annual}, 31\penalty0 (1):\penalty0
+  213--263, 2017.
+
+\bibitem[Krantz()]{CS1_SWE}
+Olle Krantz.
+\newblock Swedish historical national accounts 1300-2020.
+\newblock URL
+  \url{https://www.lusem.lu.se/economic-history/databases/economic-history-data/swedish-historical-national-accounts}.
+\newblock Accessed: 2024-04-21.
+
+\bibitem[Mauro et~al.(2015)Mauro, Romeu, Binder, and Zaman]{IMF_FPP}
+Paolo Mauro, Rafael Romeu, Ariel Binder, and Asad Zaman.
+\newblock {A modern history of fiscal prudence and profligacy}.
+\newblock \emph{Journal of Monetary Economics}, 76\penalty0 (C):\penalty0
+  55--70, 2015.
+\newblock \doi{10.1016/j.jmoneco.2015.07}.
+\newblock URL \url{https://ideas.repec.org/a/eee/moneco/v76y2015icp55-70.html}.
+
+\bibitem[Mbaye et~al.(2018)Mbaye, Moreno-Badia, and Chae]{IMF_GDD}
+S.~Mbaye, M.~Moreno-Badia, and K.~Chae.
+\newblock {Global Debt Database: Methodology and Sources}.
+\newblock IMF Working Papers 2018/111, International Monetary Fund, May 2018.
+\newblock URL \url{https://ideas.repec.org/p/imf/imfwpa/2018-111.html}.
+
+\bibitem[{National Bank of Serbia}(2024)]{NBS}
+{National Bank of Serbia}.
+\newblock South-eastern european monetary and economic statistics from the 19th
+  century to world war ii, 2024.
+\newblock URL
+  \url{https://www.nbs.rs/en/drugi-nivo-navigacije/publikacije-i-istrazivanja/seemhn/seemhn-dctf/}.
+\newblock Accessed: 2024-06-24.
+
+\bibitem[{OECD Economic Outlook}(2024)]{OECD_EO}
+{OECD Economic Outlook}.
+\newblock Oecd economic outlook data, 2024.
+\newblock URL
+  \url{https://www.oecd.org/en/topics/sub-issues/economic-outlook.html}.
+\newblock Accessed on 2024-06-05.
+
+\bibitem[Reinhart and Rogoff(2010)]{RR_debt}
+Carmen~M. Reinhart and Kenneth~S. Rogoff.
+\newblock Debt-to-{GDP} ratios dataset, 2010.
+\newblock URL \url{https://carmenreinhart.com/debt-to-gdp-ratios}.
+\newblock Historical debt-to-GDP ratios for 70 countries.
+
+\bibitem[Vamplew(1987)]{CS2_AUS}
+Wray Vamplew.
+\newblock \emph{Australians: Historical Statistics}, volume~10.
+\newblock Fairfax, Syme \& Weldon Associates, Broadway, N.S.W., Australia,
+  1987.
+
+\bibitem[{WEO}(2024{\natexlab{a}})]{IMF_WEO}
+{WEO}.
+\newblock World economic outlook database, 2024{\natexlab{a}}.
+\newblock URL \url{https://www.imf.org/en/Publications/WEO}.
+\newblock Accessed: 2024-08-05.
+
+\bibitem[{WEO}(2024{\natexlab{b}})]{IMF_WEO_forecast}
+{WEO}.
+\newblock World economic outlook database, 2024{\natexlab{b}}.
+\newblock URL \url{https://www.imf.org/en/Publications/WEO}.
+\newblock Accessed: 2024-08-05.
+
+\bibitem[{World Bank}(2024)]{WDI}
+{World Bank}.
+\newblock World development indicators, 2024.
+\newblock URL \url{https://data.worldbank.org/indicator}.
+\newblock Accessed: 2024-04-21.
+
+\bibitem[{World Bank (Archives)}(1999)]{WDI_ARC}
+{World Bank (Archives)}.
+\newblock World development indicators, 1999.
+\newblock URL \url{https://data.worldbank.org/indicator}.
+\newblock Accessed: 2024-07-21.
+
+\end{thebibliography}

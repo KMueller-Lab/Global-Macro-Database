@@ -639,8 +639,8 @@ replace exports = exports / 100 if countryname == "Guadeloupe" & year <= 1957
 replace imports = imports / 100 if countryname == "Martinique" & year <= 1957
 replace exports = exports / 100 if countryname == "Martinique" & year <= 1957
 
-replace exports = exports / 1000 if countryname == "Mexico" & year <= 1993
-replace imports = imports / 1000 if countryname == "Mexico" & year <= 1993
+replace exports = exports / 1000 if countryname == "Mexico"
+replace imports = imports / 1000 if countryname == "Mexico" 
 
 replace imports = imports / 5000 if year <= 1990 & countryname == "Nicaragua"
 replace imports = imports / 1000000 if countryname == "Nicaragua"

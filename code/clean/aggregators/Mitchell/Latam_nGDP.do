@@ -213,29 +213,45 @@ replace nGDP_LCU = nGDP_LCU / 1000 if countryname == "Brazil"
 replace nGDP_LCU = nGDP_LCU / 1000 if year <= 1989 & countryname == "Brazil"
 replace nGDP_LCU = nGDP_LCU / 1000 if year <= 1979 & countryname == "Brazil"
 replace nGDP_LCU = nGDP_LCU * 1000 if inrange(year, 1960, 1969) & countryname == "Brazil"
+
+* Argentina
+replace nGDP_LCU = nGDP_LCU / 10 if year <= 1979 & countryname == "Argentina"
+replace nGDP_LCU = nGDP_LCU * 100 if inrange(year, 1965, 1974) & countryname == "Argentina"
 replace nGDP_LCU = . if year >= 1985 & countryname == "Argentina"
-replace nGDP_LCU = nGDP_LCU * (10^-14) if countryname == "Venezuela"
-replace nGDP_LCU = nGDP_LCU * (10^-6) if countryname == "Mexico" & year <= 1984
-replace nGDP_LCU = nGDP_LCU * (10^-3) if  countryname == "Ecuador"
+replace nGDP_LCU = nGDP_LCU / 10000000 if countryname == "Argentina" & year <= 1985
+replace nGDP_LCU = nGDP_LCU / 100000 if countryname == "Argentina" & year <= 1974
+
+* Venezuela
+replace nGDP_LCU = nGDP_LCU * (10^-8) if countryname == "Venezuela"
+
+* Ecuador
+replace nGDP_LCU = nGDP_LCU * (10^-3) / 25000 if  countryname == "Ecuador"
+
+* Colombia
 replace nGDP_LCU = nGDP_LCU * (10^3) if  countryname == "Colombia" & year <= 1969
+
+* Uruguay
 replace nGDP_LCU = nGDP_LCU * (10^-3) if countryname == "Uruguay" 
 replace nGDP_LCU = nGDP_LCU / 1000 if year <= 1979 & countryname == "Uruguay" 
 replace nGDP_LCU = nGDP_LCU * 1000 if year <= 1969 & countryname == "Uruguay" 
 replace nGDP_LCU = nGDP_LCU / 1000 if year <= 1959 & countryname == "Uruguay" 
+
+* Peru
 replace nGDP_LCU = nGDP_LCU * (10^-3) if year <= 1988 & countryname == "Peru" 
 replace nGDP_LCU = nGDP_LCU * (10^-3) if year <= 1979 & countryname == "Peru" 
 replace nGDP_LCU = nGDP_LCU * (10^-3) if year <= 1949 & countryname == "Peru" 
+
+* Bolivia
 replace nGDP_LCU = nGDP_LCU / 1000 if countryname == "Bolivia" & year <= 1992
 replace nGDP_LCU = nGDP_LCU / 1000 if countryname == "Bolivia" & year == 1984
 replace nGDP_LCU = nGDP_LCU / 100 if countryname == "Bolivia" & year <= 1983
 replace nGDP_LCU = nGDP_LCU / 10 if countryname == "Bolivia" & year <= 1979
-replace nGDP_LCU = nGDP_LCU / 10000000 if countryname == "Argentina" & year <= 1985
-replace nGDP_LCU = nGDP_LCU / 100000 if countryname == "Argentina" & year <= 1974
+
+* Chile
 replace nGDP_LCU = nGDP_LCU / 1000 if countryname == "Chile" & year <= 1969
 replace nGDP_LCU = nGDP_LCU / 1000 if countryname == "Chile" & year <= 1964
 replace nGDP_LCU = nGDP_LCU * 1000 if countryname == "Chile" & year >= 1975
-replace nGDP_LCU = nGDP_LCU / 10 if year <= 1979 & countryname == "Argentina"
-replace nGDP_LCU = nGDP_LCU * 100 if inrange(year, 1965, 1974) & countryname == "Argentina"
+
 
 *===============================================================================
 * 			Final set up

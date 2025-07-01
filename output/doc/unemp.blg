@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: unemp.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: plainnat.bst
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+Database file #1: bib.bib
+Warning--I didn't find a database entry for "CS1_IRL"
+Warning--empty publisher in CS1_DNK
+You've used 17 entries,
+            2773 wiz_defined-function locations,
+            698 strings with 7300 characters,
+and the built_in function-call counts, 5442 in all, are:
+= -- 487
+> -- 201
+< -- 17
++ -- 78
+- -- 60
+* -- 305
+:= -- 846
+add.period$ -- 62
+call.type$ -- 17
+change.case$ -- 70
+chr.to.int$ -- 16
+cite$ -- 35
+duplicate$ -- 267
+empty$ -- 545
+format.name$ -- 79
+if$ -- 1154
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 3
+newline$ -- 104
+num.names$ -- 68
+pop$ -- 196
+preamble$ -- 1
+purify$ -- 54
+quote$ -- 0
+skip$ -- 225
+stack$ -- 0
+substring$ -- 59
+swap$ -- 19
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 182
+warning$ -- 1
+while$ -- 53
+width$ -- 0
+write$ -- 234
+(There were 2 warnings)

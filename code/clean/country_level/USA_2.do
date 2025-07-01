@@ -89,21 +89,19 @@ ren gov_debt govdebt
 ren DEFICIT  govdef 
 ren REVENUE  govrev
 
-* Calculate ratios
-gen govdebt_GDP = govdebt / nGDP
-gen govdef_GDP  = govdef / nGDP
-gen govrev_GDP  = govrev / nGDP
-gen govexp_GDP  = govexp / nGDP
-
 * Convert units
 replace govexp = govexp / 1000
 replace govrev = govrev / 1000
 replace govdef = govdef / 1000
+replace govdebt = govdebt / 1000
 replace inv = inv * 1000
 replace sav = sav * 1000
 
-* Fix government debt units (Represents a factor of ten to other sources)
-replace govdebt_GDP = govdebt_GDP / 10
+* Calculate ratios
+gen govdebt_GDP = (govdebt / nGDP) * 100
+gen govdef_GDP  = (govdef / nGDP) * 100
+gen govrev_GDP  = (govrev / nGDP) * 100
+gen govexp_GDP  = (govexp / nGDP) * 100
 
 * Add country's ISO3
 gen ISO3 = "USA"
@@ -117,6 +115,15 @@ drop id
 
 * Add ratios to gdp variables
 gen inv_GDP     = (inv / nGDP) * 100
+
+* Rebase the GDP to 2010
+qui gen  temp = deflator if year == 2010 
+qui egen defl_2010 = max(temp) 
+qui replace rGDP = (rGDP * defl_2010) / 100 
+qui drop temp defl_2010	
+
+* Update the deflator
+replace deflator = (nGDP / rGDP) * 100
 
 * Add source identifier
 qui ds ISO3 year, not

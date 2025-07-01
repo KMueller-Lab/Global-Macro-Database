@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: CAN.aux
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+The style file: qje.bst
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+Database file #1: bib.bib
+Repeated entry---line 2359 of file bib.bib
+ : @article{CS2_CAN
+ :                 ,
+I'm skipping whatever remains of this entry
+Warning--can't use both author and editor fields in Mitchell
+Warning--empty year in CS1_CAN; set to ????
+You've used 28 entries,
+            2958 wiz_defined-function locations,
+            772 strings with 7898 characters,
+and the built_in function-call counts, 12506 in all, are:
+= -- 1068
+> -- 516
+< -- 25
++ -- 177
+- -- 145
+* -- 840
+:= -- 2140
+add.period$ -- 106
+call.type$ -- 28
+change.case$ -- 174
+chr.to.int$ -- 29
+cite$ -- 30
+duplicate$ -- 923
+empty$ -- 839
+format.name$ -- 204
+if$ -- 2396
+int.to.chr$ -- 4
+int.to.str$ -- 1
+missing$ -- 177
+newline$ -- 140
+num.names$ -- 112
+pop$ -- 359
+preamble$ -- 1
+purify$ -- 160
+quote$ -- 0
+skip$ -- 351
+stack$ -- 0
+substring$ -- 452
+swap$ -- 428
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 249
+warning$ -- 2
+while$ -- 92
+width$ -- 0
+write$ -- 335
+(There was 1 error message)

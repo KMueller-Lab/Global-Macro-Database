@@ -1,0 +1,172 @@
+\begin{thebibliography}{32}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{{{Bank for International Settlements}}(2024)}]{BIS}
+{{Bank for International Settlements}} (2024).
+
+\bibitem[{Barro and Redlick(2011)}]{BARRO}
+Barro, R.~J. and C.~J. Redlick.
+\newblock \enquote{Macroeconomic Effects from Government Purchases and Taxes.}
+\newblock \emph{The Quarterly Journal of Economics}, 126(2011), 51--102.
+\newblock Accessed: 2024-05-04.
+
+\bibitem[{Bordo et~al.(2001)Bordo, Eichengreen, Klingebiel, and
+  Martinez-Peria}]{BORDO}
+Bordo, M., B.~Eichengreen, D.~Klingebiel, and M.~S. Martinez-Peria.
+\newblock \enquote{Is the Crisis Problem Growing More Severe?}
+\newblock \emph{Economic Policy}, 16(2001), 52--82.
+
+\bibitem[{Carter et~al.(2006)Carter, Gartner, Haines, Olmstead, Sutch, Wright
+  et~al.}]{CS2_USA}
+Carter, Susan~B, Scott~Sigmund Gartner, Michael~R Haines, Alan~L Olmstead,
+  Richard Sutch, Gavin Wright, et~al.
+\newblock \emph{Historical Statistics of the United States: Millennial
+  Edition}, volume~3.
+\newblock Cambridge University Press New York (2006).
+
+\bibitem[{Commission(2024)}]{EUS}
+Commission, European.
+\newblock \enquote{Eurostat Data Explorer.} (2024).
+\newblock Accessed: 2024-04-23.
+
+\bibitem[{Darvas(2021)}]{BRUEGEL}
+Darvas, Zsolt.
+\newblock \enquote{Timely Measurement of Real Effective Exchange Rates.}
+\newblock Working Paper 2021/15, Bruegel (2021).
+
+\bibitem[{{{European Commission}}(2024)}]{AMECO}
+{{European Commission}}.
+\newblock \enquote{{{AMECO Database}}.} (2024).
+
+\bibitem[{{Federal Reserve Bank of St. Louis}(2024)}]{CS1_USA}
+{Federal Reserve Bank of St. Louis}.
+\newblock \enquote{{Federal Reserve Economic Data}.} (2024).
+\newblock Accessed: 2024-05-13.
+
+\bibitem[{Federico and Tena-Junguito(2019)}]{Tena}
+Federico, Giovanni and Antonio Tena-Junguito.
+\newblock \enquote{World Trade, 1800-1938: a New Synthesis.}
+\newblock \emph{Revista de Historia Econ{\'o}mica-Journal of Iberian and Latin
+  America Economic History}, 37(2019).
+
+\bibitem[{Gapminder(2024)}]{Gapminder}
+Gapminder.
+\newblock \enquote{Gapminder: Total Population.} (2024).
+\newblock Accessed: 2024-08-14.
+
+\bibitem[{Grimm(2024)}]{Grimm}
+Grimm, Maximilian.
+\newblock \enquote{The Effect of Monetary Policy on Systemic Bank Funding
+  Stability.}
+\newblock (2024).
+
+\bibitem[{Ha et~al.(2023)Ha, Kose, and Ohnsorge}]{WB_CC}
+Ha, Jongrim, M.~Ayhan Kose, and Franziska Ohnsorge.
+\newblock \enquote{One-Stop Source: A Global Database of Inflation.}
+\newblock \emph{Journal of International Money and Finance}, 137(2023), 102896.
+
+\bibitem[{{International Institute of Social History}(2024)}]{CLIO}
+{International Institute of Social History}.
+\newblock \enquote{Clio Infra: Repository of Global Inequality Data.} (2024).
+\newblock Accessed: 2024-01-16.
+
+\bibitem[{{International Monetary Fund}(2024)}]{IMF_IFS}
+{International Monetary Fund}.
+\newblock \enquote{International Financial Statistics.} (2024).
+
+\bibitem[{Jones and Obstfeld(1997)}]{JO}
+Jones, M.~T. and M.~Obstfeld.
+\newblock \enquote{Saving, Investment, and Gold.} (1997).
+\newblock Accessed: 2024-06-07.
+
+\bibitem[{Jord{\`a} et~al.(2017)Jord{\`a}, Schularick, and Taylor}]{JST}
+Jord{\`a}, {\`O}scar, Moritz Schularick, and Alan~M Taylor.
+\newblock \enquote{Macrofinancial History and the New Business Cycle Facts.}
+\newblock \emph{NBER macroeconomics annual}, 31(2017), 213--263.
+
+\bibitem[{Mauro et~al.(2015)Mauro, Romeu, Binder, and Zaman}]{IMF_FPP}
+Mauro, Paolo, Rafael Romeu, Ariel Binder, and Asad Zaman.
+\newblock \enquote{{A modern history of fiscal prudence and profligacy}.}
+\newblock \emph{Journal of Monetary Economics}, 76(2015), 55--70.
+
+\bibitem[{Mbaye et~al.(2018)Mbaye, Moreno-Badia, and Chae}]{IMF_GDD}
+Mbaye, S., M.~Moreno-Badia, and K.~Chae.
+\newblock \enquote{{Global Debt Database: Methodology and Sources}.}
+\newblock IMF Working Papers 2018/111, International Monetary Fund (2018).
+
+\bibitem[{Mitchell(2013)}]{Mitchell}
+Mitchell, Brian.
+\newblock \emph{International Historical Statistics}.
+\newblock International Historical Statistics. Palgrave Macmillan London, 1
+  edition (2013).
+
+\bibitem[{Müller et~al.(2025)Müller, Xu, Lehbib, and Chen}]{GMD_estimated}
+Müller, Karsten, Chenzi Xu, Mohamed Lehbib, and Ziliang Chen.
+\newblock \enquote{{The Global Macro Database: A New International
+  Macroeconomic Dataset}.}
+\newblock Working Paper 33714, National Bureau of Economic Research (2025).
+
+\bibitem[{{OECD}(2024{\natexlab{a}})}]{OECD_KEI}
+{OECD}.
+\newblock \enquote{OECD Key Economic Indicators Data.} (2024{\natexlab{a}}).
+\newblock Accessed on 2024-07-10.
+
+\bibitem[{{OECD}(2024{\natexlab{b}})}]{OECD_MEI}
+---{}---{}---.
+\newblock \enquote{OECD Main Economic Indicators Data.} (2024{\natexlab{b}}).
+\newblock Accessed on 2024-07-04.
+
+\bibitem[{{OECD}(2024{\natexlab{c}})}]{OECD_MEI_ARC}
+---{}---{}---.
+\newblock \enquote{OECD Main Economic Indicators Data.} (2024{\natexlab{c}}).
+\newblock Accessed on 2024-07-04.
+
+\bibitem[{{OECD}(2024{\natexlab{d}})}]{OECD_QNA}
+---{}---{}---.
+\newblock \enquote{OECD Quarterly National Accounts Data.}
+  (2024{\natexlab{d}}).
+\newblock Accessed on 2024-07-10.
+
+\bibitem[{{OECD Economic Outlook}(2024)}]{OECD_EO}
+{OECD Economic Outlook}.
+\newblock \enquote{OECD Economic Outlook Data.} (2024).
+\newblock Accessed on 2024-06-05.
+
+\bibitem[{Officer and Williamson(2024)}]{MW}
+Officer, Lawrence~H. and Samuel~H. Williamson.
+\newblock \enquote{Measures of Worth.}
+\newblock MeasuringWorth (2024).
+
+\bibitem[{Reinhart and Rogoff(2010)}]{RR_debt}
+Reinhart, Carmen~M. and Kenneth~S. Rogoff.
+\newblock \enquote{Debt-to-{GDP} Ratios Dataset.} (2010).
+\newblock Historical debt-to-GDP ratios for 70 countries.
+
+\bibitem[{Schmelzing(2019)}]{Schmelzing}
+Schmelzing, Paul.
+\newblock \enquote{Eight centuries of global real interest rates, RG, and the
+  ‘suprasecular’decline, 1311--2018.}
+\newblock \emph{RG, and the ‘Suprasecular’Decline}, (2019), 1311--2018.
+
+\bibitem[{{United Nations}(2024)}]{UN}
+{United Nations}.
+\newblock \enquote{World Population Prospects 2024, Online Edition.} (2024).
+\newblock Accessed: 2024-02-02.
+
+\bibitem[{{WEO}(2024)}]{IMF_WEO_forecast}
+{WEO}.
+\newblock \enquote{World Economic Outlook Database.} (2024).
+\newblock Accessed: 2024-08-05.
+
+\bibitem[{{World Bank}(2024)}]{WDI}
+{World Bank}.
+\newblock \enquote{World Development Indicators.} (2024).
+\newblock Accessed: 2024-04-21.
+
+\bibitem[{{World Bank (Archives)}(1999)}]{WDI_ARC}
+{World Bank (Archives)}.
+\newblock \enquote{World Development Indicators.} (1999).
+\newblock Accessed: 2024-07-21.
+
+\end{thebibliography}

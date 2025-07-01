@@ -1,0 +1,156 @@
+\begin{thebibliography}{22}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abildgren(2017)]{CS1_DNK}
+K.~Abildgren.
+\newblock \emph{A Chart \& Data Book on the Monetary and Financial History of
+  Denmark}.
+\newblock 2017.
+\newblock URL
+  \url{https://sites.google.com/view/kim-abildgren/historical-statistics}.
+\newblock Accessed: 2024-06-24.
+
+\bibitem[{Arab Monetary Fund}(2024)]{AMF}
+{Arab Monetary Fund}.
+\newblock {Arab Economic Database}, 2024.
+\newblock URL \url{https://www.amf.org.ae/ar}.
+\newblock Accessed: 2024-07-10.
+
+\bibitem[{Asian Development Bank}(2024)]{ADB}
+{Asian Development Bank}.
+\newblock {Key Indicators Database (KIDB)}, 2024.
+\newblock URL \url{https://kidb.adb.org}.
+
+\bibitem[{Banca d'Italia}(2024)]{BIT}
+{Banca d'Italia}.
+\newblock Historical exchange rates database, 2024.
+\newblock URL
+  \url{https://tassidicambio.bancaditalia.it/terzevalute-wf-ui-web/converter}.
+\newblock Accessed: 2024-01-16.
+
+\bibitem[{{Bank for International Settlements}}(2024)]{BIS}
+{{Bank for International Settlements}}, 2024.
+\newblock URL \url{https://data.bis.org/topics/}.
+
+\bibitem[Bordo et~al.(2001)Bordo, Eichengreen, Klingebiel, and
+  Martinez-Peria]{BORDO}
+M.~Bordo, B.~Eichengreen, D.~Klingebiel, and M.~S. Martinez-Peria.
+\newblock Is the crisis problem growing more severe?
+\newblock \emph{Economic Policy}, 16\penalty0 (32):\penalty0 52--82, 2001.
+\newblock URL \url{https://rucore.libraries.rutgers.edu/rutgers-lib/41466/}.
+
+\bibitem[Bértola and Rey(2018)]{MOXLAD}
+Luis Bértola and María Rey.
+\newblock The montevideo-oxford latin american economic history database
+  (moxlad): Origins, contents and sources.
+\newblock \emph{Economic History of Developing Regions}, 33\penalty0
+  (3):\penalty0 209--224, 2018.
+\newblock \doi{10.1080/20780389.2018.1532286}.
+\newblock URL \url{https://doi.org/10.1080/20780389.2018.1532286}.
+
+\bibitem[de~Pesquisa Econômica~Aplicada(2024)]{CS1_BRA}
+Instituto de~Pesquisa Econômica~Aplicada.
+\newblock Ipea data, 2024.
+\newblock URL \url{http://www.ipeadata.gov.br}.
+\newblock Accessed on: October 8, 2024.
+
+\bibitem[Federico and Tena-Junguito(2019)]{Tena}
+Giovanni Federico and Antonio Tena-Junguito.
+\newblock World trade, 1800-1938: a new synthesis.
+\newblock \emph{Revista de Historia Econ{\'o}mica-Journal of Iberian and Latin
+  America Economic History}, 37\penalty0 (1), 2019.
+\newblock \doi{10.1017/S0212610918000216}.
+
+\bibitem[Feenstra et~al.(2015)Feenstra, Inklaar, and Timmer]{PWT}
+Robert~C. Feenstra, Robert Inklaar, and Marcel~P. Timmer.
+\newblock The next generation of the penn world table.
+\newblock \emph{American Economic Review}, 105\penalty0 (10):\penalty0
+  3150--3182, 2015.
+\newblock URL \url{https://www.rug.nl/ggdc/productivity/pwt/?lang=en}.
+\newblock Accessed: 2024-04-21.
+
+\bibitem[Ferreres et~al.(2005)]{CS3_ARG}
+Orlando~J Ferreres et~al.
+\newblock Dos siglos de econom{\'\i}a argentina.
+\newblock 2005.
+
+\bibitem[Iceland(1997)]{CS2_ISL}
+Statistics Iceland.
+\newblock \emph{Hagskinna—Icelandic Historical Statistics from the 17th
+  Century to 1990}.
+\newblock Hagstofa Íslands, Reykjavík, 1997.
+\newblock URL \url{https://baekur.is/bok/8f318e69-dc49-4a9f-a8ec-805b2352bad0}.
+\newblock Accessed: 2024-07-08.
+
+\bibitem[{Institute of Economic Research, Hitotsubashi
+  University}(2008)]{AHSTAT}
+{Institute of Economic Research, Hitotsubashi University}.
+\newblock {Asian Historical Statistics: Basic Data for Asian Economic History},
+  2008.
+\newblock URL \url{http://www.ier.hit-u.ac.jp/English/database/db.html}.
+
+\bibitem[{International Monetary Fund}(2024)]{IMF_IFS}
+{International Monetary Fund}.
+\newblock International financial statistics, 2024.
+\newblock URL \url{https://data.imf.org/}.
+
+\bibitem[Jord{\`a} et~al.(2017)Jord{\`a}, Schularick, and Taylor]{JST}
+{\`O}scar Jord{\`a}, Moritz Schularick, and Alan~M Taylor.
+\newblock Macrofinancial history and the new business cycle facts.
+\newblock \emph{NBER macroeconomics annual}, 31\penalty0 (1):\penalty0
+  213--263, 2017.
+
+\bibitem[{National Bank of Serbia}(2024)]{NBS}
+{National Bank of Serbia}.
+\newblock South-eastern european monetary and economic statistics from the 19th
+  century to world war ii, 2024.
+\newblock URL
+  \url{https://www.nbs.rs/en/drugi-nivo-navigacije/publikacije-i-istrazivanja/seemhn/seemhn-dctf/}.
+\newblock Accessed: 2024-06-24.
+
+\bibitem[{Norges Bank}()]{CS2_NOR}
+{Norges Bank}.
+\newblock Historical monetary statistics for norway.
+\newblock URL
+  \url{https://www.norges-bank.no/en/topics/Statistics/Historical-monetary-statistics/}.
+\newblock Accessed: 2024-07-08.
+
+\bibitem[{OECD Economic Outlook}(2024)]{OECD_EO}
+{OECD Economic Outlook}.
+\newblock Oecd economic outlook data, 2024.
+\newblock URL
+  \url{https://www.oecd.org/en/topics/sub-issues/economic-outlook.html}.
+\newblock Accessed on 2024-06-05.
+
+\bibitem[Officer and Williamson(2024)]{MW}
+Lawrence~H. Officer and Samuel~H. Williamson.
+\newblock Measures of worth.
+\newblock MeasuringWorth, 2024.
+\newblock URL \url{https://www.measuringworth.com}.
+
+\bibitem[Schuler(2015)]{HFS}
+Kurt Schuler.
+\newblock Establishing an international data archive on free banking.
+\newblock Studies in Applied Economics~24, The Johns Hopkins Institute for
+  Applied Economics, Global Health, and the Study of Business Enterprise, 2015.
+\newblock URL \url{https://EconPapers.repec.org/RePEc:ris:jhisae:0024}.
+
+\bibitem[{Statistics Canada}()]{CS1_CAN}
+{Statistics Canada}.
+\newblock Historical statistics of canada: Section f: Gross national product,
+  the capital stock, and productivity.
+\newblock URL
+  \url{https://www150.statcan.gc.ca/n1/pub/11-516-x/sectionf/4057751-eng.htm}.
+\newblock In Historical Statistics of Canada. Accessed October 02, 2024.
+
+\bibitem[{World Bank}(2024)]{WDI}
+{World Bank}.
+\newblock World development indicators, 2024.
+\newblock URL \url{https://data.worldbank.org/indicator}.
+\newblock Accessed: 2024-04-21.
+
+\end{thebibliography}

@@ -1659,11 +1659,14 @@ replace NBS_USDfx = NBS_USDfx / 500 if ISO3 == "GRC"
 sort ISO3 year
 encode ISO3, gen(id)
 xtset id year
-by id: gen NBS_infl = (NBS_CPI - L.NBS_CPI) / L.NBS_CPI * 100 if L.NBS_CPI != .
+by id: gen NBS_infl = (NBS_CPI - L.NBS_CPI) / L.NBS_CPI * 100
 drop id
 
 * Drop
 drop NBS_GBPfx NBS_FRFfx
+
+* Add government debt levels 
+gen NBS_govdebt = (NBS_govdebt_GDP * NBS_nGDP) / 100
 
 * Austria Hungary population wrong when cross-checking with official Census data
 

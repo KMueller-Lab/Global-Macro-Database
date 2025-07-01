@@ -24,7 +24,7 @@ graph set window fontface "Times New Roman"
 use "$data_final/clean_data_wide", clear
 ren OECD_HPI OECD_EO_HPI
 drop *rHPI
-keep ISO3 year *nGDP *rGDP *imports *exports *govdebt_GDP *M0 *strate *govexp *govrev *govtax *govdef_GDP *cbrate *ltrate *CA_GDP *M1 *M2 *M3 *infl *rcons *cons *inv *finv *REER *USDfx *unemp *HPI *strate *M4 *CPI
+keep ISO3 year *nGDP *rGDP *imports *exports *govdebt_GDP *M0 *strate *govexp *govrev *govtax *govdef_GDP *cbrate *ltrate *CA_GDP *M1 *M2 *M3 *infl *rcons *cons *inv *finv *REER *USDfx *unemp *HPI *strate *CPI
 
 keep if inlist(year, 1900, 1980, 2008)
 
@@ -183,7 +183,7 @@ replace variable = "Consumer price index" if var == "CPI"
 * Sort by the order variable
 ren order n
 sort n
-replace n = abs(n - 26)
+replace n = abs(n - 27)
 
 * Graph
 sum country_share1900

@@ -96,14 +96,12 @@ replace countryname = "United Kingdom" if countryname == "UnitedKingdom"
 replace countryname = "United States" if countryname == "UnitedStates"
 
 * Get ISO3 codes
-merge m:1 countryname using $isomapping, keep(3) keepus(ISO3) nogen
+merge m:1 countryname using $isomapping, keep(3) keepus(ISO3) assert(2 3) nogen
 
 * Drop
 drop countryname
 
 * Save and merge
-tempfile temp_c
-save `temp_c', replace emptyok
 merge 1:1 ISO3 year using `temp_master', keep(1 3) nogen
 
 

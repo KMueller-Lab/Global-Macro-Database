@@ -41,3 +41,6 @@ bysort ISO3: gen year = $mindate + _n
 
 * Save 
 save "$data_temp/blank_panel", replace
+
+
+

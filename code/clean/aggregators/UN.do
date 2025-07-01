@@ -52,7 +52,7 @@ greshape long y_, i(A B C D) j(year)
 keep if inlist(D,"Final consumption expenditure","Gross Domestic Product (GDP)","Gross capital formation","Gross fixed capital formation (including Acquisitions less disposals of valuables)","Imports of goods and services","Exports of goods and services")
 
 * Rename variables 
-replace D = "nGDP"		if D == "Gross Domestic Product (GDP)"
+replace D = "nGDP"			if D == "Gross Domestic Product (GDP)"
 replace D = "cons"			if D == "Final consumption expenditure"
 replace D = "inv"			if D == "Gross capital formation"
 replace D = "finv"			if D == "Gross fixed capital formation (including Acquisitions less disposals of valuables)"
@@ -232,21 +232,27 @@ foreach var in `r(varlist)'{
 	replace `var' = `var' / 7.5345 if ISO3 == "HRV"
 }
 
-* Convert Venezuela's units
-qui ds ISO3 year UN_pop *_GDP, not
-foreach var in `r(varlist)'{
-	replace `var' = `var' / 10^6 if ISO3 == "VEN"
-}
-
-* Venezuelan values before 2014 seem unreliable.
-replace UN_exports = . if year >= 2015
-replace UN_imports = . if year >= 2015
-replace UN_exports_GDP = . if year >= 2015
-replace UN_imports_GDP = . if year >= 2015
-
 * Czechoslovakia has some trade values that negative
 replace UN_exports = abs(UN_exports) if ISO3 == "CSK"
 replace UN_exports_GDP = abs(UN_exports_GDP) if ISO3 == "CSK"
+
+* Add the deflator
+gen UN_deflator = (UN_nGDP / UN_rGDP) * 100
+
+* Rebase the GDP to 2010
+* Loop over all countries
+qui levelsof ISO3, local(countries) clean
+foreach country of local countries {
+	
+	* Rebase to 2010
+	qui gen  temp = UN_deflator if year == 2010 & ISO3 == "`country'"
+	qui egen defl_2010 = max(temp) if ISO3 == "`country'"
+	qui replace UN_rGDP = (UN_rGDP * defl_2010) / 100 if ISO3 == "`country'"
+	qui drop temp defl_2010	
+}
+
+* Update the deflator
+replace UN_deflator = (UN_nGDP / UN_rGDP) * 100
 
 * ==============================================================================
 * 	OUTPUT

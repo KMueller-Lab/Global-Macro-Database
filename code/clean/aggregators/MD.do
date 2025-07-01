@@ -12,7 +12,7 @@
 * Created: 2024-06-14
 *
 * Description: 
-* This Stata script opens and cleans from the Cox & Dinececco (2011) and Beramendi et al. (2018).
+* This Stata script opens and cleans from the Cox & Dinececco and Beramendi et al. (2018).
 *
 * Original download link:
 * https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/EVCSCQ
@@ -34,7 +34,7 @@ tempfile temp_master
 save `temp_master', replace emptyok
 
 * ==============================================================================
-*  Cox & Dinececco (2011) 
+*  Cox & Dinececco (The Budgetary Origins of Fiscal-Military Prowess)
 * ==============================================================================
 
 * Open
@@ -53,8 +53,8 @@ replace pop = pop / 1000000
 gen exppercap	   = exp(logexppercap)
 gen revercap	   = exp(logrevpercap)
 gen gdppercap      = exp(loggdppercap)
-gen expenditure    = pop * exppercap
-gen gdp 		   = pop * gdppercap
+gen expenditure    = (pop * exppercap) 
+gen gdp 		   = pop * gdppercap 
 gen revenue 	   = pop * revercap
 gen expendituregdp = (expenditure/gdp) * 100
 gen revenuegdp     = (revenue/gdp) * 100
@@ -136,7 +136,7 @@ save `temp_master', replace
 replace MD_govtax_GDP = MD_govtax_GDP * 100
 replace MD_govrev_GDP = MD_govrev_GDP * 10
 replace MD_govexp_GDP = MD_govexp_GDP * 10
-replace MD_govrev_GDP = MD_govrev_GDP * 10
+
 * ==============================================================================
 *  OUTPUT
 * ==============================================================================

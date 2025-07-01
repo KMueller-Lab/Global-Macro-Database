@@ -16,16 +16,19 @@
 * Clear the panel
 clear
 
-* Create temporary file to store the data
-tempfile temp_master
-save `temp_master', replace emptyok
-
 * Open the data
 use "$data_final/clean_data_wide", clear
+
+* Merge chainlinked USD exchange rate
+merge 1:1 ISO3 year using "$data_final/chainlinked_USDfx", nogen keepus(USDfx)
+
+* Derive trade values from UN_trade
+gen UN_trade_imports = (UN_trade_imports_USD * USDfx)
+gen UN_trade_exports = (UN_trade_exports_USD * USDfx)
 
 * ==============================================================================
 * Specify country specific priority ordering.
 * ==============================================================================
 * Set up the priority list
-splice, priority(WDI IMF_WEO OECD_EO EUS ADB AMF BCEAO UN IMF_IFS WDI_ARC  AMECO UN Tena CS1 CS2 CS3 JST AHSTAT  NBS Mitchell HFS IHD) generate(imports) varname(imports) base_year(2019) method("chainlink")
+splice, priority(OECD_EO EUS AMECO WDI UN BCEAO AMF ADB WDI_ARC IMF_WEO IMF_IFS CS1 CS2 CS3 JST UN_trade Tena AHSTAT Mitchell NBS HFS IHD TH_ID IMF_WEO_forecast) generate(imports) varname(imports) base_year(2019) method("chainlink")
 

@@ -746,11 +746,11 @@ merge 1:1 ISO3 year using `temp_na', nogen
 save `temp_na', replace
 
 * Derive gov finances in GDP
-gen CEPAC_govexp_GDP = CEPAC_govexp / CEPAC_nGDP
+gen CEPAC_govexp_GDP = (CEPAC_govexp / CEPAC_nGDP) * 100
 
 * Derive gov finances in nominal values
-gen CEPAC_govrev = CEPAC_govrev_GDP * CEPAC_nGDP 
-gen CEPAC_govdef = CEPAC_govdef_GDP * CEPAC_nGDP 
+gen CEPAC_govrev = (CEPAC_govrev_GDP * CEPAC_nGDP) / 100
+gen CEPAC_govdef = (CEPAC_govdef_GDP * CEPAC_nGDP) / 100
 
 * ==============================================================================
 * 	Convert units in case of undocumented inconsistencies in reporting units
@@ -762,15 +762,15 @@ replace CEPAC_nGDP = CEPAC_nGDP / 1000 if ISO3 == "ECU"
 replace CEPAC_nGDP = CEPAC_nGDP / 1000 if ISO3 == "MEX" & year <= 1986
 replace CEPAC_nGDP = CEPAC_nGDP / 1000 if ISO3 == "MEX" & year <= 2005 & year >= 2003
 replace CEPAC_nGDP = CEPAC_nGDP / 1000 if ISO3 == "PRY" & year <= 2007 & year >= 2005
-replace CEPAC_nGDP = CEPAC_nGDP / 1000 if year <= 2005 & ISO3 == "BRA"
+replace CEPAC_nGDP = CEPAC_nGDP / 1000 if year <= 2004 & ISO3 == "BRA"
 replace CEPAC_nGDP = CEPAC_nGDP / 2750 if year <= 1990 & ISO3 == "BRA"
 replace CEPAC_nGDP = CEPAC_nGDP / 1000 if year <= 1980 & ISO3 == "BRA"
-replace CEPAC_nGDP = CEPAC_nGDP * (10^-14) if ISO3 == "VEN"
+replace CEPAC_nGDP = CEPAC_nGDP * (10^-8) if ISO3 == "VEN"
 replace CEPAC_nGDP = CEPAC_nGDP * (10^-3) if ISO3 == "URY"
 replace CEPAC_nGDP = CEPAC_nGDP * (10^-3) if ISO3 == "SUR"
 replace CEPAC_nGDP = CEPAC_nGDP / 1000 if year <= 2006 & ISO3 == "PER"
 replace CEPAC_nGDP = CEPAC_nGDP / 1000 if ISO3 == "BOL" & year <= 1984
-replace CEPAC_nGDP = CEPAC_nGDP / 1000 if ISO3 == "ARG" & year <= 1987
+replace CEPAC_nGDP = CEPAC_nGDP / 1000 if ISO3 == "ARG" & year <= 1988
 replace CEPAC_nGDP = CEPAC_nGDP / 10000000 if ISO3 == "ARG" & year <= 1979
 replace CEPAC_nGDP = CEPAC_nGDP * 1000 if year >= 2011 & ISO3 == "CHL"
 replace CEPAC_nGDP = CEPAC_nGDP / 1000 if year <= 1973 & ISO3 == "CHL"
@@ -789,7 +789,6 @@ replace CEPAC_govrev = CEPAC_govrev / 1000 if ISO3 == "BRA" & year <= 2004
 replace CEPAC_govexp = CEPAC_govexp * (10^-8) if ISO3 == "VEN"
 
 replace CEPAC_inv    = CEPAC_inv * (10^-8) if ISO3 == "VEN"
-replace CEPAC_inv    = CEPAC_inv * (10^-6) if ISO3 == "VEN"
 replace CEPAC_inv    = CEPAC_inv * (10^-3) if ISO3 == "URY"
 replace CEPAC_inv    = CEPAC_inv * (10^-3) if ISO3 == "SUR"
 replace CEPAC_inv    = CEPAC_inv * (10^-3) if ISO3 == "PER" & year <= 2006
@@ -835,7 +834,7 @@ replace CEPAC_cons  = CEPAC_cons * (10^-3) if ISO3== "MEX" & year <= 1986
 replace CEPAC_cons  = CEPAC_cons * (10^-3) if inrange(year, 2003, 2005) & ISO3== "MEX"
 replace CEPAC_cons  = CEPAC_cons * (10^-3)  if inrange(year, 2005, 2007) & ISO3== "PRY"
 replace CEPAC_cons  = CEPAC_cons * (10^-3) if ISO3== "PER" & year <= 2006
-replace CEPAC_cons  = CEPAC_cons * (10^-15) if ISO3== "VEN"
+replace CEPAC_cons  = CEPAC_cons * (10^-9) if ISO3== "VEN"
 replace CEPAC_cons  = CEPAC_cons * (10^-3) if ISO3== "URY"
 replace CEPAC_cons  = CEPAC_cons * (10^-3) if ISO3== "SUR"
 
@@ -844,7 +843,10 @@ gen CEPAC_cons_GDP    = (CEPAC_cons / CEPAC_nGDP) * 100
 gen CEPAC_inv_GDP     = (CEPAC_inv / CEPAC_nGDP) * 100
 
 * Drop negative M0 for Panama
-replace M0 = . if ISO3 == "PAN"
+replace CEPAC_M0 = . if ISO3 == "PAN"
+
+* Add government debt levels 
+gen CEPAC_govdebt = (CEPAC_govdebt_GDP * CEPAC_nGDP) / 100
 
 * ==============================================================================
 * 	Output

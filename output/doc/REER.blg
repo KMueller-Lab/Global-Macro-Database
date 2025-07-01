@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: REER.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: plainnat.bst
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+Database file #1: bib.bib
+Warning--empty journal in LUND
+You've used 7 entries,
+            2773 wiz_defined-function locations,
+            635 strings with 5590 characters,
+and the built_in function-call counts, 2126 in all, are:
+= -- 188
+> -- 70
+< -- 8
++ -- 28
+- -- 21
+* -- 110
+:= -- 339
+add.period$ -- 24
+call.type$ -- 7
+change.case$ -- 27
+chr.to.int$ -- 7
+cite$ -- 15
+duplicate$ -- 110
+empty$ -- 214
+format.name$ -- 28
+if$ -- 444
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 1
+newline$ -- 46
+num.names$ -- 28
+pop$ -- 76
+preamble$ -- 1
+purify$ -- 21
+quote$ -- 0
+skip$ -- 94
+stack$ -- 0
+substring$ -- 14
+swap$ -- 6
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 77
+warning$ -- 1
+while$ -- 21
+width$ -- 0
+write$ -- 97
+(There was 1 warning)

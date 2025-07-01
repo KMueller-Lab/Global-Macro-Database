@@ -1,0 +1,3724 @@
+This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2024.12.5)  1 JUL 2025 02:20
+ restricted system commands enabled.
+**infl.tex
+(./infl.tex
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+Lua module: luaotfload 2024-02-14 v3.28 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended 
+collection.
+luaotfload | conf : Root cache directory is "C:/Users/lehbib/AppData/Local/MiKTe
+X/luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
+olved path "C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/luatex/luaotfload/
+fontloader-2023-12-28.lua".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.134
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "C:/Users/lehbib/AppData/Local/MiKTe
+X/luatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'. (C:/Users/lehbib/AppDat
+a/Local/Programs/MiKTeX/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/size12.clo
+File: size12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from C:/Users/lehbib/AppData/Local/
+MiKTeX/luatex-cache/generic/names/luaotfload-names.luc.gz)
+\c@part=\count194
+\c@section=\count195
+\c@subsection=\count196
+\c@subsubsection=\count197
+\c@paragraph=\count198
+\c@subparagraph=\count199
+\c@figure=\count266
+\c@table=\count267
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen140
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
+6.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphicx.s
+ty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphics.st
+y
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/graphics.
+cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 106.
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics-def/luatex.de
+f
+File: luatex.def 2024/04/13 v1.2e Graphics/color driver for luatex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/booktabs/booktabs.st
+y
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen143
+\lightrulewidth=\dimen144
+\cmidrulewidth=\dimen145
+\belowrulesep=\dimen146
+\belowbottomsep=\dimen147
+\aboverulesep=\dimen148
+\abovetopsep=\dimen149
+\cmidrulesep=\dimen150
+\cmidrulekern=\dimen151
+\defaultaddspace=\dimen152
+\@cmidla=\count268
+\@cmidlb=\count269
+\@aboverulesep=\dimen153
+\@belowrulesep=\dimen154
+\@thisruleclass=\count270
+\@lastruleclass=\count271
+\@thisrulewidth=\dimen155
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.st
+y
+Package: geometry 2020/01/02 v5.9 Page Geometry
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count272
+\Gm@cntv=\count273
+\c@Gm@tempcnt=\count274
+\Gm@bindingoffset=\dimen156
+\Gm@wd@mp=\dimen157
+\Gm@odd@mp=\dimen158
+\Gm@even@mp=\dimen159
+\Gm@layoutwidth=\dimen160
+\Gm@layoutheight=\dimen161
+\Gm@layouthoffset=\dimen162
+\Gm@layoutvoffset=\dimen163
+\Gm@dimlist=\toks20
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.cfg))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen164
+\captionmargin=\dimen165
+\caption@leftmargin=\dimen166
+\caption@rightmargin=\dimen167
+\caption@width=\dimen168
+\caption@indent=\dimen169
+\caption@parindent=\dimen170
+\caption@hangindent=\dimen171
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count275
+\c@continuedfloat=\count276
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count277
+\float@exts=\toks21
+\float@box=\box52
+\@float@everytoks=\toks22
+\@floatcapt=\box53
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip51
+\bibsep=\skip52
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count278
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: luatex.def on input line 274.
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/mathcolor.ltx
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/colortbl/colortbl.st
+y
+Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen172
+\ar@mcellbox=\box54
+\extrarowheight=\dimen173
+\NC@list=\toks23
+\extratabsurround=\skip53
+\backup@length=\skip54
+\ar@cellbox=\box55
+)
+\everycr=\toks24
+\minrowclearance=\skip55
+\rownum=\count279
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/rotating.st
+y
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count280
+\rotFPtop=\skip56
+\rotFPbot=\skip57
+\rot@float@box=\box56
+\rot@mess@toks=\toks25
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen174
+\TX@old@table=\dimen175
+\TX@old@col=\dimen176
+\TX@target=\dimen177
+\TX@delta=\dimen178
+\TX@cols=\count281
+\TX@ftn=\toks26
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pdflscape/pdflscape.st
+y
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pdflscape/pdflscape-no
+metadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/adjustbox/adjustbox.st
+y
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/xkeyval/xkeyval.tex
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks27
+\XKV@tempa@toks=\toks28
+)
+\XKV@depth=\count282
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/adjustbox/adjcalc.s
+ty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/collectbox/collectbox.
+sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box57
+)
+\tc@llx=\dimen179
+\tc@lly=\dimen180
+\tc@urx=\dimen181
+\tc@ury=\dimen182
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/adjustbox/tc-pgf.def
+File: tc-pgf.def 2019/01/04 v2.2 trimclip fall-back clipping driver using PGF
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgf.sty
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfrcs.s
+ty
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfuti
+l-common.tex
+\pgfutil@everybye=\toks29
+\pgfutil@tempdima=\dimen183
+\pgfutil@tempdimb=\dimen184
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfuti
+l-latex.def
+\pgfutil@abb=\box58
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfrcs
+.code.tex
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/pgf.revision.tex
+)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgfcore
+.sty
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/systemlayer/pgfsys
+.sty
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+ys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkey
+s.code.tex
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkey
+slibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks32
+))
+\pgf@x=\dimen185
+\pgf@y=\dimen186
+\pgf@xa=\dimen187
+\pgf@ya=\dimen188
+\pgf@xb=\dimen189
+\pgf@yb=\dimen190
+\pgf@xc=\dimen191
+\pgf@yc=\dimen192
+\pgf@xd=\dimen193
+\pgf@yd=\dimen194
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count283
+\c@pgf@countb=\count284
+\c@pgf@countc=\count285
+\c@pgf@countd=\count286
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
+\pgf@sys@id@count=\count287
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgf.
+cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-luatex.def
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+ys-luatex.def
+File: pgfsys-luatex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+ys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+yssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count288
+\pgfsyssoftpath@bigbuffer@items=\count289
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfs
+ysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+re.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmath.cod
+e.tex
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathutil
+.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathpars
+er.code.tex
+\pgfmath@dimen=\dimen195
+\pgfmath@count=\count290
+\pgfmath@box=\box59
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.basic.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.trigonometric.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.random.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.comparison.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.base.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.round.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.misc.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunc
+tions.integerarithmetics.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathcalc
+.code.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfloa
+t.code.tex
+\c@pgfmathroundto@lastzeros=\count291
+))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfint.code
+.tex)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen196
+\pgf@picmaxx=\dimen197
+\pgf@picminy=\dimen198
+\pgf@picmaxy=\dimen199
+\pgf@pathminx=\dimen256
+\pgf@pathmaxx=\dimen257
+\pgf@pathminy=\dimen258
+\pgf@pathmaxy=\dimen259
+\pgf@xx=\dimen260
+\pgf@xy=\dimen261
+\pgf@yx=\dimen262
+\pgf@yy=\dimen263
+\pgf@zx=\dimen264
+\pgf@zy=\dimen265
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen266
+\pgf@path@lasty=\dimen267
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen268
+\pgf@shorten@start@additional=\dimen269
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+rescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box60
+\pgf@hbox=\box61
+\pgf@layerbox@main=\box62
+\pgf@picture@serial@count=\count292
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+regraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen270
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+retransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen271
+\pgf@pt@y=\dimen272
+\pgf@pt@temp=\dimen273
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+requick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+reobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+rearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen274
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+reshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen275
+\pgf@sys@shading@range@num=\count293
+\pgf@shadingcount=\count294
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+reimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+reexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box63
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+relayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+retransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+repatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfco
+rerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodul
+eshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box64
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodul
+eplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfc
+omp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen276
+\pgf@nodesepend=\dimen277
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfc
+omp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)))
+Package trimclip Info: No clipping driver 'tc-luatex.def' available.
+(trimclip)             Using fall-back PGF driver.
+)
+\adjbox@Width=\dimen278
+\adjbox@Height=\dimen279
+\adjbox@Depth=\dimen280
+\adjbox@Totalheight=\dimen281
+\adjbox@pwidth=\dimen282
+\adjbox@pheight=\dimen283
+\adjbox@pdepth=\dimen284
+\adjbox@ptotalheight=\dimen285
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/ifoddpage/ifoddpage.st
+y
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count295
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.st
+y
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box65
+\sift@deathcycles=\count296
+\@vwid@loff=\dimen286
+\@vwid@roff=\dimen287
+)) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/times.sty
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/fancyhdr/fancyhdr.st
+y
+Package: fancyhdr 2024/11/20 v4.4 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip58
+\f@nch@O@elh=\skip59
+\f@nch@O@erh=\skip60
+\f@nch@O@olh=\skip61
+\f@nch@O@orh=\skip62
+\f@nch@O@elf=\skip63
+\f@nch@O@erf=\skip64
+\f@nch@O@olf=\skip65
+\f@nch@O@orf=\skip66
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hyperref.st
+y
+Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/kvsetkeys/kvsetkeys.st
+y
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/kvdefinekeys/kvdefin
+ekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pdfescape/pdfescape.
+sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/pdftexcmds/pdftexcmd
+s.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/infwarerr/infwarerr.
+sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks39
+)) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/gettitlestring/getti
+tlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/kvoptions/kvoptions.st
+y
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count297
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/etoolbox/etoolbox.st
+y
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count298
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/stringenc/stringenc.
+sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen288
+\Hy@linkcounter=\count299
+\Hy@pagecounter=\count300
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
+) (C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/intcalc/intcalc.st
+y
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count301
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4040.
+Package hyperref Info: Hyper figures OFF on input line 4157.
+Package hyperref Info: Link nesting OFF on input line 4162.
+Package hyperref Info: Hyper index ON on input line 4165.
+Package hyperref Info: Plain pages OFF on input line 4172.
+Package hyperref Info: Backreferencing OFF on input line 4177.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4424.
+\c@Hy@tempcnt=\count302
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen289
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/bigintcalc/bigintcal
+c.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count303
+\Field@Width=\dimen290
+\Fld@charsize=\dimen291
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring ON on input line 6060.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count304
+\c@Item=\count305
+\c@Hfootnote=\count306
+)
+Package hyperref Info: Driver (autodetected): hluatex.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hluatex.def
+File: hluatex.def 2024-11-05 v7.01l Hyperref driver for luaTeX
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count307
+\c@bookmark@seq@number=\count308
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfi
+lecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/generic/uniquecounter/unique
+counter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip67
+)
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 34
+.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-lu
+atex.def
+File: l3backend-luatex.def 2024-05-08 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count309
+Inserting `l3color' in `luaotfload.parse_color'.
+\l__pdf_internal_box=\box66
+) (./infl.aux)
+\openout1 = infl.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.m
+kii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count310
+\scratchdimen=\dimen292
+\scratchbox=\box67
+\nofMPsegments=\count311
+\nofMParguments=\count312
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count313
+\MPscratchDim=\dimen293
+\MPnumerator=\count314
+\makeMPintoPDFobject=\count315
+\everyMPtoPDFconversion=\toks41
+)
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-
+base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/00miktex/epstopdf-sys.
+cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: landscape 
+* h-part:(L,W,R)=(36.135pt, 1084.05pt, 36.135pt)
+* v-part:(T,H,B)=(36.135pt, 722.7pt, 36.135pt)
+* \paperwidth=1156.31999pt
+* \paperheight=794.96999pt
+* \textwidth=1084.05pt
+* \textheight=722.7pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-55.36243pt
+* \headheight=12.0pt
+* \headsep=7.22743pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=144.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: rotating package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring ON on input line 34.
+(./infl.out) (./infl.out)
+\@outlinefile=\write4
+
+\openout4 = infl.out
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 38.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 38.
+
+LaTeX Warning: No \author given.
+
+
+
+[1
+
+{C:/Users/lehbib/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+
+Package hyperref Warning: Option `colorlinks' has already been used,
+(hyperref)                setting the option has no effect on input line 42.
+
+(./infl.toc
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
+[1
+
+]
+
+[2]
+
+[3]
+
+[4]
+
+[5]
+
+[6]
+
+[7]
+
+[8])
+\tf@toc=\write5
+
+\openout5 = infl.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 60.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 60.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 60.
+
+warning  (file graphs/AFG_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/AFG_infl.pdf, id=1382, 542.025pt x 325.215pt>
+File: graphs/AFG_infl.pdf Graphic file (type pdf)
+<use graphs/AFG_infl.pdf>
+Package luatex.def Info: graphs/AFG_infl.pdf  used on input line 72.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ALB_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ALB_infl.pdf, id=1389, 542.025pt x 325.215pt>
+File: graphs/ALB_infl.pdf Graphic file (type pdf)
+<use graphs/ALB_infl.pdf>
+Package luatex.def Info: graphs/ALB_infl.pdf  used on input line 100.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DZA_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/DZA_infl.pdf, id=1400, 542.025pt x 325.215pt>
+File: graphs/DZA_infl.pdf Graphic file (type pdf)
+<use graphs/DZA_infl.pdf>
+Package luatex.def Info: graphs/DZA_infl.pdf  used on input line 130.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AGO_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/AGO_infl.pdf, id=1409, 542.025pt x 325.215pt>
+File: graphs/AGO_infl.pdf Graphic file (type pdf)
+<use graphs/AGO_infl.pdf>
+Package luatex.def Info: graphs/AGO_infl.pdf  used on input line 159.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ARG_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ARG_infl.pdf, id=1420, 542.025pt x 325.215pt>
+File: graphs/ARG_infl.pdf Graphic file (type pdf)
+<use graphs/ARG_infl.pdf>
+Package luatex.def Info: graphs/ARG_infl.pdf  used on input line 189.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ARM_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ARM_infl.pdf, id=1427, 542.025pt x 325.215pt>
+File: graphs/ARM_infl.pdf Graphic file (type pdf)
+<use graphs/ARM_infl.pdf>
+Package luatex.def Info: graphs/ARM_infl.pdf  used on input line 217.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AUS_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/AUS_infl.pdf, id=1442, 542.025pt x 325.215pt>
+File: graphs/AUS_infl.pdf Graphic file (type pdf)
+<use graphs/AUS_infl.pdf>
+Package luatex.def Info: graphs/AUS_infl.pdf  used on input line 249.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AUT_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/AUT_infl.pdf, id=1477, 542.025pt x 325.215pt>
+File: graphs/AUT_infl.pdf Graphic file (type pdf)
+<use graphs/AUT_infl.pdf>
+Package luatex.def Info: graphs/AUT_infl.pdf  used on input line 291.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AZE_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/AZE_infl.pdf, id=1484, 542.025pt x 325.215pt>
+File: graphs/AZE_infl.pdf Graphic file (type pdf)
+<use graphs/AZE_infl.pdf>
+Package luatex.def Info: graphs/AZE_infl.pdf  used on input line 319.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BHS_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BHS_infl.pdf, id=1493, 542.025pt x 325.215pt>
+File: graphs/BHS_infl.pdf Graphic file (type pdf)
+<use graphs/BHS_infl.pdf>
+Package luatex.def Info: graphs/BHS_infl.pdf  used on input line 348.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BHR_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BHR_infl.pdf, id=1502, 542.025pt x 325.215pt>
+File: graphs/BHR_infl.pdf Graphic file (type pdf)
+<use graphs/BHR_infl.pdf>
+Package luatex.def Info: graphs/BHR_infl.pdf  used on input line 377.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BGD_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BGD_infl.pdf, id=1511, 542.025pt x 325.215pt>
+File: graphs/BGD_infl.pdf Graphic file (type pdf)
+<use graphs/BGD_infl.pdf>
+Package luatex.def Info: graphs/BGD_infl.pdf  used on input line 406.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BRB_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BRB_infl.pdf, id=1520, 542.025pt x 325.215pt>
+File: graphs/BRB_infl.pdf Graphic file (type pdf)
+<use graphs/BRB_infl.pdf>
+Package luatex.def Info: graphs/BRB_infl.pdf  used on input line 435.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BLR_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BLR_infl.pdf, id=1527, 542.025pt x 325.215pt>
+File: graphs/BLR_infl.pdf Graphic file (type pdf)
+<use graphs/BLR_infl.pdf>
+Package luatex.def Info: graphs/BLR_infl.pdf  used on input line 463.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BEL_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BEL_infl.pdf, id=1550, 542.025pt x 325.215pt>
+File: graphs/BEL_infl.pdf Graphic file (type pdf)
+<use graphs/BEL_infl.pdf>
+Package luatex.def Info: graphs/BEL_infl.pdf  used on input line 499.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BLZ_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BLZ_infl.pdf, id=1557, 542.025pt x 325.215pt>
+File: graphs/BLZ_infl.pdf Graphic file (type pdf)
+<use graphs/BLZ_infl.pdf>
+Package luatex.def Info: graphs/BLZ_infl.pdf  used on input line 527.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BEN_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BEN_infl.pdf, id=1564, 542.025pt x 325.215pt>
+File: graphs/BEN_infl.pdf Graphic file (type pdf)
+<use graphs/BEN_infl.pdf>
+Package luatex.def Info: graphs/BEN_infl.pdf  used on input line 555.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BTN_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BTN_infl.pdf, id=1573, 542.025pt x 325.215pt>
+File: graphs/BTN_infl.pdf Graphic file (type pdf)
+<use graphs/BTN_infl.pdf>
+Package luatex.def Info: graphs/BTN_infl.pdf  used on input line 584.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BOL_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BOL_infl.pdf, id=1588, 542.025pt x 325.215pt>
+File: graphs/BOL_infl.pdf Graphic file (type pdf)
+<use graphs/BOL_infl.pdf>
+Package luatex.def Info: graphs/BOL_infl.pdf  used on input line 616.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BIH_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BIH_infl.pdf, id=1595, 542.025pt x 325.215pt>
+File: graphs/BIH_infl.pdf Graphic file (type pdf)
+<use graphs/BIH_infl.pdf>
+Package luatex.def Info: graphs/BIH_infl.pdf  used on input line 644.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BWA_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BWA_infl.pdf, id=1602, 542.025pt x 325.215pt>
+File: graphs/BWA_infl.pdf Graphic file (type pdf)
+<use graphs/BWA_infl.pdf>
+Package luatex.def Info: graphs/BWA_infl.pdf  used on input line 672.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BRA_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BRA_infl.pdf, id=1637, 542.025pt x 325.215pt>
+File: graphs/BRA_infl.pdf Graphic file (type pdf)
+<use graphs/BRA_infl.pdf>
+Package luatex.def Info: graphs/BRA_infl.pdf  used on input line 714.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BRN_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BRN_infl.pdf, id=1644, 542.025pt x 325.215pt>
+File: graphs/BRN_infl.pdf Graphic file (type pdf)
+<use graphs/BRN_infl.pdf>
+Package luatex.def Info: graphs/BRN_infl.pdf  used on input line 742.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BGR_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BGR_infl.pdf, id=1659, 542.025pt x 325.215pt>
+File: graphs/BGR_infl.pdf Graphic file (type pdf)
+<use graphs/BGR_infl.pdf>
+Package luatex.def Info: graphs/BGR_infl.pdf  used on input line 774.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BFA_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BFA_infl.pdf, id=1670, 542.025pt x 325.215pt>
+File: graphs/BFA_infl.pdf Graphic file (type pdf)
+<use graphs/BFA_infl.pdf>
+Package luatex.def Info: graphs/BFA_infl.pdf  used on input line 804.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/BDI_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/BDI_infl.pdf, id=1679, 542.025pt x 325.215pt>
+File: graphs/BDI_infl.pdf Graphic file (type pdf)
+<use graphs/BDI_infl.pdf>
+Package luatex.def Info: graphs/BDI_infl.pdf  used on input line 833.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KHM_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/KHM_infl.pdf, id=1690, 542.025pt x 325.215pt>
+File: graphs/KHM_infl.pdf Graphic file (type pdf)
+<use graphs/KHM_infl.pdf>
+Package luatex.def Info: graphs/KHM_infl.pdf  used on input line 863.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CMR_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CMR_infl.pdf, id=1701, 542.025pt x 325.215pt>
+File: graphs/CMR_infl.pdf Graphic file (type pdf)
+<use graphs/CMR_infl.pdf>
+Package luatex.def Info: graphs/CMR_infl.pdf  used on input line 893.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CAN_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CAN_infl.pdf, id=1715, 542.025pt x 325.215pt>
+File: graphs/CAN_infl.pdf Graphic file (type pdf)
+<use graphs/CAN_infl.pdf>
+Package luatex.def Info: graphs/CAN_infl.pdf  used on input line 925.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CPV_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CPV_infl.pdf, id=1724, 542.025pt x 325.215pt>
+File: graphs/CPV_infl.pdf Graphic file (type pdf)
+<use graphs/CPV_infl.pdf>
+Package luatex.def Info: graphs/CPV_infl.pdf  used on input line 954.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CAF_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CAF_infl.pdf, id=1731, 542.025pt x 325.215pt>
+File: graphs/CAF_infl.pdf Graphic file (type pdf)
+<use graphs/CAF_infl.pdf>
+Package luatex.def Info: graphs/CAF_infl.pdf  used on input line 982.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TCD_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/TCD_infl.pdf, id=1740, 542.025pt x 325.215pt>
+File: graphs/TCD_infl.pdf Graphic file (type pdf)
+<use graphs/TCD_infl.pdf>
+Package luatex.def Info: graphs/TCD_infl.pdf  used on input line 1011.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CHL_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CHL_infl.pdf, id=1757, 542.025pt x 325.215pt>
+File: graphs/CHL_infl.pdf Graphic file (type pdf)
+<use graphs/CHL_infl.pdf>
+Package luatex.def Info: graphs/CHL_infl.pdf  used on input line 1044.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CHN_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CHN_infl.pdf, id=1776, 542.025pt x 325.215pt>
+File: graphs/CHN_infl.pdf Graphic file (type pdf)
+<use graphs/CHN_infl.pdf>
+Package luatex.def Info: graphs/CHN_infl.pdf  used on input line 1078.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/COL_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/COL_infl.pdf, id=1817, 542.025pt x 325.215pt>
+File: graphs/COL_infl.pdf Graphic file (type pdf)
+<use graphs/COL_infl.pdf>
+Package luatex.def Info: graphs/COL_infl.pdf  used on input line 1123.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CRI_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CRI_infl.pdf, id=1830, 542.025pt x 325.215pt>
+File: graphs/CRI_infl.pdf Graphic file (type pdf)
+<use graphs/CRI_infl.pdf>
+Package luatex.def Info: graphs/CRI_infl.pdf  used on input line 1154.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/HRV_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/HRV_infl.pdf, id=1837, 542.025pt x 325.215pt>
+File: graphs/HRV_infl.pdf Graphic file (type pdf)
+<use graphs/HRV_infl.pdf>
+Package luatex.def Info: graphs/HRV_infl.pdf  used on input line 1182.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CUB_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CUB_infl.pdf, id=1840, 542.025pt x 325.215pt>
+File: graphs/CUB_infl.pdf Graphic file (type pdf)
+<use graphs/CUB_infl.pdf>
+Package luatex.def Info: graphs/CUB_infl.pdf  used on input line 1208.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CYP_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CYP_infl.pdf, id=1853, 542.025pt x 325.215pt>
+File: graphs/CYP_infl.pdf Graphic file (type pdf)
+<use graphs/CYP_infl.pdf>
+Package luatex.def Info: graphs/CYP_infl.pdf  used on input line 1239.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CZE_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CZE_infl.pdf, id=1862, 542.025pt x 325.215pt>
+File: graphs/CZE_infl.pdf Graphic file (type pdf)
+<use graphs/CZE_infl.pdf>
+Package luatex.def Info: graphs/CZE_infl.pdf  used on input line 1268.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CSK_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CSK_infl.pdf, id=1865, 542.025pt x 325.215pt>
+File: graphs/CSK_infl.pdf Graphic file (type pdf)
+<use graphs/CSK_infl.pdf>
+Package luatex.def Info: graphs/CSK_infl.pdf  used on input line 1294.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/COD_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/COD_infl.pdf, id=1874, 542.025pt x 325.215pt>
+File: graphs/COD_infl.pdf Graphic file (type pdf)
+<use graphs/COD_infl.pdf>
+Package luatex.def Info: graphs/COD_infl.pdf  used on input line 1323.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DNK_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/DNK_infl.pdf, id=1885, 542.025pt x 325.215pt>
+File: graphs/DNK_infl.pdf Graphic file (type pdf)
+<use graphs/DNK_infl.pdf>
+Package luatex.def Info: graphs/DNK_infl.pdf  used on input line 1353.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DJI_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/DJI_infl.pdf, id=1892, 542.025pt x 325.215pt>
+File: graphs/DJI_infl.pdf Graphic file (type pdf)
+<use graphs/DJI_infl.pdf>
+Package luatex.def Info: graphs/DJI_infl.pdf  used on input line 1381.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DMA_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/DMA_infl.pdf, id=1903, 542.025pt x 325.215pt>
+File: graphs/DMA_infl.pdf Graphic file (type pdf)
+<use graphs/DMA_infl.pdf>
+Package luatex.def Info: graphs/DMA_infl.pdf  used on input line 1411.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DOM_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/DOM_infl.pdf, id=1918, 542.025pt x 325.215pt>
+File: graphs/DOM_infl.pdf Graphic file (type pdf)
+<use graphs/DOM_infl.pdf>
+Package luatex.def Info: graphs/DOM_infl.pdf  used on input line 1443.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ECU_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ECU_infl.pdf, id=1931, 542.025pt x 325.215pt>
+File: graphs/ECU_infl.pdf Graphic file (type pdf)
+<use graphs/ECU_infl.pdf>
+Package luatex.def Info: graphs/ECU_infl.pdf  used on input line 1474.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/EGY_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/EGY_infl.pdf, id=1946, 542.025pt x 325.215pt>
+File: graphs/EGY_infl.pdf Graphic file (type pdf)
+<use graphs/EGY_infl.pdf>
+Package luatex.def Info: graphs/EGY_infl.pdf  used on input line 1506.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SLV_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SLV_infl.pdf, id=1959, 542.025pt x 325.215pt>
+File: graphs/SLV_infl.pdf Graphic file (type pdf)
+<use graphs/SLV_infl.pdf>
+Package luatex.def Info: graphs/SLV_infl.pdf  used on input line 1537.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GNQ_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GNQ_infl.pdf, id=1966, 542.025pt x 325.215pt>
+File: graphs/GNQ_infl.pdf Graphic file (type pdf)
+<use graphs/GNQ_infl.pdf>
+Package luatex.def Info: graphs/GNQ_infl.pdf  used on input line 1565.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ERI_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ERI_infl.pdf, id=1969, 542.025pt x 325.215pt>
+File: graphs/ERI_infl.pdf Graphic file (type pdf)
+<use graphs/ERI_infl.pdf>
+Package luatex.def Info: graphs/ERI_infl.pdf  used on input line 1591.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/EST_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/EST_infl.pdf, id=1978, 542.025pt x 325.215pt>
+File: graphs/EST_infl.pdf Graphic file (type pdf)
+<use graphs/EST_infl.pdf>
+Package luatex.def Info: graphs/EST_infl.pdf  used on input line 1620.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SWZ_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SWZ_infl.pdf, id=1985, 542.025pt x 325.215pt>
+File: graphs/SWZ_infl.pdf Graphic file (type pdf)
+<use graphs/SWZ_infl.pdf>
+Package luatex.def Info: graphs/SWZ_infl.pdf  used on input line 1648.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ETH_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ETH_infl.pdf, id=1994, 542.025pt x 325.215pt>
+File: graphs/ETH_infl.pdf Graphic file (type pdf)
+<use graphs/ETH_infl.pdf>
+Package luatex.def Info: graphs/ETH_infl.pdf  used on input line 1677.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/FJI_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/FJI_infl.pdf, id=2003, 542.025pt x 325.215pt>
+File: graphs/FJI_infl.pdf Graphic file (type pdf)
+<use graphs/FJI_infl.pdf>
+Package luatex.def Info: graphs/FJI_infl.pdf  used on input line 1706.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/FIN_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/FIN_infl.pdf, id=2018, 542.025pt x 325.215pt>
+File: graphs/FIN_infl.pdf Graphic file (type pdf)
+<use graphs/FIN_infl.pdf>
+Package luatex.def Info: graphs/FIN_infl.pdf  used on input line 1738.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/FRA_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/FRA_infl.pdf, id=2041, 542.025pt x 325.215pt>
+File: graphs/FRA_infl.pdf Graphic file (type pdf)
+<use graphs/FRA_infl.pdf>
+Package luatex.def Info: graphs/FRA_infl.pdf  used on input line 1774.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GUF_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GUF_infl.pdf, id=2044, 542.025pt x 325.215pt>
+File: graphs/GUF_infl.pdf Graphic file (type pdf)
+<use graphs/GUF_infl.pdf>
+Package luatex.def Info: graphs/GUF_infl.pdf  used on input line 1800.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GAB_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GAB_infl.pdf, id=2055, 542.025pt x 325.215pt>
+File: graphs/GAB_infl.pdf Graphic file (type pdf)
+<use graphs/GAB_infl.pdf>
+Package luatex.def Info: graphs/GAB_infl.pdf  used on input line 1830.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GMB_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GMB_infl.pdf, id=2066, 542.025pt x 325.215pt>
+File: graphs/GMB_infl.pdf Graphic file (type pdf)
+<use graphs/GMB_infl.pdf>
+Package luatex.def Info: graphs/GMB_infl.pdf  used on input line 1860.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GEO_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GEO_infl.pdf, id=2073, 542.025pt x 325.215pt>
+File: graphs/GEO_infl.pdf Graphic file (type pdf)
+<use graphs/GEO_infl.pdf>
+Package luatex.def Info: graphs/GEO_infl.pdf  used on input line 1888.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DDR_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/DDR_infl.pdf, id=2076, 542.025pt x 325.215pt>
+File: graphs/DDR_infl.pdf Graphic file (type pdf)
+<use graphs/DDR_infl.pdf>
+Package luatex.def Info: graphs/DDR_infl.pdf  used on input line 1914.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/DEU_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/DEU_infl.pdf, id=2109, 542.025pt x 325.215pt>
+File: graphs/DEU_infl.pdf Graphic file (type pdf)
+<use graphs/DEU_infl.pdf>
+Package luatex.def Info: graphs/DEU_infl.pdf  used on input line 1955.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GHA_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GHA_infl.pdf, id=2120, 542.025pt x 325.215pt>
+File: graphs/GHA_infl.pdf Graphic file (type pdf)
+<use graphs/GHA_infl.pdf>
+Package luatex.def Info: graphs/GHA_infl.pdf  used on input line 1985.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GRC_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GRC_infl.pdf, id=2139, 542.025pt x 325.215pt>
+File: graphs/GRC_infl.pdf Graphic file (type pdf)
+<use graphs/GRC_infl.pdf>
+Package luatex.def Info: graphs/GRC_infl.pdf  used on input line 2019.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GRD_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GRD_infl.pdf, id=2146, 542.025pt x 325.215pt>
+File: graphs/GRD_infl.pdf Graphic file (type pdf)
+<use graphs/GRD_infl.pdf>
+Package luatex.def Info: graphs/GRD_infl.pdf  used on input line 2047.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GTM_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GTM_infl.pdf, id=2159, 542.025pt x 325.215pt>
+File: graphs/GTM_infl.pdf Graphic file (type pdf)
+<use graphs/GTM_infl.pdf>
+Package luatex.def Info: graphs/GTM_infl.pdf  used on input line 2078.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GIN_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GIN_infl.pdf, id=2166, 542.025pt x 325.215pt>
+File: graphs/GIN_infl.pdf Graphic file (type pdf)
+<use graphs/GIN_infl.pdf>
+Package luatex.def Info: graphs/GIN_infl.pdf  used on input line 2106.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GNB_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GNB_infl.pdf, id=2175, 542.025pt x 325.215pt>
+File: graphs/GNB_infl.pdf Graphic file (type pdf)
+<use graphs/GNB_infl.pdf>
+Package luatex.def Info: graphs/GNB_infl.pdf  used on input line 2135.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GUY_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GUY_infl.pdf, id=2184, 542.025pt x 325.215pt>
+File: graphs/GUY_infl.pdf Graphic file (type pdf)
+<use graphs/GUY_infl.pdf>
+Package luatex.def Info: graphs/GUY_infl.pdf  used on input line 2164.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/HTI_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/HTI_infl.pdf, id=2199, 542.025pt x 325.215pt>
+File: graphs/HTI_infl.pdf Graphic file (type pdf)
+<use graphs/HTI_infl.pdf>
+Package luatex.def Info: graphs/HTI_infl.pdf  used on input line 2196.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/HND_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/HND_infl.pdf, id=2214, 542.025pt x 325.215pt>
+File: graphs/HND_infl.pdf Graphic file (type pdf)
+<use graphs/HND_infl.pdf>
+Package luatex.def Info: graphs/HND_infl.pdf  used on input line 2228.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/HKG_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/HKG_infl.pdf, id=2223, 542.025pt x 325.215pt>
+File: graphs/HKG_infl.pdf Graphic file (type pdf)
+<use graphs/HKG_infl.pdf>
+Package luatex.def Info: graphs/HKG_infl.pdf  used on input line 2257.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/HUN_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/HUN_infl.pdf, id=2266, 542.025pt x 325.215pt>
+File: graphs/HUN_infl.pdf Graphic file (type pdf)
+<use graphs/HUN_infl.pdf>
+Package luatex.def Info: graphs/HUN_infl.pdf  used on input line 2303.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ISL_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ISL_infl.pdf, id=2275, 542.025pt x 325.215pt>
+File: graphs/ISL_infl.pdf Graphic file (type pdf)
+<use graphs/ISL_infl.pdf>
+Package luatex.def Info: graphs/ISL_infl.pdf  used on input line 2332.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IND_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/IND_infl.pdf, id=2290, 542.025pt x 325.215pt>
+File: graphs/IND_infl.pdf Graphic file (type pdf)
+<use graphs/IND_infl.pdf>
+Package luatex.def Info: graphs/IND_infl.pdf  used on input line 2364.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IDN_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/IDN_infl.pdf, id=2305, 542.025pt x 325.215pt>
+File: graphs/IDN_infl.pdf Graphic file (type pdf)
+<use graphs/IDN_infl.pdf>
+Package luatex.def Info: graphs/IDN_infl.pdf  used on input line 2396.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IRN_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/IRN_infl.pdf, id=2320, 542.025pt x 325.215pt>
+File: graphs/IRN_infl.pdf Graphic file (type pdf)
+<use graphs/IRN_infl.pdf>
+Package luatex.def Info: graphs/IRN_infl.pdf  used on input line 2428.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IRQ_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/IRQ_infl.pdf, id=2333, 542.025pt x 325.215pt>
+File: graphs/IRQ_infl.pdf Graphic file (type pdf)
+<use graphs/IRQ_infl.pdf>
+Package luatex.def Info: graphs/IRQ_infl.pdf  used on input line 2459.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/IRL_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/IRL_infl.pdf, id=2344, 542.025pt x 325.215pt>
+File: graphs/IRL_infl.pdf Graphic file (type pdf)
+<use graphs/IRL_infl.pdf>
+Package luatex.def Info: graphs/IRL_infl.pdf  used on input line 2489.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ISR_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ISR_infl.pdf, id=2355, 542.025pt x 325.215pt>
+File: graphs/ISR_infl.pdf Graphic file (type pdf)
+<use graphs/ISR_infl.pdf>
+Package luatex.def Info: graphs/ISR_infl.pdf  used on input line 2519.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ITA_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ITA_infl.pdf, id=2372, 542.025pt x 325.215pt>
+File: graphs/ITA_infl.pdf Graphic file (type pdf)
+<use graphs/ITA_infl.pdf>
+Package luatex.def Info: graphs/ITA_infl.pdf  used on input line 2552.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CIV_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CIV_infl.pdf, id=2383, 542.025pt x 325.215pt>
+File: graphs/CIV_infl.pdf Graphic file (type pdf)
+<use graphs/CIV_infl.pdf>
+Package luatex.def Info: graphs/CIV_infl.pdf  used on input line 2582.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/JAM_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/JAM_infl.pdf, id=2396, 542.025pt x 325.215pt>
+File: graphs/JAM_infl.pdf Graphic file (type pdf)
+<use graphs/JAM_infl.pdf>
+Package luatex.def Info: graphs/JAM_infl.pdf  used on input line 2613.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/JPN_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/JPN_infl.pdf, id=2419, 542.025pt x 325.215pt>
+File: graphs/JPN_infl.pdf Graphic file (type pdf)
+<use graphs/JPN_infl.pdf>
+Package luatex.def Info: graphs/JPN_infl.pdf  used on input line 2649.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/JOR_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/JOR_infl.pdf, id=2428, 542.025pt x 325.215pt>
+File: graphs/JOR_infl.pdf Graphic file (type pdf)
+<use graphs/JOR_infl.pdf>
+Package luatex.def Info: graphs/JOR_infl.pdf  used on input line 2678.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KAZ_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/KAZ_infl.pdf, id=2435, 542.025pt x 325.215pt>
+File: graphs/KAZ_infl.pdf Graphic file (type pdf)
+<use graphs/KAZ_infl.pdf>
+Package luatex.def Info: graphs/KAZ_infl.pdf  used on input line 2706.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KEN_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/KEN_infl.pdf, id=2446, 542.025pt x 325.215pt>
+File: graphs/KEN_infl.pdf Graphic file (type pdf)
+<use graphs/KEN_infl.pdf>
+Package luatex.def Info: graphs/KEN_infl.pdf  used on input line 2736.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KWT_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/KWT_infl.pdf, id=2453, 542.025pt x 325.215pt>
+File: graphs/KWT_infl.pdf Graphic file (type pdf)
+<use graphs/KWT_infl.pdf>
+Package luatex.def Info: graphs/KWT_infl.pdf  used on input line 2764.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KGZ_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/KGZ_infl.pdf, id=2458, 542.025pt x 325.215pt>
+File: graphs/KGZ_infl.pdf Graphic file (type pdf)
+<use graphs/KGZ_infl.pdf>
+Package luatex.def Info: graphs/KGZ_infl.pdf  used on input line 2791.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LAO_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/LAO_infl.pdf, id=2465, 542.025pt x 325.215pt>
+File: graphs/LAO_infl.pdf Graphic file (type pdf)
+<use graphs/LAO_infl.pdf>
+Package luatex.def Info: graphs/LAO_infl.pdf  used on input line 2819.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LVA_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/LVA_infl.pdf, id=2474, 542.025pt x 325.215pt>
+File: graphs/LVA_infl.pdf Graphic file (type pdf)
+<use graphs/LVA_infl.pdf>
+Package luatex.def Info: graphs/LVA_infl.pdf  used on input line 2848.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LBN_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/LBN_infl.pdf, id=2483, 542.025pt x 325.215pt>
+File: graphs/LBN_infl.pdf Graphic file (type pdf)
+<use graphs/LBN_infl.pdf>
+Package luatex.def Info: graphs/LBN_infl.pdf  used on input line 2877.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LSO_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/LSO_infl.pdf, id=2490, 542.025pt x 325.215pt>
+File: graphs/LSO_infl.pdf Graphic file (type pdf)
+<use graphs/LSO_infl.pdf>
+Package luatex.def Info: graphs/LSO_infl.pdf  used on input line 2905.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LBR_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/LBR_infl.pdf, id=2497, 542.025pt x 325.215pt>
+File: graphs/LBR_infl.pdf Graphic file (type pdf)
+<use graphs/LBR_infl.pdf>
+Package luatex.def Info: graphs/LBR_infl.pdf  used on input line 2933.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LBY_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/LBY_infl.pdf, id=2506, 542.025pt x 325.215pt>
+File: graphs/LBY_infl.pdf Graphic file (type pdf)
+<use graphs/LBY_infl.pdf>
+Package luatex.def Info: graphs/LBY_infl.pdf  used on input line 2962.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LTU_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/LTU_infl.pdf, id=2515, 542.025pt x 325.215pt>
+File: graphs/LTU_infl.pdf Graphic file (type pdf)
+<use graphs/LTU_infl.pdf>
+Package luatex.def Info: graphs/LTU_infl.pdf  used on input line 2991.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LUX_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/LUX_infl.pdf, id=2526, 542.025pt x 325.215pt>
+File: graphs/LUX_infl.pdf Graphic file (type pdf)
+<use graphs/LUX_infl.pdf>
+Package luatex.def Info: graphs/LUX_infl.pdf  used on input line 3021.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MKD_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MKD_infl.pdf, id=2533, 542.025pt x 325.215pt>
+File: graphs/MKD_infl.pdf Graphic file (type pdf)
+<use graphs/MKD_infl.pdf>
+Package luatex.def Info: graphs/MKD_infl.pdf  used on input line 3049.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MDG_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MDG_infl.pdf, id=2542, 542.025pt x 325.215pt>
+File: graphs/MDG_infl.pdf Graphic file (type pdf)
+<use graphs/MDG_infl.pdf>
+Package luatex.def Info: graphs/MDG_infl.pdf  used on input line 3078.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MWI_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MWI_infl.pdf, id=2553, 542.025pt x 325.215pt>
+File: graphs/MWI_infl.pdf Graphic file (type pdf)
+<use graphs/MWI_infl.pdf>
+Package luatex.def Info: graphs/MWI_infl.pdf  used on input line 3108.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MYS_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MYS_infl.pdf, id=2570, 542.025pt x 325.215pt>
+File: graphs/MYS_infl.pdf Graphic file (type pdf)
+<use graphs/MYS_infl.pdf>
+Package luatex.def Info: graphs/MYS_infl.pdf  used on input line 3141.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MDV_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MDV_infl.pdf, id=2577, 542.025pt x 325.215pt>
+File: graphs/MDV_infl.pdf Graphic file (type pdf)
+<use graphs/MDV_infl.pdf>
+Package luatex.def Info: graphs/MDV_infl.pdf  used on input line 3169.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MLI_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MLI_infl.pdf, id=2584, 542.025pt x 325.215pt>
+File: graphs/MLI_infl.pdf Graphic file (type pdf)
+<use graphs/MLI_infl.pdf>
+Package luatex.def Info: graphs/MLI_infl.pdf  used on input line 3197.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MLT_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MLT_infl.pdf, id=2597, 542.025pt x 325.215pt>
+File: graphs/MLT_infl.pdf Graphic file (type pdf)
+<use graphs/MLT_infl.pdf>
+Package luatex.def Info: graphs/MLT_infl.pdf  used on input line 3228.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MRT_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MRT_infl.pdf, id=2606, 542.025pt x 325.215pt>
+File: graphs/MRT_infl.pdf Graphic file (type pdf)
+<use graphs/MRT_infl.pdf>
+Package luatex.def Info: graphs/MRT_infl.pdf  used on input line 3257.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MUS_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MUS_infl.pdf, id=2625, 542.025pt x 325.215pt>
+File: graphs/MUS_infl.pdf Graphic file (type pdf)
+<use graphs/MUS_infl.pdf>
+Package luatex.def Info: graphs/MUS_infl.pdf  used on input line 3291.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MEX_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MEX_infl.pdf, id=2642, 542.025pt x 325.215pt>
+File: graphs/MEX_infl.pdf Graphic file (type pdf)
+<use graphs/MEX_infl.pdf>
+Package luatex.def Info: graphs/MEX_infl.pdf  used on input line 3324.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MDA_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MDA_infl.pdf, id=2649, 542.025pt x 325.215pt>
+File: graphs/MDA_infl.pdf Graphic file (type pdf)
+<use graphs/MDA_infl.pdf>
+Package luatex.def Info: graphs/MDA_infl.pdf  used on input line 3352.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MNG_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MNG_infl.pdf, id=2656, 542.025pt x 325.215pt>
+File: graphs/MNG_infl.pdf Graphic file (type pdf)
+<use graphs/MNG_infl.pdf>
+Package luatex.def Info: graphs/MNG_infl.pdf  used on input line 3380.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MNE_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MNE_infl.pdf, id=2663, 542.025pt x 325.215pt>
+File: graphs/MNE_infl.pdf Graphic file (type pdf)
+<use graphs/MNE_infl.pdf>
+Package luatex.def Info: graphs/MNE_infl.pdf  used on input line 3408.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MAR_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MAR_infl.pdf, id=2676, 542.025pt x 325.215pt>
+File: graphs/MAR_infl.pdf Graphic file (type pdf)
+<use graphs/MAR_infl.pdf>
+Package luatex.def Info: graphs/MAR_infl.pdf  used on input line 3439.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MOZ_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MOZ_infl.pdf, id=2685, 542.025pt x 325.215pt>
+File: graphs/MOZ_infl.pdf Graphic file (type pdf)
+<use graphs/MOZ_infl.pdf>
+Package luatex.def Info: graphs/MOZ_infl.pdf  used on input line 3468.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MMR_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MMR_infl.pdf, id=2704, 542.025pt x 325.215pt>
+File: graphs/MMR_infl.pdf Graphic file (type pdf)
+<use graphs/MMR_infl.pdf>
+Package luatex.def Info: graphs/MMR_infl.pdf  used on input line 3502.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NAM_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/NAM_infl.pdf, id=2711, 542.025pt x 325.215pt>
+File: graphs/NAM_infl.pdf Graphic file (type pdf)
+<use graphs/NAM_infl.pdf>
+Package luatex.def Info: graphs/NAM_infl.pdf  used on input line 3530.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NPL_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/NPL_infl.pdf, id=2718, 542.025pt x 325.215pt>
+File: graphs/NPL_infl.pdf Graphic file (type pdf)
+<use graphs/NPL_infl.pdf>
+Package luatex.def Info: graphs/NPL_infl.pdf  used on input line 3558.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NLD_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/NLD_infl.pdf, id=2731, 542.025pt x 325.215pt>
+File: graphs/NLD_infl.pdf Graphic file (type pdf)
+<use graphs/NLD_infl.pdf>
+Package luatex.def Info: graphs/NLD_infl.pdf  used on input line 3589.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ANT_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ANT_infl.pdf, id=2734, 542.025pt x 325.215pt>
+File: graphs/ANT_infl.pdf Graphic file (type pdf)
+<use graphs/ANT_infl.pdf>
+Package luatex.def Info: graphs/ANT_infl.pdf  used on input line 3615.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NZL_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/NZL_infl.pdf, id=2757, 542.025pt x 325.215pt>
+File: graphs/NZL_infl.pdf Graphic file (type pdf)
+<use graphs/NZL_infl.pdf>
+Package luatex.def Info: graphs/NZL_infl.pdf  used on input line 3651.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NIC_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/NIC_infl.pdf, id=2766, 542.025pt x 325.215pt>
+File: graphs/NIC_infl.pdf Graphic file (type pdf)
+<use graphs/NIC_infl.pdf>
+Package luatex.def Info: graphs/NIC_infl.pdf  used on input line 3680.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NER_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/NER_infl.pdf, id=2775, 542.025pt x 325.215pt>
+File: graphs/NER_infl.pdf Graphic file (type pdf)
+<use graphs/NER_infl.pdf>
+Package luatex.def Info: graphs/NER_infl.pdf  used on input line 3709.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NGA_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/NGA_infl.pdf, id=2788, 542.025pt x 325.215pt>
+File: graphs/NGA_infl.pdf Graphic file (type pdf)
+<use graphs/NGA_infl.pdf>
+Package luatex.def Info: graphs/NGA_infl.pdf  used on input line 3740.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NOR_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/NOR_infl.pdf, id=2798, 542.025pt x 325.215pt>
+File: graphs/NOR_infl.pdf Graphic file (type pdf)
+<use graphs/NOR_infl.pdf>
+Package luatex.def Info: graphs/NOR_infl.pdf  used on input line 3770.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/OMN_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/OMN_infl.pdf, id=2805, 542.025pt x 325.215pt>
+File: graphs/OMN_infl.pdf Graphic file (type pdf)
+<use graphs/OMN_infl.pdf>
+Package luatex.def Info: graphs/OMN_infl.pdf  used on input line 3798.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PAK_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/PAK_infl.pdf, id=2820, 542.025pt x 325.215pt>
+File: graphs/PAK_infl.pdf Graphic file (type pdf)
+<use graphs/PAK_infl.pdf>
+Package luatex.def Info: graphs/PAK_infl.pdf  used on input line 3830.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PSE_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/PSE_infl.pdf, id=2827, 542.025pt x 325.215pt>
+File: graphs/PSE_infl.pdf Graphic file (type pdf)
+<use graphs/PSE_infl.pdf>
+Package luatex.def Info: graphs/PSE_infl.pdf  used on input line 3858.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PAN_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/PAN_infl.pdf, id=2840, 542.025pt x 325.215pt>
+File: graphs/PAN_infl.pdf Graphic file (type pdf)
+<use graphs/PAN_infl.pdf>
+Package luatex.def Info: graphs/PAN_infl.pdf  used on input line 3889.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PNG_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/PNG_infl.pdf, id=2847, 542.025pt x 325.215pt>
+File: graphs/PNG_infl.pdf Graphic file (type pdf)
+<use graphs/PNG_infl.pdf>
+Package luatex.def Info: graphs/PNG_infl.pdf  used on input line 3917.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PRY_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/PRY_infl.pdf, id=2860, 542.025pt x 325.215pt>
+File: graphs/PRY_infl.pdf Graphic file (type pdf)
+<use graphs/PRY_infl.pdf>
+Package luatex.def Info: graphs/PRY_infl.pdf  used on input line 3948.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PER_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/PER_infl.pdf, id=2873, 542.025pt x 325.215pt>
+File: graphs/PER_infl.pdf Graphic file (type pdf)
+<use graphs/PER_infl.pdf>
+Package luatex.def Info: graphs/PER_infl.pdf  used on input line 3979.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PHL_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/PHL_infl.pdf, id=2888, 542.025pt x 325.215pt>
+File: graphs/PHL_infl.pdf Graphic file (type pdf)
+<use graphs/PHL_infl.pdf>
+Package luatex.def Info: graphs/PHL_infl.pdf  used on input line 4011.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/POL_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/POL_infl.pdf, id=2913, 542.025pt x 325.215pt>
+File: graphs/POL_infl.pdf Graphic file (type pdf)
+<use graphs/POL_infl.pdf>
+Package luatex.def Info: graphs/POL_infl.pdf  used on input line 4048.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PRT_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/PRT_infl.pdf, id=2928, 542.025pt x 325.215pt>
+File: graphs/PRT_infl.pdf Graphic file (type pdf)
+<use graphs/PRT_infl.pdf>
+Package luatex.def Info: graphs/PRT_infl.pdf  used on input line 4080.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PRI_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/PRI_infl.pdf, id=2935, 542.025pt x 325.215pt>
+File: graphs/PRI_infl.pdf Graphic file (type pdf)
+<use graphs/PRI_infl.pdf>
+Package luatex.def Info: graphs/PRI_infl.pdf  used on input line 4108.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/QAT_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/QAT_infl.pdf, id=2942, 542.025pt x 325.215pt>
+File: graphs/QAT_infl.pdf Graphic file (type pdf)
+<use graphs/QAT_infl.pdf>
+Package luatex.def Info: graphs/QAT_infl.pdf  used on input line 4136.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/COG_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/COG_infl.pdf, id=2951, 542.025pt x 325.215pt>
+File: graphs/COG_infl.pdf Graphic file (type pdf)
+<use graphs/COG_infl.pdf>
+Package luatex.def Info: graphs/COG_infl.pdf  used on input line 4165.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ROU_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ROU_infl.pdf, id=2974, 542.025pt x 325.215pt>
+File: graphs/ROU_infl.pdf Graphic file (type pdf)
+<use graphs/ROU_infl.pdf>
+Package luatex.def Info: graphs/ROU_infl.pdf  used on input line 4201.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/RUS_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/RUS_infl.pdf, id=2985, 542.025pt x 325.215pt>
+File: graphs/RUS_infl.pdf Graphic file (type pdf)
+<use graphs/RUS_infl.pdf>
+Package luatex.def Info: graphs/RUS_infl.pdf  used on input line 4231.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/RWA_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/RWA_infl.pdf, id=2994, 542.025pt x 325.215pt>
+File: graphs/RWA_infl.pdf Graphic file (type pdf)
+<use graphs/RWA_infl.pdf>
+Package luatex.def Info: graphs/RWA_infl.pdf  used on input line 4260.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/STP_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/STP_infl.pdf, id=3003, 542.025pt x 325.215pt>
+File: graphs/STP_infl.pdf Graphic file (type pdf)
+<use graphs/STP_infl.pdf>
+Package luatex.def Info: graphs/STP_infl.pdf  used on input line 4289.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SAU_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SAU_infl.pdf, id=3012, 542.025pt x 325.215pt>
+File: graphs/SAU_infl.pdf Graphic file (type pdf)
+<use graphs/SAU_infl.pdf>
+Package luatex.def Info: graphs/SAU_infl.pdf  used on input line 4318.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SEN_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SEN_infl.pdf, id=3023, 542.025pt x 325.215pt>
+File: graphs/SEN_infl.pdf Graphic file (type pdf)
+<use graphs/SEN_infl.pdf>
+Package luatex.def Info: graphs/SEN_infl.pdf  used on input line 4348.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SRB_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SRB_infl.pdf, id=3034, 542.025pt x 325.215pt>
+File: graphs/SRB_infl.pdf Graphic file (type pdf)
+<use graphs/SRB_infl.pdf>
+Package luatex.def Info: graphs/SRB_infl.pdf  used on input line 4378.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SYC_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SYC_infl.pdf, id=3041, 542.025pt x 325.215pt>
+File: graphs/SYC_infl.pdf Graphic file (type pdf)
+<use graphs/SYC_infl.pdf>
+Package luatex.def Info: graphs/SYC_infl.pdf  used on input line 4406.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SLE_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SLE_infl.pdf, id=3052, 542.025pt x 325.215pt>
+File: graphs/SLE_infl.pdf Graphic file (type pdf)
+<use graphs/SLE_infl.pdf>
+Package luatex.def Info: graphs/SLE_infl.pdf  used on input line 4436.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SGP_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SGP_infl.pdf, id=3065, 542.025pt x 325.215pt>
+File: graphs/SGP_infl.pdf Graphic file (type pdf)
+<use graphs/SGP_infl.pdf>
+Package luatex.def Info: graphs/SGP_infl.pdf  used on input line 4467.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SVK_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SVK_infl.pdf, id=3072, 542.025pt x 325.215pt>
+File: graphs/SVK_infl.pdf Graphic file (type pdf)
+<use graphs/SVK_infl.pdf>
+Package luatex.def Info: graphs/SVK_infl.pdf  used on input line 4495.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SVN_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SVN_infl.pdf, id=3079, 542.025pt x 325.215pt>
+File: graphs/SVN_infl.pdf Graphic file (type pdf)
+<use graphs/SVN_infl.pdf>
+Package luatex.def Info: graphs/SVN_infl.pdf  used on input line 4523.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SOM_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SOM_infl.pdf, id=3086, 542.025pt x 325.215pt>
+File: graphs/SOM_infl.pdf Graphic file (type pdf)
+<use graphs/SOM_infl.pdf>
+Package luatex.def Info: graphs/SOM_infl.pdf  used on input line 4551.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ZAF_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ZAF_infl.pdf, id=3099, 542.025pt x 325.215pt>
+File: graphs/ZAF_infl.pdf Graphic file (type pdf)
+<use graphs/ZAF_infl.pdf>
+Package luatex.def Info: graphs/ZAF_infl.pdf  used on input line 4582.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KOR_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/KOR_infl.pdf, id=3132, 542.025pt x 325.215pt>
+File: graphs/KOR_infl.pdf Graphic file (type pdf)
+<use graphs/KOR_infl.pdf>
+Package luatex.def Info: graphs/KOR_infl.pdf  used on input line 4623.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SSD_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SSD_infl.pdf, id=3141, 542.025pt x 325.215pt>
+File: graphs/SSD_infl.pdf Graphic file (type pdf)
+<use graphs/SSD_infl.pdf>
+Package luatex.def Info: graphs/SSD_infl.pdf  used on input line 4652.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SUN_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SUN_infl.pdf, id=3144, 542.025pt x 325.215pt>
+File: graphs/SUN_infl.pdf Graphic file (type pdf)
+<use graphs/SUN_infl.pdf>
+Package luatex.def Info: graphs/SUN_infl.pdf  used on input line 4678.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ESP_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ESP_infl.pdf, id=3157, 542.025pt x 325.215pt>
+File: graphs/ESP_infl.pdf Graphic file (type pdf)
+<use graphs/ESP_infl.pdf>
+Package luatex.def Info: graphs/ESP_infl.pdf  used on input line 4709.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LKA_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/LKA_infl.pdf, id=3172, 542.025pt x 325.215pt>
+File: graphs/LKA_infl.pdf Graphic file (type pdf)
+<use graphs/LKA_infl.pdf>
+Package luatex.def Info: graphs/LKA_infl.pdf  used on input line 4741.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SDN_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SDN_infl.pdf, id=3183, 542.025pt x 325.215pt>
+File: graphs/SDN_infl.pdf Graphic file (type pdf)
+<use graphs/SDN_infl.pdf>
+Package luatex.def Info: graphs/SDN_infl.pdf  used on input line 4771.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SUR_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SUR_infl.pdf, id=3194, 542.025pt x 325.215pt>
+File: graphs/SUR_infl.pdf Graphic file (type pdf)
+<use graphs/SUR_infl.pdf>
+Package luatex.def Info: graphs/SUR_infl.pdf  used on input line 4801.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SWE_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SWE_infl.pdf, id=3204, 542.025pt x 325.215pt>
+File: graphs/SWE_infl.pdf Graphic file (type pdf)
+<use graphs/SWE_infl.pdf>
+Package luatex.def Info: graphs/SWE_infl.pdf  used on input line 4831.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CHE_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CHE_infl.pdf, id=3217, 542.025pt x 325.215pt>
+File: graphs/CHE_infl.pdf Graphic file (type pdf)
+<use graphs/CHE_infl.pdf>
+Package luatex.def Info: graphs/CHE_infl.pdf  used on input line 4862.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SYR_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SYR_infl.pdf, id=3228, 542.025pt x 325.215pt>
+File: graphs/SYR_infl.pdf Graphic file (type pdf)
+<use graphs/SYR_infl.pdf>
+Package luatex.def Info: graphs/SYR_infl.pdf  used on input line 4892.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TWN_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/TWN_infl.pdf, id=3241, 542.025pt x 325.215pt>
+File: graphs/TWN_infl.pdf Graphic file (type pdf)
+<use graphs/TWN_infl.pdf>
+Package luatex.def Info: graphs/TWN_infl.pdf  used on input line 4923.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TJK_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/TJK_infl.pdf, id=3246, 542.025pt x 325.215pt>
+File: graphs/TJK_infl.pdf Graphic file (type pdf)
+<use graphs/TJK_infl.pdf>
+Package luatex.def Info: graphs/TJK_infl.pdf  used on input line 4950.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TZA_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/TZA_infl.pdf, id=3259, 542.025pt x 325.215pt>
+File: graphs/TZA_infl.pdf Graphic file (type pdf)
+<use graphs/TZA_infl.pdf>
+Package luatex.def Info: graphs/TZA_infl.pdf  used on input line 4981.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/THA_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/THA_infl.pdf, id=3292, 542.025pt x 325.215pt>
+File: graphs/THA_infl.pdf Graphic file (type pdf)
+<use graphs/THA_infl.pdf>
+Package luatex.def Info: graphs/THA_infl.pdf  used on input line 5022.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TLS_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/TLS_infl.pdf, id=3301, 542.025pt x 325.215pt>
+File: graphs/TLS_infl.pdf Graphic file (type pdf)
+<use graphs/TLS_infl.pdf>
+Package luatex.def Info: graphs/TLS_infl.pdf  used on input line 5051.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TGO_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/TGO_infl.pdf, id=3312, 542.025pt x 325.215pt>
+File: graphs/TGO_infl.pdf Graphic file (type pdf)
+<use graphs/TGO_infl.pdf>
+Package luatex.def Info: graphs/TGO_infl.pdf  used on input line 5081.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TTO_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/TTO_infl.pdf, id=3323, 542.025pt x 325.215pt>
+File: graphs/TTO_infl.pdf Graphic file (type pdf)
+<use graphs/TTO_infl.pdf>
+Package luatex.def Info: graphs/TTO_infl.pdf  used on input line 5111.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TUN_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/TUN_infl.pdf, id=3334, 542.025pt x 325.215pt>
+File: graphs/TUN_infl.pdf Graphic file (type pdf)
+<use graphs/TUN_infl.pdf>
+Package luatex.def Info: graphs/TUN_infl.pdf  used on input line 5141.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TUR_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/TUR_infl.pdf, id=3357, 542.025pt x 325.215pt>
+File: graphs/TUR_infl.pdf Graphic file (type pdf)
+<use graphs/TUR_infl.pdf>
+Package luatex.def Info: graphs/TUR_infl.pdf  used on input line 5177.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TKM_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/TKM_infl.pdf, id=3362, 542.025pt x 325.215pt>
+File: graphs/TKM_infl.pdf Graphic file (type pdf)
+<use graphs/TKM_infl.pdf>
+Package luatex.def Info: graphs/TKM_infl.pdf  used on input line 5204.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/UGA_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/UGA_infl.pdf, id=3377, 542.025pt x 325.215pt>
+File: graphs/UGA_infl.pdf Graphic file (type pdf)
+<use graphs/UGA_infl.pdf>
+Package luatex.def Info: graphs/UGA_infl.pdf  used on input line 5236.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/UKR_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/UKR_infl.pdf, id=3384, 542.025pt x 325.215pt>
+File: graphs/UKR_infl.pdf Graphic file (type pdf)
+<use graphs/UKR_infl.pdf>
+Package luatex.def Info: graphs/UKR_infl.pdf  used on input line 5264.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ARE_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ARE_infl.pdf, id=3391, 542.025pt x 325.215pt>
+File: graphs/ARE_infl.pdf Graphic file (type pdf)
+<use graphs/ARE_infl.pdf>
+Package luatex.def Info: graphs/ARE_infl.pdf  used on input line 5292.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GBR_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GBR_infl.pdf, id=3402, 542.025pt x 325.215pt>
+File: graphs/GBR_infl.pdf Graphic file (type pdf)
+<use graphs/GBR_infl.pdf>
+Package luatex.def Info: graphs/GBR_infl.pdf  used on input line 5322.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/USA_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/USA_infl.pdf, id=3415, 542.025pt x 325.215pt>
+File: graphs/USA_infl.pdf Graphic file (type pdf)
+<use graphs/USA_infl.pdf>
+Package luatex.def Info: graphs/USA_infl.pdf  used on input line 5353.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/URY_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/URY_infl.pdf, id=3434, 542.025pt x 325.215pt>
+File: graphs/URY_infl.pdf Graphic file (type pdf)
+<use graphs/URY_infl.pdf>
+Package luatex.def Info: graphs/URY_infl.pdf  used on input line 5387.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/UZB_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/UZB_infl.pdf, id=3441, 542.025pt x 325.215pt>
+File: graphs/UZB_infl.pdf Graphic file (type pdf)
+<use graphs/UZB_infl.pdf>
+Package luatex.def Info: graphs/UZB_infl.pdf  used on input line 5415.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/VEN_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/VEN_infl.pdf, id=3464, 542.025pt x 325.215pt>
+File: graphs/VEN_infl.pdf Graphic file (type pdf)
+<use graphs/VEN_infl.pdf>
+Package luatex.def Info: graphs/VEN_infl.pdf  used on input line 5451.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/VNM_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/VNM_infl.pdf, id=3477, 542.025pt x 325.215pt>
+File: graphs/VNM_infl.pdf Graphic file (type pdf)
+<use graphs/VNM_infl.pdf>
+Package luatex.def Info: graphs/VNM_infl.pdf  used on input line 5482.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/YEM_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/YEM_infl.pdf, id=3482, 542.025pt x 325.215pt>
+File: graphs/YEM_infl.pdf Graphic file (type pdf)
+<use graphs/YEM_infl.pdf>
+Package luatex.def Info: graphs/YEM_infl.pdf  used on input line 5509.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/YUG_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/YUG_infl.pdf, id=3485, 542.025pt x 325.215pt>
+File: graphs/YUG_infl.pdf Graphic file (type pdf)
+<use graphs/YUG_infl.pdf>
+Package luatex.def Info: graphs/YUG_infl.pdf  used on input line 5535.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ZMB_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ZMB_infl.pdf, id=3494, 542.025pt x 325.215pt>
+File: graphs/ZMB_infl.pdf Graphic file (type pdf)
+<use graphs/ZMB_infl.pdf>
+Package luatex.def Info: graphs/ZMB_infl.pdf  used on input line 5564.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ZWE_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ZWE_infl.pdf, id=3501, 542.025pt x 325.215pt>
+File: graphs/ZWE_infl.pdf Graphic file (type pdf)
+<use graphs/ZWE_infl.pdf>
+Package luatex.def Info: graphs/ZWE_infl.pdf  used on input line 5592.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AND_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/AND_infl.pdf, id=3506, 542.025pt x 325.215pt>
+File: graphs/AND_infl.pdf Graphic file (type pdf)
+<use graphs/AND_infl.pdf>
+Package luatex.def Info: graphs/AND_infl.pdf  used on input line 5619.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/AIA_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/AIA_infl.pdf, id=3509, 542.025pt x 325.215pt>
+File: graphs/AIA_infl.pdf Graphic file (type pdf)
+<use graphs/AIA_infl.pdf>
+Package luatex.def Info: graphs/AIA_infl.pdf  used on input line 5645.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ATG_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ATG_infl.pdf, id=3516, 542.025pt x 325.215pt>
+File: graphs/ATG_infl.pdf Graphic file (type pdf)
+<use graphs/ATG_infl.pdf>
+Package luatex.def Info: graphs/ATG_infl.pdf  used on input line 5673.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/ABW_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/ABW_infl.pdf, id=3523, 542.025pt x 325.215pt>
+File: graphs/ABW_infl.pdf Graphic file (type pdf)
+<use graphs/ABW_infl.pdf>
+Package luatex.def Info: graphs/ABW_infl.pdf  used on input line 5701.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/VGB_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/VGB_infl.pdf, id=3526, 542.025pt x 325.215pt>
+File: graphs/VGB_infl.pdf Graphic file (type pdf)
+<use graphs/VGB_infl.pdf>
+Package luatex.def Info: graphs/VGB_infl.pdf  used on input line 5727.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CYM_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CYM_infl.pdf, id=3529, 542.025pt x 325.215pt>
+File: graphs/CYM_infl.pdf Graphic file (type pdf)
+<use graphs/CYM_infl.pdf>
+Package luatex.def Info: graphs/CYM_infl.pdf  used on input line 5753.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/COM_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/COM_infl.pdf, id=3534, 542.025pt x 325.215pt>
+File: graphs/COM_infl.pdf Graphic file (type pdf)
+<use graphs/COM_infl.pdf>
+Package luatex.def Info: graphs/COM_infl.pdf  used on input line 5780.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/COK_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/COK_infl.pdf, id=3537, 542.025pt x 325.215pt>
+File: graphs/COK_infl.pdf Graphic file (type pdf)
+<use graphs/COK_infl.pdf>
+Package luatex.def Info: graphs/COK_infl.pdf  used on input line 5806.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/CUW_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/CUW_infl.pdf, id=3540, 542.025pt x 325.215pt>
+File: graphs/CUW_infl.pdf Graphic file (type pdf)
+<use graphs/CUW_infl.pdf>
+Package luatex.def Info: graphs/CUW_infl.pdf  used on input line 5832.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/GLP_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/GLP_infl.pdf, id=3545, 542.025pt x 325.215pt>
+File: graphs/GLP_infl.pdf Graphic file (type pdf)
+<use graphs/GLP_infl.pdf>
+Package luatex.def Info: graphs/GLP_infl.pdf  used on input line 5859.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KIR_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/KIR_infl.pdf, id=3550, 542.025pt x 325.215pt>
+File: graphs/KIR_infl.pdf Graphic file (type pdf)
+<use graphs/KIR_infl.pdf>
+Package luatex.def Info: graphs/KIR_infl.pdf  used on input line 5886.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/XKX_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/XKX_infl.pdf, id=3559, 542.025pt x 325.215pt>
+File: graphs/XKX_infl.pdf Graphic file (type pdf)
+<use graphs/XKX_infl.pdf>
+Package luatex.def Info: graphs/XKX_infl.pdf  used on input line 5915.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LIE_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/LIE_infl.pdf, id=3562, 542.025pt x 325.215pt>
+File: graphs/LIE_infl.pdf Graphic file (type pdf)
+<use graphs/LIE_infl.pdf>
+Package luatex.def Info: graphs/LIE_infl.pdf  used on input line 5941.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MAC_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MAC_infl.pdf, id=3571, 542.025pt x 325.215pt>
+File: graphs/MAC_infl.pdf Graphic file (type pdf)
+<use graphs/MAC_infl.pdf>
+Package luatex.def Info: graphs/MAC_infl.pdf  used on input line 5970.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MHL_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MHL_infl.pdf, id=3578, 542.025pt x 325.215pt>
+File: graphs/MHL_infl.pdf Graphic file (type pdf)
+<use graphs/MHL_infl.pdf>
+Package luatex.def Info: graphs/MHL_infl.pdf  used on input line 5998.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MTQ_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MTQ_infl.pdf, id=3583, 542.025pt x 325.215pt>
+File: graphs/MTQ_infl.pdf Graphic file (type pdf)
+<use graphs/MTQ_infl.pdf>
+Package luatex.def Info: graphs/MTQ_infl.pdf  used on input line 6025.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/FSM_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/FSM_infl.pdf, id=3588, 542.025pt x 325.215pt>
+File: graphs/FSM_infl.pdf Graphic file (type pdf)
+<use graphs/FSM_infl.pdf>
+Package luatex.def Info: graphs/FSM_infl.pdf  used on input line 6052.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/MSR_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/MSR_infl.pdf, id=3593, 542.025pt x 325.215pt>
+File: graphs/MSR_infl.pdf Graphic file (type pdf)
+<use graphs/MSR_infl.pdf>
+Package luatex.def Info: graphs/MSR_infl.pdf  used on input line 6079.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NRU_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/NRU_infl.pdf, id=3598, 542.025pt x 325.215pt>
+File: graphs/NRU_infl.pdf Graphic file (type pdf)
+<use graphs/NRU_infl.pdf>
+Package luatex.def Info: graphs/NRU_infl.pdf  used on input line 6106.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NCL_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/NCL_infl.pdf, id=3601, 542.025pt x 325.215pt>
+File: graphs/NCL_infl.pdf Graphic file (type pdf)
+<use graphs/NCL_infl.pdf>
+Package luatex.def Info: graphs/NCL_infl.pdf  used on input line 6132.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/NIU_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/NIU_infl.pdf, id=3604, 542.025pt x 325.215pt>
+File: graphs/NIU_infl.pdf Graphic file (type pdf)
+<use graphs/NIU_infl.pdf>
+Package luatex.def Info: graphs/NIU_infl.pdf  used on input line 6158.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/PLW_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/PLW_infl.pdf, id=3611, 542.025pt x 325.215pt>
+File: graphs/PLW_infl.pdf Graphic file (type pdf)
+<use graphs/PLW_infl.pdf>
+Package luatex.def Info: graphs/PLW_infl.pdf  used on input line 6186.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/REU_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/REU_infl.pdf, id=3614, 542.025pt x 325.215pt>
+File: graphs/REU_infl.pdf Graphic file (type pdf)
+<use graphs/REU_infl.pdf>
+Package luatex.def Info: graphs/REU_infl.pdf  used on input line 6212.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SHN_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SHN_infl.pdf, id=3617, 542.025pt x 325.215pt>
+File: graphs/SHN_infl.pdf Graphic file (type pdf)
+<use graphs/SHN_infl.pdf>
+Package luatex.def Info: graphs/SHN_infl.pdf  used on input line 6238.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/KNA_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/KNA_infl.pdf, id=3622, 542.025pt x 325.215pt>
+File: graphs/KNA_infl.pdf Graphic file (type pdf)
+<use graphs/KNA_infl.pdf>
+Package luatex.def Info: graphs/KNA_infl.pdf  used on input line 6265.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/LCA_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/LCA_infl.pdf, id=3631, 542.025pt x 325.215pt>
+File: graphs/LCA_infl.pdf Graphic file (type pdf)
+<use graphs/LCA_infl.pdf>
+Package luatex.def Info: graphs/LCA_infl.pdf  used on input line 6294.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/VCT_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/VCT_infl.pdf, id=3638, 542.025pt x 325.215pt>
+File: graphs/VCT_infl.pdf Graphic file (type pdf)
+<use graphs/VCT_infl.pdf>
+Package luatex.def Info: graphs/VCT_infl.pdf  used on input line 6322.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/WSM_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/WSM_infl.pdf, id=3647, 542.025pt x 325.215pt>
+File: graphs/WSM_infl.pdf Graphic file (type pdf)
+<use graphs/WSM_infl.pdf>
+Package luatex.def Info: graphs/WSM_infl.pdf  used on input line 6351.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SMR_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SMR_infl.pdf, id=3654, 542.025pt x 325.215pt>
+File: graphs/SMR_infl.pdf Graphic file (type pdf)
+<use graphs/SMR_infl.pdf>
+Package luatex.def Info: graphs/SMR_infl.pdf  used on input line 6379.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SXM_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SXM_infl.pdf, id=3657, 542.025pt x 325.215pt>
+File: graphs/SXM_infl.pdf Graphic file (type pdf)
+<use graphs/SXM_infl.pdf>
+Package luatex.def Info: graphs/SXM_infl.pdf  used on input line 6405.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/SLB_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/SLB_infl.pdf, id=3666, 542.025pt x 325.215pt>
+File: graphs/SLB_infl.pdf Graphic file (type pdf)
+<use graphs/SLB_infl.pdf>
+Package luatex.def Info: graphs/SLB_infl.pdf  used on input line 6434.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TON_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/TON_infl.pdf, id=3673, 542.025pt x 325.215pt>
+File: graphs/TON_infl.pdf Graphic file (type pdf)
+<use graphs/TON_infl.pdf>
+Package luatex.def Info: graphs/TON_infl.pdf  used on input line 6462.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TCA_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/TCA_infl.pdf, id=3676, 542.025pt x 325.215pt>
+File: graphs/TCA_infl.pdf Graphic file (type pdf)
+<use graphs/TCA_infl.pdf>
+Package luatex.def Info: graphs/TCA_infl.pdf  used on input line 6488.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/TUV_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/TUV_infl.pdf, id=3683, 542.025pt x 325.215pt>
+File: graphs/TUV_infl.pdf Graphic file (type pdf)
+<use graphs/TUV_infl.pdf>
+Package luatex.def Info: graphs/TUV_infl.pdf  used on input line 6516.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+warning  (file graphs/VUT_infl.pdf) (pdf inclusion): PDF inclusion: found PDF ve
+rsion '1.6', but at most version '1.5' allowed
+<graphs/VUT_infl.pdf, id=3688, 542.025pt x 325.215pt>
+File: graphs/VUT_infl.pdf Graphic file (type pdf)
+<use graphs/VUT_infl.pdf>
+Package luatex.def Info: graphs/VUT_infl.pdf  used on input line 6543.
+(luatex.def)             Requested size: 722.76163pt x 433.65697pt.
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.3'
+[3]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.4'
+[4<./graphs/AFG_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.5'
+[5<./graphs/ALB_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.6'
+[6<./graphs/DZA_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.7'
+[7<./graphs/AGO_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.8'
+[8<./graphs/ARG_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[9<./graphs/ARM_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[10<./graphs/AUS_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[11<./graphs/AUT_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[12<./graphs/AZE_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[13<./graphs/BHS_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[14<./graphs/BHR_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[15<./graphs/BGD_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[16<./graphs/BRB_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[17<./graphs/BLR_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[18<./graphs/BEL_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[19<./graphs/BLZ_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[20<./graphs/BEN_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[21<./graphs/BTN_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[22<./graphs/BOL_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[23<./graphs/BIH_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[24<./graphs/BWA_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[25<./graphs/BRA_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[26<./graphs/BRN_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[27<./graphs/BGR_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[28<./graphs/BFA_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[29<./graphs/BDI_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[30<./graphs/KHM_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[31<./graphs/CMR_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[32<./graphs/CAN_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[33<./graphs/CPV_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[34<./graphs/CAF_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[35<./graphs/TCD_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[36<./graphs/CHL_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[37<./graphs/CHN_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[38<./graphs/COL_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[39<./graphs/CRI_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[40<./graphs/HRV_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[41<./graphs/CUB_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[42<./graphs/CYP_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[43<./graphs/CZE_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[44<./graphs/CSK_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[45<./graphs/COD_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[46<./graphs/DNK_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[47<./graphs/DJI_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[48<./graphs/DMA_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[49<./graphs/DOM_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[50<./graphs/ECU_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[51<./graphs/EGY_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[52<./graphs/SLV_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[53<./graphs/GNQ_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[54<./graphs/ERI_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[55<./graphs/EST_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[56<./graphs/SWZ_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[57<./graphs/ETH_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[58<./graphs/FJI_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[59<./graphs/FIN_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[60<./graphs/FRA_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[61<./graphs/GUF_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[62<./graphs/GAB_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[63<./graphs/GMB_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[64<./graphs/GEO_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[65<./graphs/DDR_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[66<./graphs/DEU_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[67<./graphs/GHA_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[68<./graphs/GRC_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[69<./graphs/GRD_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[70<./graphs/GTM_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[71<./graphs/GIN_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[72<./graphs/GNB_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[73<./graphs/GUY_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[74<./graphs/HTI_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[75<./graphs/HND_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[76<./graphs/HKG_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[77<./graphs/HUN_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[78<./graphs/ISL_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[79<./graphs/IND_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[80<./graphs/IDN_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[81<./graphs/IRN_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[82<./graphs/IRQ_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[83<./graphs/IRL_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[84<./graphs/ISR_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[85<./graphs/ITA_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[86<./graphs/CIV_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[87<./graphs/JAM_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[88<./graphs/JPN_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[89<./graphs/JOR_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[90<./graphs/KAZ_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[91<./graphs/KEN_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[92<./graphs/KWT_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[93<./graphs/KGZ_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[94<./graphs/LAO_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[95<./graphs/LVA_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[96<./graphs/LBN_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[97<./graphs/LSO_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[98<./graphs/LBR_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[99<./graphs/LBY_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[100<./graphs/LTU_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[101<./graphs/LUX_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[102<./graphs/MKD_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[103<./graphs/MDG_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[104<./graphs/MWI_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[105<./graphs/MYS_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[106<./graphs/MDV_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[107<./graphs/MLI_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[108<./graphs/MLT_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[109<./graphs/MRT_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[110<./graphs/MUS_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[111<./graphs/MEX_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[112<./graphs/MDA_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[113<./graphs/MNG_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[114<./graphs/MNE_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[115<./graphs/MAR_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[116<./graphs/MOZ_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[117<./graphs/MMR_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[118<./graphs/NAM_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[119<./graphs/NPL_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[120<./graphs/NLD_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[121<./graphs/ANT_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[122<./graphs/NZL_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[123<./graphs/NIC_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[124<./graphs/NER_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[125<./graphs/NGA_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[126<./graphs/NOR_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[127<./graphs/OMN_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[128<./graphs/PAK_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[129<./graphs/PSE_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[130<./graphs/PAN_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[131<./graphs/PNG_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[132<./graphs/PRY_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[133<./graphs/PER_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[134<./graphs/PHL_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[135<./graphs/POL_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[136<./graphs/PRT_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[137<./graphs/PRI_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[138<./graphs/QAT_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[139<./graphs/COG_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[140<./graphs/ROU_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[141<./graphs/RUS_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[142<./graphs/RWA_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[143<./graphs/STP_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[144<./graphs/SAU_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[145<./graphs/SEN_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[146<./graphs/SRB_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[147<./graphs/SYC_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[148<./graphs/SLE_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[149<./graphs/SGP_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[150<./graphs/SVK_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[151<./graphs/SVN_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[152<./graphs/SOM_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[153<./graphs/ZAF_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[154<./graphs/KOR_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[155<./graphs/SSD_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[156<./graphs/SUN_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[157<./graphs/ESP_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[158<./graphs/LKA_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[159<./graphs/SDN_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[160<./graphs/SUR_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[161<./graphs/SWE_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[162<./graphs/CHE_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[163<./graphs/SYR_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[164<./graphs/TWN_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[165<./graphs/TJK_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[166<./graphs/TZA_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[167<./graphs/THA_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[168<./graphs/TLS_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[169<./graphs/TGO_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[170<./graphs/TTO_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[171<./graphs/TUN_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[172<./graphs/TUR_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[173<./graphs/TKM_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[174<./graphs/UGA_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[175<./graphs/UKR_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[176<./graphs/ARE_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[177<./graphs/GBR_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[178<./graphs/USA_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[179<./graphs/URY_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[180<./graphs/UZB_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[181<./graphs/VEN_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[182<./graphs/VNM_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[183<./graphs/YEM_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[184<./graphs/YUG_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[185<./graphs/ZMB_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[186<./graphs/ZWE_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[187<./graphs/AND_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[188<./graphs/AIA_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[189<./graphs/ATG_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[190<./graphs/ABW_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[191<./graphs/VGB_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[192<./graphs/CYM_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[193<./graphs/COM_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[194<./graphs/COK_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[195<./graphs/CUW_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[196<./graphs/GLP_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[197<./graphs/KIR_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[198<./graphs/XKX_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[199<./graphs/LIE_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[200<./graphs/MAC_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[201<./graphs/MHL_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[202<./graphs/MTQ_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[203<./graphs/FSM_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[204<./graphs/MSR_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[205<./graphs/NRU_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[206<./graphs/NCL_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[207<./graphs/NIU_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[208<./graphs/PLW_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[209<./graphs/REU_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[210<./graphs/SHN_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[211<./graphs/KNA_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[212<./graphs/LCA_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[213<./graphs/VCT_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[214<./graphs/WSM_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[215<./graphs/SMR_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[216<./graphs/SXM_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[217<./graphs/SLB_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[218<./graphs/TON_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[219<./graphs/TCA_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[220<./graphs/TUV_infl.pdf>]
+Overfull \vbox (6.0pt too high) has occurred while \output is active []
+
+
+
+[221<./graphs/VUT_infl.pdf>] (./infl.bbl
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 14
+.
+(C:/Users/lehbib/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+
+[222])
+
+[223] (./infl.aux)
+ ***********
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+ ***********
+Package rerunfilecheck Info: File `infl.out' has not changed.
+(rerunfilecheck)             Checksum: 1C259B3F0501B3E6DBA22F74766BEDAB;20708.
+)
+
+Here is how much of LuaTeX's memory you used:
+ 24497 strings out of 475664
+ 1819492,1373583 words of node,token memory allocated
+ 503 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 9 attribute, 58 glue_spec,
+ 9 attribute_list, 2 write, 4 pdf_action nodes
+   avail lists: 1:3,2:69991,3:6319,4:13176,5:11422,6:2764,7:125120,8:109,9:28711
+,10:7,11:5094
+ 45206 multiletter control sequences out of 65536+600000
+ 57 fonts using 3757735 bytes
+ 105i,12n,100p,464b,576s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{C:/Users/lehbib/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/U
+sers/lehbib/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:
+/Users/lehbib/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:
+/Users/lehbib/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:
+/Users/lehbib/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on infl.pdf (230 pages, 38482274 bytes).
+
+PDF statistics: 112052 PDF objects out of 114338 (max. 8388607)
+ 918 named destinations out of 1000 (max. 131072)
+ 1768 words of extra memory for PDF output out of 10000 (max. 100000000)
+

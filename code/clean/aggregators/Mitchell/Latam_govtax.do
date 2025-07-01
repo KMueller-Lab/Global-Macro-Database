@@ -189,19 +189,26 @@ convert_currency Brazil    1989 1/1000000
 reshape_data govtax
 
 * Convert currency units
+* Chile
 replace govtax = govtax / 1000 if year <= 1974 & countryname == "Chile"
 replace govtax = govtax / 1000 if year <= 1954 & countryname == "Chile"
 
+* Ecuador
 replace govtax = govtax / 2500 if year <= 1993 & countryname == "Ecuador"
 
+* Uruguay
 replace govtax = govtax / 1000 if countryname == "Uruguay"
 replace govtax = govtax / 1000 if year <= 1974 & countryname == "Uruguay"
 
-replace govtax = govtax / 1000 if year <= 1964 & countryname == "Peru"
-replace govtax = govtax / 1000 if year <= 1989 & countryname == "Peru"
-replace govtax = govtax / 1000 if year <= 1984 & countryname == "Peru"
+* Peru
+replace govtax = govtax * 1000 if year >= 1965 & year <= 1984 & countryname == "Peru" // Convert to millions of old soles
+replace govtax = govtax / 1000 if year <= 1984 & countryname == "Peru" // Convert to intis 
+replace govtax = govtax * 1000 if year <= 1987 & year >= 1985 & countryname == "Peru" // Convert milion of intis
+replace govtax = govtax / 1000 if year >= 1988 & countryname == "Peru" // Convert to million of new soles
+replace govtax = govtax / 10^6 if year <= 1987 & countryname == "Peru" // Convert all data to new soles
 
-replace govtax = govtax / (10^14) if countryname == "Venezuela"
+* Venezuela
+replace govtax = govtax / (10^8) if countryname == "Venezuela"
 
 *===============================================================================
 * 			Final set up

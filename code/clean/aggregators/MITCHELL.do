@@ -138,7 +138,7 @@ replace inv = . if ISO3 == "RUS"
 
 * Calculate gross capital formation as the sum of fixed capital formation and stocks
 replace inv = finv + stocks if stocks != . & inv == .
-drop stocks infl
+drop stocks
 
 * Data on Turkey shows values that are likely to be wrong
 replace govtax = . if ISO3 == "TUR"
@@ -192,7 +192,7 @@ replace Mitchell_govtax_GDP = . if ISO3 == "GRC" & year <= 1940
 
 * Add government deficit as the difference between government revenue and expenditure
 gen govdef_GDP = Mitchell_govexp_GDP - Mitchell_govrev_GDP
-
+gen govdef     = Mitchell_govexp - Mitchell_govrev
 
 * Rename
 ren nGDP_LCU 	Mitchell_nGDP
@@ -213,13 +213,7 @@ ren inv			Mitchell_inv
 ren CA			Mitchell_CA
 ren CA_USD		Mitchell_CA_USD
 ren govdef_GDP	Mitchell_govdef_GDP
-
-* Derive inflation rate
-sort ISO3 year
-encode ISO3, gen(id)
-xtset id year
-by id: gen Mitchell_infl = (Mitchell_CPI - L.Mitchell_CPI) / L.Mitchell_CPI * 100 if L.Mitchell_CPI != .
-drop id
+ren infl	 	Mitchell_infl
 
 * All data for Yugoslavia and Zimbabwe is likely to be wrong
 drop if inlist(ISO3, "YUG", "SRB", "ZMB")
