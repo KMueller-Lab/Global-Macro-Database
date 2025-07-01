@@ -16,77 +16,107 @@ This repository complements our paper, **Müller, Xu, Lehbib, and Chen (2025)**,
 
 ## Features
 
-- **Unparalleled Coverage**: Combines data from **32 contemporary sources** (e.g., IMF, World Bank, OECD) with **81 historical datasets**.
-- **Extensive Variables**: GDP, inflation, government finance, trade, employment, interest rates, and more.
-- **Harmonized Data**: Resolves inconsistencies and splices all available data together.
-- **Scheduled Updates**: Regular releases ensure data reliability.
-- **Full Transparency**: All code is open source and available in this repository.
-- **Accessible Formats**: Provided in `.dta`, `.csv`, `.xlsx`, and as a **Stata package**.
+- **Unparalleled Coverage**: Combines data from **32 contemporary sources** (e.g., IMF, World Bank, OECD) and **86 historical datasets**, totaling **118 sources**.
+- **Extensive Variables**: Covers national accounts, consumption, investment, trade, prices, government finances, interest rates, employment, and financial crises.
+- **Transparent Source Prioritization**: Prioritizes country-specific sources over international aggregators to ensure both historical depth and accuracy.
+- **Harmonized Data**: All data is cleaned, spliced, and chainlinked for consistent cross-country comparison.
+- **Comprehensive Metadata**: Variable definitions follow SNA 2008 standards and are documented in the technical appendix.
+- **Frequent Updates**: Quarterly releases with version control and changelogs.
+- **Open Access & Tools**: Access data via web, Python, R, or Stata packages. All processing code is open source.
 
-## Data access
+## Data Access
 
-<a href="https://www.globalmacrodata.com/data.html" target="_blank" rel="noopener noreferrer">Download via website</a>
+Download via Website
 
 **Stata package:**
-```
+
+```stata
 net install gmd, from(http://www.globalmacrodata.com/package)
 gmd rGDP, country(FRA)
 ```
 
-## Release schedule 
+**Python package:**
 
-| Release Date | Details         |
-|--------------|-----------------|
-| 2025-01-30   | Initial Release: 2025_01 |
-| 2025-04-01   | Current Version: 2025_03         |
-| 2025-07-01   | Version: 2025_06         |
-| 2025-10-01   | Version: 2025_09         |
-| 2026-01-01   | Version: 2025_12         |
+```bash
+pip install global_macro_data
+```
+
+```python
+from global_macro_data import gmd
+df = gmd(version="2025_06", country=["USA", "CHN"], variables=["rGDP", "CPI"])
+```
+
+**R package:**
+
+```R
+install.packages("devtools")
+devtools::install_github("KMueller-Lab/Global-Macro-Database-R")
+library(globalmacrodata)
+df <- gmd(version = "2025_06", country = c("USA", "CHN"), variables = c("rGDP", "CPI"))
+```
+
+## Release Schedule
+
+| Release Date | Version  | Details         |
+| ------------ | -------- | --------------- |
+| 2025-01-30   | 2025\_01 | Initial release |
+| 2025-04-01   | 2025\_03 | Legacy Version  |
+| 2025-07-01   | 2025\_06 | Current Version |
+| 2025-10-01   | 2025\_09 | *Planned*       |
+| 2026-01-01   | 2025\_12 | *Planned*       |
 
 ---
 
-## Release Note
-📅 Released: March 31, 2025
+## Release Note (2025\_06)
 
 ### Overview
-This release includes updated annual data, expanded historical coverage for key countries, resolved inconsistencies in past series, and introduces new ways to access the database through our Python, R, and Stata packages.
 
-### Data Updates
-All datasets have been updated to include the most recently published annual values as of the release date.
+Released June 30, 2025. This update brings improved inflation series, methodological refinements in government finance construction, six new historical sources, and enhanced priority logic across core variables.
 
-### Expanded Historical Coverage
-New long-run series have been added for Argentina, Ireland, and Taiwan, enriching the database's historical scope.
+### Key Changes
 
-### IMF WEO Treatment Refined
-We now treat the IMF World Economic Outlook (WEO) as two distinct sources: one for historical values and one for forecasts. This allows for clearer documentation and improved management of discontinuities between past data and forward-looking projections.
+#### Inflation Data Patch
 
-### World Bank Data Prioritization
-We have adjusted our source hierarchy to prioritize data from the World Development Indicators (WDI) over both editions of the IMF WEO. This change has resulted in some level adjustments, while maintaining stable trends. Correlation with previous versions remains high across variables—for example, nominal GDP retains a minimum correlation of 0.97 between the old and new series.
+- Fixed issues caused by breaks in CPI series.
+- Revised source priority list to incorporate new sources.
 
-### Exchange Rate Coverage
-Monaco has been added to the EUR_fx irrevocable exchange rate list with a fixed rate of 6.55, aligned with the French Franc, which served as the country’s de facto currency prior to euro adoption.
+#### New Sources and Coverage
 
-### Bug Fixes
-Corrected inaccuracies in Australia’s long-run historical real GDP in USD figures.
+- Integrated six new datasets: `RR_infl`, `Clio`, `UN_trade`, `BEL_1`, `CAN_2`, and `KOR_2`.
+- Revised source hierarchy for `nGDP`, `cons`, `inv`, `finv`, `imports`, and `exports`.
 
-### New Access Tools
-- **Python and R packages**: We are excited to announce that our data can now also be easily accessed using our newly-released Python and R packages. See the Data page for setup instructions.
-- **Official Stata package**: Now available through the SSC Archive. New function updated for downloading underlying raw data via the "raw" option when using a specific variable.
+#### Government Finance Methodology
+
+- Fiscal series (`govdebt`, `govdef`, `govexp`, `govrev`, `govtax`) are now derived from GDP ratios.
+- Applied chainlinking to back out consistent level series.
+
+#### Bug Fixes and Improvements
+
+- Enhanced the robustness of the cleaning pipeline.
+- Addressed inconsistencies across a few long-run sources.
 
 ---
 
 ## Citation
 
-To cite this dataset, please use the following reference:
+Please cite the dataset as:
 
 ```bibtex
-@techreport{mueller2025global, 
-    title = {The Global Macro Database: A New International Macroeconomic Dataset}, 
-    author = {Müller, Karsten and Xu, Chenzi and Lehbib, Mohamed and Chen, Ziliang}, 
-    year = {2025}, 
-    type = {Working Paper}
+@techreport{GMD2025,
+  title = {The Global Macro Database: A New International Macroeconomic Dataset},
+  author = {M{"u}ller, Karsten and Xu, Chenzi and Lehbib, Mohamed and Chen, Ziliang},
+  institution = {National Bureau of Economic Research},
+  type = {Working Paper},
+  series = {Working Paper Series},
+  number = {33714},
+  year = {2025},
+  month = {April},
+  doi = {10.3386/w33714},
+  URL = {http://www.nber.org/papers/w33714},
 }
 ```
+
+---
 
 ## Acknowledgments
 
