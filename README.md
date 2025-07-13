@@ -31,7 +31,7 @@ Download via Website
 **Stata package:**
 
 ```stata
-net install gmd, from(http://www.globalmacrodata.com/package)
+ssc install gmd
 gmd rGDP, country(FRA)
 ```
 
