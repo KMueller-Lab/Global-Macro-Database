@@ -43,7 +43,7 @@ pip install global_macro_data
 
 ```python
 from global_macro_data import gmd
-df = gmd(version="2025_06", country=["USA", "CHN"], variables=["rGDP", "CPI"])
+df = gmd(version="2025_09", country=["USA", "CHN"], variables=["rGDP", "CPI"])
 ```
 
 **R package:**
@@ -52,7 +52,7 @@ df = gmd(version="2025_06", country=["USA", "CHN"], variables=["rGDP", "CPI"])
 install.packages("devtools")
 devtools::install_github("KMueller-Lab/Global-Macro-Database-R")
 library(globalmacrodata)
-df <- gmd(version = "2025_06", country = c("USA", "CHN"), variables = c("rGDP", "CPI"))
+df <- gmd(version = "2025_09", country = c("USA", "CHN"), variables = c("rGDP", "CPI"))
 ```
 
 ## Release Schedule
@@ -60,40 +60,48 @@ df <- gmd(version = "2025_06", country = c("USA", "CHN"), variables = c("rGDP", 
 | Release Date | Version  | Details         |
 | ------------ | -------- | --------------- |
 | 2025-01-30   | 2025\_01 | Initial release |
-| 2025-04-01   | 2025\_03 | Legacy Version  |
-| 2025-07-01   | 2025\_06 | Current Version |
-| 2025-10-01   | 2025\_09 | *Planned*       |
-| 2026-01-01   | 2025\_12 | *Planned*       |
+| 2025-03-31   | 2025\_03 | Legacy version  |
+| 2025-06-30   | 2025\_06 | Legacy version  |
+| 2025-08-23   | 2025\_08 | Legacy version (Patch) |
+| 2025-09-30   | 2025\_09 | *Current version*       |
+| | | |
+| 2025-12-31   | 2025\_12 | *Planned*       |
+| 2026-03-31   | 2026\_03 | *Planned*       |
+| 2026-06-30   | 2026\_06 | *Planned*       |
 
 ---
 
-## Release Note (2025\_06)
+## Release Note (2025\_09)
 
 ### Overview
 
-Released June 30, 2025. This update brings improved inflation series, methodological refinements in government finance construction, six new historical sources, and enhanced priority logic across core variables.
+Released September 30, 2025. This quarterly update introduces improved government finance statistics, streamlined source handling, a new outlier detection process, and numerous fixes and small improvements.
 
-### Key Changes
+### Key changes 
 
-#### Inflation Data Patch
+#### Improved Government Finance Statistics
+- Distinguishes between central and general government data
+- Included in the GMD as separate series and consolidated aggregates
 
-- Fixed issues caused by breaks in CPI series.
-- Revised source priority list to incorporate new sources.
+#### Improved Download Infrastructure
+- Downloads now pull directly from IMF, Eurostat, OECD, and UN rather than dbnomics
+- IMF downloads now use the newly released API (3.0)
 
-#### New Sources and Coverage
+#### Pipeline Improvements
+- The GMD pipeline was overhauled
+- Runtime improved by approximately 10x
 
-- Integrated six new datasets: `RR_infl`, `Clio`, `UN_trade`, `BEL_1`, `CAN_2`, and `KOR_2`.
-- Revised source hierarchy for `nGDP`, `cons`, `inv`, `finv`, `imports`, and `exports`.
+#### New and Improved Sources
+- Various IMF and OECD datasets are treated as a single "source" where appropriate
+- Added historical monetary statistics for France and unemployment series from Eurostat
 
-#### Government Finance Methodology
+#### Automated Error Checking
+- Automated checks now cover multiple error types across the dataset
+- Suspicious values are manually reviewed and confirmed
 
-- Fiscal series (`govdebt`, `govdef`, `govexp`, `govrev`, `govtax`) are now derived from GDP ratios.
-- Applied chainlinking to back out consistent level series.
-
-#### Bug Fixes and Improvements
-
-- Enhanced the robustness of the cleaning pipeline.
-- Addressed inconsistencies across a few long-run sources.
+#### Bug Fixes
+- Thanks to many contributors, various small bugs were identified and fixed
+- Corrected systematic mistakes identified in the World Bank's WDI and IMF's FPP data
 
 ---
 
@@ -121,3 +129,19 @@ Please cite the dataset as:
 ## Acknowledgments
 
 The development of the Global Macro Database would not have been possible without the generous funding provided by the Singapore Ministry of Education (MOE) through the PYP grants (WBS A-0003319-01-00 and A-0003319-02-00), a Tier 1 grant (A-8001749- 00-00), and the NUS Risk Management Institute (A-8002360-00-00). This financial support laid the foundation for the successful completion of this extensive project.
+
+## License 
+
+The Global Macro Database (GMD) is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0) . This means that the dataset is freely available for research and educational purposes but may not be used commercially.
+
+Under this license, users are free to:
+
+- Share – copy and redistribute the material in any medium or format
+- Adapt – remix, transform, and build upon the material
+- These freedoms are granted under the following conditions:
+
+   - Attribution – Appropriate credit must be given to the Global Macro Database (GMD), including a link to the license and indication of any changes made. Attribution must not imply endorsement.
+   - NonCommercial – The material may not be used for commercial purposes.
+   - ShareAlike – If you remix or build upon the material, you must distribute your contributions under the same license.
+
+For licensing or usage inquiries, please contact us at hello@globalmacrodata.com.
