@@ -1,0 +1,68 @@
+﻿variable,units,definition
+CA,millions of LC,Current account
+CA_USD,millions of USD,Current account in USD
+CA_GDP,in %,Current account in percent of GDP
+cbrate,in %,Central bank policy rate
+cons_USD,millions of LC,Final consumption in USD
+cons,millions of LC,Final consumption
+cons_GDP,in %,Final consumption in percent of GDP
+CPI,"index, 2010 = 100",Consumer price index
+deflator,Ratio,GDP deflator
+exports,millions of LC,Exports
+exports_GDP,in %,Exports in percent of GDP
+exports_USD,millions of USD,Exports in USD
+finv_USD,millions of USD,Gross fixed capital formation in USD
+finv,millions of LC,Gross fixed capital formation
+finv_GDP,in %,Gross fixed capital formation in percent of GDP
+HPI,"index, 2010 = 100",House price index
+imports_GDP,in %,Imports in percent of GDP
+imports,millions of LC,Imports
+imports_USD,millions of USD,Imports in USD
+infl,in %,Inflation
+inv_GDP,in %,Gross capital formation in percent of GDP
+inv,millions of LC,Gross capital formation
+inv_USD,millions of USD,Gross capital formation in USD
+ltrate,in %,Long-term interest rate 
+M0,millions of LC,M0
+M1,millions of LC,M1
+M2,millions of LC,M2
+M3,millions of LC,M3
+M4,millions of LC,M4
+nGDP_USD,millions of USD,Nominal GDP
+nGDP,millions of LC,Nominal GDP
+pop,millions,Population
+REER,"index, 2010 = 100",Real effective exchange rate
+rGDP,millions of LC,Real GDP
+rGDP_pc,LCU per capita,Real GDP per capita
+rGDP_USD,millions of USD,Real GDP in USD
+strate,in %,Short-term interest rate
+unemp,in %,Unemployment rate
+USDfx,1 USD in LC,USD exchange rate
+BankingCrisis,Dummy,Banking crisis dummy
+SovDebtCrisis,Dummy,Sovereign debt crisis dummy
+CurrencyCrisis,Dummy,Currency crisis dummy
+cgovdebt,millions of LC,Central government debt
+cgovdebt_GDP,in %,Central government debt in percent of GDP
+cgovdef,millions of LC,Central government deficit
+cgovdef_GDP,in %,Central government deficit in percent of GDP
+cgovexp,millions of LC,Central government expenditure
+cgovexp_GDP,in %,Central government expenditure in percent of GDP
+cgovrev,millions of LC,Central government revenue
+cgovrev_GDP,in %,Central government revenue in percent of GDP
+cgovtax,millions of LC,Central government tax revenue
+cgovtax_GDP,in %,Central government tax revenue in percent of GDP
+gen_govdebt,millions of LC,General government debt
+gen_govdebt_GDP,in %,General government debt in percent of GDP
+gen_govdef,millions of LC,General government deficit
+gen_govdef_GDP,in %,General government deficit in percent of GDP
+gen_govexp,millions of LC,General government expenditure
+gen_govexp_GDP,in %,General government expenditure in percent of GDP
+gen_govrev,millions of LC,General government revenue
+gen_govrev_GDP,in %,General government revenue in percent of GDP
+gen_govtax,millions of LC,General government tax revenue
+gen_govtax_GDP,in %,General government tax revenue in percent of GDP
+govrev,millions of LC,Consolidated Government Revenue
+govexp,millions of LC,Consolidated Government Expenditure
+govtax,millions of LC,Consolidated Government Tax Revenue
+govdef_GDP,in %,Consolidated Government Deficit in percent of GDP
+govdebt_GDP,in %,Consolidated Government Debt to in percent of GDP
