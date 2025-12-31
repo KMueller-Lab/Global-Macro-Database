@@ -11,6 +11,31 @@
 
 This repository complements our paper, **Müller, Xu, Lehbib, and Chen (2025)**, which introduces a panel dataset of **46 macroeconomic variables across 243 countries** from historical records beginning in the year **1086** until **2024**, including projections through the year **2030**.
 
+## Version 2025_12 – current
+
+### Overview
+
+The 2025_12 version includes updated data as of December 2025 and introduces various important patches and improvements. We also rewrote the Stata package from scratch: get the new version by typing `ssc install gmd`. Lehbib and Müller (2025) provides more details.
+
+### Improved Government Finance Statistics
+
+We further improved the construction of combined government finance statistics. Relative to before, the combined time series are now mostly based on chain-linking ratios, with some exceptions, and we more commonly use a country-specific priority ordering of sources.
+
+### Extended Technical Appendix
+
+We considerably improved the technical appendix to enhance clarity and readability. Going forward, we will provide a dedicated technical appendix with each release.
+
+### Major Update to Stata Package
+
+We rewrote the Stata package from scratch to make it faster and added various new functionalities, including the ability to easily access all the (cleaned) data underlying the GMD. A new companion paper (Lehbib and Müller, 2025) now describes the package in detail.
+
+### Bug Fixes
+
+Thanks to the support of many GMD users, we were able to identify and fix many bugs. Noteworthy examples include real GDP per capita for Venezuela and the inflation rates of a few countries.
+
+### New Variable
+
+The GMD now includes the World Bank's income classification.
 
 
 
