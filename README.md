@@ -9,7 +9,7 @@
 
 
 
-This repository complements our paper, **Müller, Xu, Lehbib, and Chen (2025)**, which introduces a panel dataset of **41 macroeconomic variables across 243 countries** from historical records beginning in the year **1086** until **2024**, including projections through the year **2029**.
+This repository complements our paper, **Müller, Xu, Lehbib, and Chen (2025)**, which introduces a panel dataset of **73 macroeconomic variables across 240 countries** from historical records beginning in the year **1086** until **2024**, including projections through the year **2029**.
 
 ## Version 2026_01 – current
 
