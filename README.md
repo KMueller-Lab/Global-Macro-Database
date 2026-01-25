@@ -187,4 +187,4 @@ Under this license, users are free to:
    - NonCommercial – The material may not be used for commercial purposes.
    - ShareAlike – If you remix or build upon the material, you must distribute your contributions under the same license.
 
-For licensing or usage inquiries, please contact us at hello@globalmacrodata.com.
+For licensing or usage inquiries, please contact us at kmueller@globalmacrodata.com.
