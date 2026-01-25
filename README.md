@@ -11,33 +11,23 @@
 
 This repository complements our paper, **Müller, Xu, Lehbib, and Chen (2025)**, which introduces a panel dataset of **46 macroeconomic variables across 243 countries** from historical records beginning in the year **1086** until **2024**, including projections through the year **2030**.
 
-## Version 2025_12 – current
+## Version 2026_01 – current
 
 ### Overview
 
-The 2025_12 version includes updated data as of December 2025 and introduces various important patches and improvements. We also rewrote the Stata package from scratch: get the new version by typing `ssc install gmd`. Lehbib and Müller (2025) provides more details.
+This release introduces significant enhancements to data accuracy and infrastructure. Key updates include a comprehensive revision of the real GDP series and the deployment of a fully automated, cloud-based data processing pipeline to ensure timely future updates.
 
-### Improved Government Finance Statistics
+### Real GDP Improvement
 
-We further improved the construction of combined government finance statistics. Relative to before, the combined time series are now mostly based on chain-linking ratios, with some exceptions, and we more commonly use a country-specific priority ordering of sources.
+We have conducted a major review of the real GDP series. The data has been rigorously corrected and is now consistently rebased to the year 2015, ensuring greater comparability and accuracy across the dataset.
 
-### Extended Technical Appendix
+### Automated Pipeline
 
-We considerably improved the technical appendix to enhance clarity and readability. Going forward, we will provide a dedicated technical appendix with each release.
+To improve long-term sustainability and data freshness, we have engineered a new automated pipeline. This system autonomously handles downloading, processing, and merging data from all sources in the cloud, streamlining the maintenance process and allowing for more frequent and reliable database updates.
 
-### Major Update to Stata Package
+### Stata Package & Documentation
 
-We rewrote the Stata package from scratch to make it faster and added various new functionalities, including the ability to easily access all the (cleaned) data underlying the GMD. A new companion paper (Lehbib and Müller, 2025) now describes the package in detail.
-
-### Bug Fixes
-
-Thanks to the support of many GMD users, we were able to identify and fix many bugs. Noteworthy examples include real GDP per capita for Venezuela and the inflation rates of a few countries.
-
-### New Variable
-
-The GMD now includes the World Bank's income classification.
-
-
+We have launched a dedicated repository for the official Stata package, now available at [Global-Macro-Database-Stata](https://github.com/KMueller-Lab/Global-Macro-Database-Stata). Additionally, we have released a comprehensive companion paper, [Global_Macro_Database_Stata.pdf](https://github.com/KMueller-Lab/Global-Macro-Database-Stata/blob/main/Global_Macro_Database_Stata.pdf), which serves as a detailed guide to using the package effectively.
 
 ## Features
 
@@ -68,7 +58,7 @@ pip install global_macro_data
 
 ```python
 from global_macro_data import gmd
-df = gmd(version="2025_09", country=["USA", "CHN"], variables=["rGDP", "CPI"])
+df = gmd(version="2026_01", country=["USA", "CHN"], variables=["rGDP", "CPI"])
 ```
 
 **R package:**
@@ -77,7 +67,7 @@ df = gmd(version="2025_09", country=["USA", "CHN"], variables=["rGDP", "CPI"])
 install.packages("devtools")
 devtools::install_github("KMueller-Lab/Global-Macro-Database-R")
 library(globalmacrodata)
-df <- gmd(version = "2025_09", country = c("USA", "CHN"), variables = c("rGDP", "CPI"))
+df <- gmd(version = "2026_01", country = c("USA", "CHN"), variables = c("rGDP", "CPI"))
 ```
 
 ## Release Schedule
@@ -89,14 +79,42 @@ df <- gmd(version = "2025_09", country = c("USA", "CHN"), variables = c("rGDP", 
 | 2025-06-30   | 2025\_06 | Legacy version  |
 | 2025-08-23   | 2025\_08 | Legacy version (Patch) |
 | 2025-09-30   | 2025\_09 | Legacy version  |
-| | | |
-| 2025-12-31   | 2025\_12 | *Current version* |
+| 2025-12-31   | 2025\_12 | Update          |
+| 2026-01-25   | 2026\_01 | *Current version* |
 | 2026-03-31   | 2026\_03 | *Planned*       |
 | 2026-06-30   | 2026\_06 | *Planned*       |
 
 ---
 
-## Release Note (2025\_09)
+## Release Note (2025_12)
+
+### Overview
+
+The 2025_12 version includes updated data as of December 2025 and introduces various important patches and improvements. We also rewrote the Stata package from scratch: get the new version by typing `ssc install gmd`. Lehbib and Müller (2025) provides more details.
+
+### Improved Government Finance Statistics
+
+We further improved the construction of combined government finance statistics. Relative to before, the combined time series are now mostly based on chain-linking ratios, with some exceptions, and we more commonly use a country-specific priority ordering of sources.
+
+### Extended Technical Appendix
+
+We considerably improved the technical appendix to enhance clarity and readability. Going forward, we will provide a dedicated technical appendix with each release.
+
+### Major Update to Stata Package
+
+We rewrote the Stata package from scratch to make it faster and added various new functionalities, including the ability to easily access all the (cleaned) data underlying the GMD. A new companion paper (Lehbib and Müller, 2025) now describes the package in detail.
+
+### Bug Fixes
+
+Thanks to the support of many GMD users, we were able to identify and fix many bugs. Noteworthy examples include real GDP per capita for Venezuela and the inflation rates of a few countries.
+
+### New Variable
+
+The GMD now includes the World Bank's income classification.
+
+---
+
+## Release Note (2025_09)
 
 ### Overview
 
