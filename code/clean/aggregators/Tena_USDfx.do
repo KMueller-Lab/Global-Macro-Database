@@ -20,8 +20,8 @@
 * ==============================================================================
 * Clear
 clear
-global input "${data_raw}/aggregators/Tena/trade/Tena_USDfx"
-global output "${data_clean}/aggregators/Tena/trade/Tena_USDfx.dta"
+global input "${data_raw}/aggregators/Tena/Tena_USDfx/Tena_USDfx"
+global output "${data_clean}/aggregators/Tena/Tena_USDfx/Tena_USDfx.dta"
 
 * ===============================================================================
 *	PROCESS
@@ -75,18 +75,13 @@ replace Tena_USDfx = Tena_USDfx * 2 if ISO3 == "NZL"
 replace Tena_USDfx = Tena_USDfx * (10^-6) if ISO3 == "URY"
 
 * Brazil
-replace Tena_USDfx = Tena_USDfx / 2750 if ISO3 == "BRA"
-replace Tena_USDfx = Tena_USDfx * (10^-12) if ISO3 == "BRA"
-
-* Venezuela
-replace Tena_USDfx = Tena_USDfx / 1000 if ISO3 == "VEN"
+replace Tena_USDfx = Tena_USDfx / 2750 * (10^-12) if ISO3 == "BRA"
 
 * Mexico
 replace Tena_USDfx = Tena_USDfx / 1000 if ISO3 == "MEX"
 
 * Nicaragua
-replace Tena_USDfx = Tena_USDfx / 500000000 if ISO3 == "NIC"
-replace Tena_USDfx = Tena_USDfx / 12.5 if ISO3 == "NIC"
+replace Tena_USDfx = Tena_USDfx / 500000000 / 12.5 if ISO3 == "NIC"
 
 * Bulgaria
 replace Tena_USDfx = Tena_USDfx * (10^-6) if ISO3 == "BGR"
@@ -110,20 +105,17 @@ replace Tena_USDfx = Tena_USDfx / 100 if ISO3 == "FRA"
 replace Tena_USDfx = Tena_USDfx / 100000 if ISO3 == "TUR"
 
 * Romania
-replace Tena_USDfx = Tena_USDfx * (10^-8) if ISO3 == "ROU"
-replace Tena_USDfx = Tena_USDfx / 2 if ISO3 == "ROU"
+replace Tena_USDfx = Tena_USDfx / 2 * (10^-8) if ISO3 == "ROU"
 
 * Argentina
 replace Tena_USDfx = Tena_USDfx * (10^-13) if ISO3 == "ARG"
 
 * Venezuela 
-replace Tena_USDfx = Tena_USDfx * (10^-11) if ISO3 == "VEN"
+replace Tena_USDfx = Tena_USDfx * (10^-3) if ISO3 == "VEN"
 
 * Estonia 
-replace Tena_USDfx = Tena_USDfx * (10^-1) if ISO3 == "EST"
+replace Tena_USDfx = Tena_USDfx * (10^-2) if ISO3 == "EST"
 
-* Estonia 
-replace Tena_USDfx = Tena_USDfx * (10^-1) if ISO3 == "EST"
 
 * Latvia 
 replace Tena_USDfx = Tena_USDfx / 200 if ISO3 == "LVA"
@@ -154,9 +146,5 @@ sort ISO3 year
 
 * Check for duplicates
 isid ISO3 year
-
-* Save
-save "${output}", replace
-
 
 

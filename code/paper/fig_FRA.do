@@ -16,5 +16,5 @@
 * Investment
 use "$data_final/chainlinked_inv", clear
 keep if ISO3 == "FRA"
-
+drop source_change_count
 gmdmakeplot_cs inv, log ylabel("Investment, millions of LCU (Log scale)") y_axislabel(`"0 "1" 2 "10000" 4 "100000" 6 "500000" 8 "1000000""') graphformat("eps")

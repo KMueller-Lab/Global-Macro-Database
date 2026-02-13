@@ -94,6 +94,14 @@ gen CS1_govexp_GDP = (CS1_govexp / CS1_nGDP) * 100
 gen CS1_govtax_GDP = (CS1_govtax / CS1_nGDP) * 100
 gen CS1_govdebt_GDP = (CS1_govdebt / CS1_nGDP) * 100
 
+* Assign all values to central government. Specified in the source.
+ren CS1_gov* CS1_cgov*
+
+* Rebase variables to $base_year
+gmd_rebase CS1
+
+* Check for ratios and levels 
+check_gdp_ratios CS1
 
 * ===============================================================================
 * 	Output

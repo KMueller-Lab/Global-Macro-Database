@@ -23,8 +23,8 @@
 clear
 
 * Define input and output files
-global input "${data_raw}/aggregators/OECD/OECD_MEI_ARC.xlsx"
-global output "${data_clean}/aggregators/OECD/OECD_MEI_ARC.dta"
+global input "${data_raw}/aggregators/OECD/OECD_MEI_ARC/OECD_MEI_ARC.xlsx"
+global output "${data_clean}/aggregators/OECD/OECD_MEI_ARC/OECD_MEI_ARC.dta"
 
 * ==============================================================================
 * 	PROCESS

@@ -292,7 +292,8 @@ replace nGDP_LCU = nGDP_LCU * 1000 if countryname == "Hungary" & year >= 1950
 replace nGDP_LCU = nGDP_LCU / 10 if year == 1960 & countryname == "Italy"
 replace nGDP_LCU = nGDP_LCU / (10^12) if countryname == "Germany" & year <= 1913
 replace nGDP_LCU = nGDP_LCU / 10000 if countryname == "Poland" & year <= 1990
-
+replace nGDP_LCU = nGDP_LCU * 10 if countryname == "UnitedKingdom" & year == 1931 // Likely a typo in the data by Mitchell, I checked the PDF and it's the same value 
+replace nGDP_LCU = nGDP_LCU * 10 if countryname == "UnitedKingdom" & year == 1868 // Likely a typo in the data by Mitchell, I checked the PDF and it's the same value 
 
 *===============================================================================
 * 			Final set up

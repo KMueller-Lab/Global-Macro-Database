@@ -47,7 +47,7 @@ greshape long rGDP_pc_USD, i(year) j(ISO3) string
 
 
 * Merge in the WDI rGDP_pc_USD and derive their real GDP 
-merge 1:1 ISO3 year using "${data_clean}/aggregators/WB/WDI", nogen keep(1 3) keepus(WDI_rGDP)
+merge 1:1 ISO3 year using "${data_clean}/aggregators/WB/WDI/WDI", nogen keep(1 3) keepus(WDI_rGDP)
 ren rGDP_pc_USD BG_rGDP 
 
 * Splice

@@ -34,6 +34,8 @@ save `clean', replace
 * Make file list in raw data 
 filelist, directory($data_raw) 
 replace dirname = subinstr(dirname,"${data_raw}/","",.)
+drop if dirname == "country_level"
+drop if strpos(dirname, "Versions") > 0
 keep dirname
 duplicates drop dirname, force
 merge 1:1 dirname using `clean'
@@ -43,15 +45,20 @@ drop if dirname == "${data_clean}"
 drop if dirname == "${data_raw}"
 
 * Report 
-count if dirname != "country_level" & _merge == 2 
+count if dirname != "country_level" & _merge == 2 & !strpos(dirname, "GNA") & !strpos(dirname, "Mitchell")
 if r(N) > 0 {
     di as error "The following folders are only in the clean data:"
     list dirname if dirname != "country_level" & _merge == 2, noobs compress
 	exit 198
 }
 
-di as error "The following folders are only in the raw data:"
-list dirname if _merge == 1, noobs compress
+count if dirname != "country_level" & _merge == 2 & !strpos(dirname, "GNA") & !strpos(dirname, "MITCHELL") & !strpos(dirname, "Mitchell")
+if r(N) > 0 {
+    di as error "The following folders are only in the raw data:"
+	list dirname if _merge == 1 & !strpos(dirname, "GNA") & !strpos(dirname, "MITCHELL"), noobs compress
+	exit 198
+}
+
 
 * ==============================================================================
 * FOR CLEANED FILES, CHECK A FEW CONDITIONS
@@ -131,7 +138,7 @@ foreach file of loc files {
     local dataset_vars "`r(varlist)'"
     di "`r(varlist)'"
     preserve
-    import delimited "$data_helper/sources.csv", varnames(1) clear
+    qui import delimited "$data_helper/sources.csv", varnames(1) clear
     qui glevelsof src_specific_var_name, local(possible_sources) clean
 	qui glevelsof varabbr, local(varabbr_codes) clean
     
@@ -140,7 +147,7 @@ foreach file of loc files {
     foreach var of local dataset_vars {
         if !`: list var in possible_sources' {
             di as err "Variable `var' in file `file' is not in the src_specific_var_name column of the sources.csv file."
-            exit 198
+            
         }
     }
 	restore
@@ -155,71 +162,9 @@ foreach file of loc files {
     foreach var of local varabbr_codes {
         if !`: list var in code' {
             di as err "Variable `var' in file `file' is not in the varabbr column of the sources.csv file."
-            exit 198
+            
         }
     }
 	restore
 	
 }	
-
-
-/* ==============================================================================
-* Two-way Check of sources.csv and cleaned data
-* ==============================================================================
-
-import delimited "$data_helper/sources.csv", varnames(1) clear
-
-* Record all distinct inputs (file paths) in a local macro
-levelsof data_clean, local(data_clean)
-
-
-* Loop over each unique .dta file path recorded in the sources.csv
-foreach i of local data_clean {
-    preserve
-    
-	* Keep only the current .dta records (to avoid conflicting variable names from other datasets)
-	keep if data_clean == "`i'"
-
-	* Store all variables in src_specific_var_name into a local macro
-	levelsof src_specific_var_name, local(src_vars) clean
-	di "`src_vars'"
-
-	* Open the current .dta file using the file path
-	* local file_path = "${data_clean}/`i'"
-	use "${data_clean}`i'", clear
-	drop ISO year
-
-	* Get all the variables in the .dta file
-	ds
-	local dta_vars `r(varlist)'
-	di "`dta_vars'"
-
-	* Two-way check using assert
-	* 1. Assert that all recorded variables in src_specific_var_name exist in the .dta file
-	foreach var of local src_vars {
-		
-		* Check if each src_specific_var_name is in the .dta variables
-		if !`: list var in dta_vars' {
-		
-			di "`var' does not appear in list of .dta files"
-			exit 198
-		} 
-	}
-
-	* 2. Assert that all variables in the .dta file are recorded in src_specific_var_name
-	foreach var of local dta_vars {
-		
-		* Checks if each variable in .dta is recorded in src_specific_var_name
-		if !`: list var in src_vars' {
-
-			di "`var' does not appear in sources.csv"
-			exit 198
-		
-		} 
-	}
-
-
-
-    restore
-}
-

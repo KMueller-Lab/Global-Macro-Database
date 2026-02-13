@@ -19,9 +19,9 @@
 * SET UP 
 * ==============================================================================
 clear
-global input1 "${data_raw}/country_level/ITA_2.xlsx"
-global input2 "${data_raw}/country_level/ITA_3.xlsx"
-global input3 "${data_raw}/country_level/ITA_4.xlsx"
+global input1 "${data_raw}/country_level/ITA_2a.xlsx"
+global input2 "${data_raw}/country_level/ITA_2b.xlsx"
+global input3 "${data_raw}/country_level/ITA_2c.xlsx"
 global output "${data_clean}/country_level/ITA_2"
 
 * Create a temporary file

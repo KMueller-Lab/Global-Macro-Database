@@ -399,14 +399,40 @@ save `temp_master', replace
 * 	Convert units in case of undocumented inconsistencies in reporting units
 * ==============================================================================
 
-gmdfixunits Davis_nGDP if ISO3 == "MWI", multiply(1000)
-gmdfixunits Davis_nGDP if ISO3 == "ZMB", divide(1000)
-gmdfixunits Davis_nGDP if ISO3 == "GHA", divide(10)
-gmdfixunits Davis_nGDP if ISO3 == "CRI", divide(1000)
-gmdfixunits Davis_nGDP if ISO3 == "SDN", divide(1000)
-gmdfixunits Davis_nGDP if ISO3 == "DEU" & year <= 1923, divide(10^12)
-gmdfixunits Davis_nGDP if ISO3 == "POL", divide(10^4)
-gmdfixunits Davis_nGDP if ISO3 == "COD", missing
+qui replace Davis_nGDP = Davis_nGDP / 1000 if ISO3 == "MWI"
+gmdaddnote_source Davis  "Values converted to current currency." Davis_nGDP
+
+qui replace Davis_nGDP = Davis_nGDP / 1000 if ISO3 == "ZMB"
+gmdaddnote_source Davis  "Values converted to current currency." Davis_nGDP
+
+qui replace Davis_nGDP = Davis_nGDP / 10 if ISO3 == "GHA"
+gmdaddnote_source Davis  "Values converted to current currency." Davis_nGDP
+
+qui replace Davis_nGDP = Davis_nGDP / 1000 if ISO3 == "CRI" & year >= 1950
+gmdaddnote_source Davis  "Values converted to current currency." Davis_nGDP
+
+qui replace Davis_nGDP = Davis_nGDP * 1000 if ISO3 == "MWI"
+gmdaddnote_source Davis  "Values converted to current currency." Davis_nGDP
+
+qui replace Davis_nGDP = Davis_nGDP * 1000 if ISO3 == "ZMB"
+gmdaddnote_source Davis  "Values converted to current currency." Davis_nGDP
+
+qui replace Davis_nGDP = Davis_nGDP / 10 if ISO3 == "GHA"
+gmdaddnote_source Davis  "Values converted to current currency." Davis_nGDP
+
+qui replace Davis_nGDP = Davis_nGDP / 1000 if ISO3 == "CRI"
+gmdaddnote_source Davis  "Values converted to current currency." Davis_nGDP
+
+qui replace Davis_nGDP = Davis_nGDP / 1000 if ISO3 == "SDN"
+gmdaddnote_source Davis  "Values converted to current currency." Davis_nGDP
+
+qui replace Davis_nGDP = Davis_nGDP / 10^12 if ISO3 == "DEU" & year <= 1923
+gmdaddnote_source Davis  "Values converted to current currency." Davis_nGDP
+
+qui replace Davis_nGDP = Davis_nGDP / 10^4 if ISO3 == "POL"
+gmdaddnote_source Davis  "Values converted to current currency." Davis_nGDP
+
+drop if ISO3 == "COD" // Units completely off and we have data from many other sources 
 
 
 

@@ -1,8 +1,8 @@
 * ==============================================================================
 * GLOBAL MACRO DATABASE
-* by Karsten Müller, Ziliang Chen, and Mohamed Lehbib
+* by Karsten Müller, Chenzi Xu, Mohamed Lehbib, Ziliang Chen
 * ==============================================================================
-* DOWNLOAD INTERNATIONAL FINANCIAL STATISTICS (IFS) DATA FROM IMF
+* DOWNLOAD DATA FROM IMF
 * 
 * Author:
 * Mohamed Lehbib
@@ -11,37 +11,226 @@
 * Created: 2024-04-09
 *
 * Description: 
-* This Stata script downloads various macroeconomic variables from the IMF using the DBnomics API
-*
-* This code downloads:
-* Variable Descriptions
-* (1)  NGDP_XDC          ---- Gross Domestic Product, Nominal, Domestic Currency
-* (2)  NGDP_R_XDC        ---- Gross Domestic Product, Real, Domestic Currency
-* (3)  ENDA_XDC_USD_RATE ---- USD Rate, Period Average
-* (4)  EREER_IX          ---- Exchange Rates, Real Effective Exchange Rate based on Consumer Price Index, Index
-* (5)  FPOLM_PA          ---- Financial, Interest Rates, Monetary Policy-Related Interest Rate, Percent per annum
-* (6)  BCAXF_BP6_USD     ---- Balance of Payments, Supplementary Items, Current Account, Net (excluding exceptional financing), US Dollars
-* (7)  LP_PE_NUM         ---- Population, Persons, Number of
-* (8)  LUR_PT            ---- Labor Markets, Unemployment Rate, Percent
-* (9)  BGS_BP6_USD       ---- Balance of Payments, Current Account, Goods and Services, Net, US Dollars
-* (10) NFI_XDC           ---- Gross Fixed Capital Formation, Nominal, Domestic Currency
-* (11) NI_XDC            ---- Gross Capital Formation, Nominal, Domestic Currency
-* (12) NM_XDC            ---- Imports of Goods and Services, Nominal, Domestic Currency
-* (13) NX_XDC            ---- Exports of Goods and Services, Nominal, Domestic Currency
-* (14) NC_XDC            ---- Final Consumption Expenditure, Nominal, Domestic Currency
-* (15) PCPI_IX           ---- Prices, Consumer Price Index, All items, Index
-* (16) PCPI_PC_CP_A_PT   ---- Prices, Consumer Price Index, All items, Percentage change, Corresponding period previous year, Percent
-* (17) NGDP_D_IX         ---- Gross Domestic Product, Deflator, Index
-* (28) EDNE_USD_XDC_RATE ---- Exchange Rates, US Dollar per Domestic Currency, End of Period
-* Data source:
-* DBnomics API
+* This Stata script downloads various macroeconomic variables from the IMF API
 * 
-* Last downloaded:
-* 2024-07-19
-*
-* =========================================================
+* Data source: IMF API
+* ==============================================================================
+
+
+do "code/0_master.do"
+
+cap {
+
 
 global output "${data_raw}/aggregators/IMF/IMF_IFS"
+cd "$output"
+
+global Rterm_path "/usr/local/bin/R"
+global Rterm_options "--vanilla --slave"
+
+rsource, terminator(END)
+
+
+library(rsdmx)
+library(tidyverse)
+library(haven)
+
+# nGDP and rGDP
+flowref <- 'IMF.STA,ANEA'
+filter <- '.B1GQ..XDC.A'
+
+dataset1 <- readSDMX(providerId = 'IMF_DATA',
+                     resource   = 'data',
+                     flowRef    = flowref,
+                     key        = filter)
+
+df1 <- as.data.frame(dataset1)
+
+filter2 <- '.P51G.V.XDC.A'
+dataset2 <- readSDMX(providerId = 'IMF_DATA',
+                     resource   = 'data',
+                     flowRef    = flowref,
+                     key        = filter2)
+df2 <- as.data.frame(dataset2)
+
+filter3 <- '.P5.V.XDC.A'
+dataset3 <- readSDMX(providerId = 'IMF_DATA',
+                     resource   = 'data',
+                     flowRef    = flowref,
+                     key        = filter3)
+df3 <- as.data.frame(dataset3)
+
+filter4 <- '.P7.V.XDC.A'
+dataset4 <- readSDMX(providerId = 'IMF_DATA',
+                     resource   = 'data',
+                     flowRef    = flowref,
+                     key        = filter4)
+df4 <- as.data.frame(dataset4)
+
+filter5 <- '.P6.V.XDC.A'
+dataset5 <- readSDMX(providerId = 'IMF_DATA',
+                     resource   = 'data',
+                     flowRef    = flowref,
+                     key        = filter5)
+df5 <- as.data.frame(dataset5)
+
+filter6 <- '.P3.V.XDC.A'
+dataset6 <- readSDMX(providerId = 'IMF_DATA',
+                     resource   = 'data',
+                     flowRef    = flowref,
+                     key        = filter6)
+df6 <- as.data.frame(dataset6)
+
+
+
+
+# Exchange_rate
+flowref <- 'IMF.STA,ER'
+filter1 <- '.USD_XDC.EOP_RT.A'
+dataset1 <- readSDMX(providerId = 'IMF_DATA',
+                     resource   = 'data',
+                     flowRef    = flowref,
+                     key        = filter1)
+df7 <- as.data.frame(dataset1)
+
+
+# REER
+flowref <- 'IMF.STA,EER'
+filter <- '.REER_IX_RY2010_ACW_RCPI.A'
+
+dataset1 <- readSDMX(providerId = 'IMF_DATA',
+                     resource   = 'data',
+                     flowRef    = flowref,
+                     key        = filter)
+
+df8 <- as.data.frame(dataset1)
+
+
+
+# CPI
+# Standard reference period (2010=100), Index
+flowref <- 'IMF.STA,CPI'
+filter <- '.CPI._T.SRP_IX.A'
+
+dataset1 <- readSDMX(providerId = 'IMF_DATA',
+                     resource   = 'data',
+                     flowRef    = flowref,
+                     key        = filter)
+
+df9 <- as.data.frame(dataset1)
+
+# Standard reference period (2010=100), Period average, Period-over-period percent change
+filter2 <- '.CPI._T.SRP_POP_PCH_PA_PT.A'
+dataset2 <- readSDMX(providerId = 'IMF_DATA',
+                     resource   = 'data',
+                     flowRef    = flowref,
+                     key        = filter2)
+df10 <- as.data.frame(dataset2)
+
+
+# Interest rate
+flowref <- 'IMF.STA,MFS_IR'
+filter <- '.S13BOND_RT_PT_A_PT.A'
+
+dataset1 <- readSDMX(providerId = 'IMF_DATA',
+                     resource   = 'data',
+                     flowRef    = flowref,
+                     key        = filter)
+
+df11 <- as.data.frame(dataset1)
+
+filter2 <- '.GSTBILY_RT_PT_A_PT.A'
+dataset2 <- readSDMX(providerId = 'IMF_DATA',
+                     resource   = 'data',
+                     flowRef    = flowref,
+                     key        = filter2)
+df12 <- as.data.frame(dataset2)
+
+filter3 <- '.MFS166_RT_PT_A_PT.A'
+dataset3 <- readSDMX(providerId = 'IMF_DATA',
+                     resource   = 'data',
+                     flowRef    = flowref,
+                     key        = filter3)
+df13 <- as.data.frame(dataset3)
+
+filter3 <- '.DISR_RT_PT_A_PT.A'
+dataset3 <- readSDMX(providerId = 'IMF_DATA',
+                     resource   = 'data',
+                     flowRef    = flowref,
+                     key        = filter3)
+df14 <- as.data.frame(dataset3)
+
+# Balance of Payments
+flowref <- 'IMF.STA,BOP'
+filter <- '.NETCD_T.CAB..A'
+
+dataset1 <- readSDMX(providerId = 'IMF_DATA',
+                     resource   = 'data',
+                     flowRef    = flowref,
+                     key        = filter)
+
+df15 <- as.data.frame(dataset1)
+
+#Unemployment
+flowref <- 'IMF.STA,LS'
+filter <- '.U.PT.A'
+
+dataset1 <- readSDMX(providerId = 'IMF_DATA',
+                     resource   = 'data',
+                     flowRef    = flowref,
+                     key        = filter)
+
+df16 <- as.data.frame(dataset1)
+
+#Monetary aggregates
+flowref <- 'IMF.STA,MFS_MA'
+filter <- '...A'
+
+dataset1 <- readSDMX(providerId = 'IMF_DATA',
+                     resource   = 'data',
+                     flowRef    = flowref,
+                     key        = filter)
+
+df17 <- as.data.frame(dataset1)
+combined_df <- bind_rows(df1, df2, df3, df4, df5, df6, df7, df8, df9, df10, df11, df12, df13, df14, df15, df16, df17)
+write_csv(combined_df, "IMF_IFS.csv")
+
+
+q()  
+
+END
+
+
+cd "$path"
+
+* Save download date 
+gmdsavedate, source(IMF_IFS)
+}
+
+* Create the log
+clear
+set obs 1
+gen variable = "IMF_IFS"
+gen status = ""
+if _rc == 0 {
+	replace status = "Success"
+}
+else {
+	replace status = "Error"
+}
+
+* Save
+save "$data_temp/download_log/IMF_IFS_log.dta", replace
+
+
+
+/* Run the master file: Previous iteration code
+do "code/0_master.do"
+
+cap {
+
+
+global output "${data_raw}/aggregators/IMF/IMF_IFS/IMF_IFS"
 
 
 * Make empty file 
@@ -49,112 +238,102 @@ clear
 tempfile temp_master
 save `temp_master', replace emptyok
 
-* Extracting the country's names for the loop
-dbnomics data, pr(IMF) d(IFS) clear
+* Store the variable codes in a local
+local codes NGDP_XDC ENDA_XDC_USD_RATE EREER_IX FPOLM_PA BCAXF_BP6_USD LP_PE_NUM LUR_PT ///
+			BGS_BP6_USD NFI_XDC NI_XDC NM_XDC NX_XDC NC_XDC  PCPI_IX PCPI_PC_CP_A_PT  ///
+			EDNE_USD_XDC_RATE NGDP_R_XDC NC_R_XDC FITB_PA FIGB_PA
 
-* Drop regional aggregates from the countries list
-drop if regexm(value, "[0-9]") & dimensions == "REF_AREA"
-drop if seriescount == . & dimensions == "REF_AREA"
-
-* Download data for each country and append only for Real GDP 
-glevelsof values if dimensions == "REF_AREA", local(countries) clean
-foreach country in `countries' {
+* Loop over all the codes
+foreach code of local codes {
+	di "Downloading `code'"
+	local url "http://dataservices.imf.org/REST/SDMX_XML.svc/CompactData/IFS/A..`code'."
+	cap copy "`url'" "imf_cp.csv", replace
+	cap import delimited "imf_cp.csv", clear
 	
-	di "Downloading data for `country'"
+	* Extract data from XML
+	if _rc == 0 {
+		qui keep v1
+		* First, let's clean up the data
+		qui replace v1 = strtrim(v1)
 
-	* Define variables to be downloaded
-	local variables NGDP_R_XDC NC_R_XDC
+		* Create variables to store the extracted data
+		qui gen date = ""
+		qui gen value = ""
+		qui gen ISO2 = ""
+		qui gen indicator = ""
+		qui gen unit_mult = ""
 
-	* Loop over all variables starting with the second, download data, and append to master file
-	foreach var of local variables {
-		
-		di "Downloading data for `var'"
-		
-		* Get data from dbnomics 
-		cap dbnomics import, provider(IMF) dataset(IFS) FREQ(A) INDICATOR(`var') REF_AREA(`country') clear
-		
-		* Display an error-value when the country has no data
-		if _rc == 0 {
-			di as error "Country `country' has no data for the variable `var'"
-		}
-		
-		* Change every column size to the length of the largest row
-		qui ds, has(type string)
-		foreach var in `r(varlist)' {
-			qui replace `var' = strtrim(`var')
-			qui gen length = strlen(`var')
-			qui su length
-			qui recast str`r(max)' `var', force
-			qui drop length
-		}
+		* Extract country (REF_AREA) 
+		qui replace ISO2 = regexs(1) if regexm(v1, `"REF_AREA="([A-Z0-9_]+)""')
 
-		* If variable is a string, replace "NA" and destring 
-		cap ds value, has(type numeric)
-		if _rc != 111 {
-			if "`r(varlist)'" != "value" {
-			replace value = "" if value == "NA"
-			destring value period, replace
-			}
+		* Extract indicator 
+		qui replace indicator = regexs(1) if regexm(v1, `"INDICATOR="([A-Z0-9_]+)""')
+
+		* Extract date 
+		qui replace date = regexs(1) if regexm(v1, `"TIME_PERIOD="([0-9]{4}-[0-9]{2}|[0-9]{4}-Q[1-4]|[0-9]{4})""')
+
+		* Extract value 
+		qui replace value = regexs(1) if regexm(v1, `"OBS_VALUE="([-0-9\.]+)""')
+		
+		* Extract unit multiplier 
+		qui replace unit_mult = regexs(1) if regexm(v1, `"UNIT_MULT="([-0-9\.]+)""')
+
+		* Fill down metadata
+		foreach var of varlist unit_mult ISO2 indicator {
+			qui replace `var' = `var'[_n-1] if `var' == ""
 		}
+		qui keep date value indicator ISO2 unit_mult
+		sort ISO2 indicator date 
 		
-		
-		
-		* Append and save 
+		* Extract country name
+		qui merge m:1 ISO2 using $isomapping, keepus(ISO3) nogen
+
+		* Append
 		qui append using `temp_master'
-		qui save `temp_master', replace
+		qui save `temp_master', replace 
 	}
+	
+	else {
+		di "`code' of doesn't have data"
+	}
+
 }
 
+* Drop regional aggregates 
+drop if regexm(ISO2, "([-0-9\.]+)")
 
+* Fix ISO3 codes 
+replace ISO3 = "SUN" if ISO2 == "SUH"
+replace ISO3 = "YUG" if ISO2 == "YUC"
+replace ISO3 = "CSK" if ISO2 == "CSH"
+ 
 
-* Download other variables
-local variables NGDP_XDC  ENDA_XDC_USD_RATE EREER_IX FPOLM_PA BCAXF_BP6_USD LP_PE_NUM LUR_PT BGS_BP6_USD NFI_XDC NI_XDC NM_XDC NX_XDC NC_XDC  PCPI_IX PCPI_PC_CP_A_PT EDNE_USD_XDC_RATE
-foreach var of local variables {
-		
-		di "Downloading data for `var'"
-		
-		* Get data from dbnomics 
-		dbnomics import, provider(IMF) dataset(IFS) FREQ(A) INDICATOR(`var') clear
-		
-		* Change every column size to the length of the largest row
-		qui ds, has(type string)
-		foreach var in `r(varlist)' {
-			qui replace `var' = strtrim(`var')
-			qui gen length = strlen(`var')
-			qui su length
-			qui recast str`r(max)' `var', force
-			qui drop length
-		}
-
-		* If variable is a string, replace "NA" and destring 
-		cap ds value, has(type numeric)
-		if _rc != 111 {
-			if "`r(varlist)'" != "value" {
-			replace value = "" if value == "NA"
-			destring value period, replace
-			}
-		}
-		
-		* Append and save 
-		qui append using `temp_master'
-		qui save `temp_master', replace
-}
-
-
-
-* Only keep relevant information
-replace indicator = "NGDP_R_XDC" if strpos(series_name, "Gross Domestic Product, Real")
-replace indicator = "NC_R_XDC" if strpos(series_name, "Final Consumption Expenditure, Real")
-replace ref_area = REF_AREA if ref_area == ""
-keep period value indicator ref_area series_name
-
-* Assert that country and year uniquely identify observations
-isid ref_area period indicator
-
+* Drop empty rows 
+drop if date == ""
+drop ISO2
 
 * Save download date 
 gmdsavedate, source(IMF_IFS)
 
 * Save
-savedelta ${output}, id(period ref_area indicator)
+savedelta ${output}, id(date ISO3 indicator)
 
+
+
+
+}
+
+* Create the log
+clear
+set obs 1
+gen variable = "IMF_IFS"
+gen status = ""
+if _rc == 0 {
+	replace status = "Success"
+}
+else {
+	replace status = "Error"
+}
+
+* Save
+save "$data_temp/download_log/IMF_IFS_log.dta", replace

@@ -10,6 +10,12 @@
 *
 * Created: 2024-11-06
 * ==============================================================================
+
+* Run the master file
+do "code/0_master.do"
+
+cap {
+
 clear 
 * Define output file name 
 global output "${data_raw}/country_level/IDN_1"
@@ -38,3 +44,22 @@ gmdsavedate, source(IDN_1)
 
 * Save
 savedelta ${output}, id(period dataset_code series_code)
+
+
+
+}
+
+* Create the log
+clear
+set obs 1
+gen variable = "IDN_1"
+gen status = ""
+if _rc == 0 {
+	replace status = "Success"
+}
+else {
+	replace status = "Error"
+}
+
+* Save
+save "$data_temp/download_log/IDN_1_log.dta", replace

@@ -51,6 +51,7 @@ if "`method'" == "" {
     local method "chainlink"
 }
 
+
 * Validate method option
 if !inlist("`method'", "none", "chainlink") {
     di as error "Invalid method specified. Must be either 'none' or 'chainlink'"
@@ -61,6 +62,36 @@ if !inlist("`method'", "none", "chainlink") {
 if "`save'" == "" {
     local save ""
 }
+
+* Get the levelsof all countries 
+if "`save'" == "CS" {
+	qui levelsof ISO3, clean local(all_countries)
+	
+}
+
+* Save the base year and the variable 
+preserve 
+clear
+set obs 1
+gen variable = "`varname'"
+gen ISO3 = ""
+gen anchor_year = "`base_year'"
+gen method = "`method'"
+
+* Check if this variable has different base years for a specific group of country 
+if "`save'" == "CS" {
+	qui replace ISO3 = "`all_countries'"
+}
+
+else {
+	qui replace ISO3 = "All countries"
+}
+
+* Append and restore 
+append using "$data_temp/anchor_year_record"
+save "$data_temp/anchor_year_record", replace
+restore  
+
 
 
 /*
@@ -106,8 +137,9 @@ foreach var of local priority {
 }
 
 * Output a warning if a column with data was not included
-if `num_vars' > `count' {
+if `num_vars' > `count' & "`save'" == "" {
 	di as err "Warning: There are more sources than specified in the priority list."
+	exit 498;
 }
 
 
@@ -162,9 +194,6 @@ foreach country of local countries {
 	
 	* Keep
 	qui keep if ISO3 == "`country'" & year >= `earliest_year'
-	
-	* Drop empty columns
-	
 	
 	* Initialize new variables
 	qui gen `generate' = .
@@ -283,6 +312,11 @@ Forward-splicing:
 					local current_source = "`p'"
 					local current_value = r(mean)
 					continue, break
+				}
+				else {
+					local current_value = . 
+					local current_source ""
+			
 				}
 			}
 
@@ -463,14 +497,33 @@ The ratio splicing process:
 * Output
 use `temp_master', clear
 
+* Recast ISO3 
+recast str3 ISO3
+
+* Sort the output
+sort ISO3 year
+
 * Save only when the option save is not specified
 if "`save'" == "" {
+	* Count the number of source changes by country 
+	qui by ISO3: egen source_change_count = count(source_change) if source_change == 1
+	save "$data_final/chainlinked_`varname'", replace
+}
+
+else if "`save'" == "CS" {
+	* Keep the variables used in the chainlink 
+	qui by ISO3: egen source_change_count = count(source_change) if source_change == 1
+	qui keep ISO3 year *`varname' chainlinking_ratio source source_change source_change_count 
+	append using "$data_final/chainlinked_`varname'"
 	save "$data_final/chainlinked_`varname'", replace
 }
 
 else {
-	drop chainlinking_ratio source_change source
+	drop chainlinking_ratio source* 
 }
 
 
 end
+
+
+

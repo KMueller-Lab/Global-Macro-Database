@@ -17,14 +17,39 @@
 *
 * ==============================================================================
 
+* Run the master file
+do "code/0_master.do"
+
+cap {
+
+
 * Define output file name 
-global output "${data_raw}\aggregators\BIS\BIS_cbrate"
+global output "${data_raw}/aggregators/BIS/BIS_cbrate/BIS_cbrate"
 
-* Download
-dbnomics import, provider(BIS) dataset(WS_CBPOL) FREQ(M) clear insecure
+local url "https://stats.bis.org/api/v1/data/WS_CBPOL/M?format=csv&detail=dataonly"
 
-* Save download date 
+* Download the data
+copy "`url'" "bis_cbrate.csv", replace
+
+
+* Import the downloaded CSV file
+import delimited "bis_cbrate.csv", clear varnames(1)
+save "$output", replace
+
 gmdsavedate, source(BIS_cbrate)
+}
+
+* Create the log
+clear
+set obs 1
+gen variable = "BIS_cbrate"
+gen status = ""
+if _rc == 0 {
+	replace status = "Success"
+}
+else {
+	replace status = "Error"
+}
 
 * Save
-savedelta ${output}, id(period ref_area series_code)
+save "$data_temp/download_log/BIS_cbrate_log.dta", replace

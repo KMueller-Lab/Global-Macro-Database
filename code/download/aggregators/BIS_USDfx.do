@@ -17,14 +17,43 @@
 *
 * =========================================================
 
-* Define output file name 
-global output "${data_raw}\aggregators\BIS\BIS_USDfx"
+* Run the master file
+do "code/0_master.do"
 
-* import data
-dbnomics import, provider(BIS) dataset(WS_XRU) FREQ(A) COLLECTION(A) clear
+cap {
+
+
+* Define output file name 
+global output "${data_raw}/aggregators/BIS/BIS_USDfx/BIS_USDfx"
+
+local url "https://stats.bis.org/api/v1/data/WS_XRU/A?format=csv&detail=dataonly"
+
+* Download the data 
+copy "`url'" "bis_usd.csv", replace
+
+* Import the downloaded CSV file
+import delimited "bis_usd.csv", clear varnames(1)
+
+save "$output", replace
 
 * Save download date 
 gmdsavedate, source(BIS_USDfx)
 
+
+
+}
+
+* Create the log
+clear
+set obs 1
+gen variable = "BIS_USDfx"
+gen status = ""
+if _rc == 0 {
+	replace status = "Success"
+}
+else {
+	replace status = "Error"
+}
+
 * Save
-savedelta ${output}, id(period ref_area series_code)
+save "$data_temp/download_log/BIS_USDfx_log.dta", replace

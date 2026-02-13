@@ -12,33 +12,28 @@
 * Created: 2024-06-14
 *
 * Description: 
-* This Stata script opens and cleans from the Cox & Dinececco (2011) and Beramendi et al. (2018).
+* This Stata script opens and cleans from the Cox & Dinececco and Beramendi et al. (2018).
 *
 * Original download link:
 * https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/EVCSCQ
 * ==============================================================================
 
 * ==============================================================================
-* 	SET-UP
+* 	SETUP
 * ==============================================================================
 * Clear
 clear
-
+ 
 * Set input and output files
-global input1 "${data_raw}/aggregators/MD/MD_1.dta"
-global input2 "${data_raw}/aggregators/MD/MD_2.dta"
+global input "${data_raw}/aggregators/MD/MD_1.dta"
 global output "${data_clean}/aggregators/MD/MD.dta"
 
-* Create master tempfile to store all the datasets
-tempfile temp_master
-save `temp_master', replace emptyok
-
 * ==============================================================================
-*  Cox & Dinececco (2011) 
+*  Process the data 
 * ==============================================================================
 
 * Open
-use "$input1", clear
+use "$input", clear
 
 * Keep relevant variable
 keep countryname year pop logexppercap logrevpercap yield loggdppercap
@@ -53,8 +48,8 @@ replace pop = pop / 1000000
 gen exppercap	   = exp(logexppercap)
 gen revercap	   = exp(logrevpercap)
 gen gdppercap      = exp(loggdppercap)
-gen expenditure    = pop * exppercap
-gen gdp 		   = pop * gdppercap
+gen expenditure    = (pop * exppercap) 
+gen gdp 		   = pop * gdppercap 
 gen revenue 	   = pop * revercap
 gen expendituregdp = (expenditure/gdp) * 100
 gen revenuegdp     = (revenue/gdp) * 100
@@ -80,63 +75,16 @@ replace ISO3 = "PRT" if ISO3 == "portugal"
 replace ISO3 = "ESP" if ISO3 == "spain"
 replace ISO3 = "SWE" if ISO3 == "sweden"
 
-* Save
-tempfile temp_MD1
-save `temp_MD1', replace emptyok
-append using `temp_master'
-save `temp_master', replace
+* Convert units 
+replace MD_govrev_GDP = MD_govrev_GDP * 100
+replace MD_govexp_GDP = MD_govexp_GDP * 100
 
-* ==============================================================================
-*  Beramendi et al. (2018)
-* ==============================================================================
+* Assign all values to central government. Specified in the source.
+ren MD_gov* MD_cgov*
 
-* Open
-use "$input2", clear
+* Drop Data for France because it's not correct 
+drop if inlist(ISO3, "FRA", "NLD", "PRT")
 
-* Keep needed variable
-keep year ctycode taxgdp 
-
-* Add ISO3 codes
-gen ISO3 = ctycode
-merge m:1 ISO3 using $isomapping
-levelsof ISO3 if _merge == 1 //`"BUL"' `"DEN"' `"GER"' `"GRE"' `"JAP"' `"NET"' `"NZD"' `"POR"' `"ROM"' `"SPA"' `"SWI"' `"UK"' `"URU"'
-
-* Keep relevant variables
-keep year ctycode taxgdp  
-
-* Drop empty rows
-missings dropobs, force
-
-* Rename the ISO3	
-replace ctycode = "BGR" if ctycode == "BUL"
-replace ctycode = "DNK" if ctycode == "DEN"
-replace ctycode = "DEU" if ctycode == "GER"
-replace ctycode = "GRC" if ctycode == "GRE"
-replace ctycode = "JPN" if ctycode == "JAP"
-replace ctycode = "NLD" if ctycode == "NET"
-replace ctycode = "NZL" if ctycode == "NZD"
-replace ctycode = "PRT" if ctycode == "POR"
-replace ctycode = "ROU" if ctycode == "ROM"
-replace ctycode = "ESP" if ctycode == "SPA"
-replace ctycode = "CHE" if ctycode == "SWI"
-replace ctycode = "GBR" if ctycode == "UK"
-replace ctycode = "URY" if ctycode == "URU"
-
-* Rename 
-rename ctycode ISO3
-rename taxgdp MD_govtax_GDP
-
-* Save and merge
-tempfile temp_MD2
-save `temp_MD2', replace emptyok
-merge 1:1 ISO3 year using `temp_master', nogen
-save `temp_master', replace
-
-* Convert units
-replace MD_govtax_GDP = MD_govtax_GDP * 100
-replace MD_govrev_GDP = MD_govrev_GDP * 10
-replace MD_govexp_GDP = MD_govexp_GDP * 10
-replace MD_govrev_GDP = MD_govrev_GDP * 10
 * ==============================================================================
 *  OUTPUT
 * ==============================================================================

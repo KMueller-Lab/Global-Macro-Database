@@ -180,7 +180,7 @@ drop GB
 * Convert units
 local countries Austria  France WestGermany Greece Italy Poland Portugal Spain Yugoslavia
 foreach country of local countries {
-	qui convert_units `country' 1945 2010 "B"
+	qui convert_units `country' 1945 1998 "B"
 }
 ren WestGermany Germany
 

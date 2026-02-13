@@ -17,19 +17,42 @@
 *
 * =========================================================
 
+* Run the master file
+do "code/0_master.do"
+
+cap {
+
+
 * Define output file name 
-global output "${data_raw}\aggregators\BIS\BIS_HPI"
+global output "${data_raw}/aggregators/BIS/BIS_HPI/BIS_HPI"
 
-dbnomics import, provider(BIS) dataset(WS_SPP) UNIT_MEASURE(628) VALUE(N) clear
+local url "https://stats.bis.org/api/v1/data/WS_SPP/all/all?format=csv&detail=dataonly"
 
-* Only keep relevant information
-keep period value dataset_name freq ref_area series_name series_code
+* Download the data 
+copy "`url'" "bis_hpi.csv", replace
 
-* Assert that country and year uniquely identify observations
-isid ref_area series_name period
+* Import the downloaded CSV file
+import delimited "bis_hpi.csv", clear varnames(1)
 
 * Save download date 
 gmdsavedate, source(BIS_HPI)
 
 * Save
-savedelta ${output}, id(period ref_area series_code)
+save "${output}", replace
+
+}
+
+* Create the log
+clear
+set obs 1
+gen variable = "BIS_HPI"
+gen status = ""
+if _rc == 0 {
+	replace status = "Success"
+}
+else {
+	replace status = "Error"
+}
+
+* Save
+save "$data_temp/download_log/BIS_HPI_log.dta", replace

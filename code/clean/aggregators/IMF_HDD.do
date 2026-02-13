@@ -10,6 +10,8 @@
 * Mohamed Lehbib
 * National University of Singapore
 *
+* URL: https://www.imf.org/external/datamapper/datasets/DEBT
+*
 * Created: 16-06-2024
 *
 * ==============================================================================
@@ -21,8 +23,8 @@
 clear
 
 * Define input and output files
-global input "${data_raw}/aggregators/IMF/IMF_HDD.xls"
-global output "${data_clean}/aggregators/IMF/IMF_HDD.dta"
+global input "${data_raw}/aggregators/IMF/IMF_HDD/IMF_HDD.xls"
+global output "${data_clean}/aggregators/IMF/IMF_HDD/IMF_HDD.dta"
 * ==============================================================================
 * 	PROCESS
 * ==============================================================================
@@ -88,7 +90,7 @@ order ISO3 year GOVDEBT_GDP
 keep ISO3 year GOVDEBT_GDP
 
 * Rename 
-ren GOVDEBT_GDP IMF_HDD_govdebt_GDP
+ren GOVDEBT_GDP IMF_HDD_gen_govdebt_GDP
 
 * ==============================================================================
 * 	OUTPUT

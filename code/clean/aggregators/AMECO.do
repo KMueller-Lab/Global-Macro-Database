@@ -7,12 +7,12 @@
 * Author:
 * Ziliang Chen
 * National University of Singapore
-*
+* 
 * Created: 2024-07-20
 *
 * Description: 
 * Script to process and output a final dataset.
-* 
+*  
 * ==============================================================================
 
 * ==============================================================================
@@ -26,66 +26,89 @@ global output "${data_clean}/aggregators/AMECO/AMECO"
 * Open
 use "${input}", clear
 
-* Keep only relevant columns
-keep period geo dataset_code series_code value frequency dataset_name unit
-
 * Destring variables
-drop if value == "NA"
-destring period value, replace
+destring year value, replace
 
-* Drop unused regions
-drop if inlist(geo, "ca12", "da12", "du15", "ea12", "ea19")
-drop if inlist(geo, "ea20", "eu15", "eu27", "cu15", "d-w")
-gen unit_nGDP = "mrd-" + geo
+* Drop regional aggregat
+drop if regexm(Country, "[0-9]") // Euro area (19 countries)
+drop if inlist(Country, "Euro area", "European Union")
+
 * Extract indicator
 gen indicator = ""
-replace indicator = "cons" if dataset_code == "UCNT" & !inlist(unit, "mrd-pps", "mrd-ecu-eur")
-replace indicator = "pop" if dataset_code == "NPTD"
-replace indicator = "rGDP" if dataset_code == "OVGD" 
-replace indicator = "finv" if dataset_code == "UIGT" &  !inlist(unit, "mrd-pps", "mrd-ecu-eur")
-replace indicator = "inv" if dataset_code == "UITT" &  !inlist(unit, "mrd-pps", "mrd-ecu-eur")
-replace indicator = "nGDP" if dataset_code == "UVGD" & !inlist(unit, "mrd-pps", "mrd-ecu-eur", "pps-eu-15-100", "eur-eu-15-100", "pps-eu-27-100", "eur-eu-27-100")
-replace indicator = "unemp" if dataset_code == "NUTN"
-replace indicator = "imports" if dataset_code == "UMGS" &  !inlist(unit, "mrd-pps", "mrd-ecu-eur")
-replace indicator = "REER" if dataset_code == "XUNRQ-1"
-replace indicator = "exports" if dataset_code == "UXGS" &  !inlist(unit, "mrd-pps", "mrd-ecu-eur")
-replace indicator = "ltrate" if dataset_code == "ILN" & unit == "-"
-replace indicator = "strate" if dataset_code == "ISN" & unit == "-"
-replace indicator = "CPI" if dataset_code == "ZCPIN"
-drop if indicator == ""
 
-* Keep
-keep geo value period indicator
+* Consumption
+replace indicator = "cons"           if code == "UCNT"
+
+* GDP 
+replace indicator = "nGDP"           if code == "UVGD" 
+replace indicator = "rGDP"           if code == "OVGD" 
+
+* Investment
+replace indicator = "inv"            if code == "UITT"
+replace indicator = "finv"           if code == "UIGT" 
+
+* Population and labor
+replace indicator = "pop"            if code == "NPTN"
+replace indicator = "unemp"          if code == "ZUTN"
+
+* Trade variables 
+replace indicator = "exports"        if code == "UXGS" 
+replace indicator = "imports"        if code == "UMGS"
+ 
+* Interest rates
+replace indicator = "ltrate"         if code == "ILN"
+replace indicator = "strate"         if code == "ISN" 
+
+* Prices
+replace indicator = "CPI"           if code == "ZCPIH"
+replace indicator = "CPI_C"           if code == "ZCPIX"
+
+* Government finances
+replace indicator = "gen_govexp"         if code == "UUTG"
+replace indicator = "gen_govtax"         if code == "UTTT"
+replace indicator = "gen_govrev"         if code == "URTG"
+replace indicator = "gen_govdebt"        if code == "UDGGL"
+
+* Drop unused indicator 
+keep if indicator != ""
+
+* Add unit
+replace Unit = strlower(Unit)
+generat unit = "Index"   if strpos(Unit, "2015 = 100")
+replace unit = "Billion" if substr(Unit, 1, 3) == "mrd" & unit == ""
+replace unit = "Rate" 	 if strpos(Unit, "%") & unit == ""
+replace unit = "Thd" 	 if Unit == "1000 persons"
+
+* Keep 
+keep Country value year indicator unit
+
+* Convert to millions 
+replace value = value * 1000 if unit == "Billion"
+drop unit
 
 * Reshape
-greshape wide value, i(geo period) j(indicator)
+greshape wide value, i(Country year) j(indicator)
+ren (value* Country year) (* countryname year)
 
-* Rename
-ren value* *
-replace geo = upper(geo)
-ren geo ISO3
-ren period year
+* Add the deflator
+gen deflator = (nGDP / rGDP) * 100
 
-* Convert unit
-replace unemp = unemp / 1000
-replace pop = pop / 1000
-foreach var in cons exports finv imports nGDP rGDP inv {
-    replace `var' = `var' * 1000
+* Convert units 
+replace gen_govexp = (gen_govexp * 1000)
+
+* Derive variables in ratios 
+ds gen_gov* exports imports cons inv finv 
+foreach var in `r(varlist)'{
+	gen `var'_GDP = (`var' / nGDP) * 100
 }
 
-* Calculate the unemployment rate 
-replace unemp = (unemp / pop) * 100
+* Convert units
+replace pop = pop / 1000
 
-* Fix Romania's ISO3 code
-replace ISO3 = "ROU" if ISO3 == "ROM"
-
-* Add ratios to gdp variables
-gen cons_GDP    = (cons / nGDP) * 100
-gen imports_GDP = (imports / nGDP) * 100
-gen exports_GDP = (exports / nGDP) * 100
-gen finv_GDP    = (finv / nGDP) * 100
-gen inv_GDP     = (inv / nGDP) * 100
-
+* Add ISO3
+drop if countryname == "Czechia" 
+merge m:1 countryname using "$isomapping", assert(2 3) keep(3) keepus(ISO3) nogen
+drop countryname
 
 * Add source identifier
 qui ds ISO3 year, not
@@ -93,6 +116,11 @@ foreach var in `r(varlist)' {
 	ren `var' AMECO_`var'
 }
 
+* Rebase variables to $base_year
+gmd_rebase AMECO
+
+* Check for ratios and levels 
+check_gdp_ratios AMECO
 
 * ==============================================================================
 * 				Output

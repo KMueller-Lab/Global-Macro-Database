@@ -20,13 +20,18 @@ graph set window fontface "Times New Roman"
 
 keep if ISO3 == "CHL"
 
+* Add IMF WEO forecasts to WEO
+ds IMF_WEO_forecast*
+foreach var in `r(varlist)'{
+	qui local name_new = substr("`var'", 18, .)
+	qui replace IMF_WEO_`name_new' = `var' if IMF_WEO_`name_new' == .
+}
+drop IMF_WEO_forecast*
 qui missings dropvars, force 
 
 ren WDI_ARC_* WDIARC_*
-drop *rcons *rHPI 
-ren OECD_HPI OECD_EO_HPI
 keep ISO3 year *nGDP *rGDP  *cons *inv *finv *pop *exports *imports *CA_GDP *REER *USDfx *govrev *govexp *govtax *govdef_GDP *govdebt_GDP *M0 *M1 *M2 *M3 *cbrate *ltrate *strate *CPI *HPI *infl *unemp
-reshape long BIS_ BORDO_ CEPAC_ BRUEGEL_ Davis_ Grimm_ Gapminder_ HFS_ Homer_Sylla_ IDCM_ IHD_ IMF_FPP_ IMF_GDD_ IMF_HDD_ IMF_IFS_ IMF_GFS_ IMF_WEO_ MAD_ MD_ MOXLAD_ MW_ Mitchell_ OECD_EO_ OECD_HPI_ OECD_KEI_ OECD_MEI_ OECD_QNA_ PWT_ RR_debt_ TH_ID_ Tena_ UN_ WB_CC_ WDIARC_ WDI_ IMF_MFS_ GNA_ FAO_ BARRO_ ILO_ OECD_REV_, i(ISO3 year) j(variable) string
+reshape long BIS_ BORDO_ ECLAC_ BRUEGEL_ Davis_ Grimm_ Gapminder_ HFS_ Homer_Sylla_ IDCM_ IHD_ IMF_FPP_ IMF_GDD_ IMF_HDD_ IMF_IFS_ IMF_GFS_ IMF_WEO_ MAD_ MD_ MOXLAD_ MW_ Mitchell_ OECD_EO_ OECD_KEI_ OECD_MEI_  PWT_ RR_debt_ TH_ID_ Tena_ UN_ WB_infl_ WDIARC_ WDI_ IMF_MFS_ GNA_ FAO_ BARRO_ ILO_ , i(ISO3 year) j(variable) string
 
 
 * Reshape into long

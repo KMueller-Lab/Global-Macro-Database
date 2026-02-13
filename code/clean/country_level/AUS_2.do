@@ -119,12 +119,23 @@ replace govrev = govrev / 100
 replace govdef = govdef / 100
 replace govtax = govtax / 100
 
+* Assign all values to central government. Specified in the source.
+ren gov* gen_gov*
+
+* Derive ratio variables 
+gen gen_govexp_GDP = (gen_govexp / nGDP) * 100 
 
 * Add source identifier
 qui ds ISO3 year, not
 foreach var  in `r(varlist)'{
 	ren `var' CS2_`var'
 }
+
+* Rebase variables to $base_year
+gmd_rebase CS2
+
+* Check for ratios and levels 
+check_gdp_ratios CS2
 
 * ==============================================================================
 * 	Output

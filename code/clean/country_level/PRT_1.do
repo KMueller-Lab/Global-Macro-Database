@@ -12,7 +12,7 @@
 *
 * Created: 2024-10-08
 *
-* URL:  http://www.ipeadata.gov.br/Default.aspx 
+* URL:   https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_publicacoes&PUBLICACOESpub_boui=138364&PUBLICACOESmodo=2 
 * ==============================================================================
 
 * ==============================================================================
@@ -203,13 +203,20 @@ gen exports_GDP = (exports / nGDP) * 100
 gen govdebt_GDP = (govdebt / nGDP) * 100
 gen govtax_GDP = (govtax / nGDP) * 100
 
-
+* Assigning government finance to central government. Not specified in the source but close in the data to central government
+ren gov* cgov*
 
 * Add source identifier
 qui ds year ISO3, not
 foreach var in `r(varlist)'{
 	ren `var' CS1_`var'
 }
+
+* Rebase variables to $base_year
+gmd_rebase CS1
+
+* Check for ratios and levels 
+check_gdp_ratios CS1
 
 * ==============================================================================
 * 	Output

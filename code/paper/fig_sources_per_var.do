@@ -22,9 +22,8 @@ graph set window fontface "Times New Roman"
 
 * Open cleaned file
 use "$data_final/clean_data_wide", clear
-ren OECD_HPI OECD_EO_HPI
 drop *rHPI
-keep ISO3 year *nGDP *rGDP *imports *exports *govdebt_GDP *M0 *strate *govexp *govrev *govtax *govdef_GDP *cbrate *ltrate *CA_GDP *M1 *M2 *M3 *infl *rcons *cons *inv *finv *REER *USDfx *unemp *HPI *strate *M4 *CPI
+keep ISO3 year *nGDP *rGDP *imports *exports *govdebt_GDP *M0 *strate *govexp *govrev *govtax *govdef_GDP *cbrate *ltrate *CA_GDP *M1 *M2 *M3 *infl *cons *inv *finv *REER *USDfx *unemp *HPI *strate *CPI
 
 keep if inlist(year, 1900, 1980, 2008)
 
@@ -41,7 +40,7 @@ local prefixes
 foreach var of local varlist {
 
     * Extract everything before the specified suffixes
-    if regexm("`var'", "^(.+?)(nGDP|rGDP|imports|exports|govdebt_GDP|M0|strate|govexp|govrev|govtax|govdef_GDP|cbrate|ltrate|HPI|infl|rcons|cons|inv|finv|CA_GDP|REER|USDfx|unemp}CPI|M1|M2|M3|M4)$") {
+    if regexm("`var'", "^(.+?)(nGDP|rGDP|imports|exports|govdebt_GDP|M0|strate|govexp|govrev|govtax|govdef_GDP|cbrate|ltrate|HPI|infl|cons|inv|finv|CA_GDP|REER|USDfx|unemp}CPI|M1|M2|M3|M4)$") {
         local prefix = regexs(1)
 
         * Remove trailing underscore if present
@@ -129,27 +128,31 @@ replace order = 7 if var == "M3"          // Money Supply (M3)
 * GDP and Output
 replace order = 8 if var == "rGDP"        // Real GDP
 replace order = 9 if var == "nGDP"        // Nominal GDP
-replace order = 10 if var == "rcons"       // Real Consumption
-replace order = 11 if var == "cons"        // Consumption
-replace order = 12 if var == "inv"         // Investment
-replace order = 13 if var == "finv"        // Fixed Investment
+replace order = 10 if var == "cons"        // Consumption
+replace order = 11 if var == "inv"         // Investment
+replace order = 12 if var == "finv"        // Fixed Investment
 * External Sector
-replace order = 14 if var == "CA_GDP"      // Current Account
-replace order = 15 if var == "exports"     // Exports
-replace order = 16 if var == "imports"     // Imports
-replace order = 17 if var == "REER"        // Real Effective Exchange Rate
-replace order = 18 if var == "USDfx"       // US Dollar Exchange Rate
+replace order = 13 if var == "CA_GDP"      // Current Account
+replace order = 14 if var == "exports"     // Exports
+replace order = 15 if var == "imports"     // Imports
+replace order = 16 if var == "REER"        // Real Effective Exchange Rate
+replace order = 17 if var == "USDfx"       // US Dollar Exchange Rate
 * Government Finances
-replace order = 19 if var == "govrev"      // Government Revenue
-replace order = 20 if var == "govtax"      // Government Tax
-replace order = 21 if var == "govexp"      // Government Expenditure
-replace order = 22 if var == "govdebt_GDP" // Government Debt to GDP
-replace order = 23 if var == "govdef_GDP"  // Government Deficit
+replace order = 19 if var == "gen_govrev"      // Government Revenue
+replace order = 20 if var == "gen_govtax"      // Government Tax
+replace order = 21 if var == "gen_govexp"      // Government Expenditure
+replace order = 22 if var == "gen_govdebt_GDP" // Government Debt to GDP
+replace order = 23 if var == "gen_govdef_GDP"  // Government Deficit
+replace order = 24 if var == "cgovrev"      // Government Revenue
+replace order = 25 if var == "cgovtax"      // Government Tax
+replace order = 26 if var == "cgovexp"      // Government Expenditure
+replace order = 27 if var == "cgovdebt_GDP" // Government Debt to GDP
+replace order = 28 if var == "cgovdef_GDP"  // Government Deficit
 * Other Economic Indicators
-replace order = 24 if var == "unemp"       // Unemployment Rate
-replace order = 25 if var == "infl"        // Inflation Rate
-replace order = 26 if var == "CPI"         // Consumer price index
-replace order = 27 if var == "HPI"         // House Price Index
+replace order = 29 if var == "unemp"       // Unemployment Rate
+replace order = 30 if var == "infl"        // Inflation Rate
+replace order = 31 if var == "CPI"         // Consumer price index
+replace order = 32 if var == "HPI"         // House Price Index
 
 * Create more readable labels for all variables
 replace variable = "Short-term interest rate" if var == "strate"
@@ -164,17 +167,21 @@ replace variable = "Nominal GDP" if var == "nGDP"
 replace variable = "Current account" if var == "CA_GDP"
 replace variable = "Exports" if var == "exports"
 replace variable = "Imports" if var == "imports"
-replace variable = "Government revenue" if var == "govrev"
-replace variable = "Government tax revenue" if var == "govtax"
-replace variable = "Government expenditure" if var == "govexp"
-replace variable = "Government debt" if var == "govdebt_GDP"
-replace variable = "Government deficit" if var == "govdef_GDP"
+replace variable = "General government revenue" if var == "gen_govrev"
+replace variable = "General government tax revenue" if var == "gen_govtax"
+replace variable = "General government expenditure" if var == "gen_govexp"
+replace variable = "General government debt" if var == "gen_govdebt_GDP"
+replace variable = "General government deficit" if var == "gen_govdef_GDP"
+replace variable = "Central government revenue" if var == "cgovrev"
+replace variable = "Central government tax revenue" if var == "cgovtax"
+replace variable = "Central government expenditure" if var == "cgovexp"
+replace variable = "Central government debt" if var == "cgovdebt_GDP"
+replace variable = "Central government deficit" if var == "cgovdef_GDP"
 replace variable = "House price index" if var == "HPI"
 replace variable = "Gross fixed capital formation" if var == "finv"
 replace variable = "Gross capital formation" if var == "inv"
 replace variable = "Unemployment rate" if var == "unemp"
 replace variable = "Inflation rate" if var == "infl"
-replace variable = "Real consumption" if var == "rcons"
 replace variable = "Consumption" if var == "cons"
 replace variable = "Real effective exchange rate" if var == "REER"
 replace variable = "US dollar exchange rate" if var == "USDfx"
@@ -183,7 +190,7 @@ replace variable = "Consumer price index" if var == "CPI"
 * Sort by the order variable
 ren order n
 sort n
-replace n = abs(n - 26)
+replace n = abs(n - 27)
 
 * Graph
 sum country_share1900

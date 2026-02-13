@@ -121,7 +121,13 @@ drop id
 * Add ratios to gdp variables
 gen imports_GDP = (imports / nGDP) * 100
 gen exports_GDP = (exports / nGDP) * 100
-gen govexp_GDP = (govexp / nGDP) * 100
+
+
+* Add the deflator
+gen deflator = (nGDP / rGDP) * 100
+
+* Add ratio variables 
+gen inv_GDP = (inv / nGDP) * 100 
 
 * Add source identifier
 qui ds ISO3 year, not
@@ -131,6 +137,12 @@ foreach var  in `r(varlist)'{
 
 * Drop
 drop CS2_GBPfx CS2_DEMfx CS2_SEKfx CS2_FRFfx
+
+* Rebase variables to $base_year
+gmd_rebase CS2
+
+* Check for ratios and levels 
+check_gdp_ratios CS2
 
 * ===============================================================================
 * 	OUTPUT

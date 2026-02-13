@@ -149,7 +149,6 @@ ren govexp* *
 * Convert
 convert_currency Turkey 1984 1/1000
 convert_currency Indonesia 1964 1/1000
-convert_currency Israel 1964 1.1
 convert_currency Israel 1974 1/1000
 convert_currency Israel 1984 1/1000
 replace Israel = Israel * 1000

@@ -49,16 +49,6 @@ replace year = "20" + string(year_) if year == ""
 drop year_ 
 destring year USDfx M0 M1 M2 M3 strate, replace
 
-* Aggregate values
-qui ds M0 M1 M2 M3
-foreach var in `r(varlist)'{
-	replace `var' = 0 if `var' == .
-	sort year
-	by year: gen `var'_s = sum(`var')
-	drop `var'
-	ren `var'_s `var'
-}
-
 * Keep end-of-year values for exchange rate and interst rate
 keep if strpos(date, "Dec") > 0
 drop date

@@ -49,7 +49,7 @@ replace series_code = "CS1_govrev" if series_code == "APF-6" // Total debt of th
 replace series_code = "CS1_govexp" if series_code == "APF-7" // Total debt of the public finance sector (public debt) - in mln zl (line 9)
 replace series_code = "CS1_M3" if series_code == "AMON-6" // Total money supply of M3 (end of the year) - in mln zl (line 6)
 replace series_code = "CS1_nGDP" if series_code == "ANA-7" // Gross domestic product (current prices) - in mln zl (line 7)
-replace series_code = "CS1_rGDP" if series_code == "ANA-45" // Gross domestic product (constant pricesd) - 1995=100 (line 45)
+replace series_code = "CS1_rGDP_i" if series_code == "ANA-45" // Gross domestic product (constant pricesd) - 1995=100 (line 45)
 replace series_code = "CS1_USDfx" if series_code == "AMON-15" // Average exchange rate -  National Bank of Poland (NBP): - 100 USDd - in zl (line 15)
 replace series_code = "CS1_cbrate" if series_code == "AMON-11" // Average exchange rate -  National Bank of Poland (NBP): - 100 USDd - in zl (line 15)
 replace series_code = "CS1_M0" if series_code == "AMON-9" // Total money supplya of M3 (end of the year) - of which currency in circulation (excluding bank vault cash) - in mln zl (line 9)
@@ -78,6 +78,27 @@ gen CS1_inv_GDP     = (CS1_inv / CS1_nGDP) * 100
 gen CS1_govrev_GDP = (CS1_govrev / CS1_nGDP) * 100
 gen CS1_govexp_GDP = (CS1_govexp / CS1_nGDP) * 100
 gen CS1_govdebt_GDP = (CS1_govdebt / CS1_nGDP) * 100
+
+* Derive real GDP in value terms
+gen CS1_rGDP = (CS1_nGDP * CS1_rGDP_i) / 100
+drop CS1_rGDP_i
+
+* Add the deflator
+gen CS1_deflator = (CS1_nGDP / CS1_rGDP) * 100
+
+* Assigning government finance to central government. Indicated in the source
+ren CS1_gov* CS1_cgov*
+
+
+* Add ratio variabels 
+gen CS1_cgovdef_GDP = (CS1_cgovdef / CS1_nGDP) * 100
+
+* Rebase variables to $base_year
+gmd_rebase CS1
+
+* Check for ratios and levels 
+check_gdp_ratios CS1
+
 
 * ==============================================================================
 * 	Output

@@ -1,56 +1,62 @@
-* ==============================================================================
+ * ==============================================================================
 * GLOBAL MACRO DATABASE
 * by Karsten Müller, Chenzi Xu, Mohamed Lehbib, Ziliang Chen
 * ==============================================================================
-* CLEAN OECD HOUSE PRICE DATA 
 * 
-* Description: 
-* This Stata script reads in and cleans house price data from the OECD.
-*
 * Author:
-* Karsten Müller
+* Mohamed Lehbib
 * National University of Singapore
+* 
+* Created: 2024-07-04
 *
-* URL:
-* https://data.oecd.org/price/housing-prices.htm (Archived on: 2024-07-22)
-*
+* Description: 
+* This Stata script opens and cleans HPI (main economic indicators) data from OECD.
+* 
+* Data Source: OECD
 * ==============================================================================
 
 * ==============================================================================
-* 	SET UP 
+* 	SET UP
 * ==============================================================================
+* Clear data 
+clear
 
 * Define input and output files
-clear
-global input "${data_raw}/aggregators/OECD/OECD_HPI.dta"
-global output "${data_clean}/aggregators/OECD/OECD_HPI.dta"
+global input "${data_raw}/aggregators/OECD/OECD_HPI/OECD_HPI.dta"
+global output "${data_clean}/aggregators/OECD/OECD_HPI/OECD_HPI.dta"
 
 * ==============================================================================
 * 	PROCESS
 * ==============================================================================
 
-* Open 
-use "${input}", clear
-
-* Rename
-ren cou 	ISO3
-ren period  year
-ren value   OECD_
+* Open
+use "$input", clear
 
 * Drop regional aggregates
-drop if inlist(ISO3, "EA", "EA17", "OECD")
+keep if strlen(ref_area) == 3
+
+* Add indicator and assing codes 
+keep if freq == "A"
 
 * Keep relevant variables
-keep ISO3 year OECD_ ind
-
-* Reshape 
-greshape wide OECD_, i(ISO3 year) j(ind)
+keep time_period obs_value ref_area
 
 * Rename
-ren OECD_RHP OECD_rHPI
+ren obs_value HPI
+ren (time_period ref_area) (year ISO3)
 
-* Keep relevant variables
-keep ISO3 year OECD_HPI OECD_rHPI
+* Add source identifier
+qui ds ISO3 year, not
+foreach var in `r(varlist)'{
+	ren `var' OECD_HPI_`var'
+}
+
+* Destring 
+destring year, replace 
+
+* Rebase variables to $base_year
+gmd_rebase OECD_HPI
+
 
 * ==============================================================================
 * 	OUTPUT
@@ -59,10 +65,10 @@ keep ISO3 year OECD_HPI OECD_rHPI
 sort ISO3 year
 
 * Order
-order ISO3 year 
+order ISO3 year
 
 * Check for duplicates
-isid year ISO3 
+isid ISO3 year
 
-* Save
+* Save 
 save "${output}", replace

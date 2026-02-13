@@ -18,57 +18,108 @@
 * ==============================================================================
 
 * Define globals 
-global input "${data_raw}/aggregators/OECD/OECD_EO.dta"
-global output "${data_clean}/aggregators/OECD/OECD_EO.dta"
+global input "${data_raw}/aggregators/OECD/OECD_EO/OECD_EO.dta"
+global output "${data_clean}/aggregators/OECD/OECD_EO/OECD_EO.dta"
 
 * ==============================================================================
 * 	PROCESS
 * ==============================================================================
 
+
 * Open
 use "$input", clear
 
 * Drop regional aggregates
-drop if inlist(location, "EA17", "DAE", "OIL", "OTO", "NMEC", "OOP") | inlist(location, "RWD", "EMU", "EUU", "WLD", "ROW")
+keep if strlen(ref_area) == 3
+drop if inlist(ref_area, "WXD", "W_O", "DAE")
+
+* Add indicator and assing codes 
+gen indicator = ""
+
+* National Accounts - GDP and components
+replace indicator = "nGDP"          if measure == "GDP"      	 & indicator == ""   // Gross domestic product, nominal value, market prices
+replace indicator = "rGDP"          if measure == "GDPV"     	 & indicator == ""   // Gross domestic product, volume, market prices
+replace indicator = "cons_h" 	    if measure == "CP"       	 & indicator == ""   // Private final consumption expenditure, nominal value, GDP expenditure approach
+replace indicator = "cons_g"        if measure == "CG"       	 & indicator == ""   // Government final consumption expenditure, nominal value, GDP expenditure approach
+replace indicator = "inv"           if measure == "ITISK"    	 & indicator == ""   // Gross capital formation, total, nominal value
+replace indicator = "finv"          if measure == "IT"       	 & indicator == ""   // Gross fixed capital formation, total, nominal value
+replace indicator = "exports"       if measure == "XGS"      	 & indicator == ""   // Exports of goods and services, nominal value (national accounts basis)
+replace indicator = "imports"       if measure == "MGS"      	 & indicator == ""   // Imports of goods and services, nominal value (national accounts basis)
+
+* External Sector - Current Account and Exchange Rates
+replace indicator = "CA"            if measure == "CB"         	 & indicator == ""   // Current account balance
+replace indicator = "CA_USD"        if measure == "CBD"      	 & indicator == ""   // Current account balance in USD
+replace indicator = "CA_GDP"        if measure == "CBGDPR"   	 & indicator == ""   // Current account balance as a percentage of GDP
+replace indicator = "USDfx"         if measure == "EXCH"     	 & indicator == ""   // Exchange rate, USD per national currency
+replace indicator = "REER"          if measure == "EXCHER"       & indicator == ""   // Real effective exchange rate, constant trade weights
+
+* Prices and Inflation
+replace indicator = "CPI"           if measure == "CPI"          & indicator == ""   // Consumer price index
+replace indicator = "inflH"         if measure == "CPIH_YTYPCT"  & indicator == ""   // Harmonised headline inflation
+replace indicator = "infl"          if measure == "CPI_YTYPCT"   & indicator == ""   
+
+* Labor Market
+replace indicator = "unemp"         if measure == "UNR"     	 & indicator == ""   // Unemployment rate
+replace indicator = "pop"           if measure == "POP"     	 & indicator == ""   // Total population
+
+* Government Finance
+replace indicator = "gen_govrev"        if measure == "YRGT"    	 & indicator == ""   // Total receipts of general government
+replace indicator = "gen_govrev_GDP"    if measure == "YRGTQ"   	 & indicator == ""   // Total receipts of general government as a percentage of GDP
+replace indicator = "gen_govexp"        if measure == "YPGT"    	 & indicator == ""   // Total disbursements of general government
+replace indicator = "gen_govexp_GDP"    if measure == "YPGTQ"   	 & indicator == ""   // Total disbursements of general government as a percentage of GDP
+replace indicator = "gen_govdebt"       if measure == "GGFLM"   	 & indicator == ""   // Gross public debt, Maastricht criterion
+replace indicator = "gen_govdebt_GDP"   if measure == "GGFLMQ"  	 & indicator == ""   // Gross public debt, Maastricht criterion as a percentage of GDP
+replace indicator = "gen_govdef"        if measure == "NLG"     	 & indicator == ""   // General government net lending
+replace indicator = "gen_govdef_GDP"    if measure == "NLGQ"   	 	 & indicator == ""   // General government net lending as a percentage of GDP
+
+* Financial and Monetary Indicators
+replace indicator = "cbrate"        if measure == "IRCB"    	 & indicator == ""   // Central bank key interest rate
+replace indicator = "strate"        if measure == "IRS"     	 & indicator == ""   // Short-term interest rate
+replace indicator = "ltrate"        if measure == "IRL"     	 & indicator == ""   // Long-term interest rate on government bonds.
+
+* Drop the rest of measures
+drop if indicator == ""
 
 * Keep relevant variables
-keep period value location indicator
+keep time_period obs_value ref_area indicator
 
 * Reshape
-greshape wide value, i(period location) j(indicator)
+greshape wide obs_value, i(time_period ref_area) j(indicator)
 
 * Rename
-ren value* *
-ren (period location B9S13S CPIH D2D5D91RS13S EXCHER GGFLQ IRS ITISK TES13S UNR CBGDPR CPIH_YTYPCT EXCH GDP GDPV IRCB IT MGS MGSD POP TRS13S XGS XGSD CP CG) (year ISO3 govdef_GDP CPI govtax_GDP REER govdebt_GDP strate inv govexp_GDP unemp CA_GDP infl USDfx nGDP rGDP cbrate finv imports imports_USD pop govrev_GDP exports exports_USD cons_HH cons_gov)
+ren obs_value* *
+ren (time_period ref_area) (year ISO3)
 
 * Convert units to millions
-qui ds nGDP rGDP pop finv exports imports inv imports_USD exports_USD cons_HH cons_gov
+qui ds nGDP* rGDP* pop finv inv exports imports cons_h cons_g CA gen_govrev gen_govexp gen_govdebt 
 foreach var in `r(varlist)'{
-	replace `var' = `var' / 1000000
+	replace `var' = `var' / 10^6
 }
 
-* Fix exchange rate, REER and CPI values
+* Fix REER and CPI values
+qui ds CPI* REER 
+foreach var in `r(varlist)'{
+	replace `var' = `var' * 100
+}
+
+* Fix the USDfx 
 replace USDfx = 1 / USDfx
-replace CPI = CPI * 100
-replace REER = REER * 100
 
 * Derive total consumption as the sum of government and household consumptions
-gen cons = cons_HH + cons_gov
-drop cons_HH cons_gov
+gen cons = cons_h + cons_g
+drop cons_h cons_g
 
-* Derive nominal values of government finances
-gen govdebt =  govdebt_GDP * nGDP / 100
-gen govtax  =  govtax_GDP  * nGDP / 100
-gen govrev  =  govrev_GDP  * nGDP / 100
-gen govexp  =  govexp_GDP  * nGDP / 100
-gen govdef  =  govdef_GDP  * nGDP / 100
+* Add the deflator
+gen deflator = (nGDP / rGDP) * 100
 
-* Add ratios to gdp variables
-gen cons_GDP = (cons / nGDP) * 100
-gen imports_GDP = (imports / nGDP) * 100
-gen exports_GDP = (exports / nGDP) * 100
-gen finv_GDP    = (finv / nGDP) * 100
-gen inv_GDP     = (inv / nGDP) * 100
+* Derive variables to GDP ratios 
+qui ds finv inv exports imports cons
+foreach var in `r(varlist)'{
+	gen `var'_GDP = (`var' / nGDP) * 100
+}
+
+* Add harmonised inflation column to the inflation column because the harmonised inflation is only for EU countries
+replace infl = inflH if infl == .
 
 * Add source identifier
 qui ds ISO3 year, not
@@ -76,6 +127,11 @@ foreach var in `r(varlist)'{
 	ren `var' OECD_EO_`var'
 }
 
+* Rebase variables to $base_year
+gmd_rebase OECD_EO
+
+* Check for ratios and levels 
+check_gdp_ratios OECD_EO
 
 * ==============================================================================
 * 	OUTPUT

@@ -20,9 +20,9 @@
 * Set up the font for the graphs
 graph set window fontface "Times New Roman"
 use "$data_final/data_final", clear
-drop countryname
+drop countryname income_group
 
-merge 1:1 ISO3 year using "$data_final/chainlinked_USDfx", keep(3) nogen
+qui merge 1:1 ISO3 year using "$data_final/chainlinked_USDfx", keep(3) nogen
 
 drop if ISO3 == "ZWE"
 drop if ISO3 == "SLE"
@@ -41,7 +41,7 @@ gen gdp_share = (nGDP_USDfx / total_gdp) * 100
 keep ISO3 year gdp_share
 
 merge 1:1 ISO3 year using "$data_final/data_final", nogen
-drop countryname
+drop countryname income_group
 drop if inlist(ISO3, "MMR", "SLE", "YUG", "ROM", "ZWE")
 
 keep if year >= 1900
@@ -52,31 +52,36 @@ drop nGDP
 
 qui ds ISO3 year gdp_share, not
 foreach var in `r(varlist)'{
-	replace `var' = 1 if `var' != .
-	replace `var' = 0 if `var' == .
+	qui replace `var' = 1 if `var' != .
+	qui replace `var' = 0 if `var' == .
 }
 
-foreach var in CA_GDP USDfx HPI M0 M1 M2 M3 REER cbrate rcons cons exports finv govdebt_GDP govdef_GDP govexp govrev govtax imports infl inv ltrate strate unemp {
-    replace `var' = `var' * gdp_share
+foreach var in CA_GDP USDfx HPI M0 M1 M2 M3 REER cbrate cons exports finv gen_govdebt_GDP gen_govdef_GDP gen_govexp gen_govrev gen_govtax cgovdebt_GDP cgovdef_GDP cgovexp cgovrev cgovtax imports infl inv ltrate strate unemp {
+    qui replace `var' = `var' * gdp_share
 }
 qui ds ISO3 year gdp_share, not
 collapse (sum) `r(varlist)', by(year)
 
-foreach var in CA_GDP HPI USDfx M0 M1 M2 M3 REER cbrate rcons cons exports finv govdebt_GDP govdef_GDP govexp govrev govtax imports infl inv ltrate strate unemp {
-    replace `var' = . if `var' == 0
+foreach var in CA_GDP HPI USDfx M0 M1 M2 M3 REER cbrate cons exports finv gen_govdebt_GDP gen_govdef_GDP gen_govexp gen_govrev gen_govtax cgovdebt_GDP cgovdef_GDP cgovexp cgovrev cgovtax imports infl inv ltrate strate unemp {
+    qui replace `var' = . if `var' == 0
 }
 
-local vars "CA_GDP HPI M0 M1 M2 M3 rGDP USDfx cbrate rcons cons exports finv govdebt_GDP govdef_GDP govexp govrev govtax imports infl inv ltrate strate unemp"
-keep if year <= 2020
+local vars "CA_GDP HPI M0 M1 M2 M3 rGDP USDfx cbrate cons exports finv gen_govdebt_GDP gen_govdef_GDP gen_govexp gen_govrev gen_govtax cgovdebt_GDP cgovdef_GDP cgovexp cgovrev cgovtax imports infl inv ltrate strate unemp"
+qui keep if year <= 2020
 
 ********************************************************************************		
 * Plot government finance variables
-local vars "govexp govrev govtax govdebt_GDP govdef_GDP"
-label variable govexp "Expenditure"
-label variable govrev "Revenue"
-label variable govdef_GDP "Deficit"
-label variable govtax "Tax revenue"
-label variable govdebt_GDP "Debt-to-GDP"
+local vars "gen_govexp gen_govrev gen_govtax gen_govdebt_GDP gen_govdef_GDP cgovexp cgovrev cgovtax cgovdebt_GDP cgovdef_GDP"
+label variable gen_govexp "General government expenditure"
+label variable gen_govrev "General government revenue"
+label variable gen_govdef_GDP "General government deficit-to-GDP"
+label variable gen_govtax "General government tax revenue"
+label variable gen_govdebt_GDP "General government debt-to-GDP"
+label variable cgovexp "Central government expenditure"
+label variable cgovrev "Central government revenue"
+label variable cgovtax "Central government tax revenue"
+label variable cgovdebt_GDP "Central government debt-to-GDP"
+label variable cgovdef_GDP "Central government deficit-to-GDP"
 
 keep if year <= 2020
 
@@ -160,7 +165,6 @@ line `vars' year, ///
 ********************************************************************************		
 * Plot National accounts
 local vars "cons inv finv exports imports CA_GDP"
-label variable rcons "Real consumption"
 label variable cons "Consumption"
 label variable inv "Gross capital formation"
 label variable finv "Gross fixed capital formation"

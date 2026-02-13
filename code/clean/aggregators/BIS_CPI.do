@@ -23,8 +23,8 @@
 
 * Define input and output files 
 clear
-global input "${data_raw}/aggregators/BIS/BIS_CPI.dta"
-global output "${data_clean}/aggregators/BIS/BIS_CPI.dta"
+global input "${data_raw}/aggregators/BIS/BIS_CPI/BIS_CPI.dta"
+global output "${data_clean}/aggregators/BIS/BIS_CPI/BIS_CPI.dta"
 
 * ==============================================================================
 * PROCESS
@@ -33,11 +33,8 @@ global output "${data_clean}/aggregators/BIS/BIS_CPI.dta"
 * Open 
 use "$input", clear
 
-* Drop Euro Area
-drop if ref_area == "XM"
-
-* Fix missing value
-replace value = "" if value == "NA"
+* Keep annual frequency
+keep if freq == "A"
 
 * Generate variable identifier column
 gen id = ""
@@ -45,23 +42,23 @@ replace id = "CPI"  if unit_measure == 628
 replace id = "infl" if unit_measure == 771
 
 * Keep only relevant variables
-keep period value ref_area id
+keep time obs ref_area id
 
 * Rename
-ren ref_area ISO2
-ren period   year
-ren value    BIS_
+ren (ref_area time obs) (ISO2 year BIS_)
 
 * Generate countries' ISO3 codes
-merge m:1 ISO2 using ${isomapping}, nogen assert(2 3) keep(3) keepusing(ISO3)
+merge m:1 ISO2 using ${isomapping}, nogen keep(3) keepusing(ISO3)
 drop ISO2
 
 * Reshape
 greshape wide BIS_, i(ISO3 year) j(id)
 
 * Destring
-qui ds ISO3, not
-destring `r(varlist)', replace
+destring year, replace 
+
+* Rebase variables to $base_year
+gmd_rebase BIS
 
 * ==============================================================================
 * OUTPUT

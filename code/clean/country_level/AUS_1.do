@@ -80,6 +80,12 @@ xtset id year
 by id: gen CS1_infl = (CS1_CPI - L.CS1_CPI) / L.CS1_CPI * 100 if L.CS1_CPI != .
 drop id
 
+* Rebase variables to $base_year
+gmd_rebase CS1
+
+* Check for ratios and levels 
+check_gdp_ratios CS1
+
 * ==============================================================================
 * 	Output
 * ==============================================================================
