@@ -89,21 +89,19 @@ ren gov_debt govdebt
 ren DEFICIT  govdef 
 ren REVENUE  govrev
 
-* Calculate ratios
-gen govdebt_GDP = govdebt / nGDP
-gen govdef_GDP  = govdef / nGDP
-gen govrev_GDP  = govrev / nGDP
-gen govexp_GDP  = govexp / nGDP
-
 * Convert units
 replace govexp = govexp / 1000
 replace govrev = govrev / 1000
 replace govdef = govdef / 1000
+replace govdebt = govdebt / 1000
 replace inv = inv * 1000
 replace sav = sav * 1000
 
-* Fix government debt units (Represents a factor of ten to other sources)
-replace govdebt_GDP = govdebt_GDP / 10
+* Calculate ratios
+gen govdebt_GDP = (govdebt / nGDP) * 100
+gen govdef_GDP  = (govdef / nGDP) * 100
+gen govrev_GDP  = (govrev / nGDP) * 100
+gen govexp_GDP  = (govexp / nGDP) * 100
 
 * Add country's ISO3
 gen ISO3 = "USA"
@@ -118,6 +116,9 @@ drop id
 * Add ratios to gdp variables
 gen inv_GDP     = (inv / nGDP) * 100
 
+* Assigning all data to central government. Specified in the source 
+ren gov* cgov*
+
 * Add source identifier
 qui ds ISO3 year, not
 foreach var  in `r(varlist)'{
@@ -126,6 +127,12 @@ foreach var  in `r(varlist)'{
 
 * Drop
 drop CS2_nGDP_pc CS2_GBPfx
+
+* Rebase variables to $base_year
+gmd_rebase CS2
+
+* Check for ratios and levels 
+check_gdp_ratios CS2
 
 * ===============================================================================
 *	OUTPUT

@@ -12,6 +12,7 @@
 * National University of Singapore
 * 
 * Created: 2024-04-23
+* URL: https://d-infra.ier.hit-u.ac.jp/English/ltes/a000-asia-long-kr.html
 * ==============================================================================
 
 * ==============================================================================
@@ -115,6 +116,15 @@ gen CS1_rGDP_pc = CS1_rGDP / CS1_pop
 
 * Add country's ISO3
 gen ISO3 = "KOR"
+
+* Add the deflator
+gen CS1_deflator = (CS1_nGDP / CS1_rGDP) * 100
+
+* Rebase variables to $base_year
+gmd_rebase CS1
+
+* Check for ratios and levels 
+check_gdp_ratios CS1
 
 * ===============================================================================
 * 	OUTPUT

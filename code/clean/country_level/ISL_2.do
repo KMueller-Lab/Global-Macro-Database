@@ -154,10 +154,15 @@ ren REVENUE  govrev
 ren DEFICIT  govdef
 ren gov_debt govdebt
 
+* Convert units
+replace govexp = govexp * (10^3) if year >= 1980
+replace govrev = govrev * (10^3) if year >= 1980
+replace govtax = govtax * (10^3) if year >= 1980
+
 * Calculate GDP ratios
 qui ds gov*
 foreach var in `r(varlist)'{
-	gen `var'_GDP = `var' / nGDP * 100
+	gen `var'_GDP = (`var' / nGDP) * 100
 }
 
 * Drop central government and local government variables
@@ -183,10 +188,14 @@ foreach var in `r(varlist)'{
 	ren `var' CS2_`var'
 }
 
-* Convert units
-replace CS2_govexp = CS2_govexp * (10^3) if year >= 1980
-replace CS2_govrev = CS2_govrev * (10^3) if year >= 1980
-replace CS2_govtax = CS2_govtax * (10^3) if year >= 1980
+* Assing data to general government because we created the variabels 
+ren *gov* *gen_gov*
+
+* Rebase variables to $base_year
+gmd_rebase CS2
+
+* Check for ratios and levels 
+check_gdp_ratios CS2
 
 * ==============================================================================
 * 	OUTPUT

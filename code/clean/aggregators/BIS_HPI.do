@@ -23,8 +23,8 @@
 clear
 
 * Define globals 
-global input "${data_raw}/aggregators/BIS/BIS_HPI.dta"
-global output "${data_clean}/aggregators/BIS/BIS_HPI.dta"
+global input "${data_raw}/aggregators/BIS/BIS_HPI/BIS_HPI.dta"
+global output "${data_clean}/aggregators/BIS/BIS_HPI/BIS_HPI.dta"
 
 * ==============================================================================
 * 	PROCESSING
@@ -33,33 +33,35 @@ global output "${data_clean}/aggregators/BIS/BIS_HPI.dta"
 * Open
 use "$input", clear
 
-* Drop regional aggregates
-drop if inlist(ref_area,"4T","5R","XM","XW")
-drop dataset_name freq series_code series_name
+* Keep nominal HPI
+keep if value == "N" & unit_measure == 628
 
 * Convert ISO2 to ISO3
 ren ref_area ISO2
-merge m:1 ISO2 using ${isomapping}, nogen assert(2 3) keep(3) keepusing(ISO3)
+merge m:1 ISO2 using ${isomapping}, nogen keep(3) keepusing(ISO3)
 drop ISO2
 
-* Replace NA with missing
-replace value = "" if value == "NA"
-destring value, replace
+* Extract the year and month
+gen year = substr(time, 1, 4)
+gen qrtr = substr(time, -1, 1)
 
-* Extract the year
-gen year = substr(period, 1, 4)
-destring year, replace
+* Destring
+destring year obs qrtr, replace ignore("NA")
 
-* Keep end-of-year observation
-sort ISO3 year period
-by ISO3 year: keep if _n == _N
-drop period
+* Drop missing observations 
+drop if obs == .
+
+* Keep only end-of-year observation
+bysort ISO3 year (qrtr): keep if _n == _N 
 
 * Rename
-ren value BIS_HPI
+ren obs BIS_HPI
 
 * Keep relevant variables
-keep ISO3 year BIS*
+keep ISO3 year BIS_HPI
+
+* Rebase variables to $base_year
+gmd_rebase BIS
 
 * ==============================================================================
 * 	OUTPUT

@@ -20,6 +20,12 @@
 * 2024-07-23
 * ==============================================================================
 
+* Run the master file
+do "code/0_master.do"
+
+cap {
+
+
 * Define output file name 
 global output "${data_raw}/country_level/FRA_1"
 
@@ -55,3 +61,22 @@ gmdsavedate, source(FRA_1)
 
 * Save
 savedelta ${output}, id(period REF_AREA series_code)
+
+
+
+}
+
+* Create the log
+clear
+set obs 1
+gen variable = "FRA_1"
+gen status = ""
+if _rc == 0 {
+	replace status = "Success"
+}
+else {
+	replace status = "Error"
+}
+
+* Save
+save "$data_temp/download_log/FRA_1_log.dta", replace

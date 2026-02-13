@@ -18,59 +18,42 @@
 * 
 * ==============================================================================
 
+* Run the master file
+do "code/0_master.do"
+
+cap {
+
+
 clear
 
 * Define output file name 
-global output "${data_raw}\aggregators\OECD\OECD_MEI"
+global output "${data_raw}/aggregators/OECD/OECD_MEI/OECD_MEI"
 
-* Create master tempfile to store all the datasets
-tempfile temp_master
-save `temp_master', replace emptyok
-
-* Monetary aggregates and their components > Broad money and components > M3 > M3
-dbnomics import, provider(OECD) dataset(MEI) SUBJECT(MABMM301) MEASURE(STSA) FREQUENCY(A) clear
-destring value, replace 
-tempfile temp_M3
-save `temp_M3', replace emptyok
-append using `temp_master'
-save `temp_master', replace
-
-* Monetary aggregates and their components > Narrow money and components > M1 and components > M1
-dbnomics import, provider(OECD) dataset(MEI) SUBJECT(MANMM101) MEASURE(STSA) FREQUENCY(A) clear
-destring value, replace 
-tempfile temp_M1
-save `temp_M1', replace emptyok
-append using `temp_master'
-save `temp_master', replace
-
-
-* Currency Conversions > Real effective exchange rates > Overall Economy > CPI
-dbnomics import, provider(OECD) dataset(MEI) SUBJECT(CCRETT01) FREQUENCY(A) clear
-destring value, replace 
-tempfile temp_reer
-save `temp_reer', replace emptyok
-append using `temp_master'
-save `temp_master', replace
-
-
-* Interest Rates > Long-term government bond yields > 10-year > Main (including benchmark)
-dbnomics import, provider(OECD) dataset(MEI) SUBJECT(IRLTLT01) FREQUENCY(A) clear
-destring value, replace 
-tempfile temp_ltrate
-save `temp_ltrate', replace emptyok
-append using `temp_master'
-save `temp_master', replace
-
-* Interest Rates > Immediate rates (< 24 hrs) > Central bank rates > Total
-dbnomics import, provider(OECD) dataset(MEI) SUBJECT(IRSTCB01) FREQUENCY(A) clear
-replace value = "" if value == "NA"
-destring value, replace 
-tempfile temp_cbrate
-save `temp_cbrate', replace emptyok
-append using `temp_master'
+* Download
+local url "https://sdmx.oecd.org/public/rest/data/OECD.SDD.STES,DSD_STES@DF_MONAGG,4.0/.A.......?dimensionAtObservation=AllDimensions&format=csvfilewithlabels"
+cap copy "`url'" "OECD.csv", replace
+qui import delimited "OECD.csv", clear
+rm "OECD.csv"
 
 * Save download date 
 gmdsavedate, source(OECD_MEI)
 
 * Save
-savedelta ${output}, id(period location series_code dataset_code)
+save "$output", replace 
+
+}
+
+* Create the log
+clear
+set obs 1
+gen variable = "OECD_MEI"
+gen status = ""
+if _rc == 0 {
+	replace status = "Success"
+}
+else {
+	replace status = "Error"
+}
+
+* Save
+save "$data_temp/download_log/OECD_MEI_log.dta", replace

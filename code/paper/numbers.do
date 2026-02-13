@@ -24,17 +24,17 @@
 use "${data_final}/data_final.dta", clear
 
 * Number of variables
-ds ISO3 year countryname, not
+ds ISO3 year countryname id , not
 loc varlist `r(varlist)'
 local num_vars_GMD: word count `r(varlist)'
 data_export `num_vars_GMD', name(number_variables_final) whole
 
 
 * Number of variables excluding ratios
-drop *_GDP
-ds ISO3 year countryname, not
+ds ISO3 year countryname id *_GDP *_USD, not
 loc varlist `r(varlist)'
 local num_vars_GMD: word count `r(varlist)'
+local final_num_vars_GMD = `num_vars_GMD' + 2 - 5 // + rGDP_USD rGDP_pc_USD - combined gov
 data_export `num_vars_GMD', name(number_variables) whole
 
 
@@ -92,7 +92,7 @@ data_export `number_historical', name(number_historical) whole
 
 * Open cleaned file
 use "$data_final/data_final", clear
-qui ds ISO3 year countryname, not
+qui ds ISO3 year countryname id, not
 qui missings dropobs `r(varlist)', force
 
 * First year in data 
@@ -111,3 +111,66 @@ data_export `r(max)', name(year_end) round(1)
 unique ISO3
 data_export `r(unique)', name(number_countries) whole
 
+* ==============================================================================
+* ANCHOR YEAR AND BASE YEAR 
+* ==============================================================================
+* Output base year using the global 
+local base_year $base_year 
+data_export `base_year', name(base_year) round(1)
+
+* Output base year using the dataset and the most used anchor year  
+use "$data_temp/anchor_year_record", clear 
+bys anchor_year: gen freq_anchor_year = _N
+gsort -freq_anchor_year
+local anchor_year = anchor_year[1]
+data_export `anchor_year', name(anchor_year) round(1)
+
+
+
+* ==============================================================================
+* GENERATE MANUSCRIPT_NUMBERS.JSON
+* ==============================================================================
+
+* Reload and clean data to retrieve coverage stats (Year/Countries) 
+use "${data_final}/data_final.dta", clear
+qui ds ISO3 year countryname id, not
+qui missings dropobs `r(varlist)', force
+
+* Recalculate Country Count
+quietly unique ISO3
+local number_countries = r(unique)
+
+* Recalculate Year Stats
+quietly sum year
+local year_start = r(min)
+local year_end_forecasts = r(max)
+
+quietly sum year if year < $currdate
+local year_end = r(max)
+
+* ==============================================================================
+* GENERATE MANUSCRIPT_NUMBERS.JSON
+* ==============================================================================
+
+capture file close json
+file open json using "$data_distr/manuscript_numbers.json", write replace
+
+file write json "{" _n
+file write json "  " (char(34)) "metadata" (char(34)) ": {" _n
+file write json "    " (char(34)) "version" (char(34)) ": " (char(34)) "2025_12" (char(34)) _n
+file write json "  }," _n
+file write json "  " (char(34)) "variables" (char(34)) ": `num_vars_GMD'," _n
+file write json "  " (char(34)) "countries" (char(34)) ": `number_countries'," _n
+file write json "  " (char(34)) "sources" (char(34)) ": {" _n
+file write json "    " (char(34)) "total" (char(34)) ": `number_sources'," _n
+file write json "    " (char(34)) "contemporary" (char(34)) ": `number_current'," _n
+file write json "    " (char(34)) "historical" (char(34)) ": `number_historical'" _n
+file write json "  }," _n
+file write json "  " (char(34)) "coverage" (char(34)) ": {" _n
+file write json "    " (char(34)) "year_start" (char(34)) ": `year_start'," _n
+file write json "    " (char(34)) "year_end" (char(34)) ": `year_end'," _n
+file write json "    " (char(34)) "forecasts_upto" (char(34)) ": `year_end_forecasts'" _n
+file write json "  }" _n
+file write json "}" _n
+
+file close json

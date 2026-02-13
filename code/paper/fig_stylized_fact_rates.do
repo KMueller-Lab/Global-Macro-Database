@@ -12,7 +12,7 @@
 * Created: 2024-12-11
 *
 * ==============================================================================
-* Set up the font for the graphs
+/* Set up the font for the graphs
 graph set window fontface "Times New Roman"
 
 * Import the data and keep relevant variables and years

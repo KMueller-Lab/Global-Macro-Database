@@ -22,8 +22,8 @@
 clear
 
 * Define input and output files
-global input "${data_raw}/aggregators/OECD/OECD_MEI.dta"
-global output "${data_clean}/aggregators/OECD/OECD_MEI.dta"
+global input "${data_raw}/aggregators/OECD/OECD_MEI/OECD_MEI.dta"
+global output "${data_clean}/aggregators/OECD/OECD_MEI/OECD_MEI.dta"
 
 * ==============================================================================
 * 	PROCESS
@@ -32,35 +32,34 @@ global output "${data_clean}/aggregators/OECD/OECD_MEI.dta"
 * Open
 use "$input", clear
 
-* Keep relevant columns
-keep period value subject location
+* Drop regional aggregates
+keep if strlen(ref_area) == 3
+drop if inlist(ref_area, "WXD", "W_O")
 
-* Reshape wide
-greshape wide value, i(period location) j(subject)
+* Add indicator and assing codes 
+gen indicator = ""
+replace indicator = "M1"      if measure == "MANM"     & unitofmeasure == "National currency" & indicator == "" & adjustment  == "N" // M1
+replace indicator = "M3"      if measure == "MABM"     & unitofmeasure == "National currency" & indicator == "" & adjustment  == "N" // M3
+
+* Drop other indicators
+keep if indicator != ""
+
+* Keep relevant variables
+keep time_period obs_value ref_area indicator
+
+* Reshape
+greshape wide obs_value, i(time_period ref_area) j(indicator)
 
 * Rename
-ren value* * 
-ren (period location CCRETT01 IRLTLT01 IRSTCB01 MABMM301 MANMM101) (year ISO3 REER ltrate cbrate M3 M1)
-
-* Drop non-country regions
-drop if ISO3 == "EA19"
-
-* Convert variables to million (Billion for Indonesia)
-replace M1 = M1 * 1000 if !inlist(ISO3, "GBR", "ISR")
-replace M3 = M3 * 1000 if !inlist(ISO3, "GBR", "ISR")
-
-replace M1 = M1 * 1000 if ISO3 == "IDN"
-replace M3 = M3 * 1000 if ISO3 == "IDN"
-
-* Fix units for Japan
-replace M1 = M1 / 10 if ISO3 == "JPN"
-replace M3 = M3 / 10 if ISO3 == "JPN"
+ren obs_value* *
+ren (time_period ref_area) (year ISO3)
 
 * Add source identifier
 qui ds ISO3 year, not
 foreach var in `r(varlist)'{
 	ren `var' OECD_MEI_`var'
 }
+
 
 * ==============================================================================
 * 	OUTPUT

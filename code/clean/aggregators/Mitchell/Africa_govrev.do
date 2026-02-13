@@ -58,7 +58,7 @@ reshape_data govrev
 tempfile temp_c
 save `temp_c', emptyok replace
 
-*===============================================================================
+* ===============================================================================
 * 			govrev: Sheet 3
 *===============================================================================
 import_columns "${input}" "3"
@@ -250,24 +250,25 @@ convert_currency Uganda 1976 1/100
 reshape_data govrev
 
 * Fix units
-replace govrev = govrev / 1000000  if year <= 1994 & countryname == "Angola"
-replace govrev = govrev / 1000  if year <= 1964 & countryname == "Gabon"
-replace govrev = govrev / 10000 if countryname == "Ghana"
-replace govrev = govrev / 1000 if countryname == "Morocco" & year <= 1949
-replace govrev = govrev * 10 if countryname == "Morocco" & year <= 1958
-replace govrev = govrev / 1000 if countryname == "Mozambique" & year >= 1950
-replace govrev = govrev * 1000 if inrange(year, 1940, 1949) & countryname == "Nigeria"
-replace govrev = govrev * 10 if countryname == "Kenya" & year <= 1949
-replace govrev = govrev * 1000 if countryname == "Tanzania" & year >= 1975
-replace govrev = govrev * 100 if inrange(year, 1850, 1859) & countryname == "Mauritius"
-replace govrev = govrev / 1000 if countryname == "SouthAfrica" & year == 1952
-replace govrev = govrev / 10 if countryname == "Mauritania"
-replace govrev = govrev / 1000 if countryname == "Sudan"  
-replace govrev = govrev * 100 if countryname == "Zaire" & inrange(year, 1992, 1995)
-replace govrev = govrev * (10^-6) if countryname == "Zaire" & year <= 1991
-replace govrev = govrev / 3 if countryname == "Zaire" & year <= 1987
-replace govrev = govrev / 1000 if countryname == "Zaire" & year <= 1958
-replace govrev = govrev / 1000 if countryname == "Zambia"
+replace govrev = govrev / 1000000   if year <= 1994 & countryname == "Angola"
+replace govrev = govrev / 1000  	if year <= 1964 & countryname == "Gabon"
+replace govrev = govrev / 10000 	if countryname == "Ghana"
+replace govrev = govrev / 1000 		if countryname == "Morocco" & year <= 1949
+replace govrev = govrev * 10 		if countryname == "Morocco" & year <= 1958
+replace govrev = govrev / 1000 		if countryname == "Mozambique" & year >= 1950
+replace govrev = govrev * 1000 		if inrange(year, 1940, 1949) & countryname == "Nigeria"
+replace govrev = govrev * 10 		if countryname == "Kenya" & year <= 1949
+replace govrev = govrev * 1000 		if countryname == "Tanzania" & year >= 1975
+replace govrev = govrev * 100 		if inrange(year, 1850, 1859) & countryname == "Mauritius"
+replace govrev = govrev / 1000 		if countryname == "SouthAfrica" & year == 1952
+replace govrev = govrev / 10 		if countryname == "Mauritania"
+replace govrev = govrev / 1000 		if countryname == "Sudan"  
+replace govrev = govrev * 100 		if countryname == "Zaire" & inrange(year, 1992, 1995)
+replace govrev = govrev * (10^-6)   if countryname == "Zaire" & year <= 1991
+replace govrev = govrev / 3 		if countryname == "Zaire" & year <= 1987
+replace govrev = govrev / 1000 		if countryname == "Zaire" & year <= 1958
+replace govrev = govrev / 1000 		if countryname == "Zambia"
+replace govrev = govrev / 5 		if countryname == "Madagascar" & year <= 2000
 
 * Data on Zaire is likely incorrect due to differences with other sources and ratio to GDP even after fixing units 
 replace govrev = . if countryname == "Zaire"

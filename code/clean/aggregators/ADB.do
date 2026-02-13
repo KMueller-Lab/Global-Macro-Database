@@ -25,9 +25,9 @@ global input3 "${data_raw}/aggregators/ADB/ADB_macro"
 global input4 "${data_raw}/aggregators/ADB/ADB_gov"
 global output "${data_clean}/aggregators/ADB/ADB.dta"
 
-* ===============================================================================
+* ==============================================================================
 *	PROCESS
-* ===============================================================================
+* ==============================================================================
 
 * Open
 import excel using "${input1}", clear allstring
@@ -99,10 +99,10 @@ import excel using "${input4}", clear allstring
 
 * Rename rows
 drop if C == ""
-replace A = "govrev_GDP"   if A == "Government Revenue (% of GDP)"
-replace A = "govdef_GDP"   if A == "Government Net Lending/Net Borrowing (% of GDP)"
-replace A = "govtax_GDP"   if A == "Government Taxes (% of GDP)"
-replace A = "govexp_GDP"   if A == "Government Expenditure (% of GDP)"
+replace A = "gen_govrev_GDP"   if A == "Government Revenue (% of GDP)"
+replace A = "gen_govdef_GDP"   if A == "Government Net Lending/Net Borrowing (% of GDP)"
+replace A = "gen_govtax_GDP"   if A == "Government Taxes (% of GDP)"
+replace A = "gen_govexp_GDP"   if A == "Government Expenditure (% of GDP)"
 
 * Rename columns
 ren A code
@@ -191,10 +191,10 @@ save `temp_master', replace
 
 ********************************************************************************
 * Deduce government finance in nominal values
-gen ADB_govexp = (ADB_govexp_GDP * ADB_nGDP) / 100
-gen ADB_govrev = (ADB_govrev_GDP * ADB_nGDP) / 100
-gen ADB_govdef = (ADB_govdef_GDP * ADB_nGDP) / 100
-gen ADB_govtax = (ADB_govtax_GDP * ADB_nGDP) / 100
+gen ADB_gen_govexp = (ADB_gen_govexp_GDP * ADB_nGDP) / 100
+gen ADB_gen_govrev = (ADB_gen_govrev_GDP * ADB_nGDP) / 100
+gen ADB_gen_govdef = (ADB_gen_govdef_GDP * ADB_nGDP) / 100
+gen ADB_gen_govtax = (ADB_gen_govtax_GDP * ADB_nGDP) / 100
 
 * Extract ISO3 
 replace countryname = "Brunei"		if countryname == "Brunei Darussalam"
@@ -212,7 +212,7 @@ drop countryname
 * Fix units for China and Hong Kong in 2020
 replace ADB_M2 = ADB_M2 * (10^9) if ISO3 == "CHN" & year == 2020 & ADB_M2 < 1
 replace ADB_M2 = ADB_M2 * (10^9) if ISO3 == "HKG" & year == 2020 & ADB_M2 < 1
-replace ADB_govtax = . if ISO3 == "TUV"
+replace ADB_gen_govtax = . if ISO3 == "TUV"
 
 * Fix units for Real GDP for Myanmar in 2000
 replace ADB_rGDP = ADB_rGDP * 10 if ISO3 == "MMR" & year == 2000
@@ -228,6 +228,15 @@ foreach var in `r(varlist)'{
 gen ADB_imports_GDP = (ADB_imports / ADB_nGDP) * 100
 gen ADB_exports_GDP = (ADB_exports / ADB_nGDP) * 100
 gen ADB_inv_GDP     = (ADB_inv / ADB_nGDP) * 100
+
+* Add the deflator
+gen ADB_deflator = (ADB_nGDP / ADB_rGDP) * 100
+
+* Rebase variables to $base_year
+gmd_rebase ADB
+
+* Check for ratios and levels 
+check_gdp_ratios ADB
 
 * ===============================================================================
 * 	Output

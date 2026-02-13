@@ -21,7 +21,7 @@
 * Clear
 clear
 
-* Set up
+* Set up 
 global input  "${data_raw}/aggregators/NBS/NBS.xlsx"
 global output "${data_clean}/aggregators/NBS/NBS.dta"
 
@@ -1659,13 +1659,24 @@ replace NBS_USDfx = NBS_USDfx / 500 if ISO3 == "GRC"
 sort ISO3 year
 encode ISO3, gen(id)
 xtset id year
-by id: gen NBS_infl = (NBS_CPI - L.NBS_CPI) / L.NBS_CPI * 100 if L.NBS_CPI != .
+by id: gen NBS_infl = (NBS_CPI - L.NBS_CPI) / L.NBS_CPI * 100
 drop id
 
 * Drop
 drop NBS_GBPfx NBS_FRFfx
 
+* Add government debt levels 
+gen NBS_govdebt = (NBS_govdebt_GDP * NBS_nGDP) / 100
+
 * Austria Hungary population wrong when cross-checking with official Census data
+* Assign all values to central government. Not specified in the source but central government was the main government in that period.
+ren NBS_gov* NBS_cgov*
+
+* Rebase variables to $base_year
+gmd_rebase NBS
+
+* Check for ratios and levels 
+check_gdp_ratios NBS
 
 * ==============================================================================
 *  OUTPUT

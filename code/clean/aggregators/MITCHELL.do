@@ -11,7 +11,7 @@
 * National University of Singapore
 *
 * Created: 2024-10-09
-*
+* 
 * ==============================================================================
 
 * ==============================================================================
@@ -23,7 +23,7 @@ clear
 
 * Define output file
 global input "${data_temp}/MITCHELL/"
-global output "${data_clean}/aggregators/MITCHELL/Mitchell.dta"
+global output "${data_clean}/aggregators/MITCHELL/MITCHELL.dta"
 
 * ==============================================================================
 * CLEAN DATA
@@ -119,7 +119,7 @@ drop EUR_irrevocable_FX _merge
 
 
 * Derive trade variables using BIS exchange rate
-merge 1:1 ISO3 year using "${data_clean}/aggregators/BIS/BIS_USDfx.dta", nogen
+merge 1:1 ISO3 year using "${data_clean}/aggregators/BIS/BIS_USDfx/BIS_USDfx.dta", nogen
 replace imports = imports_USD * BIS_USDfx if imports == .
 replace exports = exports_USD * BIS_USDfx if exports == .
 drop BIS_USDfx
@@ -138,7 +138,7 @@ replace inv = . if ISO3 == "RUS"
 
 * Calculate gross capital formation as the sum of fixed capital formation and stocks
 replace inv = finv + stocks if stocks != . & inv == .
-drop stocks infl
+drop stocks
 
 * Data on Turkey shows values that are likely to be wrong
 replace govtax = . if ISO3 == "TUR"
@@ -191,8 +191,7 @@ replace CA_USD = . if inlist(ISO3, "ECU", "IRQ", "MEX", "SLE", "SDN", "TWN", "VE
 replace Mitchell_govtax_GDP = . if ISO3 == "GRC" & year <= 1940
 
 * Add government deficit as the difference between government revenue and expenditure
-gen govdef_GDP = Mitchell_govexp_GDP - Mitchell_govrev_GDP
-
+gen govdef_GDP = Mitchell_govrev_GDP - Mitchell_govexp_GDP
 
 * Rename
 ren nGDP_LCU 	Mitchell_nGDP
@@ -213,19 +212,33 @@ ren inv			Mitchell_inv
 ren CA			Mitchell_CA
 ren CA_USD		Mitchell_CA_USD
 ren govdef_GDP	Mitchell_govdef_GDP
-
-* Derive inflation rate
-sort ISO3 year
-encode ISO3, gen(id)
-xtset id year
-by id: gen Mitchell_infl = (Mitchell_CPI - L.Mitchell_CPI) / L.Mitchell_CPI * 100 if L.Mitchell_CPI != .
-drop id
+ren infl	 	Mitchell_infl
 
 * All data for Yugoslavia and Zimbabwe is likely to be wrong
-drop if inlist(ISO3, "YUG", "SRB", "ZMB")
+drop if inlist(ISO3, "YUG", "SRB", "ZWE")
 
+* Assign all values to central government. Specified in the source.
+ren Mitchell_gov* Mitchell_cgov*
 
+* Remove all the ratio for Ecuador 
+qui ds *_GDP 
+foreach var in `r(varlist)' {
+	qui replace `var' = . if ISO3 == "ECU"
+}
 
+* Drop all data for Greece before the 1950s because the figures can't be harmonized 
+* with other sources 
+drop if ISO3 == "GRC" & year <= 1949
+
+* There is a break in India's GDP in 1991 
+drop if ISO3 == "IND" & year == 1991
+
+* Drop Mitchell values before 1956 for govrev in Korea 
+replace Mitchell_cgovrev_GDP = . if inrange(year, 1953, 1956) & ISO3 == "KOR"
+replace Mitchell_cgovrev = . if inrange(year, 1953, 1956) & ISO3 == "KOR"
+
+* Check for ratios and levels 
+check_gdp_ratios Mitchell
 
 * ==============================================================================
 * 			Final set up

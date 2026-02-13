@@ -22,8 +22,8 @@
 * ==============================================================================
 * Define input and output files 
 clear
-global input "${data_raw}/aggregators/WB/WDI.dta"
-global output "${data_clean}/aggregators/WB/WDI"
+global input "${data_raw}/aggregators/WB/WDI/WDI.dta"
+global output "${data_clean}/aggregators/WB/WDI/WDI"
 
 * ==============================================================================
 * 	PROCESS
@@ -38,8 +38,9 @@ drop if region == ""
 * Rename countrycode as ISO3
 ren countrycode ISO3
 
-* Drop Channel Islands 
+* Drop Channel Islands and MFA 
 drop if ISO3 == "CHI"
+drop if ISO3 == "MAF"
 
 * Drop unnecessary variables 
 drop region adminregion adminregionname incomelevel lendingtype lendingtypename
@@ -54,11 +55,11 @@ ren yr* *
 replace GC_DOD_TOTL_CN = (GC_DOD_TOTL_CN/NY_GDP_MKTP_CN) * 100
 
 * Rename variables 
-ren (SP_POP_TOTL NY_GDP_MKTP_CN NY_GDP_MKTP_KN NY_GDP_MKTP_CD NY_GDP_MKTP_KD NY_GDP_PCAP_KN FP_CPI_TOTL FP_CPI_TOTL_ZG NE_GDI_TOTL_CN NE_GDI_FTOT_CN NY_GNS_ICTR_CN NE_CON_TOTL_CN NE_CON_TOTL_KN NE_IMP_GNFS_CN NE_IMP_GNFS_CD NE_EXP_GNFS_CN NE_EXP_GNFS_CD PA_NUS_FCRF PX_REX_REER BN_CAB_XOKA_GD_ZS GC_TAX_TOTL_CN GC_DOD_TOTL_CN GC_XPN_TOTL_CN GC_REV_XGRT_GD_ZS GC_TAX_TOTL_GD_ZS) ///
-    (pop nGDP rGDP nGDP_USD rGDP_USD rGDP_pc CPI infl inv finv sav cons rcons imports imports_USD exports exports_USD USDfx REER CA_GDP govtax govdebt_GDP govexp govrev_GDP govtax_GDP)
+ren (SP_POP_TOTL NY_GDP_MKTP_CN NY_GDP_MKTP_KN NY_GDP_MKTP_CD NY_GDP_MKTP_KD NY_GDP_PCAP_KN FP_CPI_TOTL FP_CPI_TOTL_ZG NE_GDI_TOTL_CN NE_GDI_FTOT_CN NY_GNS_ICTR_CN NE_CON_TOTL_CN NE_CON_TOTL_KN NE_IMP_GNFS_CN NE_IMP_GNFS_CD NE_EXP_GNFS_CN NE_EXP_GNFS_CD PA_NUS_FCRF PX_REX_REER BN_CAB_XOKA_GD_ZS  GC_DOD_TOTL_CN   ) ///
+    (pop nGDP rGDP nGDP_USD rGDP_USD rGDP_pc CPI infl inv finv sav cons rcons imports imports_USD exports exports_USD USDfx REER CA_GDP  govdebt_GDP  )
 
 * Make variables into millions 
-foreach var of varlist  nGDP rGDP rGDP_USD nGDP_USD inv finv sav cons rcons imports imports_USD exports exports_USD pop govexp govtax {
+foreach var of varlist  nGDP rGDP rGDP_USD nGDP_USD inv finv sav cons rcons imports imports_USD exports exports_USD pop {
 	replace `var'= `var' / 1000000
 }
 
@@ -71,33 +72,28 @@ replace inv = .  if inv  == 0
 replace cons = . if cons == 0
 
 * Fix Venezuela units 
-foreach var of varlist  nGDP rGDP rGDP_USD nGDP_USD inv finv sav cons rcons imports imports_USD exports exports_USD govexp govtax {
-	replace `var'= `var' / (10^11) if ISO3 == "VEN"
-}
-
-* Fix Sierra Leone units 
-foreach var of varlist USDfx nGDP rGDP rGDP_USD nGDP_USD inv finv sav cons rcons imports imports_USD exports exports_USD govexp govtax {
-	replace `var'= `var' * 1000 if ISO3 == "SLE"
+foreach var of varlist  nGDP rGDP rGDP_USD nGDP_USD inv finv sav cons rcons imports imports_USD exports exports_USD {
+	replace `var'= `var' / (10^5) if ISO3 == "VEN"
 }
 
 * Fix Afghanistan units 
-foreach var of varlist  nGDP rGDP rGDP_USD nGDP_USD inv finv sav cons rcons imports imports_USD exports exports_USD govexp govtax {
+foreach var of varlist  nGDP rGDP rGDP_USD nGDP_USD inv finv sav cons rcons imports imports_USD exports exports_USD {
 	replace `var'= `var' / 1000 if ISO3 == "AFG" & year <= 1978
 }
 
+* Fix Indonesia units 
+foreach var of varlist  nGDP imports inv finv exports cons {
+	replace `var'= `var' / 1000 if ISO3 == "IDN" & year <= 1965
+}
 
 * Sao-Tome & principe exchange rate issues
-replace USDfx = USDfx * 1000 if ISO3 == "STP"
+replace USDfx = USDfx / 1000 if ISO3 == "STP"
 
 
 * Fix units for Spain's government debt 
 replace govdebt_GDP = govdebt_GDP / 100 if ISO3 == "ESP" & inrange(year, 1970, 1971)
 
-* Fix Oman units
-replace rGDP = rGDP * (10^6) if ISO3 == "OMN" & year <= 1964
-
-* Generate government revenue nominal values and capital account
-gen govrev = (govrev_GDP * nGDP) / 100
+* Generate capital account level
 gen CA = (CA_GDP * nGDP) / 100
 
 * Convert currency for Eurozone countries
@@ -112,15 +108,17 @@ gen rGDP_pc_USD = rGDP_USD / pop
 gen cons_GDP    = (cons / nGDP) * 100
 gen imports_GDP = (imports / nGDP) * 100
 gen exports_GDP = (exports / nGDP) * 100
-gen govexp_GDP  = (govexp / nGDP) * 100
 gen finv_GDP    = (finv / nGDP) * 100
 gen inv_GDP     = (inv / nGDP) * 100
 
 * Investment to GDP ratio for the US is likely wrong
 replace finv_GDP = . if year <= 1971 & ISO3 == "USA"
 
+* Add the deflator
+gen deflator = (nGDP / rGDP) * 100
+gen x = rGDP
 * Add source identifier
-qui ds year ISO3, not
+qui ds year ISO3 x, not
 foreach var in `r(varlist)' {
 	ren `var' WDI_`var'
 }
@@ -128,6 +126,15 @@ foreach var in `r(varlist)' {
 * Drop 
 drop WDI_FM_LBL_BMNY_CN  
 
+* Add government debt levels 
+gen WDI_govdebt = (WDI_govdebt_GDP * WDI_nGDP) / 100
+
+* Assign all values to central government. Specified in the source.
+ren WDI_gov* WDI_cgov*
+
+* Check for ratios and levels and rebase 
+check_gdp_ratios WDI
+gmd_rebase WDI 
 
 * ==============================================================================
 * 	OUTPUT

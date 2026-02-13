@@ -256,34 +256,58 @@ save `temp_na', replace
 * ==============================================================================
 
 * Mauritania's data is multiplied by 10 after 2012 for trade data and 2009 for exchange rate
-gmdfixunits AMF_imports if ISO3 == "MRT" & year <= 2012, divide(10)
-gmdfixunits AMF_exports if ISO3 == "MRT" & year <= 2012, divide(10)
-gmdfixunits AMF_govexp if ISO3 == "MRT" & year <= 2012, divide(10)
-gmdfixunits AMF_govrev if ISO3 == "MRT" & year <= 2012, divide(10)
-gmdfixunits AMF_govdef if ISO3 == "MRT" & year <= 2012, divide(10)
-gmdfixunits AMF_govtax if ISO3 == "MRT" & year <= 2012, divide(10)
-gmdfixunits AMF_cons if ISO3 == "MRT" & year <= 2012, divide(10)
+local varlist AMF_imports AMF_exports AMF_govexp AMF_govrev AMF_govdef AMF_nGDP AMF_govtax AMF_cons AMF_inv
+foreach var of local varlist {
+	qui replace `var' = `var' / 10 if ISO3 == "MRT" & year <= 2012
+	gmdaddnote_source AMF  "Values converted to current currency." `var'
+}
 
+qui replace AMF_USDfx = AMF_USDfx / 10 if ISO3 == "MRT" & year == 2009
 
-* Mauritania's data is multiplied by 10 before 2009 for exchange rate
-gmdfixunits AMF_USDfx if ISO3 == "MRT" & year <= 2009, divide(10)
+* Mauritania's data is multiplied by 10 in 2014 for government finances 
+local varlist AMF_govexp AMF_govrev AMF_govdef AMF_nGDP AMF_govtax
+foreach var of local varlist {
+	qui replace `var' = `var' / 10 if ISO3 == "MRT" & year == 2014
+	gmdaddnote_source AMF  "Values were multiplied by 10 in 2014" `var'
+}
 
 * Sudan's data is multiplied by 10 after 2012
-gmdfixunits AMF_imports if ISO3 == "SDN" & year <= 1996, divide(100)
-gmdfixunits AMF_exports if ISO3 == "SDN" & year <= 1996, divide(100)
-gmdfixunits AMF_inv if ISO3 == "SDN" & year <= 1996, divide(100)
+local varlist AMF_imports AMF_exports AMF_inv
+foreach var of local varlist {
+	qui replace `var' = `var' / 10 if ISO3 == "SDN" & year >= 2012
+	gmdaddnote_source AMF  "Values converted to current currency." `var'
+}
+
+* Sudan's data is multiplied by 100 before 1996
+local varlist AMF_imports AMF_exports AMF_inv AMF_cons AMF_USDfx
+foreach var of local varlist {
+	qui replace `var' = `var' / 100 if ISO3 == "SDN" & year <= 1996
+	gmdaddnote_source AMF  "Values converted to current currency." `var'
+}
+
+* There is an error in Tunisian data in 2018
+qui replace AMF_govexp = AMF_govexp / 100 if ISO3 == "TUN" & year == 2018
+gmdaddnote_source AMF  "Fixed apparent error in data." AMF_govexp
 
 * Derive values in GDP
-gen AMF_govexp_GDP = (AMF_govexp / AMF_nGDP) * 100
-gen AMF_govdef_GDP = (AMF_govdef / AMF_nGDP) * 100
-gen AMF_govrev_GDP = (AMF_govrev / AMF_nGDP) * 100
-gen AMF_govtax_GDP = (AMF_govtax / AMF_nGDP) * 100
-gen AMF_CA_GDP 	   = (AMF_CA     / AMF_nGDP) * 100
+gen AMF_govexp_GDP  = (AMF_govexp / AMF_nGDP) * 100
+gen AMF_govdef_GDP  = (AMF_govdef / AMF_nGDP) * 100
+gen AMF_govrev_GDP  = (AMF_govrev / AMF_nGDP) * 100
+gen AMF_govtax_GDP  = (AMF_govtax / AMF_nGDP) * 100
+gen AMF_CA_GDP 	    = (AMF_CA     / AMF_nGDP) * 100
 gen AMF_cons_GDP    = (AMF_cons / AMF_nGDP) * 100
 gen AMF_imports_GDP = (AMF_imports / AMF_nGDP) * 100
 gen AMF_exports_GDP = (AMF_exports / AMF_nGDP) * 100
 gen AMF_inv_GDP     = (AMF_inv / AMF_nGDP) * 100
 
+* Assign all government finance to general government. Despite the source not specifying it, the data is closer to that of WEO which uses general government
+ren AMF_gov* AMF_gen_gov*
+
+* Rebase variables to $base_year
+gmd_rebase AMF
+
+* Check for ratios and levels 
+check_gdp_ratios AMF
 
 * ==============================================================================
 * 	Output

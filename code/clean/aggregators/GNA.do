@@ -22,10 +22,10 @@
 
 * Define input and output files
 clear 
-global input1 "${data_raw}/aggregators/Groningen/western_europe/"
-global input2 "${data_raw}/aggregators/Groningen/latin_america/hna_latam_10.xls"
+global input1 "${data_raw}/aggregators/GNA/western_europe/"
+global input2 "${data_raw}/aggregators/GNA/latin_america/hna_latam_10.xls"
 global inputs: dir `"$input1"'  files "*.xls"
-global output "${data_clean}/aggregators/Groningen/GNA"
+global output "${data_clean}/aggregators/GNA/GNA"
 
 * ==============================================================================
 * 	WESTERN EUROPE

@@ -184,7 +184,7 @@ egen Serbiatax = rowtotal(Serbia BJ BK)
 egen Spaintax = rowtotal(Spain BN BO BP)
 egen Swedentax = rowtotal(Sweden BS BT)
 egen Russiatax = rowtotal(Russia BE BF)
-egen UnitedKingdomtax = rowtotal(UnitedKingdom X Y)
+egen UnitedKingdomtax = rowtotal(UnitedKingdom BY BZ)
 ren Romania Romaniatax
 ren Switzerland Switzerlandtax
 keep year *tax
@@ -321,6 +321,9 @@ ren WestGermany Germany
 * Destring
 qui drop if year == ""
 destring_check
+
+* There is likely a typo in government tax revenue for Ireland in 1982
+replace AM = 1113 if year == 1982
 
 
 * Calculate total tax revenue

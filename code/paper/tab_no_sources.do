@@ -18,12 +18,11 @@
 * ==============================================================================
 
 * Open source sheet 
-insheet using "${data_helper}/sources.csv", clear names
+import delimited using "${data_helper}/sources.csv", clear varnames(1) stringc(_all) bindquote(strict)
 
 
 * Make list of variables in each source 
 gen varlist = ""
-drop if source_abbr == "IDCM"
 glevelsof source_abbr, loc(sources)
 
 foreach s of loc sources {
@@ -180,9 +179,13 @@ save `tab_no_sources_meta', replace
 * ==============================================================================
 ren download_date download_date_bis
 merge m:1 source_abbr using "${data_temp}/download_dates.dta"
-replace download_date_bis = download_date if _merge == 3 
-drop download_date _merge
-ren download_date_bis download_date
+
+* Format dates correctly 
+gen datevar = date(download_date_bis, "MDY")
+gen date_ymd = string(datevar, "%tdCY-N-D")
+replace download_date = date_ymd if _merge == 1
+drop download_date_bis _merge date_ymd datevar
+drop if source_abbr == "IDCM"
 
 * ==============================================================================
 * MERGE TOGETHER RELEVANT INFORMATION, FORMAT TABLE 
@@ -204,7 +207,6 @@ order row_num source_abbr dataset download_date digitized from to forecasts varl
 
 * Drop
 drop row_num dataset
-drop if source_abbr == "IDCM"
 
 * Add source citation 
 replace source = "\citet{" + source_abbr + "}"
@@ -217,5 +219,28 @@ order source source_abbr download_date digitized from to forecast varlist num_co
 * Plot forecasts as "---" if no forecasts for readability
 replace forecasts = "---" if forecasts == "0"
 
-* Export into LaTeX
-gmdwriterows *, path("${tables}/tab_no_sources.tex")
+* Replace download date by manual download 
+replace download_date = "Manual Download" if download_date == ""
+
+* Add CS to country specific 
+replace source_abbr = "\citetalias{CS" + substr(source, -2, 1) + "_" + substr(source, 8, 3) + "}" if num_country == "1"
+replace source = "\citet{CS" + substr(source, -2, 1) + "_" + substr(source, 8, 3) + "}" if num_country == "1"
+
+* Assert that historical sources are manually downloaded and vice-versa 
+replace download_date = "" if download_date == "Manual Download"
+
+* Export into LaTeX panels A and B separately
+preserve 
+destring num_country, replace 
+drop if num_country == 1
+tostring num_country, replace
+gmdwriterows *, path("${tables}/tab_no_sources_aggregators.tex")
+restore 
+
+preserve 
+destring num_country, replace 
+keep if num_country == 1
+tostring num_country, replace
+gmdwriterows *, path("${tables}/tab_no_sources_CS.tex")
+restore 
+

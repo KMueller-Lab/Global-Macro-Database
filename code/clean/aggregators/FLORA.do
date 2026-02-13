@@ -22,7 +22,7 @@
 * ==============================================================================
 clear
 global input "${data_raw}/aggregators/FLORA/Flora_expenditure_series_Europe.xlsx"
-global output "${data_clean}/aggregators/FLORA/Flora.dta"
+global output "${data_clean}/aggregators/FLORA/FLORA.dta"
 
 * Save
 tempfile temp_master
@@ -35,29 +35,35 @@ save `temp_master', replace emptyok
 qui import excel using "$input", clear sheet("Austria") allstring
 
 * Keep relevant variables
-keep A AK
+keep A M Y AK
 
 * Drop empty rows
 drop in 1/5
 drop in 54/l
 
+* Destring
+destring *, force replace
+
 * Rename
 ren A year
-ren AK centralgov_exp
+ren M cgovexp 
+ren Y nGDP
+ren AK cgovexp_GDP
+
+* Turn all zeros into missing
+qui ds year, not
+foreach var in `r(varlist)' {
+	qui replace `var' = . if `var' == 0
+}
+
+* Convert units 
+replace cgovexp = cgovexp / 10
+
 
 * Add country's ISO3 code
 gen ISO3 = "AUT"
 
-* Destring
-destring year centralgov_exp, replace
-gen generalgov_exp = .
-
-* Order
-order ISO3 year centralgov_exp generalgov_exp
-
 * Save
-tempfile temp_AUT
-save `temp_AUT', replace emptyok
 append using `temp_master'
 save `temp_master', replace
 
@@ -68,29 +74,35 @@ save `temp_master', replace
 qui import excel using "$input", clear sheet("Belgium") allstring
 
 * Keep relevant variables
-keep A AL
+keep A M Z AL 
 
 * Drop empty rows
 drop in 1/5
 drop in 142/l
 
+* Destring
+destring *, force replace
+
 * Rename
 ren A year
-ren AL centralgov_exp
+ren M cgovexp 
+ren Z nGDP 
+ren AL cgovexp_GDP
+
+* Turn all zeros into missing
+qui ds year, not
+foreach var in `r(varlist)' {
+	qui replace `var' = . if `var' == 0
+}
 
 * Add country's ISO3 code
 gen ISO3 = "BEL"
 
-* Destring
-destring year centralgov_exp, replace
-gen generalgov_exp = .
-
-* Order
-order ISO3 year centralgov_exp generalgov_exp
+* Convert Belgium units
+replace nGDP    = nGDP 	  * (10^3)  if year > 1913
+replace cgovexp = cgovexp * (10^-3) if year < 1913
 
 * Save
-tempfile temp_BEL
-save `temp_BEL', replace emptyok
 append using `temp_master'
 save `temp_master', replace
 
@@ -101,37 +113,47 @@ save `temp_master', replace
 qui import excel using "$input", clear sheet("Denmark") allstring
 
 * Keep relevant variables
-keep A AK
+keep A M Y AK
 
 * Drop empty rows
 drop in 1/5
 
-* Destring
-destring AK, force replace
-
 * Arrange the value correctly
-gen N = .
+gen AK1 = ""
+gen AK2 = ""
 forvalues i=1/47 {
     local j = `i' + 162
-    replace N = AK[`j'] in `i'
+    replace AK1 = AK[`j'] in `i'
+	replace AK2 = M[`j'] in `i'
 }
-drop in 108/l 
+
+drop in 159/l 
+
+* Destring
+destring *, force replace
+replace AK = . if AK == 0
 
 * Rename
 ren A year
-ren AK centralgov_exp
-ren N generalgov_exp
+ren AK cgovexp_GDP
+ren AK1 gen_govexp_GDP
+ren M  cgovexp 
+ren AK2 gen_govexp
+ren Y nGDP
+
+* Turn all zeros into missing
+qui ds year, not
+foreach var in `r(varlist)' {
+	qui replace `var' = . if `var' == 0
+}
 
 * Add country's ISO3 code
 gen ISO3 = "DNK"
-destring year, replace
 
-* Order
-order ISO3 year centralgov_exp generalgov_exp
+* Convert units
+qui replace cgovexp = cgovexp / 1000 if year <= 1901
 
 * Save
-tempfile temp_DNK
-save `temp_DNK', replace emptyok
 append using `temp_master'
 save `temp_master', replace
 
@@ -142,37 +164,47 @@ save `temp_master', replace
 qui import excel using "$input", clear sheet("Finland") allstring
 
 * Keep relevant variables
-keep A AL
+keep A M Z AL
 
 * Drop empty rows
 drop in 1/5
 
-* Destring
-destring AL, force replace
-
 * Arrange the value correctly
-gen N = .
+gen N = ""
+gen N1 = ""
 forvalues i=1/28 {
     local j = `i' + 98
     replace N = AL[`j'] in `i'
+    replace N1 = M[`j'] in `i'
 }
 drop in 95/l
 
+* Destring
+destring *, force replace
+
+
 * Rename
 ren A year
-ren AL centralgov_exp
-ren N generalgov_exp
+ren AL cgovexp_GDP
+ren M  cgovexp
+ren N gen_govexp_GDP
+ren N1 gen_govexp
+ren Z nGDP
+
+* Convert units 
+qui replace cgovexp = cgovexp / 1000
+qui replace gen_govexp = gen_govexp / 100000
+
+* Turn all zeros into missing
+qui ds year, not
+foreach var in `r(varlist)' {
+	qui replace `var' = . if `var' == 0
+}
 
 * Add country's ISO3 code
 gen ISO3 = "FIN"
-destring *, replace
-
-* Order
-order ISO3 year centralgov_exp generalgov_exp
 
 * Save
-tempfile temp_FIN
-save `temp_FIN', replace emptyok
 append using `temp_master'
 save `temp_master', replace
 
@@ -183,29 +215,36 @@ save `temp_master', replace
 qui import excel using "$input", clear sheet("France") allstring
 
 * Keep relevant variables
-keep A AM
+keep A M AA AM 
 
 * Drop empty rows
 drop in 1/5
 drop in 155/l
 
+* Destring
+destring *, force replace
+
 * Rename
 ren A year
-ren AM centralgov_exp
+ren M cgovexp
+ren AA nGDP
+ren AM cgovexp_GDP
+
+* Turn all zeros into missing
+qui ds year, not
+foreach var in `r(varlist)' {
+	qui replace `var' = . if `var' == 0
+}
 
 * Add country's ISO3 code
 gen ISO3 = "FRA"
 
-* Destring
-destring year centralgov_exp, replace
-gen generalgov_exp = .
-
-* Order
-order ISO3 year centralgov_exp generalgov_exp
+* Convert units 
+replace nGDP 	= nGDP 	  * 1000
+replace nGDP 	= nGDP 	  * 10   if year >= 1957
+replace cgovexp = cgovexp / 10   if year <= 1946
 
 * Save
-tempfile temp_FRA
-save `temp_FRA', replace emptyok
 append using `temp_master'
 save `temp_master', replace
 
@@ -216,37 +255,51 @@ save `temp_master', replace
 qui import excel using "$input", clear sheet("Germany") allstring
 
 * Keep relevant variables
-keep A AK
+keep A M Y AK
 
 * Drop empty rows
 drop in 1/5
 
-* Destring
-destring AK, force replace
-
 * Arrange the value correctly in excel
-gen N = .
+gen N = ""
+gen N1 = ""
 forvalues i=1/104 {
     local j = `i' + 130
     replace N = AK[`j'] in `i'
+    replace N1 = M[`j'] in `i'
 }
 drop in 127/l
 
+* Destring
+destring *, force replace
+
+
 * Rename
 ren A year
-ren AK centralgov_exp
-ren N generalgov_exp
+ren AK cgovexp_GDP
+ren N gen_govexp_GDP
+ren M cgovexp
+ren N1 gen_govexp
+ren Y nGDP
+
+* Destring
+destring *, force replace
+
+* Turn all zeros into missing
+qui ds year, not
+foreach var in `r(varlist)' {
+	qui replace `var' = . if `var' == 0
+}
+
+* Convert units
+replace cgovexp    = cgovexp 	* (10^-12) if year <= 1913
+replace nGDP       = nGDP 		* (10^-12) if year <= 1913
+replace gen_govexp = gen_govexp * (10^-12) if year <= 1913
 
 * Add country's ISO3 code
 gen ISO3 = "DEU"
-destring year, replace
-
-* Order
-order ISO3 year centralgov_exp generalgov_exp
 
 * Save
-tempfile temp_DEU
-save `temp_DEU', replace emptyok
 append using `temp_master'
 save `temp_master', replace
 
@@ -257,28 +310,35 @@ save `temp_master', replace
 qui import excel using "$input", clear sheet(" Italy") allstring
 
 * Keep relevant variables
-keep A AK
+keep A M Y AK
 
 * Drop empty rows
 drop in 1/5
 drop in 115/l
-replace A = "1974" if A == "1973" & AK == ""
+qui replace A = "1974" if A == "1973" & AK == ""
+
+* Destring
+destring *, force replace
 
 * Rename
 ren A year
-ren AK centralgov_exp
+ren M cgovexp
+ren Y nGDP
+ren AK cgovexp_GDP
+
+* Turn all zeros into missing
+qui ds year, not
+foreach var in `r(varlist)' {
+	qui replace `var' = . if `var' == 0
+}
+
+* Convert units
+qui replace nGDP = nGDP * 1000 if year >= 1952
 
 * Add country's ISO3 code
 gen ISO3 = "ITA"
-destring year centralgov_exp, replace
-gen generalgov_exp = .
-
-* Order
-order ISO3 year centralgov_exp generalgov_exp
 
 * Save
-tempfile temp_ITA
-save `temp_ITA', replace emptyok
 append using `temp_master'
 save `temp_master', replace
 
@@ -289,27 +349,31 @@ save `temp_master', replace
 qui import excel using "$input", clear sheet("Netherlands") allstring
 
 * Keep relevant variables
-keep A AL
+keep A M Z AL
 
 * Drop empty rows
 drop in 1/5
 drop in 127/l
 
+* Destring
+destring *, force replace
+
 * Rename
 ren A year
-ren AL centralgov_exp
+ren M cgovexp
+ren Z nGDP
+ren AL cgovexp_GDP
+
+* Turn all zeros into missing
+qui ds year, not
+foreach var in `r(varlist)' {
+	qui replace `var' = . if `var' == 0
+}
 
 * Add country's ISO3 code
 gen ISO3 = "NLD"
-destring year centralgov_exp, replace
-gen generalgov_exp = .
-
-* Order
-order ISO3 year centralgov_exp generalgov_exp
 
 * Save
-tempfile temp_NLD
-save `temp_NLD', replace emptyok
 append using `temp_master'
 save `temp_master', replace
 
@@ -320,37 +384,49 @@ save `temp_master', replace
 qui import excel using "$input", clear sheet("Norway") allstring
 
 * Keep relevant variables
-keep A AK
+keep A M Y AK
 
 * Drop empty rows
 drop in 1/6
 
-* Destring
-destring AK, force replace
-
 * Arrange the value correctly
-gen N = .
+gen N = ""
+gen N1 = ""
 forvalues i=1/61 {
     local j = `i' + 130
     replace N = AK[`j'] in `i'
+    replace N1 = M[`j'] in `i'
 }
 drop in 127/l 
 
 * Rename
 ren A year
-ren AK centralgov_exp
-ren N generalgov_exp
+ren M cgovexp
+ren Y nGDP
+ren AK cgovexp_GDP
+ren N gen_govexp_GDP
+ren N1 gen_govexp
+
+* Destring
+destring *, force replace
+
+* Turn all zeros into missing
+qui ds year, not
+foreach var in `r(varlist)' {
+	qui replace `var' = . if `var' == 0
+}
 
 * Add country's ISO3 code
 gen ISO3 = "NOR"
-destring year, replace
 
-* Order
-order ISO3 year centralgov_exp generalgov_exp
+* Convert units
+replace cgovexp    = cgovexp    / 10
+replace gen_govexp = gen_govexp / 10
+
+replace cgovexp    = cgovexp    / 100 if year < 1913
+replace gen_govexp = gen_govexp / 100 if year < 1913
 
 * Save
-tempfile temp_NOR
-save `temp_NOR', replace emptyok
 append using `temp_master'
 save `temp_master', replace
 
@@ -361,40 +437,42 @@ save `temp_master', replace
 qui import excel using "$input", clear sheet("Sweden") allstring
 
 * Keep relevant variables
-keep A AL
+keep A M Y AL
 
 * Drop empty rows
 drop in 1/6
 
-* Destring
-destring AL, force replace
-
 * Arrange the value correctly
-gen N = .
+gen N = ""
+gen N1 = ""
 forvalues i=1/63 {
     local j = `i' + 130
     replace N = AL[`j'] in `i'
+    replace N1 = M[`j'] in `i'
 }
 drop in 127/l 
 
 * Rename
 ren A year
-ren AL centralgov_exp
-ren N generalgov_exp
+ren M cgovexp
+ren Y nGDP
+ren AL cgovexp_GDP
+ren N gen_govexp_GDP
+ren N1 gen_govexp
+
+* Destring
+destring *, force replace
+
+* Turn all zeros into missing
+qui ds year, not
+foreach var in `r(varlist)' {
+	qui replace `var' = . if `var' == 0
+}
 
 * Add country's ISO3 code
 gen ISO3 = "SWE"
 
-* Destring
-destring year, replace
-
-* Order
-order ISO3 year centralgov_exp generalgov_exp
-replace centralgov_exp = . if centralgov_exp == 0
-
 * Save
-tempfile temp_SWE
-save `temp_SWE', replace emptyok
 append using `temp_master'
 save `temp_master', replace
 
@@ -405,37 +483,49 @@ save `temp_master', replace
 qui import excel using "$input", clear sheet("Switzerland") allstring
 
 * Keep relevant variables
-keep A AL
+keep A M Y AL
 
 * Drop empty rows
 drop in 1/5
 
-* Destring
-destring AL, force replace
-
 * Arrange the value correctly
-gen N = .
+gen N = ""
+gen N1 = ""
 forvalues i=1/38 {
     local j = `i' + 130
     replace N = AL[`j'] in `i'
+    replace N1 = M[`j'] in `i'
 }
 drop in 39/l 
 
 * Rename
 ren A year
-ren AL centralgov_exp
-ren N generalgov_exp
+ren M cgovexp
+ren Y nGDP
+ren AL cgovexp_GDP
+ren N gen_govexp_GDP
+ren N1 gen_govexp
+
+* Destring
+destring *, force replace
+
+* Destring
+destring *, force replace
+
+* Turn all zeros into missing
+qui ds year, not
+foreach var in `r(varlist)' {
+	qui replace `var' = . if `var' == 0
+}
 
 * Add country's ISO3 code
 gen ISO3 = "CHE"
-destring year, replace
 
-* Order
-order ISO3 year centralgov_exp generalgov_exp
+* Convert units
+replace cgovexp = cgovexp / 1000
+replace gen_govexp = gen_govexp / 1000
 
 * Save
-tempfile temp_CHE
-save `temp_CHE', replace emptyok
 append using `temp_master'
 save `temp_master', replace
 
@@ -446,20 +536,20 @@ save `temp_master', replace
 qui import excel using "$input", clear sheet(" UK") allstring
 
 * Keep relevant variables
-keep A AL
+keep A M AA AL
 
 * Drop empty rows
 drop in 1/5
 
-* Destring
-destring AL, force replace
-
 * Arrange the value correctly
-gen N = .
+gen N = ""
+gen N1 = ""
 forvalues i=1/186 {
     local j = `i' + 151
     replace N = AL[`j'] in `i'
+    replace N1 = M[`j'] in `i'
 }
+
 gen year = .
 destring A, replace
 forvalues i=1/186 {
@@ -469,28 +559,52 @@ forvalues i=1/186 {
 drop in 187/l
 drop A 
 
+* Destring
+destring *, force replace
+
+* Turn all zeros into missing
+qui ds year, not
+foreach var in `r(varlist)' {
+	qui replace `var' = . if `var' == 0
+}
+
 * Rename
-ren AL centralgov_exp
-ren N generalgov_exp
+ren M cgovexp
+ren AA nGDP
+ren AL cgovexp_GDP
+ren N gen_govexp_GDP
+ren N1 gen_govexp
 
 * Add country's ISO3 code
 gen ISO3 = "GBR"
 
-* Order
-order ISO3 year centralgov_exp generalgov_exp
+* Convert units
+replace cgovexp = cgovexp / 10 
+
 
 * Save
-tempfile temp_GBR
-save `temp_GBR', replace emptyok
 append using `temp_master'
 save `temp_master', replace
 
-* Rename variables
-ren centralgov_exp FLORA_govexp_GDP
-keep ISO3 year FLORA_govexp_GDP
+* Add source identifier
+qui ds ISO3 year, not
+foreach var in `r(varlist)' {
+	ren `var' FLORA_`var'
+}
 
-* Turn null values (0) to missing
-replace FLORA_govexp_GDP	 = . if FLORA_govexp_GDP	 == 0
+* Convert euros 
+merge m:1 ISO3 using "$eur_fx", keep(1 3)
+ds FLORA_cgovexp FLORA_gen_govexp FLORA_nGDP 
+foreach var in `r(varlist)' {
+	replace `var' = `var' / EUR if _merge == 3
+} 
+keep ISO3 year FLORA*
+
+* Rebase variables to $base_year
+gmd_rebase FLORA
+
+* Check for ratios and levels 
+check_gdp_ratios FLORA
 
 * ==============================================================================
 * OUTPUT

@@ -38,6 +38,11 @@ import excel using "${input}", clear sheet("NOR") first
 * Add country's ISO3
 gen ISO3 = "NOR"
 
+
+* Add the deflator
+gen deflator = (nGDP / rGDP) * 100
+
+
 * Add source identifier
 qui ds ISO3 year, not
 foreach var  in `r(varlist)'{
@@ -46,6 +51,12 @@ foreach var  in `r(varlist)'{
 
 * Drop
 drop CS1_nGDP_pc
+
+* Rebase variables to $base_year
+gmd_rebase CS1
+
+* Check for ratios and levels 
+check_gdp_ratios CS1
 
 * ===============================================================================
 * 	OUTPUT

@@ -134,6 +134,9 @@ gen rGDP_USD = rGDP_pc_USD * pop
 * Add ISO3 code
 gen ISO3 = "LBR"
 
+* Assign all values to central government. Not specified in the source but central government was the main government in that period.
+ren gov* cgov*
+
 * Add source identifier
 qui ds ISO3 year, not
 foreach var in `r(varlist)'{

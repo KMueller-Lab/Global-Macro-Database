@@ -3,33 +3,95 @@
 * by Karsten Müller, Chenzi Xu, Mohamed Lehbib, Ziliang Chen
 * ==============================================================================
 *
+* Description: 
+* This Stata script reads in and clean historical debt statistics from Carmen Reinhart webiste
+*
 * Author:
-* Karsten Müller
+* Mohamed Lehbib
 * National University of Singapore
 *
-* Created: 2024-10-17
+* Created: 16-06-2024 
 *
-* Description: 
-* This Stata script cleans data on banking crises from Reinhart and Rogoff (2009).
-*
-* ==============================================================================
-*
-* ==============================================================================
-*			SET UP
+* URL: https://carmenreinhart.com/debt-to-gdp-ratios/
+* URL (Inflation data, chapter 5, table 5.4): https://carmenreinhart.com/this-time-is-different/ 
 * ==============================================================================
 
+* ==============================================================================
+* 	SET UP 
+* ==============================================================================
+* Clear panel
 clear
-global input "${data_raw}/aggregators/RR/Reinhart-Rogoff.xlsx"
-global output "${data_clean}/aggregators/RR/RR"
+
+* Define input and output files
+global crises "${data_raw}/aggregators/RR/Reinhart-Rogoff.xlsx"
+global debt "${data_raw}/aggregators/RR/RR_debt.xlsx"
+global infl 	"${data_raw}/aggregators/RR/RR_infl.xlsx" 
+global output "${data_clean}/aggregators/RR/RR.dta"
+* ==============================================================================
+* 	PROCESS
+* ==============================================================================
+import excel using "$debt", clear first
+
+* Destring
+destring govdebt_GDP, replace
+
+* Add general and central government based on the note 
+gen RR_gen_govdebt_GDP = govdebt_GDP if D == "gen"
+gen RR_cgovdebt_GDP = govdebt_GDP if D == ""
+
+* Keep 
+keep ISO3 year RR*
+
+* Save 
+tempfile temp_master
+save `temp_master', replace
+
+* ==============================================================================
+* 	PROCESS
+* ==============================================================================
+
+* Open
+import excel using "$infl", sheet("Inflation_1800_2014") clear cellrange(B5:DN223)
+
+* Drop documentation and empty columns
+drop Q R S T U W Y AM AN AO AP AQ AS AU BO BP BQ BR BS BU BW CQ CR CS CT CU CW CY DC DD DE DF DG DI DK V Z AR AV BT BX CV CZ DH DL DJ BV AT X CX
+
+* Rename
+qui ds B, not
+foreach var in `r(varlist)'{
+	local newname = `var'[1] + " " + `var'[2] + " " + `var'[3]
+	cap ren `var' `newname'
+}
+ren (B E F M AB AH AL AW BM BN CD CE CG DB DN Morrocco Korea Russia) (year CAF CIV ZAF HKG MMR THA AUT TUR GBR CRI DOM SLV USA NZL MAR KOR RUS)
+drop in 1/4
+
+* Reshape
+qui ds year, not
+foreach var in `r(varlist)'{
+	ren `var' RR_infl`var'
+}
+greshape long RR_infl, i(year) j(countryname) string
+
+* Get ISO3 codes 
+merge m:1 countryname using $isomapping, keepus(ISO3) keep(1 3)
+replace ISO3 = countryname if _merge == 1
+
+* Drop 
+drop countryname _merge
+
+* Destring
+destring year RR_infl, replace
+
+* Merge 
+merge 1:1 ISO3 year using `temp_master', nogen
+save `temp_master', replace
 
 * ==============================================================================
 * Clean data 
 * ==============================================================================
 
-
-
 * Open
-import excel "$input", clear first
+import excel "$crises", clear first
 drop in 1
 
 * Only keep relevant columns, rename 
@@ -59,9 +121,21 @@ replace ISO3 = trim(ISO3)
 
 * Drop
 drop country_name
+
+* Merge 
+merge 1:1 ISO3 year using `temp_master', nogen
+
+* Drop data for Hungary in 1946
+replace RR_infl = . if year == 1946
+
 * ==============================================================================
-* 	Output
+* 	OUTPUT
 * ==============================================================================
+* Sort
+sort ISO3 year
+
+* Order
+order ISO3 year
 
 * Check for duplicates
 isid ISO3 year

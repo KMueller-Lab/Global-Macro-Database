@@ -370,22 +370,24 @@ ren govrev* *
 * Convert
 convert_currency Turkey 1984 1/1000
 convert_currency Indonesia 1964 1/1000
-convert_currency Israel 1964 1.1
-convert_currency Israel 1974 1/1000
 replace Vietnam = Vietnam / 1000
 
 * Reshape
 reshape_data govrev
 
 * Convert units for Iran
-replace govrev = govrev * 1000 if inrange(year, 1940, 1944) & countryname == "Iran"
+replace govrev = govrev * 1000 	  if inrange(year, 1940, 1944) & countryname == "Iran"
 
 * Convert units for Turkey
-replace govrev = govrev / (10^6) if countryname == "Turkey"
+replace govrev = govrev / (10^6)  if countryname == "Turkey"
 
 * Convert units for Taiwan
 replace govrev = govrev * (10^-4) if year <= 1939 & countryname == "Taiwan"
-replace govrev = govrev / 4 if year <= 1939 & countryname == "Taiwan"
+replace govrev = govrev / 4 	  if year <= 1939 & countryname == "Taiwan"
+
+* Convert units for Israel
+replace govrev = govrev / 1000	  if year <= 1974 & countryname == "Israel"
+replace govrev = govrev / 10   	  if year <= 1964 & countryname == "Israel"
 
 *===============================================================================
 * 			Final set up

@@ -73,6 +73,12 @@ foreach var in `r(varlist)'{
 * Add ISO3 
 gen ISO3 = "ESP"
 
+* Rebase variables to $base_year
+gmd_rebase CS1
+
+* Check for ratios and levels 
+check_gdp_ratios CS1
+
 * ==============================================================================
 * 	Output
 * ==============================================================================

@@ -18,6 +18,11 @@
 *
 * ==============================================================================
 
+* Run the master file
+do "code/0_master.do"
+
+cap {
+
 * ==============================================================================
 * 	INITIAL SET-UP
 * ==============================================================================
@@ -166,3 +171,22 @@ gmdsavedate, source(AFDB)
 
 * Save
 savedelta ${output}, id(period country series_code)
+
+}
+
+* Create the log
+clear 
+set obs 1 
+gen variable = "AFDB"
+gen status = ""
+if _rc == 0 {
+	replace status = "Success"
+}
+else {
+	replace status = "Error"
+}
+
+* Save 
+save "$data_temp/download_log/AFDB_log.dta", replace
+
+

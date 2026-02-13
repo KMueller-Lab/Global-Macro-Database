@@ -21,12 +21,16 @@
 *
 * ==============================================================================
 
-clear
-global output "${data_raw}\aggregators\BCEAO\BCEAO"
+
+* Run the master file
+do "code/0_master.do"
+
+
+global output "${data_raw}/aggregators/BCEAO/BCEAO"
 
 * Create a temporary file where to save the datasets.
-tempfile temp_master
-save `temp_master', replace emptyok
+tempfile BCEAO
+save `BCEAO', replace emptyok
 
 * ==============================================================================
 * 				NATIONAL ACCOUNTS
@@ -36,8 +40,8 @@ save `temp_master', replace emptyok
 dbnomics import, pr(BCEAO) d(PIBN) clear
 
 * Save
-append using `temp_master'
-save `temp_master', replace
+append using `BCEAO'
+save `BCEAO', replace
 
 * ==============================================================================
 * 				REAL GROSS DOMESTIC PRODUCT
@@ -47,8 +51,8 @@ save `temp_master', replace
 dbnomics import, pr(BCEAO) d(PIBC) clear  
 
 * Save
-append using `temp_master'
-save `temp_master', replace
+append using `BCEAO'
+save `BCEAO', replace
 
 * ==============================================================================
 * 				MACROECONOMIC INDICATORS
@@ -57,8 +61,8 @@ save `temp_master', replace
 dbnomics import, pr(BCEAO) d(IMECO) clear
 
 * Save
-append using `temp_master'
-save `temp_master', replace
+append using `BCEAO'
+save `BCEAO', replace
 
 * ==============================================================================
 * 				CONSUMER PRICE INDEX
@@ -67,8 +71,8 @@ save `temp_master', replace
 dbnomics import, pr(BCEAO) d(IHPC) clear
 
 * Save
-append using `temp_master'
-save `temp_master', replace
+append using `BCEAO'
+save `BCEAO', replace
 
 
 * ==============================================================================
@@ -78,8 +82,8 @@ save `temp_master', replace
 dbnomics import, pr(BCEAO) d(BDP4) clear
 
 * Save
-append using `temp_master'
-save `temp_master', replace
+append using `BCEAO'
+save `BCEAO', replace
 
 
 * ==============================================================================
@@ -89,8 +93,8 @@ save `temp_master', replace
 dbnomics import, pr(BCEAO) d(DPE) clear
 
 * Save
-append using `temp_master'
-save `temp_master', replace
+append using `BCEAO'
+save `BCEAO', replace
 
 * ==============================================================================
 * 				MONETARY AGGREGATES (1)
@@ -99,8 +103,8 @@ save `temp_master', replace
 dbnomics import, pr(BCEAO) d(SIM) clear
 
 * Save
-append using `temp_master'
-save `temp_master', replace
+append using `BCEAO'
+save `BCEAO', replace
 
 
 * ==============================================================================
@@ -110,8 +114,8 @@ save `temp_master', replace
 dbnomics import, pr(BCEAO) d(AM_A) clear
 
 * Save
-append using `temp_master'
-save `temp_master', replace
+append using `BCEAO'
+save `BCEAO', replace
 
 * ==============================================================================
 * 				GOVERNMENT FINANCES
@@ -120,8 +124,8 @@ save `temp_master', replace
 dbnomics import, pr(BCEAO) d(TOFE) clear
 
 * Save
-append using `temp_master'
-save `temp_master', replace
+append using `BCEAO'
+save `BCEAO', replace
 
 
 * ==============================================================================
@@ -135,4 +139,19 @@ sort period country
 gmdsavedate, source(BCEAO)
 
 * Save
-savedelta ${output}, id(country period series_code dataset_code)
+save ${output}, replace
+
+* Create the log
+clear
+set obs 1
+gen variable = "BCEAO"
+gen status = ""
+if _rc == 0 {
+	replace status = "Success"
+}
+else {
+	replace status = "Error"
+}
+
+* Save
+save "$data_temp/download_log/BCEAO_log.dta", replace

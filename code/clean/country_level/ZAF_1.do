@@ -23,7 +23,7 @@ global input "${data_raw}/country_level/ZAF_1"
 global output "${data_clean}/country_level/ZAF_1"
 
 * ==============================================================================
-*	POP
+*	PROCESS
 * ==============================================================================
 
 * Open
@@ -71,7 +71,11 @@ gen govrev_GDP = (govrev / nGDP) * 100
 gen govexp_GDP = (govexp / nGDP) * 100
 gen govtax_GDP = (govtax / nGDP) * 100
 
+* Add the deflator
+gen deflator = (nGDP / rGDP) * 100
 
+* Assigning all data to central government. The source specifies that the data is for national government
+ren gov* cgov*
 
 * Add source identifier
 qui ds year, not
@@ -79,9 +83,14 @@ foreach var in `r(varlist)'{
 	ren `var' CS1_`var'
 }
 
-
 * Add ISO3 
 gen ISO3 = "ZAF"
+
+* Rebase variables to $base_year
+gmd_rebase CS1
+
+* Check for ratios and levels 
+check_gdp_ratios CS1
 
 * ==============================================================================
 * 	Output

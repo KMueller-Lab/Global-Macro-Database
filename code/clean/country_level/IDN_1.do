@@ -85,11 +85,20 @@ gen CA_GDP      = (CA/nGDP) * 100
 gen govrev_GDP = (govrev/nGDP) * 100
 gen govexp_GDP = (govexp/nGDP) * 100
 
+* Assign all values to general government. Same data in WEO
+ren gov* gen_gov*
+
 * Add source identifier
 qui ds ISO3 year, not
 foreach var in `r(varlist)' {
 	ren `var' CS1_`var'
 }
+
+* Rebase variables to $base_year
+gmd_rebase CS1
+
+* Check for ratios and levels 
+check_gdp_ratios CS1
 
 * ===============================================================================
 * 	Output

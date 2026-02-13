@@ -18,8 +18,8 @@
 * ==============================================================================
 * Set up global variables
 clear
-global input "${data_raw}/aggregators/BIT/BIT_USDfx"
-global output "${data_clean}/aggregators/BIT/BIT_USDfx"
+global input "${data_raw}/aggregators/BIT/BIT"
+global output "${data_clean}/aggregators/BIT/BIT"
 
 * ==============================================================================
 * Clean data 
@@ -59,6 +59,14 @@ replace ISO3 = "SHN" if currency == "St. Helena Pound"
 
 * Drop
 drop currency BIT_LIRfx
+
+* Drop empty observation
+drop if BIT_USDfx == .
+
+* Convert Italian Lira to euro 
+merge m:1 ISO3 using $eur_fx, keep(1 3)
+replace BIT_USDfx = BIT_USDfx / EUR if _merge == 3
+drop EUR _merge 
 
 * Rename
 ren referencedatecet year

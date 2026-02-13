@@ -99,12 +99,14 @@ TH_ID
 CS1_TUR
 CS1_TWN
 CS2_TWN
-Tena
 UN
 UN_trade
 CS1_USA
 CS2_USA
-WB_CC
+WB_infl
 WDI
 WDI_ARC
 CS1_ZAF
+Tena_Pop
+Tena_trade
+Tena_USDfx

@@ -18,8 +18,8 @@
 * 						SET UP 
 * ==============================================================================
 clear
-global input "${data_raw}/aggregators/Tena/pop/"
-global output "${data_clean}/aggregators/Tena/pop/Tena_pop.dta"
+global input "${data_raw}/aggregators/Tena/Tena_Pop/"
+global output "${data_clean}/aggregators/Tena/Tena_Pop/Tena_Pop.dta"
 
 * Create empty file to store the data
 tempfile temp_master

@@ -49,7 +49,7 @@ foreach var in from from_median to forecasts num_country num_obs{
 }
 
 * Keep only the major dataset
-keep if inlist(source_abbr, "IMF_IFS", "WDI", "PWT", "OECD_EO", "IMF_WEO", "EUROSTAT", "UN", "JST", "MAD")
+keep if inlist(source_abbr, "IMF_IFS", "WDI", "PWT", "OECD_EO", "IMF_WEO", "EUROSTAT", "UN", "JST", "Maddison")
 
 * Save processed data 
 tempfile tab_comparison
@@ -221,7 +221,7 @@ save `tab_comparison', replace
 
 * Identify data availability of each source
 qui use "$data_final/data_final", clear
-drop countryname
+drop countryname id
 ds ISO3 year, not
 loc varlist `r(varlist)'
 local num_vars_GMD: word count `r(varlist)'
@@ -321,4 +321,4 @@ ren y num_obs
 order source_abbr from from_median to_actual to_forecast num_country num_obs varlist
 
 * Export into LaTeX
-gmdwriterows *, path("${tables}/tab_comparison.tex")
+*gmdwriterows *, path("${tables}/tab_comparison.tex")

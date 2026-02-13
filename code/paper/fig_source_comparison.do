@@ -25,12 +25,25 @@ graph set window fontface "Times New Roman"
 
 * Find GMD dataset statistic summary
 use "$data_final/data_final", clear
-drop countryname
+drop countryname income_group
 isid ISO3 year
 drop rGDP_pc rGDP_USD
+replace govdebt = gen_govdebt_GDP if govdebt == . 
+replace govdebt = cgovdebt_GDP if govdebt == . 
+replace govdef = gen_govdef_GDP if govdef == . 
+replace govdef = cgovdebt_GDP if govdef == . 
+replace govexp = gen_govexp_GDP if govexp == . 
+replace govexp = cgovexp_GDP if govexp == . 
+replace govrev = gen_govrev_GDP if govrev == . 
+replace govrev = cgovrev_GDP if govrev == . 
+replace govtax = gen_govtax_GDP if govtax == . 
+replace govtax = cgovtax_GDP if govtax == . 
+drop gen_* cgov*
 ren * data_*
 ren data_ISO3 ISO3
 ren data_year year
+
+
 greshape long data_, i(ISO3 year) j(variable) string
 ren data GMD
 
@@ -93,18 +106,17 @@ replace variable = "Nominal GDP" if var == "nGDP"
 replace variable = "Current account" if var == "CA_GDP"
 replace variable = "Exports" if var == "exports"
 replace variable = "Imports" if var == "imports"
-replace variable = "Government revenue" if var == "govrev"
-replace variable = "Government tax" if var == "govtax"
-replace variable = "Government expenditure" if var == "govexp"
-replace variable = "Government debt" if var == "govdebt_GDP"
-replace variable = "Government deficit" if var == "govdef_GDP"
+replace variable = "Combined government revenue" if var == "govrev"
+replace variable = "Combined government tax revenue" if var == "govtax"
+replace variable = "Combined government expenditure" if var == "govexp"
+replace variable = "Combined government debt" if var == "govdebt"
+replace variable = "Combined government deficit" if var == "govdef"
 replace variable = "Consumer price index" if var == "CPI"
 replace variable = "House price index" if var == "HPI"
 replace variable = "Fixed investment" if var == "finv"
 replace variable = "Investment" if var == "inv"
 replace variable = "Unemployment rate" if var == "unemp"
 replace variable = "Inflation rate" if var == "infl"
-replace variable = "Real consumption" if var == "rcons"
 replace variable = "Consumption" if var == "cons"
 replace variable = "Real effective exchange rate" if var == "REER"
 replace variable = "US dollar exchange rate" if var == "USDfx"
@@ -116,7 +128,7 @@ drop if var == "rGDP_pc"
 
 * Drop some derived variables 
 drop if substr(variable, -4, .) == "_GDP"
-drop if inlist(variable,"govdebt","govdef","CA")
+drop if inlist(variable,"gen_govdebt_GDP","gen_govdef_GDP","cgovdebt_GDP","cgovdef_GDP","CA")
 
 * Rename
 ren data_* *

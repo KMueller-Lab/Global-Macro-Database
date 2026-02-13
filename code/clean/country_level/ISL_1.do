@@ -39,9 +39,9 @@ import excel using "${input}", clear
 drop in 1/3 
 
 * Make variables names
-gen varname = "CS1_nGDP" in 2
-replace varname = "CS1_rGDP_pc_index" in 3
-replace varname = "CS1_pop" in 9
+gen varname = "nGDP" in 2
+replace varname = "deflator" in 3
+replace varname = "pop" in 9
 keep if varname != ""
 
 * Rename year rows 
@@ -61,11 +61,23 @@ greshape wide val, i(ISO3 year) j(varname)
 ren val* *
 destring *, replace 
 
-* Rename
-ren CS1_rGDP_pc_index CS1_deflator
+* Add the real GDP
+gen rGDP = (nGDP / deflator) * 100
 
 * Convert pop to million
-replace CS1_pop = CS1_pop / 1000000
+replace pop = pop / 1000000
+
+* Add source identifier
+qui ds ISO3 year, not
+foreach var in `r(varlist)' {
+	ren `var' CS1_`var'
+}
+
+* Rebase variables to $base_year
+gmd_rebase CS1
+
+* Check for ratios and levels 
+check_gdp_ratios CS1
 
 * ===============================================================================
 * 	OUTPUT

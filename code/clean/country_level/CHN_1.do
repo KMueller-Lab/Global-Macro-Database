@@ -58,14 +58,38 @@ gen CA_GDP = (CA / nGDP) * 100
 * Drop redundant variables
 drop CA_USD b_nGDP base_nGDP rGDP_index
 
+* Add the deflator
+gen deflator = (nGDP / rGDP) * 100
+
+
 * Add ISO3 
 gen ISO3 = "CHN"
+
+* Derive government finance variables to GDP
+gen govtax_GDP = (govtax / nGDP) * 100
+gen govrev_GDP = (govrev / nGDP) * 100
+gen govexp_GDP = (govexp / nGDP) * 100
+
+* Assign all values to general government. 
+ren gov* gen_gov*
+
+gen cons_GDP = (cons / nGDP) * 100 
+gen finv_GDP = (finv / nGDP) * 100 
+gen exports_GDP = (exports / nGDP) * 100 
+gen imports_GDP = (imports / nGDP) * 100 
+
 
 * Add source identifier
 qui ds year ISO3, not
 foreach var in `r(varlist)' {
 	ren `var' CS1_`var'
 }
+
+* Rebase variables to $base_year
+gmd_rebase CS1
+
+* Check for ratios and levels 
+check_gdp_ratios CS1
 
 * ==============================================================================
 * 	OUTPUT

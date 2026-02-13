@@ -125,6 +125,19 @@ gen govrev_GDP = (govrev / nGDP) * 100
 gen govexp_GDP = (govexp / nGDP) * 100
 gen govdebt_GDP = (govdebt / nGDP) * 100
 
+
+* Add the deflator
+gen deflator = (nGDP / rGDP) * 100
+
+* Data on consumption ratio is very high, so we are adjusting the break 
+* that will appear later using OECD overlapping values in 1960 (2025_09) version
+qui su cons_GDP if year == 1970, meanonly 
+local CS1 = r(mean)
+local OECD = 71.14876
+local overlapping_ratio = `OECD' / `CS1'
+qui replace cons_GDP = cons_GDP * `overlapping_ratio' if year <= 1969
+
+
 * Add source identifier
 qui ds ISO3 year, not
 foreach var  in `r(varlist)'{
@@ -133,6 +146,19 @@ foreach var  in `r(varlist)'{
 
 * Drop
 drop CS1_DMKfx CS1_GBPfx CS1_FRFfx
+
+* Assing data to central government because it's very different than general government in WEO
+ren *gov* *cgov*
+
+
+* Add ratio variabels 
+gen CS1_cgovdef_GDP = (CS1_cgovdef / CS1_nGDP) * 100
+
+* Rebase variables to $base_year
+gmd_rebase CS1
+
+* Check for ratios and levels 
+check_gdp_ratios CS1
 
 * ===============================================================================
 * 	OUTPUT
