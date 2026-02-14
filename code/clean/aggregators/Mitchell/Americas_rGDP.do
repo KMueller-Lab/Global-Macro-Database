@@ -223,6 +223,9 @@ drop if year >= 1993
 replace rGDP_LCU = rGDP_LCU * 1000 if year >= 1865 & year <= 1949 & countryname == "USA"
 replace rGDP_LCU = rGDP_LCU * 1000 if year >= 1985 & countryname == "Mexico"
 
+* Drop early data for Canada because it can't be chainlinked 
+drop if countryname == "Canada" & year < 1870
+
 *===============================================================================
 * 			Final set up
 *===============================================================================

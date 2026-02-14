@@ -137,7 +137,7 @@ qui greshape wide stocks, i(year) j(countryname) string
 qui ren stocks* *
 
 * Converting to billions and then back to millions because most countries are in billions
-convert_currency Australia  1900 2
+convert_currency Australia  1901 2
 convert_currency NewZealand	1959 2
 
 * Reshape into long

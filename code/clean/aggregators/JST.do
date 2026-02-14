@@ -25,7 +25,7 @@
 clear
 
 * First run WDI because we will use later 
-do "$code_clean/aggregators/WDI.do"
+qui do "$code_clean/aggregators/WDI.do"
 clear
 
 * Define input and output files
@@ -40,10 +40,10 @@ global output "${data_clean}/aggregators/JST/JST.dta"
 use "${input}", clear
 
 * Rename
-ren (iso pop gdp iy cpi xrusd ca imports exports stir ltrate unemp debtgdp revenue expenditure hpnom money narrowm crisisJST rgdpbarro) (ISO3 JST_pop JST_nGDP JST_inv_GDP JST_CPI JST_USDfx JST_CA_LCU JST_imports JST_exports JST_strate JST_ltrate JST_unemp JST_govdebt_GDP JST_govrev JST_govexp JST_HPI JST_BroadM JST_NarrowM JST_crisisB JST_rGDP_pc_index )
+ren (iso pop gdp iy cpi xrusd ca imports exports stir ltrate unemp debtgdp revenue expenditure hpnom money narrowm crisisJST rgdpbarro) (ISO3 JST_pop JST_nGDP JST_inv_GDP JST_CPI JST_USDfx JST_CA_LCU JST_imports JST_exports JST_strate JST_ltrate JST_unemp JST_gen_govdebt_GDP JST_cgovrev JST_cgovexp JST_HPI JST_BroadM JST_NarrowM JST_crisisB JST_rGDP_pc_index )
 
 * Keep only relevant variables
-keep ISO3 year JST_*
+keep ISO3 year JST_* 
 
 * Drop rows with missing data
 qui ds ISO3 year, not
@@ -87,14 +87,14 @@ drop JST_NarrowM JST_BroadM
 gen JST_CA_GDP = 100 * (JST_CA_LCU / JST_nGDP)
 
 * Convert JST_REVENUE_LCU to JST_REVENUE_GDP
-gen JST_govrev_GDP = 100 * (JST_govrev / JST_nGDP)
+gen JST_cgovrev_GDP = 100 * (JST_cgovrev / JST_nGDP)
 
 * Convert JST_govexp to JST_govexp_GDP
-gen JST_govexp_GDP = 100 * (JST_govexp / JST_nGDP)
+gen JST_cgovexp_GDP = 100 * (JST_cgovexp / JST_nGDP)
 
 
 * Convert JST_govdebt_GDP to percentage
-replace JST_govdebt_GDP = JST_govdebt_GDP * 100
+replace JST_gen_govdebt_GDP = JST_gen_govdebt_GDP * 100
 
 * Drop
 drop JST_CA_LCU 
@@ -114,7 +114,7 @@ global input ""${data_raw}/EUR/EUR_irrevocable_FX.dta""
 merge m:1 ISO3 using "$eur_fx", keep(1 3) nogen 
 
 * Convert national currency numbers for Eurozone members
-foreach var in nGDP exports imports M0 M1 M2 M3 M4 govrev govexp USDfx {
+foreach var in nGDP exports imports M0 M1 M2 M3 M4 cgovrev cgovexp USDfx {
 	replace JST_`var' = JST_`var' / EUR_irrevocable_FX if EUR_irrevocable_FX!=.
 }
 
@@ -135,7 +135,7 @@ foreach c in USA CAN DNK FRA DEU ITA GBR {
 }
 
 * Convert Japanese data to millions from trillions
-foreach var in nGDP exports imports inv M1 M2 govexp govrev{
+foreach var in nGDP exports imports inv M1 M2 cgovexp cgovrev{
 	replace JST_`var' = JST_`var' * 1000000 if ISO3 == "JPN"
 }
 
@@ -148,13 +148,13 @@ by id: gen JST_infl = (JST_CPI - L.JST_CPI) / L.JST_CPI * 100 if L.JST_CPI != .
 drop id
 
 * Convert units for govexp
-replace JST_govexp = JST_govexp * 1000
-replace JST_govrev = JST_govrev * 1000
+replace JST_cgovexp = JST_cgovexp * 1000
+replace JST_cgovrev = JST_cgovrev * 1000
 
 local countries AUS BEL CHE ESP FIN IRL JPN NLD NOR PRT SWE
 foreach country of local countries {
-	replace JST_govexp = JST_govexp / 1000 if ISO3 == "`country'"
-	replace JST_govrev = JST_govrev / 1000 if ISO3 == "`country'"
+	replace JST_cgovexp = JST_cgovexp / 1000 if ISO3 == "`country'"
+	replace JST_cgovrev = JST_cgovrev / 1000 if ISO3 == "`country'"
 }
 
 * Add ratios to gdp variables
@@ -167,13 +167,13 @@ gen JST_inv_GDP     = (JST_inv / JST_nGDP) * 100
 * 	SPLICE JST REAL GDP PER CAPITA USING REAL GDP PER CAPITA FROM WDI
 * ==============================================================================
 * Merge in the dataset
-merge 1:1 ISO3 year using "${data_clean}/aggregators/WB/WDI", nogen keep(1 3) keepus(WDI_rGDP_pc)
+merge 1:1 ISO3 year using "${data_clean}/aggregators/WB/WDI/WDI", nogen keep(1 3) keepus(WDI_rGDP_pc)
 
 * Rename Barro 
 ren JST_rGDP_pc_index JST_rGDP_pc
 
 * Splice
-splice, priority(WDI JST) generate(rGDP_pc) varname(rGDP_pc) method("chainlink") base_year(2006) save("NO")
+qui splice, priority(WDI JST) generate(rGDP_pc) varname(rGDP_pc) method("chainlink") base_year(2006) save("NO")
 
 * Rename 
 drop JST_rGDP_pc
@@ -191,6 +191,15 @@ gen JST_rGDP = JST_rGDP_pc * JST_pop
 
 * Keep relevant variables 
 keep ISO3 year  JST*
+
+* Add government debt levels 
+gen JST_gen_govdebt = (JST_gen_govdebt_GDP * JST_nGDP) / 100
+
+* Rebase variables to $base_year
+gmd_rebase JST
+
+* Check for ratios and levels 
+check_gdp_ratios JST
 
 * ==============================================================================
 * 	OUTPUT

@@ -398,6 +398,7 @@ reshape_data govtax
 replace govtax = govtax * 1000 if year >= 1965 & countryname == "Japan"
 replace govtax = govtax * 1000 if year >= 1945 & countryname == "Japan"
 replace govtax = govtax * (10^3) if countryname == "SouthKorea"
+replace govtax = govtax * (10^3) if countryname == "SouthKorea" & year >= 1979
 
 * Convert units for Taiwan
 replace govtax = govtax * (10^-4) if year <= 1939 & countryname == "Taiwan"

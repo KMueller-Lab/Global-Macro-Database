@@ -3,20 +3,14 @@
 * by Karsten Müller, Chenzi Xu, Mohamed Lehbib, Ziliang Chen
 * ==============================================================================
 *
-* MASTER DO FILE 
-* 
-* Intended to be run using Stata 18.
-* 
+* SET UP THE GLOBAL DIRECTORIES
+*
 * Author:
-* Karsten Müller
+* Mohamed Lehbib
 * National University of Singapore
 *
-* Last Editor:
-* Karsten Müller
-* National University of Singapore
-*
-* Created: 2024-01-05
-* Last updated: 2024-02-01
+* Description: file needed to set up the directories necessary for running programs at once.
+* Created: 2025-08-08
 *
 * ==============================================================================
 * Toggle options 
@@ -24,19 +18,14 @@
 * Turn these options on with a "1" or off with a "0", depending on what you 
 * actually want to run.
 * ==============================================================================
-macro drop _all
-global erase		0	// Careful!
-global download 	0
-global clean		0
-global combine		0
-global output_data	0
-global document 	0
-global paper		0
-global packages 	0
-
-
 * ==============================================================================
 * Prepare folder paths and define programs 
+* ==============================================================================
+
+global document 	1	// Produce and compile the documentation
+
+* ==============================================================================
+* Make all global variables into 1 if we are updating the database
 * ==============================================================================
 
 * Set path folder
@@ -44,14 +33,17 @@ if "`c(username)'"=="lehbib"{
 	global path "C:/Users/lehbib/Documents/Github/Global-Macro-Project"
 }
 
+if "`c(username)'"=="mohamedlehbib"{
+	global path "/Users/mohamedlehbib/Downloads/GitHub/Global-Macro-Database-Internal"
+}
+
 if "`c(username)'"=="kmueller"{
 	global path "C:/Users/kmueller/Desktop/GitHub/Global-Macro-Project"
 }
 
-*if "`c(username)'"=="kmueller"{
-*	global path "C:/Users/kmueller/Desktop/GitHub/Global-Macro-Project"
-*	global dropbox "C:/Users/kmueller/Müller Lab Dropbox/Karsten Müller/Global-Macro-Project"
-*}
+if "`c(username)'"=="kmueller"{
+	global path "C:\Users\kmueller\Documents\GitHub\Global-Macro-Project" // Home laptop
+}
 
 if "`c(username)'"=="simonchen"{
 	global path "/Users/simonchen/Documents/GitHub/Global-Macro-Project"
@@ -98,6 +90,9 @@ global numbers			"$path/output/numbers"
 * Define key inputs that are needed throughout the code 
 * ==============================================================================
 
+* Add the base year for real GDP and indices 
+global base_year 2015
+
 * Set minimum and maximum date 
 glo currdate = yofd(date(c(current_date),"DMY")) 
 glo maxdate= $currdate + 10 // Current year + 10 years
@@ -106,94 +101,31 @@ glo mindate = 0
 * Make version 
 glo yearmonth = string(yofd(date(c(current_date),"DMY")))+"_"+string(month(date(c(current_date),"DMY")))
 
-* Unique identifiers in final dataset 
-glo ident "ISO3 year"
-
-* List of variables needed for documentation
-glo docvars "SOURCE SOURCE_ABBR URL DOWNLOAD_DATE INPUT"
-
 * List of countries
 glo isomapping "$data_helper/countrylist"
-
-* List of variables 
-glo varlist "nGDP_LCU pop CPI rCONS_LCU"
 
 * Euro irrevocable exhange rate
 glo eur_fx "$data_helper/EUR_irrevocable_FX"
 
-* List of sources
+* Docvars 
+glo docvars "$data_helper/docvars.csv"
 
-* Define maximum deviation of ratio variables; if the difference in overlapping 
-* data is larger than this, we apply a ratio-splicing adjustment. This is 
-* currently not used but might be in future iterations.
-*glo rate_ratio "0.20" // 20% deviation allowed
+* Determine current version
+local current_date = date(c(current_date), "DMY")
+local current_year = year(date(c(current_date), "DMY"))
+local current_month = month(date(c(current_date), "DMY"))
 
+* Create current version as the year_month
+local month = `current_month'
 
-* ==============================================================================
-* Load all programs required for running the database 
-* ==============================================================================
-
-
-* Define and download programs 
-if $packages == 1 {
-foreach pack in gtools egenmore dbnomics moss libjson spmap reghdfe geo2xy heatplot mplotoffset sparkline splitvallabels wbopendata nicelabels{
-	cap ssc install `pack' 
+if strlen("`month'") == 1 {
+	global current_version "`current_year'_0`month'"
 }
-
-cap net install grc1leg,from(http://www.stata.com/users/vwiggins/)
-cap net install filelist.pkg
-cap net install missings.pkg
-cap net install kountry.pkg
-cap net install unique.pkg
-cap net install mylabels.pkg
+else {
+	global current_version "`current_year'_`month'"
 }
-
-
-
-* Define and load custom scripts 
-filelist, directory($code_functions)
-drop if regexm(dirname,"Archive")
-drop if regexm(filename,".DS_Store")
-gen combined = dirname + "/" + filename
-levelsof combined if substr(filename, -3, 3) == ".do", loc(functions) 
-di `functions'
-
-foreach f of loc functions {
-	do `f'
-}
-
-* ==============================================================================
-* Initialize the database 
-* ==============================================================================
-
-* Erase everything if specified 
-  if $erase == 1 {
-    if "`c(os)'" == "Windows" {
-        foreach dir in "$data_clean" "$data_final" "$data_distr" "$data_temp" {
-            !del /s /q "`dir'\*.dta"
-        }
-    }
-    else {
-        foreach dir in "$data_clean" "$data_final" "$data_distr" "$data_temp" {
-            !rm -rf "`dir'"/"*.dta"
-        }
-    }
-	do "$code/initialize/1_make_download_dates.do"
-	
-	* Make blank panel that will be filled in for final dataset 
-	do "$code/initialize/2_make_blank_panel.do" 
-
-	* Make the notes file
-	save "$data_temp/notes", replace
-	
-}
-
-* Make blank panel that will be filled in for final dataset 
-do "$code/initialize/2_make_blank_panel.do" 
-
-* Validate inputs
-do "$code/initialize/3_validate_inputs.do"
-
+di "$current_version"
+global current_year `current_year'
 
 * Delete all stswp files
 if "`c(os)'" == "Windows" {
@@ -201,136 +133,23 @@ if "`c(os)'" == "Windows" {
     }
 else {
 	shell find . -name "*.stswp" -type f -delete
+	shell find . -name "*.DS_Store" -type f -delete
 	
 }
 
-
 * ==============================================================================
-* Automatic updates of the raw data 
-* ==============================================================================
-
-if $download == 1 {
-
-	* Get a list of all code files for downloading
-	filelist, directory($code_download)
-	drop if regexm(filename,".DS_Store")
-	gen combined = dirname + "/" + filename
-	levelsof combined, loc(download_files)
-
-	* Run files 
-	foreach f of loc download_files {
-		qui do `f'
-		di as txt "File `f' ran with success"
-	}
-}
-
-* ==============================================================================
-* Cleaning the raw data
+* Load all programs required for running the database 
 * ==============================================================================
 
-if $clean == 1 {
-
-	* Get a list of all code files for cleaning the data 
-	filelist, directory($code_clean) 
-	drop if regexm(filename,".DS_Store")
-	gen order = cond(regexm(dirname,"aggregators/Mitchell"),1,2)
-	sort order // Sort helper files for processing Mitchell/IHS data first
-	gen combined = dirname + "/" + filename
-	sort filename
-	keep if order == 1
-	levelsof combined if order == 1, clean loc(mitchell_files)
-	
-	* Run files 
-	foreach f of loc mitchell_files {
-		qui do `f'
-		di as txt "File `f' ran with success"
-	}
-	
-	filelist, directory($code_clean) 
-	drop if regexm(filename,".DS_Store")
-	gen order = cond(regexm(dirname,"aggregators/Mitchell"),1,2)
-	sort order // Sort helper files for processing Mitchell/IHS data first
-	gen combined = dirname + "/" + filename
-	levelsof combined if order == 2, clean loc(rest_files)
-	
-	* Run files 
-	foreach f of loc rest_files {
-		do `f'
-	}
-}
-
-* ==============================================================================
-* Merge and combine together the cleaned data
-* ==============================================================================
-	
-if $combine == 1 {
-
-	* Merge data 
-	do "$code_merge/1_merge_clean_data"
-
-	* Validate outputs 
-	do "$code_merge/2_validate_outputs"
-	
-	* Make the notes file
-	do "$code/initialize/4_make_sources_dataset.do"
-
-	* Get a list of all code files for combining the data
-	filelist, directory($code_combine) 
-	drop if regexm(filename,".DS_Store")
-	gen combined = dirname + "/" + filename
-	levelsof combined, loc(combine_files)
-
-	* Run files 
-	foreach f of loc combine_files {
-		do `f'
-	}
-}
-
-
-* ==============================================================================
-* Produce technical documentation
-* ==============================================================================
-
-if $document == 1 {
-
-	filelist, directory($code_doc)
-	drop if regexm(filename,".DS_Store")
-	gen combined = dirname + "/" + filename
-	levelsof combined, loc(doc_files)
-
-	* Run files (Only one file)
-	foreach f of loc doc_files {
-	di as txt "Running `f'"
+* Define and load custom scripts 
+filelist, directory($code_functions)
+drop if regexm(dirname,"Archive")
+gen combined = dirname + "/" + filename
+qui levelsof combined if substr(filename, -3, 3) == "ado", loc(functions) 
+foreach f of loc functions {
 	qui do `f'
-	di as txt "File `f' ran with success"
-	}
 }
 
-* ==============================================================================
-* Output the data 
-* ==============================================================================
+* Create the slack webhook global
+qui do "$path/env_vars.do"
 
-if $output_data == 1 {
-	
-	do "$code_merge/3_data_final" 
-
-}
-
-* ==============================================================================
-* Produce outputs for paper
-* ==============================================================================
-
-if $paper == 1 {
-
-	* Get a list of all code files used for producing exhibits in the paper 
-	filelist, directory($code_paper) 
-	drop if regexm(filename,".DS_Store")
-	gen combined = dirname + "/" + filename
-	levelsof combined, loc(paper_files)
-
-	* Run files 
-	foreach f of loc paper_files {
-		qui do `f'
-	}
-
-}

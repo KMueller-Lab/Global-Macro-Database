@@ -32,9 +32,9 @@ keep period country indicator value
 * Set series's code
 replace indicator = "M1" 		  if indicator == "FM.LBL.MONY.CN"
 replace indicator = "M2" 		  if indicator == "FM.LBL.MQMY.CN"
-replace indicator = "govdef_GDP"  if indicator == "GC.BAL.CASH.GD.ZS"
-replace indicator = "govrev_GDP"  if indicator == "GC.REV.TOTL.GD.ZS"
-replace indicator = "govexp_GDP"  if indicator == "GC.XPN.TOTL.GD.ZS"
+replace indicator = "cgovdef_GDP"  if indicator == "GC.BAL.CASH.GD.ZS"
+replace indicator = "cgovrev_GDP"  if indicator == "GC.REV.TOTL.GD.ZS"
+replace indicator = "cgovexp_GDP"  if indicator == "GC.XPN.TOTL.GD.ZS"
 replace indicator = "unemp"		  if indicator == "SL.TLF.15UP.UEM"
 replace indicator = "emp"		  if indicator == "LM.POP.EPP.TOT"
 replace indicator = "nGDP"		  if indicator == "NY.GDP.MKTP.CN"
@@ -85,7 +85,7 @@ replace nGDP = nGDP * 10 if year <= 2005 & year >= 2000 & ISO3 == "TGO"
 replace nGDP = nGDP / 1000 if year <= 2005 & year >= 2000 & ISO3 == "SWZ"
 
 * Fix units for Mozambique
-replace nGDP = nGDP / 1000 if year >= 2006 & ISO3 == "MOZ"
+replace nGDP = nGDP / 1000 if year >= 2004 & ISO3 == "MOZ"
 
 * AFDB data on Congo and Liberia is likely mistaken. Deviates widely from all other sources
 replace M1 = . if year < 1995 & ISO3 == "COG"
@@ -102,10 +102,15 @@ foreach var in `r(varlist)' {
 
 * Derive government finances nominal values
 replace AFDB_nGDP  = AFDB_nGDP  /  1000000
-gen AFDB_govdef = (AFDB_govdef_GDP * AFDB_nGDP) / 100
-gen AFDB_govrev = (AFDB_govrev_GDP * AFDB_nGDP) / 100
-gen AFDB_govexp = (AFDB_govexp_GDP * AFDB_nGDP) / 100
+gen AFDB_cgovdef = (AFDB_cgovdef_GDP * AFDB_nGDP) / 100
+gen AFDB_cgovrev = (AFDB_cgovrev_GDP * AFDB_nGDP) / 100
+gen AFDB_cgovexp = (AFDB_cgovexp_GDP * AFDB_nGDP) / 100
 
+* Rebase variables to $base_year
+gmd_rebase AFDB
+
+* Check for ratios and levels 
+check_gdp_ratios AFDB
 
 * ==============================================================================
 * 				Output

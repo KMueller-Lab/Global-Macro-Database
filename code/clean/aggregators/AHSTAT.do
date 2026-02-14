@@ -322,15 +322,21 @@ gen govtax_GDP  = (govtax / nGDP) * 100
 gen finv_GDP    = (finv / nGDP) * 100
 gen inv_GDP     = (inv / nGDP) * 100
 
+* Assign all government finance variabels to central government
+ren gov* cgov*
 
-* ==============================================================================
-* 	Output
-* ==============================================================================
 * Add source identifier
 qui ds year ISO3, not
 foreach var in `r(varlist)'{
 	ren `var' AHSTAT_`var'
 }
+
+* Check for ratios and levels 
+check_gdp_ratios AHSTAT
+
+* ==============================================================================
+* 	Output
+* ==============================================================================
 
 * Order
 order ISO3 year

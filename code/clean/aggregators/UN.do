@@ -7,7 +7,7 @@
 * Mohamed Lehbib
 * National University of Singapore
 *
-* Created: 2022-09-26
+* Created: 2025-09-20
 *
 * Description: 
 * This stata script cleans data from the United Nations' National Accounts 
@@ -23,9 +23,10 @@
 clear
 
 * Define input and output files
-global UN_nGDP "${data_raw}/aggregators/UN/UN_nGDP.xlsx"
-global UN_rGDP "${data_raw}/aggregators/UN/UN_rGDP.xlsx"
-global UN_pop "${data_raw}/aggregators/UN/UN_pop.xlsx"
+global UN_nGDP "${data_raw}/aggregators/UN/nGDP"
+global UN_rGDP "${data_raw}/aggregators/UN/rGDP"
+global UN_rGDP_USD "${data_raw}/aggregators/UN/rGDP_USD"
+global UN_USDfx "${data_raw}/aggregators/UN/USDfx"
 global output "${data_clean}/aggregators/UN/UN.dta"
 * ==============================================================================
 
@@ -33,26 +34,28 @@ global output "${data_clean}/aggregators/UN/UN.dta"
 * 	NOMINAL GDP
 * ==============================================================================
 * Open
-import excel using "${UN_nGDP}" , clear 
+use "${UN_nGDP}" , clear 
 
 * Drop empty rows 
-drop in 1/3
+drop in 1/2
+drop C
 
 * Make year variable 
-local year = 1970
-foreach var of varlist E-BC {
-	ren `var' y_`year'
-	loc year = `year' + 1
+qui ds A B D, not
+foreach var in `r(varlist)' {
+	local newname = `var'[1]
+	ren `var' UN_`newname'
 }
+drop in 1 
 
 * Reshape long 
-greshape long y_, i(A B C D) j(year)
+greshape long UN_, i(A B D) j(year)
 
 * Only keep broad national account variables 
 keep if inlist(D,"Final consumption expenditure","Gross Domestic Product (GDP)","Gross capital formation","Gross fixed capital formation (including Acquisitions less disposals of valuables)","Imports of goods and services","Exports of goods and services")
 
 * Rename variables 
-replace D = "nGDP"		if D == "Gross Domestic Product (GDP)"
+replace D = "nGDP"			if D == "Gross Domestic Product (GDP)"
 replace D = "cons"			if D == "Final consumption expenditure"
 replace D = "inv"			if D == "Gross capital formation"
 replace D = "finv"			if D == "Gross fixed capital formation (including Acquisitions less disposals of valuables)"
@@ -60,63 +63,15 @@ replace D = "imports"		if D == "Imports of goods and services"
 replace D = "exports"		if D == "Exports of goods and services"
 
 * Reshape
-greshape wide y_, i(A B C year) j(D)
-ren y_* *
+greshape wide UN_, i(A B year) j(D)
+ren UN_* *
 
 * Make ISO3 code
-destring A, replace
-kountry A, from(iso3n) to(iso3c)
-ren _ISO3C_ iso3
-
-* Fixing codes for Yugoslavia (Former) and USSR (Former)
-replace iso3="SUN" if B=="USSR (Former)"
-replace iso3="YUG" if B=="Yugoslavia (Former)"
-
-* Combine modern and former Ethiopia
-qui ds A B C year iso3, not
-foreach var in `r(varlist)' {
-	gen temp = `var' if B == "Ethiopia (Former)"
-	bysort year: egen temp2 = max(temp)
-	replace `var' = temp2 if B == "Ethiopia" & `var' == .
-	drop temp temp2
-}
-drop if B == "Ethiopia (Former)"
-
-* Combine modern and former Sudan
-qui ds A B C year iso3, not
-foreach var in `r(varlist)' {
-	gen temp = `var' if B == "Sudan"
-	bysort year: egen temp2 = max(temp)
-	replace `var' = temp2 if B == "Sudan (Former)" & `var' == .
-	drop temp temp2
-}
-drop if B == "Sudan"
-
-* Fix missing country codes 
-replace iso3 = "CUW"	if B == "Curaçao"
-replace iso3 = "CSK"	if B == "Czechoslovakia (Former)"
-replace iso3 = "XKX" 	if B == "Kosovo"
-replace iso3 = "RUS"	if B == "Russian Federation"
-replace iso3 = "SRB"	if B == "Serbia"
-replace iso3 = "SXM"	if B == "Sint Maarten (Dutch part)"
-replace iso3 = "TZA"	if B == "U.R. of Tanzania: Mainland"
-
-* Drop some countries 
-drop if B == "Zanzibar" 					// Zanzibar island 
-drop if B == "Yemen Arab Republic (Former)"	// Former Yemen
-drop if B == "Yemen Democratic (Former)"	// Former Yemen
-
-* Analyzing missing countries. 
-tab A if iso3==""
-tab B if iso3==""
-drop if B=="Montenegro"
-drop if B=="South Sudan"
-
-* Drop
-drop A B C 
-
-* Rename
-ren iso3 ISO3
+ren B countryname
+ren A ISOnum
+destring ISOnum, replace 
+merge m:1 ISOnum using $isomapping, keep(3) keepus(ISO3) nogen
+drop ISOnum countryname
 
 * Convert to millions
 qui ds year ISO3, not
@@ -144,32 +99,30 @@ save `temp_master', replace
 * ==============================================================================
 * 	REAL GDP
 * ==============================================================================
-import excel using "${UN_rGDP}" , clear cellrange(A3:BC3560) 
+use "${UN_rGDP}" , clear
 
 * Drop empty rows 
-drop in 1/3
+drop in 1/2
+drop C
 
 * Make year variable 
-local year = 1970
-foreach var of varlist E-BC {
-	ren `var' y_`year'
-	loc year = `year' + 1
+qui ds A B D, not
+foreach var in `r(varlist)' {
+	local newname = `var'[1]
+	ren `var' UN_`newname'
 }
+drop in 1
 
 * Reshape long 
-greshape long y_, i(A B C D) j(year)
+greshape long UN_, i(A B D) j(year)
 
 
 * Keep relevant vars
 replace D = "rGDP"		if D == "Gross Domestic Product (GDP)"
-replace D = "rcons"			if D == "Final consumption expenditure"
-drop if !inlist(D, "rGDP", "rcons")
+drop if !inlist(D, "rGDP")
 
 * Reshape
-greshape wide y_, i(A B C year) j(D)
-
-* Rename
-ren y_* *
+greshape wide UN_, i(A B year) j(D)
 
 * Make ISO3 code
 ren B countryname
@@ -177,15 +130,59 @@ ren A ISOnum
 destring ISOnum, replace force
 drop if ISOnum == .
 merge m:1 ISOnum using $isomapping, keep(3) keepus(ISO3) nogen
+drop ISOnum countryname
 
 * Keep 
-ren rGDP  UN_rGDP
-ren rcons UN_rcons
-keep ISO3 year UN_rGDP UN_rcons
+keep ISO3 year UN_rGDP
 
 * Convert to millions
-replace UN_rGDP  = UN_rGDP / (10^6)
-replace UN_rcons = UN_rcons / (10^6)
+replace UN_rGDP  = UN_rGDP / (10^6) if ISO3 != "VEN"
+
+* Merge
+merge 1:1 ISO3 year using `temp_master', nogen
+save `temp_master', replace
+
+
+* ==============================================================================
+* 	REAL GDP in USD
+* ==============================================================================
+use "${UN_rGDP_USD}" , clear
+
+* Drop empty rows 
+drop in 1/2
+
+* Make year variable 
+qui ds A B C, not
+foreach var in `r(varlist)' {
+	local newname = `var'[1]
+	ren `var' UN_`newname'
+}
+drop in 1
+
+* Keep relevant vars
+replace C = "rGDP_USD"		if C == "Gross Domestic Product (GDP)"
+drop if !inlist(C, "rGDP_USD")
+
+
+* Reshape long 
+greshape long UN_, i(A B C) j(year)
+
+* Reshape
+greshape wide UN_, i(A B year) j(C)
+
+* Make ISO3 code
+ren B countryname
+ren A ISOnum
+destring ISOnum, replace force
+drop if ISOnum == .
+merge m:1 ISOnum using $isomapping, keep(3) keepus(ISO3) nogen
+drop ISOnum countryname
+
+* Keep 
+keep ISO3 year UN_rGDP_USD
+
+* Convert to millions
+replace UN_rGDP_USD  = UN_rGDP_USD / (10^6) if ISO3 != "VEN"
 
 * Merge
 merge 1:1 ISO3 year using `temp_master', nogen
@@ -194,59 +191,59 @@ save `temp_master', replace
 * ==============================================================================
 * 	Population
 * ==============================================================================
-import excel using "${UN_pop}" , clear cellrange(A17:BZ306) 
+use "${UN_USDfx}" , clear
 
-* Keep only countries
-keep if F == "Country/Area" | F == "Type"
+* Drop empty rows 
+drop in 1/2
+drop C
 
-* Keep relevant columns
-drop A B D F G 
+* Make year variable 
+qui ds A B D, not
+foreach var in `r(varlist)' {
+	local newname = `var'[1]
+	ren `var' UN_`newname'
+}
+drop in 1 
+
+
+* Reshape long 
+greshape long UN_, i(A B D) j(year)
+
+
+* Keep relevant vars
+replace D = "USDfx"		if D == "IMF based exchange rate"
+replace D = "pop"		if D == "Population"
+keep if inlist(D, "pop", "USDfx")
 
 * Reshape
-qui ds C E, not
-foreach var in `r(varlist)'{
-	local newname = `var'[1]
-	ren `var' UN_pop`newname'
-}
-qui greshape long UN_pop, i(C E) j(year) 
+greshape wide UN_, i(A B year) j(D)
 
 * Make ISO3 code
-ren C countryname
-ren E ISOnum
-destring ISOnum UN_pop, replace force
+ren B countryname
+ren A ISOnum
+destring ISOnum, replace force
 drop if ISOnum == .
 merge m:1 ISOnum using $isomapping, keep(3) keepus(ISO3) nogen
-
-* Keep 
-keep ISO3 year UN_pop
+drop ISOnum countryname
 
 * Convert to millions
-replace UN_pop = UN_pop / (10^3)
+replace UN_pop = UN_pop / (10^6)
 
 * Merge
 merge 1:1 ISO3 year using `temp_master', nogen
 
-* Convert Croatia's values to Euro
-qui ds ISO3 year UN_pop *_GDP, not
-foreach var in `r(varlist)'{
-	replace `var' = `var' / 7.5345 if ISO3 == "HRV"
-}
-
-* Convert Venezuela's units
-qui ds ISO3 year UN_pop *_GDP, not
-foreach var in `r(varlist)'{
-	replace `var' = `var' / 10^6 if ISO3 == "VEN"
-}
-
-* Venezuelan values before 2014 seem unreliable.
-replace UN_exports = . if year >= 2015
-replace UN_imports = . if year >= 2015
-replace UN_exports_GDP = . if year >= 2015
-replace UN_imports_GDP = . if year >= 2015
-
 * Czechoslovakia has some trade values that negative
 replace UN_exports = abs(UN_exports) if ISO3 == "CSK"
 replace UN_exports_GDP = abs(UN_exports_GDP) if ISO3 == "CSK"
+
+* Add the deflator
+gen UN_deflator = (UN_nGDP / UN_rGDP) * 100
+
+* Rebase variables to $base_year
+gmd_rebase UN
+
+* Check for ratios and levels 
+check_gdp_ratios UN
 
 * ==============================================================================
 * 	OUTPUT

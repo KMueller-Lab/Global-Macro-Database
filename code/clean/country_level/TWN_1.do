@@ -60,6 +60,12 @@ order ISO3 year
 * Drop unused variables
 drop CS1_nGDP_pc CS1_nGDP_pc_USD
 
+* Rebase variables to $base_year
+gmd_rebase CS1
+
+* Check for ratios and levels 
+check_gdp_ratios CS1
+
 * Save 
 isid ISO3 year
 save ${output} , replace 

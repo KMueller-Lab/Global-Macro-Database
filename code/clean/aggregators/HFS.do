@@ -25,7 +25,7 @@ clear
 
 * Define globals 
 global input "${data_raw}/aggregators/HFS/General_tables.xlsx"
-global input1 "input_temp"
+global input1 "${data_raw}/aggregators/HFS/input1.dta"
 global output "${data_clean}/aggregators/HFS/HFS.dta"
 
 * ==============================================================================
@@ -58,7 +58,7 @@ foreach var in `r(varlist)' {
 drop in 1
 
 * Save the input
-save "input_temp", replace
+save "$input1", replace
 
 
 
@@ -357,6 +357,7 @@ replace series = "c_govrev" if series == "Federal revenue" & scale == "Millions"
 replace series = "c_govexp" if series == "Federal spending" & scale == "Millions"
 replace series = "c_rGDP_LCU" if series == "Gross domestic product" & unit == "Constant 1970 Mexican pesos"
 replace series = "c_M0" if series == "Monetary base (M0)"
+replace series = "c_CPI" if series == "Wholesale prices, Mexico City" & source == "INEGI (1999: Cuadro 19.6)"
 
 * Keep only relevant rows
 keep if strpos(series, "c_")
@@ -1224,10 +1225,6 @@ replace exports = exports * 2 if ISO3 == "ZAF"
 replace imports = . if inlist(ISO3, "POL", "SRB")
 replace exports = . if inlist(ISO3, "POL", "SRB")
 
-* ==============================================================================
-* 	SET UP 
-* ==============================================================================
-
 * Derive inflation rate
 sort ISO3 year
 encode ISO3, gen(id)
@@ -1254,6 +1251,27 @@ ren HFS_DEFICIT HFS_govdef
 * Drop unused variables
 drop HFS_GBPfx
 
+* Assign all value to central government. Not specified in the source but historically, central government was the main government.
+ren HFS_gov* HFS_cgov*
+
+* Add variabels to GDP ratio 
+gen HFS_cgovdebt_GDP = (HFS_cgovdebt / HFS_nGDP) * 100
+gen HFS_cgovexp_GDP = (HFS_cgovexp / HFS_nGDP) * 100
+gen HFS_cgovdef_GDP = (HFS_cgovdef / HFS_nGDP) * 100
+gen HFS_cgovrev_GDP = (HFS_cgovrev / HFS_nGDP) * 100
+gen HFS_cons_GDP = (HFS_cons / HFS_nGDP) * 100
+gen HFS_inv_GDP = (HFS_inv / HFS_nGDP) * 100
+gen HFS_finv_GDP = (HFS_finv / HFS_nGDP) * 100
+gen HFS_exports_GDP = (HFS_exports / HFS_nGDP) * 100
+gen HFS_imports_GDP = (HFS_imports / HFS_nGDP) * 100
+
+* Check for ratios and levels 
+check_gdp_ratios HFS
+
+* ==============================================================================
+* 	SET UP 
+* ==============================================================================
+
 * Check for duplicates
 isid ISO3 year
 
@@ -1267,4 +1285,4 @@ order ISO3 year
 save "${output}", replace
 
 * Remove input1 file
-rm "$input1.dta"
+rm "$input1"

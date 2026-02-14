@@ -58,6 +58,11 @@ gen exports_GDP = (exports / nGDP) * 100
 gen finv_GDP    = (finv / nGDP) * 100
 gen inv_GDP     = (inv / nGDP) * 100
 
+
+* Add the deflator
+gen deflator = (nGDP / rGDP) * 100
+
+
 * Add source identifier
 qui ds year, not
 foreach var in `r(varlist)'{
@@ -66,6 +71,12 @@ foreach var in `r(varlist)'{
 
 * Add ISO3 
 gen ISO3 = "ITA"
+
+* Rebase variables to $base_year
+gmd_rebase CS3
+
+* Check for ratios and levels 
+check_gdp_ratios CS3
 
 * ==============================================================================
 * 	Output

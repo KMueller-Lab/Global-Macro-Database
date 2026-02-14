@@ -17,43 +17,42 @@
 *
 * ==============================================================================
 
-* ==============================================================================
-* SET UP
-* ==============================================================================
-clear
-global output "${data_raw}\aggregators\BIS\BIS_CPI"
+* Run the master file
+do "code/0_master.do"
 
-* Create tempfile
-tempfile temp_master
-save `temp_master', replace emptyok
+cap {
 
 
-* ==============================================================================
-* CONSUMER PRICE INDEX: Index, 2010 = 100
-* ==============================================================================
-* Download
-dbnomics import, provider(BIS) dataset(WS_LONG_CPI) FREQ(A) UNIT_MEASURE(628) clear
+global output "${data_raw}/aggregators/BIS/BIS_CPI/BIS_CPI"
 
-* Merge and save
-append using `temp_master'
-save `temp_master', replace
+local url "https://stats.bis.org/api/v1/data/WS_LONG_CPI/A?format=csv&detail=dataonly"
 
-* ==============================================================================
-* CONSUMER PRICE INDEX: Year-on-year changes, in per cent
-* ==============================================================================
-* Download
-dbnomics import, provider(BIS) dataset(WS_LONG_CPI) FREQ(A) UNIT_MEASURE(771) clear
+* Download the data 
+copy "`url'" "bis_cpi.csv", replace
 
-* Merge and save
-append using `temp_master'
-save `temp_master', replace
+* Import the downloaded CSV file
+import delimited "bis_cpi.csv", clear varnames(1)
 
-* ==============================================================================
-* OUTPUT
-* ==============================================================================
 * Save date 
 gmdsavedate, source(BIS_CPI)
-gmdsavedate, source(BIS_infl)
 
 * Save
-savedelta ${output}, id(period ref_area series_code)
+save "$output", replace 
+
+
+}
+
+* Create the log
+clear
+set obs 1
+gen variable = "BIS_CPI"
+gen status = ""
+if _rc == 0 {
+	replace status = "Success"
+}
+else {
+	replace status = "Error"
+}
+
+* Save
+save "$data_temp/download_log/BIS_CPI_log.dta", replace

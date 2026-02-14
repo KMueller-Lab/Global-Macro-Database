@@ -163,7 +163,8 @@ replace govtax = govtax / 1000 if ISO3 == "COD" & year <= 1995
 replace govrev = govrev / 1000 if ISO3 == "COD" & year <= 1962
 replace govtax = govtax / 1000 if ISO3 == "COD" & year <= 1962
 
-
+* Assigning all data to central government. Not specified in the source but using central government was more common in that period
+ren gov* cgov*
 
 * Add source identifier
 qui ds year ISO3, not

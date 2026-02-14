@@ -428,7 +428,7 @@ foreach country in `r(varlist)' {
 	convert_units `country' 1950 1993 "B"
 }
 convert_units Italy 1950 1993 "Tri"
-
+replace Portugal = Portugal / 10 if year == 1971
 
 * Reshape and save
 reshape_data imports

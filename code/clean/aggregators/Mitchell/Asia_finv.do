@@ -154,7 +154,7 @@ replace finv = finv * (10^-6) if year <= 1998 & countryname == "Turkey"
 replace finv = finv * (10^-3) if year >= 1999 & countryname == "Turkey"
 replace finv = finv * (10^-4) if year <= 1939 & countryname == "Taiwan"
 replace finv = finv / 4 if year <= 1939 & countryname == "Taiwan"
-
+replace finv = finv / 10 if year == 1970 & countryname == "Japan"
 
 *===============================================================================
 * 			Final set up

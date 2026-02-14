@@ -5,97 +5,116 @@
 * DOWNLOAD DATA FROM AMECO
 * 
 * Author:
-* Ziliang Chen
+* Mohamed Lehbib
 * National University of Singapore
 *
 * Created: 2024-11-06
 *
 * Description: 
-* This stata script downloads data from AMECO using DBnomics API
+* This stata script downloads data from AMECO 
 * 
-* Data source:
-* DBnomics API
-* 
-* Last downloaded:
-* 2024-11-06
 * ==============================================================================
+
+* Run the master file
+do "code/0_master.do"
+
+cap {
+
 clear 
 * Define output file name 
 global output "${data_raw}\aggregators\AMECO\AMECO"
 
-* Create temporary file
-clear
+
+* Create the temporary file to save the dataset 
+clear 
 tempfile temp_master
 save `temp_master', replace emptyok
 
+* First batch
+local databases NPTN ZUTN ZCPIH ZCPIX UCNT UITT UIGT USGN USNN UVGD UXGS UMGS UUTG URTG UTTT UDGGL
 
-* Real effective exchange rates
-dbnomics import, pr(AMECO) d(XUNRQ-1)  clear
-append using `temp_master', force
-save `temp_master', replace
+foreach database of local databases {
+	
+	qui readhtmltable "https://ec.europa.eu/economy_finance/ameco/wq/series?fullVariable=1.0.0.0.`database'&defaultCountries=1&Yearorder=ASC", varnames
+	qui count 
+	if r(N) > 0 {
+		
+		* Display results
+		di "Data added for `database'"
+		qui missings dropvars, force
+		* Reshape
+		qui greshape long _, i(Country Label Unit) j(year) string
+		
+		* Add code column
+		qui gen code = "`database'"
+		local database value
+		ren _ `database'
+		
+		* Append
+		qui append using `temp_master'
+		qui save `temp_master', replace
+		
+		
+	}
+	else {
+		di "No data for `database'"
+	}	
+	
+}
 
-* Nominal short-term interest rates
-dbnomics import, pr(AMECO) d(ISN) unit(-)   clear
-append using `temp_master', force
-save `temp_master', replace
 
-* Nominal long-term interest rates
-dbnomics import, pr(AMECO) d(ILN) unit(-)  clear
-append using `temp_master', force
-save `temp_master', replace
+* Second batch
+local databases ILN ISN OMGS OMSN OMGN OXGS OXSN OXGN OVGD OIGT OITT OCNT OCCG OCTH
+foreach database of local databases {
+	
+	qui readhtmltable "https://ec.europa.eu/economy_finance/ameco/wq/series?fullVariable=1.1.0.0.`database'&defaultCountries=1&Yearorder=ASC", varnames
+		qui count 
+		if r(N) > 0 {
+			
 
-* Exports of goods and services at current prices
-dbnomics import, pr(AMECO) d(UXGS) clear
-append using `temp_master', force
-save `temp_master', replace
+			* Display results
+			di "Data added for `database'"
+			qui missings dropvars, force
+			
+			* Reshape
+			qui greshape long _, i(Country Label Unit) j(year) string
+			
+			* Add code column
+			qui gen code = "`database'"
+			local database value
+			ren _ `database'
 
-* Imports of goods and services at current prices
-dbnomics import, pr(AMECO) d(UMGS) clear
-append using `temp_master', force
-save `temp_master', replace
-
-* Total consumption at current prices
-dbnomics import, pr(AMECO) d(UCNT) clear
-append using `temp_master', force
-save `temp_master', replace
-
-* Gross fixed capital formation at current prices
-dbnomics import, pr(AMECO) d(UIGT) clear
-append using `temp_master', force
-save `temp_master', replace
-
-* Gross capital formation at current prices
-dbnomics import, pr(AMECO) d(UITT) clear
-append using `temp_master', force
-save `temp_master', replace
-
-* Gross domestic product at current prices
-dbnomics import, pr(AMECO) d(UVGD) clear
-append using `temp_master', force
-save `temp_master', replace
-
-* Gross domestic product at 2015 reference levels
-dbnomics import, pr(AMECO) d(OVGD) clear
-append using `temp_master', force
-save `temp_master', replace
-
-* Total population
-dbnomics import, pr(AMECO) d(NPTD) clear
-append using `temp_master', force
-save `temp_master', replace
-
-* Total unemployment 
-dbnomics import, pr(AMECO) d(NUTN) clear
-append using `temp_master', force
-save `temp_master', replace
-
-* National consumer price index
-dbnomics import, pr(AMECO) d(ZCPIN)  clear
-append using `temp_master', force
-save `temp_master', replace
+			
+			* Append
+			qui append using `temp_master'
+			qui save `temp_master', replace
+			
+			
+		}
+		else {
+			di "No data for `database'"
+		}	
+}
 
 * Save download date 
 gmdsavedate, source(AMECO)
 
 * Save
-savedelta ${output}, id(period period_start_day geo dataset_code series_code)
+savedelta ${output}, id(year code Country)
+
+}
+
+* Create the log
+clear
+set obs 1
+gen variable = "AMECO"
+gen status = ""
+if _rc == 0 {
+	replace status = "Success"
+}
+else {
+	replace status = "Error"
+}
+
+* Save
+save "$data_temp/download_log/AMECO_log.dta", replace

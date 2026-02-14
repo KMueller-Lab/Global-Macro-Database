@@ -16,7 +16,7 @@
 
 cap program drop gmdaddnote_source
 program define gmdaddnote_source
-syntax anything
+syntax anything [if]
 
     * Parse arguments
     tokenize `anything'
@@ -39,6 +39,7 @@ syntax anything
 	
     * Append to existing notes file
     qui append using "$data_temp/notes_sources"
+	
 	* Drop duplicates 
 	qui duplicates drop source note variable, force
 	

@@ -76,6 +76,7 @@ foreach country of local countries {
 }
 convert_units Tanganyika 1915 1949 "Th"
 convert_units Zimbabwe   1905 1939 "Th"
+convert_units Zimbabwe   1905 1939 "Th"
 convert_units Nigeria	 1905 1944 "Th"
 convert_units Sudan	     1905 1944 "Th"
 

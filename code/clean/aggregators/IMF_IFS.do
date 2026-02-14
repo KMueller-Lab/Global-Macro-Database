@@ -13,11 +13,12 @@
 * National University of Singapore
 * 
 * Created: 2024-04-22
-* Last update: 2024-09-26
+* Last update: 2025-06-23
 *
 * Description: This Stata script processes the raw IMF IFS data.
 *
 * Data source: IMF International Financial Statistics
+* 
 * ==============================================================================
 
 * ==============================================================================
@@ -27,129 +28,130 @@
 clear
 
 * Define input and output files
-global input "${data_raw}/aggregators/IMF/IMF_IFS"
-global output "${data_clean}/aggregators/IMF/IMF_IFS.dta"
+global input "${data_raw}/aggregators/IMF/IMF_IFS/IMF_IFS.csv"
+global output "${data_clean}/aggregators/IMF/IMF_IFS/IMF_IFS.dta"
 
 * ==============================================================================
 * 	SET UP
 * ==============================================================================
 * Open.
-use "${input}", clear
+import delimited using "${input}", clear varnames(1)
+
+* Rename variables
+generat varname = "nGDP" if indicator == "B1GQ" & price_type == "V"
+replace varname = "rGDP" if indicator == "B1GQ" & price_type == "Q"
+replace varname = "finv" if indicator == "P51G" 
+replace varname = "inv" if indicator == "P5"
+replace varname = "imports" if indicator == "P6"
+replace varname = "exports" if indicator == "P7"
+replace varname = "cons" if indicator == "P3" & price_type == "V"
+replace varname = "REER" if indicator == "REER_IX_RY2010_ACW_RCPI"
+replace varname = "strate" if indicator == "GSTBILY_RT_PT_A_PT" 
+replace varname = "ltrate" if indicator == "S13BOND_RT_PT_A_PT"
+replace varname = "cbrate" if indicator == "MFS166_RT_PT_A_PT"
+replace varname = "discount" if indicator == "DISR_RT_PT_A_PT"
+replace varname = "CA_USD" if indicator == "CAB" & unit == "USD"
+replace varname = "unemp" if indicator == "U"
+replace varname = "CPI" if type_of_transformation == "SRP_IX" & index_type == "CPI"
+replace varname = "infl" if type_of_transformation == "SRP_POP_PCH_PA_PT" & index_type == "CPI"
+replace varname = "USDfx" if indicator == "USD_XDC"
+replace varname = "M3" if indicator == "BM_MAI" 
+replace varname = "M0" if indicator == "NDMBM_MAI"
+drop if varname == ""
+
+* Keep final variables 
+keep varname country time_period obs_value
+destring time_period obs_value, ignore("NA") replace
+drop if time_period == . 
 
 * Reshape into a wide dataset.
-keep period ref_area indicator value
-greshape wide value, i(ref_area period) j(indicator)
+greshape wide obs_value, i(time_period country) j(varname)
+ren (obs_value* country time_period) (* ISO3 year)
 
-* Rename
-ren value* *
-ren (period ref_area NGDP_XDC NGDP_R_XDC ENDA_XDC_USD_RATE EREER_IX FPOLM_PA LP_PE_NUM LUR_PT BCAXF_BP6_USD NFI_XDC NI_XDC NM_XDC NX_XDC NC_XDC PCPI_IX PCPI_PC_CP_A_PT NC_R_XDC) (year ISO2 nGDP rGDP USDfx REER cbrate pop unemp CA_USD finv inv imports exports cons CPI infl rcons)
+* Derive current account in local currency 
+replace USDfx = 1 / USDfx 
 
-* Use the exchange rate to derive the CA
-gen CA = CA_USD * USDfx
+* Convert to euro 
+merge m:1 ISO3 using "$eur_fx", keep(1 3)
+replace USDfx = USDfx / EUR if _merge == 3 
+drop EUR _merge 
 
+* Derive 
+qui gen CA = CA_USD * USD
 
-* Change German Federal Republic ISO code.
-replace ISO2 = "DD" if ISO2 == "DE2"
+* Convert Somalia to local currency
+qui ds nGDP rGDP finv inv imports exports cons M0 M3
+foreach var in `r(varlist)' {
+	replace `var' = `var' / USDfx if ISO3 == "SOM" // Won't work because we don't have exchange rate to convert values
 
-* Change Socialist Federal Republic of Yugoslavia ISO code.
-replace ISO2 = "YU" if ISO2 == "YUC"
+}
 
-* Change CzechoSlovakia ISO code.
-replace ISO2 = "CS" if ISO2 == "CSH"
+* Convert units 
+qui ds nGDP rGDP finv inv imports exports cons
+foreach var in `r(varlist)' {
+	replace `var' = `var' * 1000 if ISO3 == "GNQ"
+}
 
-* Change U.S.S.R ISO code.
-replace ISO2 = "SU" if ISO2 == "SUH"
+* Data for Burundi appears to be wrong for Fixed investment 
+replace finv = . if ISO3 == "BDI"
+
+* Units for Haiti Fixed investment are off before 1986 and there is a 
+* break between 1989 and 1994 in consumption data
+qui replace finv = finv * 10 if year <= 1986 & ISO3 == "HTI"
+qui replace cons = . if inrange(year, 1989, 1994) & ISO3 == "HTI"
+
+* Convert to millions 
+qui ds nGDP rGDP finv inv imports exports cons CA_USD CA M0 M3
+foreach var in `r(varlist)' {
+	replace `var' = `var' / 10^6
+	if !inlist("`var'", "nGDP", "rGDP", "M0", "M3") {
+		qui gen `var'_GDP = (`var' / nGDP) * 100
+	}
+}
 
 * Drop regional aggregates 
-drop if regexm(ISO2, "[0-9]")
+drop if regexm(ISO3, "[0-9]")
 
-* Convert ISO2 into ISO3 codes.
-merge m:1 ISO2 using ${isomapping}, nogen keep(3) assert(2 3) keepusing(ISO3)
-drop ISO2 
+* Construct the central policy rate as the Monetary policy-related rate and the discount rate 
+replace cbrate = discount if cbrate == . 
+gmdaddnote_source IMF_IFS  "Using the discount rate when the monetary policy-related rate is missing" cbrate if cbrate == . & discount != . 
+drop discount 
+gmdaddnote_source IMF_IFS  "This is referred to in the original data as Broad Money" M3
+gmdaddnote_source IMF_IFS  "This is referred to in the original data as National Definitions of Money Base Money" M0
 
-* Convert pop to million
-replace pop = pop / 1000
+* Fix ISO3 codes 
+replace ISO3 = "PSE" if ISO3 == "WBG"
+replace ISO3 = "XKX" if ISO3 == "KOS"
 
-* Add source identifier
+* Curaçao has two ISO3 codes and Yemen is now unified. 
+drop if inlist(ISO3, "CWX", "YAR")
+
+* Add source identifier 
 qui ds ISO3 year, not
-foreach var in `r(varlist)'{
+foreach var in `r(varlist)' {
 	ren `var' IMF_IFS_`var'
 }
 
+* Convert M0 for Uruguay
+replace IMF_IFS_M0 = IMF_IFS_M0 / 1000 if year >= 2018 & ISO3 == "URY"
 
-* Convert currency for european countries
-merge m:1 ISO3 using $eur_fx, keep(1 3)
-replace IMF_IFS_USDfx  = IMF_IFS_USDfx / EUR_irrevocable_FX if _merge == 3
-drop EUR_irrevocable_FX _merge
+* Rebase variables to $base_year
+gmd_rebase IMF_IFS
 
-* ==============================================================================
-* 	Convert units in case of undocumented inconsistencies in reporting units
-* ==============================================================================
-
-* Fix Ghana's imports and exports data (negative values detected)
-replace IMF_IFS_exports = abs(IMF_IFS_exports) 
-replace IMF_IFS_imports = abs(IMF_IFS_imports) 
-
-* Fix wrong values
-replace IMF_IFS_nGDP = . if IMF_IFS_nGDP == 4.657e-07 & ISO3 == "VNM"
-
-* Fix the units for real GDP for various countries (Errors detected from the plots)
-replace IMF_IFS_nGDP = IMF_IFS_nGDP / 100  if ISO3 == "LBR"
-replace IMF_IFS_nGDP = IMF_IFS_nGDP * 1000 if ISO3 == "IND"
-replace IMF_IFS_nGDP = IMF_IFS_nGDP * (10^3) if ISO3 == "IDN"
-replace IMF_IFS_nGDP = IMF_IFS_nGDP * 1000 if ISO3 == "LBY" & year <= 1985 & year >= 1981
-replace IMF_IFS_rGDP = IMF_IFS_rGDP * (10^9) if ISO3 == "BFA"
-replace IMF_IFS_rGDP = IMF_IFS_rGDP * (10^6) if ISO3 == "IND"
-replace IMF_IFS_rGDP = . if year <= 2004 & ISO3 == "SLV"
-
-* Fix the units for India and Indonesia
-replace IMF_IFS_imports = IMF_IFS_imports * 1000 if inlist(ISO3, "IND", "IDN")
-replace IMF_IFS_exports = IMF_IFS_exports * 1000 if inlist(ISO3, "IND", "IDN")
-
-* Burkina Faso data is 0 before 1998
-replace IMF_IFS_imports = . if ISO3 == "BFA" & year <= 1998
-replace IMF_IFS_exports = . if ISO3 == "BFA" & year <= 1998
-
-* Bolivia exchange rate issues
-replace IMF_IFS_USDfx = . if year == 1958 & ISO3 == "BOL"
-
-* Sao-Tome & Principe and Sierra Leone exchange rate issues
-replace IMF_IFS_USDfx = IMF_IFS_USDfx * 1000 if ISO3 == "STP"
-replace IMF_IFS_USDfx = IMF_IFS_USDfx * 1000 if ISO3 == "SLE"
-
-* Turkiye
-replace IMF_IFS_USDfx = IMF_IFS_USDfx / 1000000 if ISO3 == "TUR" & year <= 1956
-replace IMF_IFS_USDfx = IMF_IFS_USDfx / 100000 if ISO3 == "TUR"  & year == 1957
-
-* Wrong value for Vietnam GDP in 2023
-replace IMF_IFS_nGDP = 1.022e+10 if ISO3 == "VNM" & year == 2023 // Using values from IMF WEO
-replace IMF_IFS_rGDP = 5.831e+09 if ISO3 == "VNM" & year == 2023 // Using values from IMF WEO
-
-* Derive CA_GDP
-gen IMF_IFS_CA_GDP = (IMF_IFS_CA/IMF_IFS_nGDP) * 100
-
-* Drop
-drop   IMF_IFS_BGS_BP6_USD IMF_IFS_CA IMF_IFS_CA_USD IMF_IFS_EDNE_USD_XDC_RATE 
-
-* Add ratios to gdp variables
-gen IMF_IFS_cons_GDP    = (IMF_IFS_cons / IMF_IFS_nGDP) * 100
-gen IMF_IFS_imports_GDP = (IMF_IFS_imports / IMF_IFS_nGDP) * 100
-gen IMF_IFS_exports_GDP = (IMF_IFS_exports / IMF_IFS_nGDP) * 100
-gen IMF_IFS_finv_GDP    = (IMF_IFS_finv / IMF_IFS_nGDP) * 100
-gen IMF_IFS_inv_GDP     = (IMF_IFS_inv / IMF_IFS_nGDP) * 100
-
+* Check for ratios and levels 
+check_gdp_ratios IMF_IFS
 
 * ==============================================================================
 * 	OUTPUT
 * ==============================================================================
-* Sort
-sort ISO3 year
-
 * Order
 order ISO3 year
+
+* Sort
+sort ISO3 year
 
 * Check for duplicates
 isid ISO3 year
 
-* Save
+* Output
 save "${output}", replace

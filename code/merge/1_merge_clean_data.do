@@ -39,6 +39,7 @@ filelist, directory($data_clean) pat(*.dta)
 
 * Drop Mitchell individual files
 drop if regexm(dirname,"MITCHELL/individual_files")
+
 * Make list of actual files 
 replace filename = dirname+"/"+filename
 levelsof filename, loc(files)
@@ -92,14 +93,14 @@ qui keep if year >= minyear
 * Drop temporary variables
 qui drop anydata minyear
 
-* Drop IDCM 
-drop IDCM*
-
 * Nominal variables should not have zeros which is sometimes caused by periods of hyperinflation.
 qui ds ISO3 year BVX* RR* LV* *ltrate *strate *cbrate *infl, not
 foreach var in `r(varlist)'{
 	qui replace `var' = . if `var' == 0
 }
+
+* Recast ISO3 
+recast str3 ISO3
 
 * Save 
 save "$data_final/clean_data_wide", replace 

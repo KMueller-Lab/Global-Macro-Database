@@ -22,7 +22,7 @@
 clear
 
 * Define input and output files
-global input "${data_raw}/aggregators/PWT/pwt1001.dta"
+global input "${data_raw}/aggregators/PWT/PWT.dta"
 global output "${data_clean}/aggregators/PWT/PWT.dta"
 
 * ==============================================================================
@@ -47,22 +47,28 @@ drop if ISO3 == "CH2"
 keep ISO3 year PWT_*
 
 * Fix Iran USDfx (wrong values)
-gmdfixunits PWT_USDfx if inrange(year, 1958, 1959) & ISO3 == "IRN", replace(75.75)
+qui replace PWT_USDfx = 75.75 if inrange(year, 1958, 1959) & ISO3 == "IRN" 
+gmdaddnote_source PWT  "Use the official exchange rate data from the IMF for 1958 and 1959." USDfx
 
 * Drop Liberia USDfx (Not pegged anymore to USD)
-gmdfixunits PWT_USDfx if ISO3 == "LBR", missing
+qui replace PWT_USDfx = . if ISO3 == "LBR" & year >= 1998 
+gmdaddnote_source PWT  "Dropped value after 1998 because that is when the peg ended." USDfx
 
 * Drop Zimbabwe USDfx (Not pegged to USD)
-gmdfixunits PWT_USDfx if ISO3 == "ZWE", missing
+qui replace PWT_USDfx = . if ISO3 == "ZWE" 
+gmdaddnote_source PWT  "Dropped because the currency was never pegged to USD." USDfx
 
 * Fix Sierra Leone units
-gmdfixunits PWT_USDfx if ISO3 == "SLE", multiply(1000)
+qui replace PWT_USDfx = PWT_USDfx / 1000 if ISO3 == "SLE" & year <= 2021 
+gmdaddnote_source PWT  "Values converted to current currency before 2021." USDfx
 
 * Drop Venezuela (Incorrect values) after 2014
-gmdfixunits PWT_USDfx if ISO3 == "VEN" & year >= 2014, missing
+qui replace PWT_USDfx = . if ISO3 == "VEN" & year >= 2014
+gmdaddnote_source PWT  "Incorrect values after 2014 compared to other sources after 2014." USDfx
 
 * Indonesia's exchange rate is not correct before 1965
-gmdfixunits PWT_USDfx if ISO3 == "IDN" & year <= 1965, missing
+qui replace PWT_USDfx = . if ISO3 == "IDN" & year <= 1965
+gmdaddnote_source PWT  "Incorrect values before 1965 compared to other sources before 1965." USDfx
 
 
 * ==============================================================================

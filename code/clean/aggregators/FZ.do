@@ -197,16 +197,6 @@ foreach var in `r(varlist)'{
 	replace `var' = `var' * (10^-12) if ISO3 == "DEU"
 }
 
-* Convert currency for Greece
-qui ds nGDP govdebt govdef govrev govdebt exports M0 
-foreach var in `r(varlist)'{
-	replace `var' = `var' * (10^-3) if ISO3 == "GRC"
-	replace `var' = `var' /   4     if ISO3 == "GRC"
-}
-
-
-
-
 * Convert to Euro
 merge m:1 ISO3 using "$eur_fx", keep(1 3) nogen 
 
@@ -216,6 +206,9 @@ foreach var in nGDP govdebt govdef govrev govdebt exports M0  {
 }
 drop EUR_irrevocable_FX
 
+* Assign all value to central government. Not specified in the source but uses Mitchell for some countries and Mitchell uses central government.
+ren gov* cgov*
+
 * Derive inflation rate
 sort ISO3 year
 encode ISO3, gen(id)
@@ -223,12 +216,20 @@ xtset id year
 by id: gen infl = (CPI - L.CPI) / L.CPI * 100 if L.CPI != .
 drop id
 
+* Add variables in ratios 
+gen exports_GDP = (exports / nGDP) * 100
+
 * Add source identifier
 qui ds ISO3 year, not
 foreach var  in `r(varlist)'{
 	ren `var' FZ_`var'
 }
 
+* Rebase variables to $base_year
+gmd_rebase FZ
+
+* Check for ratios and levels 
+check_gdp_ratios FZ
 
 * ===============================================================================
 * 	OUTPUT

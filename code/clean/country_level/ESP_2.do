@@ -38,7 +38,7 @@ import excel using "$input1", clear sheet("1500-2010_A") allstring cellrange(N3:
 qui ds
 foreach var in `r(varlist)'{
 	local newname = `var'[1]
-	ren `var' infl`newname'
+	qui ren `var' infl`newname'
 }
 drop in 1
 
@@ -46,7 +46,7 @@ drop in 1
 gen ISO3 = "ESP"
 
 * Reshape
-greshape long infl, i(ISO3) j(year)
+qui greshape long infl, i(ISO3) j(year)
 
 * Destring 
 destring infl, force replace
@@ -66,7 +66,7 @@ import excel using "$input2", clear sheet("Cuadro_3") allstring cellrange(M3:VM4
 qui ds
 foreach var in `r(varlist)'{
 	local newname = `var'[1]
-	ren `var' pop`newname'
+	qui ren `var' pop`newname'
 }
 drop in 1
 
@@ -74,13 +74,13 @@ drop in 1
 gen ISO3 = "ESP"
 
 * Reshape
-greshape long pop, i(ISO3) j(year)
+qui greshape long pop, i(ISO3) j(year)
 
 * Destring 
 destring pop, force replace
 
 * Save
-merge 1:1 ISO3 year using `temp_master', nogen
+qui merge 1:1 ISO3 year using `temp_master', nogen
 save `temp_master', replace
 
 * ==============================================================================
@@ -95,7 +95,7 @@ drop in 2 // empty row
 qui ds
 foreach var in `r(varlist)'{
 	local newname = `var'[1]
-	ren `var' pop`newname'
+	qui ren `var' pop`newname'
 }
 drop in 1
 
@@ -103,13 +103,16 @@ drop in 1
 gen ISO3 = "ESP"
 
 * Reshape
-greshape long pop, i(ISO3) j(year)
+qui greshape long pop, i(ISO3) j(year)
 
 * Destring 
 destring pop, force replace
 
+* Convert population units
+replace pop = pop / 1000000 
+
 * Save
-merge 1:1 ISO3 year using `temp_master', nogen
+qui merge 1:1 ISO3 year using `temp_master', nogen
 save `temp_master', replace
 
 * ==============================================================================
@@ -134,7 +137,7 @@ drop B C D E F G H J K L
 qui ds I, not
 foreach var in `r(varlist)'{
 	local newname = `var'[1]
-	ren `var' CS2_`newname'
+	qui ren `var' CS2_`newname'
 }
 drop in 1
 
@@ -142,14 +145,14 @@ drop in 1
 gen ISO3 = "ESP"
 
 * Reshape
-greshape long CS2_, i(ISO3 I) j(year)
-greshape wide CS2_, i(ISO3 year) j(I) string
+qui greshape long CS2_, i(ISO3 I) j(year)
+qui greshape wide CS2_, i(ISO3 year) j(I) string
 
 * Destring 
 destring CS2*, replace
 
 * Save
-merge 1:1 ISO3 year using `temp_master', nogen
+qui merge 1:1 ISO3 year using `temp_master', nogen
 save `temp_master', replace
 
 * ==============================================================================
@@ -170,7 +173,7 @@ replace I = "rGDP_pc" in 3
 qui ds I, not
 foreach var in `r(varlist)'{
 	local newname = `var'[1]
-	ren `var' CS2_`newname'
+	qui ren `var' CS2_`newname'
 }
 drop in 1
 
@@ -178,13 +181,13 @@ drop in 1
 gen ISO3 = "ESP"
 
 * Reshape
-greshape long CS2_, i(ISO3 I) j(year)
-greshape wide CS2_, i(ISO3 year) j(I) string
+qui greshape long CS2_, i(ISO3 I) j(year)
+qui greshape wide CS2_, i(ISO3 year) j(I) string
 
 * Destring 
 destring CS2*, replace
 * Save
-merge 1:1 ISO3 year using `temp_master', nogen
+qui merge 1:1 ISO3 year using `temp_master', nogen
 save `temp_master', replace
 
 * ==============================================================================
@@ -198,7 +201,7 @@ import excel using "$input3", clear sheet("PIB_A_1277-1850") allstring cellrange
 qui ds
 foreach var in `r(varlist)'{
 	local newname = `var'[1]
-	ren `var' rGDP_pc_index`newname'
+	qui ren `var' rGDP_pc_index`newname'
 }
 drop in 1
 
@@ -206,18 +209,18 @@ drop in 1
 gen ISO3 = "ESP"
 
 * Reshape
-greshape long rGDP_pc_index, i(ISO3) j(year)
+qui greshape long rGDP_pc_index, i(ISO3) j(year)
 
 * Destring 
 destring rGDP_pc_index, force replace
 
 * Save
-merge 1:1 ISO3 year using `temp_master', nogen
+qui merge 1:1 ISO3 year using `temp_master', nogen
 save `temp_master', replace
 
 * Chainlink rGDP pc 
 ren rGDP_pc_index index_rGDP_pc
-splice, priority(CS2 index) generate(rGDP_pc) varname(rGDP_pc) method("chainlink") base_year(2010) save("NO") 
+qui splice, priority(CS2 index) generate(rGDP_pc) varname(rGDP_pc) method("chainlink") base_year(2010) save("NO") 
 drop CS2_rGDP_pc index_rGDP_pc
 
 * Save
@@ -238,9 +241,9 @@ replace I = "cbrate_2" in 3
 * Rename the columns
 qui ds I, not
 foreach var in `r(varlist)'{
-	replace `var' = subinstr(`var', ":", "", .)
+	qui replace `var' = subinstr(`var', ":", "", .)
 	local newname = `var'[1]
-	ren `var' CS2_`newname'
+	qui ren `var' CS2_`newname'
 }
 drop in 1
 
@@ -248,8 +251,8 @@ drop in 1
 gen ISO3 = "ESP"
 
 * Reshape
-greshape long CS2_, i(ISO3 I) j(date) string
-greshape wide CS2_, i(ISO3 date) j(I) string
+qui greshape long CS2_, i(ISO3 I) j(date) string
+qui greshape wide CS2_, i(ISO3 date) j(I) string
 
 * Destring 
 destring CS2*, replace
@@ -271,7 +274,7 @@ replace CS2_cbrate = CS2_cbrate_2 if CS2_cbrate == .
 keep ISO3 year CS2_cbrate
 
 * Save
-merge 1:1 ISO3 year using `temp_master', nogen
+qui merge 1:1 ISO3 year using `temp_master', nogen
 save `temp_master', replace
 
 * Maximize real GDP availability
@@ -285,14 +288,21 @@ gen exports_GDP = (exports / nGDP) * 100
 gen finv_GDP    = (finv / nGDP) * 100
 gen inv_GDP     = (inv / nGDP) * 100
 
+* Add the deflator
+gen deflator = (nGDP / rGDP) * 100
+
+
 * Add source identifier
 qui ds ISO3 year, not
 foreach var in `r(varlist)'{
-	ren `var' CS2_`var'
+	qui ren `var' CS2_`var'
 }
 
-* Convert population units
-replace CS2_pop = CS2_pop / 1000000
+* Rebase variables to $base_year
+gmd_rebase CS2
+
+* Check for ratios and levels 
+check_gdp_ratios CS2
 
 * ==============================================================================
 * 	Output

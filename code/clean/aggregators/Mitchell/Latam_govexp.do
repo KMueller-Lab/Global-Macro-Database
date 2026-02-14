@@ -82,11 +82,7 @@ convert_units Brazil 1985 1988 "B"
 replace Brazil = Brazil * (10^-6) if year == 1989
 convert_units Brazil 1990 1992 "Th"
 
-
 convert_units Colombia 1967 2010 "B"
-
-convert_units Ecuador 1970 1999 "B"
-replace Ecuador = Ecuador / 25000 if year < 2000 // Convert to USD
 
 convert_units Paraguay 1965 2010 "B"
 
@@ -102,38 +98,50 @@ reshape_data govexp
 save_merge `temp_c'
 
 * Convert units
-
+* Brazil
 replace govexp = govexp / 2750 if year <= 1988 & countryname  == "Brazil"
 replace govexp = govexp * (10^-6) if year <= 1966 & countryname  == "Brazil"
 replace govexp = govexp * (10^-6) if year <= 1988 & countryname  == "Brazil"
 
-
+* Argentina
 replace govexp = govexp * (10^-4) if year <= 1988 & countryname == "Argentina"
 replace govexp = govexp * (10^-7) if year <= 1982 & countryname == "Argentina"
 replace govexp = govexp * (10^-3) if year == 1978 & countryname == "Argentina"
 replace govexp = govexp * (10^-2) if year <= 1969 & countryname == "Argentina"
 
+* Uruguay
 replace govexp = govexp * (10^-3) if countryname == "Uruguay"
 replace govexp = govexp * (10^-3) if year <= 1979 & countryname == "Uruguay"
 
+* Peru
 replace govexp = govexp * (10^-3) if countryname == "Peru"
 replace govexp = govexp * (10^-3) if year <= 1989 & countryname == "Peru"
 replace govexp = govexp * (10^-3) if year <= 1984 & countryname == "Peru"
 
+* Chile
 replace govexp = govexp * (10^3) if countryname == "Chile"
 replace govexp = govexp * (10^-3) if year <= 1974 & countryname == "Chile"
 replace govexp = govexp * (10^-3) if year <= 1966 & countryname == "Chile"
 replace govexp = govexp * (10^-3) if year <= 1949 & countryname == "Chile"
 
+* Bolivia
 replace govexp = govexp * (10^-6) if countryname == "Bolivia"
 replace govexp = govexp * (10^-3) if year <= 1973 & countryname == "Bolivia"
 
+* Paraguay
 replace govexp = govexp * (10^-2) if year <= 1939 & countryname == "Paraguay" 
 replace govexp = govexp / 1.75 if year <= 1919 & countryname == "Paraguay" 
 
-replace govexp = govexp * (10^-14) if countryname == "Venezuela"
+* Venezuela
+replace govexp = govexp * (10^-8) if countryname == "Venezuela"
 
+* Suriname
 replace govexp = govexp * (10^-3) if countryname == "Suriname"
+
+* Ecuador 
+replace govexp = govexp / 25000 if year <= 1993 & countryname == "Ecuador"
+replace govexp = govexp / 1000 if year <= 1993 & countryname == "Ecuador"
+
 
 *===============================================================================
 * 			Final set up

@@ -78,9 +78,26 @@ foreach var in `r(varlist)'{
 greshape long FAO_, i(year indicator) j(ISO3) string
 greshape wide FAO_, i(ISO3 year) j(indicator)
 
+
+* Convert Venezuela (only before 2018), and Sierra Leon to match UN units
+qui ds *finv FAO_nGDP *rGDP
+foreach var in `r(varlist)'{
+	qui replace `var' = `var' * (10^6) if ISO3 == "VEN"
+	qui replace `var' = . if ISO3 == "VEN" & year > 2017
+	qui replace `var' = `var' * (10^3) if ISO3 == "sle"
+}
+
 * Add ratios to gdp variables
 gen FAO_finv_GDP    = (FAO_finv / FAO_nGDP) * 100
 
+* Add the deflator
+gen FAO_deflator = (FAO_nGDP / FAO_rGDP) * 100
+
+* Rebase variables to $base_year
+gmd_rebase FAO
+
+* Check for ratios and levels 
+check_gdp_ratios FAO
 
 * ==============================================================================
 * OUTPUT

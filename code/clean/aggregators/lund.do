@@ -209,13 +209,16 @@ drop countryname
 sort ISO3 year 
 
 * Splice 
-splice, priority(fourth third second first) generate(REER) varname(REER) base_year(1999) method("chainlink")
+splice, priority(fourth third second first) generate(REER) varname(REER) base_year(1999) method("chainlink") save("NO")
 
 * Keep 
 keep ISO3 year REER 
 
 * Rename
 ren REER LUND_REER
+
+* Rebase variables to $base_year
+gmd_rebase LUND
 
 * ==============================================================================
 * Output

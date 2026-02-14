@@ -51,10 +51,11 @@ program define gmdcombinedocs
     file write mastertex "}" _n _n
     
     * Add section-specific styles for all variables
-    foreach var in nGDP rGDP rcons cons inv finv exports imports CA_GDP USDfx REER ///
+    foreach var in nGDP rGDP cons inv finv exports imports CA_GDP USDfx REER ///
 				   cons_GDP inv_GDP finv_GDP exports_GDP imports_GDP  ///
-                   govtax govexp govdef_GDP govdebt_GDP govrev ///
-				   govtax_GDP govexp_GDP govrev_GDP  ///
+                   gen_govexp gen_govexp_GDP cgovexp cgovexp_GDP gen_govrev cgovrev ///
+				   gen_govrev_GDP cgovrev_GDP gen_govtax cgovtax gen_govtax_GDP cgovtax_GDP ///
+				   gen_govdef_GDP cgovdef_GDP gen_govdebt_GDP cgovdebt_GDP  ///
                    M0 M1 M2 M3 M4 cbrate strate ltrate CPI HPI infl unemp pop {
         file write mastertex "\fancypagestyle{`var'Style}{%" _n
         file write mastertex "    \fancyhf{}" _n
@@ -64,7 +65,6 @@ program define gmdcombinedocs
         * Add proper variable names in the header
         if "`var'" == "nGDP" local varname "Nominal GDP"
         else if "`var'" == "rGDP" local varname "Real GDP"
-		else if "`var'" == "rcons" local varname "Real consumption"
         else if "`var'" == "cons" local varname "Consumption"
 		else if "`var'" == "cons_GDP" local varname "Consumption to GDP"
         else if "`var'" == "inv" local varname "Gross capital formation"
@@ -79,14 +79,22 @@ program define gmdcombinedocs
         else if "`var'" == "CA_GDP" local varname "Current account"
         else if "`var'" == "USDfx" local varname "USD exchange rate"
         else if "`var'" == "REER" local varname "Real effective exchange rate"
-        else if "`var'" == "govtax" local varname "Government tax revenue"
-        else if "`var'" == "govtax_GDP" local varname "Government tax revenue to GDP"
-		else if "`var'" == "govexp" local varname "Government expenditure"
-		else if "`var'" == "govexp_GDP" local varname "Government expenditure to GDP"
-        else if "`var'" == "govdef_GDP" local varname "Government deficit"
-        else if "`var'" == "govdebt_GDP" local varname "Government debt"
-        else if "`var'" == "govrev" local varname "Government revenue"
-		else if "`var'" == "govrev_GDP" local varname "Government revenue to GDP"
+        else if "`var'" == "cgovtax" local varname "Central government tax revenue"
+        else if "`var'" == "cgovtax_GDP" local varname "Central government tax revenue to GDP"
+		else if "`var'" == "cgovexp" local varname "Central government expenditure"
+		else if "`var'" == "cgovexp_GDP" local varname "Central government expenditure to GDP"
+        else if "`var'" == "cgovdef_GDP" local varname "Central government deficit to GDP"
+        else if "`var'" == "cgovdebt_GDP" local varname "Central government debt to GDP"
+        else if "`var'" == "cgovrev" local varname "Central government revenue"
+		else if "`var'" == "cgovrev_GDP" local varname "Central government revenue to GDP"
+        else if "`var'" == "gen_govtax" local varname "General government tax revenue"
+        else if "`var'" == "gen_govtax_GDP" local varname "General government tax revenue to GDP"
+		else if "`var'" == "gen_govexp" local varname "General government expenditure"
+		else if "`var'" == "gen_govexp_GDP" local varname "General government expenditure to GDP"
+        else if "`var'" == "gen_govdef_GDP" local varname "General government deficit to GDP"
+        else if "`var'" == "gen_govdebt_GDP" local varname "General government debt to GDP"
+        else if "`var'" == "gen_govrev" local varname "General government revenue"
+		else if "`var'" == "gen_govrev_GDP" local varname "General government revenue to GDP"
         else if "`var'" == "M0" local varname "Money supply (M0)"
         else if "`var'" == "M1" local varname "Money supply (M1)"
         else if "`var'" == "M2" local varname "Money supply (M2)"
@@ -115,7 +123,7 @@ program define gmdcombinedocs
     file write mastertex "\begin{document}" _n
     
     * Title page
-    file write mastertex "\title{\Large Global Macro Project: Data Documentation}" _n
+    file write mastertex "\title{\Large Global Macro Database: Data Documentation}" _n
     file write mastertex "\date{" `"`=string(date(c(current_date),"DMY"),"%tdMonth_DD,_CCYY")'"' "}" _n
     file write mastertex "\maketitle" _n
     file write mastertex "\thispagestyle{empty}" _n _n
@@ -160,7 +168,6 @@ program define gmdcombinedocs
         * Get proper variable name for TOC
         if "`var'" == "nGDP" local varname "Nominal GDP"
         else if "`var'" == "rGDP" local varname "Real GDP"
-		else if "`var'" == "rcons" local varname "Real consumption"
         else if "`var'" == "cons" local varname "Consumption"
 		else if "`var'" == "cons_GDP" local varname "Consumption to GDP"
         else if "`var'" == "inv" local varname "Gross capital formation"
@@ -175,14 +182,22 @@ program define gmdcombinedocs
         else if "`var'" == "CA_GDP" local varname "Current account"
         else if "`var'" == "USDfx" local varname "USD exchange rate"
         else if "`var'" == "REER" local varname "Real effective exchange rate"
-        else if "`var'" == "govtax" local varname "Government tax revenue"
-        else if "`var'" == "govtax_GDP" local varname "Government tax revenue to GDP"
-		else if "`var'" == "govexp" local varname "Government expenditure"
-		else if "`var'" == "govexp_GDP" local varname "Government expenditure to GDP"
-        else if "`var'" == "govdef_GDP" local varname "Government deficit"
-        else if "`var'" == "govdebt_GDP" local varname "Government debt"
-        else if "`var'" == "govrev" local varname "Government revenue"
-		else if "`var'" == "govrev_GDP" local varname "Government revenue to GDP"
+        else if "`var'" == "cgovtax" local varname "Central government tax revenue"
+        else if "`var'" == "cgovtax_GDP" local varname "Central government tax revenue to GDP"
+		else if "`var'" == "cgovexp" local varname "Central government expenditure"
+		else if "`var'" == "cgovexp_GDP" local varname "Central government expenditure to GDP"
+        else if "`var'" == "cgovdef_GDP" local varname "Central government deficit"
+        else if "`var'" == "cgovdebt_GDP" local varname "Central government debt"
+        else if "`var'" == "cgovrev" local varname "Central government revenue"
+		else if "`var'" == "cgovrev_GDP" local varname "Central government revenue to GDP"
+        else if "`var'" == "gen_govtax" local varname "General government tax revenue"
+        else if "`var'" == "gen_govtax_GDP" local varname "General government tax revenue to GDP"
+		else if "`var'" == "gen_govexp" local varname "General government expenditure"
+		else if "`var'" == "gen_govexp_GDP" local varname "General government expenditure to GDP"
+        else if "`var'" == "gen_govdef_GDP" local varname "General government deficit"
+        else if "`var'" == "gen_govdebt_GDP" local varname "General government debt"
+        else if "`var'" == "gen_govrev" local varname "General government revenue"
+		else if "`var'" == "gen_govrev_GDP" local varname "General government revenue to GDP"
         else if "`var'" == "M0" local varname "Money supply (M0)"
         else if "`var'" == "M1" local varname "Money supply (M1)"
         else if "`var'" == "M2" local varname "Money supply (M2)"
@@ -226,14 +241,22 @@ program define gmdcombinedocs
         else if "`var'" == "CA_GDP" local varname "Current account"
         else if "`var'" == "USDfx" local varname "USD exchange rate"
         else if "`var'" == "REER" local varname "Real effective exchange rate"
-        else if "`var'" == "govtax" local varname "Government tax revenue"
-        else if "`var'" == "govtax_GDP" local varname "Government tax revenue to GDP"
-		else if "`var'" == "govexp" local varname "Government expenditure"
-		else if "`var'" == "govexp_GDP" local varname "Government expenditure to GDP"
-        else if "`var'" == "govdef_GDP" local varname "Government deficit"
-        else if "`var'" == "govdebt_GDP" local varname "Government debt"
-        else if "`var'" == "govrev" local varname "Government revenue"
-		else if "`var'" == "govrev_GDP" local varname "Government revenue to GDP"
+        else if "`var'" == "cgovtax" local varname "Central government tax revenue"
+        else if "`var'" == "cgovtax_GDP" local varname "Central government tax revenue to GDP"
+		else if "`var'" == "cgovexp" local varname "Central government expenditure"
+		else if "`var'" == "cgovexp_GDP" local varname "Central government expenditure to GDP"
+        else if "`var'" == "cgovdef_GDP" local varname "Central government deficit"
+        else if "`var'" == "cgovdebt_GDP" local varname "Central government debt"
+        else if "`var'" == "cgovrev" local varname "Central government revenue"
+		else if "`var'" == "cgovrev_GDP" local varname "Central government revenue to GDP"
+        else if "`var'" == "gen_govtax" local varname "General government tax revenue"
+        else if "`var'" == "gen_govtax_GDP" local varname "General government tax revenue to GDP"
+		else if "`var'" == "gen_govexp" local varname "General government expenditure"
+		else if "`var'" == "gen_govexp_GDP" local varname "General government expenditure to GDP"
+        else if "`var'" == "gen_govdef_GDP" local varname "General government deficit"
+        else if "`var'" == "gen_govdebt_GDP" local varname "General government debt"
+        else if "`var'" == "gen_govrev" local varname "General government revenue"
+		else if "`var'" == "gen_govrev_GDP" local varname "General government revenue to GDP"
         else if "`var'" == "M0" local varname "Money supply (M0)"
         else if "`var'" == "M1" local varname "Money supply (M1)"
         else if "`var'" == "M2" local varname "Money supply (M2)"

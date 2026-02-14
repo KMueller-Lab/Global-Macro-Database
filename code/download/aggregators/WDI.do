@@ -45,13 +45,38 @@
 * 
 * ==============================================================================
 
-* Define output files 
-global output "${data_raw}\aggregators\WB\WDI"
+* Run the master file
+do "code/0_master.do"
 
-wbopendata, indicator(NY.GDP.MKTP.CD; NY.GDP.MKTP.CN; NY.GDP.MKTP.KD; NY.GDP.MKTP.KN; NY.GDP.PCAP.KN; FP.CPI.TOTL; FP.CPI.TOTL.ZG; SP.POP.TOTL; NE.GDI.TOTL.CN; NE.GDI.FTOT.CN; NY.GNS.ICTR.CN; NE.CON.TOTL.CN; NE.CON.TOTL.KN; NE.EXP.GNFS.CN; NE.EXP.GNFS.CD; NE.IMP.GNFS.CN; NE.IMP.GNFS.CD; PA.NUS.FCRF; PX.REX.REER; BN.CAB.XOKA.GD.ZS; GC.TAX.TOTL.CN; GC.DOD.TOTL.CN; GC.XPN.TOTL.CN; GC.TAX.TOTL.GD.ZS; GC.REV.XGRT.GD.ZS; FM.LBL.BMNY.CN) clear
+cap {
+
+
+* Define output files 
+global output "${data_raw}\aggregators\WB\WDI\WDI"
+
+wbopendata, indicator(NY.GDP.MKTP.CD; NY.GDP.MKTP.CN; NY.GDP.MKTP.KD; NY.GDP.MKTP.KN; NY.GDP.PCAP.KN; FP.CPI.TOTL; FP.CPI.TOTL.ZG; SP.POP.TOTL; NE.GDI.TOTL.CN; NE.GDI.FTOT.CN; NY.GNS.ICTR.CN; NE.CON.TOTL.CN; NE.CON.TOTL.KN; NE.EXP.GNFS.CN; NE.EXP.GNFS.CD; NE.IMP.GNFS.CN; NE.IMP.GNFS.CD; PA.NUS.FCRF; PX.REX.REER; BN.CAB.XOKA.GD.ZS; GC.DOD.TOTL.CN; FM.LBL.BMNY.CN) clear
 
 * Save download date 
 gmdsavedate, source(WDI)
 
 * Save the dataset
 savedelta ${output}, id(countrycode indicatorcode) 
+
+
+
+}
+
+* Create the log
+clear
+set obs 1
+gen variable = "WDI"
+gen status = ""
+if _rc == 0 {
+	replace status = "Success"
+}
+else {
+	replace status = "Error"
+}
+
+* Save
+save "$data_temp/download_log/WDI_log.dta", replace

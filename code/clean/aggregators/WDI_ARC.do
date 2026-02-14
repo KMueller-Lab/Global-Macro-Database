@@ -18,8 +18,8 @@
 * ==============================================================================
 * Define input and output files 
 clear
-global input "${data_raw}/aggregators/WB/WDI_1999.xlsx"
-global output "${data_clean}/aggregators/WB/WDI_ARC"
+global input "${data_raw}/aggregators/WB/WDI_ARC/WDI_ARC.xlsx"
+global output "${data_clean}/aggregators/WB/WDI_ARC/WDI_ARC.dta"
 
 * ==============================================================================
 * 	PROCESS
@@ -30,6 +30,11 @@ import excel using "${input}", clear first allstring
 * Keep only revelant columns
 keep CountryCode SeriesName SeriesCode VersionCode YR*
 qui missings dropvars, force
+
+* We are no longer using data on government taxes because the data on government 
+* finances in WB is consolidated in a way that doens't allow us to identify which type 
+* of government is used 
+drop if SeriesCode == "GB.TAX.TOTL.CN"
 
 * Rename
 ren CountryCode ISO3
@@ -72,7 +77,8 @@ greshape wide YR, i(ISO3 year) j(SeriesCode)
 
 * Rename
 ren YR* *
-ren(BN_CAB_XOKA_GD_ZS FP_CPI_TOTL FP_CPI_TOTL_ZG GB_DOD_TOTL_GD_ZS GB_TAX_TOTL_CN NE_CON_TOTL_CN NE_EXP_GNFS_CD NE_EXP_GNFS_CN NE_GDI_FTOT_CN NE_GDI_TOTL_CN NE_IMP_GNFS_CD NE_IMP_GNFS_CN NY_GDP_MKTP_CN NY_GDP_MKTP_KN PX_REX_REER SP_POP_TOTL) (CA_GDP CPI infl govdebt_GDP govtax cons exports_USD exports finv inv imports_USD imports nGDP rGDP REER pop)
+ren(BN_CAB_XOKA_GD_ZS FP_CPI_TOTL FP_CPI_TOTL_ZG GB_DOD_TOTL_GD_ZS NE_CON_TOTL_CN NE_EXP_GNFS_CD NE_EXP_GNFS_CN NE_GDI_FTOT_CN NE_GDI_TOTL_CN NE_IMP_GNFS_CD NE_IMP_GNFS_CN NY_GDP_MKTP_CN NY_GDP_MKTP_KN PX_REX_REER SP_POP_TOTL) (CA_GDP CPI infl govdebt_GDP cons exports_USD exports finv inv imports_USD imports nGDP rGDP REER pop)
+
 
 * Set zeros to missing value (exclude inflation, which can be zero if rounded)
 qui ds ISO3 year infl, not 
@@ -81,136 +87,151 @@ foreach var in `r(varlist)'{
 }
 
 * Convert units
-foreach var of varlist  nGDP rGDP inv finv cons imports exports pop govtax {
+foreach var of varlist  nGDP rGDP inv finv cons imports exports imports_USD exports_USD pop {
 	replace `var'= `var' / 1000000
 }
 
 * Drop regional aggregates
 merge m:1 ISO3 using $isomapping, keep(3) keepusing(ISO3) nogen
 
-* Fix the units
-
 
 * Convert Venezuela values into current currency
-foreach var of varlist  nGDP rGDP inv finv cons imports exports  govtax {
-	replace `var'= `var' * (10^-14) if ISO3 == "VEN"
+foreach var of varlist  nGDP rGDP inv finv cons imports exports  {
+	*replace `var'= `var' * (10^-8) if ISO3 == "VEN"
 }
 
 * Convert Romania values into current currency
-foreach var of varlist  nGDP rGDP inv finv cons imports exports  govtax {
+foreach var of varlist  nGDP rGDP inv finv cons imports exports  {
 	replace `var'= `var'/10000 if ISO3 == "ROU"
 }
 
+* Romania's debt figure is incorrect 
+replace govdebt = . if ISO3 == "ROU" & year == 1990
+replace govdebt_GDP = . if ISO3 == "ROU" & year == 1990
+
 * Convert Sao Tome values into current currency
-foreach var of varlist  nGDP rGDP inv finv cons imports exports  govtax {
+foreach var of varlist  nGDP rGDP inv finv cons imports exports  {
 	replace `var'= `var'/1000 if ISO3 == "STP"
 }
 
 * Convert Afghanistan values into current currency
-foreach var of varlist  nGDP rGDP inv finv cons imports exports  govtax {
+foreach var of varlist  nGDP rGDP inv finv cons imports exports  {
 	replace `var'= `var'/1000 if ISO3 == "AFG"
 }
 
 * Convert Turkey values into current currency
-foreach var of varlist  nGDP rGDP inv finv cons imports exports  govtax {
+foreach var of varlist  nGDP rGDP inv finv cons imports exports  {
 	replace `var'= `var'/1000000 if ISO3 == "TUR"
 }
 
 * Convert Angola values into current currency
-foreach var of varlist  nGDP rGDP inv finv cons imports exports  govtax {
+foreach var of varlist  nGDP rGDP inv finv cons imports exports  {
 	replace `var'= `var'/1000000 if ISO3 == "AGO"
 }
 
 * Convert Zambia values into current currency
-foreach var of varlist  nGDP rGDP inv finv cons imports exports  govtax {
+foreach var of varlist  nGDP rGDP inv finv cons imports exports  {
 	replace `var'= `var'/1000 if ISO3 == "ZMB"
 }
 
 
 * Convert Suriname values into current currency
-foreach var of varlist  nGDP rGDP inv finv cons imports exports  govtax {
+foreach var of varlist  nGDP rGDP inv finv cons imports exports  {
 	replace `var'= `var'/1000 if ISO3 == "SUR"
 }
 
 * Convert Mozambique values into current currency
-foreach var of varlist  nGDP rGDP inv finv cons imports exports  govtax {
+foreach var of varlist  nGDP rGDP inv finv cons imports exports  {
 	replace `var'= `var'/1000 if ISO3 == "MOZ"
 }
 
 * Convert Bulgaria values into current currency
-foreach var of varlist  nGDP rGDP inv finv cons imports exports  govtax {
+foreach var of varlist  nGDP rGDP inv finv cons imports exports  {
 	replace `var'= `var'/1000 if ISO3 == "BGR"
 }
 
 
 * Convert Ghana values into current currency
-foreach var of varlist  nGDP rGDP inv finv cons imports exports  govtax {
+foreach var of varlist  nGDP rGDP inv finv cons imports exports  {
 	replace `var'= `var'/10000 if ISO3 == "GHA"
 }
 
 * Convert El Salvador values into current currency
-foreach var of varlist  nGDP rGDP inv finv cons imports exports govtax {
+foreach var of varlist  nGDP rGDP inv finv cons imports exports {
 	replace `var'= `var'/8.75 if ISO3 == "SLV"
 }
 
 * Convert Ecuador values into current currency
-foreach var of varlist  nGDP rGDP inv finv cons imports exports govtax {
+foreach var of varlist  nGDP rGDP inv finv cons imports exports {
 	replace `var'= `var'/25 if ISO3 == "ECU"
 }
 
 * Convert Turkmenistan values into current currency
-foreach var of varlist  nGDP rGDP inv finv cons imports exports  govtax {
+foreach var of varlist  nGDP rGDP inv finv cons imports exports  {
 	replace `var'= `var'/5000 if ISO3 == "TKM"
 }
 
 * Convert Tajikstan values into current currency
-foreach var of varlist  nGDP rGDP inv finv cons imports exports  govtax {
+foreach var of varlist  nGDP rGDP inv finv cons imports exports  {
 	replace `var'= `var'/1000 if ISO3 == "TJK"
 }
 
 * Convert Sudan values into current currency
-foreach var of varlist  nGDP rGDP inv finv cons imports exports  govtax {
+foreach var of varlist  nGDP rGDP inv finv cons imports exports  {
 	replace `var'= `var'/1000 if ISO3 == "SDN"
 }
 
 * Convert Azerbaijan values into current currency
-foreach var of varlist  nGDP rGDP inv finv cons imports exports govtax {
+foreach var of varlist  nGDP rGDP inv finv cons imports exports {
 	replace `var'= `var'/10000 if ISO3 == "AZE"
 }
 
 * Convert Belarus values into current currency
-foreach var of varlist  nGDP rGDP inv finv cons imports exports  govtax {
-	replace `var'= `var'/1000000 if ISO3 == "BLR"
+foreach var of varlist  nGDP rGDP inv finv cons imports exports  {
+	replace `var'= `var'/10000000 if ISO3 == "BLR"
 }
 
 * Convert Congo RDC values into current currency
-foreach var of varlist  nGDP rGDP inv finv cons imports exports  govtax {
+foreach var of varlist  nGDP rGDP inv finv cons imports exports  {
 	replace `var'= `var'/100000 if ISO3 == "COD"
 }
 
 * Convert Mauritania values into current currency
-foreach var of varlist  nGDP rGDP inv finv cons imports exports  govtax {
+foreach var of varlist  nGDP rGDP inv finv cons imports exports  {
 	replace `var'= `var'/10 if ISO3 == "MRT"
 }
 
 * Drop real GDP for Zimbabwe, an index
 replace rGDP = . if ISO3 == "ZWE"
 
+* Convert Venezuela real GDP into millions
+*replace rGDP = rGDP * 1000 if ISO3 == "VEN"
+
+* Data for India is wrong for consumption in 1997
+qui replace cons = . if ISO3 == "IND" & year == 1997
+
+* Data for Tanzanian consumption is very high compared with WDI recent versions
+qui replace cons = . if ISO3 == "TZA"
+
 * Convert currency for european countries
 merge m:1 ISO3 using $eur_fx, keep(1 3)
-foreach var of varlist  nGDP rGDP inv finv cons imports exports govtax {
+foreach var of varlist  nGDP rGDP inv finv cons imports exports {
 	replace `var'= `var'/EUR_irrevocable_FX if _merge == 3
 }
 drop EUR_irrevocable_FX _merge
 
 * Add ratios to gdp variables
-gen cons_GDP = (cons / nGDP) * 100
-gen imports_GDP = (imports / nGDP) * 100
-gen exports_GDP = (exports / nGDP) * 100
-gen govtax_GDP  = (govtax / nGDP) * 100
-gen finv_GDP    = (finv / nGDP) * 100
-gen inv_GDP     = (inv / nGDP) * 100
+gen	cons_GDP 	= (cons 	/ 	nGDP) 	* 100
+gen imports_GDP = (imports  / 	nGDP) 	* 100
+gen exports_GDP = (exports  / 	nGDP) 	* 100
+gen finv_GDP    = (finv     / 	nGDP) 	* 100
+gen inv_GDP     = (inv 		/ 	nGDP) 	* 100
 
+* Drop data on Mayotte because it's only one observation  and it's not a country
+drop if ISO3 == "MYT"
+
+* Drop real GDP for Uzbekistan in 1979 because it can't be chainlinked 
+replace rGDP = . if ISO3 == "UZB" & year == 1979
 
 * Rename
 qui ds ISO3 year, not 
@@ -218,6 +239,15 @@ foreach var in `r(varlist)'{
 	replace `var' = . if `var' == 0
 	ren `var' WDI_ARC_`var'
 }
+
+* Add government debt levels 
+gen WDI_ARC_govdebt = (WDI_ARC_govdebt_GDP * WDI_ARC_nGDP) / 100
+
+* Assign all values to central government. Specified in the source.
+ren WDI_ARC_gov* WDI_ARC_cgov*
+
+* Check for ratios and levels 
+check_gdp_ratios WDI_ARC
 
 * ==============================================================================
 * 	OUTPUT

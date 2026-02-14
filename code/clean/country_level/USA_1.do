@@ -67,11 +67,23 @@ gen govexp_GDP = (govexp / nGDP) * 100
 gen govtax_GDP = (govtax / nGDP) * 100
 
 
+* Add the deflator
+gen deflator = (nGDP / rGDP) * 100
+
 * Add source identifier
 qui ds year ISO3, not
 foreach var in `r(varlist)'{
 	qui ren `var' CS1_`var'
 }
+
+* Assigning government finance to central government. Indicated in the source
+ren CS1_gov* CS1_cgov*
+
+* Rebase variables to $base_year
+gmd_rebase CS1
+
+* Check for ratios and levels 
+check_gdp_ratios CS1
 
 *===============================================================================
 * OUTPUT

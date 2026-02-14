@@ -274,6 +274,9 @@ replace inv = inv / (10^24) / 4 if year <= 1940 & countryname == "Hungary"
 replace inv = inv * 1000 if countryname == "Czechoslovakia"
 replace inv = inv * 1000 if year >= 1980 & countryname == "France"
 replace inv = inv * 1000 if year >= 1950 & countryname == "Germany"
+replace inv = inv / 10	 if year == 1931 & countryname == "UnitedKingdom"
+replace inv = inv / 10	 if year == 1932 & countryname == "UnitedKingdom"
+replace inv = inv / 10	 if year == 1868 & countryname == "UnitedKingdom"
 
 *===============================================================================
 * 			Final set up

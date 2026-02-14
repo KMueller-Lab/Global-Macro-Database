@@ -137,6 +137,11 @@ replace JO_inv = . if JO_inv < 0
 gen JO_finv_GDP = (JO_finv / JO_nGDP) * 100
 gen JO_inv_GDP     = (JO_inv / JO_nGDP) * 100
 
+* Rebase variables to $base_year
+gmd_rebase JO
+
+* Check for ratios and levels 
+check_gdp_ratios JO
 
 * ==============================================================================
 * 	OUTPUT

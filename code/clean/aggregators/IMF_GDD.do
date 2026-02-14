@@ -22,8 +22,8 @@
 clear
 
 * Define input and output files
-global input "${data_raw}/aggregators/IMF/Global Debt Database.dta"
-global output "${data_clean}/aggregators/IMF/IMF_GDD.dta"
+global input "${data_raw}/aggregators/IMF/IMF_GDD/IMF_GDD.dta"
+global output "${data_clean}/aggregators/IMF/IMF_GDD/IMF_GDD.dta"
 
 * ==============================================================================
 * CLEAN DATA 
@@ -38,15 +38,18 @@ ren _ISO3C_ ISO3
 drop if ISO3==""
 
 * Rename variables 
-ren (cg ngdp) (govdebt_GDP nGDP)
+ren (cg gg ngdp) (cgovdebt_GDP gen_govdebt_GDP nGDP)
 
 * Keep pnly relevant columns
-keep ISO3 year govdebt_GDP nGDP
+keep ISO3 year cgovdebt_GDP gen_govdebt_GDP nGDP
 
 * Convert units
-replace nGDP = nGDP * 1000 if !inlist(ISO3, "VEN")
-replace nGDP = nGDP / 1000 if ISO3 == "VEN"
+replace nGDP = nGDP * 1000
 replace nGDP = nGDP / 1000 if ISO3 == "AFG" & year <= 1993
+
+* Derive government levels 
+gen cgovdebt = (cgovdebt_GDP * nGDP) / 100
+gen gen_govdebt = (gen_govdebt_GDP * nGDP) / 100
 
 * Convert currency for Croatia	
 replace nGDP = nGDP / 7.5345 if ISO3 == "HRV"
@@ -56,6 +59,12 @@ qui ds ISO3 year, not
 foreach var  in `r(varlist)'{
 	ren `var' IMF_GDD_`var'
 }
+
+* Rebase variables to $base_year
+gmd_rebase IMF_GDD
+
+* Check for ratios and levels 
+check_gdp_ratios IMF_GDD
 
 * ==============================================================================
 * 	Output

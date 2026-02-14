@@ -189,15 +189,28 @@ gen exports_GDP = (exports / nGDP) * 100
 gen finv_GDP    = (finv / nGDP) * 100
 gen inv_GDP     = (inv / nGDP) * 100
 
+* Assing government finance variables to central government.
+ren gov* cgov*
 
-* ==============================================================================
-* 	Output
-* ==============================================================================
+* Add the deflator
+gen deflator = (nGDP / rGDP) * 100
+
 * Add source identifier
 qui ds ISO3 year, not
 foreach var in `r(varlist)'{
 	ren `var' BCEAO_`var'
 }
+
+* Rebase variables to $base_year
+gmd_rebase BCEAO
+
+* Check for ratios and levels 
+check_gdp_ratios BCEAO
+
+* ==============================================================================
+* 	Output
+* ==============================================================================
+
 
 * Order
 order ISO3 year

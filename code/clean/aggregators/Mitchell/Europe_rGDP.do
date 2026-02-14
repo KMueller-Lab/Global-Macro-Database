@@ -280,6 +280,9 @@ replace rGDP_LCU = . if countryname == "Hungary" & year < 1925
 
 * Fix units
 replace rGDP_LCU = rGDP_LCU * 1000 if countryname == "Finland" & year <= 1944
+replace rGDP_LCU = rGDP_LCU * 10 if countryname == "UnitedKingdom" & year == 1931 // Likely a typo in the data by Mitchell, I checked the PDF and it's the same value 
+replace rGDP_LCU = rGDP_LCU * 10 if countryname == "UnitedKingdom" & year == 1932 // Likely a typo in the data by Mitchell, I checked the PDF and it's the same value 
+replace rGDP_LCU = rGDP_LCU * 10 if countryname == "UnitedKingdom" & year == 1868 // Likely a typo in the data by Mitchell, I checked the PDF and it's the same value 
 
 *===============================================================================
 * 			Final set up

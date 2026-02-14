@@ -23,39 +23,43 @@
 
 * Define input and output files 
 clear
-global input "${data_raw}/aggregators/BIS/BIS_USDfx.dta"
-global output "${data_clean}/aggregators/BIS/BIS_USDfx.dta"
+global input "${data_raw}/aggregators/BIS/BIS_USDfx/BIS_USDfx.dta"
+global output "${data_clean}/aggregators/BIS/BIS_USDfx/BIS_USDfx.dta"
 
 * ==============================================================================
 * PROCESSING
 * ==============================================================================
 
 * Open 
-use "${input}"
+use "${input}", clear 
 
 * Drop regional aggregates
-drop if strpos(series_name, "Waemu") | strpos(series_name, "World") 
 drop if ref_area == "XM"
 
+* Keep annual data and end of period
+keep if collection == "A"
+
 * Keep only relevant variables
-keep period value ref_area
+keep time obs ref_area 
 
 * Replace "NA" in value and destring it
-replace value = "" if value == "NA"
-destring value, replace
+destring obs time, replace ignore("NA")
 
 * Convert ISO2 to ISO3
 ren ref_area ISO2
-merge m:1 ISO2 using ${isomapping}, nogen assert(2 3) keep(3) keepusing(ISO3)
+merge m:1 ISO2 using ${isomapping}, nogen keep(3) keepusing(ISO3)
 drop ISO2
 
 * Rename
-ren value BIS_USDfx 
-ren period year
+ren obs BIS_USDfx 
+ren time year
 
 * Fix exchange rate units
-gmdfixunits BIS_USDfx if ISO3 == "MRT", divide(10)
-gmdfixunits BIS_USDfx if ISO3 == "SLE", multiply(1000)
+qui replace BIS_USDfx = BIS_USDfx / 10 if ISO3 == "MRT"
+gmdaddnote_source BIS  "Values converted to current currency." BIS_USDfx
+
+qui replace BIS_USDfx = BIS_USDfx / 1000 if ISO3 == "STP"
+gmdaddnote_source BIS  "Values converted to current currency." BIS_USDfx
 
 * ==============================================================================
 * OUTPUT

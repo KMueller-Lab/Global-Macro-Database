@@ -1,4 +1,4 @@
-* ==============================================================================
+  * ==============================================================================
 * GLOBAL MACRO DATABASE
 * by Karsten Müller, Chenzi Xu, Mohamed Lehbib, Ziliang Chen
 * ==============================================================================
@@ -59,6 +59,17 @@ if !inlist("`graphformat'", "pdf", "eps", "png", "tif", "gif", "jpg") {
 }
 
 
+* Extract the splicing method 
+preserve 
+qui use "$data_temp/anchor_year_record", clear 
+qui keep if variable == "`varlist'"
+qui bys variable: gen freq = _N
+gsort -freq
+local method = method[1]
+local anchor_year = anchor_year[1]
+restore
+
+
 
 * ==============================================================================
 * GENERATE TIME SERIES PLOTS COMPARING ALL -------------------------------------
@@ -111,7 +122,10 @@ foreach iso of loc countries {
 			local exp_step = ceil((`exp_max' - `exp_min')/5)
 			qui mylabels `exp_min'(`exp_step')`exp_max', myscale(10^(@)) clean local(ylabels)
 			local n_labels : word count `ylabels'
+			local y_max1: word `n_labels' of `ylabels'
+			local y_max = substr("`y_max1'", strpos("`y_max1'", "^") + 1, .)
 			local y_min : word 1 of `ylabels'
+			
 			* Extract shaded area minimum value
 			local area_min = `y_min'
 			
@@ -124,20 +138,19 @@ foreach iso of loc countries {
 	if "`transformation'" == "rate" {
 	
 			* Calculate exact y-axis range
-			* Reshape to find the minimum vand the maximum values across all variables.
 			qui egen row_min = rowmin(*`varlist')
 			qui egen row_max = rowmax(*`varlist')
 			qui su row_min
 			local exp_min = floor(r(min)/10) * 10 
 			qui su row_max 
-			local exp_max = ceil(r(max)/10) * 10 
-			qui nicelabels `exp_min' `exp_max', local(ylabels) nvals(7)
+			local exp_max = ceil(r(max)/10) * 10
+			qui nicelabels `exp_min' `exp_max', local(ylabels) nvals(5)
 			local n_labels : word count `ylabels'
 			local y_max : word `n_labels' of `ylabels'
 			local y_min : word 1 of `ylabels'
 			
 			* Extract shaded area minimum value
-			local area_min = `exp_min'
+			local area_min = `y_min'
 			
 			* Drop 
 			qui drop row_max row_min
@@ -147,20 +160,24 @@ foreach iso of loc countries {
 	if "`transformation'" == "ratio" {
 			
 			* Calculate exact y-axis range
-			* Reshape to find the minimum vand the maximum values across all variables.
 			qui egen row_min = rowmin(*`varlist')
 			qui egen row_max = rowmax(*`varlist')
 			qui su row_min
-			local exp_min = floor(r(min)/10) * 10 
+			local exp_min = floor(r(min))
 			qui su row_max 
-			local exp_max = ceil(r(max)/10) * 10 
+			if "`varlist'" == "USDfx" {
+				local exp_max = ceil(r(max)*1.1)
+			}
+			else {
+				local exp_max = ceil(r(max))
+			}
 			qui nicelabels `exp_min' `exp_max', local(ylabels) nvals(5)
 			local n_labels : word count `ylabels'
 			local y_max : word `n_labels' of `ylabels'
 			local y_min : word 1 of `ylabels'
 			
 			* Extract shaded area minimum value
-			local area_min = `exp_min'
+			local area_min = `y_min'
 			
 			* Drop 
 			qui drop row_max row_min
@@ -196,14 +213,14 @@ foreach iso of loc countries {
 	sort year 
 	
 	* Remove the variable identifier from column names
-	qui ds ISO3 year id source source_change `varlist' countryname chainlinking_ratio, not
+	qui ds ISO3 year id source source_change source_change_count `varlist' countryname chainlinking_ratio, not
 	foreach var in `r(varlist)'{
 		local newname = substr("`var'", 1, strpos("`var'", "_`varlist'") - 1)
 		qui ren `var' `newname'
 	}
 	
 	* Label columns with underscore in their names 
-	qui ds ISO3 year id source source_change `varlist' countryname chainlinking_ratio, not
+	qui ds ISO3 year id source source_change source_change_count `varlist' countryname chainlinking_ratio, not
 	foreach var in `r(varlist)'{
     if strpos("`var'", "_") > 0 {
         local label = subinstr("`var'", "_", " ", .)
@@ -235,11 +252,11 @@ foreach iso of loc countries {
 	local color_list: word count `colors'
 	
 	* Drop columns with no data
-	qui ds ISO3 year id source source_change `varlist' countryname chainlinking_ratio, not
+	qui ds ISO3 year id source source_change source_change_count `varlist' countryname chainlinking_ratio, not
 	qui missings dropvars `r(varlist)', force
 
 	* Create a scatter plot for each variable
-	qui ds ISO3 year id source source_change `varlist' countryname chainlinking_ratio, not
+	qui ds ISO3 year id source source_change source_change_count `varlist' countryname chainlinking_ratio, not
 	local scatter_plot
 	local counter = 0
 	foreach var in `r(varlist)' {
@@ -252,19 +269,34 @@ foreach iso of loc countries {
 		qui local scatter_plot `scatter_plot' (scatter `var' year if inrange(year,`ymin',`ymax'), msymbol(circle) msize(small) mcolor(`c_color') jitter(1) mlwidth(vvthin))
 		local counter = `counter' + 1
 	}
+	
+	* Extract the forecast year
+	qui su year if strpos(source, "forecast")
+	if r(N) > 0 {
+		local forecast_year = r(min)
+	}
+	else {
+		local current_year = year(date(c(current_date), "DMY"))
+		local forecast_year = `current_year'
+	}
 
 	* Create temporary variable for area_max
 	tempvar area_max
-	qui gen `area_max' = `exp_max' if year >= 2024
-	qui sum `area_max' 
-	local has_data = r(N)
-	
-	* Label the columns
-	label variable `area_max'  "GMD forecast"
-	label variable `varlist'   "GMD estimate"
-	
-	* Order
-	order ISO3 year `area_max' `varlist'
+	cap qui gen `area_max' = `y_max' if year >= `forecast_year'
+	if _rc == 0 {
+		qui sum `area_max' 
+		local has_data = r(N)
+		
+		* Label the columns
+		label variable `area_max'  "GMD forecast"
+		label variable `varlist'   "GMD estimate"
+		
+		* Order
+		order ISO3 year `area_max' `varlist'
+	}
+	else {
+		local has_data = 0
+	}
 
 	* Extracts the vertical lines year using source_change
 	qui su source_change
@@ -273,7 +305,7 @@ foreach iso of loc countries {
 		qui levelsof year if source_change == 1, local(xlevels)
 		* Plot the graphs together
 		qui twoway ///
-		(area `area_max' year if year >= 2024 & `has_data' > 0, color(gs14) base(`area_min')) /// Shaded area for provisional data
+		(area `area_max' year if year >= `forecast_year' & `has_data' > 0, color(gs14) base(`area_min')) /// Shaded area for provisional data
 		(line `varlist' year, lwidth(medium) lcolor(black)) `scatter_plot' /// 
 		   if inrange(year,`ymin',`ymax'), ///
 		   graphregion(color(white)) plotregion(color(white) margin(zero)) ///
@@ -365,10 +397,10 @@ qui gen end_year   = substr(range, -4, .)
 qui destring *_year, replace
 qui gen notes = ""
 quietly {
-    gen base_overlap = (start_year <= 2018 & end_year > 2018)
-    replace notes = "Baseline source, overlaps with base year 2018" if base_overlap == 1
-    replace notes = "Spliced using overlapping data in " + string(end_year + 1) if base_overlap == 0 & x1 == 100
-    replace notes = "Spliced using overlapping data in " + string(end_year + 1) + ": (ratio = " + string(x1) + "\%)." if base_overlap == 0 & x1 != 100   
+    gen base_overlap = (start_year <= `anchor_year' & end_year > `anchor_year')
+    replace notes = "Baseline source, overlaps with anchor year `anchor_year'." if base_overlap == 1
+    replace notes = "Replacing using overlapping data in " + string(end_year + 1) + "." if base_overlap == 0 & "`method'" == "none"
+    replace notes = "Ratio-spliced using overlapping data in " + string(end_year + 1) + ": (ratio = " + string(x1) + "\%)." if base_overlap == 0 & "`method'" == "chainlink"
     drop base_overlap
 }
 qui keep countryname range notes source ISO3
@@ -392,41 +424,37 @@ file open mytex using "$doc/`varlist'.tex", write replace
 
 * Add varname 
 local varname ""
-if "`varlist'" == "nGDP" local varname "Nominal Gross Domestic Product"
-else if "`varlist'" == "rGDP" local varname "Real Gross Domestic Product"
-else if "`varlist'" == "rcons" local varname "Real Consumption"
+if "`varlist'" == "nGDP" local varname "Nominal gross domestic product"
+else if "`varlist'" == "rGDP" local varname "Real gross domestic product"
 else if "`varlist'" == "cons" local varname "Consumption"
-else if "`varlist'" == "cons_GDP" local varname "Consumption to GDP"
-else if "`varlist'" == "inv" local varname "Gross Capital Formation"
-else if "`varlist'" == "inv_GDP" local varname "Gross Capital Formation to GDP"
-else if "`varlist'" == "finv" local varname "Gross Fixed Capital Formation"
-else if "`varlist'" == "finv_GDP" local varname "Gross Fixed Capital Formation to GDP"
+else if "`varlist'" == "inv" local varname "Gross capital formation"
+else if "`varlist'" == "finv" local varname "Gross fixed capital formation"
 else if "`varlist'" == "pop" local varname "Population"
-else if "`varlist'" == "exports_GDP" local varname "Exports to GDP"
-else if "`varlist'" == "imports_GDP" local varname "Imports to GDP"
 else if "`varlist'" == "exports" local varname "Exports"
 else if "`varlist'" == "imports" local varname "Imports"
-else if "`varlist'" == "CA_GDP" local varname "Current Account"
-else if "`varlist'" == "USDfx" local varname "USD Exchange Rate"
-else if "`varlist'" == "REER" local varname "Real Effective Exchange Rate"
-else if "`varlist'" == "govtax" local varname "Government Tax Revenue"
-else if "`varlist'" == "govtax_GDP" local varname "Government Tax Revenue to GDP"
-else if "`varlist'" == "govexp" local varname "Government Expenditure"
-else if "`varlist'" == "govexp_GDP" local varname "Government Expenditure to GDP"
-else if "`varlist'" == "govdef_GDP" local varname "Government Deficit"
-else if "`varlist'" == "govdebt_GDP" local varname "Government Debt"
-else if "`varlist'" == "govrev" local varname "Government Revenue"
-else if "`varlist'" == "govrev_GDP" local varname "Government Revenue to GDP"
-else if "`varlist'" == "M0" local varname "Money Supply (M0)"
-else if "`varlist'" == "M1" local varname "Money Supply (M1)"
-else if "`varlist'" == "M2" local varname "Money Supply (M2)"
-else if "`varlist'" == "M3" local varname "Money Supply (M3)"
-else if "`varlist'" == "M4" local varname "Money Supply (M4)"
-else if "`varlist'" == "cbrate" local varname "Central Bank Policy Rate"
-else if "`varlist'" == "strate" local varname "Short-term Interest Rate"
-else if "`varlist'" == "ltrate" local varname "Long-term Interest Rate"
-else if "`varlist'" == "CPI" local varname "Consumer Prices Index"
-else if "`varlist'" == "HPI" local varname "House Prices Index"
+else if "`varlist'" == "CA_GDP" local varname "Current account to GDP"
+else if "`varlist'" == "USDfx" local varname "USD exchange rate"
+else if "`varlist'" == "REER" local varname "Real effective exchange rate"
+else if "`varlist'" == "cgovtax_GDP" local varname "Central government tax revenue to GDP"
+else if "`varlist'" == "cgovexp_GDP" local varname "Central government expenditure to GDP"
+else if "`varlist'" == "cgovdef_GDP" local varname "Central government deficit to GDP"
+else if "`varlist'" == "cgovdebt_GDP" local varname "Central government debt to GDP"
+else if "`varlist'" == "cgovrev_GDP" local varname "Central government revenue to GDP"
+else if "`varlist'" == "gen_govtax_GDP" local varname "General government tax revenue to GDP"
+else if "`varlist'" == "gen_govexp_GDP" local varname "General government expenditure to GDP"
+else if "`varlist'" == "gen_govdef_GDP" local varname "General government deficit to GDP"
+else if "`varlist'" == "gen_govdebt_GDP" local varname "General government debt to GDP"
+else if "`varlist'" == "gen_govrev_GDP" local varname "General government revenue to GDP"
+else if "`varlist'" == "M0" local varname "Money supply (M0)"
+else if "`varlist'" == "M1" local varname "Money supply (M1)"
+else if "`varlist'" == "M2" local varname "Money supply (M2)"
+else if "`varlist'" == "M3" local varname "Money supply (M3)"
+else if "`varlist'" == "M4" local varname "Money supply (M4)"
+else if "`varlist'" == "cbrate" local varname "Central bank policy rate"
+else if "`varlist'" == "strate" local varname "Short-term interest rate"
+else if "`varlist'" == "ltrate" local varname "Long-term interest rate"
+else if "`varlist'" == "CPI" local varname "Consumer pricesindex"
+else if "`varlist'" == "HPI" local varname "House prices index"
 else if "`varlist'" == "infl" local varname "Inflation"
 else if "`varlist'" == "unemp" local varname "Unemployment"
 
@@ -436,7 +464,7 @@ file write mytex "\usepackage[utf8]{inputenc}" _n
 file write mytex "\usepackage[T1]{fontenc}" _n
 file write mytex "\usepackage{graphicx}" _n
 file write mytex "\usepackage{booktabs}" _n
-file write mytex "\usepackage[margin=0.5in, top=0.5in, headsep=0.1in]{geometry}" _n
+file write mytex "\usepackage[margin=0.5in, top=0.5in, headsep=0.1in, paperheight=16in, paperwidth=11in]{geometry}" _n
 file write mytex "\usepackage{caption}" _n
 file write mytex "\usepackage{float}" _n
 file write mytex "\usepackage[authoryear,round]{natbib}" _n

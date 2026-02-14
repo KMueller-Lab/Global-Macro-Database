@@ -27,7 +27,7 @@ clear
 
 clear
 global input "${data_raw}/aggregators/AFRISTAT/AFRISTAT"
-global WDI  "${data_clean}/aggregators/WB/WDI"
+global WDI  "${data_clean}/aggregators/WB/WDI/WDI"
 global output "${data_clean}/aggregators/AFRISTAT/AFRISTAT"
 
 * ==============================================================================
@@ -138,18 +138,20 @@ gen govdebt_GDP = (govdebt / WDI_nGDP) * 100
 gen govexp_GDP  = (govexp / WDI_nGDP) * 100
 gen govrev_GDP  = (govrev / WDI_nGDP) * 100
 gen govtax_GDP  = (govtax / WDI_nGDP) * 100
-
 drop WDI_nGDP
 
-* ==============================================================================
-*			OUTPUT
-* ==============================================================================
+* Assign all values to general government. The values for central and general government are nearly the same in other datasets but are closer to central governemnt.
+ren gov* cgov*
 
 * Add source identifier
 ds ISO3 year, not
 foreach var in `r(varlist)'{
 	ren `var' AFRISTAT_`var'
 }
+
+* ==============================================================================
+*			OUTPUT
+* ==============================================================================
 
 * Sort
 sort ISO3 year

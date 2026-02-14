@@ -124,6 +124,9 @@ save `temp_master', replace
 * Open
 import excel using "${input}", clear sheet("AUS") first
 
+* Consolidate nominal GDP numbers pre-1966 based on irrevocable exchange rate 
+replace nGDP = nGDP_GBP * 2 if year<=1966
+
 * Convert
 replace pop = pop / 1000000
 
@@ -140,6 +143,9 @@ save `temp_master', replace
 
 * Open
 import excel using "${input}", clear sheet("exchange_rates") first
+
+* Drop zero Won exchange rate 
+drop if USDfx == "0.00 Won"
 
 * Extract the exchange rate
 replace USDfx = regexs(0) if regexm(USDfx, "^[0-9.]+")
@@ -190,6 +196,10 @@ replace MW_USDfx = MW_USDfx / 100   if year <= 1969 & ISO3 == "ARG"
 * Australia
 replace MW_USDfx = MW_USDfx * 2  if year <= 1965 & ISO3 == "AUS"
 
+* Austria 
+replace MW_USDfx = MW_USDfx / 10000 if year <= 1924 & ISO3 == "AUT" 
+replace MW_USDfx = . if year <= 1922 & ISO3 == "AUT" // The numbers are probably wrong. 
+
 * Chile
 replace MW_USDfx = MW_USDfx / 1000 if year <= 1975 & ISO3 == "CHL"
 replace MW_USDfx = MW_USDfx / 1000 if year <= 1959 & ISO3 == "CHL"
@@ -215,7 +225,7 @@ replace MW_USDfx = MW_USDfx / 1000 if year <= 1985 & ISO3 == "BRA"
 replace MW_USDfx = MW_USDfx / 1000 if year <= 1966 & ISO3 == "BRA"
 
 * Venezuela
-replace MW_USDfx = MW_USDfx / 1000 if ISO3 == "VEN"
+replace MW_USDfx = MW_USDfx / 1000 if ISO3 == "VEN" & year <= 2008
 
 * Israel
 replace MW_USDfx = MW_USDfx / 1000 if ISO3 == "ISR" & year <= 1985
@@ -229,11 +239,74 @@ replace MW_USDfx = MW_USDfx / 100 if ISO3 == "FIN" & year <= 1941
 * Belgium
 replace MW_USDfx = MW_USDfx / 5 if ISO3 == "BEL"  & inrange(year, 1927, 1940)
 
-* Germany
+* Germany: Drop exchange rate before 1924 (hyperinflation)
 replace MW_USDfx = . if ISO3 == "DEU"  & year <= 1924
+
+* Venezuela: Drop exchange rate after 2018, can't be trusted.
+replace MW_USDfx = . if ISO3 == "VEN" & year >= 2018
 
 * Drop
 drop MW_nGDP_GBP MW_nGDP_pc
+
+* ==============================================================================
+* 	REBASE REAL GDP AND DEFLATOR TO $base_year
+* ==============================================================================
+
+/* 
+	Rebase real GDP to $base_year 
+*/
+
+* Get value in base year, apply to whole panel 
+gen temp = MW_rGDP if year == $base_year
+bysort ISO3: egen rGDP$base_year = max(temp)
+drop temp 
+
+* Get nominal GDP value in $base_year value, apply to whole panel 
+gen temp = MW_nGDP if year == $base_year 
+bysort ISO3: egen nGDP$base_year = max(temp)
+drop temp 
+
+* Calculate price level ratio for adjustment 
+gen ratio = nGDP$base_year / rGDP$base_year
+
+* Adjust original values with ratio 
+replace MW_rGDP = MW_rGDP * ratio 
+
+* Drop temporary variables 
+drop nGDP$base_year rGDP$base_year ratio 
+
+
+/* 
+	Rebase real GDP per capita to $base_year 
+*/
+
+* Drop original values 
+drop MW_rGDP_pc
+
+* Calculate using rebased real GDP 
+gen MW_rGDP_pc = MW_rGDP / MW_pop
+
+
+/* 
+	Rebase deflator to $base_year 
+*/
+
+* Get value in base year, apply to whole panel 
+gen temp = MW_deflator if year == $base_year
+bysort ISO3: egen defl$base_year = max(temp)
+drop temp 
+
+* Adjust original values with ratio 
+replace MW_deflator = MW_deflator * (100 / defl$base_year)
+
+* Drop temporary variables 
+drop defl$base_year 
+
+* Rebase variables to $base_year
+gmd_rebase MW
+
+* Check for ratios and levels 
+check_gdp_ratios MW
 
 * ==============================================================================
 * 	OUTPUT

@@ -19,6 +19,12 @@
 * Last downloaded:
 * 2024-11-06
 * ==============================================================================
+
+* Run the master file
+do "code/0_master.do"
+
+cap {
+
 clear 
 * Define output file name 
 global output "${data_raw}/country_level/POL_1"
@@ -81,3 +87,22 @@ gen ISO3 = "POL"
 
 * Save
 savedelta ${output}, id(period ISO3 dataset_code series_code)
+
+
+
+}
+
+* Create the log
+clear
+set obs 1
+gen variable = "POL_1"
+gen status = ""
+if _rc == 0 {
+	replace status = "Success"
+}
+else {
+	replace status = "Error"
+}
+
+* Save
+save "$data_temp/download_log/POL_1_log.dta", replace

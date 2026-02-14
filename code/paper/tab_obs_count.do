@@ -51,12 +51,6 @@ gen IMF_IFS_govdebt_GDP = .
 replace IMF_IFS_govdebt_GDP = IMF_FPP_govdebt_GDP if IMF_IFS_govdebt_GDP == .
 replace IMF_IFS_govdebt_GDP = IMF_HDD_govdebt_GDP if IMF_IFS_govdebt_GDP == .
 replace IMF_IFS_govdebt_GDP = IMF_GDD_govdebt_GDP if IMF_IFS_govdebt_GDP == .
-replace IMF_IFS_cbrate = IMF_MFS_cbrate if IMF_IFS_cbrate == .
-gen IMF_IFS_ltrate = IMF_MFS_ltrate
-gen IMF_IFS_strate = IMF_MFS_strate
-gen IMF_IFS_M0 = IMF_MFS_M0
-gen IMF_IFS_M1 = IMF_MFS_M1
-gen IMF_IFS_M2 = IMF_MFS_M2
 gen IMF_IFS_govexp = IMF_GFS_govexp
 gen IMF_IFS_govrev = IMF_GFS_govrev
 gen IMF_IFS_govdef_GDP = IMF_GFS_govdef_GDP
@@ -126,33 +120,35 @@ replace order = 4 if var == "M0"          // Money Supply (M0)
 replace order = 5 if var == "M1"          // Money Supply (M1)
 replace order = 6 if var == "M2"          // Money Supply (M2)
 replace order = 7 if var == "M3"          // Money Supply (M3)
-replace order = 8 if var == "M4"          // Money Supply (M3)
 
 * GDP and Output
-replace order = 9 if var == "rGDP"        // Real GDP
-replace order = 10 if var == "nGDP"        // Nominal GDP
-replace order = 11 if var == "cons"       // Consumption
-replace order = 12 if var == "rcons"      // Real consumption
-replace order = 13 if var == "inv"        // Investment
-replace order = 14 if var == "finv"       // Fixed Investment
+replace order = 8 if var == "rGDP"        // Real GDP
+replace order = 9 if var == "nGDP"        // Nominal GDP
+replace order = 10 if var == "cons"        // Consumption
+replace order = 11 if var == "inv"         // Investment
+replace order = 12 if var == "finv"        // Fixed Investment
 * External Sector
-replace order = 15 if var == "CA_GDP"     // Current Account
-replace order = 16 if var == "exports"    // Exports
-replace order = 17 if var == "imports"    // Imports
-replace order = 18 if var == "REER"       // Real Effective Exchange Rate
-replace order = 19 if var == "USDfx"      // US Dollar Exchange Rate
+replace order = 13 if var == "CA_GDP"      // Current Account
+replace order = 14 if var == "exports"     // Exports
+replace order = 15 if var == "imports"     // Imports
+replace order = 16 if var == "REER"        // Real Effective Exchange Rate
+replace order = 17 if var == "USDfx"       // US Dollar Exchange Rate
 * Government Finances
-replace order = 20 if var == "govrev"     // Government Revenue
-replace order = 21 if var == "govtax"     // Government Tax
-replace order = 22 if var == "govexp"     // Government Expenditure
-replace order = 23 if var == "govdebt_GDP" // Government Debt to GDP
-replace order = 24 if var == "govdef_GDP" // Government Deficit to GDP
+replace order = 19 if var == "gen_govrev"      // Government Revenue
+replace order = 20 if var == "gen_govtax"      // Government Tax
+replace order = 21 if var == "gen_govexp"      // Government Expenditure
+replace order = 22 if var == "gen_govdebt_GDP" // Government Debt to GDP
+replace order = 23 if var == "gen_govdef_GDP"  // Government Deficit
+replace order = 24 if var == "cgovrev"      // Government Revenue
+replace order = 25 if var == "cgovtax"      // Government Tax
+replace order = 26 if var == "cgovexp"      // Government Expenditure
+replace order = 27 if var == "cgovdebt_GDP" // Government Debt to GDP
+replace order = 28 if var == "cgovdef_GDP"  // Government Deficit
 * Other Economic Indicators
-replace order = 25 if var == "unemp"      // Unemployment Rate
-replace order = 26 if var == "infl"       // Inflation Rate
-replace order = 27 if var == "CPI"        // Consumer Price Index
-replace order = 28 if var == "HPI"        // House Price Index
-replace order = 29 if var == "pop"        // Population
+replace order = 29 if var == "unemp"       // Unemployment Rate
+replace order = 30 if var == "infl"        // Inflation Rate
+replace order = 31 if var == "CPI"         // Consumer price index
+replace order = 32 if var == "HPI"         // House Price Index
 drop if order == .
 
 * Create more readable labels for all variables
@@ -163,28 +159,30 @@ replace variable = "Money supply (M3)" if var == "M3"
 replace variable = "Money supply (M2)" if var == "M2"
 replace variable = "Money supply (M1)" if var == "M1"
 replace variable = "Money supply (M0)" if var == "M0"
-replace variable = "Money supply (M4)" if var == "M4"
 replace variable = "Real GDP" if var == "rGDP"
 replace variable = "Nominal GDP" if var == "nGDP"
 replace variable = "Current account" if var == "CA_GDP"
 replace variable = "Exports" if var == "exports"
 replace variable = "Imports" if var == "imports"
-replace variable = "Government revenue" if var == "govrev"
-replace variable = "Government tax revenue" if var == "govtax"
-replace variable = "Government expenditure" if var == "govexp"
-replace variable = "Government debt" if var == "govdebt_GDP"
-replace variable = "Government deficit" if var == "govdef_GDP"
+replace variable = "General government revenue" if var == "gen_govrev"
+replace variable = "General government tax revenue" if var == "gen_govtax"
+replace variable = "General government expenditure" if var == "gen_govexp"
+replace variable = "General government debt" if var == "gen_govdebt_GDP"
+replace variable = "General government deficit" if var == "gen_govdef_GDP"
+replace variable = "Central government revenue" if var == "cgovrev"
+replace variable = "Central government tax revenue" if var == "cgovtax"
+replace variable = "Central government expenditure" if var == "cgovexp"
+replace variable = "Central government debt" if var == "cgovdebt_GDP"
+replace variable = "Central government deficit" if var == "cgovdef_GDP"
 replace variable = "House price index" if var == "HPI"
 replace variable = "Gross fixed capital formation" if var == "finv"
 replace variable = "Gross capital formation" if var == "inv"
 replace variable = "Unemployment rate" if var == "unemp"
 replace variable = "Inflation rate" if var == "infl"
-replace variable = "Real consumption" if var == "rcons"
 replace variable = "Consumption" if var == "cons"
 replace variable = "Real effective exchange rate" if var == "REER"
 replace variable = "US dollar exchange rate" if var == "USDfx"
 replace variable = "Consumer price index" if var == "CPI"
-replace variable = "Population" if var == "pop"
 
 * Sort by the order variable
 sort order

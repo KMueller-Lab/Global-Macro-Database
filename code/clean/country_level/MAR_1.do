@@ -21,8 +21,8 @@
 
 * Define input and output files
 clear
-global input1 "${data_raw}/country_level/MAR_1.xls"
-global input2 "${data_raw}/country_level/MAR_2.xlsx"
+global input1 "${data_raw}/country_level/MAR_1a.xls"
+global input2 "${data_raw}/country_level/MAR_1b.xlsx"
 global output "${data_clean}/country_level/MAR_1"
 
 * Create temporary file

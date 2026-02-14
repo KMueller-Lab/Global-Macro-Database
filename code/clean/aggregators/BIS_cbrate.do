@@ -23,8 +23,8 @@
 
 * Define input and output files 
 clear
-global input "${data_raw}/aggregators/BIS/BIS_cbrate.dta"
-global output "${data_clean}/aggregators/BIS/BIS_cbrate.dta"
+global input "${data_raw}/aggregators/BIS/BIS_cbrate/BIS_cbrate.dta"
+global output "${data_clean}/aggregators/BIS/BIS_cbrate/BIS_cbrate.dta"
 
 * ==============================================================================
 * PROCESS
@@ -36,21 +36,25 @@ use "$input", clear
 * Drop Euro Area
 drop if ref_area == "XM"
 
+* keep monthly data 
+keep if freq == "M"
+
 * Extract the year and month
-gen year = substr(period, 1, 4)
-gen month = substr(period, -2, 2)
+gen year = substr(time, 1, 4)
+gen month = substr(time, -2, 2)
 
 * Destring
-qui replace value = "" if value == "NA"
-destring year value month, replace
+destring year obs month, replace ignore("NA")
+
+* Drop missing observations 
+drop if obs == .
 
 * Keep only end-of-year observation
-gsort ref_area year month
-bysort ref_area year: keep if _n == _N
+bysort ref year (month): keep if _n == _N 
 
 * Rename
 ren ref_area ISO2
-ren value BIS_cbrate
+ren obs BIS_cbrate
 
 * Generate countries' ISO3 code
 merge m:1 ISO2 using ${isomapping}, nogen assert(2 3) keep(3) keepusing(ISO3)
