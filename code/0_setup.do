@@ -21,7 +21,7 @@
 * ==============================================================================
 * Toggle options
 *
-* Turn these options on with a "1" or off with a "0", depending on what you 
+* Turn these options on with a "1" or off with a "0", depending on what you
 * actually want to run.
 * ==============================================================================
 
@@ -39,20 +39,27 @@ log using "setup_secure.log", replace text name(safety_log) // start logging to 
 
 
 * >>> CONFIGURATION START
-global release		0   // Only before quarterly update
-global erase		0	// Careful: removes all the processed data
-global download		0   // Run the download files
-global clean		0   // Run the clean files
-global mitchell		0   // Run clean files for Mitchell (takes long)
-global combine		0	// Run the combine files
-global document		0	// Produce and compile the documentation
+global release	0	// Only before quarterly update
+global erase	0	// Careful: removes all the processed data
+global download	0	// Run the download files
+global clean	0	// Run the clean files
+global mitchell	0	// Run clean files for Mitchell (takes long)
+global combine	0	// Run the combine files
+global document	0	// Produce and compile the documentation
 
-global output_data	0   // Produce the data outputs; mask the data and then produce final combined dataframe of all the data
-global paper		0   // Prepare the paper exhibits
-global packages		0   // Check if the package exists; 1 only the first time, i.e. just once to download all packages
-global github		0	// Push the changes to Github
-global check		0   // Check the log
+global output_data	0	// Produce the data outputs; mask the data and then produce final combined dataframe of all the data
+global paper	0	// Prepare the paper exhibits
+global packages	0	// Check if the package exists; 1 only the first time, i.e. just once to download all packages
+global github	0	// Push the changes to Github
+global check	0	// Check the log
 * <<< CONFIGURATION END
+
+* ==============================================================================
+* DESIGN DECISION (2026-02):
+* - Stata prepares INTERNAL artifacts only (data/, output/, data/distribute/).
+* - Cross-repo distribution + git/PR + remote sync are handled in GitHub Actions.
+* - The $github flag still gates internal "distribute" prep for parity with legacy flow.
+* ==============================================================================
 
 * ==============================================================================
 * Prepare folder paths and define programs
@@ -60,11 +67,11 @@ global check		0   // Check the log
 
 * Set path folder
 if "`c(username)'" == "ubuntu" {
-    // the actual path on our EC2 machine.
-    global path "/home/ubuntu/GMD/repositories/Global-Macro-Database-Internal"
-    global website "/home/ubuntu/GMD/repositories/Global-Macro-Database-Website"
-    global main_repo "/home/ubuntu/GMD/repositories/Global-Macro-Database"
-    global package_repo "/home/ubuntu/GMD/repositories/Global-Macro-Project-Stata"
+	// the actual path on our EC2 machine.
+	global path "/home/ubuntu/GMD/repositories/Global-Macro-Database-Internal"
+	global website "/home/ubuntu/GMD/repositories/Global-Macro-Database-Website"
+	global main_repo "/home/ubuntu/GMD/repositories/Global-Macro-Database"
+	global package_repo "/home/ubuntu/GMD/repositories/Global-Macro-Project-Stata"
 }
 else if "`c(username)'"=="lehbib"{
 	global path "C:/Users/lehbib/Documents/Github/Global-Macro-Project"
@@ -76,22 +83,19 @@ else if "`c(username)'"=="mohamedlehbib"{
 	global package_repo "/Users/mohamedlehbib/Downloads/GitHub/Global-Macro-Project-Stata"
 }
 else if "`c(username)'"=="kmueller"{
-	global path "C:/Users/kmueller/Desktop/GitHub/Global-Macro-Project"
-}
-else if "`c(username)'"=="kmueller"{
-	global path "C:\Users\kmueller\Documents\GitHub\Global-Macro-Project" // Home laptop
+	global path "C:/Users/kmueller/Documents/GitHub/Global-Macro-Project" // Home laptop
 }
 else if "`c(username)'"=="simonchen"{
 	global path "/Users/simonchen/Documents/GitHub/Global-Macro-Project"
 }
 else if "`c(username)'"=="coden"{
-	global path "C:\Users\coden\OneDrive\Documents\GitHub\Global-Macro-Project"
+	global path "C:/Users/coden/OneDrive/Documents/GitHub/Global-Macro-Project"
 }
 else if "`c(username)'"=="Kororinpa"{
 	global path "D:/Singapore Management University/Research assistant/NUS/Global-Macro-Project"
 }
 else if "`c(username)'"=="yaqi"{
-	global path "D:\Dropbox\Yaqi_misc\GMP_LPs\github_repository\Global-Macro-Project"
+	global path "D:/Dropbox/Yaqi_misc/GMP_LPs/github_repository/Global-Macro-Project"
 }
 
 * Set sub-paths
@@ -160,8 +164,8 @@ global base_year 2015
 
 * Delete all stswp files
 if "`c(os)'" == "Windows" {
-        shell del "*.stswp" /q /s
-    }
+		shell del "*.stswp" /q /s
+	}
 else {
 	shell find . -name "*.stswp" -type f -delete
 	shell find . -name "*.DS_Store" -type f -delete
@@ -224,20 +228,20 @@ foreach f of loc functions {
 * Erase everything if specified
 if $erase == 1 {
 
-    * Erase the raw data files
+	* Erase the raw data files
 	if "`c(os)'" == "Windows" {
-    foreach dir in "$data_clean" "$data_final" "$data_distr" "$data_temp" "$doc" {
-        !del /s /q "`dir'\*.dta"
-        !del /s /q "`dir'\*.tex"
-        !del /s /q "`dir'\*.pdf"
-    }
+	foreach dir in "$data_clean" "$data_final" "$data_distr" "$data_temp" "$doc" {
+		!del /s /q "`dir'\*.dta"
+		!del /s /q "`dir'\*.tex"
+		!del /s /q "`dir'\*.pdf"
+	}
 }
 	else {
-    foreach dir in "$data_clean" "$data_final" "$data_distr" "$data_temp" "$doc" {
-        !find "`dir'" -type f -name "*.dta" -delete
-        !find "`dir'" -type f -name "*.tex" -delete
-        !find "`dir'" -type f -name "*.pdf" -delete
-    }
+	foreach dir in "$data_clean" "$data_final" "$data_distr" "$data_temp" "$doc" {
+		!find "`dir'" -type f -name "*.dta" -delete
+		!find "`dir'" -type f -name "*.tex" -delete
+		!find "`dir'" -type f -name "*.pdf" -delete
+	}
 }
 
 	do "$code/initialize/1_make_download_dates.do"
@@ -469,7 +473,7 @@ if $combine == 1 {
 		gmdslack, send("`c(username)': All combine files ran successfully")
 	}
 
-	* List countries with too many source changes 
+	* List countries with too many source changes
 	*do "$functions/gmd_source_changes.do"
 
 	* Derive the variables
@@ -577,184 +581,11 @@ if $paper == 1 {
 }
 
 * ==============================================================================
-* Change the versions.csv file
+* Prepare internal documentation artifacts for distribution (internal repo only)
 * ==============================================================================
-qui do "$path/env_vars.do"
-if $release == 1 {
 
-	gmdslack, send("`c(username)': Ensuring that a pull request was opened with the version file updated on the public branch")
-
-	* Navigate to the directory
-	cd $main_repo
-
-	* Check if Release_$current_version branch exists
-	local release_branch ""
-	cap !git show-ref --verify --quiet refs/heads/`release_branch'
-	if _rc == 0 {
-		* Branch exists, switch to it
-		cap !git checkout `release_branch'
-		if _rc != 0 {
-			gmdslack, send("`c(username)': Could not checkout branch `release_branch'")
-			exit 498
-		}
-
-		* Import versions.csv and check if last row of first column equals current version
-		qui import delimited "data/helpers/versions.csv", clear varnames(1)
-		qui count
-		local last_row = r(N)
-		qui keep if _n == `last_row'
-		levelsof v, local(last_version) clean
-		if "`last_version'" == "$current_version" {
-			gmdslack, send("`c(username)': Release branch `release_branch' is ready. Last row equals $current_version")
-		}
-		else {
-			gmdslack, send("`c(username)': Last row in versions.csv (`last_version') does not match current version ($current_version)")
-			exit 498
-		}
-	}
-	else {
-		* Branch doesn't exist
-		gmdslack, send("`c(username)': Release branch `release_branch' does not exist")
-	}
-
-}
-
-* ==============================================================================
-* Push the changes to GitHub
-* ==============================================================================
-qui do "$path/env_vars.do"
-
-* Push files to website repository
+* Preserve original gating from the prior GitHub block
 if $github == 1 {
-
-	* Send message about website update
-	cap gmdslack, send("`c(username)': Starting website repository update")
-
-	* Navigate to website repository
-	cd "$website"
-
-	* Create new branch for current version
-	local website_branch $branch
-	cap !git checkout -b `website_branch'
-	if _rc != 0 {
-		* Branch might already exist, try to checkout existing branch
-		cap !git checkout `website_branch'
-		if _rc != 0 {
-			cap gmdslack, send("`c(username)': ERROR - Could not create or checkout branch `website_branch' in website repo")
-			exit 498
-		}
-	}
-
-	* Get all files ending with current version from distribute folder
-	qui filelist, dir("$data_distr")
-	qui keep if regexm(filename, "_$current_version\.(csv|xlsx|dta)$")
-	qui gen filepath = dirname + "/" + filename
-	qui levelsof filepath, local(version_files) clean
-
-	* Also get the main GMD files (without version numbers)
-	qui filelist, dir("$data_distr")
-	qui keep if regexm(filename, "^GMD\.(csv|xlsx|dta)$")
-	qui gen filepath = dirname + "/" + filename
-	qui levelsof filepath, local(gmd_files) clean
-
-	* Combine both lists
-	local all_files "`version_files' `gmd_files'"
-
-	* Copy files to website docs folder
-	local copy_count = 0
-	foreach file of local all_files {
-		local filename = regexr("`file'", ".*/", "")
-		cap !cp "`file'" "docs/`filename'"
-		if _rc == 0 {
-			di "Copied `filename' to website docs folder"
-			local copy_count = `copy_count' + 1
-		}
-		else {
-			di "ERROR: Failed to copy `filename'"
-		}
-	}
-
-	* Check if any files were copied
-	if `copy_count' == 0 {
-		cap gmdslack, send("`c(username)': WARNING - No files were copied to website docs folder")
-	}
-	else {
-		di "Successfully copied `copy_count' files to website docs folder"
-	}
-
-	* Add and commit changes to website repo
-	cap !git add docs/
-	if _rc != 0 {
-		cap gmdslack, send("`c(username)': ERROR - Failed to add files to git in website repo")
-		exit 498
-	}
-
-	cap !git commit -m "Update data files for version $current_version"
-	if _rc != 0 {
-		cap gmdslack, send("`c(username)': ERROR - Failed to commit changes in website repo")
-		exit 498
-	}
-
-	cap !git push -u origin `website_branch'
-	if _rc != 0 {
-		cap gmdslack, send("`c(username)': ERROR - Failed to push changes to website repo")
-		exit 498
-	}
-
-	* ==============================================================================
-	* Copy documentation PDF files
-	* ==============================================================================
-
-	* Copy country documentation PDFs
-	use "$data_final/data_final", clear
-	levelsof ISO3, local(countries) clean
-
-	local country_copy_count = 0
-	foreach country of local countries {
-		local pdf_file = "`country'.pdf"
-		cap !cp "$doc/`pdf_file'" "docs/files/documentations/countries/`pdf_file'"
-		if _rc == 0 {
-			di "Copied country documentation: `pdf_file'"
-			local country_copy_count = `country_copy_count' + 1
-		}
-		else {
-			di "WARNING: Could not copy country documentation: `pdf_file'"
-		}
-	}
-
-	* Copy variable documentation PDFs
-	import delimited using "$docvars", clear
-	keep if documentation == "Yes"
-	levelsof codes, local(variables) clean
-
-	local variable_copy_count = 0
-	foreach variable of local variables {
-		local pdf_file = "`variable'.pdf"
-		cap !cp "$doc/`pdf_file'" "docs/files/documentations/Variables/`pdf_file'"
-		if _rc == 0 {
-			di "Copied variable documentation: `pdf_file'"
-			local variable_copy_count = `variable_copy_count' + 1
-		}
-		else {
-			di "WARNING: Could not copy variable documentation: `pdf_file'"
-		}
-	}
-
-	* Add and commit documentation changes
-	cap !git add docs/files/documentations/
-	if _rc == 0 {
-		cap !git commit -m "Update documentation files for version $current_version"
-		if _rc == 0 {
-			cap !git push -u origin `website_branch'
-			if _rc == 0 {
-				di "Successfully updated documentation files"
-			}
-		}
-	}
-
-	* ==============================================================================
-	* Copy documentation PDF files to data_distr folder
-	* ==============================================================================
 
 	* Create documentation directories in data_distr if they don't exist
 	cap !mkdir -p "$data_distr/documentations/countries"
@@ -796,143 +627,7 @@ if $github == 1 {
 	}
 
 	di "Successfully copied `country_distr_count' country and `variable_distr_count' variable documentation files to data_distr"
-
-	* Send success message
-	cap gmdslack, send("`c(username)': Website repository updated successfully with version $current_version files and documentation (Countries: `country_copy_count', Variables: `variable_copy_count')")
-
-
-	* ==============================================================================
-	* Copy Data to the package folder
-	* ==============================================================================
-
-	* Navigate to the package repository
-	cd "$package_repo"
-
-	* Send message about website update
-	cap gmdslack, send("`c(username)': Adding data to the package folder")
-
-	* Create new branch for current version
-	local package_branch $branch
-	cap !git checkout -b `package_branch'
-	if _rc != 0 {
-		* Branch might already exist, try to checkout existing branch
-		cap !git checkout `package_branch'
-		if _rc != 0 {
-			cap gmdslack, send("`c(username)': ERROR - Could not create or checkout branch `package_branch' in package repo")
-			exit 498
-		}
-	}
-
-	* Get all files ending with current version from distribute folder
-	qui filelist, dir("$data_distr")
-	qui keep if regexm(filename, "_$current_version\.(csv|dta)$")
-	qui gen filepath = dirname + "/" + filename
-	qui levelsof filepath, local(version_files) clean
-
-	* Also get the main GMD files (without version numbers)
-	qui filelist, dir("$data_distr")
-	qui keep if regexm(filename, "^GMD\.(csv|dta)$")
-	qui gen filepath = dirname + "/" + filename
-	qui levelsof filepath, local(gmd_files) clean
-
-	* Combine both lists
-	local all_files "`version_files' `gmd_files'"
-
-	* Copy files to package data folder
-	local copy_count = 0
-	foreach file of local all_files {
-		local filename = regexr("`file'", "./*/", "")
-		cap !cp "`file'" "data/final/`filename'"
-		if _rc == 0 {
-			di "Copied `filename' to website docs folder"
-			local copy_count = `copy_count' + 1
-		}
-		else {
-			di "ERROR: Failed to copy `filename'"
-		}
-	}
-
-	* Check if any files were copied
-	if `copy_count' == 0 {
-		cap gmdslack, send("`c(username)': WARNING - No files were copied to package repo")
-	}
-	else {
-		di "Successfully copied `copy_count' files to website docs folder"
-	}
-
-	* Add and commit changes to website repo
-	cap !git add data/final
-	if _rc != 0 {
-		cap gmdslack, send("`c(username)': ERROR - Failed to add files to git in package repo")
-		exit 498
-	}
-
-	* Add the clean data to the folder
-	qui filelist, dir("$data_clean") pat("*dta")
-	qui gen filepath = dirname + "/" + filename
-	qui levelsof filepath, local(version_files) clean
-
-	* Copy files to package data folder
-	local copy_count = 0
-	foreach file of local all_files {
-		local filename = regexr("`file'", ".*/", "")
-		cap !cp "`file'" "data/final/`filename'"
-		if _rc == 0 {
-			di "Copied `filename' to website docs folder"
-			local copy_count = `copy_count' + 1
-		}
-		else {
-			di "ERROR: Failed to copy `filename'"
-		}
-	}
-
-	* Check if any files were copied
-	if `copy_count' == 0 {
-		cap gmdslack, send("`c(username)': WARNING - No files were copied to package repo")
-	}
-	else {
-		di "Successfully copied `copy_count' files to website docs folder"
-	}
-
-	* Add and commit changes to website repo
-	cap !git add data/clean
-	if _rc != 0 {
-		cap gmdslack, send("`c(username)': ERROR - Failed to add files to git in package repo")
-		exit 498
-	}
-
-	* Add the versions, bib, docvars, and isomapping files to the helpers folder
-	cap !cp "$main_repo/data/helpers/versions.csv" "data/helpers/versions.csv"
-	cap !cp "$isomapping" "data/helpers/countrylist.dta"
-	cap !cp "$docvars" "data/helpers/docvars.csv"
-	cap !cp "$doc/bib.bib" "bib.bib"
-	cap !git add data/helpers
-	if _rc != 0 {
-		cap gmdslack, send("`c(username)': ERROR - Failed to add files to git in package repo")
-		exit 498
-	}
-
-
-	cap !git commit -m "Update help files for version $current_version"
-	if _rc != 0 {
-		cap gmdslack, send("`c(username)': ERROR - Failed to commit changes in package repo")
-		exit 498
-	}
-
-	cap !git push -u origin `package_branch'
-	if _rc != 0 {
-		cap gmdslack, send("`c(username)': ERROR - Failed to push changes to package repo")
-		exit 498
-	}
-
-	* Now run the package setup files to test it and ensure it's working
-	do "0_setup.do"
-
-	* Navigate back to main repository
-	cd "$path"
 }
-
-
 
 di "============================================================================"
 timer off 1
