@@ -48,7 +48,7 @@ global combine		1	// Run the combine files
 global document		1	// Produce and compile the documentation
 global output_data	1	// Produce the data outputs; mask the data and then produce final combined dataframe of all the data
 global paper		1	// Prepare the paper exhibits
-global packages		1	// Check if the package exists; 1 only the first time, i.e. just once to download all packages
+global packages		0	// Check if the package exists; 1 only the first time, i.e. just once to download all packages
 global github		1	// Push the changes to Github
 global check		1	// Check the log
 * <<< CONFIGURATION END
