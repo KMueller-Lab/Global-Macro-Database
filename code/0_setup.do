@@ -39,19 +39,18 @@ log using "setup_secure.log", replace text name(safety_log) // start logging to 
 
 
 * >>> CONFIGURATION START
-global release	0	// Only before quarterly update
-global erase	0	// Careful: removes all the processed data
-global download	0	// Run the download files
-global clean	0	// Run the clean files
-global mitchell	0	// Run clean files for Mitchell (takes long)
-global combine	0	// Run the combine files
-global document	0	// Produce and compile the documentation
-
+global release		0	// Only before quarterly update
+global erase		0	// Careful: removes all the processed data
+global download		0	// Run the download files
+global clean		0	// Run the clean files
+global mitchell		0	// Run clean files for Mitchell (takes long)
+global combine		0	// Run the combine files
+global document		0	// Produce and compile the documentation
 global output_data	0	// Produce the data outputs; mask the data and then produce final combined dataframe of all the data
-global paper	0	// Prepare the paper exhibits
-global packages	0	// Check if the package exists; 1 only the first time, i.e. just once to download all packages
-global github	0	// Push the changes to Github
-global check	0	// Check the log
+global paper		0	// Prepare the paper exhibits
+global packages		0	// Check if the package exists; 1 only the first time, i.e. just once to download all packages
+global github		0	// Push the changes to Github
+global check		0	// Check the log
 * <<< CONFIGURATION END
 
 * ==============================================================================
