@@ -175,16 +175,31 @@ The development of the Global Macro Database would not have been possible withou
 
 ## License 
 
-The Global Macro Database (GMD) is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0) . This means that the dataset is freely available for research and educational purposes but may not be used commercially.
+The Global Macro Database (GMD) is free to use and share for **non-commercial purposes by non-commercial entities** (e.g., academic research), provided you attribute and cite the dataset and share only under the same license terms. Any commercial use, including that internal to profit-seeking organizations, is prohibited unless you obtain a separate commercial license from us.
+
+**If you are unsure whether your intended use is commercial, treat it as commercial** and contact us for permission at kmueller@globalmacrodata.com.
+
+**No commercial use**: Any use that is primarily intended for, or directed toward, a commercial advantage or monetary compensation is considered commercial and is therefore forbidden under this license. For the avoidance of doubt, the following are commercial uses (non-exhaustive) and are not permitted:
+
+- *Product / service use*: incorporating the data (in whole or in part) into any product, platform, or service that is sold, licensed, paywalled, or otherwise monetized.
+- *Commercial analytics*: using the data to support revenue-generating activities or business decisions (e.g., trading, research, risk management, underwriting, pricing, forecasting for business operations, client reporting).
+- *Consulting / client deliverables*: using the data (or outputs based on it) in work delivered to a paying client or for a paid engagement.
+- *Redistribution for value*: selling, sublicensing, or otherwise distributing the data (or any portion) in exchange for payment or other consideration.
+- *Derived values*: selling or monetizing any values derived from the dataset (indices, signals, features, cleaned series, transformed series, benchmarks, etc.).
+- *Commercial AI / model development*: using the data to train, fine-tune, or benchmark models that are used in, or distributed as part of, a commercial product or service.
+- *Sponsored / marketing use*: using the data in paid reports, sponsored research, marketing materials, or other promotional activity.
+
+The Global Macro Database (GMD) is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0) .
 
 Under this license, users are free to:
 
 - Share – copy and redistribute the material in any medium or format
 - Adapt – remix, transform, and build upon the material
-- These freedoms are granted under the following conditions:
 
-   - Attribution – Appropriate credit must be given to the Global Macro Database (GMD), including a link to the license and indication of any changes made. Attribution must not imply endorsement.
-   - NonCommercial – The material may not be used for commercial purposes.
-   - ShareAlike – If you remix or build upon the material, you must distribute your contributions under the same license.
+These freedoms are granted under the following conditions:
 
-For licensing or usage inquiries, please contact us at kmueller@globalmacrodata.com.
+- Attribution – Appropriate credit must be given to the Global Macro Database (GMD), citing the authors as specified in the Citation section, including a link to the license and an indication of changes made. Attribution must not suggest endorsement.
+- NonCommercial – The material may not be used for commercial purposes, including the sale of the data (in whole or in part) or the sale/monetization of values based on it.
+- ShareAlike – If you remix, transform, or build upon the material, you must distribute your contributions under the same license.
+
+Citation requirement: If you use the GMD, you must cite it. See the Citation section above for the required BibTeX.
