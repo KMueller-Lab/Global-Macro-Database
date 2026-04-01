@@ -11,7 +11,50 @@
 
 This repository complements our paper, **Müller, Xu, Lehbib, and Chen (2025)**, which introduces a panel dataset of **73 macroeconomic variables across 240 countries** from historical records beginning in the year **1086** until **2024**, including projections through the year **2029**.
 
-## Version 2026_01 – current
+## Version 2026_03 – Current
+
+  ### Overview
+
+  This release adds eleven new data sources, introduces two new variables, improves the methodology for splicing government finance ratios, harmonizes all ratio variables, and updates the Python and R packages to full feature parity with the Stata package.
+
+  ### New Sources
+
+  We added eleven new sources to the database:
+
+  - **COMECON**: The wiiw COMECON Dataset, covering economic time series for the command economies of Eastern Europe (1944–1994), including GDP, consumption, trade, government finance, monetary, and price data for nine countries.
+  - **CogneauDupraz**: Colonial fiscal, GDP, trade, and population data for French colonies (1833–1962), covering Algeria, Tunisia, Morocco, Madagascar, Cameroon, and Togo.
+  - **MAFHOLA**: The Monetary and Fiscal History of Latin America project, covering GDP, inflation, fiscal balances, government debt, exchange rates, and monetary base for eleven Latin American countries (1960–2017).
+  - **Andersson**: Central government revenue data from Per F. Andersson, covering revenue and GDP for multiple countries from the 1800s onwards.
+  - **CS1_BOL**: Historical real GDP for Bolivia from Herranz-Loncan & Peres-Cajias (2016), extending coverage back to the mid-nineteenth century (1846, 1890–2010).
+  - **CS2_BOL**: Bolivian public finance data from Peres-Cajias (2014), covering central and general government revenue, expenditure, and tax ratios (1882–2010).
+  - **CS1_PER**: Historical macroeconomic data from the Banco Central de Reserva del Peru, covering national accounts, prices, trade, monetary aggregates, and fiscal data for Peru (1922–2021).
+  - **CS1_COL**: Historical series from Colombia's central bank, covering government finances, trade, current account, and monetary aggregates.
+  - **CS1_HKG**: Historical data for Hong Kong including monetary aggregates, government finance, trade, GDP, exchange rates, and prices (1843–2002).
+  - **CS2_AUT**: Long-run Austrian CPI series from Hubmann, Jobst & Maier (2020), covering 1800–2018.
+  - **CS2_GBR**: UK historical public finances from HM Treasury, covering government revenue and expenditure.
+
+  ### New Variables
+
+  We introduced two new consumption variables: household consumption (`hcons`) and government consumption (`gcons`). These complement the existing total consumption (`cons`) variable and provide a finer decomposition of the expenditure side of GDP.
+
+  ### Improved Government Finance Ratio Splicing
+
+  We introduced a new methodology for combining government finance ratios (revenue, expenditure, tax, debt, and deficit as % of GDP). Previously, we spliced the underlying level series and then derived the ratios. We now splice the ratios directly, which avoids compounding errors that arise when the numerator and denominator are spliced separately with different chainlinking adjustments.
+
+  ### Ratio Harmonization
+
+  All ratio variables (e.g., `govdebt_GDP`, `exports_GDP`, `CA_GDP`) are now consistently expressed in percent, so that a value of 50 means 50% of GDP.
+
+  ### Package Updates
+
+  The Python and R packages have been updated to match the full functionality of the Stata package, including access to underlying source data and documentation features.
+
+  ### Data Quality
+
+  We incorporated feedback from GMD users and improved data quality across multiple variables and sources.
+
+
+## Version 2026_01
 
 ### Overview
 
@@ -79,10 +122,11 @@ df <- gmd(version = "2026_01", country = c("USA", "CHN"), variables = c("rGDP", 
 | 2025-06-30   | 2025\_06 | Legacy version  |
 | 2025-08-23   | 2025\_08 | Legacy version (Patch) |
 | 2025-09-30   | 2025\_09 | Legacy version  |
-| 2025-12-31   | 2025\_12 | Update          |
-| 2026-01-25   | 2026\_01 | *Current version* |
-| 2026-03-31   | 2026\_03 | *Planned*       |
+| 2025-12-31   | 2025\_12 | Legacy version  |
+| 2026-01-25   | 2026\_01 | Legacy version (Patch) |
+| 2026-03-31   | 2026\_03 | *Current Version*       |
 | 2026-06-30   | 2026\_06 | *Planned*       |
+| 2026-09-30   | 2026\_09 | *Planned*       |
 
 ---
 
