@@ -5,8 +5,6 @@
 
 [Link to paper 📄](https://www.globalmacrodata.com/research-paper.html)
 
-
-
 This repository complements our paper, **Müller, Xu, Lehbib, and Chen (2025)**, which introduces a panel dataset of **46 core macroeconomic variables (provided as 77 harmonized series) across 239 countries** from historical records beginning in the year **1086** until **2025**, including projections through the year **2030**.
 
 ## Features
@@ -237,7 +235,7 @@ Please cite the dataset as:
 ```bibtex
 @techreport{GMD2025,
   title = {The Global Macro Database: A New International Macroeconomic Dataset},
-  author = {M{"u}ller, Karsten and Xu, Chenzi and Lehbib, Mohamed and Chen, Ziliang},
+  author = {M{\"u}ller, Karsten and Xu, Chenzi and Lehbib, Mohamed and Chen, Ziliang},
   institution = {National Bureau of Economic Research},
   type = {Working Paper},
   series = {Working Paper Series},
