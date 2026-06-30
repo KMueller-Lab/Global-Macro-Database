@@ -13,7 +13,7 @@ This repository complements our paper, **Müller, Xu, Lehbib, and Chen (2025)**,
 
   ### Overview
 
-  The 2026_06 quarterly update expands coverage with 39 new aggregator and country-level historical sources, improves our continuous automated error-monitoring system, resolves dozens of data-quality bugs, completes a comprehensive audit of the Mitchell historical statistics, and improves the Stata, R, and Python packages.
+  The 2026_06 quarterly update expands coverage with 39 new aggregator and country-level historical sources, improves our continuous automated error-monitoring system, resolves dozens of data-quality bugs, and improves the Stata, R, and Python packages.
 
   ### New Sources
 
@@ -42,10 +42,6 @@ This repository complements our paper, **Müller, Xu, Lehbib, and Chen (2025)**,
 
   - **Units, scaling, and redenominations**: corrected unit-scale and currency-vintage issues across IMF IFS, IMF GFS, Andersson, Bordo monetary aggregates, Flora, the African Development Bank source, HFS, and UN data.
   - **Splicing and ratio consistency**: improved handling of gaps between sources, improved overlap handling, and corrected the US long-term interest-rate series.
-
-  ### Mitchell Historical Audit
-
-  We completed a comprehensive audit of the Mitchell International Historical Statistics, fixing issues and correcting the euro-cutoff handling for European government tax series.
 
   ### Package Updates
 
@@ -175,6 +171,7 @@ df <- gmd(version = "2026_06", country = c("USA", "CHN"), variables = c("rGDP", 
 | 2026-03-31   | 2026\_03 | Legacy version  |
 | 2026-06-30   | 2026\_06 | *Current Version*       |
 | 2026-09-30   | 2026\_09 | *Planned*       |
+| 2026-12-31   | 2026\_12 | *Planned*       |
 
 ---
 
