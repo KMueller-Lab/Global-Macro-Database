@@ -9,9 +9,59 @@
 
 
 
-This repository complements our paper, **Müller, Xu, Lehbib, and Chen (2025)**, which introduces a panel dataset of **73 macroeconomic variables across 240 countries** from historical records beginning in the year **1086** until **2024**, including projections through the year **2029**.
+This repository complements our paper, **Müller, Xu, Lehbib, and Chen (2025)**, which introduces a panel dataset of **46 core macroeconomic variables (provided as 77 harmonized series) across 239 countries** from historical records beginning in the year **1086** until **2025**, including projections through the year **2030**.
 
-## Version 2026_03 – Current
+## Version 2026_06 – Current
+
+  ### Overview
+
+  The 2026_06 quarterly update expands coverage with 39 new aggregator and country-level historical sources, improves our continuous automated error-monitoring system, resolves dozens of data-quality bugs, completes a comprehensive audit of the Mitchell historical statistics, and improves the Stata, R, and Python packages.
+
+  ### New Sources
+
+  This release adds 39 new sources, bringing the database to 160 sources in total. The additions are dominated by long-run country-level historical sources, complemented by several new cross-country aggregators. Highlights include:
+
+  - **SECMCA historical statistics**: macroeconomic statistics from the Central American Monetary Council for Costa Rica, the Dominican Republic, Guatemala, Honduras, Nicaragua, and El Salvador (1960–2017).
+  - **German historical sources**: Ritschl (2002) and Ritschl & Spoerer (1997), adding interwar and German Reich macroeconomic, fiscal, monetary, trade, price, population, and national-accounts series.
+  - **International Historical Database (IHD)**: additional series with improved source splits and price mappings.
+  - **Archivo de Historia Económica de México**: long-run Mexican national accounts, prices, money, and public finances (1876–2025).
+  - **Ghana**: historical monetary, inflation, and output series from Ibrahim Abdulai's work on Ghana (1980–2017).
+  - **Australia**: Foster's *Australian Economic Statistics* (1949/50–1994/95).
+  - **Netherlands**: the Herengracht house-price index (1628–1973), one of the longest continuous real-estate price series available.
+  - **Korea**: Open Fiscal Data from the Republic of Korea's Ministry of Economy and Finance.
+  - **China**: Chinese national income estimates, 1661–1933.
+  - **United Kingdom**: Feinstein's national income, expenditure, and output series (1855–1965), plus the Sefton-Weale balanced estimates of UK national income (1920–1990).
+  - **Further country-level additions**: new or expanded sources for India, New Zealand, Spain, Sweden, Turkey, Japan, Russia, Israel, Bulgaria, Venezuela, and Italy.
+  - **CEPII**: the CEPII trade-and-macro source has been refreshed and renamed from `CEPII_TRADHIST` to `CEPII`.
+
+  ### Automated Error Monitoring
+
+  This release expands our continuous error-monitoring system that scans the database for ratio discrepancies, unit breaks, and other anomalies, then routes each flagged case through an auto-triage workflow for review. The system has already identified and resolved dozens of data-quality issues and will keep running against future updates.
+
+  ### Data Quality and Bug Fixes
+
+  Driven by the new monitoring system and reports from GMD users, this release resolves dozens of bugs. The most important corrections fall into two groups:
+
+  - **Units, scaling, and redenominations**: corrected unit-scale and currency-vintage issues across IMF IFS, IMF GFS, Andersson, Bordo monetary aggregates, Flora, the African Development Bank source, HFS, and UN data.
+  - **Splicing and ratio consistency**: improved handling of gaps between sources, improved overlap handling, and corrected the US long-term interest-rate series.
+
+  ### Mitchell Historical Audit
+
+  We completed a comprehensive audit of the Mitchell International Historical Statistics, fixing issues and correcting the euro-cutoff handling for European government tax series.
+
+  ### Package Updates
+
+  The Stata, R, and Python packages have all been improved. The three distributions remain at full feature parity, so users have the same access to the combined database, underlying source data, and documentation regardless of language.
+
+  ### Easy Access to Underlying Raw Data
+
+  We have improved access to the underlying raw data, making it easier for users to download and analyze the original sources. Previously, the data was only available by downloading the Excel version of the database or using our Stata, R, or Python packages. From now on, users can simply indicate whether they want access to the underlying raw data on the download page, even where they download the csv or dta versions.
+
+  ### Acknowledgements
+
+  Thanks to everyone who reported issues and suggested improvements. Many fixes in this release came directly from user reports.
+
+## Version 2026_03
 
   ### Overview
 
@@ -74,7 +124,7 @@ We have launched a dedicated repository for the official Stata package, now avai
 
 ## Features
 
-- **Unparalleled Coverage**: Combines data from **32 contemporary sources** (e.g., IMF, World Bank, OECD) and **86 historical datasets**, totaling **118 sources**.
+- **Unparalleled Coverage**: Combines data from **33 contemporary sources** (e.g., IMF, World Bank, OECD) and **127 historical datasets**, totaling **160 sources**.
 - **Extensive Variables**: Covers national accounts, consumption, investment, trade, prices, government finances, interest rates, employment, and financial crises.
 - **Transparent Source Prioritization**: Prioritizes country-specific sources over international aggregators to ensure both historical depth and accuracy.
 - **Harmonized Data**: All data is cleaned, spliced, and chainlinked for consistent cross-country comparison.
@@ -101,7 +151,7 @@ pip install global_macro_data
 
 ```python
 from global_macro_data import gmd
-df = gmd(version="2026_01", country=["USA", "CHN"], variables=["rGDP", "CPI"])
+df = gmd(version="2026_06", country=["USA", "CHN"], variables=["rGDP", "CPI"])
 ```
 
 **R package:**
@@ -110,7 +160,7 @@ df = gmd(version="2026_01", country=["USA", "CHN"], variables=["rGDP", "CPI"])
 install.packages("devtools")
 devtools::install_github("KMueller-Lab/Global-Macro-Database-R")
 library(globalmacrodata)
-df <- gmd(version = "2026_01", country = c("USA", "CHN"), variables = c("rGDP", "CPI"))
+df <- gmd(version = "2026_06", country = c("USA", "CHN"), variables = c("rGDP", "CPI"))
 ```
 
 ## Release Schedule
@@ -124,8 +174,8 @@ df <- gmd(version = "2026_01", country = c("USA", "CHN"), variables = c("rGDP", 
 | 2025-09-30   | 2025\_09 | Legacy version  |
 | 2025-12-31   | 2025\_12 | Legacy version  |
 | 2026-01-25   | 2026\_01 | Legacy version (Patch) |
-| 2026-03-31   | 2026\_03 | *Current Version*       |
-| 2026-06-30   | 2026\_06 | *Planned*       |
+| 2026-03-31   | 2026\_03 | Legacy version  |
+| 2026-06-30   | 2026\_06 | *Current Version*       |
 | 2026-09-30   | 2026\_09 | *Planned*       |
 
 ---
