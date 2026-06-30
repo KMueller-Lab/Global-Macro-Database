@@ -3,8 +3,6 @@
     <img src="https://img.shields.io/badge/Website-Visit-blue?style=flat&logo=google-chrome" alt="Website Badge">
 </a>
 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-
 [Link to paper 📄](https://www.globalmacrodata.com/research-paper.html)
 
 
@@ -267,33 +265,17 @@ Please cite the dataset as:
 
 The development of the Global Macro Database would not have been possible without the generous funding provided by the Singapore Ministry of Education (MOE) through the PYP grants (WBS A-0003319-01-00 and A-0003319-02-00), a Tier 1 grant (A-8001749- 00-00), and the NUS Risk Management Institute (A-8002360-00-00). This financial support laid the foundation for the successful completion of this extensive project.
 
-## License 
+## License
 
-The Global Macro Database (GMD) is free to use and share for **non-commercial purposes by non-commercial entities** (e.g., academic research), provided you attribute and cite the dataset and share only under the same license terms. Any commercial use, including that internal to profit-seeking organizations, is prohibited unless you obtain a separate commercial license from us.
+The Global Macro Database (GMD) is released under the **GMD Research Use Terms** (Version 1.0) — our own license for public-good data. It follows the spirit of CC BY-NC-SA 4.0, but where it differs, the Research Use Terms govern. The full terms are at [globalmacrodata.com/license.html](https://www.globalmacrodata.com/license.html).
 
-**If you are unsure whether your intended use is commercial, treat it as commercial** and contact us for permission at kmueller@globalmacrodata.com.
+**The short version** (a plain-English summary; the full Research Use Terms are what actually govern):
 
-**No commercial use**: Any use that is primarily intended for, or directed toward, a commercial advantage or monetary compensation is considered commercial and is therefore forbidden under this license. For the avoidance of doubt, the following are commercial uses (non-exhaustive) and are not permitted:
+- **Free for research.** Universities, non-profits, students, teachers, journalists, individual researchers, and public-sector bodies (central banks, regulators, finance ministries, international organizations) — for papers, teaching, theses, reporting, non-commercial policy work, and personal learning.
+- **Not for business.** Not for commercial use, or for use inside for-profit companies of any kind, even internally — including building it, in whole or in derived form, into any product, service, model, index, or paid report.
+- **Cite it.** Always credit the GMD and its authors (see the Citation section above).
+- **Do not re-host or rebadge it.** Do not republish the data on another website, API, platform, product, or under another name without explicit written approval — point people to [globalmacrodata.com](https://www.globalmacrodata.com) so they get the latest data and cite it. (You may include the specific data used in a paper in that paper's replication package, clearly labeled as coming from the GMD.)
+- **Share alike.** If we allow you to build on it and share, keep these same terms.
+- **As-is.** No warranty for correctness; we do our best to provide accurate data.
 
-- *Product / service use*: incorporating the data (in whole or in part) into any product, platform, or service that is sold, licensed, paywalled, or otherwise monetized.
-- *Commercial analytics*: using the data to support revenue-generating activities or business decisions (e.g., trading, research, risk management, underwriting, pricing, forecasting for business operations, client reporting).
-- *Consulting / client deliverables*: using the data (or outputs based on it) in work delivered to a paying client or for a paid engagement.
-- *Redistribution for value*: selling, sublicensing, or otherwise distributing the data (or any portion) in exchange for payment or other consideration.
-- *Derived values*: selling or monetizing any values derived from the dataset (indices, signals, features, cleaned series, transformed series, benchmarks, etc.).
-- *Commercial AI / model development*: using the data to train, fine-tune, or benchmark models that are used in, or distributed as part of, a commercial product or service.
-- *Sponsored / marketing use*: using the data in paid reports, sponsored research, marketing materials, or other promotional activity.
-
-The Global Macro Database (GMD) is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0) .
-
-Under this license, users are free to:
-
-- Share – copy and redistribute the material in any medium or format
-- Adapt – remix, transform, and build upon the material
-
-These freedoms are granted under the following conditions:
-
-- Attribution – Appropriate credit must be given to the Global Macro Database (GMD), citing the authors as specified in the Citation section, including a link to the license and an indication of changes made. Attribution must not suggest endorsement.
-- NonCommercial – The material may not be used for commercial purposes, including the sale of the data (in whole or in part) or the sale/monetization of values based on it.
-- ShareAlike – If you remix, transform, or build upon the material, you must distribute your contributions under the same license.
-
-Citation requirement: If you use the GMD, you must cite it. See the Citation section above for the required BibTeX.
+**Unsure, or need something else?** Treat your use as commercial and email kmueller@globalmacrodata.com.
