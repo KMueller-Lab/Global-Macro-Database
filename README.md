@@ -3,78 +3,13 @@
     <img src="https://img.shields.io/badge/Website-Visit-blue?style=flat&logo=google-chrome" alt="Website Badge">
 </a>
 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-
 [Link to paper 📄](https://www.globalmacrodata.com/research-paper.html)
 
-
-
-This repository complements our paper, **Müller, Xu, Lehbib, and Chen (2025)**, which introduces a panel dataset of **73 macroeconomic variables across 240 countries** from historical records beginning in the year **1086** until **2024**, including projections through the year **2029**.
-
-## Version 2026_03 – Current
-
-  ### Overview
-
-  This release adds eleven new data sources, introduces two new variables, improves the methodology for splicing government finance ratios, harmonizes all ratio variables, and updates the Python and R packages to full feature parity with the Stata package.
-
-  ### New Sources
-
-  We added eleven new sources to the database:
-
-  - **COMECON**: The wiiw COMECON Dataset, covering economic time series for the command economies of Eastern Europe (1944–1994), including GDP, consumption, trade, government finance, monetary, and price data for nine countries.
-  - **CogneauDupraz**: Colonial fiscal, GDP, trade, and population data for French colonies (1833–1962), covering Algeria, Tunisia, Morocco, Madagascar, Cameroon, and Togo.
-  - **MAFHOLA**: The Monetary and Fiscal History of Latin America project, covering GDP, inflation, fiscal balances, government debt, exchange rates, and monetary base for eleven Latin American countries (1960–2017).
-  - **Andersson**: Central government revenue data from Per F. Andersson, covering revenue and GDP for multiple countries from the 1800s onwards.
-  - **CS1_BOL**: Historical real GDP for Bolivia from Herranz-Loncan & Peres-Cajias (2016), extending coverage back to the mid-nineteenth century (1846, 1890–2010).
-  - **CS2_BOL**: Bolivian public finance data from Peres-Cajias (2014), covering central and general government revenue, expenditure, and tax ratios (1882–2010).
-  - **CS1_PER**: Historical macroeconomic data from the Banco Central de Reserva del Peru, covering national accounts, prices, trade, monetary aggregates, and fiscal data for Peru (1922–2021).
-  - **CS1_COL**: Historical series from Colombia's central bank, covering government finances, trade, current account, and monetary aggregates.
-  - **CS1_HKG**: Historical data for Hong Kong including monetary aggregates, government finance, trade, GDP, exchange rates, and prices (1843–2002).
-  - **CS2_AUT**: Long-run Austrian CPI series from Hubmann, Jobst & Maier (2020), covering 1800–2018.
-  - **CS2_GBR**: UK historical public finances from HM Treasury, covering government revenue and expenditure.
-
-  ### New Variables
-
-  We introduced two new consumption variables: household consumption (`hcons`) and government consumption (`gcons`). These complement the existing total consumption (`cons`) variable and provide a finer decomposition of the expenditure side of GDP.
-
-  ### Improved Government Finance Ratio Splicing
-
-  We introduced a new methodology for combining government finance ratios (revenue, expenditure, tax, debt, and deficit as % of GDP). Previously, we spliced the underlying level series and then derived the ratios. We now splice the ratios directly, which avoids compounding errors that arise when the numerator and denominator are spliced separately with different chainlinking adjustments.
-
-  ### Ratio Harmonization
-
-  All ratio variables (e.g., `govdebt_GDP`, `exports_GDP`, `CA_GDP`) are now consistently expressed in percent, so that a value of 50 means 50% of GDP.
-
-  ### Package Updates
-
-  The Python and R packages have been updated to match the full functionality of the Stata package, including access to underlying source data and documentation features.
-
-  ### Data Quality
-
-  We incorporated feedback from GMD users and improved data quality across multiple variables and sources.
-
-
-## Version 2026_01
-
-### Overview
-
-This release introduces significant enhancements to data accuracy and infrastructure. Key updates include a comprehensive revision of the real GDP series and the deployment of a fully automated, cloud-based data processing pipeline to ensure timely future updates.
-
-### Real GDP Improvement
-
-We have conducted a major review of the real GDP series. The data has been rigorously corrected and is now consistently rebased to the year 2015, ensuring greater comparability and accuracy across the dataset.
-
-### Automated Pipeline
-
-To improve long-term sustainability and data freshness, we have engineered a new automated pipeline. This system autonomously handles downloading, processing, and merging data from all sources in the cloud, streamlining the maintenance process and allowing for more frequent and reliable database updates.
-
-### Stata Package & Documentation
-
-We have launched a dedicated repository for the official Stata package, now available at [Global-Macro-Database-Stata](https://github.com/KMueller-Lab/Global-Macro-Database-Stata). Additionally, we have released a comprehensive companion paper, [Global_Macro_Database_Stata.pdf](https://github.com/KMueller-Lab/Global-Macro-Database-Stata/blob/main/Global_Macro_Database_Stata.pdf), which serves as a detailed guide to using the package effectively.
+This repository complements our paper, **Müller, Xu, Lehbib, and Chen (2025)**, which introduces a panel dataset of **46 core macroeconomic variables (provided as 77 harmonized series) across 239 countries** from historical records beginning in the year **1086** until **2025**, including projections through the year **2030**.
 
 ## Features
 
-- **Unparalleled Coverage**: Combines data from **32 contemporary sources** (e.g., IMF, World Bank, OECD) and **86 historical datasets**, totaling **118 sources**.
+- **Unparalleled Coverage**: Combines data from **33 contemporary sources** (e.g., IMF, World Bank, OECD) and **127 historical datasets**, totaling **160 sources**.
 - **Extensive Variables**: Covers national accounts, consumption, investment, trade, prices, government finances, interest rates, employment, and financial crises.
 - **Transparent Source Prioritization**: Prioritizes country-specific sources over international aggregators to ensure both historical depth and accuracy.
 - **Harmonized Data**: All data is cleaned, spliced, and chainlinked for consistent cross-country comparison.
@@ -101,7 +36,7 @@ pip install global_macro_data
 
 ```python
 from global_macro_data import gmd
-df = gmd(version="2026_01", country=["USA", "CHN"], variables=["rGDP", "CPI"])
+df = gmd(version="2026_06", country=["USA", "CHN"], variables=["rGDP", "CPI"])
 ```
 
 **R package:**
@@ -110,7 +45,7 @@ df = gmd(version="2026_01", country=["USA", "CHN"], variables=["rGDP", "CPI"])
 install.packages("devtools")
 devtools::install_github("KMueller-Lab/Global-Macro-Database-R")
 library(globalmacrodata)
-df <- gmd(version = "2026_01", country = c("USA", "CHN"), variables = c("rGDP", "CPI"))
+df <- gmd(version = "2026_06", country = c("USA", "CHN"), variables = c("rGDP", "CPI"))
 ```
 
 ## Release Schedule
@@ -124,47 +59,150 @@ df <- gmd(version = "2026_01", country = c("USA", "CHN"), variables = c("rGDP", 
 | 2025-09-30   | 2025\_09 | Legacy version  |
 | 2025-12-31   | 2025\_12 | Legacy version  |
 | 2026-01-25   | 2026\_01 | Legacy version (Patch) |
-| 2026-03-31   | 2026\_03 | *Current Version*       |
-| 2026-06-30   | 2026\_06 | *Planned*       |
+| 2026-03-31   | 2026\_03 | Legacy version  |
+| 2026-06-30   | 2026\_06 | *Current Version*       |
 | 2026-09-30   | 2026\_09 | *Planned*       |
+| 2026-12-31   | 2026\_12 | *Planned*       |
 
----
+## Release Notes
 
-## Release Note (2025_12)
+### 2026_06 – Current (June 30, 2026)
 
-### Overview
+#### Overview
+
+The 2026_06 quarterly update expands coverage with 39 new aggregator and country-level historical sources, improves our continuous automated error-monitoring system, resolves dozens of data-quality bugs, and improves the Stata, R, and Python packages.
+
+#### New Sources
+
+This release adds 39 new sources, bringing the database to 160 sources in total. The additions are dominated by long-run country-level historical sources, complemented by several new cross-country aggregators. Highlights include:
+
+- **SECMCA historical statistics**: macroeconomic statistics from the Central American Monetary Council for Costa Rica, the Dominican Republic, Guatemala, Honduras, Nicaragua, and El Salvador (1960–2017).
+- **German historical sources**: Ritschl (2002) and Ritschl & Spoerer (1997), adding interwar and German Reich macroeconomic, fiscal, monetary, trade, price, population, and national-accounts series.
+- **International Historical Database (IHD)**: additional series with improved source splits and price mappings.
+- **Archivo de Historia Económica de México**: long-run Mexican national accounts, prices, money, and public finances (1876–2025).
+- **Ghana**: historical monetary, inflation, and output series from Ibrahim Abdulai's work on Ghana (1980–2017).
+- **Australia**: Foster's *Australian Economic Statistics* (1949/50–1994/95).
+- **Netherlands**: the Herengracht house-price index (1628–1973), one of the longest continuous real-estate price series available.
+- **Korea**: Open Fiscal Data from the Republic of Korea's Ministry of Economy and Finance.
+- **China**: Chinese national income estimates, 1661–1933.
+- **United Kingdom**: Feinstein's national income, expenditure, and output series (1855–1965), plus the Sefton-Weale balanced estimates of UK national income (1920–1990).
+- **Further country-level additions**: new or expanded sources for India, New Zealand, Spain, Sweden, Turkey, Japan, Russia, Israel, Bulgaria, Venezuela, and Italy.
+- **CEPII**: the CEPII trade-and-macro source has been refreshed and renamed from `CEPII_TRADHIST` to `CEPII`.
+
+#### Automated Error Monitoring
+
+This release expands our continuous error-monitoring system that scans the database for ratio discrepancies, unit breaks, and other anomalies, then routes each flagged case through an auto-triage workflow for review. The system has already identified and resolved dozens of data-quality issues and will keep running against future updates.
+
+#### Data Quality and Bug Fixes
+
+Driven by the new monitoring system and reports from GMD users, this release resolves dozens of bugs. The most important corrections fall into two groups:
+
+- **Units, scaling, and redenominations**: corrected unit-scale and currency-vintage issues across IMF IFS, IMF GFS, Andersson, Bordo monetary aggregates, Flora, the African Development Bank source, HFS, and UN data.
+- **Splicing and ratio consistency**: improved handling of gaps between sources, improved overlap handling, and corrected the US long-term interest-rate series.
+
+#### Package Updates
+
+The Stata, R, and Python packages have all been improved. The three distributions remain at full feature parity, so users have the same access to the combined database, underlying source data, and documentation regardless of language.
+
+#### Easy Access to Underlying Raw Data
+
+We have improved access to the underlying raw data, making it easier for users to download and analyze the original sources. Previously, the data was only available by downloading the Excel version of the database or using our Stata, R, or Python packages. From now on, users can simply indicate whether they want access to the underlying raw data on the download page, even where they download the csv or dta versions.
+
+#### Acknowledgements
+
+Thanks to everyone who reported issues and suggested improvements. Many fixes in this release came directly from user reports.
+
+### 2026_03 (March 31, 2026)
+
+#### Overview
+
+This release adds eleven new data sources, introduces two new variables, improves the methodology for splicing government finance ratios, harmonizes all ratio variables, and updates the Python and R packages to full feature parity with the Stata package.
+
+#### New Sources
+
+We added eleven new sources to the database:
+
+- **COMECON**: The wiiw COMECON Dataset, covering economic time series for the command economies of Eastern Europe (1944–1994), including GDP, consumption, trade, government finance, monetary, and price data for nine countries.
+- **CogneauDupraz**: Colonial fiscal, GDP, trade, and population data for French colonies (1833–1962), covering Algeria, Tunisia, Morocco, Madagascar, Cameroon, and Togo.
+- **MAFHOLA**: The Monetary and Fiscal History of Latin America project, covering GDP, inflation, fiscal balances, government debt, exchange rates, and monetary base for eleven Latin American countries (1960–2017).
+- **Andersson**: Central government revenue data from Per F. Andersson, covering revenue and GDP for multiple countries from the 1800s onwards.
+- **CS1_BOL**: Historical real GDP for Bolivia from Herranz-Loncan & Peres-Cajias (2016), extending coverage back to the mid-nineteenth century (1846, 1890–2010).
+- **CS2_BOL**: Bolivian public finance data from Peres-Cajias (2014), covering central and general government revenue, expenditure, and tax ratios (1882–2010).
+- **CS1_PER**: Historical macroeconomic data from the Banco Central de Reserva del Peru, covering national accounts, prices, trade, monetary aggregates, and fiscal data for Peru (1922–2021).
+- **CS1_COL**: Historical series from Colombia's central bank, covering government finances, trade, current account, and monetary aggregates.
+- **CS1_HKG**: Historical data for Hong Kong including monetary aggregates, government finance, trade, GDP, exchange rates, and prices (1843–2002).
+- **CS2_AUT**: Long-run Austrian CPI series from Hubmann, Jobst & Maier (2020), covering 1800–2018.
+- **CS2_GBR**: UK historical public finances from HM Treasury, covering government revenue and expenditure.
+
+#### New Variables
+
+We introduced two new consumption variables: household consumption (`hcons`) and government consumption (`gcons`). These complement the existing total consumption (`cons`) variable and provide a finer decomposition of the expenditure side of GDP.
+
+#### Improved Government Finance Ratio Splicing
+
+We introduced a new methodology for combining government finance ratios (revenue, expenditure, tax, debt, and deficit as % of GDP). Previously, we spliced the underlying level series and then derived the ratios. We now splice the ratios directly, which avoids compounding errors that arise when the numerator and denominator are spliced separately with different chainlinking adjustments.
+
+#### Ratio Harmonization
+
+All ratio variables (e.g., `govdebt_GDP`, `exports_GDP`, `CA_GDP`) are now consistently expressed in percent, so that a value of 50 means 50% of GDP.
+
+#### Package Updates
+
+The Python and R packages have been updated to match the full functionality of the Stata package, including access to underlying source data and documentation features.
+
+#### Data Quality
+
+We incorporated feedback from GMD users and improved data quality across multiple variables and sources.
+
+### 2026_01 (January 25, 2026)
+
+#### Overview
+
+This release introduces significant enhancements to data accuracy and infrastructure. Key updates include a comprehensive revision of the real GDP series and the deployment of a fully automated, cloud-based data processing pipeline to ensure timely future updates.
+
+#### Real GDP Improvement
+
+We have conducted a major review of the real GDP series. The data has been rigorously corrected and is now consistently rebased to the year 2015, ensuring greater comparability and accuracy across the dataset.
+
+#### Automated Pipeline
+
+To improve long-term sustainability and data freshness, we have engineered a new automated pipeline. This system autonomously handles downloading, processing, and merging data from all sources in the cloud, streamlining the maintenance process and allowing for more frequent and reliable database updates.
+
+#### Stata Package & Documentation
+
+We have launched a dedicated repository for the official Stata package, now available at [Global-Macro-Database-Stata](https://github.com/KMueller-Lab/Global-Macro-Database-Stata). Additionally, we have released a comprehensive companion paper, [Global_Macro_Database_Stata.pdf](https://github.com/KMueller-Lab/Global-Macro-Database-Stata/blob/main/Global_Macro_Database_Stata.pdf), which serves as a detailed guide to using the package effectively.
+
+### 2025_12 (December 31, 2025)
+
+#### Overview
 
 The 2025_12 version includes updated data as of December 2025 and introduces various important patches and improvements. We also rewrote the Stata package from scratch: get the new version by typing `ssc install gmd`. Lehbib and Müller (2025) provides more details.
 
-### Improved Government Finance Statistics
+#### Improved Government Finance Statistics
 
 We further improved the construction of combined government finance statistics. Relative to before, the combined time series are now mostly based on chain-linking ratios, with some exceptions, and we more commonly use a country-specific priority ordering of sources.
 
-### Extended Technical Appendix
+#### Extended Technical Appendix
 
 We considerably improved the technical appendix to enhance clarity and readability. Going forward, we will provide a dedicated technical appendix with each release.
 
-### Major Update to Stata Package
+#### Major Update to Stata Package
 
 We rewrote the Stata package from scratch to make it faster and added various new functionalities, including the ability to easily access all the (cleaned) data underlying the GMD. A new companion paper (Lehbib and Müller, 2025) now describes the package in detail.
 
-### Bug Fixes
+#### Bug Fixes
 
 Thanks to the support of many GMD users, we were able to identify and fix many bugs. Noteworthy examples include real GDP per capita for Venezuela and the inflation rates of a few countries.
 
-### New Variable
+#### New Variable
 
 The GMD now includes the World Bank's income classification.
 
----
+### 2025_09 (September 30, 2025)
 
-## Release Note (2025_09)
-
-### Overview
+#### Overview
 
 Released September 30, 2025. This quarterly update introduces improved government finance statistics, streamlined source handling, a new outlier detection process, and numerous fixes and small improvements.
-
-### Key changes 
 
 #### Improved Government Finance Statistics
 - Distinguishes between central and general government data
@@ -190,8 +228,6 @@ Released September 30, 2025. This quarterly update introduces improved governmen
 - Thanks to many contributors, various small bugs were identified and fixed
 - Corrected systematic mistakes identified in the World Bank's WDI and IMF's FPP data
 
----
-
 ## Citation
 
 Please cite the dataset as:
@@ -199,7 +235,7 @@ Please cite the dataset as:
 ```bibtex
 @techreport{GMD2025,
   title = {The Global Macro Database: A New International Macroeconomic Dataset},
-  author = {M{"u}ller, Karsten and Xu, Chenzi and Lehbib, Mohamed and Chen, Ziliang},
+  author = {M{\"u}ller, Karsten and Xu, Chenzi and Lehbib, Mohamed and Chen, Ziliang},
   institution = {National Bureau of Economic Research},
   type = {Working Paper},
   series = {Working Paper Series},
@@ -211,39 +247,21 @@ Please cite the dataset as:
 }
 ```
 
----
-
 ## Acknowledgments
 
 The development of the Global Macro Database would not have been possible without the generous funding provided by the Singapore Ministry of Education (MOE) through the PYP grants (WBS A-0003319-01-00 and A-0003319-02-00), a Tier 1 grant (A-8001749- 00-00), and the NUS Risk Management Institute (A-8002360-00-00). This financial support laid the foundation for the successful completion of this extensive project.
 
-## License 
+## License
 
-The Global Macro Database (GMD) is free to use and share for **non-commercial purposes by non-commercial entities** (e.g., academic research), provided you attribute and cite the dataset and share only under the same license terms. Any commercial use, including that internal to profit-seeking organizations, is prohibited unless you obtain a separate commercial license from us.
+The Global Macro Database (GMD) is released under the **GMD Research Use Terms** (Version 1.0) — our own license for public-good data. It follows the spirit of CC BY-NC-SA 4.0, but where it differs, the Research Use Terms govern. The full terms are at [globalmacrodata.com/license.html](https://www.globalmacrodata.com/license.html).
 
-**If you are unsure whether your intended use is commercial, treat it as commercial** and contact us for permission at kmueller@globalmacrodata.com.
+**The short version** (a plain-English summary; the full Research Use Terms are what actually govern):
 
-**No commercial use**: Any use that is primarily intended for, or directed toward, a commercial advantage or monetary compensation is considered commercial and is therefore forbidden under this license. For the avoidance of doubt, the following are commercial uses (non-exhaustive) and are not permitted:
+- **Free for research.** Universities, non-profits, students, teachers, journalists, individual researchers, and public-sector bodies (central banks, regulators, finance ministries, international organizations) — for papers, teaching, theses, reporting, non-commercial policy work, and personal learning.
+- **Not for business.** Not for commercial use, or for use inside for-profit companies of any kind, even internally — including building it, in whole or in derived form, into any product, service, model, index, or paid report.
+- **Cite it.** Always credit the GMD and its authors (see the Citation section above).
+- **Do not re-host or rebadge it.** Do not republish the data on another website, API, platform, product, or under another name without explicit written approval — point people to [globalmacrodata.com](https://www.globalmacrodata.com) so they get the latest data and cite it. (You may include the specific data used in a paper in that paper's replication package, clearly labeled as coming from the GMD.)
+- **Share alike.** If we allow you to build on it and share, keep these same terms.
+- **As-is.** No warranty for correctness; we do our best to provide accurate data.
 
-- *Product / service use*: incorporating the data (in whole or in part) into any product, platform, or service that is sold, licensed, paywalled, or otherwise monetized.
-- *Commercial analytics*: using the data to support revenue-generating activities or business decisions (e.g., trading, research, risk management, underwriting, pricing, forecasting for business operations, client reporting).
-- *Consulting / client deliverables*: using the data (or outputs based on it) in work delivered to a paying client or for a paid engagement.
-- *Redistribution for value*: selling, sublicensing, or otherwise distributing the data (or any portion) in exchange for payment or other consideration.
-- *Derived values*: selling or monetizing any values derived from the dataset (indices, signals, features, cleaned series, transformed series, benchmarks, etc.).
-- *Commercial AI / model development*: using the data to train, fine-tune, or benchmark models that are used in, or distributed as part of, a commercial product or service.
-- *Sponsored / marketing use*: using the data in paid reports, sponsored research, marketing materials, or other promotional activity.
-
-The Global Macro Database (GMD) is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0) .
-
-Under this license, users are free to:
-
-- Share – copy and redistribute the material in any medium or format
-- Adapt – remix, transform, and build upon the material
-
-These freedoms are granted under the following conditions:
-
-- Attribution – Appropriate credit must be given to the Global Macro Database (GMD), citing the authors as specified in the Citation section, including a link to the license and an indication of changes made. Attribution must not suggest endorsement.
-- NonCommercial – The material may not be used for commercial purposes, including the sale of the data (in whole or in part) or the sale/monetization of values based on it.
-- ShareAlike – If you remix, transform, or build upon the material, you must distribute your contributions under the same license.
-
-Citation requirement: If you use the GMD, you must cite it. See the Citation section above for the required BibTeX.
+**Unsure, or need something else?** Treat your use as commercial and email kmueller@globalmacrodata.com.
