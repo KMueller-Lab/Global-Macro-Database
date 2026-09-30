@@ -61,7 +61,7 @@ df <- gmd(version = "2026_09", country = c("USA", "CHN"), variables = c("rGDP", 
 | 2026-01-25   | 2026\_01 | Legacy version (Patch) |
 | 2026-03-31   | 2026\_03 | Legacy version  |
 | 2026-06-30   | 2026\_06 | Legacy version       |
-| 2026-09-30   | 2026\_09 | *Legacy version*       |
+| 2026-09-30   | 2026\_09 | *Current version*       |
 | 2026-12-31   | 2026\_12 | *Planned*       |
 | 2027-03-31   | 2027\_03 | *Planned*       |
 
