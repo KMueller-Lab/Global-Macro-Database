@@ -57,7 +57,7 @@ df <- gmd(version = "2026_09", country = c("USA", "CHN"), variables = c("rGDP", 
 
 - `data/helpers/versions.csv` lists every release. The packages read it to check for new versions.
 - `data/helpers/release_notes/` holds the notes for each release.
-- The code and data of the first release (2025_01) are kept at tag [`2025_01`](https://github.com/KMueller-Lab/Global-Macro-Database/tree/2025_01) as a replication archive. Later releases are built with a separate pipeline that is not public.
+- `code/`, `data/` (apart from `data/helpers/`), `output/` and `docs/` are from the first release (2025_01). They are kept as a replication archive and are not updated. Later releases are built with a separate pipeline that is not public.
 
 Report data errors and package problems as [issues](https://github.com/KMueller-Lab/Global-Macro-Database/issues).
 
@@ -132,7 +132,7 @@ The development of the Global Macro Database would not have been possible withou
 
 ## License
 
-The Global Macro Database (GMD) is released under the **GMD Research Use Terms** (Version 1.1), our own license for public-good data. It follows the spirit of CC BY-NC-SA 4.0. Where the two differ, the Research Use Terms govern. The full terms are at [globalmacrodata.com/license.html](https://www.globalmacrodata.com/license.html).
+The Global Macro Database (GMD) is released under the **GMD Research Use Terms** (Version 1.1), our own license for public-good data. It follows the spirit of CC BY-NC-SA 4.0. Where the two differ, the Research Use Terms govern. The full terms are in [LICENSE](LICENSE) and at [globalmacrodata.com/license.html](https://www.globalmacrodata.com/license.html).
 
 **The short version** (a plain-English summary; the full Research Use Terms govern):
 
