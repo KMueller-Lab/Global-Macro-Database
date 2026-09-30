@@ -134,15 +134,15 @@ The development of the Global Macro Database would not have been possible withou
 
 The Global Macro Database (GMD) is released under the **GMD Research Use Terms** (Version 1.1), our own license for public-good data. It follows the spirit of CC BY-NC-SA 4.0. Where the two differ, the Research Use Terms govern. The full terms are in [LICENSE](LICENSE) and at [globalmacrodata.com/license.html](https://www.globalmacrodata.com/license.html).
 
-**The short version** (a plain-English summary; the full Research Use Terms govern):
+**The short version** (a plain-English summary; the full Research Use Terms are what actually govern):
 
 - **Free for academic use.** Students, faculty, and researchers at universities and academic research institutes, for research meant for publication, teaching, and theses.
-- **Also free** for teachers (for the classroom) and for non-profit organizations such as charities, foundations, and NGOs (for their non-commercial work).
+- **Also free** for teachers (for the classroom) and non-profit organizations such as charities, foundations, and NGOs (for their non-commercial work).
 - **Everyone else**, including companies, needs our written permission.
 - **Not for products.** Do not build any part of it, even in derived form, into a product, service, model, index, or paid report.
 - **Cite it.** Always credit the GMD and its authors (see Citation above).
-- **Do not re-host or rebadge it.** Do not republish the data on another website, API, or platform, or under another name, without written approval. Point people to [globalmacrodata.com](https://www.globalmacrodata.com) instead. You may include the data used in a paper in that paper's replication package, labeled as coming from the GMD.
+- **Do not re-host or rebadge it.** Do not republish the data on another website, API, platform, product, or under another name without explicit, written approval; point people to [globalmacrodata.com](https://www.globalmacrodata.com) so they get the latest data and cite it. You may include the specific data used in a paper in that paper's replication package, clearly labeled as coming from the GMD.
 - **Share alike.** If we allow you to build on it and share, keep these same terms.
-- **As-is.** No warranty for correctness.
+- **As-is.** No warranty for correctness; we do our best to provide accurate data.
 
 **Unsure whether your use is non-commercial?** Email kmueller@globalmacrodata.com.
