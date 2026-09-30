@@ -12,7 +12,7 @@ This repository complements our paper, **Müller, Xu, Lehbib, and Chen (2025)**,
 
 ## Features
 
-- **Coverage**: Combines **35 contemporary sources** (e.g., IMF, World Bank, OECD) and **132 historical datasets**, **167 sources** in total.
+- **Coverage**: Combines **167 sources**, from international organizations such as the IMF, World Bank, and OECD to historical datasets.
 - **Variables**: National accounts, consumption, investment, trade, prices, government finances, interest rates, employment, and financial crises.
 - **Source prioritization**: Country-specific sources take priority over international aggregators, for both historical depth and accuracy.
 - **Harmonized data**: All data is cleaned, spliced, and chainlinked for consistent cross-country comparison.
